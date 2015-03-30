@@ -3,6 +3,7 @@ A level-1 auxiliary file: abstract1.aux
 A level-1 auxiliary file: abstract2.aux
 A level-1 auxiliary file: chap1.aux
 A level-1 auxiliary file: chap2.aux
+A level-1 auxiliary file: chap3.aux
 The style file: paper2.bst
 bibinfo is an unknown function---line 207 of file paper2.bst
 bibinfo.check is an unknown function---line 207 of file paper2.bst
@@ -24,12 +25,17 @@ Repeated entry---line 721 of file reference.bib
  : @inproceedings{gelfond1988stable
  :                                 ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 730 of file reference.bib
+ : @article{gelfond1991classical
+ :                              ,
+I'm skipping whatever remains of this entry
 You can't pop an empty literal stack for entry ji2010phd
 while executing---line 866 of file paper2.bst
 Warning--empty booktitle in colmeraner1973systeme
 `journal' is a missing field, not a string, for entry zhai2014asp
 while executing---line 866 of file paper2.bst
 Warning--empty journal in zhai2014asp
-You can't pop an empty literal stack for entry zhang2011Decidability
+`journal' is a missing field, not a string, for entry ji2015elementary
 while executing---line 866 of file paper2.bst
-(There were 9 error messages)
+Warning--empty journal in ji2015elementary
+(There were 10 error messages)

@@ -52,313 +52,379 @@ ASP程序的求解过程是：
 
 从实际效果来看，例化后的逻辑程序就是不含变量的命题公式集合。本文中只考虑完全例化后的长度有限的逻辑程序。本文所探讨的ASP逻辑程序由有限个规则（rule）所组成，其中规则的形式如下：
 \begin{equation}\label{asp_rule}
-	a_1 \lor a_2 \lor...\lor a_k~\leftarrow~a_{k+1},..., a_m, not~a_{m+1},...,not~a_n.
+	a_1 \lor a_2 \lor...\lor a_k~\leftarrow~a_{k+1},..., a_m,~not~a_{m+1},...,~not~a_n.
 \end{equation}
 
 其中$n \geq m \geq k \geq 1$，$a_i$为原子（atom），$not$代表失败即否定。在k，m，n取不同范围的值时，形式$(\ref{asp_rule})$所表示的规则有不同的意义，具体如下：
 
 \begin{enumerate}
-	\item k = 0时，规则被称为限制（Constraint）；
-	\item k = 1时，规则被称为正规规则（Normal Rule）；
-	\item n = m = 0时，规则被称为事实（Fact）；
-	\item n = m时，即规则中没有带not的原子时，规则称其为正规则（Positive Rule）。
+	\item $k = 0$时，规则被称为限制（Constraint）；
+	\item $k = 1$时，规则被称为正规规则（Normal Rule）；
+	\item $n = m = 0$时，规则被称为事实（Fact）；
+	\item $n = m$时，即规则中没有带not的原子时，规则称其为正规则（Positive Rule）。
 \end{enumerate}
 
 
+\begin{example}\label{first_example_2}
+下面为四种形式的规则：
 
-
-
-\begin{center}
-\begin{tabular}{l}
-$P^{*}~=~P$表示$\forall \bar{x}(P(\bar{x})~\leftrightarrow~P^{*}(\bar{x}))$，\\
-$P^{*}~\leq~P$表示$\forall \bar{x}(P^{*}(\bar{x})~\rightarrow~P(\bar{x}))$，\\
-$P^{*}~<~P$表示$(P^{*}~\leq~P)~\wedge~\neg(P^{*}~=~P)$，
-\end{tabular}
-\end{center}
-其中$\bar{x}$是变元元组，$P^{*}~<~P$表示$P^{*}$的外延是$P$的外延的子集。
-
-进一步，求解限定理论时，通常会有谓词集合的比较，设$\sigma$和$\sigma^{*}$都是谓词常元集，
-且$|\sigma|~=~|\sigma^{*}|$，
-\begin{center}
-\begin{tabular}{l}
-$\sigma^{*}~=\sigma$表示对于任意的$P~\in~\sigma$和$P^{*}~\in~\sigma^{*}$，满足$P^{*}~=~P$，\\
-$\sigma^{*}~\leq\sigma$表示对于任意的$P~\in~\sigma$和$P^{*}~\in~\sigma^{*}$，满足$P^{*}~\leq~P$，\\
-$\sigma^{*}~<\sigma$表示$(\sigma^{*}~\leq\sigma)~\wedge~\neg(\sigma^{*}~=\sigma)$，\\
-\end{tabular}
-\end{center}
-其中$P^{*}$与$P$是一一对应的，且具有相同的元数。
-
-设$\varphi$是一个一阶语句，$\sigma_i$是\textmd{极小}（minimized）谓词常元集，\textmd{可变}（varied）常元集$\sigma_v$是包含个体、函词或不在$\sigma_i$中出现的谓词常元集，
-表示谓词常元不能同时是极小的和可变的，$\varphi$的符号集中剩余的
-符号被称作\textmd{固定}（fixed）常元。一个限定理论是一个三元组$(\varphi;\sigma_i;\sigma_v)$，记为$\mathbf{CIRC}[\varphi;\sigma_i;\sigma_v]$，
-如果$\varphi$是命题公式，则称为\textmd{命题限定理论}；如果$\varphi$是一阶语句，则称为\textmd{一阶限定理论}；如果$\sigma_v$为空，
-则称为\textmd{标准限定理论}，可以简写为$\mathbf{CIRC}[\varphi;\sigma_i]$。
-
-\begin{definition}
-\textmd{并行限定}定义为如下一个二阶公式：
-\begin{equation}\label{form_defcirc}
-    \mathbf{CIRC}[\varphi;\sigma_i;\sigma_v]~=~\varphi~\wedge~\forall\sigma^{*}_i\sigma^{*}_v(\sigma^{*}_i~<~\sigma_i~\rightarrow~\neg\varphi(\sigma^{*}_i,\sigma^{*}_v))
-\end{equation}
-其中，$\sigma^{*}_i$是一个谓词变元集，这些谓词变元分别对应于$\sigma_i$中的谓词且常元具有相同的元数；类似地，$\sigma^{*}_v$是变元集，分别对应于$\sigma_v$中的常元，
-且具有相同的元数；$\varphi(\sigma^{*}_i,\sigma^{*}_v)$是将公式$\varphi$中在$\sigma_i$（或$\sigma_v$）中出现的常元替换成对应的$\sigma^{*}_i$（或$\sigma^{*}_v$）中的变元。
-\end{definition}
-
-公式(\ref{form_defcirc})的直观含义是，满足公式$\varphi$正确的条件下，使得$\sigma_i$中谓词的外延最小，称这样的公式$\varphi$的模型为
-$\mathbf{CIRC}[\varphi;\sigma_i;\sigma_v]$的模型。
-
-令$v$为上述语句$\varphi$的符号集，设$\mathfrak{A}$ 和$\mathfrak{B}$是任意两个$v$-结构，
-定义$\mathfrak{A}~\preceq_{\sigma_i,\sigma_v}~\mathfrak{B}$ 当且仅当以下条件成立：
-\begin{enumerate}
-  \item $\mathfrak{A}$与$\mathfrak{B}$具有相同的论域；
-  \item 对于$v$中所有的极小谓词常元$P$，均有$\mathfrak{A}(P)~\subseteq~\mathfrak{B}(P)$；
-  \item 对于$v$中所有固定的常元$C$，均有$\mathfrak{A}(C)~=~\mathfrak{B}(C)$。
-\end{enumerate}
-换句话说，$\mathfrak{A}~\preceq_{\sigma_i,\sigma_v}~\mathfrak{B}$ 意味着$\mathfrak{A}$和
-$\mathfrak{B}$仅在解释$\sigma_i$和$\sigma_v$上不同。
-
-关系$\preceq_{\sigma_i,\sigma_v}$具有自反律和传递律，令$\mathfrak{A}~\prec_{\sigma_i,\sigma_v}~\mathfrak{B}$
-表示$\mathfrak{A}~\preceq_{\sigma_i,\sigma_v}~\mathfrak{B}$ 成立但是$\mathfrak{B}~\preceq_{\sigma_i,\sigma_v}~\mathfrak{A}$ 不成立，
-如果结构$\mathfrak{A}$是语句$\varphi$的模型，且$\varphi$不存在模型$\mathfrak{B}$满足$\mathfrak{B}~\prec_{\sigma_i,\sigma_v}~\mathfrak{A}$。
-
-设$\sigma_{i}$为一个谓词常量集合，将$\sigma_{i}$分割成若干不相交的段$\sigma_{i}^{1},...,\sigma_{i}^{k}$。
-想使谓词$\sigma_{i}^{1}$极小化的优先级高于谓词$\sigma_{i}^{2}$，谓词$\sigma_{i}^{2}$极小化的优先级高于$\sigma_{i}^{3}$，
-$\sigma_{i}^{m}$的优先级高于$\sigma_{i}^{n}$（$1\leq n<m\leq k$）。对于公式$\varphi$，$\sigma_v$为变化的谓词集，$\sigma_{i}^{1}>...>\sigma_{i}^{k}$为极小化谓词集的\textmd{优先级限定}记为$\mathbf{CIRC}[\varphi;\sigma_{i}^{1}>...>\sigma_{i}^{k};\sigma_v]$，
-同样可以定义成与公式(\ref{form_defcirc})相似的二阶公式。
-优先级限定与并行限定有如下的关系性质：
-
-\begin{proposition}
-\textbf{(文献\cite{lifschitz1994circumscription}命题15)}优先级限定$\mathbf{CIRC}[\varphi;\sigma_{i}^{1}>...>\sigma_{i}^{k};\sigma_v]$ 等价于并行限定
-\begin{equation}\label{form_pri2par}
-    \bigwedge^{k}_{j=1}\mathbf{CIRC}[\varphi;\sigma_{i}^j;\sigma_{i}^{j+1},...,\sigma_{i}^{k},\sigma_v].
-\end{equation}
-\end{proposition}
-
-下面给出一个具体地例子介绍限定理论的相关概念。
-\begin{example}\label{emp_pacifist}
-(Reiter的例子，文献\cite{mccarthy1986applications} 第7节)设$\varphi$为如下一阶公式的全称闭包：
 \begin{eqnarray}
-% \nonumber to remove numbering (before each equation)
-  Quaker(x)~\wedge~\neg Ab_1(x)~\rightarrow~Pacifist(x) \label{form_example1_1} \\
-  Republican(x)~\wedge~\neg Ab_2(x)~\rightarrow~\neg Pacifist(x) \label{form_example1_2}
+	\leftarrow~p,~q. \label{rule_1} \\	
+	r~\leftarrow~s,~not~t. \label{rule_2} \\
+	s. \label{rule_3}	\\
+	p~\leftarrow~r,~t.	\label{rule_4} 	\\
+	s~\lor~p~\leftarrow~r,~t,~not~p. \label{rule_5}
 \end{eqnarray}
-其中谓词$Quaker(x)$表示$x$是教徒，谓词$Republican(x)$表示$x$是共和党人，谓词$Pacifist(x)$ 表示$x$是和平主义者，谓词$Ab_1$表示一种不正常因素，谓词$Ab_2$表述另一种不正常因素。如果一个人$Nixon$同时是教徒和共和党人，对$Ab_1$和$Ab_2$限定，不能得到他是不是一个和平主义者，但是，如果使用优先级限定，则说明$Nixon$更像一个教徒而非共和党人，可以通过计算$\mathbf{CIRC}[\varphi;Ab_1>Ab_2;Pacifist]$得到$Nixon$是一个和平主义者。
+
+其中的(\ref{rule_1})为限制，(\ref{rule_2})为正规规则，(\ref{rule_3})为事实，(\ref{rule_4})为正规则，(\ref{rule_5})为一般规则。	
 \end{example}
 
-\section{稳定模型语义}
 
-本小节介绍稳定模型语义（Stable Model Semantics）下的一阶与命题理论。定义任意稳定模型语义是一个二元组$(\varphi; \sigma_{i})$，其中$\varphi$是一阶语句或者命题公式，$\sigma_{i}$是在$\varphi$中出现的谓词常元集合，这些谓词称为\textmd{内涵谓词常元}，除此之外的常元称为\textmd{外延常元}。
+\begin{definition}[正规逻辑程序（$Normal Logic Program, NLP$）]
+	由有限条正规规则组成的逻辑程序，其中可以包含有限个事实及限制。
+\end{definition}
+
+\begin{definition}[析取逻辑程序（$Disjunctive  Logic Program, DLP$）]
+	由有限条形如形式(1)的规则组成的逻辑程序，其中可以包含有限个事实及限制。
+\end{definition}
+
+对于形式(\ref{asp_rule})中的规则，我们还可以将其等价于以下形式：
+
+\begin{equation}\label{head_body_rule}
+	head(r)~\leftarrow~body(r)
+\end{equation}
+
+其中$r$代表形式(\ref{asp_rule})中的整条规则，$head(r)$称为规则$r$的头部，$body(r)$称为规则$r$的体部。具体有$head(r)$为$a_1 \lor a_2 \lor~...~\lor~a_k$，$body(r)$为$a_{k+1},~...~,~a_m,~not~a_{m+1},~...~,~not~a_n$。其中ASP程序的头部中的原子连接关系只为析取，体部中的原子连接关系只为合取。更进一步的划分有$body(r)~=~body^+ (r)~\land~body^-(r)$，其中$body^+(r)$为$a_{k+1},~...~,~a_m$，即不带$not$的，$body^-(r)$为$not~a_{m+1},~...~,~not~a_n$，即带有$not$的。在某些情景下上述定义的命题公式可以被作为原子集（a set of atoms）进行讨论。
+
+从集合意义出发，引入以下常用的集合概念：
 
 \begin{definition}
-$SM[\varphi;\sigma_{i}]$定义为如下的二阶公式：
-\begin{equation}\label{form_defsm}
-    \varphi~\wedge~\forall \sigma^{*}_{i}(\sigma^{*}_{i}~<~\sigma_{i}~\rightarrow~\neg St(\varphi;\sigma_{i}))
-\end{equation}
-其中$St(\varphi;\sigma_{i})$递归地定义如下：
+	规则中的集合，以形式(\ref{asp_rule})中的规则作为例子：
+	
 \begin{itemize}
-  \item 如果$P~\in~\sigma_{i}$，则$\mathrm{St}(P(\overline{x});\sigma_i)~=~P^{*}(\overline{x})$；
-  \item 如果谓词F不在$\sigma_i$中出现，则$\mathrm{St}(F(\overline{x});\sigma_i)~=~F(\overline{x})$；
-  \item 如果$\circ~\in~\{\wedge,\vee\}$，则$\mathrm{St}(\psi~\circ~\chi;\sigma_i)~=~ \mathrm{St}(\psi;\sigma_i)~\circ~\mathrm{St}(\chi;\sigma_i)$；
-  \item $\mathrm{St}(\psi~\rightarrow~\chi;\sigma_i)~=~ (\mathrm{St}(\psi;\sigma_i)~\rightarrow~\mathrm{St}(\chi;\sigma_i))~\wedge~(\psi~\rightarrow~\chi)$；
-  \item 如果$Q~\in~\{\forall,\exists\}$，则$\mathrm{St}(Qx\psi;\sigma_i)~=~Qx\mathrm{St}(\psi;\sigma_i)$；
+	\item $head(r) = \{a_1, a_2, ..., a_k\}$；
+	\item $body(r) = \{a_{k+1}, ..., a_m, ..., \neg~a_{m+1},...,\neg~a_n\}$，一个文字集，把体部中的$not$替换为$\neg$而得到；
+	\item $body^+(r) = \{a_{k+1},...,a_m\}$，体部正文字的原子组成的原子集；
+	\item $body^-(r) = \{a_{m+1},...,a_n\}$，体部负文字的原子组成的原子集；
+	\item $Atoms(r) = head(r) \cup body^+(r) \cup body^-(r)$，即规则r中的原子全集。
 \end{itemize}
 \end{definition}
 
-如果结构$\mu$是$\mathbf{SM}[\varphi;\sigma_i]$的一个模型，则被称为$\varphi$的一个$\sigma_i$-稳定模型。令SM[FO]表示所有一阶稳定理论对应的二阶公式。
+给定一个逻辑程序P，P就是一个规则集合。这里定义Atoms(P)即逻辑程序P中所有出现过的原子。
 
-设$(\varphi,\sigma_i)$是一个稳定模型语义下的一阶逻辑，$v$为$\varphi$的符号集，则称一个$v$- 结构$\mathfrak{A}$是$\varphi$关于$\sigma_i$的\textmd{稳定模型}（Stable Model）当且仅当$\mathfrak{A}$是公式$\mathbf{SM}[\varphi,\sigma_i]$的模型。
+\begin{definition}
+	逻辑程序P的原子集为：
+	
+	\begin{equation}
+		Atoms(P)~=\bigcup_{r \in P}Atoms(r)
+	\end{equation}
+\end{definition}
 
-稳定模型语义下前束范式的获取与经典语义等价关系有所不同，根据文献\cite{ferraris2011stable}，如果两个一阶公式$\varphi$和$\psi$是强等价的，当且仅当对于任意的公式$\gamma$以及任意一个谓词常元集$\sigma_i$，将公式$\varphi$在$\gamma$中的任意出现都替换成$\psi$后得到公式$\gamma'$，满足$\mathbf{SM}[\gamma;\gamma_i]$等价于$\mathbf{SM}[\gamma';\gamma_i]$。结合强等价的定义，有如下稳定稳定模型语义下的性质。
+
+\begin{example}
+	把例子(\ref{first_example_2})中的规则集合看作是一个逻辑程序$P$，则有：
+	
+	对于(\ref{rule_5})，$head(r)=\{s,q\}$，$body(r)=\{r,t,p\}$，$body^+ (r)=\{r,t\}$，$body^-(r)=\{p\}$，$Atoms(r)=\{s,q,r,t,p\}$。
+	
+	同时，$Atoms(P)=\{s,q,r,t,p\}$。
+\end{example}
+
+在了解了逻辑程序中涉及的常用概念后，我们将通过满足（satisfy）性来定义逻辑程序的模型。
+
+\begin{definition}
+	一个原子集$S$满足一个正合取范式$R$，当且仅当$Atoms(R)~\subseteq~S$；一个原子集$S$满足一个正析取范式$R$，当且仅当$Atoms(R)~\cap~S~\neq~\emptyset$。满足符号为$\models$。
+\end{definition}
+
+我们把满足的概念放在逻辑程序及其规则中，由于逻辑程序中的头部中的文字为析取关系，且仅有正文字，体部中的文字为合取关系。则相应地定义一个原子集$S$满足一个规则$r$的$body(r)$当且仅当$body^+(r)~\subseteq~S$且$body^-(r)~\cap~S~=~\emptyset$，记为$S~\models~body(r)$。一个原子集$S$满足一个规则$r$的$head(r)$当且仅当$head(r)~\cap~S~\neq~\emptyset$，记为$S~\models~head(r)$。
+
+\begin{example}
+	给定一个原子集$S=\{a,b,c\}$，规则$r1$为$a~\lor~b~\leftarrow~c,~not~d.$，规则$r2$为$d~\lor~e~\leftarrow~c,~not~b.$，则有：$S~\models~head(r1)$，$S~\models~body(r1)$，$S~\nvDash~head(r2)$，$S \nvDash body(r2)$。
+\end{example}
+
+接下来，我们定义如何判断一个原子集是否满足一个规则，以及一个原子集是否满足一个逻辑程序。
+
+\begin{definition}
+	一个原子集$S$满足一个规则$r$，当且仅当$S \models body(r)$蕴涵$S \models head(r)$，并记为$S \models r$。一个原子集$S$满足一个逻辑程序$P$，当且仅当$S$满足$P$中的所有规则。
+\end{definition}
+
+\begin{definition}
+	如果一个原子集$S$满足一个逻辑程序$P$，我们将$S$称为$P$的一个模型（$model$）。若一个原子集$I$是逻辑程序$P$的模型，且不存在另一个原子集$J$符合$J~\subseteq~I$且$J$是逻辑程序$P$的模型，则称原子集$I$是逻辑程序$P$的极小模型（$minimal~model$）。
+\end{definition}
+
 \begin{proposition}
-\textbf{(文献\cite{pearce2005first}定理6.4)}设$\varphi$和$\psi$为任意的一阶公式，则下列等价关系成立：
-\begin{align*}
-  (1)~~&\forall x\varphi(x)~\wedge~\psi~\equiv~\forall x(\varphi(x)~\wedge~\psi) &(2)~~&\exists x\varphi(x)~\wedge~\psi~\equiv~\exists x(\varphi(x)~\wedge~\psi) \\
-  (3)~~&\forall x\varphi(x)~\vee~\psi~\equiv~\forall x(\varphi(x)~\vee~\psi) &(4)~~&\exists x\varphi(x)~\vee~\psi~\equiv~\exists x(\varphi(x)~\vee~\psi) \\
-  (5)~~&\exists x\varphi(x)~\rightarrow~\psi~\equiv~\forall x(\varphi(x)~\rightarrow~\psi) &(6)~~&\forall x\varphi(x)~\rightarrow~\psi~\equiv~\exists x(\varphi(x)~\rightarrow~\psi) \\
-  (7)~~&\psi~\rightarrow~\forall x\varphi(x)~\equiv~\forall x(\psi~\rightarrow~\varphi(x)) &(8)~~&\psi~\rightarrow~\exists x\varphi(x)~\equiv~\exists x(\psi~\rightarrow~\varphi(x)) \\
-  (9)~~&\neg\exists x\varphi(x)~\equiv~\forall x\neg\varphi(x) &(10)~~&\neg\forall x\varphi(x)~\equiv~\exists x\neg\varphi(x)
-\end{align*}
-其中个体变元$x$不在公式$\psi$中自由出现。
+	一个不包含$not$（失败即否定）的逻辑程序，称为正逻辑程序。正逻辑程序有且仅有一个极小模型。
+\end{proposition}
+
+在了解了上述的逻辑程序基础后，我们接下来将引入回答集编程的语法和语义的相关基础知识。
+
+
+
+
+\section{回答集编程}
+
+\subsection{回答集编程基础}
+
+回答集编程时一种声明式编程，它主要应用于极为困难的搜索问题当中。Lifschitz认为在非单调推理的知识表示领域中，回答集编程在知识密集型的应用场景中尤其重要和高效\cite{lifschitz2008answer}。ASP语法结构与Prolog类似，但其计算机制不同，主要借助于高效的命题逻辑可满足求解器进行计算\cite{zhai2014asp}。本节将讲述ASP逻辑程序的语义和主要性质，如环和环公式等。
+
+经典逻辑程序一般情况下只能推出正文字的结论，而实际情况下，我们也是需要负文字结论的。Reiter提出的封闭世界假定\cite{reiter1978closed}和Clark的失败即否定以类似的思想为逻辑程序可以推出负文字形式的结论带来了支持。
+
+失败即否定的基本思想就是：无法证明一个命题为真，则判定其为假。这也是最为自然的一种逻辑假定。在ASP逻辑程序中一些规则的体部会出现“$not~A$”这样的文字，而对于这个文字，我们可以直观地把它看作是命题:“不能确定$A$为真”，所以如果ASP逻辑程序中不能推出$A$为真，则可以推出$not~A$为真。失败即否定中这种推理过程其实是一种倾向否定的假定逻辑。即使当前推出$not~A$为真，那是基于暂时无法推出$A$为真。一旦加入新的规则，可以推出$A$为真，那么原来的$not~A$则被认为是假。这一点恰恰是非单调逻辑的本质所在：加入新的结论时可能会推翻之前结论的有效性。
+
+在失败即否定之外，ASP逻辑程序中还引入了对经典否定。不过这里说的引入是操作层面上的非语法上的\cite{ji2010phd}。ASP逻辑程序中只通过失败即否定的$not$来表示负文字。对于经典否定，即经典逻辑下的非，ASP逻辑程序通过加入新原子和约束来引入经典否定。
+
+如：为了表示原子$p$的经典否定，可以定义新原子$p\_$，并向原逻辑程序中加入约束“$\leftarrow~p,p\_.$”，保证了$p$和$p\_$不能同时为真。这样就将含有经典否定的逻辑程序转化为不含经典否定的逻辑程序。
+
+非单调逻辑最初是为了解决框架问题（$frame~problem$）和缺省规则（$default~rule$）的推理\cite{ji2010phd}。在非单调逻辑的发展过程中，自上世纪七十年代起，主要出现了缺省逻辑（$Default~Logic$）、自认知逻辑（$Auto-epistemic~Logic$）和限定理论（$Circumscription$）\cite{bonatti2010answer}。然而，这些理论由于缺乏高效的开发工具和不具备模块化程序设计并没有得到广泛应用\cite{zhai2014asp}。而一直到了1988年，Gelfond和Lifschitz提出了稳定模型语义（$Stable~Model~Semantic$）。稳定模型语义帮助解决了非单调推理无法解释失败即否定的问题。基于稳定模型语义进行的研究和扩展，发展出回答集编程这个领域。
+
+回答集编程所涉及的语法即2.2节中介绍的逻辑程序的内容。现在，我们来介绍回答集编程的语义和主要属性，从ASP逻辑程序的回答集开始。
+
+
+\subsection{回答集编程的语义}
+
+Gelfond和Lifschitz提出了稳定模型语义（$Stable~Model~Semantic$）时，也给出了一个规约方法，以化简一个ASP逻辑程序中的失败即否定。
+
+
+\begin{definition}[G-L规约]
+	给定一个原子集$S$和逻辑程序$P$，$P$基于$S$的G-L规约记为$P^S$。逻辑程序$P$通过以下两个化简规则得到$P^S$：
+	
+	\begin{itemize}
+		\item 若一个规则的体部中有$not~p$，且$p \in S$，则删掉该规则；
+		\item 对剩下的所有规则，删除体部中的$not~p$，$p$为$Atoms(P)$中任意一个原子。
+	\end{itemize}
+\end{definition}
+
+\begin{example}
+	已知原子集$S=\{a,b,c\}$，且逻辑程序$P$如下：
+	
+	\begin{eqnarray}
+		a~\leftarrow~b,~c.	\\
+		e~\leftarrow~b,~not~a.  \\
+		f~\leftarrow~not~e.
+	\end{eqnarray}
+	
+	根据G-L规约的规则，$P$中第二条规则的负文字中包含$S$里的原子，所以直接删掉；$P$中第三条规则的负文字中包含$S$以外的原子，所以只把负文字删掉。
+	
+	所以$P^S$为：
+	
+	\begin{eqnarray}
+	a~\leftarrow~b,~c.	\\
+	f.
+	\end{eqnarray}
+	
+	显然，通过G-L规约进行化简后得到的新逻辑程序$P^S$是一个不包含任何失败即否定的逻辑程序。这样的逻辑程序只有一个唯一的极小的模型，我们称这个模型为稳定模型（$stable~model$），并记其为$\gamma(P^S)$。
+\end{example}
+
+
+\begin{theorem}
+	对于一个不含约束的正规逻辑程序（$NLP~Without~Constraints$） $P$和一个原子集$S$，$S$是$P$的一个回答集（$Answer~Set$）当前仅当$S= \gamma (P^S)$。
+\end{theorem}
+
+对于包含有约束的逻辑程序，我们依旧可以通过G-L规约来定义其回答集，通过对程序中的约束和一般规则分离式判断即可。
+
+\begin{theorem}
+对于一个包含约束的正规逻辑程序（$NLP~With~Constraints$）$P$和一个原子集$S$，$S$是$P$的一个回答集（$Answer~Set$）当前仅当$S= \gamma (PD^S)$，且$S$满足$P$中的所有约束。其中$PD$是$P$去掉所有约束后所得到的逻辑程序。
+\end{theorem}
+
+Gefond和Lifschitz在1991年对析取逻辑程序（DLP）的回答集定义进行了补充。关于析取逻辑程序的回答集，依旧可以通过G-L规约得到。对一个析取逻辑程序$P$进行G-L规约后得到的程序记为$P^S$，$P^S$里不再含有$not$，然而不同于正规逻辑程序（NLP），该逻辑程序将有一系列集合意义上的极小模型，这里记为$\Psi (P^S)$。若一个原子集$S$是$\gamma (P^S)$中的元素，则$S$是逻辑程序$P$的回答集\cite{gelfond1991classical}。
+
+\begin{theorem}
+	给定一个析取逻辑程序$P$和一个原子集$S$，$S$是$P$的一个回答集（$Answer~Set$）当前仅当$S \in \Psi (P^S)$。
+\end{theorem}
+
+在介绍了ASP逻辑程序的回答集后，接下来将说明ASP逻辑程序中的一个重要性质，即ASP逻辑程序中的环以及对应的环公式。
+
+
+
+\subsection{回答集编程的主要性质：环与环公式}
+
+Lin和Zhao则在2002年时给出了正规逻辑程序中的环，同时使用命题公式基于环定义了其环公式\cite{lin2004assat}。Lee和Lifschitz在2003年时给出了析取逻辑程序中的环的概念\cite{lee2003loop}。
+
+在给出具体的环及环公式定义前，需要先给出一个逻辑程序的正依赖图（$Positive~Dependence~Graph$）的定义。
+
+
+\begin{definition}[正依赖图]
+	已知一个逻辑程序$P$，以$P$中的原子作为顶点，规则作为构成边的依据，可以构造出一个有向连通图，称其为逻辑程序$P$的正依赖图，记为$G_P$。其中，当存在$P$中的一个规则形如$p \in head(r)$且$q \in body^+(r)$，则正依赖图中存在一条从原子$p$指向原子$q$的有向边。
+\end{definition}
+
+
+\begin{example}
+	给定逻辑程序$P$如下：
+	
+	\begin{eqnarray}
+		a~\leftarrow~not~d.	\\
+		d~\leftarrow~not~c.	\\
+		a~\leftarrow~c,~d.	\\
+		c~\leftarrow~a.
+	\end{eqnarray}
+	
+	根据定义，关于逻辑程序P的正依赖图如下：
+	
+	\begin{figure}[htb]
+		\center
+		\includegraphics[width=300pt]{img/dpg.png}\\
+		\caption{$P$的正依赖图}\label{fig:trp}
+	\end{figure}
+\end{example}
+
+有了正依赖图后，我们引入基于正依赖图拓扑结构所定义的环。
+
+
+\begin{definition}[环\cite{lin2004assat}]
+	给定一个逻辑程序$P$，对于$Atoms(P)$的任意非空子集$L$，如果对于$L$中的任意两个原子$p$、$q$，$G_P$中都有至少一条长度大于0的路径使得$p$可达$q$，则称$L$是$P$的一个环（$Loop$）。此外，任意单原子集合也属于一个环。
+\end{definition}
+
+逻辑程序的环实质上就是其对应的正依赖图中的强连通分量。逻辑程序的环还有一个重要性质用于定义环公式，那就是环的外部支持规则（$External~Support~Rules$）。环的外部支持是一个规则集合。环$L$在逻辑程序$P$中的外部支持规则用集合符号定义如下：
+
+\begin{equation}
+	R^-(L,P)~=~\{r \in P~|~head(r) \cap L \neq \emptyset,~body^+(r) \cap L = \emptyset  \}
+\end{equation}
+
+还可以更进一步地定义环$L$在逻辑程序$P$中基于原子集$X$的外部支持规则，用集合符号定义如下：
+
+\begin{equation}
+	R^-(L,P,X)~=~\{r \in R^-(L,P)~|~X \models body(r) \land \bigwedge_{q \in head(r) \\ L} \neg q \}
+\end{equation}
+
+\begin{definition}[环公式\cite{lin2004assat}]
+	给定逻辑程序$P$，对于其中的任意一个环$L$，$R^- (L,P)$为$L$在$P$中的外部支持规则，$L$对应的环公式记为$LF(L,P)$，定义如下：
+	
+	\begin{equation}
+		\bigwedge_{p \in L} p \supset \bigvee_{r \in R^-(L,P)} (body(r) \land \bigwedge_{q \in head(r) \\ L} \neg q)
+	\end{equation}
+\end{definition}
+
+
+\begin{proposition}\cite{lee2003loop}
+	给定一个逻辑程序$P$和一个原子集合$S$。如果$S$满足$P$，则以下说法是等价的：
+	
+	\begin{itemize}
+		\item $S$是$P$的一个回答集；
+		\item $S$满足$P$中所有环$L$的环公式$LF(L,P)$；
+		\item $S$满足$Atoms(P)$所有非空子集$E$的环公式$LF(E,P)$。
+	\end{itemize}
 \end{proposition}
 
 
+研究ASP逻辑程序中的环，是很有意义的。在ASP逻辑程序中，使用SAT求解器得到的模型不完全是ASP逻辑程序的回答集。其根本原因就在于环的存在。如果ASP逻辑程序中存在环，即存在环内所有原子相互推导的行为，即环内的原子相互推导对方为真，这样就会产生大量模型。然而，从回答集语义出发，这其中如果没有事实或者失败即否定的支持，推导不成立，所以这些模型不是回答集。而环公式就是提取正体部原子全在环外的规则以支持环内原子的成立，这也是外部支持规则的名字由来。基于这样的事实，Lin和Zhao提出了使用环公式求解ASP逻辑程序回答集的方法，并实现了ASP求解器——ASSAT。
 
-章衡\cite{zhang2011Decidability}在近几年的研究中提出了将稳定模型语义下一阶语句翻译成稳定模型语义下的全称一阶语句的方法，即消去了存在量词。该方法的主要思想如下定义：
-\begin{definition}\label{def_smfo2smufo}
-\textbf{(文献\cite{zhang2011Decidability}定义5.3)} 任意给定形如$\forall\bar{x}\exists\bar{y}\theta(\bar{x},\bar{y})$ 的一个一阶语句$\varphi$，定义$tr_{QE}(\varphi)$
-为下述公式的合取式的一阶全称闭包：
-\begin{eqnarray}
-    \neg\neg S(\bar{x},\overline{min}) \\
-    (\overline{succ}(\bar{y},\bar{z})~\wedge~S(\bar{x},\bar{z}))~\vee~\theta^{\neg\neg}(\bar{x},\bar{y})~\rightarrow~S(\bar{x},\bar{y}) \\
-    T(\bar{x},\overline{min})~\vee~\theta(\bar{x},\overline{min}) \\
-    \neg(\overline{succ}(\bar{y},\bar{z})~\wedge~S(\bar{x},\bar{z}))~\wedge~S(\bar{x},\bar{y})~\rightarrow~(T(\bar{x},\overline{max})~\leftrightarrow~\theta(\bar{x},\bar{y})) \\
-    \overline{succ}(\bar{y},\bar{z})~\rightarrow~(T(\bar{x},\bar{y})~\leftrightarrow~\theta(\bar{x},\bar{z})~\vee~T(\bar{x},\bar{z}))
-\end{eqnarray}
+在介绍Lin和Zhao的结论之前，先引入逻辑程序的完备（$Completion$）。逻辑程序的完备的具体定义如下：
 
-令$n$为序列$\bar{x}$与$\bar{y}$的长度之和，其中：
-\begin{enumerate}
-  \item $\theta^{\neg\neg}$是由$\theta$将所有原子公式$P(\bar{t})$替换为$\neg\neg P(\bar{t})$后得到的公式；
-  \item $\overline{min}$和$\overline{max}$分别表示$n$元组$(min,...,min)$和$(max,...,max)$，$\overline{succ}$描述$succ$所定义序被推广到$n$元组后得到的后继关系；
-  \item $S$和$T$是不在$\varphi$中出现的两个$n$ 元新谓词常元。
-\end{enumerate}
 
-对任意一个一阶稳定理论$(\varphi;\sigma)$，若$\varphi$是一个形如$\forall\bar{x}\exists\bar{y}\theta$的一阶语句，定义$Tr_{QE}(\mathbf{SM}[\varphi;\sigma])~=~\exists S\exists T\mathbf{SM}[tr_{QE}(\varphi);\sigma,S,T]$，
-其中$S,T$是由$tr_{QE}$引入的辅助谓词。
+\begin{definition}[完备\cite{lin2004assat}]
+	给定一个逻辑程序$P$，其完备（$Completion$），记为$Comp(P)$。$Comp(P)$是以下规则的集合：
+	
+	\begin{itemize}
+		\item 对于任意$p \in Atoms(P)$，$P$中所有以$p$作为头部的规则形如$p \leftarrow G_k$，则$p \equiv G_1 \lor G_2 \lor ... \lor G_n$为$Comp(P)$中的元素，特别地，如果一个原子$p$没有作为头部出现过，那么把$\neg p$加入到$Comp(P)$中；
+		\item 对于$P$中的所有限制，形如$\leftarrow~G_k$，把$\neg~G_k$加入到$Comp(P)$中。
+	\end{itemize}
 \end{definition}
 
-$Tr_{QE}$被证明在后继结构上保持等价关系。在这个存在量词消去的定义\ref{def_smfo2smufo}中，引入了三个具有后继结构的常元符号，分别为$min$、$max$和$succ$，$min$和$max$是个体常元，$succ$是谓词常元。参考文献\cite{zhang2011translating}给出后继结构的定义：
-\begin{definition}\label{def_succ}
-称一个结构$\mathfrak{A}$是一个后继结构当且仅当满足下面两个条件同时成立：
-\begin{enumerate}
-  \item $\mathfrak{A}$的符号集是一个后继符号集；
-  \item 在关系$\mathfrak{A}(succ)$，论域中每一个元素至多有一个直接前继和一个直接后继，且无前继当且仅当该元素为$\mathfrak{A}(min)$，无后继当且仅当该元素为$\mathfrak{A}(max)$。
-\end{enumerate}
+
+\begin{example}
+	有以下逻辑程序$P$：
+	
+	\begin{eqnarray}
+		a~\leftarrow~b,~c,~not~d.	\\
+		a~\leftarrow~b,~not~c,~not~d.	\\
+		\leftarrow~b,~c,~not~d.
+	\end{eqnarray}
+	
+	则其完备$Comp(P)$为：
+	
+	\begin{equation}
+		\{ a \equiv (b \land c \land \neg d) \lor (b \land \neg c \land \neg d),~\neg b,~\neg c,~\neg d,~\neg (b \land c \land \neg d) \}
+	\end{equation}
+\end{example}
+
+
+在有了逻辑程序完备的概念后，我们引入一个新的回答集求解方法。
+
+
+\begin{theorem}\cite{lin2004assat}
+	给定逻辑程序$P$，记$Comp(P)$为其完备，$LF$表示$P$中所有环的环公式集合。一个原子集$S$是逻辑程序$P$的回答集，当且仅当它是$Comp(P) \cup LF$的一个模型。
+\end{theorem}
+
+
+Lin和Zhao所提出的环及环公式在后续至今的时间被不断使用。Gebser在2010年时提出了基本环（$Elementary~Loop$）\cite{gebser2011elementary}，其是一系列可以代表其他环的环，Gebser还将基本环应用到clasp求解器中。2014年，Ji和Wan等在Gebser的基本环的基础上更进一步地在正规逻辑程序中提出了更具有代表性的特征环（$Proper~Loop$）\cite{ji2014elementary}，并在不久后将特征环拓展到析取逻辑程序\cite{ji2015elementary}。
+
+
+
+
+\section{分割集与程序分割}
+
+
+Lifschitz和Turner在1994年时便提出了分割集（$Splitting~Set$）的概念。其本意是为了把逻辑程序划分成若干个较小规模的程序，然后通过这些小规模的程序的回答集去求解原程序的回答集。由于逻辑程序的规模对求解效率有很大的影响，通过把逻辑程序的规模降低，把指数性的关系降为加性关系，将大大有助于提高逻辑程序的求解效率。但ASP逻辑程序是非单调的，要达到分割程序后得到的回答集是原程序的回答集，需要满足一定的条件\cite{ji2010phd}。
+
+Lifschitz和Turner在给出分割集的概念后，也基于分割集提出了相应的程序分割（$Program~Splitting$）方法。程序分割方法具体就是根据定义找出分割集，通过分割集把原程序分割为底部（$bottom$）和顶部（$top$）两部分，并且证明原程序的回答集可以通过$bottom$和$top$两部分的回答集所求得。
+
+
+\begin{definition}[分割集\cite{lifschitz1994splitting}]
+	给定一个逻辑程序$P$，其分割集（$Splitting~Set$）是一个原子集，标记为$U$，分割集$U$需要满足：对于任意的规则$r \in P$，$head(r) \cap U \neq \emptyset$蕴涵$Atoms(r)\subseteq U$。
 \end{definition}
 
-后继结构可以类比一个正整数结构$\mathbb{Z}_n$，其中$n~=~|\mathbb{Z}_n|$，例如集合$\{0,...,n-1\}$，$\mathfrak{A}(succ)$对应该集合上的后继关系，$\mathfrak{A}(min)$和$\mathfrak{A}(max)$分别对应$0$和$n-1$。
-在后续的章节中，会使用到这一类后继结构，假定一般的公式符号集中不存在这三个常元符号。
 
-章衡\cite{zhang2011translating}同样给出了一阶限定理论到一阶稳定理论的翻译，此翻译没有处理可变谓词的情形，但是给本文的研究提供了重要的翻译思路。
+直观地，分割集中原子对应为逻辑程序$P$的正依赖图中出度为零的顶点\cite{ji2010phd}。基于分割集，可以把原程序划分成$bottom$和$top$两部分，具体定义如下：
+
+
+\begin{definition}[底部和顶部\cite{lifschitz1994splitting}]
+	给定一个逻辑程序$P$，及其分割集$U$，标记$P$的底部为$b_U(P)$，顶部为$t_U(P)$，使用集合符号定义为：
+	
+	\begin{eqnarray}
+		b_U(P) = \{ r \in P~|~head(r) \cap U \neq \emptyset \}	\\
+		t_U(P) = P~\backslash~b_U(P)
+	\end{eqnarray}
+	
+	其中“$\backslash$”为集合减。
+\end{definition}
+
+明显地，逻辑程序的$bottom$是把分割集$U$相关的规则都抽取出来，而$top$则是头部与分割集$U$无关的规则集合。$\emptyset$和$Atoms(P)$是任意一个逻辑程序P的分割集\cite{ji2010phd}。
+
+为了求解原程序的回答集，需要引入化简操作，Lifschitz和Turner定义了操作$e_U(P,X)$来联合$bottom$的回答集和$top$求出另一部分的回答集。
+
+
 \begin{definition}
-\textbf{(文献\cite{zhang2011Decidability}定义6.1)} 设$v$为谓词常元的一个有穷集，分情况进行如下定义：若$\varphi$为无蕴含否定范式，令$F_{\varphi}$为不在$\varphi$中出现的一个0元辅助谓词，令$\hat{tr}_{c2sm}^v(\varphi)$为如下公式：
-\begin{eqnarray}
-% \nonumber to remove numbering (before each equation)
-  \varphi^{\neg\neg}~\wedge~\varphi^{-}~\wedge~F_{\varphi}~\rightarrow~\bigwedge_{Q\in v}\forall\bar{x}(Q(\bar{x})~\vee~\neg Q(\bar{x}))
-\end{eqnarray}
-其中：
-\begin{enumerate}
-  \item $\varphi^{\neg\neg}$为将$\varphi$中所有形如$P(\bar{t})$（$P~\in~v$）的公式替换为$\neg\neg P(\bar{t})$后所得的公式；
-  \item $\varphi^{-}$为将$\varphi$中所有形如$\neg P(\bar{t})$（$P~\in~v$）的公式替换为$(P(\bar{t})\rightarrow F_{\varphi})$后所得的公式。
-\end{enumerate}
+	给定逻辑程序$P$，$X$和$U$为原子集合，定义操作$e_U(P,X)$如下：
+	
+	\begin{itemize}
+		\item 删除符合以下条件的规则$r$：$head(r) \cap X \neq \emptyset$且$body^+(r) \cap U \nsubseteq X$，或者$(body^-(r) \cap U) \cap X \neq \emptyset$；
+		\item 在剩下的规则的体部中把所有形如$a$或$not~a$，其中$a \in U$的文字删掉。
+	\end{itemize}
 \end{definition}
 
-\begin{theorem}
-$\hat{Tr}_{c2sm}$是从$\mathrm{CIRC}[FO]$到$\mathrm{SM}[FO]$保持一般结构上投影等价的翻译。
+
+\begin{definition}\label{asp_solution}
+	给定逻辑程序$P$，及其分割集$U$，$P$关于$U$的一个方案（$Solution$）是一个原子集组合$\langle X,Y \rangle$，具体如下：
+	
+	\begin{itemize}
+		\item $X$是$b_U(P)$的回答集；
+		\item $Y$是$e_U(P \backslash b_U(P), X)$的回答集。
+	\end{itemize}
+\end{definition}
+
+
+
+\begin{example}
+	考虑逻辑程序$P$：
+	
+	\begin{eqnarray}
+		a~\leftarrow~not~d.	\\
+		d~\leftarrow~not~c.	\\
+		a~\leftarrow~c,~d.	\\
+		c~\leftarrow.
+	\end{eqnarray}
+	
+	根据定义可知$U=\{c,d\}$是$P$的一个分割集，并且可以计算得到$b_U(P)=\{d \leftarrow not~c.~c \leftarrow.\}$，而$P \backslash b_U(P) = \{a \leftarrow not~d.~a \leftarrow c,~d.\}$，$\{c\}$是$b_U(P)$的回答集，故令$X=\{c\}$，有$e_U(P \backslash b_U(P),X)=\{a \leftarrow.\}$，其回答集为$\{a\}$。$\langle \{c\},\{a\} \rangle$则是$P$关于$U$的一个方案，于本例也是唯一的方案。
+\end{example}
+
+
+关于原程序的回答集，可以通过上述定义的逻辑程序关于分割集的方案得到，Lifschitz和Turner给出了分割集理论就是证明了如果从方案得到回答集。
+
+
+\begin{theorem}[分割集理论\cite{lifschitz1994splitting}]
+	已知逻辑程序$P$和其分割集$U$，则一个原子集$S$是逻辑程序$P$的回答集，当且仅当$S = X \cup Y$，其中$\langle X,Y \rangle$是$P$关于$U$的一个方案。
 \end{theorem}
 
-\section{析取逻辑程序}
 
-逻辑程序是一种知识表示语言，一个逻辑程序是由多个\textmd{规则}组成，一个规则分为两部分：\textmd{头部}（$Head$）和\textmd{体部}（$Body$），如果体部不为空，使用符号$\leftarrow$将其区分：
-\begin{align*}
-    Head~\leftarrow~Body.
-\end{align*}
-如果体部为空，则可以省略符号$\leftarrow$。
+关于回答集编程的基础知识和分割集理论的主要知识介绍到此。接下来将进入本文的主要内容，介绍新的分割集和新的程序分割方法，以及通过具体的应用场景来体现分割集的意义。
 
-一个\textmd{正规逻辑程序}（Normal Logic Program，记为LP[$\neg$]）由多个子句构成，子句形式为
-\begin{equation}
-    C~\leftarrow~L_1,...,L_k.
-\end{equation}
-其中头部$C$是正文字，体部$L_1,...,L_k(k\geq 0)$是文字。一个文字要么是一个原子（即正文字），要么是形如$\mathbf{not}~A$的公式，其中$A$ 是原子。
-
-一个\textmd{标准析取逻辑程序}（Standard Disjunction Logic Program，记为DLP）由多个子句构成，子句形式为
-\begin{equation}
-    A_1~\vee~\cdot\cdot\cdot~\vee~A_k~\leftarrow~B_1,...,B_m.
-\end{equation}
-其中$k\geq 1,m\geq 0$，$A_i(1\leq i\leq k)$、$B_i(1\leq i\leq m)$都是原子。
-
-一个\textmd{正规析取逻辑程序}（Normal Disjunction Logic Program，记为DLP[$\neg$]）由多个子句构成，子句形式为
-\begin{equation}
-    A_1~\vee~\cdot\cdot\cdot~\vee~A_k~\leftarrow~B_1,...,B_m,\mathbf{not}~C_1,...,\mathbf{not}~C_n.
-\end{equation}
-其中$k\geq 1,m\geq 0,n\geq 0$，$A_i(1\leq i\leq k)$、$B_i(1\leq i\leq m)$、$C_i(1\leq i\leq n)$都是原子。
-
-
-一个\textmd{扩展析取逻辑程序}（Extended Disjunction Logic Program，记为DLP[$\neg\neg$]）由多个子句构成，子句中同时包含了经典的$\neg$和“否定即失败”的$\mathbf{not}$，子句形式为
-\begin{equation}\label{form_dlpnn}
-    A_1~\vee~\cdot\cdot\cdot~\vee~A_k~\leftarrow~B_1,...,B_m,\mathbf{not}~C_1,...,\mathbf{not}~C_n.
-\end{equation}
-其中$k\geq 1,m\geq 0,n\geq 0$，$A_i(1\leq i\leq k)$、$B_i(1\leq i\leq m)$、$C_i(1\leq i\leq n)$都是文字。
-
-对于形如式(\ref{form_dlpnn})的规则，等价于如下一阶语句：
-\begin{equation}
-    \forall \bar{x}(B_1~\wedge~\cdot\cdot\cdot~\wedge B_m~\wedge~\neg C_1~\wedge~\cdot\cdot\cdot~\wedge~\neg C_n~\rightarrow~A_1~\vee~\cdot\cdot\cdot~\vee~A_k)
-\end{equation}
-其中$\bar{x}$是$A_i(1\leq i\leq k)$、$B_i(1\leq i\leq m)$、$C_i(1\leq i\leq n)$中出现的所有变元元组。这样一个逻辑程序等价一阶语句就是该程序所有规则对应的一阶语句的合取（因为逻辑程序中所有的语句都应成立，
-所以所有的这些一阶表示语句应该是合取的关系）。
-
-下面介绍逻辑程序的稳定模型语义，首先先介绍\textmd{$Herbrand$模型}。设$\Pi$为一个逻辑程序，包含的$\Pi$中所有常量的集合称为$\Pi$的\textmd{$Herbrand$域}（Herbrand universe），\textmd{常项}（ground term）是没有变量出现的项，因此\textmd{$Herbrand$域}包含了所有\textmd{常项}。一个\textmd{常原子}（ground atom）是一个谓词中仅出现常项的原子。\textmd{$Herbrand$基}（Herbrand base）是包含所有常原子的集合。设$\Pi$的一个\textmd{$Herbrand$解释}为$\mathfrak{I}$，该解释是取$\Pi$的$Herbrand$域为论域，将$\Pi$中的常项和常原子指派为它们自己，将$\Pi$中的谓词指派成$Herbrand$域中相同元数的关系，如果$\mathfrak{I}~\models~\Pi$，则$\mathfrak{I}$是$\Pi$的一个\textmd{$Herbrand$模型}（Herbrand model）。例如，逻辑程序$\Pi~=~\{p(1),q(2),q(x)\leftarrow p(x)\}$有两个$Herbrand$模型：
-\begin{equation}\label{form_herbrandmodel1}
-    \{p(1),q(1),q(2)\}
-\end{equation}
-和
-\begin{equation}\label{form_herbrandmodel2}
-    \{p(1),p(2),q(1),q(2)\}
-\end{equation}
-$\Pi$的一个$Herbrand$模型是极小的，当且仅当该模型的真子集都不是$\Pi$的$Herbrand$模型。上述例子中，(\ref{form_herbrandmodel1})是极小模型，而(\ref{form_herbrandmodel2})不是极小模型。
-具体关于Herbrand理论可以参考文献\cite{ben2001mathematical}。
-\begin{theorem}\label{thm_smsherbrand}
-（\textbf{文献\cite{gelfond1988stable}定理1}）设$\Pi$为一个逻辑程序，$\Pi$的任意一个稳定模型都是$\Pi$的一个极小$Herbrand$模型。
-\end{theorem}
-
-定理\ref{thm_smsherbrand}给出了逻辑程序的稳定语义，$\Pi$的符号集为$v$，一个结构$\mathfrak{A}$是$\Pi$关于$v$的一个稳定模型当且仅当$\mathfrak{A}$是$\textbf{SM}[\Pi;v]$的模型。
-
-
-在文献\cite{cabalar2005reducing}中，Cabalar等人给出了从任意全称稳定理论转化为析取逻辑程序的方法，主要包括两个
-转换规则集，为了不失一般性，在规则集中所有的蕴含式都先被转换成稳定语义下的否定范式。有如下将否定前缀向内移动，直到变成NNF的规则：
-\begin{align*}
-% \nonumber to remove numbering (before each equation)
-  \neg \top ~~&\Longleftrightarrow~~ \bot &(\mathrm{N1})&&
-  \neg \bot ~~&\Longleftrightarrow~~ \top &(\mathrm{N2}) \\
-  \neg\neg\neg\varphi ~~&\Longleftrightarrow~~ \neg\varphi &(\mathrm{N3})&&
-  \neg(\varphi~\wedge~\psi) ~~&\Longleftrightarrow~~ \neg\varphi~\vee~\neg\psi &(\mathrm{N4}) \\
-  \neg(\varphi~\vee~\psi) ~~&\Longleftrightarrow~~ \neg\varphi~\wedge~\neg\psi &(\mathrm{N5})&&
-  \neg(\varphi~\rightarrow~\psi) ~~&\Longleftrightarrow~~ \neg\neg\varphi~\wedge~\neg\psi &(\mathrm{N6})
-\end{align*}
-
-
-下面列出两个主要的规则集，在下面的规则表示中，将$\alpha$看成合取式，$\beta$看成析取式（如果不是，就把他们当成
-$\alpha~\wedge~\top$，$\beta~\vee~\bot$）。
-
-左规则：
-\begin{align*}
-% \nonumber to remove numbering (before each equation)
-  \top~\wedge~\alpha~\rightarrow~\beta ~~&\Longleftrightarrow~~ {~\alpha~\rightarrow~\beta~} \tag{L1} \\
-  \bot~\wedge~\alpha~\rightarrow~\beta ~~&\Longleftrightarrow~~ \emptyset \tag{L2} \\
-  \neg\neg\varphi~\wedge~\alpha~\rightarrow~\beta ~~&\Longleftrightarrow~~ {~\alpha~\rightarrow~\neg\varphi~\vee~\beta~} \tag{L3} \\
-  (\varphi~\vee~\psi)~\wedge~\alpha~\rightarrow~\beta ~~&\Longleftrightarrow~~ \left\{
-        \begin{array}{rll}
-            \varphi~\wedge~\alpha~&\rightarrow~\beta \\
-            \psi~\wedge~\alpha~&\rightarrow~\beta
-        \end{array}
-    \right\} \tag{L4} \\
-  (\varphi~\rightarrow~\psi)~\wedge~\alpha~\rightarrow~\beta ~~&\Longleftrightarrow~~ \left\{
-        \begin{array}{rll}
-            \neg\varphi~\wedge~\alpha~&\rightarrow~\beta \\
-            \psi~\wedge~\alpha~&\rightarrow~\beta \\
-            \alpha~&\rightarrow~\varphi~\vee~\neg\psi~\vee~\beta
-        \end{array}
-    \right\} \tag{L5}
-\end{align*}
-
-右规则：
-\begin{align*}
-% \nonumber to remove numbering (before each equation)
-  \alpha~\rightarrow~\bot~\vee~\beta ~~&\Longleftrightarrow~~ {\alpha~\rightarrow~\beta} \tag{R1} \\
-  \alpha~\rightarrow~\top~\vee~\beta ~~&\Longleftrightarrow~~ \emptyset \tag{R2} \\
-  \alpha~\rightarrow~\neg\neg\varphi~\vee~\beta ~~&\Longleftrightarrow~~ {\neg\varphi~\wedge~\alpha~\rightarrow~\beta} \tag{R3} \\
-  \alpha~\rightarrow~(\varphi~\wedge~\psi)~\vee~\beta ~~&\Longleftrightarrow~~ \left\{
-        \begin{array}{rll}
-            \alpha~&\rightarrow~\varphi~\vee~\beta \\
-            \alpha~&\rightarrow~\psi~\vee~\beta
-        \end{array}
-    \right\} \tag{R4} \\
-  \alpha~\rightarrow~(\varphi~\rightarrow~\psi)~\vee~\beta ~~&\Longleftrightarrow~~ \left\{
-        \begin{array}{rll}
-            \varphi~\wedge~\alpha~&\rightarrow~\psi~\vee~\beta \\
-            \neg\psi~\wedge~\alpha~&\rightarrow~\neg\varphi~\vee~\beta
-        \end{array}
-    \right\} \tag{R5}
-\end{align*}
-
-对于规则(R5)，当$\beta~=~\bot$时，会发现第二条规则遵从第一条规则，因此，可以有一个特殊的版本如下：
-\begin{equation}
-    \alpha~\rightarrow~(\varphi~\rightarrow~\psi)~\Longleftrightarrow~{~\varphi~\wedge~\alpha~\rightarrow~\psi~} \tag{R5'}
-\end{equation}
-
-回答集程序（Answer Set Programming，简写为ASP）是基于稳定模型语义的逻辑程序，使用陈述语句编写的形式，用于求解较难（主要是NP-难问题）的搜索问题。最近几年，随着回答集求解器的出现，答集程序在知识表示方面发展成为了一个可行方案，目前较为流行的回答集求解器有ClaspD\cite{gebser2007conflict}、DLV\cite{leone2006dlv}、GnT\cite{janhunen2006unfolding}
-和Smodels\cite{niemela1997smodels}。
-%Recently, with the emergence of answer set solvers such asdlv[19], GnT [15],
-%andsmodels [36], answer set programming (ASP) is developing as a prac-tical and viable environment for knowledge representation and declarative
-%problem solving. Applications in artificial intelligence include planning and
-%diagnosis [2],
-%clark's completion
 

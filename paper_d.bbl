@@ -121,39 +121,84 @@ Luger G~F.
 \newblock 人工智能: 复杂问题求解的结构和策略: 英文版{\textperiodcentered} [M].
 \newblock 机械工业出版社, 2003.
 
-\bibitem{enderton2001mathematical}
-Enderton H, Enderton H~B.
-\newblock A mathematical introduction to logic [M].
-\newblock Academic press, 2001.
-
-\bibitem{lifschitz1994circumscription}
+\bibitem{lifschitz2008answer}
 Lifschitz V.
-\newblock Circumscription [C].// Handbook of logic in artificial intelligence
-  and logic programming.
-\newblock vol~3. Oxford University Press, Inc.
-\newblock 1994:  297--352.
+\newblock What Is Answer Set Programming?. [C].// AAAI.
+\newblock vol~8.
+\newblock 2008:  1594--1597.
 
-\bibitem{mccarthy1986applications}
-McCarthy J.
-\newblock Applications of circumscription to formalizing common-sense knowledge
+\bibitem{reiter1978closed}
+Reiter R.
+\newblock On closed world data bases [M].
+\newblock Springer, 1978.
+
+\bibitem{bonatti2010answer}
+Bonatti P, Calimeri F, Leone N, et~al.
+\newblock Answer set programming [C].// A 25-year perspective on logic
+  programming.
+\newblock Springer-Verlag.
+\newblock 2010:  159--182.
+
+\bibitem{gelfond1991classical}
+Gelfond M, Lifschitz V.
+\newblock Classical negation in logic programs and disjunctive databases [J].
+\newblock New generation computing, 1991, 9(3):365--385.
+
+\bibitem{lin2004assat}
+Lin F, Zhao Y.
+\newblock ASSAT: Computing answer sets of a logic program by SAT solvers [J].
+\newblock Artificial Intelligence, 2004, 157(1):115--137.
+
+\bibitem{lee2003loop}
+Lee J, Lifschitz V.
+\newblock Loop formulas for disjunctive logic programs [C].// Logic
+  Programming.
+\newblock Springer, 2003:  451--465.
+
+\bibitem{gebser2011elementary}
+Gebser M, Lee J, Lierler Y.
+\newblock On elementary loops of logic programs [J].
+\newblock Theory and Practice of Logic Programming, 2011, 11(06):953--988.
+
+\bibitem{ji2014elementary}
+Ji J, Wan H, Xiao P, et~al.
+\newblock Elementary Loops Revisited [C].// Twenty-Eighth AAAI Conference on
+  Artificial Intelligence.
+\newblock 2014.
+
+\bibitem{ji2015elementary}
+Ji J, Wan H, Xiao P.
+\newblock On Elementary Loops and Proper Loops for Disjunctive Logic Programs
   [J].
-\newblock Artificial Intelligence, 1986, 28(1):89--116.
+\newblock 2015.
 
-\bibitem{ferraris2011stable}
-Ferraris P, Lee J, Lifschitz V.
-\newblock Stable models and circumscription [J].
-\newblock Artificial Intelligence, 2011, 175(1):236--263.
+\bibitem{eiter1996normal}
+Eiter T, Gottlob G, Gurevich Y.
+\newblock Normal forms for second-order logic over finite structures, and
+  classification of NP optimization problems [J].
+\newblock Annals of Pure and Applied Logic, 1996, 78(1):111--125.
 
-\bibitem{pearce2005first}
-Pearce D, Valverde A.
-\newblock A first order nonmonotonic extension of constructive logic [J].
-\newblock Studia Logica, 2005, 80(2):321--346.
+\bibitem{janhunen2004capturing}
+Janhunen T, Oikarinen E.
+\newblock Capturing parallel circumscription with disjunctive logic programs
+  [C].// Logics in Artificial Intelligence.
+\newblock vol 3229.
+\newblock Springer, 2004:  134--146.
 
-\bibitem{zhang2011Decidability}
-章衡.
-\newblock
-\newblock 非单调逻辑的可判定性与可译性 [D].
-\newblock 北京: 清华大学, 2011.
+\bibitem{oikarinen2008implementing}
+Oikarinen E, Janhunen T.
+\newblock Implementing prioritized circumscription by computing disjunctive
+  stable models [C].// Artificial Intelligence: Methodology, Systems, and
+  Applications.
+\newblock vol 5253.
+\newblock Springer, 2008:  167--180.
+
+\bibitem{oikarinen2005circ2dlp}
+Oikarinen E, Janhunen T.
+\newblock CIRC2DLP—translating circumscription into disjunctive logic
+  programming [C].// Logic Programming and Nonmonotonic Reasoning.
+\newblock vol 3662.
+\newblock Springer, 2005:  405--409.
 
 \bibitem{zhang2011translating}
 Zhang H, Zhang Y, Ying M, et~al.
@@ -162,40 +207,5 @@ Zhang H, Zhang Y, Ying M, et~al.
   Intelligence-Volume Volume Two.
 \newblock AAAI Press.
 \newblock 2011:  1126--1131.
-
-\bibitem{ben2001mathematical}
-Ben-Ari M.
-\newblock Mathematical logic for computer science [M].
-\newblock Springer Verlag, 2001.
-
-\bibitem{cabalar2005reducing}
-Cabalar P, Pearce D, Valverde A.
-\newblock Reducing propositional theories in equilibrium logic to logic
-  programs [J].
-\newblock Progress in Artificial Intelligence, 2005, 3808:4--17.
-
-\bibitem{gebser2007conflict}
-Gebser M, Kaufmann B, Neumann A, et~al.
-\newblock Conflict-driven answer set solving [C].// Proceedings of the 20th
-  international joint conference on Artifical intelligence.
-\newblock 2007:  386--392.
-
-\bibitem{leone2006dlv}
-Leone N, Pfeifer G, Faber W, et~al.
-\newblock The DLV system for knowledge representation and reasoning [J].
-\newblock ACM Transactions on Computational Logic (TOCL), 2006, 7(3):499--562.
-
-\bibitem{janhunen2006unfolding}
-Janhunen T, Niemel{\"a} I, Seipel D, et~al.
-\newblock Unfolding partiality and disjunctions in stable model semantics [J].
-\newblock ACM Transactions on Computational Logic (TOCL), 2006, 7(1):1--37.
-
-\bibitem{niemela1997smodels}
-Niemel{\"a} I, Simons P.
-\newblock Smodels—an implementation of the stable model and well-founded
-  semantics for normal logic programs [C].// Logic Programming and Nonmonotonic
-  Reasoning.
-\newblock vol 1265.
-\newblock Springer, 1997:  420--429.
 
 \end{thebibliography}

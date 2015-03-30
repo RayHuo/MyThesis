@@ -1,66 +1,37 @@
-\chapter{一阶限定理论到稳定模型语义的翻译}
+\chapter{新分割集与程序分割}
 
-本章主要介绍求解器实现的理论部分，基于对一阶限定理论的研究，阐明了一阶限定理论和一阶稳定模型语义的关系，提出了在一般结构下从一阶限定理论到稳定模型语义的翻译，构成了求解器的核心算法。本章将分别介绍并行限定理论和优先级限定理论的翻译方法，并提出了翻译在有穷结构下优化的方法。
+本章基于对Lifschitz和Turner提出的分割集和程序分割理论的分析，提出了新的分割集和程序分割方法。实际上是提出了一个可以对任意原子集作为分割集都有效的程序分割方法。本章将分别给出正规逻辑程序和析取逻辑程序的新程序分割方法，然后提出一个强程序分割方法。最后以正规逻辑程序的程序分割方法为例，对新的程序分割方法的计算复杂性进行分析，并指出主要性能瓶颈所在及改进思路。
 
 
-\section{并行限定理论的翻译}
+\section{新分割集}
 
-章衡在论文\cite{zhang2011translating}中已经介绍了一阶限定理论到一阶稳定模型语义的一个等价翻译，但是该翻译中没有处理可变谓词的情况，即只能解决无可变谓词常元的限定理论。在本节中，我们提出了一般结构下，并行限定和优先级限定到到稳定模型语义的翻译。
+在给出新分割集之前，本文将对Lifschitz和Turner提出的分割集理论进行分析，然后基于他们对分割集的定义提出一个计算分割集的算法，并对ASP竞赛中的程序进行计算，对计算结果进行分析，随后给出本文定义的新分割集。
 
-%\subsection{并行限定理论到稳定语义的翻译}
 
-本小节主要关注于并行限定理论的翻译。对比并行限定的定义公式(\ref{form_defcirc})与稳定理论的定义公式(\ref{form_defsm})，它们主要的区别在于二阶部分的可变谓词部分，然而这些可变谓词$\sigma^*_{v}$并不参与谓词集的比较，翻译的主要困难在于不影响$\sigma^*_{i}<\sigma_i$和$\varphi$的情况下，不通过稳定模型语义下的比较而消去它们。因此，对于所有谓词$Q\in\sigma_v$，翻译算法引入与其有相同元数的辅助谓词常元$Q'$，如果使$Q'$为真的话，$Q'^*$在二阶公式中模拟了谓词变元$Q^*$。本文得到如下的翻译方法。
+\subsection{原有分割集和程序分割的分析证明}
 
-\begin{definition}\label{def_parallelcirc2sm}
-设$\varphi$为任意具有否定范式的一阶语句，$\sigma_i$和$\sigma_v$表示两个谓词常元集合，定义
-$Tr_{v}(\varphi;\sigma_i;\sigma_v)$为如下公式的合取：
-\begin{eqnarray}
-% \nonumber to remove numbering (before each equation)
-  \varphi^{\neg\neg}~\wedge~\widetilde{\varphi} \\
-  \gamma~\leftrightarrow~\bigwedge_{P \in \sigma_i}~ \forall \overline{x} (P(\overline{x})~\vee~P(\overline{x})) \label{form_defpar2}\\
-  \bigwedge_{Q \in \sigma_v}~ \forall \overline{x} (\gamma~\rightarrow~Q'(\overline{x})) \label{form_defpar3}
-\end{eqnarray}
-其中：
-\begin{enumerate}
-  \item $\varphi^{\neg\neg}$是将$\varphi$中所有形如$P(\overline{x})(P~\in~\sigma_i)$的公式替换为$\neg\neg P(\overline{x})$后所得到的公式；
-  \item $\widetilde{\varphi}$是将$\varphi$进行如下转换：(i)将所有形如$(P(\overline{x})\rightarrow\gamma)(P~\in~\sigma_i)$ 的公式替换为负文字$\neg P(\overline{x})$，(ii)将正文字$Q(\overline{x})(Q \in \sigma_v)$ 替换为$Q'(\overline{x})$，(iii)将形如$(Q'(\overline{x})\rightarrow \gamma)$的公式替换为负文字$\neg Q'(\overline{x})$，$Q'$是不出现在$\varphi$ 中的相对于$Q$的辅助谓词。
-\end{enumerate}
-\end{definition}
+Lifschitz和Turner给出的分割集定义是：一个原子集$U$称为一个逻辑程序$P$的分割集，当且仅当对$P$中的所有规则$r$都有$head(r) \cap U \neq \emptyset$蕴涵$Atoms(r) \subseteq U$。这个分割集定义的直观含义就是一个分割集若包含规则头部的原子，则也可以包含该规则的所有原子。这样的性质保证了分割集$U$可以把原程序从结构上划分成两部分，进而保证了原程序的回答集可以从分割后的两部分的回答集求解得到。Lifschitz和Turner在1994年的原文中只给出了程序分割方法的定义，即根据定义(\ref{asp_solution})分别求出底部$b_U(P)$和化简后的顶部$e_U(t_U(P),X)$的回答集$X$和$Y$，根据方案$\langle X,Y \langle$得到原程序的回答集。本文在这里补充给出这种分割方法的可行性证明。关于Lifschitz和Turner的程序分割方法可行性的证明如下。
 
-\begin{proposition}\label{pro_parallelcirc2sm}
-设$\varphi$为具有否定范式的任意一阶语句，$\sigma_i$和$\sigma_v$是连个谓词常元集合，则$\exists \sigma'_v \exists \gamma \mathbf{SM}[Tr_v(\varphi;\sigma_i;\sigma_v);\sigma_i;\sigma'_v,\gamma]$ 等价于$\mathbf{CIRC}[\varphi;\sigma_i;\sigma_v]$，其中$\sigma'_v$是相对于$\sigma_v$的辅助谓词常元集合。
-\end{proposition}
 
-根据并行限定定义的二阶公式(\ref{form_defcirc})和稳定模型语义的定义，对于上述定义和命题有如下的解释：
-\begin{itemize}
-  \item 公式$\varphi$为NNF的形式的意义在于，经典一阶下公式的等价性在限定理论中仍然适用，所以对于任意的一阶公式，在限定理论中都存在一个与之等价的否定范式，因此可以事先将其转成NNF，方便处理；
-  \item $\varphi^{\neg\neg}$的意义在于$\mathrm{St}(\varphi^{\neg\neg})$等价于$\varphi$；
-  \item $\tilde{\varphi}$的意义在于$\mathrm{St}(\tilde{\varphi})$等价于$\varphi^{*}$；
-  \item 公式(\ref{form_defpar2})的意义在于使得谓词$\gamma$恒为真，则$\gamma^{*}$恒为假，即满足$\gamma^{*}<\gamma$；
-  \item 公式(\ref{form_defpar3})对应$\mathrm{St}(\gamma\rightarrow Q')~=~(\gamma\rightarrow Q')\wedge(\gamma^*\rightarrow Q'^*)$，这使所有的$Q'$ 恒为真（$\gamma$ 为真），其中$Q'\in\sigma'_v$，意义在于让所有谓词$Q'$对应的$Q'^{*}$ 能够任意变化。
-\end{itemize}
+\begin{proof}
+	首先证明分割集可以把逻辑程序划分为回答集互斥的两部分，并且底部的回答集是原逻辑程序回答集子集。
+\end{proof}
 
-通过下面一个例子介绍并行翻译的主要步骤。
-\begin{example}\label{emp_par}
-对于并行限定$\mathbf{CIRC}[\theta;P_1,P_2,P_3;Z]$ 的计算，首先将公式进行如下转换：
-\begin{enumerate}
-  \item $\theta$转成经典一阶逻辑下NNF和CNF的形式；
-  \item $\theta^{\neg\neg}~\Leftrightarrow~\theta(P_1\Rightarrow\neg\neg P_1,P_2\Rightarrow\neg\neg P_2,P_3\Rightarrow\neg\neg P_3)$；
-  \item $\tilde{\theta}~\Leftrightarrow~\theta(\neg P_1\Rightarrow (P_1\rightarrow\gamma),\neg P_2\Rightarrow (P_2\rightarrow\gamma),\neg P_3\Rightarrow (P_3\rightarrow\gamma),Z\Rightarrow Q_Z,\neg Z\Rightarrow(Q_Z\rightarrow\gamma))$；
-  \item $\phi~\Leftrightarrow~(\gamma~\rightarrow~(P_1(x)~\vee~\neg P_1(x))~\wedge~(P_2(x)~\vee~\neg P_2(x))~\wedge~(P_3(x)~\vee~\neg P_3(x)))\\
-      \wedge~Tr_{QE}(\exists x((P_1(x)~\vee~\neg P_1(x))~\wedge~(P_2(x)~\vee~\neg P_2(x))~\wedge~(P_3(x)~\vee~\neg P_3(x))~\rightarrow~\gamma))\\
-      \wedge~(\gamma~\rightarrow~Q_Z)$
 
-\end{enumerate}
-其中$\alpha\Rightarrow\beta$的意义是将公式$\theta$ 中的$\alpha$替换成$\beta$，设$\psi$为公式$\theta^{\neg\neg}~\wedge~\tilde{\theta}~\wedge~\phi$，则
-\begin{align*}
-    \mathbf{CIRC}[\theta;P_1,P_2,P_3;Z]~=~\exists Q_Z\exists\gamma\mathbf{SM}[\psi;P_1,P_2,P_3,Q_Z,\gamma]
-\end{align*}
-\end{example}
 
-从并行限定理论翻译定义$Tr_v$来看，对于每一个可变的谓词都引入了对应的一个新的辅助谓词，这个谓词数量的增加是可以接受的。
 
-\section{优先级限定理论的翻译}
+
+\subsection{提出新的分割集}
+
+Lifschitz和Turner给出的分割集的定义实际上是一个验证型定义。他们定义一个原子集$U$是逻辑程序$P$的分割集，当且仅当$P$中的每个规则$r$满足$head(r) \cap U \neq \emptyset$蕴涵$Atoms(r) \subseteq U$。这个定义从直观上来说就是如果一个原子集合是一个逻辑程序的分割集，那么它满足逻辑程序中凡是头部与其有交集的规则，都会有该规则的所有原子都在该原子集合内。本文根据Lifschitz和Turner对分割集的定义给出了一个计算逻辑程序的分割集的算法，为Algorithm 1。
+
+
+
+
+
+
+
+\section{新程序分割方法}
 
 本小节讲解优先级限定的翻译，优先级限定可以等价于并行限定公式(\ref{form_pri2par})，可以将定义\ref{def_parallelcirc2sm}推广到优先级限定的情况下，因此，有如下优先级限定到稳定模型语义下的翻译。
 
