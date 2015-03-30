@@ -1,0 +1,28 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: paper.aux
+A level-1 auxiliary file: abstract1.aux
+A level-1 auxiliary file: abstract2.aux
+A level-1 auxiliary file: chap1.aux
+A level-1 auxiliary file: chap2.aux
+A level-1 auxiliary file: chap3.aux
+A level-1 auxiliary file: chap4.aux
+A level-1 auxiliary file: chap5.aux
+A level-1 auxiliary file: chap6.aux
+A level-1 auxiliary file: chap7.aux
+The style file: paper2.bst
+A level-1 auxiliary file: ack.aux
+bibinfo is an unknown function---line 207 of file paper2.bst
+bibinfo.check is an unknown function---line 207 of file paper2.bst
+Database file #1: reference.bib
+I was expecting a `,' or a `}'---line 302 of file reference.bib
+ :   
+ :   type = { thesis}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+`journal' is a missing field, not a string, for entry reiter1977closed
+while executing---line 866 of file paper2.bst
+Warning--empty journal in reiter1977closed
+You can't pop an empty literal stack for entry zhang2011Decidability
+while executing---line 866 of file paper2.bst
+Warning--there's a number but no volume in songxudong2010
+Warning--there's a number but no volume in songxudong2010
+(There were 5 error messages)

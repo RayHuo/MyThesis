@@ -1,0 +1,31 @@
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwData{Left}{left}\SetKwData{This}{this}\SetKwData{Up}{up}
+  \SetKwFunction{Union}{Union}\SetKwFunction{FindCompress}{FindCompress}
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \caption{ConverWithoutPriority 并行限定翻译}\label{alg_convertwithoutpriority}
+
+  \Input{~一个一阶公式集$\Phi$~}
+  \Output{~一个全称一阶公式集$\Delta$~}
+  \BlankLine
+  %\emph{special treatment of the first line}\;
+  %\For{$i\leftarrow 2$ \KwTo $l$}{
+    %\emph{special treatment of the first element of line $i$}\;
+    %\lnl{InRes2}
+    \For{$\varphi\in\Phi$}
+    {
+        ConvertToPNF($\varphi$); //化前束范式 \\
+        \If{isUniversal($\varphi$)}
+        {
+            //是全称公式\\
+            $\Delta~~\Leftarrow~~$ConvertWithoutExist($\varphi$); //翻译全称公式\\
+        }
+        \Else
+        {
+            $\Delta~~\Leftarrow~~$EliminateQuantifier($\varphi$); //消去存在量词\\
+        }
+    }
+    $\Delta~~\Leftarrow~~$ConvertIntension(); //转换极小化谓词，公式(\ref{form_circqe8})
+  %}
+
+\end{algorithm}\DecMargin{1em}

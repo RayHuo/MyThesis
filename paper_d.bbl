@@ -1,0 +1,201 @@
+\begin{thebibliography}{10}
+
+\bibitem{van2008handbook}
+Van~Harmelen F, Lifschitz V, Porter B.
+\newblock Handbook of knowledge representation [M].
+\newblock Elsevier, 2008.
+
+\bibitem{ji2010phd}
+吉建民.
+\newblock
+\newblock 提高 ASP 效率的若干途径及服务机器人上应用 [D].
+\newblock 合肥: 中国科学技术大学, 2010.
+
+\bibitem{horn1951sentences}
+Horn A.
+\newblock On sentences which are true of direct unions of algebras [J].
+\newblock The Journal of Symbolic Logic, 1951, 16(01):14--21.
+
+\bibitem{liu2005ASPfixpoint}
+刘富春.
+\newblock 关于逻辑程序不动点语义的讨论 [J].
+\newblock 广东工业大学学报, 2005, 22(2):120--124.
+
+\bibitem{colmeraner1973systeme}
+Colmeraner A, Kanoui H, Pasero R, et~al.
+\newblock Un systeme de communication homme-machine en francais [C].//.
+\newblock Luminy.
+\newblock 1973.
+
+\bibitem{clark1982logic}
+Clark K~L, T{\"a}rnlund S~A.
+\newblock Logic programming [M].
+\newblock Academic Press New York, 1982.
+
+\bibitem{mccarthy1987circumscription}
+McCarthy J.
+\newblock Circumscription—a form of nonmonotonic reasoning [J].
+\newblock \& \&, 1987.
+
+\bibitem{clark1978negation}
+Clark K~L.
+\newblock Negation as failure [J].
+\newblock Logic and data bases, 1978, 1:293--322.
+
+\bibitem{gelfond1988stable}
+Gelfond M, Lifschitz V.
+\newblock The stable model semantics for logic programming [C].// Proceedings
+  of the 5th International Conference on Logic programming.
+\newblock vol 161.
+\newblock 1988.
+
+\bibitem{zhai2014asp}
+翟仲毅, 程渤.
+\newblock 回答集程序设计: 理论, 方法, 应用与研究 [J].
+\newblock 2014.
+
+\bibitem{nogueira2001prolog}
+Nogueira M, Balduccini M, Gelfond M, et~al.
+\newblock An A-Prolog decision support system for the Space Shuttle [C].//
+  Practical Aspects of Declarative Languages.
+\newblock Springer, 2001:  169--183.
+
+\bibitem{eiter2003answer}
+Eiter T, Faber W, Leone N, et~al.
+\newblock Answer set planning under action costs [J].
+\newblock Journal of Artificial Intelligence Research, 2003,  25--71.
+
+\bibitem{soininen2001representing}
+Soininen T, Niemel{\"a} I, Tiihonen J, et~al.
+\newblock Representing Configuration Knowledge With Weight Constraint Rules.
+  [J].
+\newblock Answer Set Programming, 2001, 1.
+
+\bibitem{xin2010answer}
+Xin L, Fan L, Xingbin B, et~al.
+\newblock Answer Set Programming Representation for ER Model [J].
+\newblock Journal of Computer Research and Development, 2010, 1:025.
+
+\bibitem{lai2013aspbank}
+赖河蒗, 陈红英, 赖博先, et~al.
+\newblock 基于回答集编程的 Banks 选举求解方法 [J].
+\newblock 计算机工程, 2013, 39(8):266--269.
+
+\bibitem{lifschitz1994splitting}
+Lifschitz V, Turner H.
+\newblock Splitting a Logic Program. [C].// ICLP.
+\newblock vol~94.
+\newblock 1994:  23--37.
+
+\bibitem{dao2009modular}
+Dao-Tran M, Eiter T, Fink M, et~al.
+\newblock Modular nonmonotonic logic programming revisited [C].// Logic
+  Programming.
+\newblock Springer, 2009:  145--159.
+
+\bibitem{gebser2008engineering}
+Gebser M, Kaminski R, Kaufmann B, et~al.
+\newblock Engineering an incremental ASP solver [C].// Logic Programming.
+\newblock Springer, 2008:  190--205.
+
+\bibitem{oikarinen2008achieving}
+Oikarinen E, Janhunen T.
+\newblock Achieving compositionality of the stable model semantics for smodels
+  programs [J].
+\newblock Theory and Practice of Logic Programming, 2008, 8(5-6):717--761.
+
+\bibitem{ferraris2009symmetric}
+Ferraris P, Lee J, Lifschitz V, et~al.
+\newblock Symmetric Splitting in the General Theory of Stable Models. [C].//
+  IJCAI.
+\newblock vol~9.
+\newblock 2009:  797--803.
+
+\bibitem{limo1999lpSAT}
+李未, 黄雄.
+\newblock 命题逻辑可满足性问题的算法分析 [J].
+\newblock 计算机科学, 1999, 26(3):1--9.
+
+\bibitem{luger2003AI}
+Luger G~F.
+\newblock 人工智能: 复杂问题求解的结构和策略: 英文版{\textperiodcentered} [M].
+\newblock 机械工业出版社, 2003.
+
+\bibitem{enderton2001mathematical}
+Enderton H, Enderton H~B.
+\newblock A mathematical introduction to logic [M].
+\newblock Academic press, 2001.
+
+\bibitem{lifschitz1994circumscription}
+Lifschitz V.
+\newblock Circumscription [C].// Handbook of logic in artificial intelligence
+  and logic programming.
+\newblock vol~3. Oxford University Press, Inc.
+\newblock 1994:  297--352.
+
+\bibitem{mccarthy1986applications}
+McCarthy J.
+\newblock Applications of circumscription to formalizing common-sense knowledge
+  [J].
+\newblock Artificial Intelligence, 1986, 28(1):89--116.
+
+\bibitem{ferraris2011stable}
+Ferraris P, Lee J, Lifschitz V.
+\newblock Stable models and circumscription [J].
+\newblock Artificial Intelligence, 2011, 175(1):236--263.
+
+\bibitem{pearce2005first}
+Pearce D, Valverde A.
+\newblock A first order nonmonotonic extension of constructive logic [J].
+\newblock Studia Logica, 2005, 80(2):321--346.
+
+\bibitem{zhang2011Decidability}
+章衡.
+\newblock
+\newblock 非单调逻辑的可判定性与可译性 [D].
+\newblock 北京: 清华大学, 2011.
+
+\bibitem{zhang2011translating}
+Zhang H, Zhang Y, Ying M, et~al.
+\newblock Translating first-order theories into logic programs [C].//
+  Proceedings of the Twenty-Second international joint conference on Artificial
+  Intelligence-Volume Volume Two.
+\newblock AAAI Press.
+\newblock 2011:  1126--1131.
+
+\bibitem{ben2001mathematical}
+Ben-Ari M.
+\newblock Mathematical logic for computer science [M].
+\newblock Springer Verlag, 2001.
+
+\bibitem{cabalar2005reducing}
+Cabalar P, Pearce D, Valverde A.
+\newblock Reducing propositional theories in equilibrium logic to logic
+  programs [J].
+\newblock Progress in Artificial Intelligence, 2005, 3808:4--17.
+
+\bibitem{gebser2007conflict}
+Gebser M, Kaufmann B, Neumann A, et~al.
+\newblock Conflict-driven answer set solving [C].// Proceedings of the 20th
+  international joint conference on Artifical intelligence.
+\newblock 2007:  386--392.
+
+\bibitem{leone2006dlv}
+Leone N, Pfeifer G, Faber W, et~al.
+\newblock The DLV system for knowledge representation and reasoning [J].
+\newblock ACM Transactions on Computational Logic (TOCL), 2006, 7(3):499--562.
+
+\bibitem{janhunen2006unfolding}
+Janhunen T, Niemel{\"a} I, Seipel D, et~al.
+\newblock Unfolding partiality and disjunctions in stable model semantics [J].
+\newblock ACM Transactions on Computational Logic (TOCL), 2006, 7(1):1--37.
+
+\bibitem{niemela1997smodels}
+Niemel{\"a} I, Simons P.
+\newblock Smodels—an implementation of the stable model and well-founded
+  semantics for normal logic programs [C].// Logic Programming and Nonmonotonic
+  Reasoning.
+\newblock vol 1265.
+\newblock Springer, 1997:  420--429.
+
+\end{thebibliography}

@@ -1,0 +1,496 @@
+\chapter{求解器算法实现}
+
+在本章中，本文将实现一阶限定理论的求解器。具体地，本章将给出求解器设计的详细步骤
+和算法，将求解器划分成几个模块，包括解析模块，并行限定理论到稳定语义的翻译模块，优先级限定理论到稳定语义的翻译模块，稳定语义到析取逻辑程序的翻译模块，包含存在量词的一阶限定理论翻译优化模块，最终，这些模块的结合将限定理论高效地翻译为回答集程序，再使用现有的回答集程序求解器求解限定理论问题，从而完成了问题的求解。
+
+\section{求解器框架}
+
+\subsection{框架概述}
+
+求解器框架如图\ref{fig_programdiagram}所示，其设计主要包括：
+\begin{itemize}
+  \item 用户输入程序模块，用户对于一个问题的限定编码作为用户的输入程序，具体输入形式在下一小节中详细介绍；
+  \item 解析模块，主要包括词法和语法分析，解析用户的输入，将其理解为限定理论的问题编码，例如，对于限定描述$\mathbf{CIRC}[\varphi;\sigma^1>...>\sigma^k;\sigma_v]$，包含对一阶语句$\varphi$ 的解析，即分析存储其每一条公式和公式中使用的常元及变元，分析用户指定的哪些谓词属于极小化谓词，哪些属于可变的谓词，对于极小化谓词，仍要分析其优先级的指定情况。
+  \item 限定翻译模块与稳定翻译模块，限定描述分析结束后，便对其进行限定翻译了，限定翻译部分实现了限定理论可译性等结果的算法，翻译后的结果为稳定模型语义下的一阶语句。稳定翻译模块被限定翻译算法使用到。
+  \item 输出逻辑程序模块，该部分根据不同ASP求解器的输入特点，分别输出不同形式的逻辑程序，本论文中只针对ClaspD、DLV和GnT三种ASP求解器。
+\end{itemize}
+最终，ASP求解器会求解出该限定理论问题的模型。
+\begin{figure}
+  \center
+  \includegraphics[width=0.9\textwidth]{img/programdiagram.jpg}\\
+  \caption{求解器框架}\label{fig_programdiagram}
+\end{figure}
+
+\subsection{输入}
+
+用户输入程序是对问题的一阶限定编码，记为cfo，为了很好的表述限定描述，将该用户输入程序分为三个部分，分别为\textmd{变元论域}、\textmd{一阶语句}和\textmd{谓词指定}。
+
+由于用户输入只受限于ASCII字符，而一阶语句中存在的字符是多样的，因此，需要将一些字符对应到ASCII字符上，以便程序识别。下面是字符对照表：
+\begin{table}[!h]
+\caption{公式的字符对照表}\label{tab_stringmap}
+\vspace*{-5mm}
+\tabcolsep 0pt
+\wuhao
+\begin{center}
+\def\temptablewidth{0.72\columnwidth}
+{\rule{\temptablewidth}{1pt}}
+\begin{tabular}{c|c|c}
+    一阶语句字符（串） & ASCII字符（串） & 备注 \\
+    \hline
+    $\neg$ & $\thicksim$ & - \\
+    \hline
+    $\wedge$ & $\&$ & - \\
+    \hline
+    $\vee$ & $\mid$ & - \\
+    \hline
+    $\rightarrow$ & -$>$ & 由两个字符组成 \\
+    \hline
+    $\forall xyz$ & [!X][!Y][!Z] & 量词必须使用[] 分割 \\
+    \hline
+    $\exists xyz$ & [?X][?Y][?Z] & 量词必须使用[] 分割 \\
+    \hline
+    常元 & 小写字母开头的字符串 & 可以包含数字、下划线 \\
+    \hline
+    变元 & 大写字母开头的字符串 & 可以包含数字、下划线 \\
+\end{tabular}
+{\rule{\temptablewidth}{1pt}}
+\vspace*{-5mm}
+\end{center}
+
+\end{table}
+根据逻辑程序，每个变元都需要有一个论域，本文的设计方法是，用户可以指定变元的论域，也可以不指定，因此，当用户输入程序指定一阶语句中所使用变元的论域，对于逻辑程序而言，一个论域等价于一个一元的谓词常元，即论域指定是变元与一元谓词的映射指定，本文使用类似于ClaspD求解器的论域表示法，如下为一个指定变元$X$的论域为谓词$a$的例子：
+\begin{equation*}
+    \mathrm{\#domain~a(X).}
+\end{equation*}
+当用户没有指定论域的变元，程序将设置变元的默认论域为$d$。
+
+本文使用用户习惯的一阶公式表示法来书写公式，只是对于特定的字符使用表\ref{tab_stringmap}的字符对照关系替换字符，则可以轻松将一条公式
+\begin{equation}\label{form_binarytree}
+    (\forall x P(x)~\vee~R(x))~\rightarrow~(\forall z(\neg R(z)~\wedge~\exists y Q(y,z)))
+\end{equation}
+书写为：
+\begin{verbatim}
+    ([!X]p(X) | r(X)) -> ([!Z](~r(Z) & [?Y]q(Y,Z))).
+\end{verbatim}
+
+谓词指定是希望用户按照一定的格式，指定限定理论中的极小化谓词和可变谓词，如果存在优先级，则需要指定优先级，式子(\ref{form_specific1}) 为并行限定时指定谓词的形式，其中$p$、$q$ 和$r$ 为极小化谓词，$x$、$y$和$z$为可变谓词，所描述的一阶语句中其他剩余的谓词为固定的谓词；
+式子(\ref{form_specific2})为优先级限定时指定谓词的形式，与上述类似，$p$、$q$和$r$是极小化谓词外，同时也具有$p>q>r$的优先级关系。
+\begin{align}
+% \nonumber to remove numbering (before each equation)
+  &\{p,q,r~;~x,y,z\} \label{form_specific1} \\
+  &\{p>q>r~;~x,y,z\} \label{form_specific2}
+\end{align}
+
+
+\begin{example}
+下面将第二章给出的和平主义者例子\ref{emp_pacifist} 编码成程序的输入，对应如下编码：
+\begin{verbatim}
+#domain quaker(X).
+#domain republican(Y).
+[!X](~ab1(X) -> pacifist(X)).
+[!Y](~ab2(Y) -> ~pacifist(Y)).
+{ab1>ab2;pacifist}
+\end{verbatim}
+\end{example}
+
+\subsection{输出}
+
+本文的程序将产生ASP求解器的输入，而根据ASP输入的特点是所有语句都是蕴含式，并且蕴含式的体部是原子的合取式，头部是原子的析取，如下是结合DLP[$\neg$]的语句特点，规定程序中语句输出的形式：
+\begin{enumerate}
+  \item 蕴含式头部中带有否定前缀的原子均要移至体部，DLP[$\neg$]不支持头部带否定原子；
+  \item 蕴含式体部出现的形如$\neg p(X)$的项均译作$not~p(X)$，DLP[$\neg$]语义下，否定均视为$not$语义；
+  \item 蕴含式体部出现的形如$\neg\neg p(X)$的项均译作$not~\_p(X)$，对于新的谓词$\_p$ 的定义，称为\textmd{否定定义式}，使用$\_p(X) :- not~p(X).$ 语句，这种转换形式为使用DLP[$\neg$] 处理双否定的技巧；
+  \item 所有外延谓词只能出现在蕴含式体部，因为外延谓词一般作为论域输入，不能在逻辑程序语句中放在头部而被推出。
+\end{enumerate}
+
+当使用到存在量词消去算法时，会用到后继结构（见定义\ref{def_succ}），程序会根据存在量词块的特点，自动生成后继结构关系语句，下面举例说明后继结构输出特点。
+\begin{example}
+在翻译$\Gamma_{\exists}$中，后继关系$succ$是存在量词块变元$\bar{y}$的关系，设~$|\bar{y}|=n$， $n$个元的论域依次是$d_1,d_2,...,d_n$，首先每个论域上都需要一元后继比较，第$i$（$1\leq i\leq n$）个论域上的后继语句如下：
+\begin{center}
+$succ_i(X,Y)~:-~X=Y-1,~d_i(X),~d_i(Y).$
+\end{center}
+可以定义$n$元后继语句如下：
+\begin{align*}
+    &succ(X_1,...,X_{n-1},X,X_1,...,X_{n-1},Y)~:-~succ_n(X,Y).\\
+    &succ(X_1,...,X_{n-2},X,Max_n,X_1,...X_{n-2},Y,Min_n)~:-~succ_{n-1}(X,Y).\\
+    &...\\
+    &succ(X,Max_2,...,Max_n,Y,Min_2,...,Min_n)~:-~succ_1(X,Y).
+\end{align*}
+\end{example}
+
+除了ASP求解器具有的DLP[$\neg$]的基本语句形式外，输出的逻辑程序同样还要适用于ClaspD\footnote{http://potassco.sourceforge.net}、DLV\footnote{http://www.dlvsystem.com} 和GnT\footnote{http://www.tcs.hut.fi/Software/gnt} 三种ASP求解器，根据三种求解器的输入特点，ClaspD和GnT的语法基本相同，唯一区别在于头部的析取格式不同，ClaspD 格式如下：
+\begin{center}
+    $a~|~b~|~c~:-~d,~e,~f.$
+\end{center}
+等价于GnT的格式：
+\begin{center}
+    $\{a,~b,~c\}~:-~d,~e,~f.$
+\end{center}
+因此本文以ClaspD为例，GnT的输入格式不予介绍，输出的ClaspD程序结构如下：
+\begin{verbatim}
+% 论域
+#domain d(X).
+% 后继结构定义语句
+succ(X,Y) :- X=Y-1,d(X),d(Y).
+% 翻译后语句
+a(X) :- b(X), not _c(X).
+% 否定定义式
+_c(X) :- not c(X).
+\end{verbatim}
+
+由于DLV不支持\#domain关键字式的论域指定，因此需要对每一条语句都指定变元的论域，这与ClaspD 中\#domain 的实际做法是一样的。
+
+
+
+
+\section{数据结构}
+
+主要的数据结构包括一阶语句和翻译模块的数据结构。其中，一阶语句的数据结构设计是程序的基础，能够更好的展现公式及适用于公式的转换，翻译模块中数据结构的设计主要符合部分翻译算法的计算需求和析取逻辑程序的特点。
+
+\subsection{语句存储数据结构}
+
+根据求解器的输入特点，本文程序设计了一个全局的字符集字典结构$\mathrm{\_vocabulary}$，字符集包含了输入中所使用的所有谓词常元符号及元数、函词常元符号及元数和变元的信息，该字符集字典设置了一个这些谓词唯一的整型标示符，称为索引号。具体结构如下：
+\begin{lstlisting}
+// 字符集字典
+typedef struct __vocabulary {
+    int num_predicate;                         // 谓词个数
+    int arities_predicate[MAX_NUM_PREDICATE];  // 谓词元数
+    char* names_predicate[MAX_NUM_PREDICATE];  // 谓词名
+    int num_function;                          // 函词个数
+    int arities_function[MAX_NUM_FUNCTION];    // 函词元数
+    char* names_function[MAX_NUM_FUNCTION];    // 函词名
+    int num_variable;                          // 变元个数
+    char* names_variable[MAX_NUM_VARIABLE];    // 变元名
+    int num_new_variable;                      // 新变元个数
+    int num_new_predicate;                     // 新谓词个数
+} _vocabulary;
+\end{lstlisting}
+
+用户输入程序的论域部分由谓词和变元组成，他们之间是一个映射的关系，程序中设计了一个论域映射关系表$\mathrm{\_vardomainmap}$来存放谓词索引号与变元索引号的对应关系。结构如下：
+\begin{lstlisting}
+// 论域映射关系表
+typedef struct __vardomainmap
+{
+    int num_maps;                              // 关系对个数
+    int index_var[MAX_NUM_PREDICATE];          // 变量索引号
+    int index_domain[MAX_NUM_PREDICATE];       // 论域索引号
+} _vardomainmap;
+\end{lstlisting}
+
+对于用户输入的指定谓词部分，可以使用链表的形式将极小谓词，谓词优先级和可变谓词分别保存。在此省略链表的数据结构。
+
+数据结构中最重要的部分便是逻辑语句的数据结构了，由公式的递归定义可知，公式是将子公式使用联结词连接而成，公式又包含原子公式，原子公式包含谓词和项，项由变元或函词组成，这样的递归结构刚好与二叉树状结构类似，如图\ref{fig_binarytree}是用二叉树表示的公式(\ref{form_binarytree})。
+\begin{figure}
+  \center
+  \includegraphics{img/binarytree.jpg}\\
+  \caption{公式的二叉树结构}\label{fig_binarytree}
+\end{figure}
+
+根据一阶语句的特点，程序使用二叉树的结构保存一条公式，多条公式可以使用链表结构保存，各结构如下：
+\begin{lstlisting}
+// 项
+typedef struct __term {
+    TERM_TYPE term_type;            // 项的类型
+    union {
+        int variable_id;			// 变元索引
+        int function_id;			// 函词索引
+    };
+    struct __term* parameters;		// 函词的项
+} _term;
+// 公式
+typedef struct __formula {
+    FORMULA_TYPE formula_type;            // 公式类型
+    union {
+        // 非、合取、析取、蕴含、全称量词和存在量词时左子公式
+        struct __formula* subformula_l;
+        // 公式类型为原子时，谓词索引
+        int predicate_id;
+    };
+    union {
+        // 公式类型为合取、析取、蕴含时，右子公式
+        struct __formula* subformula_r;
+        // 公式类型为全称量词、存在量词时，量词变元索引
+        int variable_id;
+        // 公式类型为原子时，谓词的项
+        struct __term* parameters;
+    };
+} _formula;
+// 多条公式
+typedef struct __formulas {
+    _formula* curr_formula;                    // 当前公式
+    struct __formulas* remained_formulas;      // 余下公式
+} _formulas;
+\end{lstlisting}
+
+在公式的结构设计中，该程序技巧性的利用公式的特点，优化了公式的存储空间，由于翻译算法会使用大量的这样的公式结构，这样的设计大大优化了算法内存空间。
+
+
+
+\subsection{转换算法数据结构}
+
+如何运用左右规则集将任意形式的全称一阶语句转换成析取逻辑程序的形式是翻译算法的基础部分，
+对于左规则，其特点是需要转换的部分在蕴含式的体部，相应的，对于右规则，其需要转换的部分在蕴含式的头部。分析规则集的特点如下：
+\begin{enumerate}
+  \item 规则(L1)、(L2)和(R1)、(R2)类似，即如果蕴含式体部或者头部存在$\top$或者$\bot$，则可按照规则转化成相应的
+一条规则；
+  \item 规则(L3)，由于本论文中所转换的析取逻辑式会将头部中所有带否定前缀的原子全都转移到体部，所以程序中会使用(L3) 从
+      右到左的转换，该转换检测头部的否定原子，并将其根据该规则移至体部；
+  \item 规则(R3)是将头部形如$\neg\neg\varphi$的子式移至体部；
+  \item 规则(L4)是将体部的析取子式拆分，从而转换成两条符合析取逻辑程序的语句，成功的消去了体部的析取。
+  \item 规则(R4)是将头部的合取子式拆分，转换成两条符合析取逻辑程序的语句，成功的消去了头部的合取。
+  \item 规则(L5)是转换蕴含式体部包含蕴含子式的语句，在经典逻辑下，公式$(\varphi~\rightarrow~\psi)~\wedge~\alpha~\rightarrow~\beta$
+      可以转换为$(\neg\varphi~\vee~\psi)~\wedge~\alpha~\rightarrow~\beta$，进而根据(L4) 转换为
+      $\left\{
+        \begin{array}{ll}
+            \neg\varphi~\wedge~\alpha~\rightarrow~\beta\\
+            \psi~\wedge~\alpha~\rightarrow~\beta
+        \end{array}
+      \right\}$，
+      因此，稳定语义下的规则(L5)转换出的三条语句，不等价于经典语义下的转换；
+  \item 规则(R5)是转换蕴含式头部包含蕴含子式的语句，在经典逻辑下，公式$\alpha~\rightarrow~(\varphi~\rightarrow~\psi)~\vee~\beta$ 可以转换成
+      $\alpha~\rightarrow~(\neg\varphi~\vee~\psi)~\vee~\beta$，进而根据(R4)转换为
+      $\left\{
+        \begin{array}{ll}
+            \alpha~\rightarrow~\neg\varphi~\vee~\beta\\
+            \alpha~\rightarrow~\psi~\vee~\beta
+        \end{array}
+      \right\}$，
+      因此，稳定语义下的规则(R5)转换出的两条语句，不等价于经典语义下的转换。
+\end{enumerate}
+
+根据上述特点，本文设计出用于存储需转换的公式的数据结构ImplConvert，下面给出该结构:
+\begin{lstlisting}
+// 蕴含式转换结构
+struct ImplConvert
+{
+    _formula* srcLeft;          // 蕴含式待转换的左部分子式
+    _formula* left;             // 蕴含式左部分子式
+    _formula* srcRight;         // 蕴含式待转换的右部分子式
+    _formula* right;            // 蕴含式右部分子式
+};
+\end{lstlisting}
+该结构将蕴含式分成四个部分，$left$是蕴含式体部已经化成合取子式的部分，$srcLeft$ 是蕴含式体部需要转换的部分，
+$right$是蕴含式头部已经化成析取子式的部分，$srcRight$是蕴含式头部需转换的部分。当$srcLeft$ 和$srcRight$为空时，
+说明该公式已经符合析取逻辑语句，否则，$srcLeft$不为空时，使用左规则，$srcRight$ 不为空时，使用右规则。
+
+\subsection{翻译模块数据结构}
+
+在算法框架中提到程序中主要包含了两个翻译模块，分别是稳定翻译模块SMTranslator与限定翻译模块CircTranslator。
+
+由于稳定翻译模块作为限定翻译模块的一部分被多次调用，需要提供指定的输入信息和输出信息，例如内涵谓词、论域的指定等输入信息的指定，可以直接通过函数操作而非词法语法分析完成，论域的输出、后继结构的输出和翻译结果的输出等输出信息保证谓词常量命名不重复，这些操作都需要稳定翻译器提供相应的公有接口函数。除此之外，翻译算法部分的函数均设置为私有成员函数。
+
+稳定翻译器包含主要数据成员有：
+\begin{itemize}
+  \item map$<$int,int$>$ m\_domain结构存放变元索引与论域谓词索引的映射关系；
+  \item set$<$int$>$ m\_intenPredicate 存放内涵谓词常元的索引号，唯一且不重复；
+  \item vector$<$\_formula*$>$ m\_formulaReslut 存放翻译后的语句；
+  \item string m\_strSuffix用于指定生成谓词的后缀信息，保证命名不重复；
+  \item string m\_strSucc用于存放后继结构语句结果，在生成的过程中可以去重；
+  \item string m\_strDomain用于存放生成后的论域语句结果。
+\end{itemize}
+
+限定翻译模块与稳定翻译模块功能实现基本相同，对于类成员的设计也相类似。由于翻译的过程中需要更多的辅助谓词和转换方法，限定翻译增多了一些用于表示辅助谓词的数据成员，和需要对公式进行各种转换操作的函数。
+
+
+\section{主要算法实现}
+
+\subsection{解析模块}
+
+本文构造了一个简单的解析器用于对一阶限定编码（cfo）进行词法、语法的分析和语义动作的执行。
+词法部分可以根据输入格式中相应符号对照表一一设置其正则表达式，其中常元（包括谓词常元和函词常元）和变元的正则表达式分别是$[a-z][a-zA-Z0-9\_]^*$和$ [A-Z][a-zA-Z0-9\_]^*$。
+
+语法部分需满足cfo的用户输入，其上下文无关文法定义如下（语法格式参照\cite{aho2007compilers}）：
+%\begin{verbatim}
+%cfo2lp : domains formulas pred_sentence
+%pred_sentence
+% : { pred_preds ; pred_preds }
+% | { prio_preds ; pred_preds }
+% | { ; pred_preds } | { pred_preds ; }
+% | { prio_preds ; } | /*epsilon*/
+%pred_preds : pred_preds , pred_pred | pred_pred
+%prio_preds : prio_preds > pred_pred | pred_pred
+%pred_pred : S_PRED | S_FUNC
+%domains : domains domain . | domain . | /*epsilon*/
+%domain : #domain S_PRED ( S_VARI )
+%       | #domain S_FUNC ( S_VARI )
+%formulas : formulas formula . | formula .
+%formula
+% : formula & formula | formula -> formula
+% | formula S_DISJ formula | ~ formula
+% | [ ! S_VARI ] formula
+% | [ ? S_VARI ] formula
+% | atom | ( formula )
+%atom : S_PRED ( terms ) | S_PRED
+%terms : terms , term | term
+%term : S_VARI | S_FUNC | S_FUNC ( terms )
+%\end{verbatim}
+\begin{align*}
+&cfo2lp~&\rightarrow~& domains~ formulas~ pred\_sentence\\
+&pred\_sentence &\rightarrow~& \{~ pred\_preds~ ;~ pred\_preds~ \}\\
+&~&|~& \{~ prio\_preds~ ;~ pred\_preds~ \}\\
+&~&|~& \{~ ;~ pred\_preds~ \}~ |~ \{~ pred\_preds~ ; \}\\
+&~ &|~& \{~ prio\_preds~ ;~ \}~ |~ \epsilon\\
+&pred\_preds~&\rightarrow~& pred\_preds~ ,~ pred\_pred~ |~ pred\_pred\\
+&prio\_preds~&\rightarrow~& prio\_preds~ >~ pred\_pred~ |~ pred\_pred\\
+&pred\_pred~&\rightarrow~& \mathbf{PRED}~ |~ \mathbf{FUNC}\\
+&domains~&\rightarrow~& domains~ domain~ .~ |~ domain~ .~ |~ \epsilon\\
+&domain~ &\rightarrow~& \mathbf{\#domain}~ \mathbf{PRED}~ (~ \mathbf{VARI}~ )\\
+&~&|~& \mathbf{\#domain}~ \mathbf{FUNC}~ (~ \mathbf{VARI}~ )\\
+&formulas~&\rightarrow~& formulas~ formula~ .~ |~ formula~ .\\
+&formula~&\rightarrow~& formula~ \&~ formula~ |~ formula~ ->~ formula\\
+&~&|~& formula~ \mathbf{DISJ}~ formula~ |~ formula\\
+&~&|~& [~ !~ \mathbf{VARI}~ ]~ formula\\
+&~&|~& [~ ?~ \mathbf{VARI}~ ]~ formula\\
+&~&|~& atom~ |~ (~ formula~ )\\
+&atom~&\rightarrow~& \mathbf{PRED}~ (~ terms~ )~ |~ \mathbf{PRED}\\
+&terms~&\rightarrow~& terms~ ,~ term~ |~ term\\
+&term~&\rightarrow~& \mathbf{VARI}~ |~ \mathbf{FUNC}~
+\end{align*}
+其中，除了$\rightarrow$和$|$外的符合和黑体字均为终结符号，其余为非终结符号。
+
+在词法语法分析的同时，进行相应的语义动作，以便从cfo中得到完整而又正确的信息。解析器需要完成的语义动作有：
+\begin{itemize}
+  \item 根据\#domain语句，设置各变元的论域，设置映射关系，保存到数据结构\_vardomainmap；
+  \item 完整的保存输入的一阶语句，包括保存常元变元符号到符号表\_vocabulary，根据公式类型创建公式，将多条公式保存在逻辑语句链表中\_formulas；
+  \item 根据谓词指定语句，设置极小化谓词、可变谓词和谓词的优先级。
+\end{itemize}
+
+需要注意的是，由于谓词常元和函词常元使用相同类型的字符串，单从词法上是无法区分的，但是它们在语法结构上是不同的，主要区别是原子只能是函词常元，而函词常元只能出现在项中。由于在语法形式上函词常元和谓词常元有区别，这需要程序在做词法分析的时候就能给出相应的常元是函词常元还是谓词常元。这一工作只能交由语义动作完成，使用一个全局的标识符context\_flag表示当前的语法环境，如果常元的语法环境为谓词的项，则只能识别该常元为函词，否则，识别为谓词。
+
+
+
+\subsection{SM[UFO]到DLP[$\neg$]}
+
+
+根据第二章中所提到的全称稳定理论转化为析取逻辑程序的方法，本文设计出程序的转换算法\ref{alg_convert}-ConvertToDLP。
+从其算法中可以看出，主要使用了一个队列来存放需要化简的公式，在化简的过程中，会产生新的公式，则均将其依次存放在队列中，每次从队列首取出一条公式进行操作，若公式满足了析取逻辑式即可从队列中取出作为结果中的一条公式。
+
+算法中CreateDLP函数是根据ImplConvert结构构造一条析取逻辑语句，输入的ImplConvert结构已经保证了析取逻辑语句的结构；ConvertLeftRules函数是使用左规则转换公式，将一条公式体部转换成合法的合取式，结果可能包含多条公式，相应地，ConvertRightRules是使用右规则转换公式，将一条公式头部转换成合法的析取式，结果可能包含多条公式。
+\RestyleAlgo{ruled}\LinesNumbered\input{algo_Convert.tex}
+
+
+程序可以利用左规则或者右规则将需要转换的部分进行转换，其中，程序主要处理的部分即是包含蕴含子式的待转换公式。下面给出左规则转换的伪代码算法\ref{alg_convertleftrules}-ConvertLeftRules，
+其中，GetIMPLElement函数是从一个合取范式（或析取范式）中得到所有形式是蕴含式的合取项（或析取项），GetLiteralElement函数是从一个合取范式（或析取范式）中得到所有非蕴含式的合取项（或析取项）。
+
+算法流程中，程序首先将$srcLeft$转换成DNF，这样做的原因是可以有效的根据(L4)消去体部的析取，将具有复杂体部的一条公式分解成等价的多条简化的公式（对应地，右规则转换ConvertRightRules应该将$srcRight$转换成CNF），即每条公式的体部是原公式体部析取项（合取子式）看成待转换的体部来化简。根据稳定语义下DNF的特点，析取项是正负文字或蕴含式的合取，对于每条新产生的公式，所有蕴含子式按照规则(L5)递归转换，直到转换出的公式无法再使用左规则转换为止。
+\RestyleAlgo{ruled}\LinesNumbered\input{algo_ConvertLeftRules.tex}
+
+下面给出一个例子介绍ConvertLeftRules算法的具体递归情况。
+\begin{example}
+使用算法ConvertLeftRules化简公式$(c\rightarrow (a\rightarrow b))\wedge e~\rightarrow~f$，则输入状态为
+\begin{center}
+srcLeft = $(c\rightarrow (a\rightarrow b))$,~~left = $e$,~~srcRight = $NULL$,~~right = $f$\\
+\end{center}
+调用函数~~ConvertLeftRules($(c\rightarrow (a\rightarrow b))$,$e$,$NULL$,$f$)\\
+第一层递归
+$\left\{
+\begin{array}{l}
+    \mathrm{ConvertLeftRules}(\neg c,e,NULL,f) \\
+    \mathrm{ConvertLeftRules}((a\rightarrow b),e,NULL,f) \\
+    \mathrm{ConvertLeftRules}(NULL,e,\neg(a\rightarrow b)\vee c,f)
+\end{array}
+\right\}$\\
+第二层递归
+$\left\{
+\begin{array}{l}
+\mathrm{ConvertLeftRules}(NULL,e\wedge\neg c,NULL,f)\\
+\left\{
+\begin{array}{l}
+    \mathrm{ConvertLeftRules}(\neg a,e,NULL,f) \\
+    \mathrm{ConvertLeftRules}(b,e,NULL,f) \\
+    \mathrm{ConvertLeftRules}(NULL,e,a\vee\neg b,f)
+\end{array}
+\right\}\\
+\mathrm{ConvertLeftRules}(NULL,e,\neg(a\rightarrow b)\vee c,f)
+\end{array}
+\right\}$\\
+第三层递归
+$\left\{
+\begin{array}{l}
+\mathrm{ConvertLeftRules}(NULL,e\wedge\neg c,NULL,f)\\
+\mathrm{ConvertLeftRules}(NULL,e\wedge\neg a,NULL,f) \\
+\mathrm{ConvertLeftRules}(NULL,e\wedge b,NULL,f) \\
+\mathbf{ConvertLeftRules(NULL,e,a\vee\neg b,f)} \\
+\mathbf{ConvertLeftRules(NULL,e,\neg(a\rightarrow b)\vee c,f)}
+\end{array}
+\right\}$\\
+上面黑体的公式是需要使用右规则转换ConvertRightRules，在此省略。
+\end{example}
+
+
+算法\ref{alg_convertleftrules}中ConvertToNNF是将一条公式转换为稳定模型语义下的否定范式，ConvertToDNF\_inSM是将一条公式转换为稳定模型语义下的析取范式，同样对应有ConvertToCNF\_inSM转换为合取范式。
+由于经典语义与稳定模型语义下的转换规则不同，不同之处包括带蕴含子式的转换，稳定语义下否定范式的转换，因此需要一个稳定语义下的NNF转换、CNF转换和DNF转换。它们都与经典语义下的转换算法类似，只是转换的过程中，需要特殊处理否定的消去及蕴含式。
+\RestyleAlgo{ruled}\LinesNumbered\input{algo_ConvertToNNF.tex}
+
+在稳定模型语义下NNF转换规则中，有两个特殊的转换规则如下：
+\begin{align*}
+    &\neg\neg\neg\varphi = \neg\varphi &\neg\neg\varphi \neq \varphi
+\end{align*}
+这两个规则可以根据稳定理论定义公式(\ref{form_defsm})得到。由此可见在转换的过程中需要一个判断否定式前缀否定的个数的功能函数。
+
+在稳定模型语义下CNF（或DNF）的转换中，需要将蕴含子式看成一个谓词，首先将所有否定前缀下降到谓词之前形式文字，再将析取下降到文字之间。
+
+下面给出了稳定模型语义下NNF的转换算法\ref{alg_converttonnf}-ConvertToNNF的算法。
+可以看出CovertToNNF算法需要根据公式的不同类型区别对待，按照中序遍历的方式一层一层递归公式二叉树。算法中IsNegative函数是判断公式的正负，如果公式前缀有奇数个否定，公式定义为\textmd{负}，函数返回真，公式前缀有偶数个否定，公式定义为\textmd{正}，函数返回假。
+
+
+
+\subsection{翻译算法}
+
+\RestyleAlgo{ruled}\LinesNumbered\input{algo_EliminateQuantifier.tex}
+\RestyleAlgo{ruled}\LinesNumbered\input{algo_ConvertWithoutPriority.tex}
+
+稳定翻译模块和限定翻译模块中一个重要的部分是存在量词消去的算法，这也是第三章中翻译优化部分的内容的算法实现。从稳定模型语义下的量词消去$Tr_{QE}$和限定语义下的量词消去$\Gamma_{\exists}$公式看出，它们之间类似，因此，做一次存在量词消去的算法步骤是相同，以限定语义下存在量词消去为例，公式(\ref{form_circqe1}-\ref{form_circqe8})引入了新的谓词常元，首先，需要创建新的谓词常元，并添加到字符集字典$\mathrm{\_vocabulary}$中；其次，根据定义构造出$\theta^{\neg\neg}$、$\theta^{\top\neg\neg}$和$\tilde{\theta}$，构造的算法是对公式的递归构造；最后，逐条构造公式(\ref{form_circqe1}-\ref{form_circqe8})，使用稳定模型语义转换算法ConvertToDLP转换这些公式为析取逻辑程序。
+
+要消去$\Pi_n$-公式的存在量词，需要多次执行$Tr_{QE}$，该算法如下为算法\ref{alg_eliminatequantifier}-EliminateQuantifier，其中CNF和PNF 的转换都在稳定模型语义下。
+
+
+根据例\ref{emp_par}，一阶并行限定理论翻译可以实现如算法\ref{alg_convertwithoutpriority}-ConvertWithoutPriority，其中CovertWithoutExist函数是转换全称公式。
+
+\RestyleAlgo{ruled}\LinesNumbered\input{algo_ConvertWithPriority.tex}
+
+一阶优先级限定理论翻译算法\ref{alg_convertwithpriority}-ConvertWithPriority可以根据例\ref{emp_pri}和\ref{sec_algorithm}小节的四个步骤实现。
+
+从例子中$\tilde{\theta_1}$的转换看出，在第一层优先级迭代中，比$P_1$优先级低的谓词$P_2$和$P_3$均被视为可变谓词，只有$P_1$为极小化谓词，因此迭代过程中需要函数SetMinimalPredicate和SetVariedPredicate分别设置极小化谓词和可变谓词；函数ConvertToThetaNN为将公式中极小谓词加$\neg\neg$前缀；函数ConvertToThetaK 为转换出对于优先级下的$\tilde{\theta_i}$；函数AddPredicate 为添加新谓词，AddTerm为添加新的项，为翻译$\Gamma_{\exists}$ 做准备。
+
+\section{算法复杂度分析}
+
+基于以上给出的算法，下面分析程序的算法的时间复杂度。
+
+递归遍历的算法ConvertToPNF、ConvertToCNF、ConvertToDNF的复杂度为$O(N)$，稳定模型语义下ConvertToNNF算法的复杂度为$O(N^2)$，ConvertToDLP算法的复杂度为$O(N^3)$，其中$N$为公式中的文字个数。
+
+存在量词消去算法\ref{alg_eliminatequantifier}，设输入公式文字个数为$L$，量词块数为$N$，化前束范式复杂度为$O(L)$，该算法复杂度递归定义如下：
+\begin{align*}
+    T(N)~=~\left\{
+    \begin{array}{ll}
+    1 & ,N~=0\\
+    4*T(N-2)+L & ,N~>~0
+    \end{array}
+    \right.
+\end{align*}
+求解递归方程如下：
+\begin{align*}
+    T(N) &~=~ 4*T(N-2)+L\\
+    &~=~ 4^2*T(N-4)+4*L+L\\
+    &~=~ \cdot\cdot\cdot\\
+    &~=~ 4^\frac{N}{2}*T(0)+4^{\frac{N}{2}-1}*L+\cdot\cdot\cdot+4*L+L\\
+    &~=~ 2^N+\frac{L}{3}*2^N-\frac{4}{3}*L
+\end{align*}
+则消去存在量词算法复杂度为$O(L*2^N)$。
+
+设一个一阶限定理论问题优先级数为$p$ （若为并行限定，则$p=1$），一阶语句个数为$n$，其中带存在量词的语句个数为$m$（$0\leq m\leq n$），每个存在量词语句对应$\Pi_n$-公式的量词块个数为$q_i$（$1\leq i\leq m$），设最大量词块数为$q$，所有语句中公式的最大文字个数为$l$。
+
+优先级翻译算法\ref{alg_convertwithpriority}中，
+（1-14行）与（18-31行）所完成的功能是一样的，下面只分析（18-31行）；
+（15-32行）的外部循环次数为优先级数，复杂度为$O(p)$；
+（18-31行）的内部循环次数为一阶语句数，复杂度为$O(n)$；
+（18-22行）进行了两次公式转换，复杂度为$O(l^3)$，
+（27-29行）再内部循环次数与存在量词语句数、翻译优化定义\ref{def_circ2sm_eliquat}后的语句数有关，复杂度可计算为$O(8*m)$，经过翻译优化$\Gamma_{\exists}$后，带有存在量词的语句个数分别有$6*m$条（公式\ref{form_circqe2}-\ref{form_circqe7}）量词块个数为$q_i-2$的语句，有$1$条（公式\ref{form_circqe8}）存在量词块为1的语句；
+（16行）消去存在量词算法复杂度与公式的文字个数和量词块个数有关，复杂度为$O(l*2^q)$。
+
+可以得出总的算法复杂度为$O((p+1)*((n-m)*l^3+8*m*(l*2^q)))$。
+
+\section{本章小结}
+
+基于第三章翻译理论，本章分模块详细介绍了原型求解器cfo2lp的实现和核心翻译算法。本章设计了一阶限定的问题编码描述，经过解析，再经过限定翻译，输出析取逻辑程序，在使用回答集程序求解器。本章的求解器能够处理一阶稳定理论、一阶并行限定和优先级限定的翻译，并且实现了在后继结构下任意公式的翻译优化算法，即存在量词的消去。
+

@@ -1,0 +1,9 @@
+\chapter*{在学期间论文发表情况}
+
+\addcontentsline{toc}{chapter}{在学期间论文发表情况}
+
+\renewcommand{\labelenumi}{[\arabic{enumi}]}
+\begin{enumerate}
+\item Fan Yi, Cai Minghui, Li Naiqi and Liu Yongmei, A First-Order Interpreter for Knowledge-based Golog with Sensing based on Exact Progression and Limited Reasoning [C].// Proceedings of the Twenty-Sixth AAAI Conference on Artificial
+    Intelligence (AAAI-2012). 2012: Accepted.
+\end{enumerate}

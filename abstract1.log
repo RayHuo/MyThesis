@@ -1,0 +1,123 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.3.24)  14 APR 2013 15:34
+entering extended mode
+**D:/research/circu/thesis/MasterPaper/abstract1.tex
+(D:/research/circu/thesis/MasterPaper/abstract1.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 9.
+Missing character: There is no Â in font nullfont!
+Missing character: There is no Û in font nullfont!
+Missing character: There is no Î in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no â in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no ¿ in font nullfont!
+Missing character: There is no £ in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no » in font nullfont!
+Missing character: There is no ½ in font nullfont!
+Missing character: There is no × in font nullfont!
+Missing character: There is no Ï in font nullfont!
+Missing character: There is no Þ in font nullfont!
+Missing character: There is no ¶ in font nullfont!
+Missing character: There is no ¨ in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no í in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no Û in font nullfont!
+Missing character: There is no Ç in font nullfont!
+Missing character: There is no ó in font nullfont!
+Missing character: There is no ½ in font nullfont!
+Missing character: There is no â in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Ð in font nullfont!
+Missing character: There is no ¾ in font nullfont!
+Missing character: There is no ¿ in font nullfont!
+Missing character: There is no Ó in font nullfont!
+Missing character: There is no ë in font nullfont!
+Missing character: There is no Ó in font nullfont!
+Missing character: There is no ¦ in font nullfont!
+Missing character: There is no Ó in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no Ñ in font nullfont!
+Missing character: There is no Ð in font nullfont!
+Missing character: There is no ¾ in font nullfont!
+Missing character: There is no ¿ in font nullfont!
+Missing character: There is no × in font nullfont!
+Missing character: There is no ¨ in font nullfont!
+Missing character: There is no Ò in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no £ in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no ¼ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no Ë in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no » in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no ¼ in font nullfont!
+Missing character: There is no ¼ in font nullfont!
+Missing character: There is no Ê in font nullfont!
+Missing character: There is no õ in font nullfont!
+Missing character: There is no Ë in font nullfont!
+Missing character: There is no ¶ in font nullfont!
+Missing character: There is no Ê in font nullfont!
+Missing character: There is no ¿ in font nullfont!
+Missing character: There is no É in font nullfont!
+Missing character: There is no ú in font nullfont!
+Missing character: There is no £ in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no Í in font nullfont!
+Missing character: There is no õ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no Ó in font nullfont!
+Missing character: There is no Ö in font nullfont!
+Missing character: There is no ¸ in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no ¼ in font nullfont!
+Missing character: There is no ½ in font nullfont!
+Missing character: There is no Ì in font nullfont!
+Missing character: There is no Ê in font nullfont!
+Missing character: There is no ¦ in font nullfont!
+Missing character: There is no £ in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no Í in font nullfont!
+Missing character: There is no ò in font nullfont!
+Missing character: There is no º in font nullfont!
+Missing character: There is no £ in font nullfont!
+Missing character: There is no ¸ in font nullfont!
+Missing character: There is no ß in font nullfont!
+Missing character: There is no ¼ in font nullfont!
+Missing character: There is no ¶ in font nullfont!
+Missing character: There is no ½ in font nullfont!
+Missing character: There is no ² in font nullfont!
+Missing character: There is no Ê in font nullfont!
+Missing character: There is no ¦ in font nullfont!
+! Undefined control sequence.
+l.13 \phantomsection
+                    
+? 
+! Emergency stop.
+l.13 \phantomsection
+                    
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 9 strings out of 495354
+ 236 string characters out of 3183859
+ 44842 words of memory out of 3000000
+ 3278 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 21i,6n,13p,102b,96s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

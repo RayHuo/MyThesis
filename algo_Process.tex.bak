@@ -1,0 +1,67 @@
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwData{Left}{left}\SetKwData{This}{this}\SetKwData{Up}{up}
+  \SetKwFunction{Union}{Union}\SetKwFunction{FindCompress}{FindCompress}
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \caption{ConverWithoutNNF 转换成NNF}\label{alg_convertleftrules}
+
+  \Input{~一条任意形式公式~}
+  \Output{~一条符合NNF的公式~}
+  \BlankLine
+  %\emph{special treatment of the first line}\;
+  %\For{$i\leftarrow 2$ \KwTo $l$}{
+    %\emph{special treatment of the first element of line $i$}\;
+    %\lnl{InRes2}
+    \Switch{输入公式类型}
+    {
+        // 省略原子、全称、存在量词公式的情形 \\
+        \Case{合取式或析取式}
+        {
+            ConvertToNNF(左子公式); ConvertToNFF(右子公式);\\
+            用新左子公式和新右子公式构造原类型的公式为结果公式；\\
+        }
+        \Case{蕴含式}
+        {
+            // 根据规则(N6)可得 \\
+            \If{IsNegative(右子公式)}
+            {
+                // 由子公式为否定式 \\
+                ConvertToNNF(左子公式); ConvertToNFF(右子公式);\\
+                按照(N6)构造新公式为结果公式；\\
+            }
+            \Else
+            {
+                ConvertToNNF(左子公式); ConvertToNFF(右子公式);\\
+                用新左子公式和新右子公式构造新的合取式即为结果公式；\\
+            }
+        }
+        \Case{否定式}
+        {
+            // 省略原子、全称、存在量词公式的情形 \\
+            \Switch{否定子式的类型}
+            {
+                \Case{否定式}
+                {
+                    \If{!IsNegative(否定子式的否定子式)}
+                    {
+                        按照规则(N3)构造新公式；
+                    }
+                    \Else
+                    {
+                        原公式为结果公式；
+                    }
+                }
+                \Case{合取式或析取式}
+                {
+                    按照规则(N4)和(N5)构造新公式；
+                }
+                \Case{蕴含式}
+                {
+                    按照规则(N6)构造新公式；
+                }
+            }
+        }
+    }
+  %}
+
+\end{algorithm}\DecMargin{1em}

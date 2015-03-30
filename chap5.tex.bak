@@ -1,0 +1,277 @@
+\chapter{实验结果与分析}
+
+\section{实验概述}
+
+本文将进行两方面的实验，一是求解器正确性的验证，该部分将对求解器分模块的验证算法正确性；二是求解器效率分析，该部分实验分析了效率的影响因素及不同求解器的比较。
+
+对于求解器的实现，本文使用C/C++语言编写，需要用到工具包括：编译器为gcc version 4.4.3、词法分析器为flex 2.5.35、语法分析器为bison 2.4.1、gringo 3.0.3、ClaspD 1.1.1、DLV build BEN、lparse 1.1.2、GnT2。实验的环境如表\ref{tab_environment}所示。
+%\begin{table}[!h]
+%\caption{编程工具}\label{tab_tools}
+%\vspace*{-5mm}
+%\tabcolsep 0pt
+%\wuhao
+%\begin{center}
+%\def\temptablewidth{0.55\columnwidth}
+%{\rule{\temptablewidth}{1pt}}
+%\begin{tabular}{c|c}
+%    工具 & 描述 \\
+%    \hline
+%    程序语言 & C/C++   \\
+%    \hline
+%    编译器 & 版本：gcc version 4.4.3  \\
+%    \hline
+%    词法分析器 & 版本：flex 2.5.35 \\
+%    \hline
+%    语法分析器 & 版本：bison 2.4.1 \\
+%    \hline
+%    gringo & 版本：3.0.2 \\
+%    \hline
+%    ClaspD & 版本：1.1.1 \\
+%    \hline
+%    DLV & 版本：build BEN/Dec 16 2012 gcc 4.6.1 \\
+%    \hline
+%    Lparse & 版本：1.1.2\\
+%    \hline
+%    GnT & 版本：gnt2\\
+%\end{tabular}
+%{\rule{\temptablewidth}{1pt}}
+%\end{center}
+%\vspace*{-5mm}
+%\end{table}
+\begin{table}[!h]
+\caption{实验环境}\label{tab_environment}
+\vspace*{-5mm}
+\tabcolsep 0pt
+\wuhao
+\begin{center}
+\def\temptablewidth{0.40\columnwidth}
+{\rule{\temptablewidth}{1pt}}\\
+\begin{tabular}{c|c}
+    环境 & 描述  \\
+    \hline
+    处理器 & AMD A10-5800K 3.8GHz  \\
+    \hline
+    内存 & 8GB  \\
+    \hline
+    系统 & Linux Ubuntu 12.04LTS 64bit\\
+\end{tabular}\\
+{\rule{\temptablewidth}{1pt}}
+\end{center}
+\vspace*{-5mm}
+\end{table}
+
+
+\section{正确性验证}
+
+本部分实验将会选取计算机科学的经典的问题和限定理论研究领域中出现较多的经典例子作为正确性验证的测例。
+
+\subsection{最小集合覆盖}
+
+最小集合覆盖问题是一个经典的数学问题，是Karp的21个NP-complete问题之一\cite{karp1972reducibility}，实验选取这个问题来验证稳定翻译模块的正确性。下面是该问题的描述：
+
+给定一个包含索引的集合~$I$~和一组集合~$S_{i} (i \in I)$~，称一个集合覆盖表示~$I$~的一个子集~$J$~，满足所有出现在~$S_{i} (i \in I)$~ 中的元素~$a$~都出现在~$S_{j} (j \in J)$~ 中。这个问题可以进行如下编码：
+\begin{eqnarray}
+% \nonumber to remove numbering (before each equation)
+  \forall~ x~ (Cvr(x) \rightarrow Idx(x)) \label{form_emp_setcover1} \\
+  \forall x~ \forall y~ (Idx(x) \wedge Set(x,y) \rightarrow \exists~ z (Cvr(z) \wedge Set(z,y))) \label{form_emp_setcover2}
+\end{eqnarray}
+其中$Cvr(x)$表示$x$是被覆盖的，$Idx(x)$表示$x$是一个集合，$Set(x,y)$表示元素$y$ 属于$x$。 设$\varphi$是上述两个公式的合取，则该问题等价于求解$\mathbf{SM}[\varphi;cvr]$。公式(\ref{form_emp_setcover2})可以运用算法$Tr_{QE}$ 消去存在量词，结果如下：
+\begin{align}
+Cvr(x)~\rightarrow~Idx(x) \\
+(succ(z,u)~\wedge~S(x,y,u))~\vee~\theta^{\neg\neg}(x,y,z)~\rightarrow~S(x,y,z) \\
+\neg\neg S(x,y,min)\\
+\neg(succ(z,y)~\wedge~S(x,y,u))~\wedge~S(x,y,z)~\rightarrow~(T(x,y,max)~\leftrightarrow~\theta(x,y,z)) \\
+succ(z,u)~\rightarrow~(T(x,y,z)~\leftrightarrow~\theta(x,y,u)~\vee~T(x,y,u)) \\
+T(x,y,min)~\vee~\theta(x,y,min)
+\end{align}
+其中
+\begin{align}
+&\theta(x,y,z)~=~Idx(x)~\wedge~Set(x,y)~\rightarrow~Cvr(z)~\wedge~Set(z,y) \\
+&\theta^{\neg\neg}(x,y,z)~=~Idx(x)~\wedge~Set(x,y)~\rightarrow~\neg\neg Cvr(z)~\wedge~Set(z,y)
+\end{align}
+将$\theta$和$\theta^{\neg\neg}$带入上述公式后，再经过算法\ref{alg_convert}-ConvertToDLP得到问题的DLP。
+对于实际的测试用例，实验中为每一个实例随机生成了一组集合，生成格式如下（以claspD为例）：
+\begin{verbatim}
+%claspd的输入 4个集合 4个元素 可随机生成
+idx(1..4).e(1..4).
+set(1,1).set(1,2).set(2,2).set(2,3).
+set(3,1).set(3,4).set(4,2).set(4,3).
+min1(1).max1(4).%后继结构的最小最大元素
+\end{verbatim}
+
+
+\subsection{积木世界}
+
+（Lifschitz的例子\cite{lifschitz1994circumscription}）设$\varphi$为如下公式的全称闭包：
+\begin{eqnarray}
+% \nonumber to remove numbering (before each equation)
+  Block(x)~\wedge~\neg Ab(x)~\rightarrow~Ontable(x) \\
+  \neg Ontable(B_1)
+\end{eqnarray}
+其中谓词$Block(x)$表示$x$是一个积木块，$Ontable(x)$表示$x$在桌子上，$Ab(x)$表示$x$是不正常的，对应的限定理论是$\mathbf{CIRC}[\varphi;Ab;Ontable]$。 根据上述定义，得到如下转换：\\
+$\varphi^{\neg\neg}~\Leftrightarrow~$
+\begin{align}
+  \theta_1^{\neg\neg}~&=~\neg Block(x)~\vee~\neg\neg Ab(x)~\vee~Ontable(x) \label{form_emp_block1} \\
+  \theta_2^{\neg\neg}~&=~\neg Ontable(B_1)
+\end{align}
+$\tilde{\varphi}~\Leftrightarrow~$
+\begin{align}
+  \tilde{\theta_1}~&=~\neg Block(x)~\vee~Ab(x)~\vee~Q_{On}(x) \\
+  \tilde{\theta_2}~&=~Q_{On}(x)~\rightarrow~\gamma
+\end{align}
+$\phi~\Leftrightarrow~$
+\begin{align}
+    (\gamma~\rightarrow~Ab(x)~\vee~\neg Ab(x))~\wedge~Tr_{QE}(\exists(Ab(x)~\vee~\neg Ab(x)~\rightarrow~\gamma)) \\
+    \gamma~\rightarrow~Q_{On}(x) \label{form_emp_block2}
+\end{align}
+设$\psi$为公式(\ref{form_emp_block1}-\ref{form_emp_block2}) 合取的一阶全称闭包，则$\exists Q_{On}\exists\gamma\mathbf{SM}[\psi;Ab,Q_{On},\gamma]$ 等价于\\$\mathbf{CIRC}[\varphi;Ab;Ontable]$。根据文献\cite{lifschitz1994circumscription}，该问题的结果应为$Ab(x)~\equiv~x=B_1$。
+对$\psi$运用算法\ref{alg_convert}-ConvertToDLP得到问题的析取逻辑程序。
+
+使用ASP求解器求解时，需输入问题实例，实验中问题实例使用随机生成的方式，格式如下：
+\begin{verbatim}
+#const n=5.
+block(1..n).
+min1_f(1).max1_f(n).% 为生成DLP中的后继结构谓词
+\end{verbatim}
+设$B_1=1$，该实验的结果模型只有一个，即谓词$Ab$只有$1$满足，谓词$Ontable$除$1$之外均满足，因此可以编写了一个验证本问题结果的程序，该程序检测每个问题实例结果的谓词满足情况是否正确。实验结果显示本问题求解是正确。
+
+\subsection{和平主义者}
+
+使用和平主义者例\ref{emp_pacifist}，将翻译$Tr^p_v$ 应用到该语句上，首先得到如下的转换：\\
+$\varphi^{\neg\neg}~\Leftrightarrow~$
+\begin{align}
+% \nonumber to remove numbering (before each equation)
+  \theta_1^{\neg\neg}~&=~\neg Quaker(x)~\vee~\neg\neg Ab_1(x)~\vee~Pacifist(x) \label{form_emp_pac1}\\
+  \theta_2^{\neg\neg}~&=~\neg Republican(x)~\vee~\neg\neg Ab_2(x)~\vee~\neg Pacifist(x)
+\end{align}
+$\tilde{\varphi}_1~\Leftrightarrow~$
+\begin{align}
+    \tilde{\theta_1}_1~&=~\neg Quaker(x)~\vee~Ab_1(x)~\vee~Q^{1}_{P}(x) \\
+    \tilde{\theta_2}_1~&=~\neg Republican(x)~\vee~Q^{1}_{Ab_2}(x)~\vee~(Q^{1}_{P}(x)\rightarrow\gamma_1)
+\end{align}
+$\tilde{\varphi}_2~\Leftrightarrow~$
+\begin{align}
+    \tilde{\theta_1}_2~&=~\neg Quaker(x)~\vee~\neg\neg Ab_1(x)~\vee~Q^{2}_{P}(x) \\
+    \tilde{\theta_2}_2~&=~\neg Republican(x)~\vee~Ab_2(x)~\vee~(Q^{2}_{P}(x)\rightarrow\gamma_2)
+\end{align}
+$\phi_1~\Leftrightarrow~$
+\begin{align}
+    (\gamma_1~\rightarrow~Ab_1(x)~\vee~\neg Ab_1(x))~\wedge~Tr_{QE}(\exists x(Ab_1(x)~\vee~\neg Ab_1(x)~\rightarrow~\gamma_1)) \\
+    \gamma_1~\rightarrow~Q^{1}_{P}(x)~\wedge~\gamma_1~\rightarrow~Q^{1}_{Ab_2}(x)
+\end{align}
+$\phi_2~\Leftrightarrow~$
+\begin{align}
+    (\gamma_2~\rightarrow~Ab_2(x)~\vee~\neg Ab_2(x))~\wedge~Tr_{QE}(\exists x(Ab_2(x)~\vee~\neg Ab_2(x)~\rightarrow~\gamma_2)) \\
+    \gamma_2~\rightarrow~Q^{2}_{P}(x) \label{form_emp_pac2}
+\end{align}
+设$\psi$为公式(\ref{form_emp_pac1}-\ref{form_emp_pac2}) 合取的一阶全称闭包，则$\mathbf{SM}[\psi;Ab_1,Ab_2,Q^{1}_{P},Q^{1}_{Ab_2},Q^{2}_{P},\gamma_1,\gamma_2]$ 等价于$\mathbf{CIRC}[\varphi;Ab_1>Ab_2;Pacifist]$。该问题的结果应为$Ab(x)~\equiv~Quake(x)\leftrightarrow Republican(x)$。
+对$\psi$运用算法\ref{alg_convert}-ConvertToDLP得到问题的DLP。 问题实例使用随机生成的方式，格式如下：
+\begin{verbatim}
+d(1..1000).
+quaker(1..1000).
+republican(5..10).
+min1_f_1(1).max1_f_1(1000).% 为生成DLP中后继结构谓词
+min1_f_2(5).max1_f_2(10).
+\end{verbatim}
+
+文献\cite{mccarthy1986applications}提供了很多限定理论的一些小的应用实例，在实验中也对其中一些进行了测试，在此就不一一叙述了。
+
+由于缺乏现有求解器的对比，在这类实验中，使用了一个验证限定理论求解器结果正确性的技巧：对于一个限定编码输入，像上述例子一样进行手工的翻译后，经过稳定模型求解器得到问题的模型，和直接使用限定求解器翻译求解得到的模型对比，这样便轻松的验证了一阶限定理论实验结果正确与否。
+
+\section{效率分析}
+
+本小节旨在测试求解器的效率，因此本实验选取的测例均为无特殊意义的一阶语句，
+测量的运行时间是cfo2lp的翻译时间加上求解器ClaspD、DLV或GnT的求解时间，分别记为$T(cfo2lp)$ 和$T(ASP)$。效率问题可以概括为三个方面的因素，分别为：
+\begin{enumerate}
+  \item $\Sigma_n$-公式（或$\Pi_n$-公式）的规模，同时影响$T(cfo2lp)$和$T(ASP)$；
+  \item 优先级规模，同时影响$T(cfo2lp)$和$T(ASP)$；
+  \item 问题规模，只影响$T(ASP)$；
+  \item 不同求解器实现的机制不同，只会影响$T(ASP)$。
+\end{enumerate}
+
+主要分为三个对比实验，分别为优先级数对比实验、翻译优化对比实验和不同求解器的对比实验，
+第一个实验由于与求解器无关，因此采用ClaspD求解器进行实验，三个实验均采用问题规模作为第二变量因子。
+
+
+
+\subsection{优先级数对比实验}
+
+
+\begin{figure}
+\centering
+\subfigure[翻译后语句数]{\includegraphics[width=0.46\textwidth]{img/prioritytranslatelines.jpg}}
+\subfigure[$T(cfo2lp)$与优先级关系]{\includegraphics[width=0.46\textwidth]{img/prioritytranslate.jpg}}\\
+\subfigure[$T(ASP)$与优先级关系]{\includegraphics[width=0.46\textwidth]{img/prioritymodel.jpg}}
+\caption{优先级数对比实验结果}
+\label{fig_priorityresult}
+\end{figure}
+
+如图\ref{fig_priorityresult}为优先级对比实验结果。
+图\ref{fig_priorityresult}(a)显示了优先级数翻译后语句条数的关系，在这个实验例子中，随着优先级的增多，输入公式的复杂程度增大，翻译后语句条数呈现剧增的现象；由图\ref{fig_priorityresult}(b)可以看出，随着优先级数的增多，翻译时间接近指数的增长，翻译过程也是经过多次迭代或递归完成，这与优先级计算公式(\ref{form_pri2par})复杂度呈指数增长一致；图\ref{fig_priorityresult}(c)的数据是使用回答集求解器ClaspD求解得出的，随着问题论域的扩大，翻译出的程序求解时间随之增加。
+
+
+
+\subsection{翻译优化对比实验}
+
+\begin{figure}
+  \center
+  \subfigure[ClaspD实验结果]{\includegraphics[width=0.46\textwidth]{img/opmodel.jpg}}
+  \subfigure[DLV实验结果]{\includegraphics[width=0.46\textwidth]{img/opmodeldlv.jpg}}\\
+  \subfigure[GnT实验结果]{\includegraphics[width=0.46\textwidth]{img/opmodelgnt.jpg}}
+  \caption{翻译优化对比实验结果}\label{fig_opresult}
+\end{figure}
+
+本文进行了一系列翻译优化对比实验，不同的公式输入称为问题实例，问题实例采用随机方式生成，生成的公式满足带有存在量词和优先级数小于5（大于5的逻辑程序用时较多，结果较难统计）等特点，这些例子中，$T(cfo2lp)$的翻译时间可以忽略不计，每个问题实例都产生经过翻译优化的逻辑程序和未经过翻译优化的逻辑程序，并分别使用三种求解器在各自适宜的一段$n$长度的论域上得到时间值，统计各自的平均优化率$\rho_{avg}$，一个问题实例在一个论域$i(1\leq i\leq n)$上的优化率$\rho_i$ 计算方法如下：
+\begin{align}
+    \rho_i~=~\frac{T(Opt)}{T(Org) - T(Opt)}
+\end{align}
+其中$T(Opt)$是优化的逻辑程序时间，$T(Org)$是未优化的逻辑程序时间。
+平均优化率可以计算如下：
+\begin{align}
+    \rho_{avg}~=~\frac{\rho_1+\rho_2+\cdot\cdot\cdot+\rho_n}{n}
+\end{align}
+
+下面介绍一个问题实例的统计方法，该例子选取了一个简单的带有存在量词的公式为
+\begin{align}
+    \forall x(p(x)~\vee~(q(x)~\wedge~r(x))) \\
+    \exists x(p(x~\wedge~q(x)~\rightarrow~r(x)))
+\end{align}
+翻译时间可以忽略不计，只记录求解全部模型的回答集求解器时间。由图\ref{fig_opresult}可以看出，经过翻译优化和未经过翻译优化的时间对比中，在这个实验例子下ClaspD平均可以优化约$50\%$ 的时间，DLV在论域较小时基本处于持平，当论域增大时，优化了接近了$100\%$的时间，GnT优化的时间较为平稳，平均约$17\%$的时间；同样观察翻译优化后和与未优化的析取逻辑程序，在翻译后的语句数量上，优化的程序会减少约$20\%$的语句。
+
+\begin{figure}
+\centering
+{\includegraphics[width=0.60\textwidth]{img/opbili.jpg}}\\
+\caption{翻译优化实验结果}
+\label{fig_op}
+\end{figure}
+
+翻译优化实验统计结果如图\ref{fig_op}所示，优化率最高可达50\%，最低只能达到0.7\%左右，不同实例的结果区别较大，不同求解器效率的区别同样较大，两个方面均无规律可循，然而翻译优化的结果总体来说效率是得到提升的。
+
+
+
+\subsection{不同求解器对比实验}
+
+
+
+如图\ref{fig_aspsolverresult}显示了不同求解器对比实验，实验中，如果求解时间超过一个小时，实验会中止计算，并记录时间为3600秒，表示该论域下的问题不可被对应的求解器求解。其中图\ref{fig_aspsolverresult}(a) 是计算全部模型的时间结果，该实验结果显示ClaspD 在求解模型中体现了绝对的优势，求解时间接近于0，DLV和GnT 都只能求解出论域比较小的问题，且计算时间也很小，但当论域较大时，DLV 和GnT计算时间急剧增长；图\ref{fig_aspsolverresult}(b)是计算一个模型的时间结果，ClaspD求解时间近乎于0，DLV在求解一个模型上呈现出了较高的效率，然而GnT 同样在论域增至一定量时计算时间急剧增长。
+
+\begin{figure}
+\centering
+\subfigure[全部模型]{\includegraphics[width=0.46\textwidth]{img/aspsolverallmodel.jpg}}
+\subfigure[一个模型]{\includegraphics[width=0.46\textwidth]{img/aspsolveramodel.jpg}}
+\caption{求解器对比实验结果}
+\label{fig_aspsolverresult}
+\end{figure}
+
+\subsection{结果分析}
+
+基于上述几个对比实验，关于求解器效率方面，主要有如下结论：
+\begin{enumerate}
+  \item 并行限定或层数较少的优先级限定的翻译时间很小，优先级数对翻译时间影响较大，呈指数级增长；
+  \item 限定理论翻译优化对求解效率有一定的提高；
+  \item 问题规模对求解速度的影响较大，在求解论域较大的问题时，回答集求解器ClaspD性能最佳，DLV 次之，GnT最差；
+\end{enumerate}
+
+\section{本章小结}
+
+本章通过对第四章实现的一阶限定理论求解器的两类实验，分别验证了求解器的正确性和分析了求解器效率因素，由于本文是第一个做出一阶限定理论求解器的，因此无法与其他求解器进行对比实验。

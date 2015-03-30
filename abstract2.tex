@@ -1,0 +1,39 @@
+%\thispagestyle{empty} %取消当前页码
+%\chapter[ABSTRACT（英文摘要）]{Abstract}
+%\centerline{\begin{tabular}{l l}
+%Title：& Research on Solver for General First-order Circumscriptive Theories and \\
+%    & Application  \\
+%Major：& Computer Technology\\
+%Name：& Wang Pu\\
+%Supervisor：& Wan Hai\\
+%\end{tabular}}
+\vspace{0.5cm}
+%\chapter*{Abstract}
+% \markboth{英~文~摘~要}{英~文~摘~要}
+\phantomsection
+\addcontentsline{toc}{chapter}{Abstract}
+
+%\vspace*{-1cm}
+
+%\centerline{\LARGE \textsf{\textbf{Abstract}}}
+\centerline{\xiaoerhao \textbf{Abstract}}
+\vspace{0.5cm}
+
+
+Artificial intelligence is a very important subject in computer science. The knowledge representation and reasoning in artificial intelligence aims at completing and reflecting human intelligence in computer through the understanding of intelligence and cognitive nature. John McCarthy, one of the founders of artificial intelligence, has begun to promote the development of knowledge representation in the early 1950s. He first proposed the use of symbolic reasoning form to depict the cognitive and reasoning of knowledge.
+
+Knowledge representation is through monotonic logic for reasoning at its early age. However, people came to realize that human cognition of common sense and reasoning is non-monotonic soon. In this case, non-monotonic logic became the mainstream tool of knowledge representation from then on. In this thesis, the answer set programming (ASP) which we studied is an import content of non-monotonic logic. With many years development of answer set programming problems, its theory and solver has been relatively mature. Nevertheless, the computational complexity of normal logic program (NLP) and disjunctive logic program (DLP) in ASP program under stab le model semantic are $\mathbf{NP}\text{-}complete$ and $\Pi^P_2\text{-}complete$ respectively after strict proven. Therefore, the main development bottleneck problem in answer set program is solver efficiency.
+
+In the process of ASP solver speeding up development, Lifschitz and Turner proposed the concept of splitting set and program splitting in 1994. Moreover, they provided a method to divide a logic program into two parts which was named as bottom and top, and showed that the task of computing the answer sets of the program can be converted into the tasks of computing the answer sets of these parts. The concept of splitting set and program splitting brought new ideas to speed up solving answer sets of ASP program. In the subsequent period, splitting set and program splitting have been promoted and recognized continuously. However, the notion of splitting set which proposed by Lifschitz and Turner was based on strong conditions. Because of this, the empty set and the set of all atoms are the only two splitting sets for many ASP programs in the actual situation. These two splitting sets made no sense to speed up the answer sets solving in ASP programs, because these splitting sets cannot divide programs by the splitting methods. 
+
+Based on this background, in this thesis, I carried on the deep discussion and research about Lifschitz and Turner’s splitting set and program splitting theorem and extend them. Along this train of thought, I introduce the concept of splitting set to program simplification. The main achievements obtained in this thesis are shown as following details. 
+
+Firstly, I extend Lifschitz and Turner’s splitting set and program splitting theorem to allow the program to be split by an arbitrary set of atoms and introduce a new program splitting method. As the splitting set can be an arbitrary set of atoms, the applicability of program splitting can be extended greatly. Besides, this thesis figure out the main performance bottlenecks through analyzing properties of the new splitting method. At the same time, the data coming from experiment in this thesis support the fact that using arbitrary set of atoms as splitting set and the new splitting method to divide ASP program and solve its answer sets is quicker than solve directly. More precisely, it is two to three times faster than the original according the experiment.
+
+Secondly, during analyzing how the new splitting set effect on the performance of new splitting method, I found out that if atoms in the splitting set are satisfied by every answer set of the program, it could release the computational complexity of answer set solving. According to this, this thesis extends the usage of splitting set to program simplification. In the same words, we can use consequence of the ASP programs to simplify themselves. The consequence of an ASP program is a set of literals that are satisfied by every answer set of the program. I took only positive literals to make them as atoms. The purpose of program simplification is still to speed up solving answer sets of ASP program.
+
+This thesis proposes the new splitting set and new splitting method to make contribution to speed up solving answer sets of ASP program which brings a substantial progress, and extends the concept of splitting set to practical application such as program simplification. All these make important improvement to solving ASP program. 
+
+
+{\bf Key Words: non-monotonic logic, answer set programming, splitting set, program splitting, program simplification}
+%\clearpage

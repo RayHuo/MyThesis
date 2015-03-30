@@ -1,0 +1,22 @@
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwData{Left}{left}\SetKwData{This}{this}\SetKwData{Up}{up}
+  \SetKwFunction{Union}{Union}\SetKwFunction{FindCompress}{FindCompress}
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \caption{ConverWithPriority 优先级限定翻译}\label{alg_convertwithpriority}
+
+  \Input{~一阶语句集$\Phi$~}
+  \Output{~一集全称一阶公式~}
+  \BlankLine
+    \Forall{一阶公式$\varphi\in\Phi$}
+    {
+        转换出$\theta^{\neg\neg}$；
+    }
+    \For{i=0;i<优先级数;i++}
+    {
+        设置新的极小化谓词；\\
+        设置新的可变谓词；\\
+        ConvertWithoutPriority
+    }
+    
+\end{algorithm}\DecMargin{1em}

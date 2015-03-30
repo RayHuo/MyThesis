@@ -1,0 +1,35 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: paper_d.aux
+A level-1 auxiliary file: abstract1.aux
+A level-1 auxiliary file: abstract2.aux
+A level-1 auxiliary file: chap1.aux
+A level-1 auxiliary file: chap2.aux
+The style file: paper2.bst
+bibinfo is an unknown function---line 207 of file paper2.bst
+bibinfo.check is an unknown function---line 207 of file paper2.bst
+Database file #1: reference.bib
+I was expecting a `,' or a `}'---line 302 of file reference.bib
+ :   
+ :   type = { thesis}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 564 of file reference.bib
+ : @incollection{clark1978negation
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 573 of file reference.bib
+ : @inproceedings{gelfond1988stable
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 721 of file reference.bib
+ : @inproceedings{gelfond1988stable
+ :                                 ,
+I'm skipping whatever remains of this entry
+You can't pop an empty literal stack for entry ji2010phd
+while executing---line 866 of file paper2.bst
+Warning--empty booktitle in colmeraner1973systeme
+`journal' is a missing field, not a string, for entry zhai2014asp
+while executing---line 866 of file paper2.bst
+Warning--empty journal in zhai2014asp
+You can't pop an empty literal stack for entry zhang2011Decidability
+while executing---line 866 of file paper2.bst
+(There were 9 error messages)

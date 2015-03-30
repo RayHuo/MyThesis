@@ -1,0 +1,510 @@
+
+@Article{McCarthy1959,
+  author =    {McCarthy, John},
+  title =     {Programs with common sense},
+  pages =     {57--70},
+  journal = {Proceedings of Teddington Conference on the Mechanization of Thought Processes},
+  address = {London},
+  year =      {1959},
+}
+@article{mccarthysome,
+  title={Some philosophical problems from the standpoint of artificial intelligence},
+  author={McCarthy, John and Hayes, Patrick J},
+  pages={463--502},
+  journal={Machine Intelligence},
+  year={1969},
+  publisher={Edinburgh University Press}
+}
+@article{fikes1972strips,
+  title={STRIPS: A new approach to the application of theorem proving to problem solving},
+  author={Fikes, Richard E and Nilsson, Nils J},
+  journal={Artificial intelligence},
+  volume={2},
+  number={3},
+  pages={189--208},
+  year={1972},
+  publisher={Elsevier}
+}
+@article{kowalski1986logic,
+  title={A logic-based calculus of events},
+  author={Kowalski, Robert and Sergot, Marek},
+  journal={New generation computing},
+  volume={4},
+  number={1},
+  pages={67--95},
+  year={1986},
+  publisher={Springer}
+}
+@inproceedings{green1969application,
+  title={Application of theorem proving to problem solving},
+  author={Green, Cordell},
+  booktitle={Proceedings of the 1st international joint conference on Artificial intelligence},
+  pages={219--239},
+  year={1969},
+  organization={Morgan Kaufmann Publishers Inc.}
+}
+@book{kowalski1973predicate,
+  title={Predicate logic as programming language},
+  author={Kowalski, Robert},
+  year={1973},
+  publisher={Edinburgh University}
+}
+
+@article{mccarthy1980circumscription,
+  title={Circumscription--a form of non-monotonic reasoning},
+  author={McCarthy, John},
+  journal={Artificial intelligence},
+  volume={13},
+  number={1},
+  pages={27--39},
+  year={1980},
+  publisher={Elsevier}
+}
+
+@article{reiter1980logic,
+  title={A logic for default reasoning},
+  author={Reiter, Raymond},
+  journal={Artificial intelligence},
+  volume={13},
+  number={1},
+  pages={81--132},
+  year={1980},
+  publisher={Elsevier}
+}
+@inproceedings{lifschitz1985computing,
+  title={Computing circumscription},
+  author={Lifschitz, Vladimir},
+  booktitle={Proceedings of the ninth international joint conference on artificial intelligence},
+  volume={27},
+  pages={229--235},
+  year={1985},
+  organization={Los Angeles, CA}
+}
+@article{lifschitz1987pointwise,
+  title={Pointwise circumscription},
+  author={Lifschitz, Vladimir},
+  journal={Readings in nonmonotonic reasoning},
+  pages={179--193},
+  year={1987}
+}
+@inproceedings{lifschitz1994circumscription,
+  title={Circumscription},
+  author={Lifschitz, Vladimir},
+  booktitle={Handbook of logic in artificial intelligence and logic programming},
+  volume={3},
+  pages={297--352},
+  year={1994},
+  organization={Oxford University Press, Inc.}
+}
+@article{cadoli1992efficient,
+  title={An efficient method for eliminating varying predicates from a circumscription},
+  author={Cadoli, Marco and Eiter, Thomas and Gottlob, Georg},
+  journal={Artificial Intelligence},
+  volume={54},
+  number={3},
+  pages={397--410},
+  year={1992},
+  publisher={Elsevier}
+}
+@article{doherty1997computing,
+  title={Computing circumscription revisited: A reduction algorithm},
+  author={Doherty, Patrick and {\L}ukaszewicz, Witold and Sza{\l}as, Andrzej},
+  journal={Journal of Automated Reasoning},
+  volume={18},
+  number={3},
+  pages={297--336},
+  year={1997},
+  publisher={Springer}
+}
+@incollection{wakaki2004compiling,
+  title={Compiling prioritized circumscription into answer set programming},
+  author={Wakaki, Toshiko and Inoue, Katsumi},
+  booktitle={Logic Programming},
+  volume={3132},
+  pages={356--370},
+  year={2004},
+  publisher={Springer}
+}
+@incollection{oikarinen2008implementing,
+  title={Implementing prioritized circumscription by computing disjunctive stable models},
+  author={Oikarinen, Emilia and Janhunen, Tomi},
+  booktitle={Artificial Intelligence: Methodology, Systems, and Applications},
+  volume={5253},
+  pages={167--180},
+  year={2008},
+  publisher={Springer}
+}
+@incollection{lee2009system,
+  title={System F2LP--computing answer sets of first-order formulas},
+  author={Lee, Joohyung and Palla, Ravi},
+  booktitle={Logic Programming and Nonmonotonic Reasoning},
+  volume={5753},
+  pages={515--521},
+  year={2009},
+  publisher={Springer}
+}
+@incollection{shanahan1999event,
+  title={The event calculus explained},
+  author={Shanahan, Murray},
+  booktitle={Artificial intelligence today},
+  volume={1600},
+  pages={409--430},
+  year={1999},
+  publisher={Springer}
+}
+@inproceedings{kartha1995simple,
+  title={A simple formalization of actions using circumscription},
+  author={Kartha, G Neelakantan and Lifschitz, Vladimir},
+  booktitle={Proceedings IJCAI},
+  volume={95},
+  pages={1970--1975},
+  year={1995},
+  organization={Citeseer}
+}
+@article{chen1997based,
+  title={基于限定的溯因问题求解},
+  author={陈保平 and 孙吉贵},
+  journal={软件学报},
+  volume={8},
+  number={4},
+  pages={316--320},
+  year={1997}
+}
+@article{jiang2002based,
+  title={基于限定的规划识别问题求解},
+  author={姜云飞 and 马宁},
+  journal={计算机学报},
+  volume={25},
+  number={12},
+  pages={1411--1416},
+  year={2002},
+  publisher={万方数据资源系统}
+}
+@book{enderton2001mathematical,
+  title={A mathematical introduction to logic},
+  author={Enderton, Herbert and Enderton, Herbert B},
+  year={2001},
+  publisher={Academic press}
+}
+@article{lee2012reformulating,
+  title={Reformulating the situation calculus and the event calculus in the general theory of stable models and in answer set programming},
+  author={Lee, Joohyung and Palla, Ravi},
+  journal={Journal of Artificial Intelligence Research},
+  volume={43},
+  number={1},
+  pages={571--620},
+  year={2012},
+  publisher={AI Access Foundation}
+}
+@inproceedings{kim2009circumscriptive,
+  title={Circumscriptive event calculus as answer set programming},
+  author={Kim, Tae-Won and Lee, Joohyung and Palla, Ravi},
+  booktitle={Proceedings of International Joint Conference on Artificial Intelligence (IJCAI)},
+  pages={823--829},
+  year={2009}
+}
+@article{mccarthy1986applications,
+  title={Applications of circumscription to formalizing common-sense knowledge},
+  author={McCarthy, John},
+  journal={Artificial Intelligence},
+  volume={28},
+  number={1},
+  pages={89--116},
+  year={1986},
+  publisher={Elsevier}
+}
+@article{ferraris2011stable,
+  title={Stable models and circumscription},
+  author={Ferraris, Paolo and Lee, Joohyung and Lifschitz, Vladimir},
+  journal={Artificial Intelligence},
+  volume={175},
+  number={1},
+  pages={236--263},
+  year={2011},
+  publisher={Elsevier}
+}
+@article{pearce2005first,
+  title={A first order nonmonotonic extension of constructive logic},
+  author={Pearce, David and Valverde, Agustin},
+  journal={Studia Logica},
+  volume={80},
+  number={2},
+  pages={321--346},
+  year={2005},
+  publisher={Springer}
+}
+@article{mcdermott1982nonmonotonic,
+  title={Nonmonotonic logic II: Nonmonotonic modal theories},
+  author={McDermott, Drew},
+  journal={Journal of the ACM (JACM)},
+  volume={29},
+  number={1},
+  pages={33--57},
+  year={1982},
+  publisher={ACM}
+}
+
+%@TECHREPORT{reiter1977closed,
+%  author =       {Reiter, Raymond},
+%  title =        {On closed world data bases},
+%  institution =  {},
+%  year =         {1977},
+%  address =      {Canada Vancouver BC},
+%}
+
+@article{reiter1977closed,
+  title={On closed world data bases},
+  author={Reiter, Raymond},
+  journal={Technical report},
+  year={1977},
+  publisher={University of British Columbia},
+  address={Canada}
+}
+@article{clark1978negation,
+  title={Negation as failure},
+  author={Clark, Keith L},
+  journal={Logic and data bases},
+  volume={1},
+  pages={293--322},
+  year={1978}
+}
+@inproceedings{gelfond1988stable,
+  title={The stable model semantics for logic programming},
+  author={Gelfond, Michael and Lifschitz, Vladimir},
+  booktitle={Proceedings of the 5th International Conference on Logic programming},
+  volume={161},
+  year={1988}
+}
+@article{gelfond1991classical,
+  title={Classical negation in logic programs and disjunctive databases},
+  author={Gelfond, Michael and Lifschitz, Vladimir},
+  journal={New generation computing},
+  volume={9},
+  number={3},
+  pages={365--385},
+  year={1991},
+  publisher={Springer}
+}
+@article{cabalar2005reducing,
+  title={Reducing propositional theories in equilibrium logic to logic programs},
+  author={Cabalar, Pedro and Pearce, David and Valverde, Agust{\'\i}n},
+  journal={Progress in Artificial Intelligence},
+  volume={3808},
+  pages={4--17},
+  year={2005},
+  publisher={Springer}
+}
+@inproceedings{zhang2011translating,
+  title={Translating first-order theories into logic programs},
+  author={Zhang, Heng and Zhang, Yan and Ying, Mingsheng and Zhou, Yi},
+  booktitle={Proceedings of the Twenty-Second international joint conference on Artificial Intelligence-Volume Volume Two},
+  pages={1126--1131},
+  year={2011},
+  organization={AAAI Press}
+}
+
+@phdthesis{zhang2011Decidability,
+  author =       {章衡},
+  title =        {非单调逻辑的可判定性与可译性},
+  school =       {清华大学},
+  year =         {2011},
+  address = {北京}
+  type = { thesis}
+}
+@incollection{janhunen2004capturing,
+  title={Capturing parallel circumscription with disjunctive logic programs},
+  author={Janhunen, Tomi and Oikarinen, Emilia},
+  booktitle={Logics in Artificial Intelligence},
+  volume={3229},
+  pages={134--146},
+  year={2004},
+  publisher={Springer}
+}
+@incollection{oikarinen2005circ2dlp,
+  title={CIRC2DLP—translating circumscription into disjunctive logic programming},
+  author={Oikarinen, Emilia and Janhunen, Tomi},
+  booktitle={Logic Programming and Nonmonotonic Reasoning},
+  volume={3662},
+  pages={405--409},
+  year={2005},
+  publisher={Springer}
+}
+@book{ben2001mathematical,
+  title={Mathematical logic for computer science},
+  author={Ben-Ari, Mordechai},
+  year={2001},
+  publisher={Springer Verlag}
+}
+@article{reiter1987theory,
+  title={A theory of diagnosis from first principles},
+  author={Reiter, Raymond},
+  journal={Artificial intelligence},
+  volume={32},
+  number={1},
+  pages={57--95},
+  year={1987},
+  publisher={Elsevier}
+}
+
+@article{de1992characterizing,
+  title={Characterizing diagnoses and systems},
+  author={De Kleer, Johan and Mackworth, Alan K and Reiter, Raymond},
+  journal={Artificial Intelligence},
+  volume={56},
+  number={2},
+  pages={197--222},
+  year={1992},
+  publisher={Elsevier}
+}
+
+@article{raiman1990circumscribed,
+  title={A circumscribed diagnosis engine},
+  author={Raiman, Olivier},
+  journal={Expert Systems in Engineering Principles and Applications},
+  volume={462},
+  pages={90--101},
+  year={1990},
+  publisher={Springer}
+}
+@article{eiter1995complexity,
+  title={The complexity of logic-based abduction},
+  author={Eiter, Thomas and Gottlob, Georg},
+  journal={Journal of the ACM (JACM)},
+  volume={42},
+  number={1},
+  pages={3--42},
+  year={1995},
+  publisher={ACM}
+}
+@book{karp1972reducibility,
+  title={Reducibility among combinatorial problems},
+  author={Karp, Richard M},
+  year={1972},
+  publisher={Springer}
+}
+@article{gale1962college,
+  title={College admissions and the stability of marriage},
+  author={Gale, David and Shapley, Lloyd S},
+  journal={The American Mathematical Monthly},
+  volume={69},
+  number={1},
+  pages={9--15},
+  year={1962},
+  publisher={JSTOR}
+}
+@article{marek1990theory,
+  title={A theory of nonmonotonic rule systems I},
+  author={Marek, Wiktor and Nerode, Anil and Remmel, J},
+  journal={Annals of Mathematics and Artificial Intelligence},
+  volume={1},
+  number={1},
+  pages={241--273},
+  year={1990},
+  publisher={Springer}
+}
+@article{dung1995acceptability,
+  title={On the acceptability of arguments and its fundamental role in nonmonotonic reasoning, logic programming and n-person games},
+  author={Dung, Phan Minh},
+  journal={Artificial intelligence},
+  volume={77},
+  number={2},
+  pages={321--357},
+  year={1995},
+  publisher={Elsevier}
+}
+@article{gale1985some,
+  title={Some remarks on the stable matching problem},
+  author={Gale, David and Sotomayor, Marilda},
+  journal={Discrete Applied Mathematics},
+  volume={11},
+  number={3},
+  pages={223--232},
+  year={1985},
+  publisher={Elsevier}
+}
+@article{guodongliang2005,
+  title={用回跳法求解稳定婚姻问题},
+  author={郭东亮 and 张立臣},
+  journal={计算机应用研究},
+  volume={22},
+  number={1},
+  pages={59--60},
+  year={2005}
+}
+@article{songxudong2010,
+  title={稳定婚姻匹配问题的一个快速枚举算法},
+  author={宋旭东 and 纪秀花},
+  journal={工程图学学报},
+  number={003},
+  pages={187--192},
+  year={2010}
+}
+@article{iwama1999stable,
+  title={Stable marriage with incomplete lists and ties},
+  author={Iwama, Kazuo and Miyazaki, Shuichi and Morita, Yasufumi and Manlove, David},
+  journal={Automata, Languages and Programming},
+  volume={1644},
+  pages={706--706},
+  year={1999},
+  publisher={Springer}
+}
+@book{aho2007compilers,
+  title={Compilers: principles, techniques, \& tools},
+  author={Aho, Alfred V and Lam, Monica S and Sethi, Ravi and Ullman, Jeffrey D},
+  volume={1009},
+  year={2007},
+  publisher={Pearson/Addison Wesley}
+}
+@inproceedings{gebser2007conflict,
+  title={Conflict-driven answer set solving},
+  author={Gebser, Martin and Kaufmann, Benjamin and Neumann, Andr{\'e} and Schaub, Torsten},
+  booktitle={Proceedings of the 20th international joint conference on Artifical intelligence},
+  pages={386--392},
+  year={2007}
+}
+@article{leone2006dlv,
+  title={The DLV system for knowledge representation and reasoning},
+  author={Leone, Nicola and Pfeifer, Gerald and Faber, Wolfgang and Eiter, Thomas and Gottlob, Georg and Perri, Simona and Scarcello, Francesco},
+  journal={ACM Transactions on Computational Logic (TOCL)},
+  volume={7},
+  number={3},
+  pages={499--562},
+  year={2006},
+  publisher={ACM}
+}
+@article{janhunen2006unfolding,
+  title={Unfolding partiality and disjunctions in stable model semantics},
+  author={Janhunen, Tomi and Niemel{\"a}, Ilkka and Seipel, Dietmar and Simons, Patrik and You, Jia-Huai},
+  journal={ACM Transactions on Computational Logic (TOCL)},
+  volume={7},
+  number={1},
+  pages={1--37},
+  year={2006},
+  publisher={ACM}
+}
+@incollection{niemela1997smodels,
+  title={Smodels—an implementation of the stable model and well-founded semantics for normal logic programs},
+  author={Niemel{\"a}, Ilkka and Simons, Patrik},
+  booktitle={Logic Programming and Nonmonotonic Reasoning},
+  volume={1265},
+  pages={420--429},
+  year={1997},
+  publisher={Springer}
+}
+@article{eiter1996normal,
+  title={Normal forms for second-order logic over finite structures, and classification of NP optimization problems},
+  author={Eiter, Thomas and Gottlob, Georg and Gurevich, Yuri},
+  journal={Annals of Pure and Applied Logic},
+  volume={78},
+  number={1},
+  pages={111--125},
+  year={1996},
+  publisher={Elsevier}
+}
+@book{gusfield1989stable,
+  title={The stable marriage problem: structure and algorithms},
+  author={Gusfield, Dan and Irving, Robert W},
+  volume={54},
+  year={1989},
+  publisher={MIT press Cambridge}
+}

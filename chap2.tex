@@ -1,0 +1,364 @@
+\chapter{预备知识}
+
+本章给出了本文将涉及的基础知识，先从命题逻辑进行介绍，引入失败即否定，并定义ASP中的普通规则，及规则中各个部分涉及的命名符号。然后给出“满足”的概念。完成基础介绍后，进入回答集语义，即如何定义ASP程序的回答集。然后列出一些ASP程序的主要性质，主要是环与环公式，及本文的核心内容分割集与程序分割。
+
+\section{命题逻辑}
+命题（$\mathbf{proposition}$）是非真即假的陈述句。我们一般使用字母代表一个命题。命题逻辑由命题公式和一套证明规则所组成，其中命题公式和证明规则就是命题逻辑的运算本体和运算规则\cite{limo1999lpSAT}。
+
+\begin{definition}
+命题逻辑的符号包括\cite{luger2003AI}：
+\begin{itemize}
+	\item 命题符号：$A$，$B$，$C$，...，统称为$\aleph$
+	\item 真值符号：$true$，$false$；
+	\item 连接词：$\land$，$\lor$，$\neg$，$\rightarrow$，$\equiv$。
+\end{itemize}
+\end{definition}
+
+在ASP逻辑程序中，我们也把命题符号称为一个原子。
+
+\begin{definition}[文字]
+一个命题符号或者一个命题符号的否定。其中一个命题符号为正文字，一个命题符号的否定为负文字。
+\end{definition}
+
+命题的真假性被称为其真值（truth value），真值只有真（true）和假（false）两个。每个命题只能为真或者为假，不能既是真又是假，或者既不是真又不是假。通常地，在求解逻辑程序中，我们所得到的结果就是指能够被确定真值为真的命题集合。
+
+在定义2.1中的连接词的作用是把若干个文字连接成命题公式。每个连接词都有自己的真值表，可以概括如下\cite{luger2003AI}：
+
+\begin{enumerate}
+	\item 非（$\neg$），真假性与其操作的命题相反，当$A$为真时，$\neg$$A$为假，当$A$为假时，$\neg$$A$为真；
+	\item 合取（$\land$），$A \land B$为真，当且仅当命题$A$和$B$同时为真时；
+	\item 析取（$\lor$），$A \lor B$为真，当且仅当命题$A$和$B$中至少有一个为真；
+	\item 蕴涵（$\rightarrow$），$A \rightarrow B$为假，当且仅当命题$A$为真且$B$为假。
+\end{enumerate}
+
+命题公式由一个文字或者多个文字通过连接词组成。命题公式是命题逻辑的推理基础。在有需要的情况下，命题公式可以通过对合律、德?摩根定律、结合律和分配律等运算性质得到逻辑等价的范式，本文涉及的范式有合取范式和析取范式。
+
+\begin{definition}[范式]
+合取范式（$Conjunctive Normal Form, CNF$）：一系列析取式的合取形式；析取范式（$Disjunctive Normal Form, DNF$）：一系列合取式的析取形式；其中析取式（合取式）为若干文字只通过连接词$\lor$（）$\land$)进行连接。
+\end{definition}
+
+
+\section{逻辑程序}
+逻辑程序是知识表示的基础。早期研究人工智能的学者都详细可以找到一种以符号刻画知识和推理过程的方法以达到模拟人类大脑推理的过程\cite{ji2010phd}。而事实上，逻辑程序便是这样的一种手段。逻辑程序的形式有很多。而在ASP逻辑程序中，主要用及的便是引入失败即否定和经典否定的命题公式。
+
+
+ASP程序一般分为两部分：事实集（Facts）和ASP逻辑程序。要求解一个ASP程序的回答集，需要结合使用事实集和ASP逻辑程序。
+
+ASP程序的求解过程是：
+\begin{enumerate}
+	\item 使用例化工具（常用的有gringo和lparse）通过事实集例化ASP逻辑程序；
+	\item 对例化后的逻辑程序，调用求解器进行求解。
+\end{enumerate}
+
+从实际效果来看，例化后的逻辑程序就是不含变量的命题公式集合。本文中只考虑完全例化后的长度有限的逻辑程序。本文所探讨的ASP逻辑程序由有限个规则（rule）所组成，其中规则的形式如下：
+\begin{equation}\label{asp_rule}
+	a_1 \lor a_2 \lor...\lor a_k~\leftarrow~a_{k+1},..., a_m, not~a_{m+1},...,not~a_n.
+\end{equation}
+
+其中$n \geq m \geq k \geq 1$，$a_i$为原子（atom），$not$代表失败即否定。在k，m，n取不同范围的值时，形式$(\ref{asp_rule})$所表示的规则有不同的意义，具体如下：
+
+\begin{enumerate}
+	\item k = 0时，规则被称为限制（Constraint）；
+	\item k = 1时，规则被称为正规规则（Normal Rule）；
+	\item n = m = 0时，规则被称为事实（Fact）；
+	\item n = m时，即规则中没有带not的原子时，规则称其为正规则（Positive Rule）。
+\end{enumerate}
+
+
+
+
+
+\begin{center}
+\begin{tabular}{l}
+$P^{*}~=~P$表示$\forall \bar{x}(P(\bar{x})~\leftrightarrow~P^{*}(\bar{x}))$，\\
+$P^{*}~\leq~P$表示$\forall \bar{x}(P^{*}(\bar{x})~\rightarrow~P(\bar{x}))$，\\
+$P^{*}~<~P$表示$(P^{*}~\leq~P)~\wedge~\neg(P^{*}~=~P)$，
+\end{tabular}
+\end{center}
+其中$\bar{x}$是变元元组，$P^{*}~<~P$表示$P^{*}$的外延是$P$的外延的子集。
+
+进一步，求解限定理论时，通常会有谓词集合的比较，设$\sigma$和$\sigma^{*}$都是谓词常元集，
+且$|\sigma|~=~|\sigma^{*}|$，
+\begin{center}
+\begin{tabular}{l}
+$\sigma^{*}~=\sigma$表示对于任意的$P~\in~\sigma$和$P^{*}~\in~\sigma^{*}$，满足$P^{*}~=~P$，\\
+$\sigma^{*}~\leq\sigma$表示对于任意的$P~\in~\sigma$和$P^{*}~\in~\sigma^{*}$，满足$P^{*}~\leq~P$，\\
+$\sigma^{*}~<\sigma$表示$(\sigma^{*}~\leq\sigma)~\wedge~\neg(\sigma^{*}~=\sigma)$，\\
+\end{tabular}
+\end{center}
+其中$P^{*}$与$P$是一一对应的，且具有相同的元数。
+
+设$\varphi$是一个一阶语句，$\sigma_i$是\textmd{极小}（minimized）谓词常元集，\textmd{可变}（varied）常元集$\sigma_v$是包含个体、函词或不在$\sigma_i$中出现的谓词常元集，
+表示谓词常元不能同时是极小的和可变的，$\varphi$的符号集中剩余的
+符号被称作\textmd{固定}（fixed）常元。一个限定理论是一个三元组$(\varphi;\sigma_i;\sigma_v)$，记为$\mathbf{CIRC}[\varphi;\sigma_i;\sigma_v]$，
+如果$\varphi$是命题公式，则称为\textmd{命题限定理论}；如果$\varphi$是一阶语句，则称为\textmd{一阶限定理论}；如果$\sigma_v$为空，
+则称为\textmd{标准限定理论}，可以简写为$\mathbf{CIRC}[\varphi;\sigma_i]$。
+
+\begin{definition}
+\textmd{并行限定}定义为如下一个二阶公式：
+\begin{equation}\label{form_defcirc}
+    \mathbf{CIRC}[\varphi;\sigma_i;\sigma_v]~=~\varphi~\wedge~\forall\sigma^{*}_i\sigma^{*}_v(\sigma^{*}_i~<~\sigma_i~\rightarrow~\neg\varphi(\sigma^{*}_i,\sigma^{*}_v))
+\end{equation}
+其中，$\sigma^{*}_i$是一个谓词变元集，这些谓词变元分别对应于$\sigma_i$中的谓词且常元具有相同的元数；类似地，$\sigma^{*}_v$是变元集，分别对应于$\sigma_v$中的常元，
+且具有相同的元数；$\varphi(\sigma^{*}_i,\sigma^{*}_v)$是将公式$\varphi$中在$\sigma_i$（或$\sigma_v$）中出现的常元替换成对应的$\sigma^{*}_i$（或$\sigma^{*}_v$）中的变元。
+\end{definition}
+
+公式(\ref{form_defcirc})的直观含义是，满足公式$\varphi$正确的条件下，使得$\sigma_i$中谓词的外延最小，称这样的公式$\varphi$的模型为
+$\mathbf{CIRC}[\varphi;\sigma_i;\sigma_v]$的模型。
+
+令$v$为上述语句$\varphi$的符号集，设$\mathfrak{A}$ 和$\mathfrak{B}$是任意两个$v$-结构，
+定义$\mathfrak{A}~\preceq_{\sigma_i,\sigma_v}~\mathfrak{B}$ 当且仅当以下条件成立：
+\begin{enumerate}
+  \item $\mathfrak{A}$与$\mathfrak{B}$具有相同的论域；
+  \item 对于$v$中所有的极小谓词常元$P$，均有$\mathfrak{A}(P)~\subseteq~\mathfrak{B}(P)$；
+  \item 对于$v$中所有固定的常元$C$，均有$\mathfrak{A}(C)~=~\mathfrak{B}(C)$。
+\end{enumerate}
+换句话说，$\mathfrak{A}~\preceq_{\sigma_i,\sigma_v}~\mathfrak{B}$ 意味着$\mathfrak{A}$和
+$\mathfrak{B}$仅在解释$\sigma_i$和$\sigma_v$上不同。
+
+关系$\preceq_{\sigma_i,\sigma_v}$具有自反律和传递律，令$\mathfrak{A}~\prec_{\sigma_i,\sigma_v}~\mathfrak{B}$
+表示$\mathfrak{A}~\preceq_{\sigma_i,\sigma_v}~\mathfrak{B}$ 成立但是$\mathfrak{B}~\preceq_{\sigma_i,\sigma_v}~\mathfrak{A}$ 不成立，
+如果结构$\mathfrak{A}$是语句$\varphi$的模型，且$\varphi$不存在模型$\mathfrak{B}$满足$\mathfrak{B}~\prec_{\sigma_i,\sigma_v}~\mathfrak{A}$。
+
+设$\sigma_{i}$为一个谓词常量集合，将$\sigma_{i}$分割成若干不相交的段$\sigma_{i}^{1},...,\sigma_{i}^{k}$。
+想使谓词$\sigma_{i}^{1}$极小化的优先级高于谓词$\sigma_{i}^{2}$，谓词$\sigma_{i}^{2}$极小化的优先级高于$\sigma_{i}^{3}$，
+$\sigma_{i}^{m}$的优先级高于$\sigma_{i}^{n}$（$1\leq n<m\leq k$）。对于公式$\varphi$，$\sigma_v$为变化的谓词集，$\sigma_{i}^{1}>...>\sigma_{i}^{k}$为极小化谓词集的\textmd{优先级限定}记为$\mathbf{CIRC}[\varphi;\sigma_{i}^{1}>...>\sigma_{i}^{k};\sigma_v]$，
+同样可以定义成与公式(\ref{form_defcirc})相似的二阶公式。
+优先级限定与并行限定有如下的关系性质：
+
+\begin{proposition}
+\textbf{(文献\cite{lifschitz1994circumscription}命题15)}优先级限定$\mathbf{CIRC}[\varphi;\sigma_{i}^{1}>...>\sigma_{i}^{k};\sigma_v]$ 等价于并行限定
+\begin{equation}\label{form_pri2par}
+    \bigwedge^{k}_{j=1}\mathbf{CIRC}[\varphi;\sigma_{i}^j;\sigma_{i}^{j+1},...,\sigma_{i}^{k},\sigma_v].
+\end{equation}
+\end{proposition}
+
+下面给出一个具体地例子介绍限定理论的相关概念。
+\begin{example}\label{emp_pacifist}
+(Reiter的例子，文献\cite{mccarthy1986applications} 第7节)设$\varphi$为如下一阶公式的全称闭包：
+\begin{eqnarray}
+% \nonumber to remove numbering (before each equation)
+  Quaker(x)~\wedge~\neg Ab_1(x)~\rightarrow~Pacifist(x) \label{form_example1_1} \\
+  Republican(x)~\wedge~\neg Ab_2(x)~\rightarrow~\neg Pacifist(x) \label{form_example1_2}
+\end{eqnarray}
+其中谓词$Quaker(x)$表示$x$是教徒，谓词$Republican(x)$表示$x$是共和党人，谓词$Pacifist(x)$ 表示$x$是和平主义者，谓词$Ab_1$表示一种不正常因素，谓词$Ab_2$表述另一种不正常因素。如果一个人$Nixon$同时是教徒和共和党人，对$Ab_1$和$Ab_2$限定，不能得到他是不是一个和平主义者，但是，如果使用优先级限定，则说明$Nixon$更像一个教徒而非共和党人，可以通过计算$\mathbf{CIRC}[\varphi;Ab_1>Ab_2;Pacifist]$得到$Nixon$是一个和平主义者。
+\end{example}
+
+\section{稳定模型语义}
+
+本小节介绍稳定模型语义（Stable Model Semantics）下的一阶与命题理论。定义任意稳定模型语义是一个二元组$(\varphi; \sigma_{i})$，其中$\varphi$是一阶语句或者命题公式，$\sigma_{i}$是在$\varphi$中出现的谓词常元集合，这些谓词称为\textmd{内涵谓词常元}，除此之外的常元称为\textmd{外延常元}。
+
+\begin{definition}
+$SM[\varphi;\sigma_{i}]$定义为如下的二阶公式：
+\begin{equation}\label{form_defsm}
+    \varphi~\wedge~\forall \sigma^{*}_{i}(\sigma^{*}_{i}~<~\sigma_{i}~\rightarrow~\neg St(\varphi;\sigma_{i}))
+\end{equation}
+其中$St(\varphi;\sigma_{i})$递归地定义如下：
+\begin{itemize}
+  \item 如果$P~\in~\sigma_{i}$，则$\mathrm{St}(P(\overline{x});\sigma_i)~=~P^{*}(\overline{x})$；
+  \item 如果谓词F不在$\sigma_i$中出现，则$\mathrm{St}(F(\overline{x});\sigma_i)~=~F(\overline{x})$；
+  \item 如果$\circ~\in~\{\wedge,\vee\}$，则$\mathrm{St}(\psi~\circ~\chi;\sigma_i)~=~ \mathrm{St}(\psi;\sigma_i)~\circ~\mathrm{St}(\chi;\sigma_i)$；
+  \item $\mathrm{St}(\psi~\rightarrow~\chi;\sigma_i)~=~ (\mathrm{St}(\psi;\sigma_i)~\rightarrow~\mathrm{St}(\chi;\sigma_i))~\wedge~(\psi~\rightarrow~\chi)$；
+  \item 如果$Q~\in~\{\forall,\exists\}$，则$\mathrm{St}(Qx\psi;\sigma_i)~=~Qx\mathrm{St}(\psi;\sigma_i)$；
+\end{itemize}
+\end{definition}
+
+如果结构$\mu$是$\mathbf{SM}[\varphi;\sigma_i]$的一个模型，则被称为$\varphi$的一个$\sigma_i$-稳定模型。令SM[FO]表示所有一阶稳定理论对应的二阶公式。
+
+设$(\varphi,\sigma_i)$是一个稳定模型语义下的一阶逻辑，$v$为$\varphi$的符号集，则称一个$v$- 结构$\mathfrak{A}$是$\varphi$关于$\sigma_i$的\textmd{稳定模型}（Stable Model）当且仅当$\mathfrak{A}$是公式$\mathbf{SM}[\varphi,\sigma_i]$的模型。
+
+稳定模型语义下前束范式的获取与经典语义等价关系有所不同，根据文献\cite{ferraris2011stable}，如果两个一阶公式$\varphi$和$\psi$是强等价的，当且仅当对于任意的公式$\gamma$以及任意一个谓词常元集$\sigma_i$，将公式$\varphi$在$\gamma$中的任意出现都替换成$\psi$后得到公式$\gamma'$，满足$\mathbf{SM}[\gamma;\gamma_i]$等价于$\mathbf{SM}[\gamma';\gamma_i]$。结合强等价的定义，有如下稳定稳定模型语义下的性质。
+\begin{proposition}
+\textbf{(文献\cite{pearce2005first}定理6.4)}设$\varphi$和$\psi$为任意的一阶公式，则下列等价关系成立：
+\begin{align*}
+  (1)~~&\forall x\varphi(x)~\wedge~\psi~\equiv~\forall x(\varphi(x)~\wedge~\psi) &(2)~~&\exists x\varphi(x)~\wedge~\psi~\equiv~\exists x(\varphi(x)~\wedge~\psi) \\
+  (3)~~&\forall x\varphi(x)~\vee~\psi~\equiv~\forall x(\varphi(x)~\vee~\psi) &(4)~~&\exists x\varphi(x)~\vee~\psi~\equiv~\exists x(\varphi(x)~\vee~\psi) \\
+  (5)~~&\exists x\varphi(x)~\rightarrow~\psi~\equiv~\forall x(\varphi(x)~\rightarrow~\psi) &(6)~~&\forall x\varphi(x)~\rightarrow~\psi~\equiv~\exists x(\varphi(x)~\rightarrow~\psi) \\
+  (7)~~&\psi~\rightarrow~\forall x\varphi(x)~\equiv~\forall x(\psi~\rightarrow~\varphi(x)) &(8)~~&\psi~\rightarrow~\exists x\varphi(x)~\equiv~\exists x(\psi~\rightarrow~\varphi(x)) \\
+  (9)~~&\neg\exists x\varphi(x)~\equiv~\forall x\neg\varphi(x) &(10)~~&\neg\forall x\varphi(x)~\equiv~\exists x\neg\varphi(x)
+\end{align*}
+其中个体变元$x$不在公式$\psi$中自由出现。
+\end{proposition}
+
+
+
+章衡\cite{zhang2011Decidability}在近几年的研究中提出了将稳定模型语义下一阶语句翻译成稳定模型语义下的全称一阶语句的方法，即消去了存在量词。该方法的主要思想如下定义：
+\begin{definition}\label{def_smfo2smufo}
+\textbf{(文献\cite{zhang2011Decidability}定义5.3)} 任意给定形如$\forall\bar{x}\exists\bar{y}\theta(\bar{x},\bar{y})$ 的一个一阶语句$\varphi$，定义$tr_{QE}(\varphi)$
+为下述公式的合取式的一阶全称闭包：
+\begin{eqnarray}
+    \neg\neg S(\bar{x},\overline{min}) \\
+    (\overline{succ}(\bar{y},\bar{z})~\wedge~S(\bar{x},\bar{z}))~\vee~\theta^{\neg\neg}(\bar{x},\bar{y})~\rightarrow~S(\bar{x},\bar{y}) \\
+    T(\bar{x},\overline{min})~\vee~\theta(\bar{x},\overline{min}) \\
+    \neg(\overline{succ}(\bar{y},\bar{z})~\wedge~S(\bar{x},\bar{z}))~\wedge~S(\bar{x},\bar{y})~\rightarrow~(T(\bar{x},\overline{max})~\leftrightarrow~\theta(\bar{x},\bar{y})) \\
+    \overline{succ}(\bar{y},\bar{z})~\rightarrow~(T(\bar{x},\bar{y})~\leftrightarrow~\theta(\bar{x},\bar{z})~\vee~T(\bar{x},\bar{z}))
+\end{eqnarray}
+
+令$n$为序列$\bar{x}$与$\bar{y}$的长度之和，其中：
+\begin{enumerate}
+  \item $\theta^{\neg\neg}$是由$\theta$将所有原子公式$P(\bar{t})$替换为$\neg\neg P(\bar{t})$后得到的公式；
+  \item $\overline{min}$和$\overline{max}$分别表示$n$元组$(min,...,min)$和$(max,...,max)$，$\overline{succ}$描述$succ$所定义序被推广到$n$元组后得到的后继关系；
+  \item $S$和$T$是不在$\varphi$中出现的两个$n$ 元新谓词常元。
+\end{enumerate}
+
+对任意一个一阶稳定理论$(\varphi;\sigma)$，若$\varphi$是一个形如$\forall\bar{x}\exists\bar{y}\theta$的一阶语句，定义$Tr_{QE}(\mathbf{SM}[\varphi;\sigma])~=~\exists S\exists T\mathbf{SM}[tr_{QE}(\varphi);\sigma,S,T]$，
+其中$S,T$是由$tr_{QE}$引入的辅助谓词。
+\end{definition}
+
+$Tr_{QE}$被证明在后继结构上保持等价关系。在这个存在量词消去的定义\ref{def_smfo2smufo}中，引入了三个具有后继结构的常元符号，分别为$min$、$max$和$succ$，$min$和$max$是个体常元，$succ$是谓词常元。参考文献\cite{zhang2011translating}给出后继结构的定义：
+\begin{definition}\label{def_succ}
+称一个结构$\mathfrak{A}$是一个后继结构当且仅当满足下面两个条件同时成立：
+\begin{enumerate}
+  \item $\mathfrak{A}$的符号集是一个后继符号集；
+  \item 在关系$\mathfrak{A}(succ)$，论域中每一个元素至多有一个直接前继和一个直接后继，且无前继当且仅当该元素为$\mathfrak{A}(min)$，无后继当且仅当该元素为$\mathfrak{A}(max)$。
+\end{enumerate}
+\end{definition}
+
+后继结构可以类比一个正整数结构$\mathbb{Z}_n$，其中$n~=~|\mathbb{Z}_n|$，例如集合$\{0,...,n-1\}$，$\mathfrak{A}(succ)$对应该集合上的后继关系，$\mathfrak{A}(min)$和$\mathfrak{A}(max)$分别对应$0$和$n-1$。
+在后续的章节中，会使用到这一类后继结构，假定一般的公式符号集中不存在这三个常元符号。
+
+章衡\cite{zhang2011translating}同样给出了一阶限定理论到一阶稳定理论的翻译，此翻译没有处理可变谓词的情形，但是给本文的研究提供了重要的翻译思路。
+\begin{definition}
+\textbf{(文献\cite{zhang2011Decidability}定义6.1)} 设$v$为谓词常元的一个有穷集，分情况进行如下定义：若$\varphi$为无蕴含否定范式，令$F_{\varphi}$为不在$\varphi$中出现的一个0元辅助谓词，令$\hat{tr}_{c2sm}^v(\varphi)$为如下公式：
+\begin{eqnarray}
+% \nonumber to remove numbering (before each equation)
+  \varphi^{\neg\neg}~\wedge~\varphi^{-}~\wedge~F_{\varphi}~\rightarrow~\bigwedge_{Q\in v}\forall\bar{x}(Q(\bar{x})~\vee~\neg Q(\bar{x}))
+\end{eqnarray}
+其中：
+\begin{enumerate}
+  \item $\varphi^{\neg\neg}$为将$\varphi$中所有形如$P(\bar{t})$（$P~\in~v$）的公式替换为$\neg\neg P(\bar{t})$后所得的公式；
+  \item $\varphi^{-}$为将$\varphi$中所有形如$\neg P(\bar{t})$（$P~\in~v$）的公式替换为$(P(\bar{t})\rightarrow F_{\varphi})$后所得的公式。
+\end{enumerate}
+\end{definition}
+
+\begin{theorem}
+$\hat{Tr}_{c2sm}$是从$\mathrm{CIRC}[FO]$到$\mathrm{SM}[FO]$保持一般结构上投影等价的翻译。
+\end{theorem}
+
+\section{析取逻辑程序}
+
+逻辑程序是一种知识表示语言，一个逻辑程序是由多个\textmd{规则}组成，一个规则分为两部分：\textmd{头部}（$Head$）和\textmd{体部}（$Body$），如果体部不为空，使用符号$\leftarrow$将其区分：
+\begin{align*}
+    Head~\leftarrow~Body.
+\end{align*}
+如果体部为空，则可以省略符号$\leftarrow$。
+
+一个\textmd{正规逻辑程序}（Normal Logic Program，记为LP[$\neg$]）由多个子句构成，子句形式为
+\begin{equation}
+    C~\leftarrow~L_1,...,L_k.
+\end{equation}
+其中头部$C$是正文字，体部$L_1,...,L_k(k\geq 0)$是文字。一个文字要么是一个原子（即正文字），要么是形如$\mathbf{not}~A$的公式，其中$A$ 是原子。
+
+一个\textmd{标准析取逻辑程序}（Standard Disjunction Logic Program，记为DLP）由多个子句构成，子句形式为
+\begin{equation}
+    A_1~\vee~\cdot\cdot\cdot~\vee~A_k~\leftarrow~B_1,...,B_m.
+\end{equation}
+其中$k\geq 1,m\geq 0$，$A_i(1\leq i\leq k)$、$B_i(1\leq i\leq m)$都是原子。
+
+一个\textmd{正规析取逻辑程序}（Normal Disjunction Logic Program，记为DLP[$\neg$]）由多个子句构成，子句形式为
+\begin{equation}
+    A_1~\vee~\cdot\cdot\cdot~\vee~A_k~\leftarrow~B_1,...,B_m,\mathbf{not}~C_1,...,\mathbf{not}~C_n.
+\end{equation}
+其中$k\geq 1,m\geq 0,n\geq 0$，$A_i(1\leq i\leq k)$、$B_i(1\leq i\leq m)$、$C_i(1\leq i\leq n)$都是原子。
+
+
+一个\textmd{扩展析取逻辑程序}（Extended Disjunction Logic Program，记为DLP[$\neg\neg$]）由多个子句构成，子句中同时包含了经典的$\neg$和“否定即失败”的$\mathbf{not}$，子句形式为
+\begin{equation}\label{form_dlpnn}
+    A_1~\vee~\cdot\cdot\cdot~\vee~A_k~\leftarrow~B_1,...,B_m,\mathbf{not}~C_1,...,\mathbf{not}~C_n.
+\end{equation}
+其中$k\geq 1,m\geq 0,n\geq 0$，$A_i(1\leq i\leq k)$、$B_i(1\leq i\leq m)$、$C_i(1\leq i\leq n)$都是文字。
+
+对于形如式(\ref{form_dlpnn})的规则，等价于如下一阶语句：
+\begin{equation}
+    \forall \bar{x}(B_1~\wedge~\cdot\cdot\cdot~\wedge B_m~\wedge~\neg C_1~\wedge~\cdot\cdot\cdot~\wedge~\neg C_n~\rightarrow~A_1~\vee~\cdot\cdot\cdot~\vee~A_k)
+\end{equation}
+其中$\bar{x}$是$A_i(1\leq i\leq k)$、$B_i(1\leq i\leq m)$、$C_i(1\leq i\leq n)$中出现的所有变元元组。这样一个逻辑程序等价一阶语句就是该程序所有规则对应的一阶语句的合取（因为逻辑程序中所有的语句都应成立，
+所以所有的这些一阶表示语句应该是合取的关系）。
+
+下面介绍逻辑程序的稳定模型语义，首先先介绍\textmd{$Herbrand$模型}。设$\Pi$为一个逻辑程序，包含的$\Pi$中所有常量的集合称为$\Pi$的\textmd{$Herbrand$域}（Herbrand universe），\textmd{常项}（ground term）是没有变量出现的项，因此\textmd{$Herbrand$域}包含了所有\textmd{常项}。一个\textmd{常原子}（ground atom）是一个谓词中仅出现常项的原子。\textmd{$Herbrand$基}（Herbrand base）是包含所有常原子的集合。设$\Pi$的一个\textmd{$Herbrand$解释}为$\mathfrak{I}$，该解释是取$\Pi$的$Herbrand$域为论域，将$\Pi$中的常项和常原子指派为它们自己，将$\Pi$中的谓词指派成$Herbrand$域中相同元数的关系，如果$\mathfrak{I}~\models~\Pi$，则$\mathfrak{I}$是$\Pi$的一个\textmd{$Herbrand$模型}（Herbrand model）。例如，逻辑程序$\Pi~=~\{p(1),q(2),q(x)\leftarrow p(x)\}$有两个$Herbrand$模型：
+\begin{equation}\label{form_herbrandmodel1}
+    \{p(1),q(1),q(2)\}
+\end{equation}
+和
+\begin{equation}\label{form_herbrandmodel2}
+    \{p(1),p(2),q(1),q(2)\}
+\end{equation}
+$\Pi$的一个$Herbrand$模型是极小的，当且仅当该模型的真子集都不是$\Pi$的$Herbrand$模型。上述例子中，(\ref{form_herbrandmodel1})是极小模型，而(\ref{form_herbrandmodel2})不是极小模型。
+具体关于Herbrand理论可以参考文献\cite{ben2001mathematical}。
+\begin{theorem}\label{thm_smsherbrand}
+（\textbf{文献\cite{gelfond1988stable}定理1}）设$\Pi$为一个逻辑程序，$\Pi$的任意一个稳定模型都是$\Pi$的一个极小$Herbrand$模型。
+\end{theorem}
+
+定理\ref{thm_smsherbrand}给出了逻辑程序的稳定语义，$\Pi$的符号集为$v$，一个结构$\mathfrak{A}$是$\Pi$关于$v$的一个稳定模型当且仅当$\mathfrak{A}$是$\textbf{SM}[\Pi;v]$的模型。
+
+
+在文献\cite{cabalar2005reducing}中，Cabalar等人给出了从任意全称稳定理论转化为析取逻辑程序的方法，主要包括两个
+转换规则集，为了不失一般性，在规则集中所有的蕴含式都先被转换成稳定语义下的否定范式。有如下将否定前缀向内移动，直到变成NNF的规则：
+\begin{align*}
+% \nonumber to remove numbering (before each equation)
+  \neg \top ~~&\Longleftrightarrow~~ \bot &(\mathrm{N1})&&
+  \neg \bot ~~&\Longleftrightarrow~~ \top &(\mathrm{N2}) \\
+  \neg\neg\neg\varphi ~~&\Longleftrightarrow~~ \neg\varphi &(\mathrm{N3})&&
+  \neg(\varphi~\wedge~\psi) ~~&\Longleftrightarrow~~ \neg\varphi~\vee~\neg\psi &(\mathrm{N4}) \\
+  \neg(\varphi~\vee~\psi) ~~&\Longleftrightarrow~~ \neg\varphi~\wedge~\neg\psi &(\mathrm{N5})&&
+  \neg(\varphi~\rightarrow~\psi) ~~&\Longleftrightarrow~~ \neg\neg\varphi~\wedge~\neg\psi &(\mathrm{N6})
+\end{align*}
+
+
+下面列出两个主要的规则集，在下面的规则表示中，将$\alpha$看成合取式，$\beta$看成析取式（如果不是，就把他们当成
+$\alpha~\wedge~\top$，$\beta~\vee~\bot$）。
+
+左规则：
+\begin{align*}
+% \nonumber to remove numbering (before each equation)
+  \top~\wedge~\alpha~\rightarrow~\beta ~~&\Longleftrightarrow~~ {~\alpha~\rightarrow~\beta~} \tag{L1} \\
+  \bot~\wedge~\alpha~\rightarrow~\beta ~~&\Longleftrightarrow~~ \emptyset \tag{L2} \\
+  \neg\neg\varphi~\wedge~\alpha~\rightarrow~\beta ~~&\Longleftrightarrow~~ {~\alpha~\rightarrow~\neg\varphi~\vee~\beta~} \tag{L3} \\
+  (\varphi~\vee~\psi)~\wedge~\alpha~\rightarrow~\beta ~~&\Longleftrightarrow~~ \left\{
+        \begin{array}{rll}
+            \varphi~\wedge~\alpha~&\rightarrow~\beta \\
+            \psi~\wedge~\alpha~&\rightarrow~\beta
+        \end{array}
+    \right\} \tag{L4} \\
+  (\varphi~\rightarrow~\psi)~\wedge~\alpha~\rightarrow~\beta ~~&\Longleftrightarrow~~ \left\{
+        \begin{array}{rll}
+            \neg\varphi~\wedge~\alpha~&\rightarrow~\beta \\
+            \psi~\wedge~\alpha~&\rightarrow~\beta \\
+            \alpha~&\rightarrow~\varphi~\vee~\neg\psi~\vee~\beta
+        \end{array}
+    \right\} \tag{L5}
+\end{align*}
+
+右规则：
+\begin{align*}
+% \nonumber to remove numbering (before each equation)
+  \alpha~\rightarrow~\bot~\vee~\beta ~~&\Longleftrightarrow~~ {\alpha~\rightarrow~\beta} \tag{R1} \\
+  \alpha~\rightarrow~\top~\vee~\beta ~~&\Longleftrightarrow~~ \emptyset \tag{R2} \\
+  \alpha~\rightarrow~\neg\neg\varphi~\vee~\beta ~~&\Longleftrightarrow~~ {\neg\varphi~\wedge~\alpha~\rightarrow~\beta} \tag{R3} \\
+  \alpha~\rightarrow~(\varphi~\wedge~\psi)~\vee~\beta ~~&\Longleftrightarrow~~ \left\{
+        \begin{array}{rll}
+            \alpha~&\rightarrow~\varphi~\vee~\beta \\
+            \alpha~&\rightarrow~\psi~\vee~\beta
+        \end{array}
+    \right\} \tag{R4} \\
+  \alpha~\rightarrow~(\varphi~\rightarrow~\psi)~\vee~\beta ~~&\Longleftrightarrow~~ \left\{
+        \begin{array}{rll}
+            \varphi~\wedge~\alpha~&\rightarrow~\psi~\vee~\beta \\
+            \neg\psi~\wedge~\alpha~&\rightarrow~\neg\varphi~\vee~\beta
+        \end{array}
+    \right\} \tag{R5}
+\end{align*}
+
+对于规则(R5)，当$\beta~=~\bot$时，会发现第二条规则遵从第一条规则，因此，可以有一个特殊的版本如下：
+\begin{equation}
+    \alpha~\rightarrow~(\varphi~\rightarrow~\psi)~\Longleftrightarrow~{~\varphi~\wedge~\alpha~\rightarrow~\psi~} \tag{R5'}
+\end{equation}
+
+回答集程序（Answer Set Programming，简写为ASP）是基于稳定模型语义的逻辑程序，使用陈述语句编写的形式，用于求解较难（主要是NP-难问题）的搜索问题。最近几年，随着回答集求解器的出现，答集程序在知识表示方面发展成为了一个可行方案，目前较为流行的回答集求解器有ClaspD\cite{gebser2007conflict}、DLV\cite{leone2006dlv}、GnT\cite{janhunen2006unfolding}
+和Smodels\cite{niemela1997smodels}。
+%Recently, with the emergence of answer set solvers such asdlv[19], GnT [15],
+%andsmodels [36], answer set programming (ASP) is developing as a prac-tical and viable environment for knowledge representation and declarative
+%problem solving. Applications in artificial intelligence include planning and
+%diagnosis [2],
+%clark's completion
+

@@ -1,0 +1,41 @@
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwData{Left}{left}\SetKwData{This}{this}\SetKwData{Up}{up}
+  \SetKwFunction{Union}{Union}\SetKwFunction{FindCompress}{FindCompress}
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \caption{ConverWithPriority 优先级限定翻译}\label{alg_convertwithpriority}
+
+  \Input{~一阶语句集$\Phi$，优先级数$n$~}
+  \Output{~一个全称一阶公式集$\Delta$~}
+  \BlankLine
+    \For{$\varphi\in\Phi$}
+    {
+        \If{}
+        {
+        }
+        ConvertToDLP($\theta^{\neg\neg}$)；
+    }
+    \For{i=1;i$\leq$ n;i++}
+    {
+        SetMinimalPredicate();//设置新的极小化谓词\\
+        SetVariedPredicate();//设置新的可变谓词\\
+        \For{$\varphi\in\Phi$}
+        {
+            \If{isUniversal($\theta_i$)}
+            {
+                $\tilde{\theta_i}~=~$ ConvertToThetaK($\theta$);//转换$theta$\\
+            }
+            \Else
+            {
+                AddPredicate();//添加新的辅助谓词\\
+                AddTerm();//添加新的项\\
+                $\Psi~\Leftarrow~$ Translate($\varphi$);//根据$\Gamma_{\exists}$构造出翻译后公式\\
+                \For{$\psi\in\Psi$}
+                {
+                    EliminateQuantifier($\psi$);//消去新公式中的存在量词\\
+                }
+            }
+        }
+    }
+
+\end{algorithm}\DecMargin{1em}

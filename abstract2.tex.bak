@@ -1,0 +1,29 @@
+%\thispagestyle{empty} %取消当前页码
+%\chapter[ABSTRACT（英文摘要）]{Abstract}
+%\centerline{\begin{tabular}{l l}
+%Title：& Research on Solver for General First-order Circumscriptive Theories and \\
+%    & Application  \\
+%Major：& Computer Technology\\
+%Name：& Wang Pu\\
+%Supervisor：& Wan Hai\\
+%\end{tabular}}
+\vspace{0.5cm}
+%\chapter*{Abstract}
+% \markboth{英~文~摘~要}{英~文~摘~要}
+\phantomsection
+\addcontentsline{toc}{chapter}{Abstract}
+
+%\vspace*{-1cm}
+
+%\centerline{\LARGE \textsf{\textbf{Abstract}}}
+\centerline{\xiaoerhao \textbf{Abstract}}
+\vspace{0.5cm}
+
+How to program computers with common sense knowledge is one of the most difficult problems in artificial intelligence. Non-monotonic logics have developed for the knowledge representation of common sense reasoning. As an important non-monotonic logic, circumscription have the simple minimal model semantics. It is difficult to compute circumscriptive theories because its definition involves a second order quantifier. Therefore, one of the reasons limiting circumscription's applications is the lack of circumscription solver. This thesis focuses on computing general first order circumscriptive theories, the implementation of circumscription solver and the application research. The main results are as follows:
+
+(i) Through the deeply research on the first order circumscriptive theories, this thesis proposes translations from general first order circumscription into first order stable model semantics over arbitrary structures, including translations of first order parallel and prioritized circumscription. We also optimize the elimination of existential quantifiers during the whole translation. Based on the translations and reduction from first order stable model semantics to answer set programming over finite structures, we implement a general first order circumscription solver, named cfo2lp. We also analysis and verify the factors influencing the effect of our solver by several experiments.
+
+(ii) This thesis studies two valuable application problems which are circuit diagnosis and extended stable marriage. The computation complexities of these two problems are both beyond NP. First, we encode the problems into first order circumscriptive theories. Secondly, we translate them into answer set programs(ASP). Finally, we compute the models of the problems using popular ASP solvers. The research on these two problems not only verifies the correctness of our solver, but shows the first order circumscriptive theories' ability to compute such hard problems and provides thoughts and approaches when using circumscription solve actual problems.
+
+{\bf Key Words: circumscription; stable model semantics; disjunctive logic programming; solver; application}
+%\clearpage

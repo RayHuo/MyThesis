@@ -1,0 +1,67 @@
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwData{Left}{left}\SetKwData{This}{this}\SetKwData{Up}{up}
+  \SetKwFunction{Union}{Union}\SetKwFunction{FindCompress}{FindCompress}
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \caption{ConverToNNF 转换成NNF}\label{alg_converttonnf}
+
+  \Input{~一条任意形式公式$\varphi$~}
+  \Output{~一条符合NNF的公式$\varphi_{NNF}$~}
+  \BlankLine
+  %\emph{special treatment of the first line}\;
+  %\For{$i\leftarrow 2$ \KwTo $l$}{
+    %\emph{special treatment of the first element of line $i$}\;
+    %\lnl{InRes2}
+    \Switch{$\varphi.type$}
+    {
+        // 省略原子、析取、全称、存在量词公式的情形 \\
+        \Case{$\wedge$}
+        {
+            ConvertToNNF($\varphi.left$); ConvertToNNF($\varphi.right$);\\
+            $\varphi_{NNF}~~\Leftarrow~~$ $\varphi.left\wedge\varphi.right$\\
+        }
+        \Case{$\rightarrow$}
+        {
+            // 根据规则(N6)可得 \\
+            \If{IsNegative($\varphi.right$)}
+            {
+                // 由子公式为否定式 \\
+                ConvertToNNF($\varphi.left$); ConvertToNNF($\varphi.right$);\\
+                $\varphi_{NNF}~~\Leftarrow~~\neg\varphi.left\vee$ 按照(N6)构造新公式；\\
+            }
+            \Else
+            {
+                ConvertToNNF(左子公式); ConvertToNNF(右子公式);\\
+                $\varphi_{NNF}~~\Leftarrow~~$ 用新左子公式和新右子公式构造新的合取式；\\
+            }
+        }
+        \Case{否定式}
+        {
+            // 省略原子、全称、存在量词公式的情形 \\
+            \Switch{否定子式的类型}
+            {
+                \Case{否定式}
+                {
+                    \If{!IsNegative(否定子式的否定子式)}
+                    {
+                        $\varphi_{NNF}~~\Leftarrow~~$ 按照规则(N3)构造新公式；
+                    }
+                    \Else
+                    {
+                        $\varphi_{NNF}~~\Leftarrow~~\varphi$；
+                    }
+                }
+                \Case{合取式或析取式}
+                {
+                    $\varphi_{NNF}~~\Leftarrow~~$ 按照规则(N4) 和(N5)构造新公式；
+                }
+                \Case{蕴含式}
+                {
+                    $\varphi_{NNF}~~\Leftarrow~~$ 按照规则(N6) 构造新公式；
+                }
+            }
+        }
+    }
+  %}
+
+\end{algorithm}\DecMargin{1em}

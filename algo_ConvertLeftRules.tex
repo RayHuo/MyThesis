@@ -1,0 +1,43 @@
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwData{Left}{left}\SetKwData{This}{this}\SetKwData{Up}{up}
+  \SetKwFunction{Union}{Union}\SetKwFunction{FindCompress}{FindCompress}
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \caption{ConverLeftRules 左规则转换}\label{alg_convertleftrules}%ConverLeftRules 左规则转换
+
+  \Input{~一条用结构ImplConvert存储的SM[USO]公式$ic$~}
+  \Output{~一条或多条转换后SM[USO]公式$\Delta$~}
+  \BlankLine
+    \If{$ic.srcLeft=NULL$}
+    {
+        $\Delta~~\Leftarrow~~$ CreateDLP($ic$);\\
+    }
+    \Else
+    {
+        ConvertToNNF($ic.srcLeft$); // 转换为NNF\\
+        ConvertToDNF\_inSM($ic.srcLeft$); // 转换成稳定模型语义下DNF\\
+        \_formula[] dnfelement = GetDNFElement($ic.srcLeft$);\\
+        \For{$cnf~\in~$ dnfelement}
+        {
+            \If(\tcp*[h]{$cnf$有蕴含子式}){!hasImplication($cnf$)}
+            {
+                ImplConvert ic1($NULL$, $cnf$, $ic.srcRight$, $ic.right$);\\
+                $\Delta~~\Leftarrow~~$ CreateDLP(ic1);\\
+            }
+            \Else
+            {
+                \_formula[n1]  impls = GetIMPLElement($cnf$); \\
+                \_formula[n2]  literals = GetLiteralElement($cnf$);\\
+                // 设implelement[0] = $\alpha~\rightarrow~\beta$\\
+                \_formula newpart = impls[1]$~\wedge\cdot\cdot\cdot\wedge~$impls[n1-1]; \\
+                \_formula newLeft = $ic.left~\wedge~$literals[0]$~\wedge\cdot\cdot\cdot\wedge~$literals[n2-1];\\
+
+                ConvertLeftRules($\neg\alpha\wedge$newpart, newLeft, $ic.srcRight$, $ic.right$); \\
+                ConvertLeftRules($\beta\wedge$newpart, newLeft, $ic.srcRight$, $ic.right$); \\
+                ConvertLeftRules(newpart, newLeft, $ic.srcRight\vee\alpha\vee\neg\beta$, $ic.right$); \\
+            }
+        }
+    }
+  %}
+
+\end{algorithm}\DecMargin{1em}

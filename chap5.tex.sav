@@ -1,0 +1,150 @@
+\chapter{实验结果与分析}
+
+
+
+\section{正确性验证}
+
+\subsection{最小集合覆盖}
+
+最小集合覆盖问题是一个经典的数学问题，是Karp的21 个NP-complete 问题之一\cite{karp1972reducibility}，我们选取这个问题来验证稳定翻译模块的正确性。下面是该问题的描述：
+
+给定一个包含索引的集合~$I$~和一组集合~$S_{i} (i \in I)$~，我们称一个集合覆盖表示~$I$~的一个子集~$J$~，满足所有出现在~$S_{i} (i \in I)$~中的元素~$a$~都出现在~$S_{j} (j \in J)$~ 中。这个问题可以进行如下编码：
+\begin{eqnarray}
+% \nonumber to remove numbering (before each equation)
+  \forall~ x~ (Cvr(x) \rightarrow Idx(x)) \label{form_emp_setcover1} \\
+  \forall x~ \forall y~ (Idx(x) \wedge Set(x,y) \rightarrow \exists~ z (Cvr(z) \wedge Set(z,y))) \label{form_emp_setcover2}
+\end{eqnarray}
+其中$Cvr(x)$表示$x$是被覆盖的，$Idx(x)$表示$x$是一个集合，$Set(x,y)$表示元素$y$ 属于$x$。 设$\varphi$是上述两个公式的合取，则该问题等价于求解$\mathbf{SM}[\varphi;cvr]$。公式(\ref{form_emp_setcover2})可以运用算法$Tr_{QE}$ 消去存在量词，结果如下：
+\begin{align}
+Cvr(x)~\rightarrow~Idx(x) \\
+(succ(z,u)~\wedge~S(x,y,u))~\vee~\theta^{\neg\neg}(x,y,z)~\rightarrow~S(x,y,z) \\
+\neg\neg S(x,y,min)\\
+\neg(succ(z,y)~\wedge~S(x,y,u))~\wedge~S(x,y,z)~\rightarrow~(T(x,y,max)~\leftrightarrow~\theta(x,y,z)) \\
+succ(z,u)~\rightarrow~(T(x,y,z)~\leftrightarrow~\theta(x,y,u)~\vee~T(x,y,u)) \\
+T(x,y,min)~\vee~\theta(x,y,min)
+\end{align}
+其中
+\begin{align}
+&\theta(x,y,z)~=~Idx(x)~\wedge~Set(x,y)~\rightarrow~Cvr(z)~\wedge~Set(z,y) \\
+&\theta^{\neg\neg}(x,y,z)~=~Idx(x)~\wedge~Set(x,y)~\rightarrow~\neg\neg Cvr(z)~\wedge~Set(z,y)
+\end{align}
+将$\theta$和$\theta^{\neg\neg}$带入上述公式后，再经过算法\ref{alg_convert}-ConvertToDLP 得到问题的DLP。
+对于实际的测试用例，我们为每一个实例随机生成了一组集合，生成格式如下（以claspD为例）：
+\begin{verbatim}
+%claspd的输入 4个集合 4个元素 可随机生成
+idx(1..4).e(1..4).
+set(1,1).set(1,2).set(2,2).set(2,3).
+set(3,1).set(3,4).set(4,2).set(4,3).
+min1(1).max1(4).
+\end{verbatim}
+
+
+\subsection{积木世界}
+
+（Lifschitz的例子\cite{lifschitz1996circumscription}）设$\varphi$为如下公式的全称闭包：
+\begin{eqnarray}
+% \nonumber to remove numbering (before each equation)
+  Block(x)~\wedge~\neg Ab(x)~\rightarrow~Ontable(x) \\
+  \neg Ontable(B_1)
+\end{eqnarray}
+其中谓词$Block(x)$表示$x$是一个积木块，$Ontable(x)$表示$x$在桌子上，$Ab(x)$表示$x$是不正常的，对应的限定理论是$\mathbf{CIRC}[\varphi;Ab;Ontable]$。 根据上述定义，得到如下转换：\\
+$\varphi^{\neg\neg}~\Leftrightarrow~$
+\begin{align}
+  \theta_1^{\neg\neg}~&=~\neg Block(x)~\vee~\neg\neg Ab(x)~\vee~Ontable(x) \label{form_emp_block1} \\
+  \theta_2^{\neg\neg}~&=~\neg Ontable(B_1)
+\end{align}
+$\tilde{\varphi}~\Leftrightarrow~$
+\begin{align}
+  \tilde{\theta_1}~&=~\neg Block(x)~\vee~Ab(x)~\vee~Q_{On}(x) \\
+  \tilde{\theta_2}~&=~Q_{On}(x)~\rightarrow~\gamma
+\end{align}
+$\phi~\Leftrightarrow~$
+\begin{align}
+    (\gamma~\rightarrow~Ab(x)~\vee~\neg Ab(x))~\wedge~Tr_{QE}(\exists(Ab(x)~\vee~\neg Ab(x)~\rightarrow~\gamma)) \\
+    \gamma~\rightarrow~Q_{On}(x) \label{form_emp_block2}
+\end{align}
+设$\psi$为公式(\ref{form_emp_block1}-\ref{form_emp_block2}) 合取的一阶全称闭包，则$\mathbf{SM}[\psi;Ab,Q_{On},\gamma]$ 等价于\\$\mathbf{CIRC}[\varphi;Ab;Ontable]$。
+对$\psi$运用算法\ref{alg_convert}-ConvertToDLP得到问题的DLP。 实验结果应为$Ab(x)~\equiv~x=B_1$。问题实例使用随机生成的方式，格式如下：
+\begin{verbatim}
+#const n=5.
+block(1..n).
+min1_f(1).max1_f(n).
+\end{verbatim}
+
+\subsection{和平主义者}
+
+使用和平主义者例\ref{emp_pacifist}，将翻译$Tr^p_v$ 应用到该语句上，首先得到如下的转换：\\
+$\varphi^{\neg\neg}~\Leftrightarrow~$
+\begin{align}
+% \nonumber to remove numbering (before each equation)
+  \theta_1^{\neg\neg}~&=~\neg Quaker(x)~\vee~\neg\neg Ab_1(x)~\vee~Pacifist(x) \label{form_emp_pac1}\\
+  \theta_2^{\neg\neg}~&=~\neg Republican(x)~\vee~\neg\neg Ab_2(x)~\vee~\neg Pacifist(x)
+\end{align}
+$\tilde{\varphi}_1~\Leftrightarrow~$
+\begin{align}
+    \tilde{\theta_1}_1~&=~\neg Quaker(x)~\vee~Ab_1(x)~\vee~Q^{1}_{P}(x) \\
+    \tilde{\theta_2}_1~&=~\neg Republican(x)~\vee~Q^{1}_{Ab_2}(x)~\vee~(Q^{1}_{P}(x)\rightarrow\gamma_1)
+\end{align}
+$\tilde{\varphi}_2~\Leftrightarrow~$
+\begin{align}
+    \tilde{\theta_1}_2~&=~\neg Quaker(x)~\vee~\neg\neg Ab_1(x)~\vee~Q^{2}_{P}(x) \\
+    \tilde{\theta_2}_2~&=~\neg Republican(x)~\vee~Ab_2(x)~\vee~(Q^{2}_{P}(x)\rightarrow\gamma_2)
+\end{align}
+$\phi_1~\Leftrightarrow~$
+\begin{align}
+    (\gamma_1~\rightarrow~Ab_1(x)~\vee~\neg Ab_1(x))~\wedge~Tr_{QE}(\exists x(Ab_1(x)~\vee~\neg Ab_1(x)~\rightarrow~\gamma_1)) \\
+    \gamma_1~\rightarrow~Q^{1}_{P}(x)~\wedge~\gamma_1~\rightarrow~Q^{1}_{Ab_2}(x)
+\end{align}
+$\phi_2~\Leftrightarrow~$
+\begin{align}
+    (\gamma_2~\rightarrow~Ab_2(x)~\vee~\neg Ab_2(x))~\wedge~Tr_{QE}(\exists x(Ab_2(x)~\vee~\neg Ab_2(x)~\rightarrow~\gamma_2)) \\
+    \gamma_2~\rightarrow~Q^{2}_{P}(x) \label{form_emp_pac2}
+\end{align}
+设$\psi$为公式(\ref{form_emp_pac1}-\ref{form_emp_pac2}) 合取的一阶全称闭包，则$\mathbf{SM}[\psi;Ab_1,Ab_2,Q^{1}_{P},Q^{1}_{Ab_2},Q^{2}_{P},\gamma_1,\gamma_2]$ 等价于$\mathbf{CIRC}[\varphi;Ab_1>Ab_2;Pacifist]$。
+对$\psi$运用算法\ref{alg_convert}-ConvertToDLP得到问题的DLP。 问题实例使用随机生成的方式，格式如下：
+\begin{verbatim}
+d(1..1000).
+quaker(1..1000).
+republican(5..10).
+min1_f_1(1).max1_f_1(1000).
+min1_f_2(5).max1_f_2(10).
+\end{verbatim}
+
+文献\cite{mccarthy1986applications}提供了很多限定理论的一些小的应用实例，在我们的实验中也对其中一些进行了测试，在此就不一一叙述了。
+
+\section{效率验证}
+
+本小节我们旨在测试求解器的效率，因此我们选取的测例均为无特殊意义的一阶语句，
+测量的运行时间是cfo2lp的翻译时间加上求解器ClaspD、DLV或GnT的求解时间，分别记为$T(cfo2lp)$ 和$T(ASP)$。效率问题可以概括为三个方面的因素，分别为：
+\begin{enumerate}
+  \item $\Sigma_n$-公式（或$\Pi_n$-公式）的规模，同时影响$T(cfo2lp)$和$T(ASP)$；
+  \item 优先级规模，同时影响$T(cfo2lp)$和$T(ASP)$；
+  \item 问题规模，只影响$T(ASP)$。
+\end{enumerate}
+
+主要分为三个对比实验，分别为优先级数对比实验、存在量词消去对比实验和不同求解器的对比实验，
+前两个实验由于与求解器无关，因此均采用ClaspD求解器进行实验，三个实验均采用问题规模作为第二变量因子。实验结果分别如图\ref{fig_priorityresult}所示。
+
+\begin{figure}
+\centering
+\subfigure[$T(cfo2lp)$与优先级关系]{\includegraphics{img/prioritytranslate.jpg}}\\
+\subfigure[$T(ASP)$与优先级关系]{\includegraphics{img/prioritymodel.jpg}}
+\renewcommand{\figurename}{图}
+\caption{优先级数对比实验结果}
+\label{fig_priorityresult}
+\end{figure}
+
+由图\ref{fig_priorityresult}(a)可以看出，随着优先级数的增多，翻译时间接近指数的增长，优先级数多说明输入公式复杂，翻译过程也是经过多次迭代或递归完成；图\ref{fig_priorityresult}(b)的数据是使用答集求解器ClaspD求解得出的，随着问题论域的扩大，翻译出的程序求解时间
+
+\subsection{}
+存在量词消去对比实验
+任意一阶公式存在量词增多
+
+
+\subsection{}
+优先级数对比实验
+任意一阶公式优先级数递增
+
+\subsection{}
+针对不同的求解器，进行人工优化对比
+

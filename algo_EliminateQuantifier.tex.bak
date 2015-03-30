@@ -1,0 +1,32 @@
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwData{Left}{left}\SetKwData{This}{this}\SetKwData{Up}{up}
+  \SetKwFunction{Union}{Union}\SetKwFunction{FindCompress}{FindCompress}
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \caption{EliminateQuantifier 存在量词消去}\label{alg_eliminatequantifier}
+
+  \Input{~一个一阶公式$\varphi$~}
+  \Output{~一集全称一阶公式$\Delta$~}
+  \BlankLine
+    \If{isUniversal($\varphi$)}
+    {
+        // $\varphi=\forall\bar{x}\theta$\\
+        $\Delta~~\Leftarrow~~$ ConvertToDLP($\theta$);\\
+        %$\Delta~~\Leftarrow~~$ ConvertToDLP($\tilde{\theta}$);\\
+    }
+    \Else
+    {
+        ConvertToPNF($\varphi$); //化前束范式\\
+        // $\varphi=\forall\bar{x}\exists\bar{y}\theta$\\
+        %ConvertToDLP($\theta^{\neg\neg}$);\\
+        %ConvertToDLP($\tilde{\theta}$);\\
+        $\Phi~~\Leftarrow~~$Translate\_QE($\varphi$)；//应用翻译$Tr_{QE}$\\
+        $\Delta~~\Leftarrow~~\emptyset$;\\
+        \For{$\phi~\in~\Phi$}
+        {
+            $\Delta~~\Leftarrow~~\Delta~\cup~\mathrm{EliminateQuantifier}(\phi)$; // 递归处理\\
+        }
+    }
+  %}
+
+\end{algorithm}\DecMargin{1em}

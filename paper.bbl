@@ -1,0 +1,326 @@
+\begin{thebibliography}{10}
+
+\bibitem{McCarthy1959}
+McCarthy J.
+\newblock Programs with common sense [J].
+\newblock Proceedings of Teddington Conference on the Mechanization of Thought
+  Processes, 1959,  57--70.
+
+\bibitem{mccarthysome}
+McCarthy J, Hayes P~J.
+\newblock Some philosophical problems from the standpoint of artificial
+  intelligence [J].
+\newblock Machine Intelligence, 1969,  463--502.
+
+\bibitem{fikes1972strips}
+Fikes R~E, Nilsson N~J.
+\newblock STRIPS: A new approach to the application of theorem proving to
+  problem solving [J].
+\newblock Artificial intelligence, 1972, 2(3):189--208.
+
+\bibitem{kowalski1986logic}
+Kowalski R, Sergot M.
+\newblock A logic-based calculus of events [J].
+\newblock New generation computing, 1986, 4(1):67--95.
+
+\bibitem{mccarthy1980circumscription}
+McCarthy J.
+\newblock Circumscription--a form of non-monotonic reasoning [J].
+\newblock Artificial intelligence, 1980, 13(1):27--39.
+
+\bibitem{reiter1980logic}
+Reiter R.
+\newblock A logic for default reasoning [J].
+\newblock Artificial intelligence, 1980, 13(1):81--132.
+
+\bibitem{mcdermott1982nonmonotonic}
+McDermott D.
+\newblock Nonmonotonic logic II: Nonmonotonic modal theories [J].
+\newblock Journal of the ACM (JACM), 1982, 29(1):33--57.
+
+\bibitem{green1969application}
+Green C.
+\newblock Application of theorem proving to problem solving [C].// Proceedings
+  of the 1st international joint conference on Artificial intelligence.
+\newblock Morgan Kaufmann Publishers Inc.
+\newblock 1969:  219--239.
+
+\bibitem{kowalski1973predicate}
+Kowalski R.
+\newblock Predicate logic as programming language [M].
+\newblock Edinburgh University, 1973.
+
+\bibitem{reiter1977closed}
+Reiter R.
+\newblock On Closed World Data Bases [J].
+\newblock 1977.
+
+\bibitem{clark1978negation}
+Clark K~L.
+\newblock Negation as failure [J].
+\newblock Logic and data bases, 1978, 1:293--322.
+
+\bibitem{gelfond1988stable}
+Gelfond M, Lifschitz V.
+\newblock The stable model semantics for logic programming [C].// Proceedings
+  of the 5th International Conference on Logic programming.
+\newblock vol 161.
+\newblock 1988.
+
+\bibitem{gelfond1991classical}
+Gelfond M, Lifschitz V.
+\newblock Classical negation in logic programs and disjunctive databases [J].
+\newblock New generation computing, 1991, 9(3):365--385.
+
+\bibitem{lifschitz1985computing}
+Lifschitz V.
+\newblock Computing circumscription [C].// Proceedings of the ninth
+  international joint conference on artificial intelligence.
+\newblock vol~27. Los Angeles, CA.
+\newblock 1985:  229--235.
+
+\bibitem{lifschitz1987pointwise}
+Lifschitz V.
+\newblock Pointwise circumscription [J].
+\newblock Readings in nonmonotonic reasoning, 1987,  179--193.
+
+\bibitem{lifschitz1994circumscription}
+Lifschitz V.
+\newblock Circumscription [C].// Handbook of logic in artificial intelligence
+  and logic programming.
+\newblock vol~3. Oxford University Press, Inc.
+\newblock 1994:  297--352.
+
+\bibitem{cadoli1992efficient}
+Cadoli M, Eiter T, Gottlob G.
+\newblock An efficient method for eliminating varying predicates from a
+  circumscription [J].
+\newblock Artificial Intelligence, 1992, 54(3):397--410.
+
+\bibitem{doherty1997computing}
+Doherty P, {\L}ukaszewicz W, Sza{\l}as A.
+\newblock Computing circumscription revisited: A reduction algorithm [J].
+\newblock Journal of Automated Reasoning, 1997, 18(3):297--336.
+
+\bibitem{wakaki2004compiling}
+Wakaki T, Inoue K.
+\newblock Compiling prioritized circumscription into answer set programming
+  [C].// Logic Programming.
+\newblock vol 3132.
+\newblock Springer, 2004:  356--370.
+
+\bibitem{oikarinen2008implementing}
+Oikarinen E, Janhunen T.
+\newblock Implementing prioritized circumscription by computing disjunctive
+  stable models [C].// Artificial Intelligence: Methodology, Systems, and
+  Applications.
+\newblock vol 5253.
+\newblock Springer, 2008:  167--180.
+
+\bibitem{lee2009system}
+Lee J, Palla R.
+\newblock System F2LP--computing answer sets of first-order formulas [C].//
+  Logic Programming and Nonmonotonic Reasoning.
+\newblock vol 5753.
+\newblock Springer, 2009:  515--521.
+
+\bibitem{lee2012reformulating}
+Lee J, Palla R.
+\newblock Reformulating the situation calculus and the event calculus in the
+  general theory of stable models and in answer set programming [J].
+\newblock Journal of Artificial Intelligence Research, 2012, 43(1):571--620.
+
+\bibitem{kim2009circumscriptive}
+Kim T~W, Lee J, Palla R.
+\newblock Circumscriptive event calculus as answer set programming [C].//
+  Proceedings of International Joint Conference on Artificial Intelligence
+  (IJCAI).
+\newblock 2009:  823--829.
+
+\bibitem{zhang2011translating}
+Zhang H, Zhang Y, Ying M, et~al.
+\newblock Translating first-order theories into logic programs [C].//
+  Proceedings of the Twenty-Second international joint conference on Artificial
+  Intelligence-Volume Volume Two.
+\newblock AAAI Press.
+\newblock 2011:  1126--1131.
+
+\bibitem{mccarthy1986applications}
+McCarthy J.
+\newblock Applications of circumscription to formalizing common-sense knowledge
+  [J].
+\newblock Artificial Intelligence, 1986, 28(1):89--116.
+
+\bibitem{kartha1995simple}
+Kartha G~N, Lifschitz V.
+\newblock A simple formalization of actions using circumscription [C].//
+  Proceedings IJCAI.
+\newblock vol~95. Citeseer.
+\newblock 1995:  1970--1975.
+
+\bibitem{shanahan1999event}
+Shanahan M.
+\newblock The event calculus explained [C].// Artificial intelligence today.
+\newblock vol 1600.
+\newblock Springer, 1999:  409--430.
+
+\bibitem{chen1997based}
+陈保平, 孙吉贵.
+\newblock 基于限定的溯因问题求解 [J].
+\newblock 软件学报, 1997, 8(4):316--320.
+
+\bibitem{jiang2002based}
+姜云飞, 马宁.
+\newblock 基于限定的规划识别问题求解 [J].
+\newblock 计算机学报, 2002, 25(12):1411--1416.
+
+\bibitem{enderton2001mathematical}
+Enderton H, Enderton H~B.
+\newblock A mathematical introduction to logic [M].
+\newblock Academic press, 2001.
+
+\bibitem{ferraris2011stable}
+Ferraris P, Lee J, Lifschitz V.
+\newblock Stable models and circumscription [J].
+\newblock Artificial Intelligence, 2011, 175(1):236--263.
+
+\bibitem{pearce2005first}
+Pearce D, Valverde A.
+\newblock A first order nonmonotonic extension of constructive logic [J].
+\newblock Studia Logica, 2005, 80(2):321--346.
+
+\bibitem{zhang2011Decidability}
+章衡.
+\newblock
+\newblock 非单调逻辑的可判定性与可译性 [D].
+\newblock 北京: 清华大学, 2011.
+
+\bibitem{ben2001mathematical}
+Ben-Ari M.
+\newblock Mathematical logic for computer science [M].
+\newblock Springer Verlag, 2001.
+
+\bibitem{cabalar2005reducing}
+Cabalar P, Pearce D, Valverde A.
+\newblock Reducing propositional theories in equilibrium logic to logic
+  programs [J].
+\newblock Progress in Artificial Intelligence, 2005, 3808:4--17.
+
+\bibitem{gebser2007conflict}
+Gebser M, Kaufmann B, Neumann A, et~al.
+\newblock Conflict-driven answer set solving [C].// Proceedings of the 20th
+  international joint conference on Artifical intelligence.
+\newblock 2007:  386--392.
+
+\bibitem{leone2006dlv}
+Leone N, Pfeifer G, Faber W, et~al.
+\newblock The DLV system for knowledge representation and reasoning [J].
+\newblock ACM Transactions on Computational Logic (TOCL), 2006, 7(3):499--562.
+
+\bibitem{janhunen2006unfolding}
+Janhunen T, Niemel{\"a} I, Seipel D, et~al.
+\newblock Unfolding partiality and disjunctions in stable model semantics [J].
+\newblock ACM Transactions on Computational Logic (TOCL), 2006, 7(1):1--37.
+
+\bibitem{niemela1997smodels}
+Niemel{\"a} I, Simons P.
+\newblock Smodels—an implementation of the stable model and well-founded
+  semantics for normal logic programs [C].// Logic Programming and Nonmonotonic
+  Reasoning.
+\newblock vol 1265.
+\newblock Springer, 1997:  420--429.
+
+\bibitem{eiter1996normal}
+Eiter T, Gottlob G, Gurevich Y.
+\newblock Normal forms for second-order logic over finite structures, and
+  classification of NP optimization problems [J].
+\newblock Annals of Pure and Applied Logic, 1996, 78(1):111--125.
+
+\bibitem{janhunen2004capturing}
+Janhunen T, Oikarinen E.
+\newblock Capturing parallel circumscription with disjunctive logic programs
+  [C].// Logics in Artificial Intelligence.
+\newblock vol 3229.
+\newblock Springer, 2004:  134--146.
+
+\bibitem{oikarinen2005circ2dlp}
+Oikarinen E, Janhunen T.
+\newblock CIRC2DLP—translating circumscription into disjunctive logic
+  programming [C].// Logic Programming and Nonmonotonic Reasoning.
+\newblock vol 3662.
+\newblock Springer, 2005:  405--409.
+
+\bibitem{aho2007compilers}
+Aho A~V, Lam M~S, Sethi R, et~al.
+\newblock Compilers: principles, techniques, \& tools [M].
+\newblock Pearson/Addison Wesley, 2007.
+
+\bibitem{karp1972reducibility}
+Karp R~M.
+\newblock Reducibility among combinatorial problems [M].
+\newblock Springer, 1972.
+
+\bibitem{reiter1987theory}
+Reiter R.
+\newblock A theory of diagnosis from first principles [J].
+\newblock Artificial intelligence, 1987, 32(1):57--95.
+
+\bibitem{de1992characterizing}
+De~Kleer J, Mackworth A~K, Reiter R.
+\newblock Characterizing diagnoses and systems [J].
+\newblock Artificial Intelligence, 1992, 56(2):197--222.
+
+\bibitem{raiman1990circumscribed}
+Raiman O.
+\newblock A circumscribed diagnosis engine [J].
+\newblock Expert Systems in Engineering Principles and Applications, 1990,
+  462:90--101.
+
+\bibitem{eiter1995complexity}
+Eiter T, Gottlob G.
+\newblock The complexity of logic-based abduction [J].
+\newblock Journal of the ACM (JACM), 1995, 42(1):3--42.
+
+\bibitem{gale1962college}
+Gale D, Shapley L~S.
+\newblock College admissions and the stability of marriage [J].
+\newblock The American Mathematical Monthly, 1962, 69(1):9--15.
+
+\bibitem{marek1990theory}
+Marek W, Nerode A, Remmel J.
+\newblock A theory of nonmonotonic rule systems I [J].
+\newblock Annals of Mathematics and Artificial Intelligence, 1990,
+  1(1):241--273.
+
+\bibitem{dung1995acceptability}
+Dung P~M.
+\newblock On the acceptability of arguments and its fundamental role in
+  nonmonotonic reasoning, logic programming and n-person games [J].
+\newblock Artificial intelligence, 1995, 77(2):321--357.
+
+\bibitem{guodongliang2005}
+郭东亮, 张立臣.
+\newblock 用回跳法求解稳定婚姻问题 [J].
+\newblock 计算机应用研究, 2005, 22(1):59--60.
+
+\bibitem{songxudong2010}
+宋旭东, 纪秀花.
+\newblock 稳定婚姻匹配问题的一个快速枚举算法 [J].
+\newblock 工程图学学报, 2010, (003):187--192.
+
+\bibitem{gale1985some}
+Gale D, Sotomayor M.
+\newblock Some remarks on the stable matching problem [J].
+\newblock Discrete Applied Mathematics, 1985, 11(3):223--232.
+
+\bibitem{gusfield1989stable}
+Gusfield D, Irving R~W.
+\newblock The stable marriage problem: structure and algorithms [M].
+\newblock MIT press Cambridge, 1989.
+
+\bibitem{iwama1999stable}
+Iwama K, Miyazaki S, Morita Y, et~al.
+\newblock Stable marriage with incomplete lists and ties [J].
+\newblock Automata, Languages and Programming, 1999, 1644:706--706.
+
+\end{thebibliography}

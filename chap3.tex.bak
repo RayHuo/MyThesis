@@ -1,0 +1,215 @@
+\chapter{一阶限定理论到稳定模型语义的翻译}
+
+本章主要介绍求解器实现的理论部分，基于对一阶限定理论的研究，阐明了一阶限定理论和一阶稳定模型语义的关系，提出了在一般结构下从一阶限定理论到稳定模型语义的翻译，构成了求解器的核心算法。本章将分别介绍并行限定理论和优先级限定理论的翻译方法，并提出了翻译在有穷结构下优化的方法。
+
+
+\section{并行限定理论的翻译}
+
+章衡在论文\cite{zhang2011translating}中已经介绍了一阶限定理论到一阶稳定模型语义的一个等价翻译，但是该翻译中没有处理可变谓词的情况，即只能解决无可变谓词常元的限定理论。在本节中，我们提出了一般结构下，并行限定和优先级限定到到稳定模型语义的翻译。
+
+%\subsection{并行限定理论到稳定语义的翻译}
+
+本小节主要关注于并行限定理论的翻译。对比并行限定的定义公式(\ref{form_defcirc})与稳定理论的定义公式(\ref{form_defsm})，它们主要的区别在于二阶部分的可变谓词部分，然而这些可变谓词$\sigma^*_{v}$并不参与谓词集的比较，翻译的主要困难在于不影响$\sigma^*_{i}<\sigma_i$和$\varphi$的情况下，不通过稳定模型语义下的比较而消去它们。因此，对于所有谓词$Q\in\sigma_v$，通过引入与其有相同元数的辅助谓词常元$Q'$，如果使$Q'$为真的话，$Q'^*$在二阶公式中模拟了谓词变元$Q^*$。我们得到如下的翻译方法。
+
+\begin{definition}\label{def_parallelcirc2sm}
+设$\varphi$为任意具有否定范式的一阶语句，$\sigma_i$和$\sigma_v$表示两个谓词常元集合，我们定义
+$Tr_{v}(\varphi;\sigma_i;\sigma_v)$为如下公式的合取：
+\begin{eqnarray}
+% \nonumber to remove numbering (before each equation)
+  \varphi^{\neg\neg}~\wedge~\widetilde{\varphi} \\
+  \gamma~\leftrightarrow~\bigwedge_{P \in \sigma_i}~ \forall \overline{x} (P(\overline{x})~\vee~P(\overline{x})) \label{form_defpar2}\\
+  \bigwedge_{Q \in \sigma_v}~ \forall \overline{x} (\gamma~\rightarrow~Q'(\overline{x})) \label{form_defpar3}
+\end{eqnarray}
+其中：
+\begin{enumerate}
+  \item $\varphi^{\neg\neg}$是将$\varphi$中所有形如$P(\overline{x})(P~\in~\sigma_i)$的公式替换为$\neg\neg P(\overline{x})$后所得到的公式；
+  \item $\widetilde{\varphi}$是将$\varphi$进行如下转换：(i)将所有形如$(P(\overline{x})\rightarrow\gamma)(P~\in~\sigma_i)$ 的公式替换为负文字$\neg P(\overline{x})$，(ii)将正文字$Q(\overline{x})(Q \in \sigma_v)$ 替换为$Q'(\overline{x})$，(iii)将形如$(Q'(\overline{x})\rightarrow \gamma)$的公式替换为负文字$\neg Q'(\overline{x})$，$Q'$是不出现在$\varphi$ 中的相对于$Q$的辅助谓词。
+\end{enumerate}
+\end{definition}
+
+\begin{proposition}\label{pro_parallelcirc2sm}
+设$\varphi$为具有否定范式的任意一阶语句，$\sigma_i$和$\sigma_v$是连个谓词常元集合，则$\exists \sigma'_v \exists \gamma \mathbf{SM}[Tr_v(\varphi;\sigma_i;\sigma_v);\sigma_i;\sigma'_v,\gamma]$ 等价于$\mathbf{CIRC}[\varphi;\sigma_i;\sigma_v]$，其中$\sigma'_v$是相对于$\sigma_v$的辅助谓词常元集合。
+\end{proposition}
+
+根据并行限定定义的二阶公式(\ref{form_defcirc})和稳定模型语义的定义，对于上述定义和命题有如下的解释：
+\begin{itemize}
+  \item 公式$\varphi$为NNF的形式的意义在于，经典一阶下公式的等价性在限定理论中仍然适用，所以对于任意的一阶公式，在限定理论中都存在一个与之等价的否定范式，我们事先将其转成NNF，可以方便处理；
+  \item $\varphi^{\neg\neg}$的意义在于$\mathrm{St}(\varphi^{\neg\neg})$等价于$\varphi$；
+  \item $\tilde{\varphi}$的意义在于$\mathrm{St}(\tilde{\varphi})$等价于$\varphi^{*}$；
+  \item 公式(\ref{form_defpar2})的意义在于使得谓词$\gamma$恒为真，则$\gamma^{*}$恒为假，即满足$\gamma^{*}<\gamma$；
+  \item 公式(\ref{form_defpar3})对应$\mathrm{St}(\gamma\rightarrow Q')~=~(\gamma\rightarrow Q')\wedge(\gamma^*\rightarrow Q'^*)$，这使所有的$Q'$ 恒为真（$\gamma$ 为真），其中$Q'\in\sigma'_v$，意义在于让所有谓词$Q'$对应的$Q'^{*}$ 能够任意变化。
+\end{itemize}
+
+通过下面一个例子介绍并行翻译的主要步骤。
+\begin{example}\label{emp_par}
+对于并行限定$\mathbf{CIRC}[\theta;P_1,P_2,P_3;Z]$ 的计算，首先将公式进行如下转换：
+\begin{enumerate}
+  \item $\theta$转成经典一阶逻辑下NNF和CNF的形式；
+  \item $\theta^{\neg\neg}~\Leftrightarrow~\theta(P_1\Rightarrow\neg\neg P_1,P_2\Rightarrow\neg\neg P_2,P_3\Rightarrow\neg\neg P_3)$；
+  \item $\tilde{\theta}~\Leftrightarrow~\theta(\neg P_1\Rightarrow (P_1\rightarrow\gamma),\neg P_2\Rightarrow (P_2\rightarrow\gamma),\neg P_3\Rightarrow (P_3\rightarrow\gamma),Z\Rightarrow Q_Z,\neg Z\Rightarrow(Q_Z\rightarrow\gamma))$；
+  \item $\phi~\Leftrightarrow~(\gamma~\rightarrow~(P_1(x)~\vee~\neg P_1(x))~\wedge~(P_2(x)~\vee~\neg P_2(x))~\wedge~(P_3(x)~\vee~\neg P_3(x)))\\
+      \wedge~Tr_{QE}(\exists x((P_1(x)~\vee~\neg P_1(x))~\wedge~(P_2(x)~\vee~\neg P_2(x))~\wedge~(P_3(x)~\vee~\neg P_3(x))~\rightarrow~\gamma))\\
+      \wedge~(\gamma~\rightarrow~Q_Z)$
+
+\end{enumerate}
+其中$\alpha\Rightarrow\beta$的意义是将公式$\theta$ 中的$\alpha$替换成$\beta$，设$\psi$为公式$\theta^{\neg\neg}~\wedge~\tilde{\theta}~\wedge~\phi$，则
+\begin{align*}
+    \mathbf{CIRC}[\theta;P_1,P_2,P_3;Z]~=~\exists Q_Z\exists\gamma\mathbf{SM}[\psi;P_1,P_2,P_3,Q_Z,\gamma]
+\end{align*}
+\end{example}
+
+从并行限定理论翻译定义$Tr_v$来看，对于每一个可变的谓词都引入了对应的一个新的辅助谓词，这个谓词数量的增加是可以接受的。
+
+\section{优先级限定理论的翻译}
+
+本小节讲解优先级限定的翻译，优先级限定可以等价于并行限定公式(\ref{form_pri2par})，我们可以将定义\ref{def_parallelcirc2sm}推广到优先级限定的情况下，因此，有如下优先级限定到稳定模型语义下的翻译。
+
+\begin{definition}\label{def_prioritycirc2sm}
+设$\varphi$为任意具有否定范式形式的一阶语句，$\sigma^1,...,\sigma^k$和$\sigma_v$表示k+1个谓词常元集合，我们定义
+$Tr^p_{v}(\varphi;\sigma^1>...>\sigma^k;\sigma_v)$ 为如下公式的合取：
+\begin{eqnarray}
+% \nonumber to remove numbering (before each equation)
+  \varphi^{\neg\neg}~\wedge~\bigwedge_{1\leq j \leq k}\widetilde{\varphi_j} \\
+  \bigwedge_{1\leq j \leq k}(\gamma_j~\leftrightarrow~\bigwedge_{P \in \sigma_i}~ \forall \overline{x} (P(\overline{x})~\vee~P(\overline{x}))) \\
+  \bigwedge_{1\leq j \leq k}~ \forall \overline{x} (\gamma_j~\rightarrow~\bigwedge_{Q \in \delta_j}Q(\overline{x}))
+\end{eqnarray}
+其中：
+\begin{enumerate}
+  \item $\varphi^{\neg\neg}$是将$\varphi$中所有形如$P(\overline{x})$($P$在$\sigma^j$,$1 \leq j \leq k$, 的并集中)的公式替换为$\neg\neg P(\overline{x})$后所得到的公式；
+  \item $\widetilde{\varphi_j}$是将$\varphi$进行如下替换：(i)将所有形如$(P(\overline{x})\rightarrow\gamma_j)(P~\in~\sigma^j)$ 的公式替换为负文字$\neg P(\overline{x})$；(ii)将所有形如$P(\overline{x})(P \in \bigcup_{1 \leq m < j \sigma^m})$的公式替换成$\neg\neg P(\overline{x})$；(iii)将正文字$Q(\overline{x})(Q \in \bigcup_{j < n \leq k}\sigma^n \cup \sigma_v)$替换为$Q'(\overline{x})$，将形如$(Q'(\overline{x})\\\rightarrow \gamma_j)$ 的公式替换为负文字$\neg Q'(\overline{x})$；$\delta_j$表示$Q^j$的并集。
+\end{enumerate}
+\end{definition}
+
+\begin{proposition}\label{pro_prioritycirc2sm}
+设$\varphi$为具有否定范式形式的任意一阶语句，$\sigma^1,...,\sigma^k$和$\sigma_v$是k+1个谓词常元集合，则$\exists \delta \mathbf{SM}[Tr^p_v(\varphi;\sigma^1>...>\sigma^k;\sigma_v);\bigcup_{1 \leq j \leq k \sigma^j \cup \delta}]$等价于$\mathbf{CIRC}[\varphi;\sigma^1>...>\sigma^k;\sigma_v]$，其中$\delta$是辅助谓词常元集合。
+\end{proposition}
+
+通过下面一个例子介绍优先级翻译的主要步骤。
+\begin{example}\label{emp_pri}
+对于优先级限定$\mathbf{CIRC}[\theta;P_1>P_2>P_3;Z]$的计算，首先将公式进行如下转换：
+\begin{enumerate}
+  \item $\theta$转成经典一阶逻辑下NNF和CNF的形式；
+  \item $\theta^{\neg\neg}\Leftrightarrow\theta(P_1\Rightarrow\neg\neg P_1,P_2\Rightarrow\neg\neg P_2,P_3\Rightarrow\neg\neg P_3)$；
+  \item $\tilde{\theta_1}\Leftrightarrow\theta(P_2\Rightarrow Q^{1}_{P_2},P_3\Rightarrow Q^{1}_{3},Z\Rightarrow Q_Z^{1},\neg P_2\Rightarrow (Q^{1}_{2}\rightarrow\gamma_1),\neg P_3\Rightarrow (Q^{1}_{P_3} \rightarrow\gamma_1),\neg Z\Rightarrow(Q^{1}_{Z}\rightarrow\gamma_1))$；
+  \item $\tilde{\theta_2}\Leftrightarrow\theta(P_1\Rightarrow \neg\neg P_1,P_3\Rightarrow Q^{2}_{P_3},Z\Rightarrow Q_Z^{2},\neg P_3\Rightarrow (Q^{2}_{P_3} \rightarrow\gamma_2),\neg Z\Rightarrow(Q^{2}_{Z}\rightarrow\gamma_2))$；
+  \item $\tilde{\theta_3}\Leftrightarrow\theta(P_1\Rightarrow \neg\neg P_1,P_2\Rightarrow \neg\neg P_2,Z\Rightarrow Q_Z^{P_3},\neg Z\Rightarrow(Q^{3}_{Z}\rightarrow\gamma_3))$。
+  \item $\phi_1~\Leftrightarrow~(\gamma_1~\rightarrow~(P_1(x)~\vee~\neg P_1(x)))
+      \wedge~Tr_{QE}(\exists x((P_1(x)~\vee~\neg P_1(x)))~\rightarrow~\gamma_1))\\
+      \wedge~(\gamma_1~\rightarrow~Q^1_Z)~\wedge~(\gamma_1~\rightarrow~Q^1_{P_2})
+      ~\wedge~(\gamma_1~\rightarrow~Q^1_{P_3})$
+  \item $\phi_2~\Leftrightarrow~(\gamma_2~\rightarrow~(P_2(x)~\vee~\neg P_2(x)))
+      \wedge~Tr_{QE}(\exists x((P_2(x)~\vee~\neg P_2(x)))~\rightarrow~\gamma_2))\\
+      \wedge~(\gamma_2~\rightarrow~Q^2_Z)~\wedge~(\gamma_2~\rightarrow~Q^2_{P_3})
+      $
+  \item $\phi_3~\Leftrightarrow~(\gamma_3~\rightarrow~(P_3(x)~\vee~\neg P_3(x)))
+      \wedge~Tr_{QE}(\exists x((P_3(x)~\vee~\neg P_3(x)))~\rightarrow~\gamma_3))\\
+      \wedge~(\gamma_1~\rightarrow~Q^3_Z))$
+\end{enumerate}
+其中$\alpha\Rightarrow\beta$的意义是将公式$\theta$ 中的$\alpha$替换成$\beta$，设$\psi$为公式$\theta^{\neg\neg}~\wedge~\tilde{\theta_1}~\wedge~\tilde{\theta_2}~\wedge~\tilde{\theta_3}
+~\wedge~\phi_1~\wedge~\phi_2~\wedge~\phi_3$，则$\mathbf{CIRC}[\theta;P_1>P_2>P_3;Z]$等价于
+\begin{align*}
+    \exists Q_{P_3}^1\exists Q_{P_3}^1\exists Q_Z^1\exists Q_{P_3}^2\exists Q_Z^2\exists Q_Z^3\mathbf{SM}[\psi;P_1,P_2,P_3,Q^1_{P_2},Q^1_{P_3},Q^{1}_{Z},Q^2_{P_3},Q^2_Z,Q^3_Z]
+\end{align*}
+\end{example}
+
+从$Tr_v^p$的定义看出，这种翻译将会引入大量的辅助谓词，设第$j(1\leq j\leq k)$个优先级有$m_j$个极小化谓词，且总共有$n$个可变谓词，则引入的辅助谓词个数为$\Sigma^k_{j=1}(j-1)m_j+k(n+1)$。
+
+
+\section{翻译优化}
+
+上面介绍了在一般结构下，一阶限定理论到一阶稳定模型理论的翻译，然而在稳定模型语义下，当$\varphi$是一个$\Pi_1$-公式时，$\varphi$可以很容易的翻译成答集程序。因为一阶语句的任意性，消去存在量词成为了必要。
+
+Eiter等人\cite{eiter1996normal}给出了经典逻辑下使用辅助谓词模拟存在量词，主要思想是：设$D$ 是一个有限的线性论域，$P$是$D$上的一个属性，定义$S$为$D$上的一个辅助属性满足$a$有性质$S$当且仅当存在比$a$小的$b$有性质$P$，因此，如果我们想知道是否有元素具有性质$P$，我们仅需要确定最小的元素是否具有性质$S$。
+然而，在稳定模型语义下，要达到消去存在量词的效果，就需要对新引入的辅助谓词进行解释，章衡的翻译定义\ref{def_smfo2smufo}即是基于这样的思想提出的稳定模型语义下消去存在量词的方法。
+
+根据定义\ref{def_smfo2smufo}，可以视为在有限结构下，一般的一阶稳定模型语义可以下降为答集程序。基于章衡的方法，我们同样优化限定理论翻译的消去存在量词的过程，使得其引入尽量少的辅助谓词和减小逻辑程序的规模。有如下的限定理论消去存在量词的翻译方法：
+
+\begin{definition}\label{def_circ2sm_eliquat}
+给定$\varphi$是形如$\forall\bar{x}\exists\bar{y}\theta(\bar{x},\bar{y})$ 的任意一阶语句，其中$\theta$是无量词的
+否定范式，我们定义$\Gamma_{\exists}(\varphi;\sigma_i;\sigma_v)$是下述公式合取式的一阶全称闭包：
+\begin{eqnarray}
+% \nonumber to remove numbering (before each equation)
+  \neg\neg S(\bar{x},\overline{min}) \label{form_circqe1}\\
+  (succ(\bar{y},\bar{y}')~\wedge~S(\bar{x},\bar{y}'))~\vee~\theta^{\neg\neg}(\bar{x},\bar{y})~\rightarrow~S(\bar{x},\bar{y}) \label{form_circqe2}\\
+  (succ(\bar{y},\bar{y}')~\wedge~W(\bar{x},\bar{y}'))~\vee~\theta^{\top\neg\neg}(\bar{x},\bar{y})~\rightarrow~W(\bar{x},\bar{y}) \label{form_circqe3}\\
+  T(\bar{x},\overline{min})~\vee~\widetilde{\theta}(\bar{x},\overline{min}) \label{form_circqe4}\\
+  succ(\bar{y},\bar{y}')~\rightarrow~(T(\bar{x},\bar{y})~\leftrightarrow~\widetilde{\theta}(\bar{x},\bar{y}')~\vee~T(\bar{x},\bar{y}')) \label{form_circqe5}\\
+  succ(\bar{y},\bar{y}')~\wedge~\neg W(\bar{x},\bar{y}')~\wedge~W(\bar{x},\bar{y})~\rightarrow~(T(\bar{y},\overline{max})~\leftrightarrow~\widetilde{\theta}(\bar{x},\bar{y})) \label{form_circqe6}\\
+  W(\bar{x},\overline{max})~\rightarrow~(T(\bar{y},\overline{max})~\leftrightarrow~\widetilde{\theta}(\bar{x},\overline{max})) \label{form_circqe7}\\
+  \gamma~\leftrightarrow~\bigwedge_{P\in\sigma_i}\forall\bar{x}(P(\bar(x))~\vee~\neg P(\bar{x})) \label{form_circqe8}
+\end{eqnarray}
+其中：
+\begin{enumerate}
+  \item $\theta^{\neg\neg}$是将$\theta$中所有形如$P(\overline{x})$($P$在$\sigma^i,1 \leq j \leq k,$的并集中)的公式替换为$\neg\neg P(\overline{x})$后所得到的公式；
+  \item $\widetilde{\theta}$是将$\theta$进行如下转换：(i)将所有形如$(P(\overline{x})\rightarrow\gamma)(P~\in~\sigma_i)$ 的公式替换为负文字$\neg P(\overline{x})$，(ii)将正文字$Q(\overline{x})(Q \in \sigma_v)$替换为$Q'(\overline{x})$，(iii)将形如$(Q'(\overline{x})\rightarrow \gamma)$的公式替换为负文字$\neg Q'(\overline{x})$，$Q'$是不出现在$\theta$ 中的相对于$Q$的辅助谓词；
+  \item $\theta^{\top\neg\neg}$是将$\widetilde{\theta}$中所有形如($P(\bar{x})~\rightarrow~\gamma$)($P\in\sigma_i~\cup~\sigma_v$) 替换成$\top$。
+\end{enumerate}
+令$n$为序列$\bar{x}$与$\bar{y}$的长度之和，$\overline{succ}$描述$succ$所定义序被推广到$n$ 元组后的得到后继关系；
+$\overline{min}$与$\overline{max}$分别表示$|\bar{y}|$元组$(min,...,min)$和$(max,...,max)$；$S,T,V,\gamma$是新引入的辅助谓词，且不在$\varphi$中出现。
+\end{definition}
+
+对于上述定义中使用的辅助谓词和语句有如下的解释：
+\begin{itemize}
+  \item 谓词$S(x,y)$模拟$\varphi^{\neg\neg}$的存在量词；
+  \item 谓词$W(x,y)$模拟$\tilde{\varphi}$的存在量词；
+  \item 谓词$T(x,y)$模拟稳定模型语义下的$St(\varphi^*)$的存在量词。
+\end{itemize}
+
+\begin{proposition}
+令$\varphi$是任意形如$\forall\bar{x}\exists\bar{y}\theta(\bar{x},\bar{y})$ 的一阶语句，$\sigma_i$是谓词常量元组，
+则$\exists\sigma_v\exists S\exists W \exists T\exists\gamma \mathbf{SM}[\Gamma_{\exists}(\varphi;\sigma_i);\sigma_i,\sigma_v,S,W,T,\gamma]$ 在有穷结构下等价于$\mathbf{CIRC}[\varphi;\sigma_i]$，其中
+$S,W,T,\gamma$和$\sigma'_v$是由$\Gamma_{\exists}$ 引入的新谓词。
+\end{proposition}
+
+
+上述的优化过程整合个定义\ref{def_parallelcirc2sm} 的翻译$Tr_v$和定义\ref{def_smfo2smufo}的翻译$Tr_{QE}$。
+这样就有两种消去存在量词的方法，第一种是经过翻译$Tr_v$后，存在量词仍然保存在语句中，然后在稳定模型语义下运用翻译$Tr_{QE}$消去存在量词；第二种方法是直接运用翻译优化$\Gamma_{\exists}$。
+
+下面分析翻译优化的优化程度，我们用辅助谓词的数量来衡量，一个理论的规模被定义为联结词和原子的数量，除去共有的辅助谓词集$\gamma$和$\sigma'_v$，第一种方法引入了4个辅助谓词，第二种方法引入了3 个辅助谓词。例如，设原本限定问题的规模为$n$，则第一种方法翻译后的规模为$10\times n$，第二种方法的规模为$6\times n$，随后，两种方法都需要继续迭代地使用翻译$Tr_{QE}$，随着迭代的次数增加，上述翻译优化方法将会减少$25\%$的辅助谓词，逻辑程序的大小将会减小$40\%$。
+
+%翻译优化$\Gamma_{\exists}$适用于带可变谓词的并行限定，我们可以根据$Tr_v^p$将其扩展该翻译优化，使其适用于带可变谓词的优先级谓词。
+
+\section{可译性}\label{sec_algorithm}
+
+根据一阶限定理论到稳定语义下的一阶语言的可译性分析，我们得到如图\ref{fig_translate}所示的转化关系。
+
+
+从图中可以看到主要存在如下的几种翻译途径：
+\begin{enumerate}
+  \item 一阶限定理论到一阶稳定理论（$CIRC[FO]~\Rightarrow~SM[FO]$），这一翻译可以根据定理\ref{pro_parallelcirc2sm}和定理\ref{pro_prioritycirc2sm}，这个翻译是在任意结构下都成立的；
+  \item 一阶稳定理论到全称一阶稳定理论（$SM[FO]~\Rightarrow~SM[UFO]$），可以根据定义\ref{def_smfo2smufo}，这个翻译在有穷结构下是等价的；
+  \item 一阶限定理论到全称一阶限定理论（$CIRC[FO]~\Rightarrow~CIRC[UFO]$），这一过程仍然没有充分的理论依据；
+  \item 全称一阶限定理论到全称一阶稳定理论（$CIRC[UFO]~\Rightarrow~SM[UFO]$），这一过程同样没有充分的理论依据。
+  \item 全称一阶限定理论通过加事实到加事实后的全称一阶稳定理论，实际意义即为命题限定理论的翻译，可以根据文献\cite{janhunen2004capturing}的并行限定求解理论依据、文献\cite{oikarinen2008implementing}的优先级限定求解依据和一个求解器的实现CIRC2DLP\cite{oikarinen2005circ2dlp}了解具体地做法。
+  \item 一阶限定理论到全称一阶稳定理论（$CIRC[FO]~\Rightarrow~SM[UFO]$），对应翻译优化定义\ref{def_circ2sm_eliquat}，这一翻译在有穷结构下是等价的。
+\end{enumerate}
+
+\begin{figure}
+  \center
+  \includegraphics[width=0.9\textwidth]{img/translate.jpg}\\
+  \caption{可译性关系图}\label{fig_translate}
+\end{figure}
+
+根据以上的翻译方法，我们总结了如下带可变谓词常元的一阶限定理论的计算方法，分为如下四个步骤：
+\begin{enumerate}
+  \item 将输入语句转换为否定范式和前束范式；
+  \item 应用翻译优化$\Gamma_{\exists}$消去一层存在量词；
+  \item 应用存在量词消去$Tr_{QE}$递归消去语句的所有存在量词，得到逻辑程序；
+  \item 对每一个固定的谓词常元和可变的谓词常元加语句$\forall\bar{x}(P(\bar{x})\vee\neg P(\bar{x}))$。
+\end{enumerate}
+
+需要注意的是，在翻译$Tr_v$、$Tr_v^p$和$\Gamma_{\exists}$中，我们均没有提到对于函词常元的处理，因为可以很简单地使用谓词变元模拟函词变元，根据\cite{zhang2011translating}，稳定模型语义下，一个全称的二阶语句通过引入新的辅助谓词，可以翻译为一个一阶语句，因此，带有可变的函词常元的限定理论在理论上是可以被计算的，特别地，可变的个体常元通过添加一阶存在量词，可以被个体常元模拟。
+%求解器的工作方式是，首先将输入的一阶限定理论“编译”成为逻辑程序，然后将该程序和问题实例的数据交给回答集求解器由回答集求解器求出问题实例的稳定模型，该稳定模型即为一阶限定理论的模型。
+
+
+%\section{计算限定理论}
+
+%对于任意一阶语句$\varphi$，我们首先使用第三章翻译优化理论定义将最外层的存在量词块消去，这样翻译后的语句均在稳定模型语义下，再根据第二章提到的章衡的消去存在量词的定义，将仍包含存在量词的语句消去存在量词，
+
+\section{本章小结}
+
+本章对一阶限定理论$\mathbf{CIRC}[FO]$和一阶稳定理论$\mathbf{SM}[FO]$之间可翻译方法作了深入的研究，具体地，我们得到了如下的结果：
+
+一方面，在一般结构下，存在一阶并行限定理论和优先级限定理论到一阶稳定模型语义下的翻译，这一翻译有助于理解清晰限定理论与稳定理论之间的关系，这样的翻译也为回答集求解器计算一阶限定理论提供了理论基础与技术途径。
+
+另一方面，我们给出了翻译过程中的一个优化，即从一阶限定理论到一阶稳定理论的一个存在量词消去，该方法引入更少的辅助谓词，我们分析了该量词消去算法在理论上会有良好的效果。

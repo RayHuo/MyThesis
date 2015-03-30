@@ -1,0 +1,29 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  23 MAR 2015 20:18
+entering extended mode
+**E:/CtexPaper/hzwPaper/cover.tex
+(E:/CtexPaper/hzwPaper/cover.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+! Undefined control sequence.
+<argument> \bfseries \song 
+                           \yihao 中山大学硕士学位论文
+l.7 ...{\bfseries\song\yihao 中山大学硕士学位论文}
+                                                  
+? 
+! Emergency stop.
+<argument> \bfseries \song 
+                           \yihao 中山大学硕士学位论文
+l.7 ...{\bfseries\song\yihao 中山大学硕士学位论文}
+                                                  
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 12 strings out of 495354
+ 177 string characters out of 3183074
+ 44842 words of memory out of 3000000
+ 3280 multiletter control sequences out of 15000+200000
+ 3948 words of font info for 15 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 14i,1n,10p,105b,60s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

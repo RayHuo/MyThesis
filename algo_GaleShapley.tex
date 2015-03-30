@@ -1,0 +1,58 @@
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwData{Left}{left}\SetKwData{This}{this}\SetKwData{Up}{up}
+  \SetKwFunction{Union}{Union}\SetKwFunction{FindCompress}{FindCompress}
+  \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+  \caption{Gale-Shapley算法}\label{alg_galeshapley}
+
+  \Input{~$n$个男人和$n$个女人的偏好列表$ManList[n][n],WomanList[n][n]$~}
+  \Output{~一个稳定匹配$M$~}
+  \BlankLine
+  %\emph{special treatment of the first line}\;
+  %\For{$i\leftarrow 2$ \KwTo $l$}{
+    %\emph{special treatment of the first element of line $i$}\;
+    %\lnl{InRes2}
+    %bool [n] = false; //初始化所有男人状态为未配对\\
+%    bool womanstatus[n] = false; //初始化所有女人状态为未配对\\
+    queue iqueue;//定义一个未配对男人队列\\
+    iqueue.push(man);//将所有男人入队列\\
+    \While{!iqueue.empty()}
+    {
+        $m$ = iqueue.front();//选取一个未配对的男人\\
+        \For{i=0;i$<$n;i++}
+        {
+            $w$ = $ManList[m][i]$;//从偏好列表中按排名选取求婚对象\\
+            \If(\tcp*[h]{求婚对象未配对}){status[$w$] == false}
+            {
+                status[$w$] = true;//设置配对状态\\
+                status[$m$] = true;\\
+                $M~~\Leftarrow~~(m,w)$;//添加匹配信息\\
+                break;\\
+            }
+            \Else
+            {
+                $m'$ = $M[w]$;//找到$w$的现任对象\\
+                \If(\tcp*[h]{$w$喜欢$m$多于现在的伴侣$m'$}){$WomanList[w][m]~>~WomanList[w][m']$}
+                {
+                    status[$m'$] = false;//设置配对状态\\
+                    status[$m$] = true;\\
+                    iqueue.push($m'$);//加入未配对队列\\
+                    $M[w]~=~m$;//更新配对信息\\
+                    break;\\
+                }
+            }
+        }
+        %根据$m$的偏好列表，选取$m$还未向其求婚且排名最高的女人$w$；\\
+%        $m$向$w$求婚；\\
+%        \If{$w$为未配对状态}{声明$m$和$w$为一个配对；}
+%        \Else
+%        {
+%            \If{根据$w$的偏好列表，$w$喜欢$m$多于现在的伴侣$m'$}{设置$m'$为未配对状态；\\
+%            声明$m$和$w$为一个配对；}
+%            \Else{$w$拒绝$m$的求婚；}
+%        }
+    }
+
+  %}
+
+\end{algorithm}\DecMargin{1em}
