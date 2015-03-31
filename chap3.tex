@@ -407,7 +407,10 @@ $SL_U(P,X)$¸ù¾ÝLinºÍZhaoµÄ»·ÀíÂÛ£¬¶¨ÒåµÄÈÃµ×²¿»Ø´ð¼¯$X$Ëù²»ÄÜÂú×ãµÄ»·¹«Ê½µÄ»·Óë·
 \begin{definition}\label{SS_U_PX}
 	¸ø¶¨ÎöÈ¡Âß¼­³ÌÐò$P$ÒÔ¼°Ô­×Ó¼¯$X$ºÍ$U$£¬±ê¼ÇÒÔÏÂÔ­×Ó¼¯µÄ¼¯ºÏ£º
 	\begin{equation}
-		SS_U(P,X)~=~\{ E~|~E~is~an~nonempty~subset~of~U,~E \subseteq X~and~R^-(E,P,X) \subseteq in_U(P) \}
+		\begin{array}{rcl}
+			SS_U(P,X)~=~\{ E~|~E~is~an~nonempty~subset~of~U,~ \\
+			E \subseteq X~and~R^-(E,P,X) \subseteq in_U(P) \}
+		\end{array}		
 	\end{equation}
 \end{definition}
 
@@ -431,11 +434,15 @@ $SL_U(P,X)$¸ù¾ÝLinºÍZhaoµÄ»·ÀíÂÛ£¬¶¨ÒåµÄÈÃµ×²¿»Ø´ð¼¯$X$Ëù²»ÄÜÂú×ãµÄ»·¹«Ê½µÄ»·Óë·
 \end{definition}
 
 ÔÚÓÐÁËÇ¿·½°¸µÄ¶¨Òåºó£¬ÒÀ¾Ý$SS_U(P,X)$¶Ô$SL_U(P,X)$ÐÔÖÊµÄÀ©Õ¹£¬¿ÉÒÔµÃµ½ÒÔÏÂÁ½¸ö¶¨Àí¡£
+\begin{theorem}\label{strong_splitting_theorem}
+	¸ø¶¨ÎöÈ¡Âß¼­³ÌÐò$P$ºÍÔ­×Ó¼¯$U$¡£Ò»¸öÔ­×Ó¼¯$S$ÊÇ$P$µÄÒ»¸ö»Ø´ð¼¯£¬µ±ÇÒ½öµ±$S = (X \cup Y) \cap Atoms(P)$£¬ÆäÖÐ$\langle X,Y \rangle$ÊÇ$P$»ùÓÚ$U$µÄÄ³×éÇ¿·½°¸¡£
+\end{theorem}
 
+\begin{theorem}\label{strong_associative}
+	¸øÎöÈ¡¶¨Âß¼­³ÌÐò$P$ºÍÔ­×Ó¼¯$U$¡£ÁíÓÐÂß¼­³ÌÐò$P'$Âú×ã$Atoms(P') \cap U = \emptyset$¡£ÔòÔ­×Ó¼¯$S$ÊÇÂß¼­³ÌÐò$P \cup P'$µÄÒ»¸ö»Ø´ð¼¯£¬µ±ÇÒ½öµ±$S = (X \cup Y) \cap Atoms(P)$£¬ÆäÖÐ$X$Îª$b_U(P) \cup EC_U(P)$µÄÄ³¸ö»Ø´ð¼¯£¬$Y$Îª$e_U(st_U(P,X),X) \cup ECC_U(P,X) \cup P'$µÄÄ³¸ö»Ø´ð¼¯¡£
+\end{theorem}
 
-
-
-
+¶¨Àí\ref{strong_associative}°Ñ³ÌÐò·Ö¸î·½·¨µÄ½áºÏÐÔÀ©Õ¹µ½ÒÔÈÎÒâÔ­×Ó¼¯×÷Îª·Ö¸î¼¯µÄÇé¿ö¡£¶øÕâÖÖ½áºÏÐÔµÄ±¾ÖÊÊÇÒ»¸ö¶þ´Î·Ö¸î£¬ÕâÖÖÀ©Õ¹ÓÐÖúÓÚ³ÌÐò·Ö¸î·½·¨µÄµÝ¹éÎÊÌâÑÐ¾¿¡£
 
 
 
@@ -445,20 +452,62 @@ $SL_U(P,X)$¸ù¾ÝLinºÍZhaoµÄ»·ÀíÂÛ£¬¶¨ÒåµÄÈÃµ×²¿»Ø´ð¼¯$X$Ëù²»ÄÜÂú×ãµÄ»·¹«Ê½µÄ»·Óë·
 
 ÔÚÉÏÒ»½ÚÖÐ£¬±¾ÎÄÏêÏ¸µØ¸ø³öÁËÕý¹æÂß¼­³ÌÐòºÍÎöÈ¡Âß¼­³ÌÐòµÄÐÂ³ÌÐò·Ö¸î·½·¨£¬²¢Ö¤Ã÷ÁËÐÂµÄ³ÌÐò·Ö¸î·½·¨¶ÔÈÎÒâÔ­×Ó¼¯¹¹³ÉµÄ·Ö¸î¼¯¶¼ÓÐÐ§¡£µ±ÕæÕýµÄ×ÔÓÉÊÇ¹æ¾Ø¡£ÈÎÒâÔ­×Ó¼¯¸øÁË³ÌÐò·Ö¸îºÜ´óµÄ×ÔÓÉ¶È£¬µ«Õâ¸ü¶àÊÇÀíÂÛ²ãÃæµÄ¡£±¾½Ú½«·ÖÎöÌÖÂÛ·Ö¸î¼¯ÈçºÎÓ°Ïì×Å³ÌÐò·Ö¸î¹ý³ÌµÄ¼ÆËã¸´ÔÓÐÔ£¬²¢Ö¸³öÔõÑùµÄÔ­×Ó¼¯×÷Îª·Ö¸î¼¯²Å»áÈÃ³ÌÐò·Ö¸î¸ü¸ßÐ§¡£´ËÍâ£¬ÓÉÓÚÎöÈ¡Âß¼­³ÌÐò¸úÕý¹æÂß¼­³ÌÐòµÄ±¾ÖÊÇø±ðÔÚÓÚÍ·²¿µÄ»ù£¬¼´Í·²¿ÖÐÔ­×ÓµÄÊýÁ¿¡£ËùÒÔ±¾½ÚÒÔÕý¹æÂß¼­³ÌÐòÔÚ³ÌÐò·Ö¸î·½·¨ÉÏµÄ¼ÆËã¸´ÔÓÐÔÎªÀý½øÐÐ·ÖÎö¡£
 
+¶ÔÓÚÒ»¸öÕý¹æÂß¼­³ÌÐò$P$Í¨¹ýÒ»¸öÔ­×Ó¼¯U½øÐÐ³ÌÐò·Ö¸îºó±»»®·ÖÎªµ×²¿ºÍ¶¥²¿Á½²¿·Ö£¬¶ø³ÌÐò·Ö¸î¹ý³ÌÖÐÖ÷ÒªºÄÊ±µÄÓÐÁ½¸öµØ·½£¬·Ö±ðÎªµ×²¿µÄ$EC_U(P)$ºÍ¶¥²¿µÄ$SS_U(P,X)$ËùÔì³É¡£¾ßÌåÌåÏÖÎªÒÔÏÂÁ½¸öÎÊÌâ£º
+\begin{enumerate}
+	\item ÔÚµ×²¿ÖÐ£¬$EC_U(P)$ÖÐµÄ¹æÔòÔÚ×î»µÇé¿öÏÂ»áÎª$b_U (P) \cup EC_U(P)$´øÀ´$2^{|Atoms(b_U(P) \backslash U|}$¸ö»Ø´ð¼¯£¬ÕâÊÇÒ»ÖÖÖ¸Êý±¬Õ¨µÄ¼«¶Ë£»
+	\item ÔÚ¶¥²¿ÖÐ£¬$DSL_U(P,X)$ÖÐµÄ°ë»·»áÎª$dt_U(P)$ÒýÈëÖ¸Êý±¬Õ¨ÊýÁ¿µÄÐÂÔ­×Ó¡£
+\end{enumerate}
+
+½ÓÏÂÀ´µÄÐ¡½Ú½«·Ö±ð¶ÔÉÏÊöÁ½¸öÎÊÌâ½øÐÐ¾ßÌåµÄ·ÖÎöºÍ¸ø³öÌáËÙ·½°¸¡£
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{µ×²¿¼ÆËã¸´ÔÓÐÔ}
 
-±¾Ð¡½ÚÖ÷Òª¶ÔÎÊÌâi½øÐÐ·ÖÎö¡£µ×²¿ÖÐµÄ$EC_U(P)$ÊÇÎªÁË²¹³ä$Atoms(b_U(P)) \backslash U$ÖÐµÄÔ­×ÓÔÚ»Ø´ð¼¯ÖÐµÄÕæÖµ¿ÉÄÜÐÔ¶ø¶¨ÒåµÄ¡£¶ÔÓÚ$EC_U(P)$´øÀ´µÄºÄÊ±£¬±¾½Ú¸ø³öÒÔÏÂÁ½¸ö½µµÍ¼ÆËã¸´ÔÓÐÔµÄ·½·¨£º
+±¾Ð¡½ÚÖ÷Òª¶ÔµÚÒ»¸öÎÊÌâ½øÐÐ·ÖÎö¡£µ×²¿ÖÐµÄ$EC_U(P)$ÊÇÎªÁË²¹³ä$Atoms(b_U(P)) \backslash U$ÖÐµÄÔ­×ÓÔÚ»Ø´ð¼¯ÖÐµÄÕæÖµ¿ÉÄÜÐÔ¶ø¶¨ÒåµÄ¡£¶ÔÓÚ$EC_U(P)$´øÀ´µÄºÄÊ±£¬±¾½Ú¸ø³öÒÔÏÂÁ½¸ö½µµÍ¼ÆËã¸´ÔÓÐÔµÄ·½·¨£º
+\begin{itemize}
+	\item ±£Ö¤$|Atoms(b_U(P)) \backslash U|$×ã¹»Ð¡£¬×îºÃÊÇÔÚÄ³¸ö³£ÊýÖµÒÔÄÚ£»
+	\item ÈÃ·Ö¸î¼¯$U$ÖÐµÄÔ­×ÓÄÜ±»Âß¼­³ÌÐò$P$µÄÃ¿¸ö»Ø´ð¼¯ËùÂú×ã¡£
+\end{itemize}
 
+\begin{proof}
+	µÚÒ»¸ö·½·¨ÖÐ£¬ÔÚ$|Atoms(b_U(P)) \backslash U|$×ã¹»Ð¡µÄÇé¿öÏÂ£¬ÌØ±ðµØ£¬ÊÇ±£³ÖÔÚÄ³¸ö³£ÊýÖµÒÔÄÚµÄ»°£¬$2^{|Atoms(b_U(P)) \backslash U|}$µÄ´óÐ¡±ã»á±»ÏÞÖÆ£¬ÕâÑù¾ÍÄÜ·ÀÖ¹µ×²¿»Ø´ð¼¯ÊýÁ¿ÒòÎªÒýÈëµÄÐÂÔ­×Ó¶øÔì³ÉÖ¸Êý±¬Õ¨¡£ÕâÊÇÒ»¸ö·Ç³£Ö±¹ÛµÄ´ëÊ©¡£´ËÍâ£¬ÓÉÓÚ·Ö¸î¼¯ÄÜ¹»ÊÇÈÎÒâÔ­×Ó¼¯£¬ËùÒÔÏÞÖÆ$|Atoms(b_U(P)) \backslash U|$µÄ´óÐ¡ÊÇ¾ß±¸¿ÉÐÐÐÔµÄ¡£
+	
+	µÚ¶þ¸ö·½·¨ÖÐ£¬ÈôÄÜÊ¹µÃ·Ö¸î¼¯$U$ÖÐµÄÔ­×ÓÄÜ±»Âß¼­³ÌÐòPµÄÃ¿¸ö»Ø´ð¼¯ËùÂú×ã£¬ÄÇÃ´ÕâÔÚºóÐø¼ÆËã¶¥²¿µÄ$dt_U(P)$Ê±Ö»Ðè¿¼ÂÇ$b_U(P) \cup EC_U(P)$ÖÐÂú×ã$U \subseteq X$µÄ»Ø´ð¼¯$X$¡£ÕâÑù¾ÍÄÜ´ó´ó½µµÍ$dt_U(P)$µÄ¸´ÔÓÐÔ¡£	\quad
+\end{proof}
+
+ÐèÒªÃ÷È·µÄÒ»µãÊÇ£¬ÄÜ±»Âß¼­³ÌÐò$P$µÄÃ¿¸ö»Ø´ð¼¯ËùÂú×ãµÄÔ­×Ó¼¯ÓÐ¶ÀÁ¢µÄ¶¨ÒåºÍËã·¨£¬²»ÐèÒªÇó½â³öÂß¼­³ÌÐòµÄËùÓÐ»Ø´ð¼¯²ÅÄÜµÃµ½¡£ËùÒÔÕÒ³öÕâÑùµÄÔ­×Ó¼¯È¥×÷Îª·Ö¸î¼¯ÊÇ¿ÉÐÐµÄ¡£¶øÕâÑùµÄÔ­×Ó¼¯Ò²½«¸ø±¾ÎÄ´øÀ´·Ö¸î¼¯Ó¦ÓÃµÄÐÂË¼Â·¡£¾ßÌåµÄ¶¨ÒåºÍËã·¨½«»áÔÚµÚËÄÕÂ¸ø³ö¡£
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{¶¥²¿¼ÆËã¸´ÔÓÐÔ}
-±¾Ð¡½ÚÖ÷Òª¶ÔÎÊÌâii½øÐÐ·ÖÎö¡£¹ØÓÚ¶¥²¿ÖÐ$DSL_U(P,X)$Ëù´øÀ´µÄ¸´ÔÓÐÔ£¬ÒÀ¾ÝÆä¶¨Òå¿ÉÒÔÖªµÀÆäÖÐµÄ¹Ø¼ü°ë»·$E$ÓëÆäËùÄÜ´ú±íµÄ°ë»·$E'$±ØÐëÂú×ã£º
+±¾Ð¡½ÚÖ÷Òª¶ÔµÚ¶þ¸öÎÊÌâ½øÐÐ·ÖÎö¡£¹ØÓÚ¶¥²¿ÖÐ$DSL_U(P,X)$Ëù´øÀ´µÄ¸´ÔÓÐÔ£¬ÒÀ¾ÝÆä¶¨Òå¿ÉÒÔÖªµÀÆäÖÐµÄ¹Ø¼ü°ë»·$E$ÓëÆäËùÄÜ´ú±íµÄ°ë»·$E'$±ØÐëÂú×ã£º
+\begin{eqnarray}
+	E \cap head(in_U(P)) = E' \cap head(in_U(P)) \\
+	E \cap body^+(out_U(P)) = E' \cap body^+(out_U(P))
+\end{eqnarray}
 
+¶ø¹Ø¼ü°ë»·±¾À´ÊÇ¿ÉÒÔ´ú±íÆäËûÒ»°ã°ë»·£¬´ËÍâ£¬°ë»·Ò²ÊÇÓÉÒ»°ãµÄ»·½»·Ö¸î¼¯¶øÀ´£¬ËùÒÔ±£Ö¤²»´æÔÚÁ½¸ö²»Í¬µÄ¹Ø¼ü°ë»·¿ÉÒÔÍ¬Ê±´ú±íÒ»¸öÒ»°ã°ë»·µÄÇé¿ö¡£ÔÚ¹Ø¼ü°ë»·µÄ»¥³âÐÔÖ®ÏÂ£¬¹Ø¼ü°ë»·µÄÊýÁ¿µÄÀíÂÛ×î´óÖµ½«ÓÉ$head(in_U(P))$ºÍ$body^+(out_U(P))$µÄ»ùËù¾ö¶¨¡£
+
+¾ßÌåÀ´Ëµ¾ÍÊÇ$E \cap head(in_U(P))$ºÍ$E \cap body^+(out_U(P))$µÄ¿ÉÄÜÇé¿öÊýÁ¿Ëù¾ö¶¨¡£Éè$n = |head(in_U(P))|$ºÍ$m = |body^+(out_U(P))|$£¬ÄÇÃ´ÓÐ£º
+\begin{equation}
+	|E \cap head(in_U(P))| \leq \sigma_{0 \leq i \leq n} C^i_n = 2^n
+\end{equation}
+
+ÆäÖÐ$C_n^i$ÎªÅÅÁÐ×éºÏÖÐµÄ×éºÏ¼ÆËã·ûºÅ¡£Í¬Àí£¬»¹ÓÐ£º
+\begin{equation}
+	|E \cap body^+(out_U(P))| \leq 2^m
+\end{equation}
+
+¹ÊÓÐ£º
+\begin{equation}
+	|DSL_U(P,X)| \leq |E \cap head(in_U(P))| * |E \cap body^+(out_U(P))| \leq 2^n * 2^m
+\end{equation}
+
+Êµ¼ÊÉÏ£¬ÉÏÊöµÄ$|DSL_U(P,X)|$¹æÄ£½áÂÛÒ²ÄÜ´ÓÆäËã·¨ÖÐµÃµ½¡£´ÓÉÏÊöµÄ½áÂÛÖÐ¿ÉÒÔÃ÷ÏÔµØÖªµÀÍ¨¹ýÏÞÖÆ$|head(in_U(P))|$ºÍ$|body^+(out_U(P))|$µÄ´óÐ¡¿ÉÒÔÏÞÖÆ$|DSL_U(P,X)|$µÄ´óÐ¡¡£¶ø$|head(in_U(P))|$ºÍ$|body^+(out_U(P))|$µÄ´óÐ¡ÒÀ¾É¿ÉÒÔÍ¨¹ý·Ö¸î¼¯$U$À´ÏÞÖÆ¡£¶øÏÞÖÆ$|DSL_U(P,X)|$µÄ´óÐ¡ºó£¬ÔÚ$dt_U(P)$ÖÐµÄµÚ¶þºÍµÚÈý²¿·ÖÖÐ½«»á´ó´ó¼õÉÙÐÂÔ­×ÓµÄÒýÈë£¬½ø¶ø½µµÍ³ÌÐò¹æÄ££¬¼Ó¿ìÇó½âËÙ¶È¡£
+
+ÉÏÊöµÄ¼ÆËã¸´ÔÓÐÔ¶¼ÊÇ»ùÓÚÕý¹æÂß¼­³ÌÐò¶ø½øÐÐµÄ¡£¶øÊÂÊµÉÏ£¬Õý¹æÂß¼­³ÌÐòµÄ³ÌÐò·Ö¸îµÄ¼ÆËã¸´ÔÓÐÔµÄÏà¹Ø½áÂÛ¿ÉÒÔÓ¦ÓÃÓÚÎöÈ¡Âß¼­³ÌÐòÉÏ¡£ÒòÎªÁ½Õß½öÔÚ¹æÔòÍ·²¿µÄ»ùÉÏÓÐËù²»Í¬£¬Í¬Ê±Í·²¿Ô­×ÓÎªÎöÈ¡¹ØÏµ¡£
 
 
 
