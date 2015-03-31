@@ -24,11 +24,11 @@
 \contentsline {subsection}{\numberline {3.1.2}提出新的分割集}{23}{subsection.3.1.2}
 \contentsline {section}{\numberline {3.2}新程序分割方法}{24}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}正规逻辑程序分割方法}{25}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}析取逻辑程序分割方法}{33}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}强程序分割方法}{33}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}计算复杂性分析}{33}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}底部计算复杂性}{33}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}顶部计算复杂性}{33}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}本章小结}{34}{section.3.4}
-\contentsline {chapter}{参考文献}{35}{section*.5}
+\contentsline {subsection}{\numberline {3.2.2}析取逻辑程序分割方法}{34}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}强程序分割方法}{35}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}计算复杂性分析}{36}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}底部计算复杂性}{36}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}顶部计算复杂性}{36}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}本章小结}{36}{section.3.4}
+\contentsline {chapter}{参考文献}{37}{section*.5}
 \contentsfinish 

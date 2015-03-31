@@ -172,40 +172,4 @@ Ji J, Wan H, Xiao P.
   [J].
 \newblock 2015.
 
-\bibitem{eiter1996normal}
-Eiter T, Gottlob G, Gurevich Y.
-\newblock Normal forms for second-order logic over finite structures, and
-  classification of NP optimization problems [J].
-\newblock Annals of Pure and Applied Logic, 1996, 78(1):111--125.
-
-\bibitem{janhunen2004capturing}
-Janhunen T, Oikarinen E.
-\newblock Capturing parallel circumscription with disjunctive logic programs
-  [C].// Logics in Artificial Intelligence.
-\newblock vol 3229.
-\newblock Springer, 2004:  134--146.
-
-\bibitem{oikarinen2008implementing}
-Oikarinen E, Janhunen T.
-\newblock Implementing prioritized circumscription by computing disjunctive
-  stable models [C].// Artificial Intelligence: Methodology, Systems, and
-  Applications.
-\newblock vol 5253.
-\newblock Springer, 2008:  167--180.
-
-\bibitem{oikarinen2005circ2dlp}
-Oikarinen E, Janhunen T.
-\newblock CIRC2DLP¡ªtranslating circumscription into disjunctive logic
-  programming [C].// Logic Programming and Nonmonotonic Reasoning.
-\newblock vol 3662.
-\newblock Springer, 2005:  405--409.
-
-\bibitem{zhang2011translating}
-Zhang H, Zhang Y, Ying M, et~al.
-\newblock Translating first-order theories into logic programs [C].//
-  Proceedings of the Twenty-Second international joint conference on Artificial
-  Intelligence-Volume Volume Two.
-\newblock AAAI Press.
-\newblock 2011:  1126--1131.
-
 \end{thebibliography}
