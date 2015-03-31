@@ -33,8 +33,19 @@
 \contentsline {theorem}{{\hei 定理}{2.{5}}{分割集理论\cite {lifschitz1994splitting}}}{19}{theorem.2.4.5}
 \contentsline {definition}{{\hei 定义}{3.{1}}{}}{20}{definition.1}
 \contentsline {proof}{{\hei 证明}{1}{}}{20}{proof.1}
-\contentsline {definition}{{\hei 定义}{3.{2}}{}}{24}{definition.2}
-\contentsline {proposition}{{\hei 命题}{3.{3}}{}}{24}{definition.3}
-\contentsline {example}{{\hei 例}{3.{1}}{}}{24}{example.1}
-\contentsline {definition}{{\hei 定义}{3.{4}}{}}{26}{definition.4}
-\contentsline {proposition}{{\hei 命题}{3.{5}}{}}{27}{definition.5}
+\contentsline {definition}{{\hei 定义}{3.{2}}{}}{26}{definition.2}
+\contentsline {example}{{\hei 例}{3.{1}}{}}{26}{example.1}
+\contentsline {definition}{{\hei 定义}{3.{3}}{}}{27}{definition.3}
+\contentsline {proposition}{{\hei 命题}{3.{4}}{}}{27}{definition.4}
+\contentsline {example}{{\hei 例}{3.{2}}{}}{28}{example.2}
+\contentsline {definition}{{\hei 定义}{3.{5}}{}}{28}{definition.5}
+\contentsline {definition}{{\hei 定义}{3.{6}}{半环}}{29}{definition.6}
+\contentsline {definition}{{\hei 定义}{3.{7}}{}}{29}{definition.7}
+\contentsline {definition}{{\hei 定义}{3.{8}}{}}{29}{definition.8}
+\contentsline {definition}{{\hei 定义}{3.{9}}{}}{30}{definition.9}
+\contentsline {example}{{\hei 例}{3.{3}}{}}{30}{example.3}
+\contentsline {lemma}{{\hei 引理}{3.{10}}{}}{31}{definition.10}
+\contentsline {proof}{{\hei 证明}{2}{}}{31}{proof.2}
+\contentsline {theorem}{{\hei 定理}{3.{1}}{新分割理论}}{32}{theorem.3.2.1}
+\contentsline {definition}{{\hei 定义}{3.{11}}{关键半环（$Dominated~Semi-loop$）}}{32}{definition.11}
+\contentsline {definition}{{\hei 定义}{3.{12}}{关键半环集}}{32}{definition.12}
