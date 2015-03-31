@@ -7,23 +7,76 @@
 
 ÔÚ¸ø³öĞÂ·Ö¸î¼¯Ö®Ç°£¬±¾ÎÄ½«¶ÔLifschitzºÍTurnerÌá³öµÄ·Ö¸î¼¯ÀíÂÛ½øĞĞ·ÖÎö£¬È»ºó»ùÓÚËûÃÇ¶Ô·Ö¸î¼¯µÄ¶¨ÒåÌá³öÒ»¸ö¼ÆËã·Ö¸î¼¯µÄËã·¨£¬²¢¶ÔASP¾ºÈüÖĞµÄ³ÌĞò½øĞĞ¼ÆËã£¬¶Ô¼ÆËã½á¹û½øĞĞ·ÖÎö£¬Ëæºó¸ø³ö±¾ÎÄ¶¨ÒåµÄĞÂ·Ö¸î¼¯¡£
 
+\begin{definition}\label{hh_dh}
+	hhh
+\end{definition}
 
 \subsection{Ô­ÓĞ·Ö¸î¼¯ºÍ³ÌĞò·Ö¸îµÄ·ÖÎöÖ¤Ã÷}
 
 LifschitzºÍTurner¸ø³öµÄ·Ö¸î¼¯¶¨ÒåÊÇ£ºÒ»¸öÔ­×Ó¼¯$U$³ÆÎªÒ»¸öÂß¼­³ÌĞò$P$µÄ·Ö¸î¼¯£¬µ±ÇÒ½öµ±¶Ô$P$ÖĞµÄËùÓĞ¹æÔò$r$¶¼ÓĞ$head(r) \cap U \neq \emptyset$ÔÌº­$Atoms(r) \subseteq U$¡£Õâ¸ö·Ö¸î¼¯¶¨ÒåµÄÖ±¹Ûº¬Òå¾ÍÊÇÒ»¸ö·Ö¸î¼¯Èô°üº¬¹æÔòÍ·²¿µÄÔ­×Ó£¬ÔòÒ²¿ÉÒÔ°üº¬¸Ã¹æÔòµÄËùÓĞÔ­×Ó¡£ÕâÑùµÄĞÔÖÊ±£Ö¤ÁË·Ö¸î¼¯$U$¿ÉÒÔ°ÑÔ­³ÌĞò´Ó½á¹¹ÉÏ»®·Ö³ÉÁ½²¿·Ö£¬½ø¶ø±£Ö¤ÁËÔ­³ÌĞòµÄ»Ø´ğ¼¯¿ÉÒÔ´Ó·Ö¸îºóµÄÁ½²¿·ÖµÄ»Ø´ğ¼¯Çó½âµÃµ½¡£LifschitzºÍTurnerÔÚ1994ÄêµÄÔ­ÎÄÖĞÖ»¸ø³öÁË³ÌĞò·Ö¸î·½·¨µÄ¶¨Òå£¬¼´¸ù¾İ¶¨Òå(\ref{asp_solution})·Ö±ğÇó³öµ×²¿$b_U(P)$ºÍ»¯¼òºóµÄ¶¥²¿$e_U(t_U(P),X)$µÄ»Ø´ğ¼¯$X$ºÍ$Y$£¬¸ù¾İ·½°¸$\langle X,Y \langle$µÃµ½Ô­³ÌĞòµÄ»Ø´ğ¼¯¡£±¾ÎÄÔÚÕâÀï²¹³ä¸ø³öÕâÖÖ·Ö¸î·½·¨µÄ¿ÉĞĞĞÔÖ¤Ã÷¡£¹ØÓÚLifschitzºÍTurnerµÄ³ÌĞò·Ö¸î·½·¨¿ÉĞĞĞÔµÄÖ¤Ã÷ÈçÏÂ¡£
 
 
+
 \begin{proof}
-	Ê×ÏÈÖ¤Ã÷·Ö¸î¼¯¿ÉÒÔ°ÑÂß¼­³ÌĞò»®·ÖÎª»Ø´ğ¼¯»¥³âµÄÁ½²¿·Ö£¬²¢ÇÒµ×²¿µÄ»Ø´ğ¼¯ÊÇÔ­Âß¼­³ÌĞò»Ø´ğ¼¯×Ó¼¯¡£
+Ê×ÏÈÖ¤Ã÷·Ö¸î¼¯¿ÉÒÔ°ÑÂß¼­³ÌĞò»®·ÖÎª»Ø´ğ¼¯»¥³âµÄÁ½²¿·Ö£¬²¢ÇÒµ×²¿µÄ»Ø´ğ¼¯ÊÇÔ­Âß¼­³ÌĞò»Ø´ğ¼¯×Ó¼¯¡£
+
+¸ù¾İ¶¨Òå\ref{splitting_set}£¬·Ö¸î¼¯$U$Âú×ã¶ÔÓÚÂß¼­³ÌĞò$P$ÖĞÈÎÒâµÄ¹æÔò$r$¶¼ÓĞ£¬$head(r) \cap U \neq \emptyset$ÔÌº­$Atoms(r) \subseteq U$¡£¶ø¸ù¾İ¶¨Òå\ref{bottom_top}ÓĞ£º	
+\begin{eqnarray}
+	b_U(P) = \{ r \in P~|~head(r) \cap U \neq \emptyset \}	\\
+	t_U(P) = P~\backslash~b_U(P)
+\end{eqnarray}
+
+¸ù¾İ·Ö¸î¼¯$U$µÄÌØĞÔ£¬¿ÉÒÔÖªµÀ£º$Atoms(b_U(P)) \subseteq U$£¬²¢¶¨Òå£º
+\begin{eqnarray}
+	head(t_U(P))~=~\bigcup_{r \in t_U(P)} head(r)	\\
+	body(t_U(P))~=~\bigcup_{r \in t_U(P)} body(r)
+\end{eqnarray}
+
+Áí£¬¼ÇÒ»¸öÂß¼­³ÌĞò$P$µÄ»Ø´ğ¼¯Îª$\Gamma (P)$£¬¶ø»Ø´ğ¼¯±ØÊÇÒ»¸öÂß¼­³ÌĞòµÄÍ·²¿Ô­×ÓµÄ×Ó¼¯£¬¼´$\Gamma (P) \subseteq head(P)$¡£¸ù¾İ$t_U(P)$µÄ¶¨Òå¿ÉÒÔÖªµÀ£º	
+\begin{eqnarray}
+	head(t_U(P)) \subseteq Atoms(P) \backslash U \\
+	\Gamma (b_U(P)) \subseteq U
+\end{eqnarray}
+ÓÉÓÚ$head(t_U(P)) \cap U = \emptyset$£¬ËùÒÔ$\Gamma (t_U(P)) \cap U = \emptyset$£¬¹ÊÓĞ$\Gamma (b_U(P)) \cap \Gamma (t_U(P)) = \emptyset$£¬ÕâÑù±£Ö¤ÁË$b_U(P)$ºÍ$t_U(P)$µÄ»Ø´ğ¼¯ÊÇ»¥³âµÄ¡£´ËÍâ£¬ÎÒÃÇÒÑÖª£º	
+\begin{eqnarray}
+	Atoms(b_U(P)) \subseteq U \\
+	head(t_U(P)) \subseteq Atoms(P) \backslash U \\
+	head(b_U(P)) \cap head(t_U(P)) = \emptyset
+\end{eqnarray}
+
+ÕâĞ©¹ØÏµ±íÃ÷$b_U(P)$ÓÚÔ­Âß¼­³ÌĞò¶øÑÔ£¬ÊÇÒ»¸ö¶ÀÁ¢µÄÄ£¿é£¬Æä»Ø´ğ¼¯Ö»ÄÜ´Ó$b_U(P)$Õâ²¿·ÖÍÆ³ö£¬ÒòÎª$head(b_U(P))$ÖĞµÄÔ­×Ó²»»á³öÏÖÔÚ$head(t_U(P))$ÖĞ£¬¼´$\Gamma (b_U(P))$ÖĞµÄÔªËØ²»ĞèÒªÒÀÀµ$t_U(P)$ÖĞµÄ¹æÔò£¬Ò»µ©$head(b_U(P))$ÖĞµÄÄ³¸öÔªËØ±»ÍÆ³öÎªÕæ£¬ÄÇÃ´·ÅÔÚÕû¸ö³ÌĞòËü¶¼½«ÊÇÕæµÄ£¬¼´Ëü±ØÎªÔ­³ÌĞò»Ø´ğ¼¯µÄÔªËØ£¬¼´$\Gamma (b_U(P))$ÖĞµÄÔªËØ±Ø½«³öÏÖÔÚÔ­³ÌĞòµÄÄ³¸ö»Ø´ğ¼¯ÖĞ¡£
+
+È»¶ø£¬²¢²»ÊÇÖ±½Ó¼ÆËã$b_U(P)$ºÍ$t_U(P)$µÄ»Ø´ğ¼¯¾Í¿ÉÒÔµÃµ½×îÖÕµÄ»Ø´ğ¼¯¡£ÒòÎª$body(t_U(P))$ÖĞ¿ÉÄÜ»á°üº¬ÓĞ$U$ÖĞµÄÔ­×Ó£¬¶øÈç¹ûÕâĞ©Ô­×ÓÊÇÔÚ$\Gamma (b_U(P))$ÖĞµÄ»°£¬ÎÒÃÇÊÇ¿ÉÒÔÖªµÀÆäÕæÖµµÄ£¬ÒòÎª$\Gamma (b_U(P))$±ØÊÇÔ­³ÌĞò»Ø´ğ¼¯µÄÒ»²¿·Ö¡£ÄÇÃ´ĞèÒª¶¨ÒåÒ»¸ö²Ù×÷À´É¾³ıÕâĞ©¿ÉÒÔ¿Ï¶¨ÕæÖµµÄÔ­×Ó¡£Õâ¸ö²Ù×÷¾ÍÊÇ¶¨Òå\ref{e_U_P_X}ÖĞµÄ$e_U(P,X)$¡£
+
+½Ó×ÅÖ¤Ã÷$e_U(P,X)$µÄÓĞĞ§ĞÔ¡£
+
+Áî$X = \Gamma (b_U(P))$¡£¶ÔÓÚ$X$ÖĞµÄÔ­×Ó£¬ÆäÔÚ$t_U(P)$ÖĞµÄĞÎÊ½Ö»ÓĞÕıÎÄ×ÖºÍ¸ºÎÄ×Ö£¬¼´$x$»ò$not~x$£¬$x \in X$¡£
+
+ÔÚ$e_U(P,X)$µÄ¶¨ÒåÖĞ£¬ËüÖ»±£ÁôÂú×ãÒÔÏÂÌõ¼şµÄ¹æÔò$r$£º$body^+(r) \cap U \subseteq X$£¬¼°$(body^-(r) \cap U) \cap X = \emptyset$¡£²¢ÔÚ±£ÁôÏÂÀ´µÄ¹æÔòÖĞÉ¾È¥ËùÓĞĞÎÈç$a$»ò$not~a$£¬ÆäÖĞ$a \in U$µÄÎÄ×Ö¡£	
+\begin{enumerate}
+	\item ¶ÔÓÚÂú×ã$body^+(r) \cap U \subseteq X$µÄ¹æÔò$r$£¬ºóĞøµÄ»¯¼ò²Ù×÷ÊÇ$body^+(r) \backslash U$£¬¶ø$X \subseteq U$£¬ÇÒ$body^+(r) \cap U \subseteq X$£¬ËùÒÔÊµÖÊµÄÒâÒå¾ÍÊÇ$body^+(r) \backslash X$¡£¶ÔÓÚ$x \in body^+(r) \cap X$£¬ÒòÎª$x \in X$£¬$X = \Gamma (b_U(P))$£¬²¢ÇÒ$X$±ØÎªÔ­³ÌĞò»Ø´ğ¼¯µÄÒ»²¿·Ö£¬ËùÒÔ$x$Ò²ÎªÔ­Âß¼­³ÌĞòÖĞÄ³¸ö»Ø´ğ¼¯µÄÔªËØ£¬ËùÒÔ¿ÉÒÔÈ·¶¨$x$ÎªÕæ£¬ÇÒÌå²¿ÎªºÏÈ¡¹ØÏµ£¬¸ù¾İ$head(t_U(P)) \subseteq Atoms(P) \backslash U$£¬¼´$x$ÔÚ$t_U(P)$ÖĞ²»»áÔÚ³öÏÖÔÚ¹æÔòµÄÍ·²¿£¬¼´ÔÚ$t_U(P)$ÖĞ²»¿ÉÄÜÍÆ³ö$x$ÎªÕæ£¬µ«´Ó$X$¿ÉÒÔÈ·¶¨ÆäÎªÕæ£¬¹ÊĞèÒªÉ¾È¥$x$¡£ËùÒÔ±£ÁôÂú×ã$body^+(r) \cap U \subseteq U$µÄ¹æÔò$r$£¬²¢Ö´ĞĞ$body^+(r) \backslash U$²Ù×÷¡£
+	\item ¶ÔÓÚÂú×ã$(body^-(r) \cap U) \cap X= \emptyset$µÄ¹æÔò$r$£¬ºóĞøµÄ»¯¼ò²Ù×÷ÊÇ$body^-(r) \backslash U$¡£·´Ïò¿¼ÂÇ£¬Èç¹û$(body^-(r) \cap U) \cap X \neq \emptyset$£¬¼´¹æÔò$r$µÄÌå²¿ÖĞ°üº¬$not~a$£¬$a \in X$¡£¶ø´ÓÉÏÃæµÄËµÃ÷¿ÉÒÔÖªµÀ$a \in X$£¬Ôò¿ÉÒÔÅĞ¶¨$a$ÎªÕæ£¬¼´$not~a$Îª¼Ù£¨ÒòÎª¡°ÍÆ²»³ö$a$ÎªÕæ¡±Îª¼Ù£©¡£¶øÌå²¿ÎªºÏÈ¡¹ØÏµ£¬Ò»µ©È·¶¨Ìå²¿ÖĞÓĞÎª¼ÙµÄÔªËØ£¬ÔòÌå²¿Îª¼Ù£¬¸Ã¹æÔòÎŞ·¨ÍÆ³öÍ·²¿ÎªÕæ£¬ËùÒÔ¿ÉÒÔÉ¾È¥¸Ã¹æÔò£¬¹ÊÖ»¿¼ÂÇÂú×ã$(body^-(r) \cap U) \cap X = \emptyset$µÄ¹æÔò¡£´ËÍâ£¬¶ÔÓÚÂú×ãÕâ¸öÌõ¼şµÄ¹æÔò£¬Æä$body^-(r) \cap X = \emptyset$£¬¶ø¶ÔÓÚ$body^-(r)$¿ÉÄÜ´æÔÚ$U \backslash X$ÖĞµÄÔªËØ£¬$U \backslash X$ÖĞµÄÔªËØÖ±½Óº¬Òå¾ÍÊÇÔ­³ÌĞò»Ø´ğ¼¯ÖĞÍÆ²»³öÎªÕæµÄÔ­×Ó£¬ËùÒÔÈô$b \in U \backslash X$£¬Ôò$not~b$ÎªÕæ¡£¸ú1ÖĞÒ»Ñù£¬Ìå²¿ÎªÕæµÄÔªËØÓ¦¸ÃÖ±½ÓÉ¾È¥¡£ËùÒÔ±£ÁôÂú×ã$(body^-(r) \cap U) \cap X = \emptyset$µÄ¹æÔò$r$£¬²¢Ö´ĞĞ$body^-(r) \backslash U$µÄ²Ù×÷¡£
+\end{enumerate}	
+
+¸ù¾İÉÏÃæµÄÖ¤Ã÷¿ÉÒÔÖªµÀ£¬$X$×÷ÎªÔ­³ÌĞò»Ø´ğ¼¯µÄÒ»²¿·Ö£¬$e_U(t_U(P),X)$ÀûÓÃ$X$ÖĞÔªËØµÄÕæÖµ»¯¼ò³öÒ»¸ö¼ÆËãÔ­³ÌĞòÊ£ÏÂ»Ø´ğ¼¯²¿·ÖµÄÂß¼­³ÌĞò¡£¼Ç$Y = \Gamma (e_U(t_U(P),X))$¡£
+	
+$b_U(P)$ÖĞÖ»°üº¬$U$ÖĞµÄÔ­×Ó£¬Ëü×ÔÉíÊÇÒ»¸öÃüÌâ±Õ°ü£¬ËùÒÔÇó½âµÃµ½µÄ»Ø´ğ¼¯$X$±ØÊÇÔ­³ÌĞò»Ø´ğ¼¯µÄ²¿·Ö¡£¶ø$e_U(t_U(P),X)$µÃµ½Ò»¸ö¸ú$U$ÎŞ¹ØµÄ³ÌĞò£¬Í¬Ê±È·±£ÁË$X$ÖĞµÄÔªËØÎªÕæ£¬ËùÒÔÕâ²¿·ÖÇó½âµÃµ½µÄ»Ø´ğ¼¯$Y$¾ÍÊÇÔ­³ÌĞò»Ø´ğ¼¯Ê£ÏÂµÄ²¿·Ö¡£ÇÒÓĞ	
+\begin{eqnarray}
+	X \subseteq Atoms(P) \cap U	\\
+	Y \subseteq Atoms(P) \backslash U
+\end{eqnarray}	
+	
+ËùÒÔ$X \cap Y = \emptyset$£¬¹Ê$X \cup Y$ÊÇÈ·±£Ò»ÖÂµÄ£¬²¢ÇÒÎªÔ­³ÌĞòµÄ»Ø´ğ¼¯¡£\quad
 \end{proof}
 
 
+ÉÏÊöÖ¤Ã÷¹ı³ÌËµÃ÷ÁËLifschitzºÍTurnerÌá³öµÄ³ÌĞò·Ö¸î·½·¨µÄÓĞĞ§ĞÔ¡£ÓÉÓÚ$U$ÊÇÒ»¸öÃüÌâ±Õ°ü£¬ËüÄÜÓĞĞ§µØ°ÑÒ»¸öÂß¼­³ÌĞòµÄ¹æÔò¸ù¾İ×Ô¼ºµÄ±Õ°üĞÔÔÚ½á¹¹ÉÏÒ»·ÖÎª¶ş¡£
 
 
 
 \subsection{Ìá³öĞÂµÄ·Ö¸î¼¯}
 
-LifschitzºÍTurner¸ø³öµÄ·Ö¸î¼¯µÄ¶¨ÒåÊµ¼ÊÉÏÊÇÒ»¸öÑéÖ¤ĞÍ¶¨Òå¡£ËûÃÇ¶¨ÒåÒ»¸öÔ­×Ó¼¯$U$ÊÇÂß¼­³ÌĞò$P$µÄ·Ö¸î¼¯£¬µ±ÇÒ½öµ±$P$ÖĞµÄÃ¿¸ö¹æÔò$r$Âú×ã$head(r) \cap U \neq \emptyset$ÔÌº­$Atoms(r) \subseteq U$¡£Õâ¸ö¶¨Òå´ÓÖ±¹ÛÉÏÀ´Ëµ¾ÍÊÇÈç¹ûÒ»¸öÔ­×Ó¼¯ºÏÊÇÒ»¸öÂß¼­³ÌĞòµÄ·Ö¸î¼¯£¬ÄÇÃ´ËüÂú×ãÂß¼­³ÌĞòÖĞ·²ÊÇÍ·²¿ÓëÆäÓĞ½»¼¯µÄ¹æÔò£¬¶¼»áÓĞ¸Ã¹æÔòµÄËùÓĞÔ­×Ó¶¼ÔÚ¸ÃÔ­×Ó¼¯ºÏÄÚ¡£±¾ÎÄ¸ù¾İLifschitzºÍTurner¶Ô·Ö¸î¼¯µÄ¶¨Òå¸ø³öÁËÒ»¸ö¼ÆËãÂß¼­³ÌĞòµÄ·Ö¸î¼¯µÄËã·¨£¬ÎªAlgorithm 1¡£
+LifschitzºÍTurner¸ø³öµÄ·Ö¸î¼¯µÄ¶¨ÒåÊµ¼ÊÉÏÊÇÒ»¸öÑéÖ¤ĞÍ¶¨Òå¡£ËûÃÇ¶¨ÒåÒ»¸öÔ­×Ó¼¯$U$ÊÇÂß¼­³ÌĞò$P$µÄ·Ö¸î¼¯£¬µ±ÇÒ½öµ±$P$ÖĞµÄÃ¿¸ö¹æÔò$r$Âú×ã$head(r) \cap U \neq \emptyset$ÔÌº­$Atoms(r) \subseteq U$¡£Õâ¸ö¶¨Òå´ÓÖ±¹ÛÉÏÀ´Ëµ¾ÍÊÇÈç¹ûÒ»¸öÔ­×Ó¼¯ºÏÊÇÒ»¸öÂß¼­³ÌĞòµÄ·Ö¸î¼¯£¬ÄÇÃ´ËüÂú×ãÂß¼­³ÌĞòÖĞ·²ÊÇÍ·²¿ÓëÆäÓĞ½»¼¯µÄ¹æÔò£¬¶¼»áÓĞ¸Ã¹æÔòµÄËùÓĞÔ­×Ó¶¼ÔÚ¸ÃÔ­×Ó¼¯ºÏÄÚ¡£±¾ÎÄ¸ù¾İLifschitzºÍTurner¶Ô·Ö¸î¼¯µÄ¶¨Òå¸ø³öÁËÒ»¸ö¼ÆËãÂß¼­³ÌĞòµÄ·Ö¸î¼¯µÄËã·¨£¬Îª$Algorithm 1$¡£
 
 
 
@@ -41,13 +94,13 @@ $Tr^p_{v}(\varphi;\sigma^1>...>\sigma^k;\sigma_v)$ ÎªÈçÏÂ¹«Ê½µÄºÏÈ¡£º
 \begin{eqnarray}
 % \nonumber to remove numbering (before each equation)
   \varphi^{\neg\neg}~\wedge~\bigwedge_{1\leq j \leq k}\widetilde{\varphi_j} \\
-  \bigwedge_{1\leq j \leq k}(\gamma_j~\leftrightarrow~\bigwedge_{P \in \sigma_i}~ \forall \overline{x} (P(\overline{x})~\vee~P(\overline{x}))) \\
-  \bigwedge_{1\leq j \leq k}~ \forall \overline{x} (\gamma_j~\rightarrow~\bigwedge_{Q \in \delta_j}Q(\overline{x}))
+  \bigwedge_{1\leq j \leq k}(\Gamma_j~\leftrightarrow~\bigwedge_{P \in \sigma_i}~ \forall \overline{x} (P(\overline{x})~\vee~P(\overline{x}))) \\
+  \bigwedge_{1\leq j \leq k}~ \forall \overline{x} (\Gamma_j~\rightarrow~\bigwedge_{Q \in \delta_j}Q(\overline{x}))
 \end{eqnarray}
 ÆäÖĞ£º
 \begin{enumerate}
   \item $\varphi^{\neg\neg}$ÊÇ½«$\varphi$ÖĞËùÓĞĞÎÈç$P(\overline{x})$($P$ÔÚ$\sigma^j$,$1 \leq j \leq k$, µÄ²¢¼¯ÖĞ)µÄ¹«Ê½Ìæ»»Îª$\neg\neg P(\overline{x})$ºóËùµÃµ½µÄ¹«Ê½£»
-  \item $\widetilde{\varphi_j}$ÊÇ½«$\varphi$½øĞĞÈçÏÂÌæ»»£º(i)½«ËùÓĞĞÎÈç$(P(\overline{x})\rightarrow\gamma_j)(P~\in~\sigma^j)$ µÄ¹«Ê½Ìæ»»Îª¸ºÎÄ×Ö$\neg P(\overline{x})$£»(ii)½«ËùÓĞĞÎÈç$P(\overline{x})(P \in \bigcup_{1 \leq m < j \sigma^m})$µÄ¹«Ê½Ìæ»»³É$\neg\neg P(\overline{x})$£»(iii)½«ÕıÎÄ×Ö$Q(\overline{x})(Q \in \bigcup_{j < n \leq k}\sigma^n \cup \sigma_v)$Ìæ»»Îª$Q'(\overline{x})$£¬½«ĞÎÈç$(Q'(\overline{x})\\\rightarrow \gamma_j)$ µÄ¹«Ê½Ìæ»»Îª¸ºÎÄ×Ö$\neg Q'(\overline{x})$£»$\delta_j$±íÊ¾$Q^j$µÄ²¢¼¯¡£
+  \item $\widetilde{\varphi_j}$ÊÇ½«$\varphi$½øĞĞÈçÏÂÌæ»»£º(i)½«ËùÓĞĞÎÈç$(P(\overline{x})\rightarrow\Gamma_j)(P~\in~\sigma^j)$ µÄ¹«Ê½Ìæ»»Îª¸ºÎÄ×Ö$\neg P(\overline{x})$£»(ii)½«ËùÓĞĞÎÈç$P(\overline{x})(P \in \bigcup_{1 \leq m < j \sigma^m})$µÄ¹«Ê½Ìæ»»³É$\neg\neg P(\overline{x})$£»(iii)½«ÕıÎÄ×Ö$Q(\overline{x})(Q \in \bigcup_{j < n \leq k}\sigma^n \cup \sigma_v)$Ìæ»»Îª$Q'(\overline{x})$£¬½«ĞÎÈç$(Q'(\overline{x})\\\rightarrow \Gamma_j)$ µÄ¹«Ê½Ìæ»»Îª¸ºÎÄ×Ö$\neg Q'(\overline{x})$£»$\delta_j$±íÊ¾$Q^j$µÄ²¢¼¯¡£
 \end{enumerate}
 \end{definition}
 
@@ -61,20 +114,20 @@ $Tr^p_{v}(\varphi;\sigma^1>...>\sigma^k;\sigma_v)$ ÎªÈçÏÂ¹«Ê½µÄºÏÈ¡£º
 \begin{enumerate}
   \item $\theta$×ª³É¾­µäÒ»½×Âß¼­ÏÂNNFºÍCNFµÄĞÎÊ½£»
   \item $\theta^{\neg\neg}\Leftrightarrow\theta(P_1\Rightarrow\neg\neg P_1,P_2\Rightarrow\neg\neg P_2,P_3\Rightarrow\neg\neg P_3)$£»
-  \item $\tilde{\theta_1}\Leftrightarrow\theta(P_2\Rightarrow Q^{1}_{P_2},P_3\Rightarrow Q^{1}_{3},Z\Rightarrow Q_Z^{1},\neg P_2\Rightarrow (Q^{1}_{2}\rightarrow\gamma_1),\neg P_3\Rightarrow (Q^{1}_{P_3} \rightarrow\gamma_1),\neg Z\Rightarrow(Q^{1}_{Z}\rightarrow\gamma_1))$£»
-  \item $\tilde{\theta_2}\Leftrightarrow\theta(P_1\Rightarrow \neg\neg P_1,P_3\Rightarrow Q^{2}_{P_3},Z\Rightarrow Q_Z^{2},\neg P_3\Rightarrow (Q^{2}_{P_3} \rightarrow\gamma_2),\neg Z\Rightarrow(Q^{2}_{Z}\rightarrow\gamma_2))$£»
-  \item $\tilde{\theta_3}\Leftrightarrow\theta(P_1\Rightarrow \neg\neg P_1,P_2\Rightarrow \neg\neg P_2,Z\Rightarrow Q_Z^{P_3},\neg Z\Rightarrow(Q^{3}_{Z}\rightarrow\gamma_3))$¡£
-  \item $\phi_1~\Leftrightarrow~(\gamma_1~\rightarrow~(P_1(x)~\vee~\neg P_1(x)))
-      \wedge~Tr_{QE}(\exists x((P_1(x)~\vee~\neg P_1(x)))~\rightarrow~\gamma_1))\\
-      \wedge~(\gamma_1~\rightarrow~Q^1_Z)~\wedge~(\gamma_1~\rightarrow~Q^1_{P_2})
-      ~\wedge~(\gamma_1~\rightarrow~Q^1_{P_3})$
-  \item $\phi_2~\Leftrightarrow~(\gamma_2~\rightarrow~(P_2(x)~\vee~\neg P_2(x)))
-      \wedge~Tr_{QE}(\exists x((P_2(x)~\vee~\neg P_2(x)))~\rightarrow~\gamma_2))\\
-      \wedge~(\gamma_2~\rightarrow~Q^2_Z)~\wedge~(\gamma_2~\rightarrow~Q^2_{P_3})
+  \item $\tilde{\theta_1}\Leftrightarrow\theta(P_2\Rightarrow Q^{1}_{P_2},P_3\Rightarrow Q^{1}_{3},Z\Rightarrow Q_Z^{1},\neg P_2\Rightarrow (Q^{1}_{2}\rightarrow\Gamma_1),\neg P_3\Rightarrow (Q^{1}_{P_3} \rightarrow\Gamma_1),\neg Z\Rightarrow(Q^{1}_{Z}\rightarrow\Gamma_1))$£»
+  \item $\tilde{\theta_2}\Leftrightarrow\theta(P_1\Rightarrow \neg\neg P_1,P_3\Rightarrow Q^{2}_{P_3},Z\Rightarrow Q_Z^{2},\neg P_3\Rightarrow (Q^{2}_{P_3} \rightarrow\Gamma_2),\neg Z\Rightarrow(Q^{2}_{Z}\rightarrow\Gamma_2))$£»
+  \item $\tilde{\theta_3}\Leftrightarrow\theta(P_1\Rightarrow \neg\neg P_1,P_2\Rightarrow \neg\neg P_2,Z\Rightarrow Q_Z^{P_3},\neg Z\Rightarrow(Q^{3}_{Z}\rightarrow\Gamma_3))$¡£
+  \item $\phi_1~\Leftrightarrow~(\Gamma_1~\rightarrow~(P_1(x)~\vee~\neg P_1(x)))
+      \wedge~Tr_{QE}(\exists x((P_1(x)~\vee~\neg P_1(x)))~\rightarrow~\Gamma_1))\\
+      \wedge~(\Gamma_1~\rightarrow~Q^1_Z)~\wedge~(\Gamma_1~\rightarrow~Q^1_{P_2})
+      ~\wedge~(\Gamma_1~\rightarrow~Q^1_{P_3})$
+  \item $\phi_2~\Leftrightarrow~(\Gamma_2~\rightarrow~(P_2(x)~\vee~\neg P_2(x)))
+      \wedge~Tr_{QE}(\exists x((P_2(x)~\vee~\neg P_2(x)))~\rightarrow~\Gamma_2))\\
+      \wedge~(\Gamma_2~\rightarrow~Q^2_Z)~\wedge~(\Gamma_2~\rightarrow~Q^2_{P_3})
       $
-  \item $\phi_3~\Leftrightarrow~(\gamma_3~\rightarrow~(P_3(x)~\vee~\neg P_3(x)))
-      \wedge~Tr_{QE}(\exists x((P_3(x)~\vee~\neg P_3(x)))~\rightarrow~\gamma_3))\\
-      \wedge~(\gamma_1~\rightarrow~Q^3_Z))$
+  \item $\phi_3~\Leftrightarrow~(\Gamma_3~\rightarrow~(P_3(x)~\vee~\neg P_3(x)))
+      \wedge~Tr_{QE}(\exists x((P_3(x)~\vee~\neg P_3(x)))~\rightarrow~\Gamma_3))\\
+      \wedge~(\Gamma_1~\rightarrow~Q^3_Z))$
 \end{enumerate}
 ÆäÖĞ$\alpha\Rightarrow\beta$µÄÒâÒåÊÇ½«¹«Ê½$\theta$ ÖĞµÄ$\alpha$Ìæ»»³É$\beta$£¬Éè$\psi$Îª¹«Ê½$\theta^{\neg\neg}~\wedge~\tilde{\theta_1}~\wedge~\tilde{\theta_2}~\wedge~\tilde{\theta_3}
 ~\wedge~\phi_1~\wedge~\phi_2~\wedge~\phi_3$£¬Ôò$\mathbf{CIRC}[\theta;P_1>P_2>P_3;Z]$µÈ¼ÛÓÚ
@@ -107,16 +160,16 @@ EiterµÈÈË\cite{eiter1996normal}¸ø³öÁË¾­µäÂß¼­ÏÂÊ¹ÓÃ¸¨ÖúÎ½´ÊÄ£Äâ´æÔÚÁ¿´Ê£¬Ö÷ÒªË¼Ï
   succ(\bar{y},\bar{y}')~\rightarrow~(T(\bar{x},\bar{y})~\leftrightarrow~\widetilde{\theta}(\bar{x},\bar{y}')~\vee~T(\bar{x},\bar{y}')) \label{form_circqe5}\\
   succ(\bar{y},\bar{y}')~\wedge~\neg W(\bar{x},\bar{y}')~\wedge~W(\bar{x},\bar{y})~\rightarrow~(T(\bar{y},\overline{max})~\leftrightarrow~\widetilde{\theta}(\bar{x},\bar{y})) \label{form_circqe6}\\
   W(\bar{x},\overline{max})~\rightarrow~(T(\bar{y},\overline{max})~\leftrightarrow~\widetilde{\theta}(\bar{x},\overline{max})) \label{form_circqe7}\\
-  \gamma~\leftrightarrow~\bigwedge_{P\in\sigma_i}\forall\bar{x}(P(\bar(x))~\vee~\neg P(\bar{x})) \label{form_circqe8}
+  \Gamma~\leftrightarrow~\bigwedge_{P\in\sigma_i}\forall\bar{x}(P(\bar(x))~\vee~\neg P(\bar{x})) \label{form_circqe8}
 \end{eqnarray}
 ÆäÖĞ£º
 \begin{enumerate}
   \item $\theta^{\neg\neg}$ÊÇ½«$\theta$ÖĞËùÓĞĞÎÈç$P(\overline{x})$($P$ÔÚ$\sigma^i,1 \leq j \leq k,$µÄ²¢¼¯ÖĞ)µÄ¹«Ê½Ìæ»»Îª$\neg\neg P(\overline{x})$ºóËùµÃµ½µÄ¹«Ê½£»
-  \item $\widetilde{\theta}$ÊÇ½«$\theta$½øĞĞÈçÏÂ×ª»»£º(i)½«ËùÓĞĞÎÈç$(P(\overline{x})\rightarrow\gamma)(P~\in~\sigma_i)$ µÄ¹«Ê½Ìæ»»Îª¸ºÎÄ×Ö$\neg P(\overline{x})$£¬(ii)½«ÕıÎÄ×Ö$Q(\overline{x})(Q \in \sigma_v)$Ìæ»»Îª$Q'(\overline{x})$£¬(iii)½«ĞÎÈç$(Q'(\overline{x})\rightarrow \gamma)$µÄ¹«Ê½Ìæ»»Îª¸ºÎÄ×Ö$\neg Q'(\overline{x})$£¬$Q'$ÊÇ²»³öÏÖÔÚ$\theta$ ÖĞµÄÏà¶ÔÓÚ$Q$µÄ¸¨ÖúÎ½´Ê£»
-  \item $\theta^{\top\neg\neg}$ÊÇ½«$\widetilde{\theta}$ÖĞËùÓĞĞÎÈç($P(\bar{x})~\rightarrow~\gamma$)($P\in\sigma_i~\cup~\sigma_v$) Ìæ»»³É$\top$¡£
+  \item $\widetilde{\theta}$ÊÇ½«$\theta$½øĞĞÈçÏÂ×ª»»£º(i)½«ËùÓĞĞÎÈç$(P(\overline{x})\rightarrow\Gamma)(P~\in~\sigma_i)$ µÄ¹«Ê½Ìæ»»Îª¸ºÎÄ×Ö$\neg P(\overline{x})$£¬(ii)½«ÕıÎÄ×Ö$Q(\overline{x})(Q \in \sigma_v)$Ìæ»»Îª$Q'(\overline{x})$£¬(iii)½«ĞÎÈç$(Q'(\overline{x})\rightarrow \Gamma)$µÄ¹«Ê½Ìæ»»Îª¸ºÎÄ×Ö$\neg Q'(\overline{x})$£¬$Q'$ÊÇ²»³öÏÖÔÚ$\theta$ ÖĞµÄÏà¶ÔÓÚ$Q$µÄ¸¨ÖúÎ½´Ê£»
+  \item $\theta^{\top\neg\neg}$ÊÇ½«$\widetilde{\theta}$ÖĞËùÓĞĞÎÈç($P(\bar{x})~\rightarrow~\Gamma$)($P\in\sigma_i~\cup~\sigma_v$) Ìæ»»³É$\top$¡£
 \end{enumerate}
 Áî$n$ÎªĞòÁĞ$\bar{x}$Óë$\bar{y}$µÄ³¤¶ÈÖ®ºÍ£¬$\overline{succ}$ÃèÊö$succ$Ëù¶¨ÒåĞò±»ÍÆ¹ãµ½$n$ Ôª×éºóµÄµÃµ½ºó¼Ì¹ØÏµ£»
-$\overline{min}$Óë$\overline{max}$·Ö±ğ±íÊ¾$|\bar{y}|$Ôª×é$(min,...,min)$ºÍ$(max,...,max)$£»$S,T,V,\gamma$ÊÇĞÂÒıÈëµÄ¸¨ÖúÎ½´Ê£¬ÇÒ²»ÔÚ$\varphi$ÖĞ³öÏÖ¡£
+$\overline{min}$Óë$\overline{max}$·Ö±ğ±íÊ¾$|\bar{y}|$Ôª×é$(min,...,min)$ºÍ$(max,...,max)$£»$S,T,V,\Gamma$ÊÇĞÂÒıÈëµÄ¸¨ÖúÎ½´Ê£¬ÇÒ²»ÔÚ$\varphi$ÖĞ³öÏÖ¡£
 \end{definition}
 
 ¶ÔÓÚÉÏÊö¶¨ÒåÖĞÊ¹ÓÃµÄ¸¨ÖúÎ½´ÊºÍÓï¾äÓĞÈçÏÂµÄ½âÊÍ£º
@@ -128,15 +181,15 @@ $\overline{min}$Óë$\overline{max}$·Ö±ğ±íÊ¾$|\bar{y}|$Ôª×é$(min,...,min)$ºÍ$(max,
 
 \begin{proposition}
 Áî$\varphi$ÊÇÈÎÒâĞÎÈç$\forall\bar{x}\exists\bar{y}\theta(\bar{x},\bar{y})$ µÄÒ»½×Óï¾ä£¬$\sigma_i$ÊÇÎ½´Ê³£Á¿Ôª×é£¬
-Ôò$\exists\sigma_v\exists S\exists W \exists T\exists\gamma \mathbf{SM}[\Gamma_{\exists}(\varphi;\sigma_i);\sigma_i,\sigma_v,S,W,T,\gamma]$ ÔÚÓĞÇî½á¹¹ÏÂµÈ¼ÛÓÚ$\mathbf{CIRC}[\varphi;\sigma_i]$£¬ÆäÖĞ
-$S,W,T,\gamma$ºÍ$\sigma'_v$ÊÇÓÉ$\Gamma_{\exists}$ ÒıÈëµÄĞÂÎ½´Ê¡£
+Ôò$\exists\sigma_v\exists S\exists W \exists T\exists\Gamma \mathbf{SM}[\Gamma_{\exists}(\varphi;\sigma_i);\sigma_i,\sigma_v,S,W,T,\Gamma]$ ÔÚÓĞÇî½á¹¹ÏÂµÈ¼ÛÓÚ$\mathbf{CIRC}[\varphi;\sigma_i]$£¬ÆäÖĞ
+$S,W,T,\Gamma$ºÍ$\sigma'_v$ÊÇÓÉ$\Gamma_{\exists}$ ÒıÈëµÄĞÂÎ½´Ê¡£
 \end{proposition}
 
 
 ÉÏÊöµÄÓÅ»¯¹ı³ÌÕûºÏ¸ö¶¨Òå\ref{def_parallelcirc2sm} µÄ·­Òë$Tr_v$ºÍ¶¨Òå\ref{def_smfo2smufo}µÄ·­Òë$Tr_{QE}$¡£
 ÕâÑù¾ÍÓĞÁ½ÖÖÏûÈ¥´æÔÚÁ¿´ÊµÄ·½·¨£¬µÚÒ»ÖÖÊÇ¾­¹ı·­Òë$Tr_v$ºó£¬´æÔÚÁ¿´ÊÈÔÈ»±£´æÔÚÓï¾äÖĞ£¬È»ºóÔÚÎÈ¶¨Ä£ĞÍÓïÒåÏÂÔËÓÃ·­Òë$Tr_{QE}$ÏûÈ¥´æÔÚÁ¿´Ê£»µÚ¶şÖÖ·½·¨ÊÇÖ±½ÓÔËÓÃ·­ÒëÓÅ»¯$\Gamma_{\exists}$¡£
 
-ÏÂÃæ·ÖÎö·­ÒëÓÅ»¯µÄÓÅ»¯³Ì¶È£¬Í¨³£ÓÃ¸¨ÖúÎ½´ÊµÄÊıÁ¿À´ºâÁ¿£¬Ò»¸öÀíÂÛµÄ¹æÄ£±»¶¨ÒåÎªÁª½á´ÊºÍÔ­×ÓµÄÊıÁ¿£¬³ıÈ¥¹²ÓĞµÄ¸¨ÖúÎ½´Ê¼¯$\gamma$ºÍ$\sigma'_v$£¬µÚÒ»ÖÖ·½·¨ÒıÈëÁË4¸ö¸¨ÖúÎ½´Ê£¬µÚ¶şÖÖ·½·¨ÒıÈëÁË3 ¸ö¸¨ÖúÎ½´Ê¡£ÀıÈç£¬ÉèÔ­±¾ÏŞ¶¨ÎÊÌâµÄ¹æÄ£Îª$n$£¬ÔòµÚÒ»ÖÖ·½·¨·­ÒëºóµÄ¹æÄ£Îª$10\times n$£¬µÚ¶şÖÖ·½·¨µÄ¹æÄ£Îª$6\times n$£¬Ëæºó£¬Á½ÖÖ·½·¨¶¼ĞèÒª¼ÌĞøµü´úµØÊ¹ÓÃ·­Òë$Tr_{QE}$£¬Ëæ×Åµü´úµÄ´ÎÊıÔö¼Ó£¬ÉÏÊö·­ÒëÓÅ»¯·½·¨½«»á¼õÉÙ$25\%$µÄ¸¨ÖúÎ½´Ê£¬Âß¼­³ÌĞòµÄ´óĞ¡½«»á¼õĞ¡$40\%$¡£
+ÏÂÃæ·ÖÎö·­ÒëÓÅ»¯µÄÓÅ»¯³Ì¶È£¬Í¨³£ÓÃ¸¨ÖúÎ½´ÊµÄÊıÁ¿À´ºâÁ¿£¬Ò»¸öÀíÂÛµÄ¹æÄ£±»¶¨ÒåÎªÁª½á´ÊºÍÔ­×ÓµÄÊıÁ¿£¬³ıÈ¥¹²ÓĞµÄ¸¨ÖúÎ½´Ê¼¯$\Gamma$ºÍ$\sigma'_v$£¬µÚÒ»ÖÖ·½·¨ÒıÈëÁË4¸ö¸¨ÖúÎ½´Ê£¬µÚ¶şÖÖ·½·¨ÒıÈëÁË3 ¸ö¸¨ÖúÎ½´Ê¡£ÀıÈç£¬ÉèÔ­±¾ÏŞ¶¨ÎÊÌâµÄ¹æÄ£Îª$n$£¬ÔòµÚÒ»ÖÖ·½·¨·­ÒëºóµÄ¹æÄ£Îª$10\times n$£¬µÚ¶şÖÖ·½·¨µÄ¹æÄ£Îª$6\times n$£¬Ëæºó£¬Á½ÖÖ·½·¨¶¼ĞèÒª¼ÌĞøµü´úµØÊ¹ÓÃ·­Òë$Tr_{QE}$£¬Ëæ×Åµü´úµÄ´ÎÊıÔö¼Ó£¬ÉÏÊö·­ÒëÓÅ»¯·½·¨½«»á¼õÉÙ$25\%$µÄ¸¨ÖúÎ½´Ê£¬Âß¼­³ÌĞòµÄ´óĞ¡½«»á¼õĞ¡$40\%$¡£
 
 %·­ÒëÓÅ»¯$\Gamma_{\exists}$ÊÊÓÃÓÚ´ø¿É±äÎ½´ÊµÄ²¢ĞĞÏŞ¶¨£¬ÎÒÃÇ¿ÉÒÔ¸ù¾İ$Tr_v^p$½«ÆäÀ©Õ¹¸Ã·­ÒëÓÅ»¯£¬Ê¹ÆäÊÊÓÃÓÚ´ø¿É±äÎ½´ÊµÄÓÅÏÈ¼¶Î½´Ê¡£
 
