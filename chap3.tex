@@ -7,9 +7,6 @@
 
 在给出新分割集之前，本文将对Lifschitz和Turner提出的分割集理论进行分析，然后基于他们对分割集的定义提出一个计算分割集的算法，并对ASP竞赛中的程序进行计算，对计算结果进行分析，随后给出本文定义的新分割集。
 
-\begin{definition}\label{hh_dh}
-	hhh
-\end{definition}
 
 \subsection{原有分割集和程序分割的分析证明}
 
@@ -177,7 +174,7 @@ $EC_U(P)$为$Atoms(b_U(P)) \backslash U$中的原子引入一组规则：
 	\end{itemize}
 \end{proposition}
 
-事实上，依据定义$EC_U(P)$和$ECC_U(P,X)$过程中的分析便可以清楚地知道命题\ref{satisfy_proposition}的正确性。接下来，看一个验证命题\ref{satisfy_proposition}的例子。
+显然，依据定义$EC_U(P)$和$ECC_U(P,X)$过程中的分析便可以清楚地知道命题\ref{satisfy_proposition}的正确性。接下来，看一个验证命题\ref{satisfy_proposition}的例子。
 \begin{example}\label{example_3_2}
 	继续使用逻辑程序$P_1$，并令分割集$U=\{a\}$，那么可以计算得到：
 	\begin{equation}
@@ -205,7 +202,8 @@ $EC_U(P)$为$Atoms(b_U(P)) \backslash U$中的原子引入一组规则：
 	令$Y=\{c\}$，显然，$Y \models e_U(P_1 \backslash b_U(P_1 ),X) \cup  ECC_U(P_1,X)$。$X \cup Y = \{a,c,d'\}$，明显也有$X \cup Y \models P_1$。
 \end{example}
 
-在引入了$EC_U(P)$和$ECC_U(P,X)$后，依据命题\ref{satisfy_proposition}，可以知道原程序的模型可以通过$bottom$和$top$两部分的模型计算得到。接下来，本文引入逻辑程序中的环与环公式的概念，来定义可以用于求解原程序的$top$部分。首先，这里定义两个结构性的规则集合。
+在引入了$EC_U(P)$和$ECC_U(P,X)$后，依据命题\ref{satisfy_proposition}，可以知道原程序的模型可以通过$bottom$和$top$两部分的模型计算得到。然而，直接使用$P \backslash b_U(P)$作为$top$的话并不能求解出原程序剩下的回答集。这是因为，
+接下来，本文引入逻辑程序中的环与环公式的概念，来定义可以用于求解原程序的$top$部分。首先，这里定义两个结构性的规则集合。
 \begin{definition}\label{in_out}
 	对一个逻辑程序$P$基于一个原子集$U$，定义以下两个规则集合：
 	\begin{eqnarray}
