@@ -451,7 +451,6 @@ $in_U(P)$ºÍ$out_U(P)$ÊÇÓëÂß¼­³ÌÐòÕýÒÀÀµÍ¼½á¹¹ÐÔÏà¹ØµÄ¹æÔò¼¯ºÏ¡£ÔÚÕý¹æÂß¼­³ÌÐòÖÐÖ
 
 
 
-
 $SL_U(P,X)$¸ù¾ÝLinºÍZhaoµÄ»·ÀíÂÛ£¬¶¨ÒåµÄÈÃµ×²¿»Ø´ð¼¯$X$Ëù²»ÄÜÂú×ãµÄ»·¹«Ê½µÄ»·Óë·Ö¸î¼¯µÄ½»¼¯Ëù¹¹³ÉµÄ°ë»·¡£¶¨ÒåÕâÐ©°ë»·µÄÄ¿µÄ¾ÍÊÇÎªÁËÒÀ¾ÝËüÃÇ¹¹Ôì³öÄÜ±£Ö¤$X$ÎªÕæµÄ¹æÔò¡£È»¶ø£¬¸ü½øÒ»²½µØ£¬»ùÓÚJiºÍWanµÈÔÚ»·ÀíÂÛµÄ»ù´¡ÏÂÌáÈ¡³öÌØÕ÷»·£¨$Proper~Loop$£©µÄË¼ÏëÏÂ£¬¿ÉÒÔÏëÏóµÃµ½²¢·ÇËùÓÐµÄ°ë»·¶¼ÊÇ±ØÒªµÄ£¬±¾ÎÄÔÚ´Ë¸ù¾ÝJiºÍWanµÈµÄË¼Ïë£¬ÌáÈ¡³ö±ØÒªµÄ°ë»·£¬¶¨ÒåÒ»¸ö$SL_U(P,X)$µÄ×Ó¼¯ÒÔÖ¸´ú±ØÐëµÄ°ë»·¼¯ºÏ¡£
 \begin{definition}[¹Ø¼ü°ë»·£¨$Dominated~Semi-loop$£©]\label{dominated_semi_loop}
 	¸ø¶¨Õý¹æÂß¼­³ÌÐò$P$ºÍÔ­×Ó¼¯$U$£¬Ò»¸ö°ë»·$E$±»³ÆÎª¹Ø¼ü°ë»·£¬µ±ÇÒ½öµ±´æÔÚÁíÒ»¸ö°ë»·$E'$Âú×ã$E' \subseteq E$£¬ÇÒÓÐ$E' \cap head(in_U(P)) = E \cap head(in_U(P))$£¬ÒÔ¼°$E' \cap body^+(out_U(P)) = E \cap body^+(out_U(P))$£¬Í¬Ê±³Æ$E$ÄÜ´ú±í$E'$¡£
@@ -503,7 +502,12 @@ $SL_U(P,X)$¸ù¾ÝLinºÍZhaoµÄ»·ÀíÂÛ£¬¶¨ÒåµÄÈÃµ×²¿»Ø´ð¼¯$X$Ëù²»ÄÜÂú×ãµÄ»·¹«Ê½µÄ»·Óë·
 	\end{itemize}
 \end{definition}
 
-ÕâÀï¸ø³öÈç´Ë¶¨ÒåÎöÈ¡Âß¼­³ÌÐòµÄ$t_U(P,X)$µÄÓÐÐ§ÐÔµÄÖ¤Ã÷¡£
+%ÕâÀï¸ø³öÈç´Ë¶¨ÒåÎöÈ¡Âß¼­³ÌÐòµÄ$t_U(P,X)$µÄÓÐÐ§ÐÔµÄÖ¤Ã÷¡£
+\begin{proof}\label{proof_dlp_top}
+	ÎöÈ¡Âß¼­³ÌÐòµÄ$t_U(P,X)$ÓëÕý¹æÂß¼­³ÌÐòµÄ²î±ðÖ»ÔÚµÚ¶þ²¿·Ö¡£ÔÚÕý¹æÂß¼­³ÌÐòÖÐ£¬¶ÔÓÚ$head(r) \cap E \neq \emptyset$µÄÇé¿öÏÂ£¬ÓÉÓÚ$|head(r)| = 1$£¬ËùÒÔÊµ¼ÊÎª$head(r) \in E$¡£¹ÊÔÚÕý¹æÂß¼­³ÌÐòµÄ$t_U(P,X)$µÄµÚ¶þ²¿·ÖÖ±½ÓÓÃ$x_E$Ìæ»»Ô­À´µÄ$hear(r)$¼´¿É¡£¶øÔÚÎöÈ¡Âß¼­³ÌÐòÖÐ$|head(r)| >= 1$£¬ËùÒÔ²»ÄÜÖ±½ÓÓÃ$x_E$Ìæ»»Ô­À´µÄ$hear(r)$¡£¶øÊÇÖ±½Ó°Ñ$head(r) \cap E$²¿·ÖÌæ»»Îª$x_E$£¬¹ÊÍ·²¿ÐÞÕýÎª$\{x_E\} \cup (head(r) \backslash E)$¡£
+	
+	Í¬Ê±£¬ÓÉÓÚ$x_E$µÄ´æÔÚ£¬ÒÀ¾ÉÄÜ±£³Ö»·µÄ¹¹³É¡£µÚÈý²¿·ÖÖÐ¹æÔòµÄ$head(r)$±¾À´¾Í²»ÐèÒªÐÞ¸Ä£¬ËùÒÔÕâ²¿·ÖÎöÈ¡Âß¼­³ÌÐòºÍÕý¹æÂß¼­³ÌÐòÊÇÒ»ÖÂµÄ¡£´ËÍâ£¬¹¹³É$(L \ U) \cup \{ x_E \}$»·ºóµÄÓÐÐ§ÐÔ¸úÕý¹æÂß¼­³ÌÐòÒ»ÖÂ¡£\quad
+\end{proof}
 
 ÔÚÖ¤Ã÷ÎöÈ¡Âß¼­³ÌÐòµÄ$top$µÄÓÐÐ§ÐÔºó£¬¹ØÓÚÒ»¸öÎöÈ¡Âß¼­³ÌÐò$P$»ùÓÚÒ»¸öÔ­×Ó¼¯$U$µÄ·½°¸¶¨ÒåÒÀ¾É£¬Ö»ÊÇÏàÓ¦µÄ$t_U(P,X)$ÐÞ¸ÄÎª¶¨Òå\ref{new_top}ÖÐµÄ¡£Í¬Ê±£¬»ùÓÚÉÏÊöµÄ·ÖÎöºÍÖ¤Ã÷£¬±¾ÎÄ¸ø³ö¹ØÓÚÎöÈ¡Âß¼­³ÌÐòÔÚ³ÌÐò·Ö¸îÀíÂÛÏÂµÄ»Ø´ð¼¯¶¨Àí¡£
 \begin{theorem}\label{dlp_splitting_theorem}
@@ -545,7 +549,7 @@ $SL_U(P,X)$¸ù¾ÝLinºÍZhaoµÄ»·ÀíÂÛ£¬¶¨ÒåµÄÈÃµ×²¿»Ø´ð¼¯$X$Ëù²»ÄÜÂú×ãµÄ»·¹«Ê½µÄ»·Óë·
 	\end{equation}
 \end{definition}
 
-ºÜÖ±¹ÛµØ£¬$SS_U(P,X)$°Ñ$SL_U(P,X)$´Ó$P$¹ØÓÚ$U$µÄ$smei-loop$À©Õ¹µ½$U$µÄÈÎÒâ·Ç¿Õ×Ó¼¯¡£Í¬Ê±£¬¶ÔÈÎºÎÂú×ã$Atoms(P') \cap U = \emptyset$µÄÎöÈ¡Âß¼­³ÌÐò$P'$£¬¿ÉÒÔµÃµ½$b_U(P \cup P') = b_U(P)$£¬ÇÒ¶ÔÈÎÒâµÄÔ­×Ó¼¯$X$ÓÐ$SL_U(P \cup P',X) \subseteq SS_U(P,X)$¡£´ËÍâ£¬Èô$U$ÊÇLifschitzºÍTurnerµÄ·Ö¸îÀíÂÛ¶¨ÒåÏÂµÄ·Ö¸î¼¯£¬Ôò¶ÔÈÎÒâÔ­×Ó¼¯$X$¶¼ÓÐ$SS_U(P,X) = \emptyset$¡£»ùÓÚ$SS_U(P,X)$£¬±¾ÎÄÌá³öÁËÎöÈ¡Âß¼­³ÌÐò$P$»ùÓÚÔ­×Ó¼¯$U$¹ØÓÚÔ­×Ó¼¯$X$µÄÇ¿¶¥²¿£¨$Strong~Top$£©¡£
+ºÜÖ±¹ÛµØ£¬$SS_U(P,X)$°Ñ$SL_U(P,X)$´Ó$P$¹ØÓÚ$U$µÄ$smei-loop$À©Õ¹µ½$U$µÄÈÎÒâ·Ç¿Õ×Ó¼¯¡£Í¬Ê±£¬¶ÔÈÎºÎÂú×ã$Atoms(P') \cap U = \emptyset$µÄÎöÈ¡Âß¼­³ÌÐò$P'$¡£$P'$Óë$U$Ã»ÓÐ½»¼¯£¬¹Ê²»»áÓ°ÏìÅÐ¶Ï$E \subseteq X$ºÍ$R^-(E,P,X) \subseteq in_U(P)$µÈÌõ¼þ£¬¹ÊÆä¶Ô$SL_U(P,X)$ÖÐµÄÔªËØÃ»ÓÐ¸½¼ÓÏÞÖÆ£¬¶øÇÒ$SS_U(P,X)$ÖÐµÄ$E$À©Õ¹Îª$U$µÄÈÎÒâ·Ç¿Õ×Ó¼¯¡£¹Ê¿ÉÒÔµÃµ½$b_U(P \cup P') = b_U(P)$£¬ÇÒ¶ÔÈÎÒâµÄÔ­×Ó¼¯$X$ÓÐ$SL_U(P \cup P',X) \subseteq SS_U(P,X)$¡£´ËÍâ£¬Èô$U$ÊÇLifschitzºÍTurnerµÄ·Ö¸îÀíÂÛ¶¨ÒåÏÂµÄ·Ö¸î¼¯£¬Ôò¶ÔÈÎÒâÔ­×Ó¼¯$X$¶¼ÓÐ$SS_U(P,X) = \emptyset$¡£»ùÓÚ$SS_U(P,X)$£¬±¾ÎÄÌá³öÁËÎöÈ¡Âß¼­³ÌÐò$P$»ùÓÚÔ­×Ó¼¯$U$¹ØÓÚÔ­×Ó¼¯$X$µÄÇ¿¶¥²¿£¨$Strong~Top$£©¡£
 \begin{definition}[Ç¿¶¥²¿£¨$Strong~Top$£©]\label{strong_top}
 	¸ø¶¨ÎöÈ¡Âß¼­³ÌÐò$P$ÒÔ¼°Ô­×Ó¼¯$X$ºÍ$U$£¬¼Ç$P$»ùÓÚ$U$¹ØÓÚ$X$µÄÇ¿¶¥²¿£¨$Strong~Top$£©Îª$st_U(P,X)$£¬ÆäÓÉÒÔÏÂÈý²¿·Ö×é³É£º
 	\begin{itemize}
@@ -572,6 +576,14 @@ $SL_U(P,X)$¸ù¾ÝLinºÍZhaoµÄ»·ÀíÂÛ£¬¶¨ÒåµÄÈÃµ×²¿»Ø´ð¼¯$X$Ëù²»ÄÜÂú×ãµÄ»·¹«Ê½µÄ»·Óë·
 \begin{theorem}\label{strong_associative}
 	¸øÎöÈ¡¶¨Âß¼­³ÌÐò$P$ºÍÔ­×Ó¼¯$U$¡£ÁíÓÐÂß¼­³ÌÐò$P'$Âú×ã$Atoms(P') \cap U = \emptyset$¡£ÔòÔ­×Ó¼¯$S$ÊÇÂß¼­³ÌÐò$P \cup P'$µÄÒ»¸ö»Ø´ð¼¯£¬µ±ÇÒ½öµ±$S = (X \cup Y) \cap Atoms(P)$£¬ÆäÖÐ$X$Îª$b_U(P) \cup EC_U(P)$µÄÄ³¸ö»Ø´ð¼¯£¬$Y$Îª$e_U(st_U(P,X),X) \cup ECC_U(P,X) \cup P'$µÄÄ³¸ö»Ø´ð¼¯¡£
 \end{theorem}
+
+\begin{proof}
+	ÓÉÓÚ$P'$¸ú$U$ÎÞ¹Ø£¬ËùÒÔ$b_U(P \cup P') = b_U(P)$£¬¹ÊÒ»Ñù¿ÉÒÔ°Ñ$P \cup P'$Í¨¹ý$U$À´·Ö¸î£¬¶ø²»Ôì³É$bottom$µÄÓ°Ïì£¬$P$Ö»Ó°Ïì$top$²¿·Ö¡£¶ø$P$µÄÓ°Ïì¾ÍÊÇ»áÔì³ÉÔ­À´ÔÚ$P \backslash b_U(P)$ÖÐ²»ÊÇ»·µÄÔ­×Ó¼¯±ä³ÉÁË»·£¬ËùÒÔÖ±½ÓÐÞ¸Ä$SS_U(P,X)$Îª$U$ÖÐÈÎÒâ±»ÆÆ»µµÄ·Ç¿Õ×Ó¼¯¡£ÕâÐ©·Ç¿Õ×Ó¼¯ÊÇ¿ÉÄÜÒòÎª$P'$¶ø±»¹¹³É»·µÄ¡£
+	
+	ÒòÎª$Atoms(P') \cap U = \emptyset$£¬ËùÒÔ¶Ô$(P \cup P') \backslash b_U(P)$½øÐÐ$ct_U(P,X)$ºÍ$e_U(P,X)$²Ù×÷µÄ»°£¬Êµ¼ÊÉÏ$P'$ÖÐµÄ¹æÔò²»»á±»²Ù×÷£¬ÕâÊÇÒòÎª$ct_U(P,X)$Ö»¶ÔÓë$E \subseteq U$ÓÐ¹ØµÄ¹æÔò²Ù×÷£¬$Atoms(P') \cap U = \emptyset$£¬ËùÒÔ$Atoms(P') \cap E = \emptyset$£¬¶ø$e_U(P,X)$Ö»¶ÔÓë$U$Ïà¹ØµÄ¹æÔò²Ù×÷£¬ËùÒÔÒ²²»»áÉæ¼°$P'$ÖÐµÄ¹æÔò¡£¹ÊÖ»Ðè¶Ô$P$Ö´ÐÐ£¬²¢ÔÚ×îºó¼ÓÉÏ$P'$¡£
+	
+	ËùÒÔ¶ÔÓÚ$e_U(st_U(P,X),X) \cup ECC_U(P,X)$Õâ²¿·Ö£¬Ëü±£Ö¤ÁËËùÓÐ²»±»$X$Âú×ãµÄ»·¹«Ê½µÄ×Ó¼¯¶¼±»¹¹Ôì³öÏàÓ¦µÄ»·£¬¶øÇÒÕâÐ©»·»á±»Âú×ã£¬´ËÍâ£¬È¥µôÁË$X$´øÀ´µÄÔ­×ÓÕæÖµÈ·¶¨ÐÔÓ°Ïì¡£ÔÚ$e_U(st_U(P,X),X) \cup ECC_U(P,X)$ÖÐ¼ÓÈë$P'$ºóÇóµÃµÄ»Ø´ð¼¯$Y$Óë$X$½áºÏ¾ÍÊÇÕâ²¿·ÖËùÄÜÂú×ãÔ­³ÌÐòËùÓÐ»·¹«Ê½µÄ»Ø´ð¼¯¡£\quad
+\end{proof}
 
 ¶¨Àí\ref{strong_associative}°Ñ³ÌÐò·Ö¸î·½·¨µÄ½áºÏÐÔÀ©Õ¹µ½ÒÔÈÎÒâÔ­×Ó¼¯×÷Îª·Ö¸î¼¯µÄÇé¿ö¡£¶øÕâÖÖ½áºÏÐÔµÄ±¾ÖÊÊÇÒ»¸ö¶þ´Î·Ö¸î£¬ÕâÖÖÀ©Õ¹ÓÐÖúÓÚ³ÌÐò·Ö¸î·½·¨µÄµÝ¹éÎÊÌâÑÐ¾¿¡£
 
