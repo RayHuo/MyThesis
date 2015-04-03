@@ -1,15 +1,12 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.19)  23 MAR 2015 18:43
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  3 APR 2015 11:05
 entering extended mode
-**//psf/Home/ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò/ÊàëÁöÑÊñáÊ°£/Á°ïÂ£´/KR/2013Âπ¥/6.30/puwang/Mast
-erPaper/paper.tex
-
-(//psf/Home/ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò/ÊàëÁöÑÊñáÊ°£/Á°ïÂ£´/KR/2013Âπ¥/6.30/puwang/Maste
-rPaper/paper.tex
+**paper.tex
+(E:\CtexPaper\hzwPaper\paper.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(C:\CTEX\MiKTeX\tex\latex\base\book.cls
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\book.cls"
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(C:\CTEX\MiKTeX\tex\latex\base\bk12.clo
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\bk12.clo"
 File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -25,25 +22,25 @@ File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\CTEX\MiKTeX\tex\latex\tools\indentfirst.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\indentfirst.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(C:\CTEX\MiKTeX\tex\latex\geometry\geometry.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(C:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(C:\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(C:\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count88
@@ -59,27 +56,28 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 
-(C:\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg))
-(C:\CTEX\UserData\tex\latex\titlesec\titletoc.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg"))
+("D:\Program Files\CTEX\UserData\tex\latex\titlesec\titletoc.sty"
 Package: titletoc 2011/12/15 v1.6 TOC entries
 \ttl@leftsep=\dimen111
 )
-(C:\CTEX\CTeX\tex\latex\ccmap\ccmap.sty
+("D:\Program Files\CTEX\CTeX\tex\latex\ccmap\ccmap.sty"
 Package: ccmap 2006/11/18
 \CCT@hooka@@=\toks16
-) (C:\CTEX\MiKTeX\tex\latex\cjk\CJK.sty
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\cjk\CJK.sty"
 Package: CJK 2008/12/29 4.8.2
 
-(C:\CTEX\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\cjk\mule\MULEenc.sty"
 Package: MULEenc 2008/12/29 4.8.2
 )
-(C:\CTEX\MiKTeX\tex\latex\cjk\CJK.enc
+("D:\Program Files\CTEX\MiKTeX\tex\latex\cjk\CJK.enc"
 File: CJK.enc 2008/12/29 4.8.2
 )
 LaTeX Info: Redefining \selectfont on input line 756.
 \CJK@indent=\box26
 )
-(C:\CTEX\UserData\tex\latex\footmisc\footmisc.sty
+("D:\Program Files\CTEX\UserData\tex\latex\footmisc\footmisc.sty"
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks17
 \footnotemargin=\dimen112
@@ -94,14 +92,14 @@ Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
 )
-(C:\CTEX\UserData\tex\latex\type1cm\type1cm.sty
+("D:\Program Files\CTEX\UserData\tex\latex\type1cm\type1cm.sty"
 Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
 atched RF)
 )
-(C:\CTEX\MiKTeX\tex\latex\psnfss\palatino.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\palatino.sty"
 Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-(C:\CTEX\UserData\tex\latex\listings\listings.sty
+("D:\Program Files\CTEX\UserData\tex\latex\listings\listings.sty"
 \lst@mode=\count93
 \lst@gtempboxa=\box27
 \lst@token=\toks18
@@ -115,18 +113,18 @@ Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR)
 \lst@lineno=\count98
 \lst@maxwidth=\dimen116
 
-(C:\CTEX\UserData\tex\latex\listings\lstmisc.sty
+("D:\Program Files\CTEX\UserData\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count99
 \lst@skipnumbers=\count100
 \lst@framebox=\box28
 )
-(C:\CTEX\UserData\tex\latex\listings\listings.cfg
+("D:\Program Files\CTEX\UserData\tex\latex\listings\listings.cfg"
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-(C:\CTEX\UserData\tex\latex\mdwtools\mdwtab.sty
+("D:\Program Files\CTEX\UserData\tex\latex\mdwtools\mdwtab.sty"
 Package: mdwtab 1998/04/28 1.9 Table typesetting with style
 \tab@state=\count101
 \tab@columns=\count102
@@ -145,24 +143,24 @@ Package: mdwtab 1998/04/28 1.9 Table typesetting with style
 \fn@notes=\box29
 \fn@width=\dimen125
 )
-(C:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty"
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-(C:\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(C:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks21
 \ex@=\dimen126
 ))
-(C:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen127
 )
-(C:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count103
@@ -203,30 +201,30 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(C:\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2009/06/22 v3.00
 
-(C:\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(C:\CTEX\UserData\tex\latex\wasysym\wasysym.sty
+("D:\Program Files\CTEX\UserData\tex\latex\wasysym\wasysym.sty"
 Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
 \symwasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
 )
-(C:\CTEX\MiKTeX\tex\latex\jknappen\mathrsfs.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\jknappen\mathrsfs.sty"
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup7
 )
-(C:\CTEX\UserData\tex\latex\ntheorem\ntheorem.sty
+("D:\Program Files\CTEX\UserData\tex\latex\ntheorem\ntheorem.sty"
 Style `ntheorem', Version 1.33 <2011/08/15>
 Package: ntheorem 2011/08/15 1.33
-(C:\CTEX\MiKTeX\tex\latex\base\ifthen.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \theorem@style=\toks26
@@ -268,14 +266,14 @@ Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
 \thm@amstmpdepth=\dimen139
 \tagwidth=\dimen140
 )
-(C:\CTEX\UserData\tex\latex\natbib\natbib.sty
+("D:\Program Files\CTEX\UserData\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip57
 \bibsep=\skip58
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count117
 )
-(C:\CTEX\UserData\tex\latex\subfigure\subfigure.sty
+("D:\Program Files\CTEX\UserData\tex\latex\subfigure\subfigure.sty"
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip59
 \subfigcapskip=\skip60
@@ -291,14 +289,14 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(C:\CTEX\UserData\tex\latex\subfigure\subfigure.cfg)
+("D:\Program Files\CTEX\UserData\tex\latex\subfigure\subfigure.cfg")
 \subfig@top=\skip63
 \subfig@bottom=\skip64
 )
-(C:\CTEX\UserData\tex\latex\placeins\placeins.sty
+("D:\Program Files\CTEX\UserData\tex\latex\placeins\placeins.sty"
 Package: placeins 2005/04/18  v 2.2
 )
-(C:\CTEX\UserData\tex\latex\floatflt\floatflt.sty
+("D:\Program Files\CTEX\UserData\tex\latex\floatflt\floatflt.sty"
 Package: floatflt 1997/07/16 v. 1.31
 \c@OptionTest=\count122
 \figbox=\box32
@@ -320,7 +318,7 @@ Package: floatflt 1997/07/16 v. 1.31
 \fltitemwidth=\dimen150
 \outputpretest=\toks44
 )
-(C:\CTEX\UserData\tex\latex\titlesec\titlesec.sty
+("D:\Program Files\CTEX\UserData\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box35
 \beforetitleunit=\skip65
@@ -332,7 +330,7 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen154
 \titlewidthfirst=\dimen155
 )
-(C:\CTEX\UserData\tex\latex\caption\caption2.sty
+("D:\Program Files\CTEX\UserData\tex\latex\caption\caption2.sty"
 Package: caption2 2013/02/03 v2.2-62 Customising captions (AR)
 
 
@@ -345,7 +343,7 @@ Package caption2 Warning: ****************************************************
 (caption2)                use the regular `caption' package v3.x instead.
 (caption2)                ****************************************************
 
-(C:\CTEX\UserData\tex\latex\caption\caption3.sty
+("D:\Program Files\CTEX\UserData\tex\latex\caption\caption3.sty"
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen156
@@ -365,7 +363,7 @@ Package caption2 Info: subfigure package v2.1 (or newer) detected on input line
 \subfigcapwidth=\dimen165
 \subcapindent=\dimen166
 )
-(C:\CTEX\MiKTeX\tex\latex\tools\bm.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\bm.sty"
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup8
 \symboldletters=\mathgroup9
@@ -374,7 +372,7 @@ Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
 LaTeX Info: Redefining \bm on input line 204.
 )
-(C:\CTEX\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip67
 \f@ncyO@elh=\skip68
 \f@ncyO@erh=\skip69
@@ -385,13 +383,13 @@ LaTeX Info: Redefining \bm on input line 204.
 \f@ncyO@olf=\skip74
 \f@ncyO@orf=\skip75
 )
-(C:\CTEX\MiKTeX\tex\latex\cjk\standard.bdg
+("D:\Program Files\CTEX\MiKTeX\tex\latex\cjk\standard.bdg"
 File: standard.bdg 2008/12/29 4.8.2
 )
-(C:\CTEX\MiKTeX\tex\latex\cjk\extended.enc
+("D:\Program Files\CTEX\MiKTeX\tex\latex\cjk\extended.enc"
 File: extended.enc 2008/12/29 4.8.2
 )
-(C:\CTEX\MiKTeX\tex\latex\cjk\extended.chr
+("D:\Program Files\CTEX\MiKTeX\tex\latex\cjk\extended.chr"
 File: extended.chr 2008/12/29 4.8.2
 )
 \c@currdefinitionctr=\count129
@@ -419,27 +417,27 @@ File: extended.chr 2008/12/29 4.8.2
 \c@proof=\count151
 \CJKtwospaces=\skip76
 
-(C:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(C:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+("D:\Program Files\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(C:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+("D:\Program Files\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(C:\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
 )
-(C:\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count152
@@ -447,19 +445,19 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen167
 \Gin@req@width=\dimen168
 )
-(C:\CTEX\MiKTeX\tex\generic\thumbpdf\thumbpdf.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\thumbpdf\thumbpdf.sty"
 Package: thumbpdf 2011/08/10 v3.13 Inclusion of thumbnails (HO)
 
 
 Package thumbpdf Warning: Thumbnail data file `paper.tpt' not found.
 
-) (C:\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty
+) ("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/02/06 v6.82o Hypertext links for LaTeX
 
-(C:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
 
-(C:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -495,19 +493,19 @@ Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
 Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
 )
-(C:\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
 )
 \@linkdim=\dimen169
 \Hy@linkcounter=\count153
 \Hy@pagecounter=\count154
 
-(C:\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def
+("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count155
 
-(C:\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg
+("D:\Program Files\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `CJKbookmarks' set `true' on input line 3925.
@@ -520,7 +518,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4284.
 \c@Hy@tempcnt=\count156
 
-(C:\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
@@ -544,26 +542,26 @@ LaTeX Info: Redefining \pageref on input line 5831.
 
 Package hyperref Message: Driver: hpdftex.
 
-(C:\CTEX\MiKTeX\tex\latex\hyperref\hpdftex.def
+("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/02/06 v6.82o Hyperref driver for pdfTeX
 \Fld@listcount=\count161
 \c@bookmark@seq@number=\count162
 
-(C:\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip77
 )
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\tweaklist.sty) (C:\CTEX\MiKTeX\tex\latex\base\makeidx.sty
+(E:\CtexPaper\hzwPaper\tweaklist.sty)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\makeidx.sty"
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
-(C:\CTEX\UserData\tex\latex\moreverb\moreverb.sty
+("D:\Program Files\CTEX\UserData\tex\latex\moreverb\moreverb.sty"
 Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 
-(C:\CTEX\MiKTeX\tex\latex\tools\verbatim.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\verbatim.sty"
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks46
 \verbatim@line=\toks47
@@ -573,14 +571,14 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \tab@size=\count164
 \listing@line=\count165
 )
-(C:\CTEX\UserData\tex\latex\algorithm2e\algorithm2e.sty
+("D:\Program Files\CTEX\UserData\tex\latex\algorithm2e\algorithm2e.sty"
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
 \c@AlgoLine=\count166
 
-(C:\CTEX\MiKTeX\tex\latex\tools\xspace.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\xspace.sty"
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 )
-(C:\CTEX\MiKTeX\tex\latex\ltxmisc\relsize.sty
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ltxmisc\relsize.sty"
 Package: relsize 2003/07/04 ver 3.1
 )
 ********************************************************
@@ -623,29 +621,12 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count169
 \algocf@algoframe=\box42
 \algocf@algobox=\box43
-)
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\paper.aux
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\abstract1.aux)
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\abstract2.aux)
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\chap1.aux)
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\chap2.aux)
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\chap3.aux)
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\chap4.aux)
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\chap5.aux)
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\chap6.aux)
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\chap7.aux)
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\ack.aux))
+) (E:\CtexPaper\hzwPaper\paper.aux (E:\CtexPaper\hzwPaper\abstract1.aux)
+(E:\CtexPaper\hzwPaper\abstract2.aux) (E:\CtexPaper\hzwPaper\chap1.aux)
+(E:\CtexPaper\hzwPaper\chap2.aux) (E:\CtexPaper\hzwPaper\chap3.aux)
+(E:\CtexPaper\hzwPaper\chap4.aux) (E:\CtexPaper\hzwPaper\chap5.aux)
+(E:\CtexPaper\hzwPaper\chap6.aux) (E:\CtexPaper\hzwPaper\chap7.aux)
+(E:\CtexPaper\hzwPaper\ack.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 494.
 LaTeX Font Info:    ... okay on input line 494.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 494.
@@ -726,7 +707,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 494.
 LaTeX Font Info:    ... okay on input line 494.
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 494.
 
- (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1ppl.fd
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )<<ot1.cmap>>
 *geometry* driver: auto-detecting
@@ -766,7 +748,7 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 \c@lstlisting=\count170
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-(C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+("D:\Program Files\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count171
 \scratchdimen=\dimen178
@@ -782,10 +764,10 @@ Package caption Info: End \AtBeginDocument code.
 )
 \AtBeginShipoutBox=\box45
 Package hyperref Info: Link coloring OFF on input line 494.
- (C:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
+ ("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty"
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
-(C:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count177
@@ -794,23 +776,19 @@ LaTeX Info: Redefining \ref on input line 494.
 LaTeX Info: Redefining \pageref on input line 494.
 LaTeX Info: Redefining \nameref on input line 494.
 
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\paper.out)
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\paper.out)
+(E:\CtexPaper\hzwPaper\paper.out) (E:\CtexPaper\hzwPaper\paper.out)
 \@outlinefile=\write3
 
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\GB_452.cpx
+(E:\CtexPaper\hzwPaper\GB_452.cpx
 File: GB.cap 2003/05/18 4.5.2for Standard LaTeX document class
 )
 LaTeX Font Info:    Try loading font information for C19+song on input line 498
 .
- (C:\CTEX\CTeX\tex\latex\CJK\GB\c19song.fd
+
+("D:\Program Files\CTEX\CTeX\tex\latex\CJK\GB\c19song.fd"
 File: c19song.fd 2009/09/23 4.8.2
 )<<c1925.cmap>>
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\cover.tex
+(E:\CtexPaper\hzwPaper\cover.tex
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 7.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <28> not available
@@ -819,47 +797,46 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <28> not available
 map>><<c1958.cmap>><<c1949.cmap>>
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 11.
-<<c1961.cmap>><<c1946.cmap>><<c1959.cmap>><<c1940.cmap>><<c1948.cmap>><<c1953.c
-map>><<c1952.cmap>><<c1962.cmap>>
+<<c1961.cmap>><<c1944.cmap>><<c1945.cmap>><<c1938.cmap>><<c1942.cmap>><<c1946.c
+map>><<c1941.cmap>><<c1940.cmap>>
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 15.
-LaTeX Font Info:    Try loading font information for C19+kai on input line 27.
- (C:\CTEX\CTeX\tex\latex\CJK\GB\c19kai.fd
+LaTeX Font Info:    Try loading font information for C19+kai on input line 32.
+ ("D:\Program Files\CTEX\CTeX\tex\latex\CJK\GB\c19kai.fd"
 File: c19kai.fd 2009/09/23 4.8.2
-)<<c1926.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+)<<c1953.cmap>><<c1926.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
 
-LaTeX Warning: File u.cmap not found on input line 27.
+LaTeX Warning: File u.cmap not found on input line 32.
 
-LaTeX Font Info:    Try loading font information for U+wasy on input line 27.
-(C:\CTEX\UserData\tex\latex\wasysym\uwasy.fd
+LaTeX Font Info:    Try loading font information for U+wasy on input line 32.
+("D:\Program Files\CTEX\UserData\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 27.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 32.
 
-(C:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
+("D:\Program Files\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 27.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 32.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 27.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 32.
 
-<<c1965.cmap>><<c1950.cmap>><<c1938.cmap>><<c1937.cmap>><<c1963.cmap>><<c1944.c
+<<c1965.cmap>><<c1943.cmap>><<c1950.cmap>><<c1937.cmap>><<c1963.cmap>><<c1959.c
 map>><<c1951.cmap>> [1
 
-{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]) [2
+{D:/Program Files/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}
+}]) [2
 
-]
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\copy-right.tex
+] (E:\CtexPaper\hzwPaper\copy-right.tex
 LaTeX Font Info:    Try loading font information for C19+hei on input line 24.
- (C:\CTEX\CTeX\tex\latex\CJK\GB\c19hei.fd
+
+("D:\Program Files\CTEX\CTeX\tex\latex\CJK\GB\c19hei.fd"
 File: c19hei.fd 2009/09/23 4.8.2
-)<<c1942.cmap>><<c1943.cmap>><<c1936.cmap>><<c1945.cmap>><<c1957.cmap>><<c1941.
-cmap>>
+)<<c1948.cmap>><<c1962.cmap>><<c1936.cmap>><<c1952.cmap>><<c1957.cmap>>
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 35.
 
 
@@ -872,43 +849,38 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
 
 <<c1947.cmap>>) [3] [4
 
-]
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\abstract1.tex
+] (E:\CtexPaper\hzwPaper\abstract1.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 12.0pt
 (hyperref)                replaced by space on input line 14.
 
-) [1
+[1
 
 
-] [2
-
-
-]
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\abstract2.tex
+]) [2] (E:\CtexPaper\hzwPaper\abstract2.tex
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <18> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 19.
-) [3
 
-]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3
+
+
+
+])
+[4] [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 12.0pt
 (hyperref)                replaced by space on input line 572.
 
-[4
+[6
 
 
-]
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\paper.toc [5])
+] (E:\CtexPaper\hzwPaper\paper.toc [7])
 \tf@toc=\write4
- [6]
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\chap1.tex
+ [8] (E:\CtexPaper\hzwPaper\chap1.tex
 µ⁄“ª’¬
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -922,28 +894,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.16 
+l.10 
       [1
 
 
 
-]
-Overfull \hbox (3.38301pt too wide) in paragraph at lines 24--25
-\C19/song/bx/n/12/62 ^\OT1/ppl/m/n/12 [[]]\C19/song/bx/n/12/26 ∂\OT1/ppl/m/n/12
- Kartha\C19/song/bx/n/12/43 ⁄\OT1/ppl/m/n/12 Lifschitz(1995)\C19/song/bx/n/12/6
-2 ^ \C19/song/bx/n/12/59 Å \C19/song/bx/n/12/40 Ω \C19/song/bx/n/12/48 n \C19/s
-ong/bx/n/12/49 ÿ \C19/song/bx/n/12/54  \C19/song/bx/n/12/60 / \C19/song/bx/n/1
-2/55 ™ \C19/song/m/n/12/44 z \C19/song/bx/n/12/40 ƒ \C19/song/bx/n/12/65 ä\OT1/
-ppl/m/n/12 [[]]\C19/song/bx/n/12/26 ∂\OT1/ppl/m/n/12 Shanahan(1999)\C19/song/bx
-/n/12/45 Ú
+]<<c1988.cmap>><<c1969.cmap>>
+Overfull \hbox (69.00977pt too wide) in paragraph at lines 18--19
+\C19/song/bx/n/12/63 –\OT1/ppl/m/n/12 claspD\C19/song/m/n/12/25 !\OT1/ppl/m/n/1
+2 clingo\C19/song/bx/n/12/45 9 \C19/song/bx/n/12/52 Ÿ \C19/song/bx/n/12/48 * \C
+19/song/bx/n/12/63 –\OT1/ppl/m/n/12 iclingo\C19/song/bx/n/12/26 ∂ \C19/song/bx/
+n/12/49 , \C19/song/bx/n/12/61 ò \C19/song/bx/n/12/48 a \C19/song/bx/n/12/55 ¥ 
+\C19/song/bx/n/12/44 ƒ \C19/song/bx/n/12/62 u\OT1/ppl/m/n/12 SAT\C19/song/m/n/1
+2/53 ¶ \C19/song/bx/n/12/46 ) \C19/song/bx/n/12/41 ê { \C19/song/bx/n/12/40  \
+C19/song/bx/n/12/26 µ\OT1/ppl/m/n/12 ASSAT\C19/song/bx/n/12/43 ⁄\OT1/ppl/m/n/12
+ cmodels\C19/song/m/n/12/25 "\OT1/ppl/m/n/12 ASP\C19/song/bx/n/12/49 +
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Try loading font information for C19+fs on input line 30.
-
-(C:\CTEX\CTeX\tex\latex\CJK\GB\c19fs.fd
+LaTeX Font Info:    Try loading font information for C19+fs on input line 19.
+("D:\Program Files\CTEX\CTeX\tex\latex\CJK\GB\c19fs.fd"
 File: c19fs.fd 2009/09/23 4.8.2
 )
 
@@ -956,137 +925,470 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 
+l.19 
       [2]pdfTeX warning (ext4): destination with the same identifier (name{page
 .3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 
-      [3])pdfTeX warning (ext4): destination with the same identifier (name{pag
-e.4}) has been already used, duplicate ignored
+l.30 	\item ¥
+             ÀÕ‚£¨±æŒƒÃ·≥ˆ¡À“ª÷÷ø…“‘ª˘”⁄∑÷∏ÓºØŒ™»Œ“‚‘≠◊”ºØµƒ–¬≥Ã–Ú∑÷∏Ó∑Ω∑®°£...
+[3]pdfTeX warning (ext4): destination with the same identifier (name{page.4}) h
+as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.583  \include{chap1}
-                       [4]
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\chap2.tex
+l.41 
+      [4]) [5] (E:\CtexPaper\hzwPaper\chap2.tex [6
+
+
+
+]
 µ⁄∂˛’¬
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\CJKnumber' on input line 1.
 
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 7.
-[5
-
-
-
-]
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 26.
-
-Overfull \hbox (3.54214pt too wide) in paragraph at lines 39--40
-$\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 \OT1/cmr/m/n/12 ]$\C19/so
-ng/bx/n/12/25 " \C19/song/m/n/12/57 A \C19/song/bx/n/12/37 O \C19/song/bx/n/12/
-40 / \C19/song/bx/n/12/26 ß \C19/song/bx/n/12/54 X \C19/song/bx/n/12/43 J$\OML/
-cmm/m/it/12 '$\C19/song/bx/n/12/55 ¥ \C19/song/bx/n/12/61 ò \C19/song/m/n/12/42
- á \C19/song/bx/n/12/62 ä \C19/song/bx/n/12/46 È \C19/song/bx/n/12/26 ß$\OT1/cm
-r/m/n/12 [\OML/cmm/m/it/12 \OT1/cmr/m/n/12 ]$\C19/song/bx/n/12/47 å \C19/song/
-bx/n/12/61 ± \C19/song/bx/n/12/55  \C19/song/bx/n/12/54  \C19/song/bx/n/12/26
- ß \C19/song/bx/n/12/38 °$\U/euf/m/n/12 A$\C19/song/bx/n/12/55 ¥$\OML/cmm/m/it/
-12 '$\C19/song/bx/n/12/40  \C19/song/bx/n/12/61 ò \C19/song/m/n/12/42 á \C19/s
-ong/bx/n/12/51  \C19/song/bx/n/12/60 . \C19/song/bx/n/12/26 £\OT1/ppl/m/n/12 M
-odel\C19/song/bx/n/12/26 § ß
- []
-
-[6]
-
-LaTeX Warning: File ot155.cmap not found on input line 83.
-
-[7] [8]
-Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 122.
-Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 129.
- [9]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 150.
-
- (C:\CTEX\MiKTeX\tex\latex\psnfss\omsppl.fd
+nput line 9.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 11.
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\omsppl.fd"
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
-
-Overfull \hbox (17.65778pt too wide) in paragraph at lines 158--159
-[]\C19/song/bx/n/12/54 X \C19/song/bx/n/12/43 J \C19/song/bx/n/12/46 ( \C19/son
-g/bx/n/12/43 $\OML/cmm/m/it/12 $\C19/song/bx/n/12/55 ¥$[]\OT1/cmr/m/n/12 [\OM
-L/cmm/m/it/12 '\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 ]$\C19/son
-g/bx/n/12/40  \C19/song/bx/n/12/61 ò \C19/song/m/n/12/42 á \C19/song/bx/n/12/5
-1  \C19/song/bx/n/12/60 . \C19/song/bx/n/12/26 ß \C19/song/bx/n/12/63 K \C19/s
-ong/bx/n/12/37  \C19/song/bx/n/12/38 ° \C19/song/bx/n/12/58 è$\OML/cmm/m/it/12
- '$\C19/song/bx/n/12/40  \C19/song/bx/n/12/61 ò \C19/song/m/n/12/42 á$\OML/cmm
-/m/it/12 []$\OT1/ppl/m/n/12 -\C19/song/bx/n/12/58 ≠ \C19/song/bx/n/12/40 Ω \C1
-9/song/bx/n/12/51  \C19/song/bx/n/12/60 . \C19/song/bx/n/12/25 " \C19/song/bx/
-n/12/49 -\OT1/ppl/m/n/12 SM[FO]\C19/song/bx/n/12/37 L
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
+ [7] [8]
+Overfull \hbox (4.6675pt too wide) in paragraph at lines 58--59
+[]\C19/song/bx/n/12/52 Ÿ \C19/song/bx/n/12/64 •$\OML/cmm/m/it/12 n \OMS/cmsy/m/
+n/12  \OML/cmm/m/it/12 m \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 k \OMS/cmsy/m/n/1
+2  \OT1/cmr/m/n/12 1$\C19/song/bx/n/12/26 ß$\OML/cmm/m/it/12 a[]$\C19/song/bx/
+n/12/58 è \C19/song/bx/n/12/63  \C19/song/bx/n/12/65 f \C19/song/bx/n/12/26 £\
+OT1/ppl/m/n/12 atom\C19/song/bx/n/12/26 § ß$\OML/cmm/m/it/12 not$\C19/song/bx/n
+/12/39 ì \C19/song/bx/n/12/37 L \C19/song/bx/n/12/55 î \C19/song/m/n/12/36 } \C
+19/song/bx/n/12/45 = \C19/song/bx/n/12/41 ƒ \C19/song/bx/n/12/40 Ω \C19/song/m/
+n/12/25 " \C19/song/bx/n/12/63 3\OT1/ppl/m/n/12 k\C19/song/bx/n/12/26 ß\OT1/ppl
+/m/n/12 m\C19/song/bx/n/12/26 ß\OT1/ppl/m/n/12 n\C19/song/bx/n/12/54 
  []
 
-[10] [11]
+Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
+t line 68.
+[9]
+Overfull \hbox (44.09862pt too wide) in paragraph at lines 97--98
+\C19/song/bx/n/12/63 K$\OML/cmm/m/it/12 r$\C19/song/bx/n/12/40  \C19/song/m/n/
+12/57 N \C19/song/bx/n/12/37 ‹ \C19/song/m/n/12/25 " \C19/song/bx/n/12/46 ‰ \C1
+9/song/m/n/12/57 N \C19/song/bx/n/12/62 k$\OML/cmm/m/it/12 head\OT1/cmr/m/n/12 
+(\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/58 è$\OML/cmm/m/it/12 a[
+] \OMS/cmsy/m/n/12 _ \OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 _  \OML/cmm/m/it/12 
+:::  \OMS/cmsy/m/n/12 _  \OML/cmm/m/it/12 a[]$\C19/song/bx/n/12/26 ß$\OML/cmm/m
+/it/12 body\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 )$\C19/song/bx/n/
+12/58 è$\OML/cmm/m/it/12 a[];  ::: ;  a[];  not a[];  ::: ;  not a[]$\C19/song/
+m/n/12/25 "
+ []
+
+
+Overfull \hbox (19.98032pt too wide) in paragraph at lines 97--98
+\C19/song/bx/n/12/54  \C19/song/m/n/12/25 " \C19/song/bx/n/12/42 ç \C19/song/b
+x/n/12/46 ? \C19/song/bx/n/12/61 ò \C19/song/bx/n/12/37 ⁄ \C19/song/bx/n/12/40 
+ \C19/song/bx/n/12/44 y \C19/song/bx/n/12/41 © \C19/song/bx/n/12/62 k$\OML/cmm
+/m/it/12 body\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 )  =  \OML/cmm/
+m/it/12 body[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 )  \OMS/cmsy/m
+/n/12 ^  \OML/cmm/m/it/12 body[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n
+/12 )$\C19/song/bx/n/12/26 ß \C19/song/bx/n/12/52 Ÿ \C19/song/bx/n/12/64 •$\OML
+/cmm/m/it/12 body[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 )$\C19/so
+ng/bx/n/12/58 è$\OML/cmm/m/it/12 a[];  ::: ;  a[]$\C19/song/bx/n/12/26 ß
+ []
+
+
+Overfull \hbox (11.11452pt too wide) in paragraph at lines 127--128
+[]\C19/kai/m/n/12/40 È \C19/kai/m/n/12/62 u\OT1/ppl/m/n/12 ([]2.6[])\C19/kai/m/
+n/12/26 ß$\OML/cmm/m/it/12 head\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/
+12 ) = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 s; q\OMS/cmsy/m/n/12 g$\C19/kai/m/n/1
+2/26 ß$\OML/cmm/m/it/12 body\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 
+) = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 r; t; p\OMS/cmsy/m/n/12 g$\C19/kai/m/n/1
+2/26 ß$\OML/cmm/m/it/12 body[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/1
+2 ) = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 r; t\OMS/cmsy/m/n/12 g$\C19/kai/m/n/12
+/26 ß$\OML/cmm/m/it/12 body[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12
+ ) =$
+ []
+
+
+LaTeX Warning: File ot157.cmap not found on input line 129.
+
+[10]
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
+input line 155.
+
+
+LaTeX Warning: File ot161.cmap not found on input line 155.
+
+[11]
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 165.
+ [12] [13]
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 227.
+t line 219.
 
-
-LaTeX Warning: File ot161.cmap not found on input line 238.
-
-[12]
-Overfull \hbox (2.13062pt too wide) in paragraph at lines 250--251
-[]\C19/song/bx/n/12/61 ò \C19/song/m/n/12/42 á \C19/song/bx/n/12/64  \C19/song
-/bx/n/12/43 5 \C19/song/bx/n/12/58 € \C19/song/bx/n/12/54  \C19/song/bx/n/12/4
-9 ‹ \C19/song/bx/n/12/45 6 \C19/song/bx/n/12/38 ß \C19/song/bx/n/12/60 S \C19/s
-ong/bx/n/12/26 £\OT1/ppl/m/n/12 Normal Dis-junc-tion Log-ic Pro-gram\C19/song/b
-x/n/12/26 ß \C19/song/bx/n/12/45 P \C19/song/bx/n/12/58 è\OT1/ppl/m/n/12 DLP[$\
-OMS/cmsy/m/n/12 :$\OT1/ppl/m/n/12 ]\C19/song/bx/n/12/26 §
+Overfull \hbox (22.84804pt too wide) in paragraph at lines 219--220
+[]\C19/kai/m/n/12/40 È \C19/kai/m/n/12/62 u \C19/kai/m/n/12/61 ò \C19/kai/m/n/1
+2/42 á \C19/kai/m/n/12/37 ÿ \C19/kai/m/n/12/43 π \C19/kai/m/n/12/63  \C19/kai/
+m/n/12/55 Â \C19/kai/m/n/12/40  \C19/kai/m/n/12/64  \C19/kai/m/n/12/43 5 \C19
+/kai/m/n/12/49 ‹ \C19/kai/m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S
+ \C19/kai/m/n/12/26 £$\OML/cmm/m/it/12 NLP Without Constraints$\C19/kai/m/n/12/
+26 §$\OML/cmm/m/it/12 P$\C19/kai/m/n/12/43 ⁄
  []
 
 
-Overfull \hbox (19.35847pt too wide) in paragraph at lines 257--258
-[]\C19/song/bx/n/12/61 ò \C19/song/m/n/12/42 á \C19/song/bx/n/12/48 * \C19/song
-/bx/n/12/63 – \C19/song/bx/n/12/58 € \C19/song/bx/n/12/54  \C19/song/bx/n/12/4
-9 ‹ \C19/song/bx/n/12/45 6 \C19/song/bx/n/12/38 ß \C19/song/bx/n/12/60 S \C19/s
-ong/bx/n/12/26 £\OT1/ppl/m/n/12 Extended Dis-junc-tion Log-ic Pro-gram\C19/song
-/bx/n/12/26 ß \C19/song/bx/n/12/45 P \C19/song/bx/n/12/58 è\OT1/ppl/m/n/12 DLP[
-$\OMS/cmsy/m/n/12 ::$\OT1/ppl/m/n/12 ]\C19/song/bx/n/12/26 §
+Overfull \hbox (6.26907pt too wide) in paragraph at lines 225--226
+[]\C19/kai/m/n/12/40 È \C19/kai/m/n/12/62 u \C19/kai/m/n/12/61 ò \C19/kai/m/n/1
+2/42 á \C19/kai/m/n/12/36 ù \C19/kai/m/n/12/43 π \C19/kai/m/n/12/63  \C19/kai/
+m/n/12/55 Â \C19/kai/m/n/12/40  \C19/kai/m/n/12/64  \C19/kai/m/n/12/43 5 \C19
+/kai/m/n/12/49 ‹ \C19/kai/m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S
+ \C19/kai/m/n/12/26 £$\OML/cmm/m/it/12 NLP With Constraints$\C19/kai/m/n/12/26 
+§$\OML/cmm/m/it/12 P$\C19/kai/m/n/12/43 ⁄
  []
 
-[13]
-Overfull \hbox (6.09358pt too wide) in paragraph at lines 277--280
-$\OT1/cmr/m/n/12 $\C19/song/bx/n/12/40  \C19/song/bx/n/12/61 ò \C19/song/m/n/
-12/42 á$\OML/cmm/m/it/12 Herbrand$\C19/song/bx/n/12/51  \C19/song/bx/n/12/60 .
- \C19/song/bx/n/12/55 ¥ \C19/song/bx/n/12/45 4 \C19/song/bx/n/12/60  \C19/song
-/bx/n/12/40  \C19/song/bx/n/12/26 ß \C19/song/bx/n/12/40  \C19/song/bx/n/12/5
-3 Ö \C19/song/bx/n/12/46 = \C19/song/bx/n/12/40  \C19/song/m/n/12/42 T \C19/so
-ng/bx/n/12/51  \C19/song/bx/n/12/60 . \C19/song/bx/n/12/40  \C19/song/bx/n/12
-/63 ˝ \C19/song/bx/n/12/65 f \C19/song/bx/n/12/45 8 \C19/song/bx/n/12/40 — \C19
-/song/bx/n/12/37 ÿ \C19/song/bx/n/12/55 ¥$\OT1/cmr/m/n/12 $\C19/song/bx/n/12/4
-0 $\OML/cmm/m/it/12 Herbrand$\C19/song/bx/n/12/51 
+[14] <img/dpg.png, id=602, 247.67531pt x 42.1575pt>
+File: img/dpg.png Graphic file (type png)
+ <use img/dpg.png>
+Package pdftex.def Info: img/dpg.png used on input line 264.
+(pdftex.def)             Requested size: 300.0pt x 51.0673pt.
+ [15]
+Overfull \hbox (64.2231pt too wide) in paragraph at lines 289--290
+[]\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/1
+2/45 6 \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/
+n/12/26 ß \C19/kai/m/n/12/40 È \C19/kai/m/n/12/62 u \C19/kai/m/n/12/52 Ÿ \C19/k
+ai/m/n/12/64 • \C19/kai/m/n/12/40  \C19/kai/m/n/12/54 ? \C19/kai/m/n/12/61 ø ò
+ \C19/kai/m/n/12/42 á \C19/kai/m/n/12/44 Ç$\OML/cmm/m/it/12 L$\C19/kai/m/n/12/2
+6 ß$\OML/cmm/m/it/12 R[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 L; P\OT1/cmr/m/n/12 )
+$\C19/kai/m/n/12/58 è$\OML/cmm/m/it/12 L$\C19/kai/m/n/12/63 3$\OML/cmm/m/it/12 
+P$\C19/kai/m/n/12/64 •
  []
 
-
-Overfull \hbox (7.35596pt too wide) in paragraph at lines 277--280
-\C19/song/bx/n/12/60 . \C19/song/bx/n/12/25 " \C19/song/bx/n/12/54 ˛ \C19/song/
-bx/n/12/55 „ \C19/song/bx/n/12/48 ~ \C19/song/bx/n/12/65 f \C19/song/bx/n/12/64
- • \C19/song/bx/n/12/26 ß\OT1/ppl/m/n/12 ([]2.17[])\C19/song/bx/n/12/55 ¥ \C19/
-song/bx/n/12/45 4 \C19/song/bx/n/12/60  \C19/song/bx/n/12/51  \C19/song/bx/n/
-12/60 . \C19/song/bx/n/12/26 ß \C19/song/bx/n/12/41 \OT1/ppl/m/n/12 ([]2.18[])
-\C19/song/bx/n/12/37 ÿ \C19/song/bx/n/12/55 ¥ \C19/song/bx/n/12/45 4 \C19/song/
-bx/n/12/60  \C19/song/bx/n/12/51  \C19/song/bx/n/12/60 . \C19/song/bx/n/12/25
- " \C19/song/bx/n/12/46 ‰ \C19/song/m/n/12/57 N \C19/song/bx/n/12/43 ' \C19/son
-g/bx/n/12/62 u\OT1/ppl/m/n/12 Herbrand\C19/song/bx/n/12/48 n
+[16 <E:/CtexPaper/hzwPaper/img/dpg.png>] [17]
+Overfull \hbox (15.67168pt too wide) in paragraph at lines 348--349
+[]\OT1/ppl/m/n/12 Lin\C19/song/bx/n/12/43 ⁄\OT1/ppl/m/n/12 Zhao\C19/song/bx/n/1
+2/56 § \C19/song/m/n/12/57 J \C19/song/bx/n/12/38 — \C19/song/bx/n/12/40  \C19
+/song/bx/n/12/44 Ç \C19/song/bx/n/12/45 9 \C19/song/bx/n/12/44 Ç \C19/song/bx/n
+/12/42 ˙ \C19/song/bx/n/12/55 ™ \C19/song/bx/n/12/63 3 \C19/song/bx/n/12/44   \
+C19/song/bx/n/12/60 Y \C19/song/bx/n/12/64 ñ \C19/song/bx/n/12/46 8 \C19/song/b
+x/n/12/40  \C19/song/bx/n/12/55 û \C19/song/bx/n/12/45 m \C19/song/bx/n/12/37 
+ ÿ \C19/song/bx/n/12/40 ‰ \C19/song/bx/n/12/55 ¶ \C19/song/bx/n/12/62 ^ \C19/s
+ong/m/n/12/25 "\OT1/ppl/m/n/12 Gebser\C19/song/bx/n/12/63 3\OT1/ppl/m/n/12 2010
+\C19/song/bx/n/12/51 c
  []
 
-[14] [15]) [16]
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\chap3.tex
+[18]
+Overfull \hbox (8.90013pt too wide) in paragraph at lines 396--397
+[]\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/1
+2/45 6 \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/
+n/12/26 ß \C19/kai/m/n/12/45 9 \C19/kai/m/n/12/52 Ÿ \C19/kai/m/n/12/41 © \C19/k
+ai/m/n/12/42  \C19/kai/m/n/12/45 8$\OML/cmm/m/it/12 U$\C19/kai/m/n/12/26 ß$\OM
+L/cmm/m/it/12 P$\C19/kai/m/n/12/43 ' \C19/kai/m/n/12/62 u$\OML/cmm/m/it/12 U$\C
+19/kai/m/n/12/40  \C19/kai/m/n/12/61 ò \C19/kai/m/n/12/42 á \C19/kai/m/n/12/41
+ ê \C19/kai/m/n/12/36 Y \C19/kai/m/n/12/26 £$\OML/cmm/m/it/12 Solution$\C19/kai
+/m/n/12/26 §
+ []
+
+[19]) [20] (E:\CtexPaper\hzwPaper\chap3.tex
 µ⁄»˝’¬
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\CJKnumber' on input line 1.
+
+Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
+line 18.
+[21
+
+
+
+] [22] [23] (E:\CtexPaper\hzwPaper\algorithm/LifschitzU.tex
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 10.
+) [24] [25]pdfTeX warning (ext4): destination with the same identifier (name{de
+finition.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.116 \begin{definition}
+                         [26]pdfTeX warning (ext4): destination with the same i
+dentifier (name{example.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.129 \begin{example}
+                      [27]pdfTeX warning (ext4): destination with the same iden
+tifier (name{definition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.157 \begin{definition}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{definition.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.169 \begin{proposition}
+                         \label{satisfy_proposition}pdfTeX warning (ext4): dest
+ination with the same identifier (name{example.2}) has been already used, dupli
+cate ignored
+<to be read again> 
+                   \relax 
+l.178 \begin{example}
+                     \label{example_3_2} [28]pdfTeX warning (ext4): destination
+ with the same identifier (name{definition.4}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.206 \begin{definition}
+                        \label{in_out} [29]pdfTeX warning (ext4): destination w
+ith the same identifier (name{definition.5}) has been already used, duplicate i
+gnored
+<to be read again> 
+                   \relax 
+l.221 \begin{definition}
+                        [∞Îª∑]\label{semi_loop}pdfTeX warning (ext4): destinati
+on with the same identifier (name{definition.6}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.224 \begin{definition}
+                        \label{SLUP}pdfTeX warning (ext4): destination with the
+ same identifier (name{definition.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 \begin{lemma}
+                   \label{lem_slupx}
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
+line 232.
+ [30] [31]pdfTeX warning (ext4): destination with the same identifier (name{def
+inition.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.287 \begin{definition}
+                        \label{new_top}
+Overfull \hbox (13.57034pt too wide) in paragraph at lines 291--292
+[]$\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x[]  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12
+ body\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 j \O
+ML/cmm/m/it/12 r \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 in[]\OT1/cmr/m/n/12 (\OML/
+cmm/m/it/12 P\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 and r \OMS/cmsy/m/n/12 2 \OML/c
+mm/m/it/12 R[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 E; P; X\OT1/cmr/m/n/12 )\OMS/cm
+sy/m/n/12 g\OML/cmm/m/it/12 ;  for each E \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 S
+L[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P; X\OT1/cmr/m/n/12 )$\C19/kai/m/n/12/26 ß
+ 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.9}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.300 \begin{definition}
+                        \label{new_solution}pdfTeX warning (ext4): destination 
+with the same identifier (name{example.3}) has been already used, duplicate ign
+ored
+<to be read again> 
+                   \relax 
+l.309 \begin{example}
+                      [32]pdfTeX warning (ext4): destination with the same iden
+tifier (name{definition.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.355 \begin{lemma}
+                   \label{lemma_3_1} [33]
+Overfull \hbox (28.6396pt too wide) in paragraph at lines 360--361
+\C19/kai/m/n/12/62 u$\OML/cmm/m/it/12 SL[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P; 
+X\OT1/cmr/m/n/12 )$\C19/kai/m/n/12/26 ß \C19/kai/m/n/12/63 K \C19/kai/m/n/12/37
+ L \C19/kai/m/n/12/55 ´ \C19/kai/m/n/12/39  \C19/kai/m/n/12/63 3 \C19/kai/m/n/
+12/61 ò \C19/kai/m/n/12/42 á \C19/kai/m/n/12/44 Ç$\OML/cmm/m/it/12 L$\C19/kai/m
+/n/12/26 ß \C19/kai/m/n/12/62 k$\OML/cmm/m/it/12 E \OMS/cmsy/m/n/12  \OML/cmm/
+m/it/12 L$\C19/kai/m/n/12/26 ß \C19/kai/m/n/12/53 Ö$\OML/cmm/m/it/12 X \U/msb/m
+/n/12 2 \OML/cmm/m/it/12 LF\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 L; P\OT1/cmr/m/n/1
+2 )$\C19/kai/m/n/12/25 " \C19/kai/m/n/12/56 § \C19/kai/m/n/12/61 ± \C19/kai/m/n
+/12/63 3$\OML/cmm/m/it/12 SL[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P; X\OT1/cmr/m/
+n/12 ) =$
+ []
+
+
+Overfull \hbox (3.64493pt too wide) in paragraph at lines 372--373
+[]\C19/kai/m/n/12/61 Æ \C19/kai/m/n/12/64   \C19/kai/m/n/12/43 5 \C19/kai/m/n
+/12/49 ‹ \C19/kai/m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S$\OML/cm
+m/m/it/12 P$\C19/kai/m/n/12/43 ⁄ \C19/kai/m/n/12/63  \C19/kai/m/n/12/65 f \C19
+/kai/m/n/12/45 8$\OML/cmm/m/it/12 U$\C19/kai/m/n/12/26 ß \C19/kai/m/n/12/61 ò \
+C19/kai/m/n/12/42 á \C19/kai/m/n/12/63  \C19/kai/m/n/12/65 f \C19/kai/m/n/12/4
+5 8$\OML/cmm/m/it/12 S$\C19/kai/m/n/12/55 ¥$\OML/cmm/m/it/12 P$\C19/kai/m/n/12/
+40 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.11
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.378 \begin{definition}
+                        [πÿº¸∞Îª∑£®$Dominated~Semi-loop$£©]\label{dominated_...
+[34]pdfTeX warning (ext4): destination with the same identifier (name{definitio
+n.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.383 \begin{definition}
+                        [πÿº¸∞Îª∑ºØ]\label{DSL_U_PX}
+(E:\CtexPaper\hzwPaper\algorithm/DSLUPX.tex
+
+LaTeX Warning: File ot136.cmap not found on input line 25.
+
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 25.
+)
+
+LaTeX Warning: File ot163.cmap not found on input line 409.
+
+[35]
+Overfull \hbox (128.244pt too wide) in paragraph at lines 416--418
+[]\C19/song/bx/n/12/46 ‰ \C19/song/m/n/12/57 N \C19/song/bx/n/12/40 / \C19/song
+/bx/n/12/26 ß$\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m
+/n/12 )$\C19/song/bx/n/12/26 ß$\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 (\OML/cmm/m/
+it/12 P; X\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/26 ß$\OML/cmm/m/it/12 EC[]\OT1/cm
+r/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/26 ß$\OML/cmm/m
+/it/12 ECC[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P; X\OT1/cmr/m/n/12 )$\C19/song/b
+x/n/12/26 ß$\OML/cmm/m/it/12 in[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/
+n/12 )$\C19/song/bx/n/12/26 ß$\OML/cmm/m/it/12 out[]\OT1/cmr/m/n/12 (\OML/cmm/m
+/it/12 P\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/26 ß$\OML/cmm/m/it/12 SL[]\OT1/cmr/
+m/n/12 (\OML/cmm/m/it/12 P; X\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/43 ⁄$\OML/cmm/
+m/it/12 DSL[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P; X\OT1/cmr/m/n/12 )$\C19/song/
+bx/n/12/40 —
+ []
+
+[36]pdfTeX warning (ext4): destination with the same identifier (name{definitio
+n.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.419 \begin{definition}
+                        [Œˆ»°¬ﬂº≠≥Ã–Úµƒ$top$]\label{dlp_top}
+Overfull \hbox (16.20377pt too wide) in paragraph at lines 420--421
+[]\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/61 ò \C19/kai/m/n/1
+2/42 á \C19/kai/m/n/12/58 € \C19/kai/m/n/12/54  \C19/kai/m/n/12/49 ‹ \C19/kai/
+m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/k
+ai/m/n/12/43 ⁄ \C19/kai/m/n/12/63  \C19/kai/m/n/12/65 f \C19/kai/m/n/12/45 8$\
+OML/cmm/m/it/12 X$\C19/kai/m/n/12/26 ß$\OML/cmm/m/it/12 U$\C19/kai/m/n/12/26 ß$
+\OML/cmm/m/it/12 P$\C19/kai/m/n/12/44 ƒ
+ []
+
+
+Overfull \hbox (16.8623pt too wide) in paragraph at lines 423--424
+[]$\OMS/cmsy/m/n/12 ff\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 g [ \OML/cmm/m/it/12
+ head\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 n\OML
+/cmm/m/it/12 E  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 body\OT1/cmr/m/n/12 (\OML/
+cmm/m/it/12 r\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 j \OML/cmm/m/it/12 r \OMS/cmsy/
+m/n/12 2 \OML/cmm/m/it/12 in[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/1
+2 ) \OML/cmm/m/it/12 and r \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 R[]\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 E; P; X\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12
+ ;  for each E \OMS/cmsy/m/n/12 2$
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.14
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.442 \begin{proposition}
+                         \label{proposition_3_2}
+Overfull \hbox (37.18768pt too wide) in paragraph at lines 441--442
+[]\C19/song/bx/n/12/63 3\OT1/ppl/m/n/12 Lifschitz\C19/song/bx/n/12/43 ⁄\OT1/ppl
+/m/n/12 Turner\C19/song/bx/n/12/40  \C19/song/bx/n/12/41 © \C19/song/bx/n/12/4
+2  \C19/song/bx/n/12/48 n \C19/song/bx/n/12/49 ÿ \C19/song/bx/n/12/64 • \C19/s
+ong/bx/n/12/26 ß \C19/song/bx/n/12/41 © \C19/song/bx/n/12/42  \C19/song/bx/n/1
+2/45 8\OT1/ppl/m/n/12 U\C19/song/m/n/12/36 r \C19/song/bx/n/12/49 ‹ \C19/song/b
+x/n/12/45 6 \C19/song/bx/n/12/38 ß \C19/song/bx/n/12/60 S$\OML/cmm/m/it/12 P$\C
+19/song/bx/n/12/41 © \C19/song/bx/n/12/42  \C19/song/bx/n/12/58 è$\OML/cmm/m/i
+t/12 b[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/
+43 ⁄$\OML/cmm/m/it/12 P\OMS/cmsy/m/n/12 n\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\
+OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/48 ¸
+ []
+
+[37]pdfTeX warning (ext4): destination with the same identifier (name{definitio
+n.15}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.460 \begin{definition}
+                        \label{SS_U_PX}pdfTeX warning (ext4): destination with 
+the same identifier (name{definition.16}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.471 \begin{definition}
+                        [«ø∂•≤ø£®$Strong~Top$£©]\label{strong_top}
+Overfull \hbox (2.78256pt too wide) in paragraph at lines 472--473
+[]\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/58 € \C19/kai/m/n/1
+2/54  \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/
+m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/n/12/61 ± \C19/kai/m/n/12/45 9 \C19/k
+ai/m/n/12/63  \C19/kai/m/n/12/65 f \C19/kai/m/n/12/45 8$\OML/cmm/m/it/12 X$\C1
+9/kai/m/n/12/43 ⁄$\OML/cmm/m/it/12 U$\C19/kai/m/n/12/26 ß
+ []
+
+[38]
+Overfull \hbox (16.8623pt too wide) in paragraph at lines 475--476
+[]$\OMS/cmsy/m/n/12 ff\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 g [ \OML/cmm/m/it/12
+ head\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 n\OML
+/cmm/m/it/12 E  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 body\OT1/cmr/m/n/12 (\OML/
+cmm/m/it/12 r\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 j \OML/cmm/m/it/12 r \OMS/cmsy/
+m/n/12 2 \OML/cmm/m/it/12 in[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/1
+2 ) \OML/cmm/m/it/12 and r \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 R[]\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 E; P; X\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12
+ ;  for each E \OMS/cmsy/m/n/12 2$
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.17
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.481 \begin{definition}
+                        [«ø∑Ω∞∏£®$Strong~Solution$£©]\label{strong_solution}
+Overfull \hbox (14.16714pt too wide) in paragraph at lines 482--483
+[]\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/58 € \C19/kai/m/n/1
+2/54  \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/
+m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/n/12/43 ⁄ \C19/kai/m/n/12/63  \C19/k
+ai/m/n/12/65 f \C19/kai/m/n/12/45 8$\OML/cmm/m/it/12 U$\C19/kai/m/n/12/26 ß$\OM
+L/cmm/m/it/12 P$\C19/kai/m/n/12/43 '
+ []
+
+
+Overfull \hbox (3.19565pt too wide) in paragraph at lines 495--496
+[]\C19/kai/m/n/12/42 â \C19/kai/m/n/12/58 € \C19/kai/m/n/12/54  \C19/kai/m/n/1
+2/40 Ω \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/
+m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/n/12/43 ⁄ \C19/kai/m/n/12/63  \C19/k
+ai/m/n/12/65 f \C19/kai/m/n/12/45 8$\OML/cmm/m/it/12 U$\C19/kai/m/n/12/25 " \C1
+9/kai/m/n/12/49 , \C19/kai/m/n/12/62 k \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/12/45 
+6 \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S$\OML/cmm/m/it/12 P[]$\C19/kai/m/n/1
+2/49 ˜ \C19/kai/m/n/12/65 v$\OML/cmm/m/it/12 Atoms\OT1/cmr/m/n/12 (\OML/cmm/m/i
+t/12 P[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 \$
+ []
+
+[39]
+Overfull \hbox (40.7772pt too wide) in paragraph at lines 510--511
+[]\C19/song/bx/n/12/63 3 \C19/song/bx/n/12/40 . \C19/song/bx/n/12/37 ‹ \C19/son
+g/bx/n/12/64 • \C19/song/bx/n/12/26 ß$\OML/cmm/m/it/12 EC[]\OT1/cmr/m/n/12 (\OM
+L/cmm/m/it/12 P\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/64 • \C19/song/bx/n/12/40  
+\C19/song/bx/n/12/43 5 \C19/song/bx/n/12/63 K 3 \C19/song/bx/n/12/65 Å \C19/son
+g/bx/n/12/44 Ä \C19/song/m/n/12/53 ú \C19/song/bx/n/12/47 π \C19/song/bx/n/12/5
+9 e \C19/song/bx/n/12/44 ¨ \C19/song/bx/n/12/58 è$\OML/cmm/m/it/12 b[]\OT1/cmr/
+m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 [ \OML/cmm/m/it/12
+ EC[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/39 
+ë \C19/song/bx/n/12/48 5$\OT1/cmr/m/n/12 2[]$\C19/song/bx/n/12/42 á
+ []
+
+
+Overfull \hbox (41.79033pt too wide) in paragraph at lines 520--521
+[]\C19/song/bx/n/12/37  \C19/song/bx/n/12/60  \C19/song/bx/n/12/46 ! \C19/son
+g/bx/n/12/64 Ã \C19/song/bx/n/12/61 á \C19/song/bx/n/12/40 È 1 \C19/song/bx/n/1
+2/61 ò \C19/song/bx/n/12/42 á \C19/song/bx/n/12/58 Ø \C19/song/m/n/12/57 K \C19
+/song/bx/n/12/46 ? \C19/song/bx/n/12/60 1 \C19/song/bx/n/12/41 © \C19/song/bx/n
+/12/58 € \C19/song/m/n/12/25 " \C19/song/bx/n/12/40 . \C19/song/bx/n/12/37 ‹ \C
+19/song/bx/n/12/64 • \C19/song/bx/n/12/40 $\OML/cmm/m/it/12 EC[]\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/55 ¥ \C19/song/bx/n/12
+/58 è \C19/song/bx/n/12/49 
+ \C19/song/bx/n/12/37 ÷ \C19/song/bx/n/12/38 ø$\OML/cmm/m/it/12 Atoms\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )
+)\OMS/cmsy/m/n/12 n\OML/cmm/m/it/12 U$\C19/song/bx/n/12/64 •
+ []
+
+
+LaTeX Warning: File ot140.cmap not found on input line 529.
+
+[40] [41]) [42] (E:\CtexPaper\hzwPaper\chap4.tex
+µ⁄Àƒ’¬
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\CJKnumber' on input line 1.
@@ -1095,8 +1397,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.14 \begin{definition}
-                       \label{def_parallelcirc2sm} [17
+l.17 \begin{definition}
+                       [≥Ã–ÚΩ·¬€£®$Consequence$£©]\label{d_consequence}
+
+LaTeX Warning: File ot146.cmap not found on input line 24.
+
+[43
 
 
 
@@ -1104,187 +1410,515 @@ l.14 \begin{definition}
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 \begin{proposition}
-                        \label{pro_parallelcirc2sm}pdfTeX warning (ext4): desti
-nation with the same identifier (name{example.1}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.44 \begin{example}
-                    \label{emp_par} [18]pdfTeX warning (ext4): destination with
- the same identifier (name{definition.3}) has been already used, duplicate igno
-red
-<to be read again> 
-                   \relax 
-l.67 \begin{definition}
-                       \label{def_prioritycirc2sm}
-Overfull \hbox (10.9075pt too wide) in paragraph at lines 78--79
-[]$\OML/cmm/m/it/12 '[]$\C19/kai/m/n/12/55 ¥ \C19/kai/m/n/12/45 Ú$\OML/cmm/m/it
-/12 '$\C19/kai/m/n/12/64 • \C19/kai/m/n/12/56 § \C19/kai/m/n/12/62 k \C19/kai/m
-/n/12/60 / \C19/kai/m/n/12/54 X$\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([])$\OT1/ppl
-/m/n/12 ($\OML/cmm/m/it/12 P$\C19/kai/m/n/12/63 3$\OML/cmm/m/it/12 []$\OT1/ppl
-/m/n/12 ,$\OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 j \OMS/cmsy/m/n
-/12  \OML/cmm/m/it/12 k$\OT1/ppl/m/n/12 , \C19/kai/bx/n/12/40  \C19/kai/m/n/1
-2/37 ø \C19/kai/m/n/12/45 8 \C19/kai/m/n/12/64 •\OT1/ppl/m/n/12 )\C19/kai/bx/n/
-12/40  \C19/kai/m/n/12/42 ˙ \C19/kai/m/n/12/55 ™ \C19/kai/bx/n/12/57 O \C19/ka
-i/m/n/12/44 Ü \C19/kai/bx/n/12/58 è$\OMS/cmsy/m/n/12 ::\OML/cmm/m/it/12 P\OT1/c
-mr/m/n/12 ([])$\C19/kai/m/n/12/44  
+l.25 \begin{definition}
+                       [≤π£®$Complement$£©]\label{d_complement}
+Overfull \hbox (4.8166pt too wide) in paragraph at lines 26--27
+[]\C19/kai/m/n/12/40 È \C19/kai/m/n/12/62 u \C19/kai/m/n/12/61 ò \C19/kai/m/n/1
+2/42 á \C19/kai/m/n/12/58 © \C19/kai/m/n/12/65 i$\OML/cmm/m/it/12 l$\C19/kai/m/
+n/12/26 ß \C19/kai/m/n/12/52 Ÿ \C19/kai/m/n/12/37 ÷ \C19/kai/m/n/12/45 P \C19/k
+ai/m/n/12/58 è$[]$\C19/kai/m/n/12/25 " \C19/kai/m/n/12/52 Ÿ \C19/kai/m/n/12/64 
+• \C19/kai/m/n/12/26 ß \C19/kai/m/n/12/54 e$\OML/cmm/m/it/12 l$\C19/kai/m/n/12/
+58 è$\OML/cmm/m/it/12 a$\C19/kai/m/n/12/60 /
  []
 
-
-Overfull \hbox (8.51793pt too wide) in paragraph at lines 79--80
-\C19/kai/m/n/12/38 §$\OMS/cmsy/m/n/12 ::\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([])$
-\C19/kai/m/n/12/26 ∂\OT1/ppl/m/n/12 (iii)\C19/kai/m/n/12/45 Ú \C19/kai/m/n/12/6
-4  \C19/kai/bx/n/12/58 © \C19/kai/m/n/12/65 i$\OML/cmm/m/it/12 Q\OT1/cmr/m/n/1
-2 ([])(\OML/cmm/m/it/12 Q \OMS/cmsy/m/n/12 2 [][] \OML/cmm/m/it/12 [] \OMS/cms
-y/m/n/12 [ \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 )$\C19/kai/bx/n/12/57 O \C19/kai
-/m/n/12/44 Ü \C19/kai/bx/n/12/58 è$\OML/cmm/m/it/12 Q[]\OT1/cmr/m/n/12 ([])$\C1
-9/kai/m/n/12/26 ß \C19/kai/m/n/12/45 Ú \C19/kai/m/n/12/60 / \C19/kai/m/n/12/54 
-X$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Q[]\OT1/cmr/m/n/12 ([])[] $
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{definition.4}
+pdfTeX warning (ext4): destination with the same identifier (name{definition.3}
 ) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.37 \begin{definition}
+                       [∏∫Œƒ◊÷ºÚªØ]\label{d_tr_n}pdfTeX warning (ext4): destina
+tion with the same identifier (name{definition.4}) has been already used, dupli
+cate ignored
+<to be read again> 
+                   \relax 
+l.48 \begin{definition}
+                       [’˝Œƒ◊÷]\label{d_tr_p} [44] [45]pdfTeX warning (ext4): d
+estination with the same identifier (name{definition.5}) has been already used,
+ duplicate ignored
 <to be read again> 
                    \relax 
 l.83 \begin{proposition}
-                        \label{pro_prioritycirc2sm}
-Overfull \hbox (3.10057pt too wide) in paragraph at lines 84--85
-\C19/kai/bx/n/12/58 ¢ \C19/kai/m/n/12/39 c \C19/kai/m/n/12/38 ~ \C19/kai/m/n/12
-/63  \C19/kai/m/n/12/45 8 \C19/kai/m/n/12/43 ‹ \C19/kai/m/n/12/26 ß \C19/kai/m
-/n/12/63 K$\OMS/cmsy/m/n/12 9\OML/cmm/m/it/12 []\OT1/cmr/m/n/12 [\OML/cmm/m/it
-/12 Tr[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 
-[] > ::: > []\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 ); [][]]$\C
-19/kai/bx/n/12/40  \C19/kai/m/n/12/45 d \C19/kai/m/n/12/62 u$[]\OT1/cmr/m/n/12
- [\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 [] >$
- []
-
-[19] [20]pdfTeX warning (ext4): destination with the same identifier (name{defi
-nition.5}) has been already used, duplicate ignored
+                        \label{p_4_1} [46]pdfTeX warning (ext4): destination wi
+th the same identifier (name{example.1}) has been already used, duplicate ignor
+ed
 <to be read again> 
                    \relax 
-l.127 \begin{definition}
-                        \label{def_circ2sm_eliquat} [21]
-Overfull \hbox (6.21632pt too wide) in paragraph at lines 143--144
-[]$\OML/cmm/m/it/12 []$\C19/kai/m/n/12/55 ¥ \C19/kai/m/n/12/45 Ú$\OML/cmm/m/it
-/12 $\C19/kai/m/n/12/64 • \C19/kai/m/n/12/56 § \C19/kai/m/n/12/62 k \C19/kai/m
-/n/12/60 / \C19/kai/m/n/12/54 X$\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([])$\OT1/ppl
-/m/n/12 ($\OML/cmm/m/it/12 P$\C19/kai/m/n/12/63 3$\OML/cmm/m/it/12 []; \OT1/cm
-r/m/n/12 1 \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 j \OMS/cmsy/m/n/12  \OML/cmm/m/
-it/12 k;$\C19/kai/bx/n/12/40  \C19/kai/m/n/12/37 ø \C19/kai/m/n/12/45 8 \C19/k
-ai/m/n/12/64 •\OT1/ppl/m/n/12 )\C19/kai/bx/n/12/40  \C19/kai/m/n/12/42 ˙ \C19/
-kai/m/n/12/55 ™ \C19/kai/bx/n/12/57 O \C19/kai/m/n/12/44 Ü \C19/kai/bx/n/12/58 
-è$\OMS/cmsy/m/n/12 ::\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([])$\C19/kai/m/n/12/44 
- 
+l.91 \begin{example}
+                    \label{e_4_1} [47] [48]pdfTeX warning (ext4): destination w
+ith the same identifier (name{definition.6}) has been already used, duplicate i
+gnored
+<to be read again> 
+                   \relax 
+l.141 \begin{definition}
+                        \label{new_in_U_P}pdfTeX warning (ext4): destination wi
+th the same identifier (name{definition.7}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.148 \begin{definition}
+                        \label{C_S_U_P}pdfTeX warning (ext4): destination with 
+the same identifier (name{definition.8}) has been already used, duplicate ignor
+ed
+<to be read again> 
+                   \relax 
+l.155 \begin{definition}
+                        [Ω·¬€∂•≤ø£®$Consequence~Top$£©]\label{consequence_top}
+Overfull \hbox (5.77982pt too wide) in paragraph at lines 156--157
+[]\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/1
+2/45 6 \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/
+n/12/45 9 \C19/kai/m/n/12/52 Ÿ \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S \C19/k
+ai/m/n/12/46 ( \C19/kai/m/n/12/49 ÿ$\OML/cmm/m/it/12 U$\C19/kai/m/n/12/26 ß
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{definition.6}
+
+Overfull \hbox (16.8623pt too wide) in paragraph at lines 159--160
+[]$\OMS/cmsy/m/n/12 ff\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 g [ \OML/cmm/m/it/12
+ head\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 n\OML
+/cmm/m/it/12 E  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 body\OT1/cmr/m/n/12 (\OML/
+cmm/m/it/12 r\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 j \OML/cmm/m/it/12 r \OMS/cmsy/
+m/n/12 2 \OML/cmm/m/it/12 in[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/1
+2 ) \OML/cmm/m/it/12 and r \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 R[]\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 E; P; X\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12
+ ;  for each E \OMS/cmsy/m/n/12 2$
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{definition.9}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 \begin{proposition}
-                         
-Overfull \hbox (9.60661pt too wide) in paragraph at lines 159--162
-\C19/kai/m/n/12/63 K$\OMS/cmsy/m/n/12 9\OML/cmm/m/it/12 []\OMS/cmsy/m/n/12 9\O
-ML/cmm/m/it/12 S\OMS/cmsy/m/n/12 9\OML/cmm/m/it/12 W\OMS/cmsy/m/n/12 9\OML/cmm/
-m/it/12 T\OMS/cmsy/m/n/12 9\OML/cmm/m/it/12 []\OT1/cmr/m/n/12 [ [](\OML/cmm/m/
-it/12 '\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 ); \OML/cmm/m/it/1
-2 []; []; S; W; T; \OT1/cmr/m/n/12 ]$ \C19/kai/m/n/12/63 3 \C19/kai/m/n/12/6
-2 k \C19/kai/m/n/12/53 ° \C19/kai/m/n/12/46 ( \C19/kai/m/n/12/43  \C19/kai/bx/
-n/12/59 e \C19/kai/bx/n/12/40  \C19/kai/m/n/12/45 d \C19/kai/m/n/12/62 u$[]\OT
-1/cmr/m/n/12 [\OML/cmm/m/it/12 '\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 []\OT1/cmr/
-m/n/12 ]$\C19/kai/m/n/12/26 ß
+l.168 \begin{proposition}
+                         \label{p_4_2} [49]pdfTeX warning (ext4): destination w
+ith the same identifier (name{example.2}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.179 \begin{example}
+                     \label{e_4_2}
+Overfull \hbox (67.44534pt too wide) detected at line 183
+[]\OML/cmm/m/it/12 ct[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ) = \
+OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 b  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 c: c 
+ \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 d: d  \OMS/cmsy/m/n/12    \OML/cmm/m/it/1
+2 not e: e  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 not d:  \OMS/cmsy/m/n/12    \O
+ML/cmm/m/it/12 a: x[]  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 b: c  \OMS/cmsy/m/n
+/12    \OML/cmm/m/it/12 x[];  a:  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 not x[]:
+\OMS/cmsy/m/n/12 g
  []
 
-[22] <img/translate.jpg, id=710, 872.50969pt x 622.57594pt>
-File: img/translate.jpg Graphic file (type jpg)
 
-<use img/translate.jpg>
-Package pdftex.def Info: img/translate.jpg used on input line 189.
-(pdftex.def)             Requested size: 384.1096pt x 274.07675pt.
- [23] [24 <//psf/Home/ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò/ÊàëÁöÑÊñáÊ°£/Á°ïÂ£´/KR/2013Âπ¥/6.30/pu
-wang/MasterPaper/img/translate.jpg>]) [25]
-(\\psf\Home\ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò\ÊàëÁöÑÊñáÊ°£\Á°ïÂ£´\KR\2013Âπ¥\6.30\puwang\Maste
-rPaper\chap4.tex [26
+Overfull \hbox (59.74818pt too wide) detected at line 188
+[]\OML/cmm/m/it/12 tr[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ct[]\OT1/cmr/m/n/12 (\
+OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; U\OT1/cmr/m/n/12 ) = \OMS/
+cmsy/m/n/12 f\OML/cmm/m/it/12 b  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 c: c  \OM
+S/cmsy/m/n/12    \OML/cmm/m/it/12 d: d  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 no
+t e: e  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 not d: x[]  \OMS/cmsy/m/n/12    \O
+ML/cmm/m/it/12 b: c  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 x[]:  \OMS/cmsy/m/n/1
+2    \OML/cmm/m/it/12 not x[]:\OMS/cmsy/m/n/12 g
+ []
+
+[50]) [51] (E:\CtexPaper\hzwPaper\chap5.tex [52
 
 
 
 ]
-µ⁄Àƒ’¬
+µ⁄ŒÂ’¬
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\CJKnumber' on input line 1.
 
-<img/programdiagram.jpg, id=743, 1095.3422pt x 338.01282pt>
-File: img/programdiagram.jpg Graphic file (type jpg)
-
-<use img/programdiagram.jpg>
-Package pdftex.def Info: img/programdiagram.jpg used on input line 20.
-(pdftex.def)             Requested size: 384.1096pt x 118.53319pt.
- [27]
-LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 37.
-
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 49.
 
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 37.
+(Font)              size <10.95> substituted on input line 49.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 37.
+(Font)              size <10.95> substituted on input line 49.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 37.
+(Font)              size <10.95> substituted on input line 49.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7.34996> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 37.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 49.
 
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5.25> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 37.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 49.
 
-[28 <//psf/Home/ÁôæÂ∫¶‰∫ëÂêåÊ≠•Áõò/ÊàëÁöÑÊñáÊ°£/Á°ïÂ£´/KR/2013Âπ¥/6.30/puwang/M
-asterPaper/img/programdiagram.jpg>]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 72.
- (C:\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
+[53]
+
+LaTeX Warning: Reference `alg_convert' on page 54 undefined on input line 92.
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 94.
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)pdfTeX warning (ext4): destination with the same identifier (name{example.1}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.85 \begin{example}
-                     [29]pdfTeX warning (ext4): destination with the same ident
-ifier (name{example.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.107 \begin{example}
-                      [30]
+) [54]
+
+LaTeX Warning: Reference `alg_convert' on page 55 undefined on input line 128.
+
+[55]
+
+LaTeX Warning: Reference `emp_pacifist' on page 56 undefined on input line 140.
+
+
+
+LaTeX Warning: Reference `alg_convert' on page 56 undefined on input line 168.
+
+
+Overfull \hbox (4.8195pt too wide) in paragraph at lines 166--169
+\C19/song/bx/n/12/55 $\OML/cmm/m/it/12  $\C19/song/bx/n/12/58 è \C19/song/bx/n
+/12/42 ˙ \C19/song/bx/n/12/55 ™\OT1/ppl/m/n/12 ([]5.19[]-[]5.28[]) \C19/song/bx
+/n/12/43 ‹ \C19/song/bx/n/12/54  \C19/song/bx/n/12/40  \C19/song/bx/n/12/61 ò
+ \C19/song/bx/n/12/46  \C19/song/bx/n/12/54  \C19/song/bx/n/12/38 ° \C19/song
+/bx/n/12/37 4 \C19/song/m/n/12/36 ù \C19/song/bx/n/12/26 ß \C19/song/bx/n/12/63
+ K$[]\OT1/cmr/m/n/12 [\OML/cmm/m/it/12  \OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 Ab[]
+; Ab[]; Q[]; Q[]; Q[]; []; []\OT1/cmr/m/n/12 ]$
+ []
+
+[56] [57] <img/prioritytranslatelines.jpg, id=1056, 883.04906pt x 520.19344pt>
+File: img/prioritytranslatelines.jpg Graphic file (type jpg)
+
+<use img/prioritytranslatelines.jpg>
+Package pdftex.def Info: img/prioritytranslatelines.jpg used on input line 203.
+
+(pdftex.def)             Requested size: 196.32687pt x 115.6494pt.
+
+<img/prioritytranslate.jpg, id=1057, 917.67844pt x 507.39563pt>
+File: img/prioritytranslate.jpg Graphic file (type jpg)
+
+<use img/prioritytranslate.jpg>
+Package pdftex.def Info: img/prioritytranslate.jpg used on input line 204.
+(pdftex.def)             Requested size: 196.32687pt x 108.54597pt.
+
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 121.
+(Font)              Font shape `U/wasy/m/n' tried instead on input line 204.
 
-[31]
-! Improper alphabetic constant.
-<to be read again> 
-                   \lst@FillFixed@ 
-l.154 // ◊÷∑˚ºØ◊÷µ‰
-                   
-? 
-! Emergency stop.
-<to be read again> 
-                   \lst@FillFixed@ 
-l.154 // ◊÷∑˚ºØ◊÷µ‰
-                   
-End of file on the terminal!
+<img/prioritymodel.jpg, id=1058, 931.22906pt x 528.47438pt>
+File: img/prioritymodel.jpg Graphic file (type jpg)
 
- 
+<use img/prioritymodel.jpg>
+Package pdftex.def Info: img/prioritymodel.jpg used on input line 205.
+(pdftex.def)             Requested size: 196.32687pt x 111.41028pt.
+
+
+LaTeX Warning: Reference `form_pri2par' on page 58 undefined on input line 211.
+
+
+<img/opmodel.jpg, id=1063, 967.36406pt x 542.025pt>
+File: img/opmodel.jpg Graphic file (type jpg)
+ <use img/opmodel.jpg>
+Package pdftex.def Info: img/opmodel.jpg used on input line 219.
+(pdftex.def)             Requested size: 196.32687pt x 109.9993pt.
+
+<img/opmodeldlv.jpg, id=1064, 958.3303pt x 541.27219pt>
+File: img/opmodeldlv.jpg Graphic file (type jpg)
+
+<use img/opmodeldlv.jpg>
+Package pdftex.def Info: img/opmodeldlv.jpg used on input line 220.
+(pdftex.def)             Requested size: 196.32687pt x 110.88718pt.
+
+<img/opmodelgnt.jpg, id=1065, 971.12813pt x 547.2947pt>
+File: img/opmodelgnt.jpg Graphic file (type jpg)
+
+<use img/opmodelgnt.jpg>
+Package pdftex.def Info: img/opmodelgnt.jpg used on input line 221.
+(pdftex.def)             Requested size: 196.32687pt x 110.64284pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58 <E:/CtexPaper/hzwPaper/img/prioritytranslatelines.jpg> <E:/CtexPaper/hzwPa
+per/img/prioritytranslate.jpg> <E:/CtexPaper/hzwPaper/img/prioritymodel.jpg>] [
+59 <E:/CtexPaper/hzwPaper/img/opmodel.jpg> <E:/CtexPaper/hzwPaper/img/opmodeldl
+v.jpg> <E:/CtexPaper/hzwPaper/img/opmodelgnt.jpg>]
+<img/opbili.jpg, id=1090, 939.51pt x 572.89032pt>
+File: img/opbili.jpg Graphic file (type jpg)
+ <use img/opbili.jpg>
+Package pdftex.def Info: img/opbili.jpg used on input line 244.
+(pdftex.def)             Requested size: 256.07741pt x 156.15103pt.
+ [60 <E:/CtexPaper/hzwPaper/img/opbili.jpg>]
+<img/aspsolverallmodel.jpg, id=1104, 900.36375pt x 531.48563pt>
+File: img/aspsolverallmodel.jpg Graphic file (type jpg)
+
+<use img/aspsolverallmodel.jpg>
+Package pdftex.def Info: img/aspsolverallmodel.jpg used on input line 261.
+(pdftex.def)             Requested size: 196.32687pt x 115.88914pt.
+
+<img/aspsolveramodel.jpg, id=1105, 905.63344pt x 529.98pt>
+File: img/aspsolveramodel.jpg Graphic file (type jpg)
+
+<use img/aspsolveramodel.jpg>
+Package pdftex.def Info: img/aspsolveramodel.jpg used on input line 262.
+(pdftex.def)             Requested size: 196.32687pt x 114.88963pt.
+) [61 <E:/CtexPaper/hzwPaper/img/aspsolverallmodel.jpg> <E:/CtexPaper/hzwPaper/
+img/aspsolveramodel.jpg>]
+(E:\CtexPaper\hzwPaper\chap6.tex [62
+
+
+
+]
+µ⁄¡˘’¬
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\CJKnumber' on input line 1.
+
+<img/mbd.jpg, id=1123, 1038.88126pt x 374.90062pt>
+File: img/mbd.jpg Graphic file (type jpg)
+ <use img/mbd.jpg>
+Package pdftex.def Info: img/mbd.jpg used on input line 19.
+(pdftex.def)             Requested size: 384.1096pt x 138.6138pt.
+pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 \begin{definition}
+                        [63 <E:/CtexPaper/hzwPaper/img/mbd.jpg>] [64]pdfTeX war
+ning (ext4): destination with the same identifier (name{definition.2}) has been
+ already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.64 \begin{definition}
+                       \label{def_normaldiagnosis}pdfTeX warning (ext4): destin
+ation with the same identifier (name{definition.3}) has been already used, dupl
+icate ignored
+<to be read again> 
+                   \relax 
+l.74 \begin{proposition}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{definition.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 \begin{proposition}
+                        \label{pro_minimaldiagnosis}pdfTeX warning (ext4): dest
+ination with the same identifier (name{definition.5}) has been already used, du
+plicate ignored
+<to be read again> 
+                   \relax 
+l.95 \begin{definition}
+                        [65]pdfTeX warning (ext4): destination with the same id
+entifier (name{definition.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.103 \begin{proposition}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{definition.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.107 \begin{definition}
+                        
+Overfull \hbox (12.51865pt too wide) in paragraph at lines 112--113
+[]$\OT1/cmr/m/n/12  \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 COMP$\C19/kai/m/n/12/5
+5 ¥$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 SD;  COMP;  OBS\OT1/cmr/m/n/12 )$\C19/kai
+/m/n/12/40  \C19/kai/m/n/12/61 ò \C19/kai/m/n/12/42 á \C19/kai/m/n/12/64  \C1
+9/kai/m/n/12/40 ‰ \C19/kai/m/n/12/26 ß \C19/kai/m/n/12/40  \C19/kai/m/n/12/53 
+Ö \C19/kai/m/n/12/46 = \C19/kai/m/n/12/40 $\OT1/cmr/m/n/12 $\C19/kai/m/n/12/5
+5 ¥$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 SD; [] $
+ []
+
+<img/fulladder.jpg, id=1158, 1048.66782pt x 516.42938pt>
+File: img/fulladder.jpg Graphic file (type jpg)
+
+<use img/fulladder.jpg>
+Package pdftex.def Info: img/fulladder.jpg used on input line 124.
+(pdftex.def)             Requested size: 405.45047pt x 199.66515pt.
+
+<img/rippleadder.jpg, id=1160, 752.8125pt x 227.34938pt>
+File: img/rippleadder.jpg Graphic file (type jpg)
+
+<use img/rippleadder.jpg>
+Package pdftex.def Info: img/rippleadder.jpg used on input line 131.
+(pdftex.def)             Requested size: 405.45047pt x 122.44768pt.
+
+
+LaTeX Warning: File ot144.cmap not found on input line 137.
+
+[66]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67 <E:/CtexPaper/hzwPaper/img/fulladder.jpg> <E:/CtexPaper/hzwPaper/img/rippl
+eadder.jpg>] [68] [69]pdfTeX warning (ext4): destination with the same identifi
+er (name{definition.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.222 \begin{definition}
+                        
+Overfull \hbox (39.756pt too wide) in paragraph at lines 231--233
+\C19/kai/m/n/12/54 X \C19/kai/m/n/12/43 J \C19/kai/m/n/12/63 3 \C19/kai/m/n/12/
+61 ò \C19/kai/m/n/12/42 á \C19/kai/m/n/12/52 ö $\OML/cmm/m/it/12 M$\C19/kai/m/
+n/12/64 • \C19/kai/m/n/12/37 ÿ \C19/kai/m/n/12/39  \C19/kai/m/n/12/63 3$\OML/c
+mm/m/it/12 blocking pair$\C19/kai/m/n/12/26 ß \C19/kai/m/n/12/63 K$\OML/cmm/m/i
+t/12 M$\C19/kai/m/n/12/38 ° \C19/kai/m/n/12/58 è \C19/kai/m/n/12/61 ò \C19/kai/
+m/n/12/42 á \C19/kai/m/n/12/58 ≠ \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/52 ö  \C
+19/kai/m/n/12/26 £$\OML/cmm/m/it/12 Stable Matching$\C19/kai/m/n/12/26 § ß
+ []
+
+(E:\CtexPaper\hzwPaper\algo_GaleShapley.tex)pdfTeX warning (ext4): destination 
+with the same identifier (name{example.1}) has been already used, duplicate ign
+ored
+<to be read again> 
+                   \relax 
+l.242 \begin{example}
+                     \label{emp_smp} [70] [71] [72]pdfTeX warning (ext4): desti
+nation with the same identifier (name{example.2}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.284 \begin{example}
+                      [73]pdfTeX warning (ext4): destination with the same iden
+tifier (name{definition.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.306 \begin{definition}
+                         [74]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [75] [76] (E:\CtexPaper\hzwPaper\chap7.tex
+µ⁄∆ﬂ’¬
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\CJKnumber' on input line 1.
+
+<<c1966.cmap>> [77
+
+
+
+]) [78] (E:\CtexPaper\hzwPaper\paper.bbl [79
+
+
+
+] [80] [81]
+[82]) [83] (E:\CtexPaper\hzwPaper\ack.tex [84
+
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \hskip 12.0pt
+(hyperref)                replaced by space on input line 26.
+
+) [85]
+\tf@thm=\write5
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 624.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 624.
+ (E:\CtexPaper\hzwPaper\paper.aux (E:\CtexPaper\hzwPaper\abstract1.aux)
+(E:\CtexPaper\hzwPaper\abstract2.aux) (E:\CtexPaper\hzwPaper\chap1.aux)
+(E:\CtexPaper\hzwPaper\chap2.aux) (E:\CtexPaper\hzwPaper\chap3.aux)
+(E:\CtexPaper\hzwPaper\chap4.aux) (E:\CtexPaper\hzwPaper\chap5.aux)
+(E:\CtexPaper\hzwPaper\chap6.aux) (E:\CtexPaper\hzwPaper\chap7.aux)
+(E:\CtexPaper\hzwPaper\ack.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 624.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 624.
+Package rerunfilecheck Info: File `paper.out' has not changed.
+(rerunfilecheck)             Checksum: 0224EBCF22457678B66379E6A3B2B98C;2117.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.45pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 15931 strings out of 495354
- 230003 string characters out of 3183859
- 349244 words of memory out of 3000000
- 18056 multiletter control sequences out of 15000+200000
- 110064 words of font info for 368 fonts, out of 3000000 for 9000
+ 16895 strings out of 495354
+ 249942 string characters out of 3183074
+ 456501 words of memory out of 3000000
+ 18613 multiletter control sequences out of 15000+200000
+ 122776 words of font info for 408 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,15n,47p,1141b,1480s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 44i,21n,47p,1378b,1543s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/
+simhei.ttf><C:/Windows/Fonts/simfang.ttf><D:/Program Files/CTEX/CTeX/fonts/true
+type/chinese/simsun.ttf>{D:/Program Files/CTEX/MiKTeX/fonts/enc/dvips/fontname/
+8r.enc}<C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/
+Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts
+/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese
+/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/P
+rogram Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX
+/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truet
+ype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsu
+n.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program
+ Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Windows/Fonts/simhei.ttf
+><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/
+simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Wind
+ows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf>
+<C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/sim
+hei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/F
+onts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simfang.ttf><C:/
+Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simka
+i.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fon
+ts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Win
+dows/Fonts/simkai.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf
+><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><D:/Program Files/CT
+EX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/tru
+etype/chinese/simsun.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfan
+g.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/F
+onts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C
+:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/sim
+fang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows
+/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/font
+s/truetype/chinese/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/si
+mhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Prog
+ram Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CT
+eX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype
+/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.t
+tf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Fi
+les/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fon
+ts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chine
+se/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:
+/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CT
+EX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/tru
+etype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/sim
+sun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Windo
+ws/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><
+C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simh
+ei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fo
+nts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Wi
+ndows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.tt
+f><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/s
+imkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows
+/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:
+/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai
+.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Font
+s/simkai.ttf><C:/Windows/Fonts/simkai.ttf><D:/Program Files/CTEX/CTeX/fonts/tru
+etype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/sim
+sun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Progr
+am Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTe
+X/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/
+chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.tt
+f><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Fil
+es/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/font
+s/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chines
+e/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/
+Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTE
+X/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/true
+type/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/sims
+un.ttf><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Pro
+gram Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Fi
+les/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files/CTE
+X/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/CTEX/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr6.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr8.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Pro
+gram Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Fil
+es/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/Program Files
+/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/Program Files/C
+TEX/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files/CTEX/MiKTeX/fon
+ts/type1/urw/palatino/uplb8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/
+palatino/uplr8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr
+i8a.pfb>
+Output written on paper.pdf (97 pages, 2275101 bytes).
+PDF statistics:
+ 1894 PDF objects out of 2073 (max. 8388607)
+ 493 named destinations out of 1000 (max. 500000)
+ 526 words of extra memory for PDF output out of 10000 (max. 10000000)
+
