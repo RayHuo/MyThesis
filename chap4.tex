@@ -137,7 +137,7 @@ $tr_n(P,L)$和$tr_p(P,L)$从定义上看只是差异在两者对程序结论中文字类型的应用上。但
 
 本节将提出使用程序结论去分割逻辑程序，并对分割出来的结论顶部（$Consequence~Top$）进行$tr_p(P,L)$化简，并给出一个$tr_p(P,L)$具有泛用性的命题结论。
 
-对于一个逻辑程序$P$及其一个程序结论$U$，本节将使用$U$去分割$P$以得到一个不含$U$中任何原子的新逻辑程序，再使用$tr_p(P,L)$对新的逻辑程序进行化简，求解回答集，以得到原程序的实际回答集。首先，本节给出后续需要用到的相关定义。
+对于一个逻辑程序$P$及其一个程序结论$U$，本节将使用$U$去分割$P$以得到一个不含$U$中任何原子的新逻辑程序，再使用$tr_p(P,L)$对新的逻辑程序进行化简，求解回答集，以得到原程序的实际回答集。	根据前面的分析可知，$tr_p(P,U)$会因为删去满足$head(r) \in U$及$body^-(r) \cap U \neq \emptyset$的规则$r$。同时，在剩下的规则中删去出现在正体部中的$U$中原子。由于正体部被破坏，这可能会导致原程序中的某些环被破坏。故可以引用分割集中构造$t_U(P,X)$的思想构造新的环以保证化简后的程序的回答集可以满足原程序的所有环公式。首先，本节给出后续需要用到的相关定义。
 \begin{definition}\label{new_in_U_P}
 	给定逻辑程序$P$及其程序结论$U$，标记与$U$无关的规则集合为$in'_U(P)$，且有：
 	\begin{equation}
@@ -172,16 +172,25 @@ $tr_n(P,L)$和$tr_p(P,L)$从定义上看只是差异在两者对程序结论中文字类型的应用上。但
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{proof}
 	%%% 充分性
-	$(\Rigtharrow) \space$ 即证明若$S^*$为$tr_p(ct_U(P),U)$的回答集，且$S \backslash U = S^* \cap Atoms(P)$，则原子集$S$为$P$的回答集。
+	$(\Rightarrow) \space$ 即证明若$S^*$为$tr_p(ct_U(P),U)$的回答集，且$S \backslash U = S^* \cap Atoms(P)$，则原子集$S$为$P$的回答集。
 	
-	根据$ct_U(P)$的定义，其第一部分。其考虑了程序结论$U$中满足$R^-(E,P) \subseteq in'_U(P)$的所有非空子集$E$。
+	根据$ct_U(P)$的定义，使用$CS_U(P)$把$b_U(P)$和$out_U(P)$中的符合条件的规则重新构造。为了构造所有可能被破坏的环，$CS_U(P)$中跟强程序分割方法中的$SS_U(P,X)$类似，也考虑$U$的所有非空子集。因为这时已经没有$bottom$的回答集$X$去满足某些环了。$CS_U(P)$中只剔除了$R^-(E,P)$中有规则$r$满足$Atoms(r) \subseteq U$的$E$，删去该规则不会影响环公式被满足。因为$U$中的原子的真值都为真。若这些原子属于某个环$L$，那么必有$L$中的所有原子均为真，则必有$Atoms(L) \subseteq Atoms(U)$。删去这样的规则$r$不会破坏环。这也是$in'_U(P)$定义的原因。
+	
+	在$ct_U(P)$中的第二和第三部分中依旧保证为所有可能被破坏的环构造新的环，并加入第四部分$\{ \leftarrow~not~x_E \}$，这也是为了保证被替换成$x_E$的那些原来的原子的真值都为真，因为它们是属于程序结论$U$的。
+	
+	定义$P_U$如下：
+	\begin{equation}
+		P_U~=~\{ r \in P~|~Atoms(r) \subseteq U \}
+	\end{equation}
+	
+	则可以知道$U$是$P_U$的回答集。此外，令$S^*$为$tr_p(ct_U(P),U)$的回答集，根据上述对$ct_U(P)$的分析，显然，$S^* \cap Atoms(P)$为$P \backslash P_U$的回答集，所以有$(S^* \cap Atoms(P)) \cup U$为$P$的回答集，所以有$S \backslash U = S^* \cap Atoms(P)$，$S$为$P$的回答集。故充分性得证。
+	
 	
 	
 	%%% 必要性
-	$(\Leftarrow) \space$ 即证明若$S$为$P$的回答集，则存在$S^*$为为$tr_p(ct_U(P),U)$的回答集，且满足$S \backslash U = S^* \cap Atoms(P)$。
+	$(\Leftarrow) \space$ 即证明若$S$为$P$的回答集，则存在$S^*$为$tr_p(ct_U(P),U)$的回答集，且满足$S \backslash U = S^* \cap Atoms(P)$。
 	
-	
-	\quad
+	$ct_U(P)$的定义可知，$\{ x_E~|~E \in CS_U(P) \} = S^* \backslash Atoms(P)$。且$ct_U(P)$把$Atoms(r) \subseteq U$的规则排除掉，且以$x_E$替代$U$中的原子，所以可以得到$S^* \cap Atoms(P)$为$P \backslash P_U$的回答集。又$U$为$P_U$的回答集，故有$S^* \cap Atoms(P) \cup U$为$P$的回答集。故$S = S^* \cap Atoms(P) \cup U$，所以满足$S \backslash U = S^* \cap Atoms(P)$。故必要性得证。\quad
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
