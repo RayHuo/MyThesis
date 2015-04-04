@@ -412,7 +412,18 @@ $in_U(P)$ºÍ$out_U(P)$ÊÇÓëÂß¼­³ÌĞòÕıÒÀÀµÍ¼½á¹¹ĞÔÏà¹ØµÄ¹æÔò¼¯ºÏ¡£ÔÚÕı¹æÂß¼­³ÌĞòÖĞÖ
 ÔÚ¶¨Àí\ref{new_splitting_theorem}ÖĞ¸ø³öµÄĞÂ·Ö¸îÀíÂÛÊµÖÊÉÏÊÇ¸úLifschitzºÍTurnerµ±³õÌá³öµÄ·Ö¸îÀíÂÛÊÇÒ»ÑùµÄ¡£±¾ÖÊÉÏµÄ²»Í¬ÔÚÓÚ¶¨ÒåÀ´¼ÆËã$P$»ùÓÚ$U$µÄ·½°¸$\langle X,Y \rangle$µÄÔËËã·ûµÄ²»Í¬¡£ÒÔÏÂ¸ø³ö¶¨Àí\ref{new_splitting_theorem}µÄÖ¤Ã÷¡£
 \begin{proof}\label{proof_new_splitting_theorem}
 	%%%% ³ä·ÖĞÔ
-	$(\Rightarrow) \space$ ¼´Ö¤Ã÷µ±Ô­×Ó¼¯$S$ÊÇ$P$µÄ»Ø´ğ¼¯Ê±£¬´æÔÚ$X$ºÍ$Y$ÊÇ$P$»ùÓÚ$U$µÄÒ»×é·½°¸£¬Í¬Ê±ÓĞ$S = (X \cup Y) \cap Atoms(P)$¡£Áî£º
+	$(\Rightarrow) \space$ ¼´Ö¤Ã÷µ±$X$ºÍ$Y$ÊÇ$P$»ùÓÚ$U$µÄÒ»×é·½°¸Ê±£¬$(X \cup Y) \cap Atoms(P)$ÊÇ$P$µÄ»Ø´ğ¼¯¡£¸ù¾İÖ¤Ã÷\ref{proof_top}¿ÉÒÔÖªµÀÓĞ$(X \cup Y) \cap Atoms(P)$ÄÜÂú×ã$P$ÖĞµÄËùÓĞ»·¹«Ê½¡£¹ÊÖ»ÒªÖ¤Ã÷$(X \cup Y) \cap Atoms(P)$Âú×ã$P$¼´¿É¡£
+	
+	$X$ÊÇ$b_U(P) \cup EC_U(P)$µÄ»Ø´ğ¼¯£¬ËùÒÔÓĞ$X \cap Atoms(P)$Âú×ã$b_U(P)$ÖĞµÄËùÓĞ¹æÔò¡£
+	
+	$Y$ÊÇ$e_U(t_U(P,X),X) \cup ECC_U(P,X)$µÄ»Ø´ğ¼¯¡£²¢ÇÒÔÚ$e_U(t_U(P,X),X) \cup ECC_U(P,X)$ÖĞÒıÈëµÄĞÂÔ­×Ó$x_E$Âú×ã$\{ x_E~|~E \in SL_U(P,X) \} = Y \backslash Atoms(P)$£¬ÔòÓĞ$Y$Âú×ã$e_U(P \backslash b_U(P),X)$ÖĞµÄËùÓĞ¹æÔò¡£ËùÒÔÓĞ$(X \cup Y) \cap Atoms(P)$Âú×ã$P \backslash b_U(P)$¡£
+	
+	×ÛºÏÉÏÃæÁ½¸öÇé¿ö£¬¿ÉÒÔÓĞ$(X \cup Y) \cap Atoms(P)$Âú×ã$P$¡£ËùÒÔÓĞ$(X \cup Y) \cap Atoms(P)$ÊÇ$P$µÄ»Ø´ğ¼¯¡£¹Ê³ä·ÖĞÔ³ÉÁ¢¡£
+	
+	
+	
+	%%% ±ØÒªĞÔ
+	$(\Leftarrow) \space$ ¼´Ö¤Ã÷µ±Ô­×Ó¼¯$S$ÊÇ$P$µÄ»Ø´ğ¼¯Ê±£¬´æÔÚ$X$ºÍ$Y$ÊÇ$P$»ùÓÚ$U$µÄÒ»×é·½°¸£¬Í¬Ê±ÓĞ$S = (X \cup Y) \cap Atoms(P)$¡£Áî£º
 	\begin{equation}
 		\begin{array}{rcl}
 			X = (S \cap U) \cup \{ a~|~a \in S \cap Atoms(b_U(P) \backslash U) \} \\
@@ -422,7 +433,7 @@ $in_U(P)$ºÍ$out_U(P)$ÊÇÓëÂß¼­³ÌĞòÕıÒÀÀµÍ¼½á¹¹ĞÔÏà¹ØµÄ¹æÔò¼¯ºÏ¡£ÔÚÕı¹æÂß¼­³ÌĞòÖĞÖ
 	\begin{equation}
 		Y = (S \backslash U) \cup \{ x_E~|~E \in SL_U(P,X) \}
 	\end{equation}
-
+	
 	
 	ÏÔÈ»ÓĞ$(X \cup Y) \cap Atoms(P) = S$£¬½Ó×ÅÖ¤Ã÷$\langle X, Y \rangle$ÊÇ$P$»ùÓÚ$U$µÄÒ»×é·½°¸¡£
 	
@@ -436,16 +447,7 @@ $in_U(P)$ºÍ$out_U(P)$ÊÇÓëÂß¼­³ÌĞòÕıÒÀÀµÍ¼½á¹¹ĞÔÏà¹ØµÄ¹æÔò¼¯ºÏ¡£ÔÚÕı¹æÂß¼­³ÌĞòÖĞÖ
 	
 	2£©µ±´æÔÚ$x_E \in L$Ê±£¬¸ù¾İÇ°ÃæµÄ½áÂÛ¿ÉÖª£¬º¬ÓĞ$x_E$µÄ»·$L$¶¼ÎªÁËÔ­³ÌĞòÖĞ±»$U$·Ö¸î¿ªµÄ»·$L'$Ëù¹¹ÔìµÄ¡£ÓĞ¹¹ÔìµÄĞÂ»·$L = (L' \backslash U) \cup \{ x_E \}$¡£Èô$Atoms((L' \backslash U) \cup \{ x_E \}) \nsubseteq (S \backslash U) \cup \{ x_E \}$£¨¼´$Y$£©£¬Ôò¸ù¾İ»·¹«Ê½±»Âú×ãµÄ¶¨ÒåÓĞ$Y$Âú×ã¸Ã»·¹«Ê½¡£Èô$Atoms((L' \backslash U) \cup \{ x_E \}) \subseteq (S \backslash U) \cup \{ x_E \}$£¬¶ø$S$ÎªÔ­³ÌĞò$P$µÄ»Ø´ğ¼¯£¬ËùÒÔ$S$Âú×ã$P$ÖĞËùÓĞµÄ»·¹«Ê½¡£¶ø$(L' \backslash U) \cup \{ x_E \}$ÔÚ$P \backslash b_U(P)$µÄÍâ²¿Ö§³ÖÒ²ÊÇ$L'$µÄÍâ²¿Ö§³Ö¡£¹Ê$(S \backslash U)$Ò²Âú×ã$(L' \backslash U) \cup \{ x_E \}$µÄÄ³¸öÍâ²¿Ö§³Ö¡£ËùÒÔ$(S \backslash U) \cup \{ x_E \}$£¬¼´$Y$Âú×ã$e_U(t_U(P,X),X) \cup ECC_U(P,X)$ÖĞµÄËùÓĞ»·¹«Ê½¡£
 	
-	ËùÒÔ$Y$ÊÇ$e_U(t_U(P,X),X) \cup ECC_U(P,X)$µÄ»Ø´ğ¼¯¡£¹Ê³ä·ÖĞÔ³ÉÁ¢¡£
-	
-	%%% ±ØÒªĞÔ
-	$(\Leftarrow) \space$ ¼´Ö¤Ã÷µ±$X$ºÍ$Y$ÊÇ$P$»ùÓÚ$U$µÄÒ»×é·½°¸Ê±£¬$(X \cup Y) \cap Atoms(P)$ÊÇ$P$µÄ»Ø´ğ¼¯¡£¸ù¾İÖ¤Ã÷\ref{proof_top}¿ÉÒÔÖªµÀÓĞ$(X \cup Y) \cap Atoms(P)$ÄÜÂú×ã$P$ÖĞµÄËùÓĞ»·¹«Ê½¡£¹ÊÖ»ÒªÖ¤Ã÷$(X \cup Y) \cap Atoms(P)$Âú×ã$P$¼´¿É¡£
-	
-	$X$ÊÇ$b_U(P) \cup EC_U(P)$µÄ»Ø´ğ¼¯£¬ËùÒÔÓĞ$X \cap Atoms(P)$Âú×ã$b_U(P)$ÖĞµÄËùÓĞ¹æÔò¡£
-	
-	$Y$ÊÇ$e_U(t_U(P,X),X) \cup ECC_U(P,X)$µÄ»Ø´ğ¼¯¡£²¢ÇÒÔÚ$e_U(t_U(P,X),X) \cup ECC_U(P,X)$ÖĞÒıÈëµÄĞÂÔ­×Ó$x_E$Âú×ã$\{ x_E~|~E \in SL_U(P,X) \} = Y \backslash Atoms(P)$£¬ÔòÓĞ$Y$Âú×ã$e_U(P \backslash b_U(P),X)$ÖĞµÄËùÓĞ¹æÔò¡£ËùÒÔÓĞ$(X \cup Y) \cap Atoms(P)$Âú×ã$P \backslash b_U(P)$¡£
-	
-	×ÛºÏÉÏÃæÁ½¸öÇé¿ö£¬¿ÉÒÔÓĞ$(X \cup Y) \cap Atoms(P)$Âú×ã$P$¡£ËùÒÔÓĞ$(X \cup Y) \cap Atoms(P)$ÊÇ$P$µÄ»Ø´ğ¼¯¡£¹Ê±ØÒªĞÔ³ÉÁ¢¡£\quad
+	ËùÒÔ$Y$ÊÇ$e_U(t_U(P,X),X) \cup ECC_U(P,X)$µÄ»Ø´ğ¼¯¡£¹Ê±ØÒªĞÔ³ÉÁ¢¡£\quad
 \end{proof}
 %%%%%%%%%%%%%%%%%%%%%%%%  Ö¤Ã÷ĞÂµÄ·Ö¸îÀíÂÛµÄÕıÈ·ĞÔ  %%%%%%%%%%%%%%%%%%%%%%%%
 

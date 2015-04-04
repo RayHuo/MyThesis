@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  4 APR 2015 01:54
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  4 APR 2015 12:01
 entering extended mode
 **paper_d.tex
 (E:\CtexPaper\hzwPaper\paper_d.tex
@@ -1202,22 +1202,20 @@ C19/kai/m/n/12/42 á \C19/kai/m/n/12/63  \C19/kai/m/n/12/65 f \C19/kai/m/n/12/4
  []
 
 
-Overfull \hbox (31.75826pt too wide) in paragraph at lines 429--430
-$\OML/cmm/m/it/12 Atoms\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\O
-ML/cmm/m/it/12 P\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 n\OML/cmm/m/it/12 U\OT1/cmr/m
-/n/12 )\OMS/cmsy/m/n/12 g$\C19/kai/m/n/12/45 =$\OML/cmm/m/it/12 Atoms\OT1/cmr/m
-/n/12 (\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )
-)$\C19/kai/m/n/12/64 • \C19/kai/m/n/12/65 ä \C19/kai/m/n/12/58 è$\OML/cmm/m/it/
-12 P$\C19/kai/m/n/12/44 £ \C19/kai/m/n/12/39 â \C19/kai/m/n/12/45 8 \C19/kai/m/
-n/12/40  \C19/kai/m/n/12/37 ‹ \C19/kai/m/n/12/41 © \C19/kai/m/n/12/26 ß$\OMS/c
-msy/m/n/12 f\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 j \OML/cmm/m/it/12 a[] \OMS/c
-msy/m/n/12 2 \OML/cmm/m/it/12 Atoms\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 b[]\OT1/cm
-r/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ))\OMS/cmsy/m/n/12 n\OT1/cmr/m/n/12
- (\OML/cmm/m/it/12 U \OMS/cmsy/m/n/12 [$
+Overfull \hbox (12.38904pt too wide) in paragraph at lines 415--416
+[]$\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 )\OT1/cmr/m/n/12 )$ \C19/kai/m/n/12/45 = \
+C19/kai/m/n/12/64 y \C19/kai/m/n/12/50 ≤ \C19/kai/m/n/12/40 $\OML/cmm/m/it/12 
+X$\C19/kai/m/n/12/43 ⁄$\OML/cmm/m/it/12 Y$\C19/kai/m/n/12/55 ¥$\OML/cmm/m/it/12
+ P$\C19/kai/m/n/12/44 ƒ \C19/kai/m/n/12/62 u$\OML/cmm/m/it/12 U$\C19/kai/m/n/12
+/40  \C19/kai/m/n/12/61 ò \C19/kai/m/n/12/65 | \C19/kai/m/n/12/41 ê \C19/kai/m
+/n/12/36 Y \C19/kai/m/n/12/55 û \C19/kai/m/n/12/26 ß$\OT1/cmr/m/n/12 (\OML/cmm/
+m/it/12 X \OMS/cmsy/m/n/12 [ \OML/cmm/m/it/12 Y\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/
+12 \ \OML/cmm/m/it/12 Atoms\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )
+$\C19/kai/m/n/12/55 ¥$\OML/cmm/m/it/12 P$\C19/kai/m/n/12/40 
  []
 
-[35]
-Overfull \hbox (40.96785pt too wide) in paragraph at lines 446--447
+
+Overfull \hbox (40.96785pt too wide) in paragraph at lines 419--420
 []$\OML/cmm/m/it/12 Y$\C19/kai/m/n/12/55 ¥$\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 
 (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P; X\OT1/cmr/m/n/12 )\OM
 L/cmm/m/it/12 ; X\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 [ \OML/cmm/m/it/12 ECC[]\OT
@@ -1231,7 +1229,7 @@ ai/m/n/12/64 •
  []
 
 
-Overfull \hbox (45.2318pt too wide) in paragraph at lines 446--447
+Overfull \hbox (45.2318pt too wide) in paragraph at lines 419--420
 \C19/kai/m/n/12/61 ⁄ \C19/kai/m/n/12/54 \ \C19/kai/m/n/12/40  \C19/kai/m/n/12/
 60 # \C19/kai/m/n/12/63  \C19/kai/m/n/12/65 f$\OML/cmm/m/it/12 x[]$\C19/kai/m/
 n/12/49 ˜ \C19/kai/m/n/12/65 v$\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x[] \OMS/cmsy
@@ -1245,17 +1243,32 @@ cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )\OML/cmm/m/i
 t/12 ; X\OT1/cmr/m/n/12 )$\C19/kai/m/n/12/64 •
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{definition.11
-}) has been already used, duplicate ignored
+
+Overfull \hbox (31.75826pt too wide) in paragraph at lines 440--441
+$\OML/cmm/m/it/12 Atoms\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\O
+ML/cmm/m/it/12 P\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 n\OML/cmm/m/it/12 U\OT1/cmr/m
+/n/12 )\OMS/cmsy/m/n/12 g$\C19/kai/m/n/12/45 =$\OML/cmm/m/it/12 Atoms\OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )
+)$\C19/kai/m/n/12/64 • \C19/kai/m/n/12/65 ä \C19/kai/m/n/12/58 è$\OML/cmm/m/it/
+12 P$\C19/kai/m/n/12/44 £ \C19/kai/m/n/12/39 â \C19/kai/m/n/12/45 8 \C19/kai/m/
+n/12/40  \C19/kai/m/n/12/37 ‹ \C19/kai/m/n/12/41 © \C19/kai/m/n/12/26 ß$\OMS/c
+msy/m/n/12 f\OML/cmm/m/it/12 a[] \OMS/cmsy/m/n/12 j \OML/cmm/m/it/12 a[] \OMS/c
+msy/m/n/12 2 \OML/cmm/m/it/12 Atoms\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 b[]\OT1/cm
+r/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ))\OMS/cmsy/m/n/12 n\OT1/cmr/m/n/12
+ (\OML/cmm/m/it/12 U \OMS/cmsy/m/n/12 [$
+ []
+
+[35]pdfTeX warning (ext4): destination with the same identifier (name{definitio
+n.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.455 \begin{definition}
+l.457 \begin{definition}
                         [πÿº¸∞Îª∑£®$Dominated~Semi-loop$£©]\label{dominated_...
 [36]pdfTeX warning (ext4): destination with the same identifier (name{definitio
 n.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.460 \begin{definition}
+l.462 \begin{definition}
                         [πÿº¸∞Îª∑ºØ]\label{DSL_U_PX}
 (E:\CtexPaper\hzwPaper\algorithm/DSLUPX.tex
 
@@ -1266,7 +1279,7 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 25.
 ) [37] [38]
-Overfull \hbox (128.244pt too wide) in paragraph at lines 493--495
+Overfull \hbox (128.244pt too wide) in paragraph at lines 495--497
 []\C19/song/m/n/12/46 ‰ \C19/song/m/n/12/57 N \C19/song/bx/n/12/40 / \C19/song/
 bx/n/12/26 ß$\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/
 n/12 )$\C19/song/bx/n/12/26 ß$\OML/cmm/m/it/12 e[]\OT1/cmr/m/n/12 (\OML/cmm/m/i
@@ -1285,9 +1298,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.13
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.496 \begin{definition}
+l.498 \begin{definition}
                         [Œˆ»°¬ﬂº≠≥Ã–Úµƒ$top$]\label{dlp_top}
-Overfull \hbox (16.20377pt too wide) in paragraph at lines 497--498
+Overfull \hbox (16.20377pt too wide) in paragraph at lines 499--500
 []\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/61 ò \C19/kai/m/n/1
 2/42 á \C19/kai/m/n/12/58 € \C19/kai/m/n/12/54  \C19/kai/m/n/12/49 ‹ \C19/kai/
 m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/k
@@ -1297,7 +1310,7 @@ OML/cmm/m/it/12 X$\C19/kai/m/n/12/26 ß$\OML/cmm/m/it/12 U$\C19/kai/m/n/12/26 ß$
  []
 
 
-Overfull \hbox (16.8623pt too wide) in paragraph at lines 500--501
+Overfull \hbox (16.8623pt too wide) in paragraph at lines 502--503
 []$\OMS/cmsy/m/n/12 ff\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 g [ \OML/cmm/m/it/12
  head\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 n\OML
 /cmm/m/it/12 E  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 body\OT1/cmr/m/n/12 (\OML/
@@ -1312,9 +1325,9 @@ m/n/12 2 \OML/cmm/m/it/12 in[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/1
 n.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.524 \begin{proposition}
+l.526 \begin{proposition}
                          \label{proposition_3_2}
-Overfull \hbox (37.18768pt too wide) in paragraph at lines 523--524
+Overfull \hbox (37.18768pt too wide) in paragraph at lines 525--526
 []\C19/song/bx/n/12/63 3\OT1/ppl/m/n/12 Lifschitz\C19/song/bx/n/12/43 ⁄\OT1/ppl
 /m/n/12 Turner\C19/song/bx/n/12/40  \C19/song/bx/n/12/41 © \C19/song/bx/n/12/4
 2  \C19/song/bx/n/12/48 n \C19/song/bx/n/12/49 ÿ \C19/song/bx/n/12/64 • \C19/s
@@ -1331,15 +1344,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.15
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.542 \begin{definition}
+l.544 \begin{definition}
                         \label{SS_U_PX} [40]pdfTeX warning (ext4): destination 
 with the same identifier (name{definition.16}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.553 \begin{definition}
+l.555 \begin{definition}
                         [«ø∂•≤ø£®$Strong~Top$£©]\label{strong_top}
-Overfull \hbox (2.78256pt too wide) in paragraph at lines 554--555
+Overfull \hbox (2.78256pt too wide) in paragraph at lines 556--557
 []\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/58 € \C19/kai/m/n/1
 2/54  \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/
 m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/n/12/61 ± \C19/kai/m/n/12/45 9 \C19/k
@@ -1348,7 +1361,7 @@ ai/m/n/12/63  \C19/kai/m/n/12/65 f \C19/kai/m/n/12/45 8$\OML/cmm/m/it/12 X$\C1
  []
 
 
-Overfull \hbox (16.8623pt too wide) in paragraph at lines 557--558
+Overfull \hbox (16.8623pt too wide) in paragraph at lines 559--560
 []$\OMS/cmsy/m/n/12 ff\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 g [ \OML/cmm/m/it/12
  head\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 n\OML
 /cmm/m/it/12 E  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 body\OT1/cmr/m/n/12 (\OML/
@@ -1363,9 +1376,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.17
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.563 \begin{definition}
+l.565 \begin{definition}
                         [«ø∑Ω∞∏£®$Strong~Solution$£©]\label{strong_solution}
-Overfull \hbox (14.16714pt too wide) in paragraph at lines 564--565
+Overfull \hbox (14.16714pt too wide) in paragraph at lines 566--567
 []\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/58 € \C19/kai/m/n/1
 2/54  \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/
 m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/n/12/43 ⁄ \C19/kai/m/n/12/63  \C19/k
@@ -1374,7 +1387,7 @@ L/cmm/m/it/12 P$\C19/kai/m/n/12/43 '
  []
 
 [41]
-Overfull \hbox (3.19565pt too wide) in paragraph at lines 577--578
+Overfull \hbox (3.19565pt too wide) in paragraph at lines 579--580
 []\C19/kai/m/n/12/42 â \C19/kai/m/n/12/58 € \C19/kai/m/n/12/54  \C19/kai/m/n/1
 2/40 Ω \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/
 m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/n/12/43 ⁄ \C19/kai/m/n/12/63  \C19/k
@@ -1386,7 +1399,7 @@ t/12 P[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 \$
  []
 
 [42]
-Overfull \hbox (40.7772pt too wide) in paragraph at lines 600--601
+Overfull \hbox (40.7772pt too wide) in paragraph at lines 602--603
 []\C19/song/bx/n/12/63 3 \C19/song/bx/n/12/40 . \C19/song/bx/n/12/37 ‹ \C19/son
 g/bx/n/12/64 • \C19/song/bx/n/12/26 ß$\OML/cmm/m/it/12 EC[]\OT1/cmr/m/n/12 (\OM
 L/cmm/m/it/12 P\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/64 • \C19/song/bx/n/12/40  
@@ -1399,7 +1412,7 @@ EC[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/39 ë
  []
 
 
-Overfull \hbox (41.79033pt too wide) in paragraph at lines 610--611
+Overfull \hbox (41.79033pt too wide) in paragraph at lines 612--613
 []\C19/song/bx/n/12/37  \C19/song/bx/n/12/60  \C19/song/m/n/12/46 ! \C19/song
 /bx/n/12/64 Ã \C19/song/bx/n/12/61 á \C19/song/bx/n/12/40 È 1 \C19/song/bx/n/12
 /61 ò \C19/song/bx/n/12/42 á \C19/song/bx/n/12/58 Ø \C19/song/m/n/12/57 K \C19/
@@ -1518,9 +1531,9 @@ ith the same identifier (name{example.2}) has been already used, duplicate igno
 red
 <to be read again> 
                    \relax 
-l.179 \begin{example}
+l.183 \begin{example}
                      \label{e_4_2}
-Overfull \hbox (67.44534pt too wide) detected at line 183
+Overfull \hbox (67.44534pt too wide) detected at line 187
 []\OML/cmm/m/it/12 ct[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ) = \
 OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 b  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 c: c 
  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 d: d  \OMS/cmsy/m/n/12    \OML/cmm/m/it/1
@@ -1531,7 +1544,7 @@ ML/cmm/m/it/12 a: x[]  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 b: c  \OMS/cmsy/m/n
  []
 
 
-Overfull \hbox (59.74818pt too wide) detected at line 188
+Overfull \hbox (59.74818pt too wide) detected at line 192
 []\OML/cmm/m/it/12 tr[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ct[]\OT1/cmr/m/n/12 (\
 OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; U\OT1/cmr/m/n/12 ) = \OMS/
 cmsy/m/n/12 f\OML/cmm/m/it/12 b  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 c: c  \OM
@@ -1646,7 +1659,7 @@ public/amsfonts/symbols/msam10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/pu
 blic/amsfonts/symbols/msbm10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/
 palatino/uplb8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr
 8a.pfb>
-Output written on paper_d.pdf (64 pages, 1081999 bytes).
+Output written on paper_d.pdf (64 pages, 1081948 bytes).
 PDF statistics:
  1417 PDF objects out of 1440 (max. 8388607)
  321 named destinations out of 1000 (max. 500000)
