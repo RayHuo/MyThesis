@@ -469,10 +469,34 @@ $SL_U(P,X)$¸ù¾İLinºÍZhaoµÄ»·ÀíÂÛ£¬¶¨ÒåµÄÈÃµ×²¿»Ø´ğ¼¯$X$Ëù²»ÄÜÂú×ãµÄ»·¹«Ê½µÄ»·Óë·
 	\end{equation}		
 \end{definition}
 
-±¾ÎÄÔÚ´ËÌá¹©Ò»¸ö¼ÆËã$DSL_U(P,X)$µÄËã·¨$Algorithm$\ref{DSLUPX}£¬¾ßÌåÈçÏÂ£º
+±¾ÎÄÔÚ´ËÌá¹©Ò»¸ö¼ÆËã$DSL_U(P,X)$µÄËã·¨$Algorithm$\ref{DSLUPX}¡£
 
 % ²åÈëËã·¨
 \RestyleAlgo{ruled}\LinesNumbered\input{algorithm/DSLUPX.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Ëã·¨·ÖÎö
+Ëã·¨·ÖÎö£º
+
+¸ù¾İ$DSL_U(P,X)$µÄ¶¨Òå¿ÉÖª£¬Ö»Ğè¹Ø×¢$head(in_U(P))$ºÍ$body^+(out_U(P))$£¬ÒòÎªÕâÁ½²¿·Ö»áÓ°Ïì»·¹«Ê½ÄÜ·ñ±»Âú×ã¡£¹ÊÉÏÊöËã·¨×îÍâ²ã¶Ô$head(in_U(P))$ºÍ$body^+(out_U(P))$µÄËùÓĞ×Ó¼¯½øĞĞ±éÀú¡£Ëã·¨°ÑÔ­³ÌĞò$P$ÖĞµÄÔ­×Ó·ÖÎªÁ½²¿·Ö£º$AP_1 = Atoms(P) \backslash (head(in_U(P)) \cup body^+(out_U(P))$ºÍ$AP_2 = head(in_U(P)) \cup body^+(out_U(P)$¡£Ëã·¨»ùÓÚ$AP_1 \cup S_1 \cup S_2$´Ó$P$µÄÕıÒÀÀµÍ¼$G_P$ÖĞÌáÈ¡×ÓÍ¼$G^S_P$£¬²¢²éÕÒ$G^S_P$ÖĞ°üº¬$S_1 \cup S_2$µÄÇ¿Á¬Í¨·ÖÁ¿£¨$SCC$£©$L$¡£Ç¿Á¬Í¨·ÖÁ¿±£Ö¤ÆäÊÇÒ»ÏµÁĞ»·ÖĞÔÚ¼¯ºÏÒâÒåÉÏÊÇ×î´óµÄÒ»¸ö£¬Í¬Ê±¸ù¾İÆäÂú×ã$S_1 \cup S_2 \subseteq L$£¬ËùÒÔ$L$µÄÈÎÒâ·Ç¿Õ×Ó¼¯$E$¶¼Âú×ã£º
+\begin{eqnarray}
+	E \cap head(in_U(P)) \neq \emptyset~,~E \cap head(in_U(P)) = L \cap head(in_U(P)) \\
+	E \cap body^+(out_U(P)) \neq \emptyset~,~E \cap body^+(out_U(P)) = L \cap body^+(out_U(P))
+\end{eqnarray}
+
+¹ÊÕâÑùµÄÇ¿Á¬Í¨·ÖÁ¿$L$Èô²»´æÔÚ£¬Ôò¿ÉÒÔÌø¹ıµ±Ç°µÄ$G^S_P$×ÓÍ¼£¬¼ÌĞø³¢ÊÔÏÂÒ»¸ö¡£Èç¹û´æÔÚÇ¿Á¬Í¨·ÖÁ¿$L$£¬Ôò½øÒ»²½ÅĞ¶ÏÆäÊÇ·ñÂú×ãÒÔÏÂÌõ¼ş£¬ÒÔÈ·¶¨µ±Ç°µÄ$L$ÊÇ·ñ$SL_U(P,X)$ÖĞµÄÔªËØ¡£
+\begin{equation}\label{slupx_conditions}
+	L \cap U \subseteq X~,~R^-(L \cap U, P, X) \subseteq in_U(P)
+\end{equation}
+
+Èç¹ûÂú×ãÌõ¼ş£¬Ôò$L \cap U$ÊÇ$DLS_U(P,X)$ÖĞµÄÔªËØ£¬¼ÓÈëµ½$dsl$ÖĞ¡£Èç¹û²»Âú×ã£¬ÕÒ³ö²»Âú×ãµÄµ¼ÖÂ²»Âú×ã$SL_U(P,X)$Ìõ¼şµÄÔ­×Ó£º
+\begin{equation}
+	S = head(R^-(L \cap U, P, X) \backslash in_U(P)) \cup ((L \backslash U) \backslash X)
+\end{equation}
+
+Áî$G^S_P$ÊÇ$G_P$¹ØÓÚ$L \backslash S$µÄ×ÓÍ¼£¬¼´¿ÉÄÜÂú×ãÌõ¼ş\ref{slupx_conditions}µÄÔ­×Ó×ÓÍ¼¡£²¢´Ó¸Ã×ÓÍ¼ÖĞÖØ¸´Ñ°ÕÒÇ¿Á¬Í¨·ÖÁ¿$L$¼°ÅĞ¶ÏÆäÊÇ·ñÂú×ãÌõ¼şµÄ¹ı³Ì¡£
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 »ùÓÚ$DSL_U(P,X)$£¬±¾ÎÄ¶¨Òå¹Ø¼ü¶¥²¿£¨$Dominated~Top$£©ºÍ¹Ø¼ü·½°¸£¨$Dominated~Solution$£©£¬ËüÃÇµÄ¾ßÌåÄÚÈİ¾ÍÊÇÍ¨¹ı°ÑÆäÖĞÓÃµ½µÄ$SL_U(P,X)$Ìæ»»Îª$DSL_U(P,X)$£¬²¢¼Ç¹Ø¼ü¶¥²¿Îª$dt_U(P,X)$¡£×îºó±¾½ÚÀ©Õ¹ĞÂµÄ·Ö¸î¼¯ÀíÂÛ£¬µÃµ½ÒÔÏÂ¶¨Àí¡£
 \begin{theorem}\label{new_d_splitting_theorem}

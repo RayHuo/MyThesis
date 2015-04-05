@@ -25,22 +25,18 @@
 \contentsline {section}{\numberline {3.2}新程序分割方法}{24}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}正规逻辑程序分割方法}{25}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}析取逻辑程序分割方法}{39}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}强程序分割方法}{40}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}计算复杂性分析}{43}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}底部计算复杂性}{43}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}顶部计算复杂性}{44}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}本章小结}{45}{section.3.4}
-\contentsline {chapter}{\numberline {}第四章\hspace {0.8em}新分割理论的应用}{46}{chapter.4}
-\contentsline {section}{\numberline {4.1}程序化简}{46}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}程序结论与补}{46}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}两个化简操作符}{47}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}程序化简操作}{52}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}可靠集}{55}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}可靠集定义及应用}{55}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}转换算法数据结构}{55}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}翻译模块数据结构}{55}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}主要算法实现}{55}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}解析模块}{55}{subsection.4.3.1}
-\contentsline {section}{\numberline {4.4}本章小结}{55}{section.4.4}
-\contentsline {chapter}{参考文献}{56}{section*.5}
+\contentsline {subsection}{\numberline {3.2.3}强程序分割方法}{41}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}计算复杂性分析}{44}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}底部计算复杂性}{44}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}顶部计算复杂性}{45}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}本章小结}{46}{section.3.4}
+\contentsline {chapter}{\numberline {}第四章\hspace {0.8em}新分割理论的应用}{47}{chapter.4}
+\contentsline {section}{\numberline {4.1}程序化简}{47}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}程序结论与补}{47}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}两个化简操作符}{48}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}程序化简操作}{53}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}可靠集}{56}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}可靠集定义及应用}{56}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}本章小结}{56}{section.4.3}
+\contentsline {chapter}{参考文献}{57}{section*.5}
 \contentsfinish 
