@@ -1,0 +1,36 @@
+\begin{algorithm}\label{DSLUPX}
+	\SetKwData{Dis}{dis}
+	\SetKwFunction{CalculateHammingDistance}{CalculateHammingDistance}
+	\SetKw{downto}{downto}\SetKw{return}{return}\SetKw{Break}{break}
+	\SetKwInOut{Input}{输入}\SetKwInOut{Output}{输出}
+	\caption{计算程序结论的算法$Consequence(P)$}
+	\Input{一个逻辑程序$P$}
+	\Output{程序结论$conq$}
+	
+	
+	$P_up~:=~unit_propogation(L,P)$	\\
+	$P_gus~:=~GUS(P,L)$	\\
+	$W_P(L)~:=~P_up(L,C) \cup \neg P_gus(P,L)$
+	$conq~:=~lfp(W_P(L))$
+	\return $$
+	
+	
+%	$dsl~:=~\emptyset$；      \\
+%	\For {非空子集$S_1 \subseteq head(in_U(P))$和$S_2 \subseteq body^+(out_U(P))$} {
+%		$G^S_P~:=~G_P$关于$S_1 \cup S_2 \cup (Atoms(P) \backslash (head(in_U(P)) \cup body^+(out_U(P))))$的子图；\\
+%		$L~:=~G^S_P$的一个强连通分量，并满足$S_1 \cup S_2 \subseteq L$；\\
+%		\If {$L$不存在} {
+%			break;
+%		}
+%		\If {$L \cap U \subseteq X$且$R^-(L \cap U, P, X) \subseteq in_U(P)$} {
+%			把$L \cap U$加入到$dsl$中；	\\
+%		}
+%		\Else {
+%			$S~:=~head(R^-(L \cap U, P, X) \backslash in_U(P)) \cup ((L \cap U) \backslash X)$；	\\
+%			$G^S_P~:=~G_P$关于$L \backslash S$的子图；	\\
+%			$goto~4$；
+%		}
+%	}
+		
+	\return $dsl$
+\end{algorithm}
