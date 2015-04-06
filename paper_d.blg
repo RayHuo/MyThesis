@@ -32,6 +32,10 @@ Repeated entry---line 730 of file reference.bib
  : @article{gelfond1991classical
  :                              ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 871 of file reference.bib
+ : @inproceedings{gebser2007conflict
+ :                                  ,
+I'm skipping whatever remains of this entry
 You can't pop an empty literal stack for entry ji2010phd
 while executing---line 866 of file paper2.bst
 Warning--empty booktitle in colmeraner1973systeme
@@ -41,4 +45,4 @@ Warning--empty journal in zhai2014asp
 `journal' is a missing field, not a string, for entry ji2015elementary
 while executing---line 866 of file paper2.bst
 Warning--empty journal in ji2015elementary
-(There were 10 error messages)
+(There were 11 error messages)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  6 APR 2015 19:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  6 APR 2015 23:16
 entering extended mode
 **paper_d.tex
 (E:\CtexPaper\hzwPaper\paper_d.tex
@@ -1694,21 +1694,27 @@ it/12 bison$\C19/song/m/n/12/25 "$\OML/cmm/m/it/12 flex$\C19/song/bx/n/12/62 †$
 \OML/cmm/m/it/12 bison$\C19/song/bx/n/12/40 
  []
 
-) [62] [63] (E:\CtexPaper\hzwPaper\chap6.tex
+pdfTeX warning (ext4): destination with the same identifier (name{example.1}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 \begin{example}
+                    \upcite{gebser2007gringo} [62]) [63] [64]
+(E:\CtexPaper\hzwPaper\chap6.tex
 µÚÁùÕÂ
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\CJKnumber' on input line 1.
 
-) [64
+) [65
 
 
 
-] (E:\CtexPaper\hzwPaper\paper_d.bbl [65
+] (E:\CtexPaper\hzwPaper\paper_d.bbl [66
 
 
 
-] [66] [67]) [68]
+] [67] [68]) [69]
 \tf@thm=\write5
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 626.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 626.
@@ -1724,10 +1730,10 @@ Package rerunfilecheck Info: File `paper_d.out' has not changed.
 (rerunfilecheck)             Checksum: 5D2819BD487472C8E01DE79419DD4C81;1779.
  ) 
 Here is how much of TeX's memory you used:
- 16181 strings out of 495354
- 237288 string characters out of 3183074
- 354031 words of memory out of 3000000
- 18171 multiletter control sequences out of 15000+200000
+ 16199 strings out of 495354
+ 237620 string characters out of 3183074
+ 354048 words of memory out of 3000000
+ 18183 multiletter control sequences out of 15000+200000
  92139 words of font info for 299 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  44i,15n,58p,1379b,1421s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1813,9 +1819,9 @@ cm/cmsy10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
 Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/Pr
 ogram Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/Program Files/C
 TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on paper_d.pdf (76 pages, 1165897 bytes).
+Output written on paper_d.pdf (77 pages, 1171814 bytes).
 PDF statistics:
- 1619 PDF objects out of 1728 (max. 8388607)
- 386 named destinations out of 1000 (max. 500000)
+ 1631 PDF objects out of 1728 (max. 8388607)
+ 392 named destinations out of 1000 (max. 500000)
  414 words of extra memory for PDF output out of 10000 (max. 10000000)
 

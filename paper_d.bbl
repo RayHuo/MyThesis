@@ -212,4 +212,10 @@ Gebser M, Schaub T, Thiele S.
   Programming and Nonmonotonic Reasoning.
 \newblock Springer, 2007:  266--271.
 
+\bibitem{gebser2007conflict}
+Gebser M, Kaufmann B, Neumann A, et~al.
+\newblock Conflict-driven answer set solving [C].// Proceedings of the 20th
+  international joint conference on Artifical intelligence.
+\newblock 2007:  386--392.
+
 \end{thebibliography}
