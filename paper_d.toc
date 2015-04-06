@@ -33,10 +33,21 @@
 \contentsline {chapter}{\numberline {}第四章\hspace {0.8em}新分割理论的应用}{50}{chapter.4}
 \contentsline {section}{\numberline {4.1}程序化简}{50}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}程序结论}{50}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}两个化简操作符}{51}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}程序化简操作}{55}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}可靠集}{58}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}可靠集定义及应用}{59}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}本章小结}{59}{section.4.3}
-\contentsline {chapter}{参考文献}{60}{section*.5}
+\contentsline {subsection}{\numberline {4.1.2}两个化简操作符}{52}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}程序化简操作}{56}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}可靠集}{59}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}可靠集定义及应用}{60}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}本章小结}{60}{section.4.3}
+\contentsline {chapter}{\numberline {}第五章\hspace {0.8em}实验与分析}{61}{chapter.5}
+\contentsline {section}{\numberline {5.1}实验简述}{61}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}lex与yacc}{61}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}实验设计}{61}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}实验执行}{61}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}实验数据分析}{61}{section.5.2}
+\contentsline {section}{\numberline {5.3}本章小结}{61}{section.5.3}
+\contentsline {chapter}{\numberline {}第六章\hspace {0.8em}总结与展望}{62}{chapter.6}
+\contentsline {section}{\numberline {6.1}研究总结}{62}{section.6.1}
+\contentsline {section}{\numberline {6.2}研究展望}{62}{section.6.2}
+\contentsline {section}{\numberline {6.3}本章小结}{62}{section.6.3}
+\contentsline {chapter}{参考文献}{63}{section*.5}
 \contentsfinish 

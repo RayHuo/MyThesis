@@ -16,13 +16,46 @@
 本文所指的程序化简问题即为如何使用程序结论来化简程序。化简后的程序在求解回答集上将比原程序要快得多，因为程序结论将有效地在程序化简过程中把一些已经可以确认真值的文字对程序求解的影响去掉。
 
 程序结论的原始定义是面向文字集的，而在只考虑正文字的情况下，文字集可以被视为原子集，下面所涉及的程序结论的使用都将其视为一个原子集。此外，程序结论并不需要在求解出逻辑程序的所有回答集后才能得到，第二章已经给出了相关计算方法\ref{conq_P}。这样也保证了本文使用程序结论的可行性。接下来给出一个计算程序结论的例子。
-% 插入算法
-%\RestyleAlgo{ruled}\LinesNumbered\input{algorithm/Consequence.tex}
 \begin{example} \label{conq_example}
 	给定逻辑程序$P$：
 	\begin{eqnarray}
-		d. \\
+		&& a~\leftarrow~c. \\
+		&& c~\leftarrow~e.	\\
+		&& e~\leftarrow~not~f.	\\
+		&& f~\leftarrow~not~e.	\\
+		&& \leftarrow~not~c.
 	\end{eqnarray}
+	
+	其对应的子句集$\Gamma$为：
+	\begin{eqnarray}
+		&& \neg c~|~a.	\\
+		&& \neg e~|~c.	\\
+		&& e~|~f.		\\
+		&& c.
+	\end{eqnarray}
+	
+	计算$W_P(L)$的极小不动点，故令$L = \emptyset$开始，有：
+	\begin{eqnarray}
+		&& UP(\{\}, P)~=~\{\} \cup UP(assign(\{\},P))~=~\{ a,c \}	\\
+		&& GUS(P, \{\})~=~Atoms(P) \backslash lfp(\varPhi_{\{\}}(\{\}))~=~\emptyset \\
+		&& W_P(\{\})~=~UP(\{\}, P) \cup \neg GUS(P, \{\})~=~\{a,c\} \cup \{\}~=~\{a,c\}
+	\end{eqnarray}
+	
+	继续计算，令$L~=~\{a,c\}$，有：
+	\begin{equation}
+		UP(\{a,c\}, P)~=~\{a,c\} \cup UP(assign(\{a,c\},P))~=~\{ a,c \}
+	\end{equation}
+	\begin{equation}
+		GUS(P, \{a,c\})~=~Atoms(P) \backslash lfp(\varPhi_{\{a,c\}}(\{\}))~=~\emptyset
+	\end{equation}
+	\begin{equation}
+		\begin{array}{rcl}
+			W_P(\{a,c\})~=~UP(\{a,c\}, P) \cup \neg GUS(P, \{a,c\}) \\
+			=~\{a,c\} \cup \{\}~=~\{a,c\}
+		\end{array}
+	\end{equation}
+	
+	故计算得到极小不动点为$\{a,c\}$，所以原程序$P$的一个程序结论为$\{a,c\}$。
 \end{example}
 
 
@@ -204,12 +237,18 @@ $tr_n(P,L)$和$tr_p(P,L)$从定义上看只是差异在两者对程序结论中文字类型的应用上。但
 \begin{example}\label{e_4_2}
 	继续使用例\ref{e_4_1}中的逻辑程序，令$U=\{a,f\}$，则根据定义可以计算得到$CS_U(P)=\{\{a,f\}\}$，并有：
 	\begin{equation}
-		ct_U(P) = \{ b~\leftarrow~c.~c~\leftarrow~d.~d~\leftarrow~not~e.~e~\leftarrow~not~d.~\leftarrow~a.~x_{\{a,f\}}~\leftarrow~b.~c~\leftarrow~x_{\{a,f\}},~a.~\leftarrow~not~x_{\{a,f\}}. \}
+		\begin{array}{rcl}
+			ct_U(P) = \{ b~\leftarrow~c.~c~\leftarrow~d.~d~\leftarrow~not~e.~e~\leftarrow~not~d.~\leftarrow~a.\\
+			x_{\{a,f\}}~\leftarrow~b.~c~\leftarrow~x_{\{a,f\}},~a.~\leftarrow~not~x_{\{a,f\}}. \}
+		\end{array}
 	\end{equation}
 	
 	则有：
 	\begin{equation}
-		tr_p(ct_U(P),U) = \{ b~\leftarrow~c.~c~\leftarrow~d.~d~\leftarrow~not~e.~e~\leftarrow~not~d.~x_{\{a,f\}}~\leftarrow~b.~c~\leftarrow~x_{\{a,f\}}.~\leftarrow~not~x_{\{a,f\}}. \}
+		\begin{array}{rcl}
+			tr_p(ct_U(P),U) = \{ b~\leftarrow~c.~c~\leftarrow~d.~d~\leftarrow~not~e.~e~\leftarrow~not~d.\\
+			x_{\{a,f\}}~\leftarrow~b.~c~\leftarrow~x_{\{a,f\}}.~\leftarrow~not~x_{\{a,f\}}. \}
+		\end{array}
 	\end{equation}
 	
 	通过ASP求解器可以计算得到：
