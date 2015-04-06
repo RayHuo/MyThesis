@@ -201,4 +201,15 @@ Ji J, Wan H, Xiao P.
   [J].
 \newblock 2015.
 
+\bibitem{levine2009flex}
+Levine J.
+\newblock Flex \& Bison: Text Processing Tools [M].
+\newblock " O'Reilly Media, Inc.", 2009.
+
+\bibitem{gebser2007gringo}
+Gebser M, Schaub T, Thiele S.
+\newblock Gringo: A new grounder for answer set programming [C].// Logic
+  Programming and Nonmonotonic Reasoning.
+\newblock Springer, 2007:  266--271.
+
 \end{thebibliography}
