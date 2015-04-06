@@ -254,26 +254,49 @@ Gefond和Lifschitz在1991年对析取逻辑程序（DLP）的回答集定义进行了补充。关于析取逻
 \end{definition}
 
 一个逻辑程序$P$的程序结论并不需要求解出所有回答集后才能得到。Chen和Ji在2013年给出了一个计算程序结论的算法\upcite{chen2013computing}。在引入程序结论的计算方法前，先介绍其需要用到的算子。
-\begin{definition}[单位子句（$Unit~Clause$）] \label{unit_clause} \upcite{zhang1996efficient}
-	
+\begin{definition}[子句（$Clause$）] \label{d_clause} \upcite{Chin1973symbolic}
+	在逻辑中，子句即若干个文字的析取。若一个子句中只包含一个文字，则成为单位子句（$Unit~Clause$）。
 \end{definition}
 
+把一个逻辑程序$P$中的规则$r$转换成子句就是通过蕴涵式等价为析取式的转换：$p \rightarrow q \equiv \neg p \lor q$。
 \begin{definition}[单位传播（$Unit~Propagation$）] \label{unit_propagation} \upcite{zhang1996efficient}
-	
+	给定一个子句集$C$，令其中的单位子句集合为$S$，单位传播即对$C \backslash S$中的子句执行以下两步：
+	\begin{itemize}
+		\item 删去包含$S$中的文字的子句；
+		\item 子句中出现的$\neg l$删去，其中$l \in S$。
+	\end{itemize}
 \end{definition}
+
+Chen和Ji等在2013年给出了一个递归型的计算单位传播的算法\upcite{chen2013computing}，即$Algorithm$\ref{UP}。
+\RestyleAlgo{ruled}\LinesNumbered\input{algorithm/UP.tex}
+
+其中的$Lit(P) = Atoms(P) \cup \{ \neg a~|~a \in Atoms(P)\}$\upcite{ji2010phd}，$unit\_clause(\Gamma)$为子句集$\Gamma$中的单元子句集合，$assign(A,\Gamma)=\{ c~|~for~same~c' \in \Gamma,~c' \cap A = \emptyset,~and~c = c' \backslash \overline{A} \}$\upcite{chen2013computing}。
 
 定义以下算子以计算$GUS(P,L)$：
 \begin{definition}\label{phi_l} \upcite{chen2013computing}
-	
+	给逻辑程序$P$，定文字集$L$和原子集$X$，定义算子$\varPhi_L(X)$：
+	\begin{equation}\label{Phi_L_X}
+		\begin{array}{rcl}
+			\varPhi_L(X)~=~\{ a~|~\exists r \in P,~a \in head(r)~and~a \notin \{ p~|~\neg p \in L \}, \\
+			body(r) \cap (\{ p~|~\neg p \in L \} \cup \{ \neg p~|~p \in L \}) = \emptyset, \\
+			body^+(r) \subseteq (X \backslash \{ p~|~\neg p \in L \}),~head(r) \cap L = \emptyset \}
+		\end{array}
+	\end{equation}
 \end{definition}
+
+则有逻辑程序$P$的最大无理集为\upcite{chen2013computing}：
+\begin{equation}\label{d_gus}
+	GUS(P,L) = Atoms(P) \backslash lfp(\varPhi_L(X) \cup \{ p~|~p \in L \})
+\end{equation}
+
+其中$lfp(\phi)$为计算极小不动点，故这里的$L$从空集开始计算，直到$lfp(\phi) = \phi$得到极小不动点。
 
 记逻辑程序$P$的程序结论为$conq(P)$，其计算公式为\upcite{chen2013computing}：
 \begin{equation} \label{conq_P}
 	conq(P)~=~lfp(UP(L,P) \cup \neg GUS(P,L)) 
 \end{equation}
 
-
-其中$UP(L,P)~=~L \cup UP(assign(L,P))$，$UP(assign(L,P))$为定义\ref{C_S_U_P}中的单元传播；$GUS(P,L)$为定义\ref{C_S_U_P}中的最大无理集（$Great~Unfounded~Set$）；$lfp$为计算极小不动点的算子。
+其中$UP(L,P)~=~L \cup UP(assign(L,P))$。
 
 
 

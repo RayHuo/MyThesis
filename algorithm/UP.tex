@@ -1,0 +1,26 @@
+\begin{algorithm}\label{UP}
+	\SetKwData{Dis}{dis}
+	\SetKwFunction{CalculateHammingDistance}{CalculateHammingDistance}
+	\SetKw{downto}{downto}\SetKw{return}{return}\SetKw{Break}{break}
+	\SetKwInOut{Input}{输入}\SetKwInOut{Output}{输出}
+	\caption{计算单位传播的算法$UP(P)$}
+	\Input{一个逻辑程序$P$}
+	\Output{文字集$lit$}
+	
+	$\Gamma~:=~P$对应的子句；	\\
+	\If {$\emptyset \in \Gamma$} {
+		\return $Lit(P)$；
+	}
+	$A~:=~unit\_clause(\Gamma)$；	\\
+	\If {$A$是不一致的} {
+		\return $Lit(P)$；	\\
+	}
+	\If {$A \neq \emptyset$} {
+		\return $A \cup UP(assign(A, \Gamma))$；	\\
+	}
+	\Else {
+		\return $\emptyset$；	
+	}
+
+	
+\end{algorithm}
