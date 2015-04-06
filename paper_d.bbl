@@ -218,4 +218,16 @@ Gebser M, Kaufmann B, Neumann A, et~al.
   international joint conference on Artifical intelligence.
 \newblock 2007:  386--392.
 
+\bibitem{niemela1999logic}
+Niemel{\"a} I.
+\newblock Logic programs with stable model semantics as a constraint
+  programming paradigm [J].
+\newblock Annals of Mathematics and Artificial Intelligence, 1999,
+  25(3-4):241--273.
+
+\bibitem{cormen2001introduction}
+Cormen T~H, Leiserson C~E, Rivest R~L, et~al.
+\newblock Introduction to algorithms [M].
+\newblock MIT press Cambridge, 2001.
+
 \end{thebibliography}

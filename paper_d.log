@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  6 APR 2015 23:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  7 APR 2015 01:41
 entering extended mode
 **paper_d.tex
 (E:\CtexPaper\hzwPaper\paper_d.tex
@@ -1699,8 +1699,14 @@ as been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.40 \begin{example}
-                    \upcite{gebser2007gringo} [62]) [63] [64]
-(E:\CtexPaper\hzwPaper\chap6.tex
+                    \upcite{gebser2007gringo} [62] [63]pdfTeX warning (ext4): d
+estination with the same identifier (name{definition.1}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.89 \begin{definition}
+                       [哈密顿回路问题\upcite{cormen2001introduction}] \labe...
+) [64] (E:\CtexPaper\hzwPaper\chap6.tex
 第六章
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1730,10 +1736,10 @@ Package rerunfilecheck Info: File `paper_d.out' has not changed.
 (rerunfilecheck)             Checksum: 5D2819BD487472C8E01DE79419DD4C81;1779.
  ) 
 Here is how much of TeX's memory you used:
- 16199 strings out of 495354
- 237620 string characters out of 3183074
- 354048 words of memory out of 3000000
- 18183 multiletter control sequences out of 15000+200000
+ 16231 strings out of 495354
+ 238302 string characters out of 3183074
+ 354138 words of memory out of 3000000
+ 18213 multiletter control sequences out of 15000+200000
  92139 words of font info for 299 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  44i,15n,58p,1379b,1421s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1819,9 +1825,9 @@ cm/cmsy10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
 Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/Pr
 ogram Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/Program Files/C
 TEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on paper_d.pdf (77 pages, 1171814 bytes).
+Output written on paper_d.pdf (77 pages, 1180776 bytes).
 PDF statistics:
- 1631 PDF objects out of 1728 (max. 8388607)
- 392 named destinations out of 1000 (max. 500000)
+ 1635 PDF objects out of 1728 (max. 8388607)
+ 394 named destinations out of 1000 (max. 500000)
  414 words of extra memory for PDF output out of 10000 (max. 10000000)
 
