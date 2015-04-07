@@ -1,6 +1,6 @@
 \chapter{实验与分析}
 
-本章涉及两个实验：程序分割实验和程序化简实验。程序分割实验中首先直接求解逻辑程序的回答集，然后使用新程序分割方法求解逻辑程序回答集，并比较两种方法的效率。程序化简实验中则对比原逻辑程序和进行程序化简后的逻辑程序的求解效率。本文使用词法分析器$flex$和语法分析器$bison$对ASP逻辑程序进行解析，并使用$gringo$对ASP逻辑程序进行例化，分别使用$clasp$和$claspD$求解正规逻辑程序和析取逻辑程序。
+本章涉及两个实验：程序分割实验和程序化简实验。程序分割实验中首先直接求解逻辑程序的回答集，然后使用新程序分割方法求解逻辑程序回答集，并比较两种方法的效率。程序化简实验中则对比原逻辑程序和进行程序化简后的逻辑程序的求解效率。本文使用词法分析器$flex$和语法分析器$bison$对ASP逻辑程序进行解析，通过C/C++编写程序分割和程序化简部分的功能并输出操作后的ASP逻辑程序，最后使用$gringo$对操作后的ASP逻辑程序进行例化，分别使用$clasp$和$claspD$求解正规逻辑程序和析取逻辑程序。
 
 \section{实验工具}
 
@@ -40,8 +40,8 @@
 \begin{example}\upcite{gebser2007gringo}
 	给定ASP逻辑程序文件$program.lp$：
 	\begin{eqnarray}
-		&& b(X)~\leftarrow~a(X,Y),~not~c(X),~X!=Y.	\\
-		&& c(X)~\leftarrow~b(X).
+		&& b(X)~:-~a(X,Y),~not~c(X),~X!=Y.	\\
+		&& c(X)~:-~b(X).
 	\end{eqnarray}
 	
 	及事实文件$programFact.fact$：
@@ -59,11 +59,13 @@
 		&& a(1,1).				\\
 		&& a(1,2).				\\
 		&& a(1,3).				\\
-		&& b(1)~\leftarrow~not~c(3).		\\
-		&& b(1)~\leftarrow~not~c(2).		\\
-		&& c(1)~\leftarrow~b(1).
+		&& b(1)~:-~not~c(3).		\\
+		&& b(1)~:-~not~c(2).		\\
+		&& c(1)~:-~b(1).
 	\end{eqnarray}
 \end{example}
+
+其中的“:-”即为$\leftarrow$。
 
 %%% clasp and claspD
 本文使用的求解工具为$clasp$和$claspD$，其中$clasp$用于求解正规逻辑程序，$claspD$用于求解析取逻辑程序。$clasp$是Gebser和Kaufmann等在2007年实现的ASP求解器。$claspD$则是$clasp$的扩展版，增加了求解析取逻辑程序的功能。Gebser和Kaufmann等基于限制处理（$Constraint~Processing, CSP$）和满足性检验（$Satisfiability~Checking, SAT$）提出了一个冲突驱动的算法以解决ASP逻辑程序求解问题，并基于该算法实现了$clasp$。$clasp$直接求解例化后的ASP逻辑程序\upcite{gebser2007conflict}。
@@ -90,11 +92,29 @@
 	从一个图中的某个节点出再回到自己，其经历的路径能遍历图中所有节点且每个节点仅被遍历一次，则称该路径为哈密顿回路。寻找出一个图中的所有哈密顿回路则称为哈密顿回路问题。
 \end{definition}
 
-事实文件的结构：珍珠图，两颗珍珠。来个图。
+Niemel{\"a}给出的查找哈密顿回路问题ASP逻辑程序如下\upcite{niemela1999logic}：
+\begin{eqnarray}
+&& hc(V1,V2) :- arc(V1,V2), not~otherroute(V1,V2).	\\
+&& otherroute(V1,V2) :- arc(V1,V2), arc(V1,V3), hc(V1,V3), V2 != V3.	\\
+&& otherroute(V1,V2) :- arc(V1,V2), arc(V3,V2), hc(V3,V2), V1 != V3.	\\
+&& reached(V2) :- arc(V1,V2), hc(V1,V2), reached(V1), not~initial(V1). \\
+&& reached(V2) :- arc(V1,V2), hc(V1,V2), initial(V1).	\\
+&& initial(0).	\\
+&& :- vertex(V), not~reached(V).
+\end{eqnarray}
 
-本实验选用哈密顿回路问题及Niemel{\"a}的编码作为实验例子的原因在于其事实文件中的图结构（即珍珠图）与例化后的ASP逻辑程序的正依赖图是同构的。这样的性质
+% 事实文件的结构：珍珠图，两颗珍珠。来个图。
+哈密顿回路问题的ASP逻辑程序所对应的事实文件为一个哈密顿图的点集和边集。即以下两个形式的集合：
+\begin{eqnarray}
+&& vertex(0).	\\
+&& arc(0, 1).
+\end{eqnarray}
 
-$U$的性质，使用整个右子图，保持$|Atoms(b_U(P)) \backslash U| = 3$。
+其中$vertex(0)$代表点，$arc(0,1)$代表边，$vertex(0)$到$vertex(1)$的边。本实验选用哈密顿回路问题及Niemel{\"a}的编码作为实验例子的原因在于其事实文件中的图结构与例化后的ASP逻辑程序的正依赖图是同构的。这样的性质有利于分析ASP逻辑程序的求解结果和程序分割的效果。
+
+具体地，本实验中使用到的事实文件对应的图结构是两个全连通子图$A$和$B$通过一条从$A$中某个节点指向$B$中某个节点的边，以及一条从$B$中某个节点指向$A$中某个节点的边连接而成的，这两条连接边涉及的4个节点都互不相同。本实验称该图为“珍珠图”（$Peal~Graph$），每个全连通子图称为一颗“珍珠”。
+
+% $U$的性质，使用整个右子图，保持$|Atoms(b_U(P)) \backslash U| = 3$。
 
 
 \subsection{程序分割实验数据分析}
