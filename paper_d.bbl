@@ -230,4 +230,11 @@ Cormen T~H, Leiserson C~E, Rivest R~L, et~al.
 \newblock Introduction to algorithms [M].
 \newblock MIT press Cambridge, 2001.
 
+\bibitem{wang2013forgetting}
+Wang Y, Wang K, Zhang M.
+\newblock Forgetting for answer set programs revisited [C].// Proceedings of
+  the Twenty-Third international joint conference on Artificial Intelligence.
+\newblock AAAI Press.
+\newblock 2013:  1162--1168.
+
 \end{thebibliography}
