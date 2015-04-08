@@ -8,33 +8,14 @@ A level-1 auxiliary file: chap4.aux
 A level-1 auxiliary file: chap5.aux
 A level-1 auxiliary file: chap6.aux
 The style file: paper2.bst
+A level-1 auxiliary file: public.aux
+A level-1 auxiliary file: ack.aux
 bibinfo is an unknown function---line 207 of file paper2.bst
 bibinfo.check is an unknown function---line 207 of file paper2.bst
 Database file #1: reference.bib
-I was expecting a `,' or a `}'---line 302 of file reference.bib
- :   
- :   type = { thesis}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 564 of file reference.bib
- : @incollection{clark1978negation
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 573 of file reference.bib
+Repeated entry---line 216 of file reference.bib
  : @inproceedings{gelfond1988stable
  :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 721 of file reference.bib
- : @inproceedings{gelfond1988stable
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 730 of file reference.bib
- : @article{gelfond1991classical
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 871 of file reference.bib
- : @inproceedings{gebser2007conflict
- :                                  ,
 I'm skipping whatever remains of this entry
 You can't pop an empty literal stack for entry ji2010phd
 while executing---line 866 of file paper2.bst
@@ -42,7 +23,10 @@ Warning--empty booktitle in colmeraner1973systeme
 `journal' is a missing field, not a string, for entry zhai2014asp
 while executing---line 866 of file paper2.bst
 Warning--empty journal in zhai2014asp
+`journal' is a missing field, not a string, for entry nuchelmans1973theories
+while executing---line 866 of file paper2.bst
+Warning--empty journal in nuchelmans1973theories
 `journal' is a missing field, not a string, for entry ji2015elementary
 while executing---line 866 of file paper2.bst
 Warning--empty journal in ji2015elementary
-(There were 11 error messages)
+(There were 7 error messages)

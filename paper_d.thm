@@ -1,7 +1,7 @@
 \contentsline {definition}{{\hei 定义}{2.{1}}{}}{7}{definition.1}
-\contentsline {definition}{{\hei 定义}{2.{2}}{文字}}{7}{definition.2}
-\contentsline {definition}{{\hei 定义}{2.{3}}{补（$Complement$）}}{7}{definition.3}
-\contentsline {definition}{{\hei 定义}{2.{4}}{范式}}{8}{definition.4}
+\contentsline {definition}{{\hei 定义}{2.{2}}{文字（$Literal$）\upcite {gelfond1990logic}}}{7}{definition.2}
+\contentsline {definition}{{\hei 定义}{2.{3}}{补（$Complement$）\upcite {gabbay1999negation}}}{7}{definition.3}
+\contentsline {definition}{{\hei 定义}{2.{4}}{范式（$Normal~Form$）}}{8}{definition.4}
 \contentsline {example}{{\hei 例}{2.{1}}{}}{9}{example.1}
 \contentsline {definition}{{\hei 定义}{2.{5}}{正规逻辑程序（$Normal Logic Program, NLP$）}}{10}{definition.5}
 \contentsline {definition}{{\hei 定义}{2.{6}}{析取逻辑程序（$Disjunctive Logic Program, DLP$）}}{10}{definition.6}

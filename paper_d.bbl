@@ -11,15 +11,30 @@ Van~Harmelen F, Lifschitz V, Porter B.
 \newblock 提高 ASP 效率的若干途径及服务机器人上应用 [D].
 \newblock 合肥: 中国科学技术大学, 2010.
 
+\bibitem{steele1990common}
+Steele G~L.
+\newblock Common LISP: the language [M].
+\newblock Digital press, 1990.
+
 \bibitem{horn1951sentences}
 Horn A.
 \newblock On sentences which are true of direct unions of algebras [J].
 \newblock The Journal of Symbolic Logic, 1951, 16(01):14--21.
 
+\bibitem{kowalski1979algorithm}
+Kowalski R.
+\newblock Algorithm= logic+ control [J].
+\newblock Communications of the ACM, 1979, 22(7):424--436.
+
 \bibitem{liu2005ASPfixpoint}
 刘富春.
 \newblock 关于逻辑程序不动点语义的讨论 [J].
 \newblock 广东工业大学学报, 2005, 22(2):120--124.
+
+\bibitem{lifschitz1996foundations}
+Lifschitz V.
+\newblock Foundations of logic programming [J].
+\newblock Principles of knowledge representation, 1996, 3:69--127.
 
 \bibitem{colmeraner1973systeme}
 Colmeraner A, Kanoui H, Pasero R, et~al.
@@ -32,6 +47,12 @@ Clark K~L, T{\"a}rnlund S~A.
 \newblock Logic programming [M].
 \newblock Academic Press New York, 1982.
 
+\bibitem{israel1980s}
+Israel D~J.
+\newblock What's wrong with non-monotonic logic? [C].// AAAI.
+\newblock vol~80.
+\newblock 1980:  99--101.
+
 \bibitem{mccarthy1987circumscription}
 McCarthy J.
 \newblock Circumscription—a form of nonmonotonic reasoning [J].
@@ -39,20 +60,34 @@ McCarthy J.
 
 \bibitem{clark1978negation}
 Clark K~L.
-\newblock Negation as failure [J].
-\newblock Logic and data bases, 1978, 1:293--322.
+\newblock Negation as failure [C].// Logic and data bases.
+\newblock Springer, 1978:  293--322.
 
 \bibitem{gelfond1988stable}
 Gelfond M, Lifschitz V.
-\newblock The stable model semantics for logic programming [C].// Proceedings
-  of the 5th International Conference on Logic programming.
-\newblock vol 161.
-\newblock 1988.
+\newblock The stable model semantics for logic programming. [C].// ICLP/SLP.
+\newblock vol~88.
+\newblock 1988:  1070--1080.
 
 \bibitem{zhai2014asp}
 翟仲毅, 程渤.
 \newblock 回答集程序设计: 理论, 方法, 应用与研究 [J].
 \newblock 2014.
+
+\bibitem{leone2006dlv}
+Leone N, Pfeifer G, Faber W, et~al.
+\newblock The DLV system for knowledge representation and reasoning [J].
+\newblock ACM Transactions on Computational Logic (TOCL), 2006, 7(3):499--562.
+
+\bibitem{niemela2000smodels}
+Niemela I, Simons P, Syrjanen T.
+\newblock Smodels: a system for answer set programming [J].
+\newblock arXiv preprint cs/0003033, 2000.
+
+\bibitem{lin2004assat}
+Lin F, Zhao Y.
+\newblock ASSAT: Computing answer sets of a logic program by SAT solvers [J].
+\newblock Artificial Intelligence, 2004, 157(1):115--137.
 
 \bibitem{nogueira2001prolog}
 Nogueira M, Balduccini M, Gelfond M, et~al.
@@ -65,21 +100,10 @@ Eiter T, Faber W, Leone N, et~al.
 \newblock Answer set planning under action costs [J].
 \newblock Journal of Artificial Intelligence Research, 2003,  25--71.
 
-\bibitem{soininen2001representing}
-Soininen T, Niemel{\"a} I, Tiihonen J, et~al.
-\newblock Representing Configuration Knowledge With Weight Constraint Rules.
-  [J].
-\newblock Answer Set Programming, 2001, 1.
-
 \bibitem{xin2010answer}
 Xin L, Fan L, Xingbin B, et~al.
 \newblock Answer Set Programming Representation for ER Model [J].
 \newblock Journal of Computer Research and Development, 2010, 1:025.
-
-\bibitem{lai2013aspbank}
-赖河蒗, 陈红英, 赖博先, et~al.
-\newblock 基于回答集编程的 Banks 选举求解方法 [J].
-\newblock 计算机工程, 2013, 39(8):266--269.
 
 \bibitem{lifschitz1994splitting}
 Lifschitz V, Turner H.
@@ -121,6 +145,21 @@ Luger G~F.
 \newblock 人工智能: 复杂问题求解的结构和策略: 英文版{\textperiodcentered} [M].
 \newblock 机械工业出版社, 2003.
 
+\bibitem{gelfond1990logic}
+Gelfond M.
+\newblock Logic programming [J].
+\newblock Wiley Encyclopedia of Electrical and Electronics Engineering, 1990.
+
+\bibitem{gabbay1999negation}
+Gabbay D~M, Wansing H.
+\newblock What is negation? [M].
+\newblock Springer, 1999.
+
+\bibitem{nuchelmans1973theories}
+Nuchelmans G.
+\newblock Theories of the Proposition [J].
+\newblock 1973.
+
 \bibitem{van1991well}
 Van~Gelder A, Ross K~A, Schlipf J~S.
 \newblock The well-founded semantics for general logic programs [J].
@@ -147,7 +186,7 @@ Bonatti P, Calimeri F, Leone N, et~al.
 \bibitem{gelfond1991classical}
 Gelfond M, Lifschitz V.
 \newblock Classical negation in logic programs and disjunctive databases [J].
-\newblock New generation computing, 1991, 9(3):365--385.
+\newblock New generation computing, 1991, 9(3-4):365--385.
 
 \bibitem{chen2013computing}
 Chen X, Ji J, Lin F.
@@ -166,11 +205,6 @@ Zhang H, Stickel M~E.
   (AI-MATH’96), Fort Lauderdale (Florida USA.
 \newblock Citeseer.
 \newblock 1996.
-
-\bibitem{lin2004assat}
-Lin F, Zhao Y.
-\newblock ASSAT: Computing answer sets of a logic program by SAT solvers [J].
-\newblock Artificial Intelligence, 2004, 157(1):115--137.
 
 \bibitem{lee2003loop}
 Lee J, Lifschitz V.
@@ -214,8 +248,8 @@ Gebser M, Schaub T, Thiele S.
 
 \bibitem{gebser2007conflict}
 Gebser M, Kaufmann B, Neumann A, et~al.
-\newblock Conflict-driven answer set solving [C].// Proceedings of the 20th
-  international joint conference on Artifical intelligence.
+\newblock Conflict-Driven Answer Set Solving. [C].// IJCAI.
+\newblock vol~7.
 \newblock 2007:  386--392.
 
 \bibitem{niemela1999logic}

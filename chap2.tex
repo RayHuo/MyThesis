@@ -1,12 +1,11 @@
 \chapter{预备知识}
 
-本章给出了本文将涉及的基础知识，先从命题逻辑进行介绍，引入失败即否定，并定义ASP中的普通规则，及规则中各个部分涉及的命名符号。然后给出“满足”的概念。完成基础介绍后，进入回答集语义，即如何定义ASP程序的回答集。然后列出一些ASP程序的主要性质，主要是环与环公式，及本文的核心内容分割集与程序分割。
+本章给出了本文将涉及的基础知识，先从命题逻辑进行介绍，引入失败即否定，并定义ASP逻辑程序中的规则，及规则中各个部分涉及的命名符号。然后给出“满足”的概念。完成基础介绍后，进入回答集编程的介绍，包括ASP逻辑程序的回答集语义，并列出一些ASP程序的主要性质，主要是环与环公式，及本文的核心内容分割集与程序分割。
 
 \section{命题逻辑}
-命题（$\mathbf{proposition}$）是非真即假的陈述句。我们一般使用字母代表一个命题。命题逻辑由命题公式和一套证明规则所组成，其中命题公式和证明规则就是命题逻辑的运算本体和运算规则\cite{limo1999lpSAT}。
-
+命题（$\mathbf{proposition}$）是非真即假的陈述句。我们一般使用字母代表一个命题。命题逻辑由命题公式和一套证明规则所组成，其中命题公式和证明规则就是命题逻辑的运算本体和运算规则\upcite{limo1999lpSAT}。
 \begin{definition}\label{proposition_logic}
-命题逻辑的符号包括\cite{luger2003AI}：
+命题逻辑的符号包括\upcite{luger2003AI}：
 \begin{itemize}
 	\item 命题符号：$A$，$B$，$C$，...，统称为$\aleph$
 	\item 真值符号：$true$，$false$；
@@ -15,23 +14,20 @@
 \end{definition}
 
 在ASP逻辑程序中，我们也把命题符号称为一个原子。
-
-\begin{definition}[文字]\label{literal}
+\begin{definition}[文字（$Literal$）\upcite{gelfond1990logic}] \label{literal}
 一个命题符号或者一个命题符号的否定。其中一个命题符号为正文字，一个命题符号的否定为负文字。
 \end{definition}
 
-接下来，本文给出一个文字集的补（$Complement$）的定义，文字集的补在后续的化简操作符中将被使用。
-\begin{definition}[补（$Complement$）]\label{d_complement}
+在逻辑中，否定，也称为逻辑补\upcite{gabbay1999negation}。接下来，本文给出一个文字及文字集的补（$Complement$）的定义，文字集的补在后续的化简操作符中将被使用。
+\begin{definition}[补（$Complement$）\upcite{gabbay1999negation}] \label{d_complement}
 	对于一个文字$l$，其补记为$\overline{l}$。其中，若$l$为$a$形式的正文字，则$\overline{l}$为$\neg a$，若$l$为$\neg a$形式的负文字，则$\overline{l}$为$a$。对于一个文字集$L$，其补定义为：$\overline{L} = \{ \overline{l}~|~l \in L \}$。
 \end{definition}
 
+命题的真假性被称为其真值（$Truth~Value$），真值只有真（$true$）和假（$false$）两个。每个命题只能为真或者为假，不能既是真又是假，或者既不是真又不是假\upcite{nuchelmans1973theories}。通常地，在求解逻辑程序中，我们所得到的结果就是指逻辑程序中能被确定真值为真的命题集合。
 
-命题的真假性被称为其真值（truth value），真值只有真（true）和假（false）两个。每个命题只能为真或者为假，不能既是真又是假，或者既不是真又不是假。通常地，在求解逻辑程序中，我们所得到的结果就是指能够被确定真值为真的命题集合。
-
-在定义\ref{proposition_logic}中的连接词的作用是把若干个文字连接成命题公式。每个连接词都有自己的真值表，可以概括如下\cite{luger2003AI}：
-
+在定义\ref{proposition_logic}中的连接词的作用是把若干个文字连接成命题公式。每个连接词都有自己的真值表，可以概括如下\upcite{luger2003AI}：
 \begin{enumerate}
-	\item 非（$\neg$），真假性与其操作的命题相反，当$A$为真时，$\neg$$A$为假，当$A$为假时，$\neg$$A$为真；
+	\item 非（$\neg$），真假性与其操作的命题相反，当$A$为真时，$\neg A$为假，当$A$为假时，$\neg A$为真；
 	\item 合取（$\land$），$A \land B$为真，当且仅当命题$A$和$B$同时为真时；
 	\item 析取（$\lor$），$A \lor B$为真，当且仅当命题$A$和$B$中至少有一个为真；
 	\item 蕴涵（$\rightarrow$），$A \rightarrow B$为假，当且仅当命题$A$为真且$B$为假。
@@ -39,13 +35,16 @@
 
 命题公式由一个文字或者多个文字通过连接词组成。命题公式是命题逻辑的推理基础。在有需要的情况下，命题公式可以通过对合律、德?摩根定律、结合律和分配律等运算性质得到逻辑等价的范式，本文涉及的范式有合取范式和析取范式。
 
-\begin{definition}[范式]
-合取范式（$Conjunctive Normal Form, CNF$）：一系列析取式的合取形式；析取范式（$Disjunctive Normal Form, DNF$）：一系列合取式的析取形式；其中析取式（合取式）为若干文字只通过连接词$\lor$（）$\land$)进行连接。
+\begin{definition}[范式（$Normal~Form$）] \label{normal_form}
+合取范式（$Conjunctive~Normal~Form,~CNF$）：一系列析取式的合取形式；析取范式（$Disjunctive~Normal~Form,~DNF$）：一系列合取式的析取形式；其中析取式（合取式）为若干文字只通过连接词$\lor$（$\land$）进行连接。
 \end{definition}
 
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Continue From Here
 \section{逻辑程序}
-逻辑程序是知识表示的基础。早期研究人工智能的学者都详细可以找到一种以符号刻画知识和推理过程的方法以达到模拟人类大脑推理的过程\cite{ji2010phd}。而事实上，逻辑程序便是这样的一种手段。逻辑程序的形式有很多。而在ASP逻辑程序中，主要用及的便是引入失败即否定和经典否定的命题公式。
+逻辑程序是知识表示的基础。早期研究人工智能的学者都相信可以找到一种以符号刻画知识和推理过程的方法以达到模拟人类大脑推理的过程\upcite{ji2010phd}。而事实上，逻辑程序便是这样的一种手段。逻辑程序的形式有很多。而在ASP逻辑程序中，主要用及的便是引入失败即否定和经典否定的命题公式。
 
 
 ASP程序一般分为两部分：事实集（Facts）和ASP逻辑程序。要求解一个ASP程序的回答集，需要结合使用事实集和ASP逻辑程序。

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  8 APR 2015 15:53
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  9 APR 2015 01:39
 entering extended mode
 **paper_d.tex
 (E:\CtexPaper\hzwPaper\paper_d.tex
@@ -915,19 +915,15 @@ l.10
 
 
 
-]<<c1988.cmap>><<c1969.cmap>>
-Overfull \hbox (69.00977pt too wide) in paragraph at lines 18--19
-\C19/song/bx/n/12/63 –\OT1/ppl/m/n/12 claspD\C19/song/m/n/12/25 !\OT1/ppl/m/n/1
-2 clingo\C19/song/bx/n/12/45 9 \C19/song/m/n/12/52 Ÿ \C19/song/bx/n/12/48 * \C1
-9/song/bx/n/12/63 –\OT1/ppl/m/n/12 iclingo\C19/song/bx/n/12/26 ∂ \C19/song/bx/n
-/12/49 , \C19/song/bx/n/12/61 ò \C19/song/bx/n/12/48 a \C19/song/bx/n/12/55 ¥ \
-C19/song/bx/n/12/44 ƒ \C19/song/bx/n/12/62 u\OT1/ppl/m/n/12 SAT\C19/song/m/n/12
-/53 ¶ \C19/song/bx/n/12/46 ) \C19/song/bx/n/12/41 ê { \C19/song/bx/n/12/40  \C
-19/song/bx/n/12/26 µ\OT1/ppl/m/n/12 ASSAT\C19/song/bx/n/12/43 ⁄\OT1/ppl/m/n/12 
-cmodels\C19/song/m/n/12/25 "\OT1/ppl/m/n/12 ASP\C19/song/bx/n/12/49 +
- []
+]
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 20.
+ ("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\omsppl.fd"
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+LaTeX Font Info:    Try loading font information for C19+fs on input line 21.
 
-LaTeX Font Info:    Try loading font information for C19+fs on input line 19.
 ("D:\Program Files\CTEX\CTeX\tex\latex\CJK\GB\c19fs.fd"
 File: c19fs.fd 2009/09/23 4.8.2
 )
@@ -941,18 +937,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 
-      [2]pdfTeX warning (ext4): destination with the same identifier (name{page
-.3}) has been already used, duplicate ignored
+l.21 	\item S
+             AT«ÛΩ‚∑Ω∑®£∫ASSAT\upcite{lin2004assat}∫ÕCmodels°£ [2]<<c1988.cmap>
+>pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 	\item ¥
+l.34 	\item ¥
              ÀÕ‚£¨±æŒƒÃ·≥ˆ¡À“ª÷÷ø…“‘ª˘”⁄∑÷∏ÓºØŒ™»Œ“‚‘≠◊”ºØµƒ–¬≥Ã–Ú∑÷∏Ó∑Ω∑®°£...
 [3]pdfTeX warning (ext4): destination with the same identifier (name{page.4}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.41 
+l.45 
       [4]) [5] (E:\CtexPaper\hzwPaper\chap2.tex [6
 
 
@@ -964,15 +961,26 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\CJKnumber' on input line 1.
 
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 8.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 11.
-("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\omsppl.fd"
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
- [7] [8]
-Overfull \hbox (4.6675pt too wide) in paragraph at lines 64--65
+nput line 7.
+
+Overfull \hbox (6.64455pt too wide) in paragraph at lines 23--24
+[]\C19/kai/m/n/12/40 È \C19/kai/m/n/12/62 u \C19/kai/m/n/12/61 ò \C19/kai/m/n/1
+2/42 á \C19/kai/m/n/12/58 © \C19/kai/m/n/12/65 i$\OML/cmm/m/it/12 l$\C19/kai/m/
+n/12/26 ß \C19/kai/m/n/12/52 Ÿ \C19/kai/m/n/12/37 ÷ \C19/kai/m/n/12/45 P \C19/k
+ai/m/n/12/58 è$[]$\C19/kai/m/n/12/25 " \C19/kai/m/n/12/52 Ÿ \C19/kai/m/n/12/64 
+• \C19/kai/m/n/12/26 ß \C19/kai/m/n/12/54 e$\OML/cmm/m/it/12 l$\C19/kai/m/n/12/
+58 è$\OML/cmm/m/it/12 a$\C19/kai/m/n/12/60 /
+ []
+
+[7]
+Overfull \hbox (43.51668pt too wide) in paragraph at lines 39--40
+[]\C19/kai/m/n/12/43 ‹ \C19/kai/m/n/12/54  \C19/kai/m/n/12/41 â \C19/kai/m/n/1
+2/55 ™ \C19/kai/m/n/12/26 £$\OML/cmm/m/it/12 Conjunctive Normal Form;  CNF$\C19
+/kai/m/n/12/26 § µ
+ []
+
+[8]
+Overfull \hbox (4.6675pt too wide) in paragraph at lines 61--62
 []\C19/song/m/n/12/52 Ÿ \C19/song/bx/n/12/64 •$\OML/cmm/m/it/12 n \OMS/cmsy/m/n
 /12  \OML/cmm/m/it/12 m \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 k \OMS/cmsy/m/n/12
   \OT1/cmr/m/n/12 1$\C19/song/bx/n/12/26 ß$\OML/cmm/m/it/12 a[]$\C19/song/bx/n
@@ -985,9 +993,9 @@ m/n/12 m\C19/song/bx/n/12/26 ß\OT1/ppl/m/n/12 n\C19/song/bx/n/12/54 
  []
 
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 74.
+t line 71.
 [9]
-Overfull \hbox (44.09862pt too wide) in paragraph at lines 103--104
+Overfull \hbox (44.09862pt too wide) in paragraph at lines 100--101
 \C19/song/bx/n/12/63 K$\OML/cmm/m/it/12 r$\C19/song/bx/n/12/40  \C19/song/m/n/
 12/57 N \C19/song/bx/n/12/37 ‹ \C19/song/m/n/12/25 " \C19/song/bx/n/12/46 ‰ \C1
 9/song/m/n/12/57 N \C19/song/bx/n/12/62 k$\OML/cmm/m/it/12 head\OT1/cmr/m/n/12 
@@ -1000,7 +1008,7 @@ m/n/12/25 "
  []
 
 
-Overfull \hbox (19.98032pt too wide) in paragraph at lines 103--104
+Overfull \hbox (19.98032pt too wide) in paragraph at lines 100--101
 \C19/song/bx/n/12/54  \C19/song/m/n/12/25 " \C19/song/bx/n/12/42 ç \C19/song/b
 x/n/12/46 ? \C19/song/bx/n/12/61 ò \C19/song/bx/n/12/37 ⁄ \C19/song/bx/n/12/40 
  \C19/song/bx/n/12/44 y \C19/song/bx/n/12/41 © \C19/song/bx/n/12/62 k$\OML/cmm
@@ -1013,10 +1021,10 @@ g/bx/n/12/58 è$\OML/cmm/m/it/12 a[];  ::: ;  a[]$\C19/song/bx/n/12/26 ß
  []
 
 
-LaTeX Warning: File ot149.cmap not found on input line 121.
+LaTeX Warning: File ot149.cmap not found on input line 118.
 
 [10]
-Overfull \hbox (11.11452pt too wide) in paragraph at lines 131--132
+Overfull \hbox (11.11452pt too wide) in paragraph at lines 128--129
 []\C19/kai/m/n/12/40 È \C19/kai/m/n/12/62 u\OT1/ppl/m/n/12 ([][]2.6[][])\C19/ka
 i/m/n/12/26 ß$\OML/cmm/m/it/12 head\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/
 m/n/12 ) = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 s; q\OMS/cmsy/m/n/12 g$\C19/kai/m
@@ -1030,9 +1038,9 @@ n/12 ) =$
 
 [11]
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 159.
+input line 156.
 
-Overfull \hbox (12.90349pt too wide) in paragraph at lines 162--164
+Overfull \hbox (12.90349pt too wide) in paragraph at lines 159--161
 []\OT1/ppl/m/n/12 Gelder\C19/song/bx/n/12/43 ⁄\OT1/ppl/m/n/12 Ross\C19/song/bx/
 n/12/40  \C19/song/bx/n/12/63 3\OT1/ppl/m/n/12 1991\C19/song/m/n/12/51 c \C19/
 song/m/n/12/57 J \C19/song/bx/n/12/38 — \C19/song/bx/n/12/49 
@@ -1043,7 +1051,7 @@ msy/m/n/12   \OML/cmm/m/it/12 founded Model$\C19/song/bx/n/12/26 §
  []
 
 
-Overfull \hbox (33.46754pt too wide) in paragraph at lines 181--182
+Overfull \hbox (33.46754pt too wide) in paragraph at lines 178--179
 []\C19/kai/m/n/12/45 P$\OML/cmm/m/it/12 WFM\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\
 OT1/cmr/m/n/12 )$\C19/kai/m/n/12/58 è$\OML/cmm/m/it/12 W[]\OT1/cmr/m/n/12 (\OML
 /cmm/m/it/12 L\OT1/cmr/m/n/12 )$\C19/kai/m/n/12/45 4 \C19/kai/m/n/12/60  \C19/
@@ -1057,16 +1065,16 @@ m/m/it/12 WFM\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )$\C19/kai/m/n/
 
 [12]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 190.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 187.
  [13]
 
-LaTeX Warning: File ot156.cmap not found on input line 227.
+LaTeX Warning: File ot156.cmap not found on input line 224.
 
 [14]
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 238.
+t line 235.
 
-Overfull \hbox (10.84804pt too wide) in paragraph at lines 238--239
+Overfull \hbox (10.84804pt too wide) in paragraph at lines 235--236
 []\C19/kai/m/n/12/40 È \C19/kai/m/n/12/62 u \C19/kai/m/n/12/61 ò \C19/kai/m/n/1
 2/42 á \C19/kai/m/n/12/37 ÿ \C19/kai/m/n/12/43 π \C19/kai/m/n/12/63  \C19/kai/
 m/n/12/55 Â \C19/kai/m/n/12/40  \C19/kai/m/n/12/64  \C19/kai/m/n/12/43 5 \C19
@@ -1076,7 +1084,7 @@ m/n/12/55 Â \C19/kai/m/n/12/40  \C19/kai/m/n/12/64  \C19/kai/m/n/12/43 5 \C19
  []
 
 [15]
-Overfull \hbox (50.12569pt too wide) in paragraph at lines 256--257
+Overfull \hbox (50.12569pt too wide) in paragraph at lines 253--254
 []\C19/song/bx/n/12/61 ò \C19/song/bx/n/12/42 á \C19/song/bx/n/12/49 ‹ \C19/son
 g/bx/n/12/45 6 \C19/song/bx/n/12/38 ß \C19/song/bx/n/12/60 S$\OML/cmm/m/it/12 P
 $\C19/song/bx/n/12/40  \C19/song/bx/n/12/38 ß \C19/song/bx/n/12/60 S \C19/song
@@ -1093,7 +1101,7 @@ song/bx/n/12/38 — \C19/song/bx/n/12/56 § \C19/song/bx/n/12/62 k \C19/song/bx/n/
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 10.
 )
-Overfull \hbox (31.94005pt too wide) in paragraph at lines 270--272
+Overfull \hbox (31.94005pt too wide) in paragraph at lines 267--269
 []\OT1/ppl/m/n/12 Chen\C19/song/bx/n/12/43 ⁄\OT1/ppl/m/n/12 Ji\C19/song/bx/n/12
 /40  \C19/song/bx/n/12/63 3\OT1/ppl/m/n/12 2013\C19/song/m/n/12/51 c \C19/song
 /bx/n/12/42 â \C19/song/bx/n/12/38 — \C19/song/bx/n/12/49 
@@ -1107,22 +1115,22 @@ ong/bx/n/12/39 D \C19/song/bx/n/12/37 ¬ \C19/song/bx/n/12/40  \C19/song/bx/n/1
 
 [16]
 
-LaTeX Warning: File ot163.cmap not found on input line 311.
+LaTeX Warning: File ot163.cmap not found on input line 308.
 
 [17]
-Overfull \hbox (12.69928pt too wide) in paragraph at lines 313--314
+Overfull \hbox (12.69928pt too wide) in paragraph at lines 310--311
 []\C19/kai/m/n/12/61 Æ \C19/kai/m/n/12/64  \C19/kai/m/n/12/61 ò \C19/kai/m/n/1
 2/42 á \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/
 m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/n/12/26 ß
  []
 
-<img/dpg.png, id=635, 247.67531pt x 42.1575pt>
+<img/dpg.png, id=651, 247.67531pt x 42.1575pt>
 File: img/dpg.png Graphic file (type png)
  <use img/dpg.png>
-Package pdftex.def Info: img/dpg.png used on input line 333.
+Package pdftex.def Info: img/dpg.png used on input line 330.
 (pdftex.def)             Requested size: 300.0pt x 51.0673pt.
  [18 <E:/CtexPaper/hzwPaper/img/dpg.png>]
-Overfull \hbox (46.05913pt too wide) in paragraph at lines 358--359
+Overfull \hbox (46.05913pt too wide) in paragraph at lines 355--356
 []\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/1
 2/45 6 \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/
 n/12/26 ß \C19/kai/m/n/12/40 È \C19/kai/m/n/12/62 u \C19/kai/m/n/12/52 Ÿ \C19/k
@@ -1134,7 +1142,7 @@ P$\C19/kai/m/n/12/64 •
  []
 
 [19]
-Overfull \hbox (35.53894pt too wide) in paragraph at lines 384--385
+Overfull \hbox (35.53894pt too wide) in paragraph at lines 381--382
 []\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/61 ò \C19/kai/m/n/1
 2/42 á \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/
 m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/n/12/26 ß \C19/kai/m/n/12/52 Ÿ \C19/k
@@ -1143,7 +1151,7 @@ etion$\C19/kai/m/n/12/26 § ß
  []
 
 [20]
-Overfull \hbox (15.67168pt too wide) in paragraph at lines 418--419
+Overfull \hbox (15.67168pt too wide) in paragraph at lines 415--416
 []\OT1/ppl/m/n/12 Lin\C19/song/bx/n/12/43 ⁄\OT1/ppl/m/n/12 Zhao\C19/song/bx/n/1
 2/56 § \C19/song/m/n/12/57 J \C19/song/bx/n/12/38 — \C19/song/bx/n/12/40  \C19
 /song/bx/n/12/44 Ç \C19/song/bx/n/12/45 9 \C19/song/bx/n/12/44 Ç \C19/song/bx/n
@@ -1697,7 +1705,7 @@ n.1}) has been already used, duplicate ignored
                    \relax 
 l.97 \begin{definition}
                        [π˛√‹∂Ÿªÿ¬∑Œ Ã‚\upcite{cormen2001introduction}] \labe...
-[68]<<c1984.cmap>> <img/pealGraph.png, id=1124, 407.27156pt x 168.63pt>
+[68]<<c1984.cmap>> <img/pealGraph.png, id=1140, 407.27156pt x 168.63pt>
 File: img/pealGraph.png Graphic file (type png)
 
 <use img/pealGraph.png>
@@ -1735,11 +1743,12 @@ Underfull \vbox (badness 2165) has occurred while \output is active []
 
 
 
-] [80] [81]) [82]
-(E:\CtexPaper\hzwPaper\public.tex) [83
+] [80] [81] [82]) [83]
+(E:\CtexPaper\hzwPaper\public.tex [84
 
 
-] (E:\CtexPaper\hzwPaper\ack.tex [84
+]) [85] (E:\CtexPaper\hzwPaper\ack.tex
+[86
 
 
 
@@ -1749,7 +1758,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 12.0pt
 (hyperref)                replaced by space on input line 26.
 
-) [85] [86
+) [87] [88
 
 ]
 \tf@thm=\write5
@@ -1771,13 +1780,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16539 strings out of 495354
- 243401 string characters out of 3183074
- 357351 words of memory out of 3000000
- 18396 multiletter control sequences out of 15000+200000
- 100913 words of font info for 331 fonts, out of 3000000 for 9000
+ 16550 strings out of 495354
+ 243734 string characters out of 3183074
+ 356295 words of memory out of 3000000
+ 18401 multiletter control sequences out of 15000+200000
+ 100621 words of font info for 330 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,15n,58p,1381b,1441s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,15n,58p,1590b,1485s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/
 simfang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windo
 ws/Fonts/simfang.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.
@@ -1799,20 +1808,20 @@ chinese/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C
 i.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fon
 ts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simfang.ttf><C:/Wi
 ndows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simkai.
-ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts
-/simkai.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windo
+ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts
+/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windo
 ws/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><
 C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simk
 ai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fo
-nts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D
-:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Windows/Fonts/s
-imfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Wind
-ows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.t
-tf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Font
-s/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/W
-indows/Fonts/simfang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.
-ttf><C:/Windows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chi
-nese/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><D:/P
+nts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C
+:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/sim
+fang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Window
+s/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf
+><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/
+simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Wind
+ows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/f
+onts/truetype/chinese/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts
+/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/P
 rogram Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX
 /CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truet
 ype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsu
@@ -1823,18 +1832,18 @@ inese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf>
 <D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files
 /CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/
 truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/
-simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Pr
-ogram Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Windows/Fonts/simhe
-i.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fon
-ts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Win
-dows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf
-><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/si
-mkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/
-Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/
-Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.
-ttf>{D:/Program Files/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Windows/F
-onts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/W
-indows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.t
+simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Wi
+ndows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.tt
+f><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/s
+imhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows
+/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:
+/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai
+.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Font
+s/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Wind
+ows/Fonts/simkai.ttf>{D:/Program Files/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.
+enc}<C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts
+/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windo
+ws/Fonts/simkai.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.t
 tf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Fi
 les/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fon
 ts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chine
@@ -1847,23 +1856,22 @@ am Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTe
 X/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/
 chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.tt
 f><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Fil
-es/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Files/CTEX/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmex10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi12.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmmi6.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Pro
-gram Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program File
-s/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/CTEX/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program Files/CTEX/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/CTEX/MiKTeX/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1
-/urw/palatino/uplb8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino
-/uplr8a.pfb>
-Output written on paper_d.pdf (98 pages, 1253636 bytes).
+es/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Files/CTEX
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr6.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb
+><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Pr
+ogram Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program Fi
+les/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/CTEX
+/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/Program Files/CTEX/M
+iKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/t
+ype1/urw/palatino/uplr8a.pfb>
+Output written on paper_d.pdf (100 pages, 1254581 bytes).
 PDF statistics:
- 1781 PDF objects out of 2073 (max. 8388607)
- 439 named destinations out of 1000 (max. 500000)
- 423 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1803 PDF objects out of 2073 (max. 8388607)
+ 448 named destinations out of 1000 (max. 500000)
+ 419 words of extra memory for PDF output out of 10000 (max. 10000000)
 
