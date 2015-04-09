@@ -160,6 +160,11 @@ Nuchelmans G.
 \newblock Theories of the Proposition [J].
 \newblock 1973.
 
+\bibitem{apt1994logic}
+Apt K~R, Bol R~N.
+\newblock Logic programming and negation: A survey [J].
+\newblock The Journal of Logic Programming, 1994, 19:9--71.
+
 \bibitem{van1991well}
 Van~Gelder A, Ross K~A, Schlipf J~S.
 \newblock The well-founded semantics for general logic programs [J].
