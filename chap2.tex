@@ -15,10 +15,10 @@
 
 在ASP逻辑程序中，我们也把命题符号称为一个原子。
 \begin{definition}[文字（$Literal$）\upcite{gelfond1990logic}] \label{literal}
-一个命题符号或者一个命题符号的否定。其中一个命题符号为正文字，一个命题符号的否定为负文字。
+文字就是一个命题符号本身或者一个命题符号的否定。其中一个命题符号本身为正文字，一个命题符号的否定为负文字。
 \end{definition}
 
-在逻辑中，否定，也称为逻辑补\upcite{gabbay1999negation}。接下来，本文给出一个文字及文字集的补（$Complement$）的定义，文字集的补在后续的化简操作符中将被使用。
+在逻辑中，否定也称为逻辑补\upcite{gabbay1999negation}。接下来，本文给出一个文字及文字集的补（$Complement$）的定义，文字集的补在后续的化简操作符中将被使用。
 \begin{definition}[补（$Complement$）\upcite{gabbay1999negation}] \label{d_complement}
 	对于一个文字$l$，其补记为$\overline{l}$。其中，若$l$为$a$形式的正文字，则$\overline{l}$为$\neg a$，若$l$为$\neg a$形式的负文字，则$\overline{l}$为$a$。对于一个文字集$L$，其补定义为：$\overline{L} = \{ \overline{l}~|~l \in L \}$。
 \end{definition}
@@ -44,14 +44,14 @@
 
 \section{逻辑程序}
 
-早期人工智能的学者都相信可以找到一种以符号演算系统来描述知识和推理过程的方法以达到模拟人类大脑认知和推理的过程\upcite{steele1990common}。而事实上，逻辑程序便是这样的一种符号演算系统。逻辑程序有多种表达形式。而ASP逻辑程序的形式主要便是在经典命题公式中引入失败即否定。
+早期人工智能的学者都相信可以找到一种以符号演算系统来描述知识和推理过程，以达到模拟人类大脑认知和推理的过程\upcite{steele1990common}。而事实上，逻辑程序便是这样的一种符号演算系统。逻辑程序有多种表达形式。ASP逻辑程序的形式主要便是在经典命题公式中引入失败即否定。
 
 一个ASP逻辑程序一般分为两部分：事实集（$Facts$）和例化（$Grounding$）前的ASP逻辑程序。要求解一个ASP逻辑程序的回答集，需要结合使用事实集和例化前的ASP逻辑程序。
 
-ASP程序的求解过程是：
+ASP程序的求解过程分为以下两步\upcite{lifschitz2008answer}：
 \begin{enumerate}
-	\item 使用例化工具（常用的有$gringo$和$lparse$）通过事实集例化ASP逻辑程序；
-	\item 对例化后的逻辑程序，调用求解器（常用的有$clasp$，$iclingo$，$ASSAT$和$DLV$）进行求解。
+	\item 先使用例化工具（常用的有$gringo$和$lparse$）通过事实集例化ASP逻辑程序；
+	\item 对例化后的ASP逻辑程序，调用求解器（常用的有$clasp$，$smodels$，$ASSAT$和$DLV$）进行求解。
 \end{enumerate}
 
 从实际效果来看，例化后的ASP逻辑程序就是不含变量的命题公式集合。本文中只考虑完全例化后的长度有限的ASP逻辑程序。本文所探讨的ASP逻辑程序由有限个规则（$rule$）所组成，其中规则的形式如下：
@@ -82,11 +82,11 @@ ASP程序的求解过程是：
 \end{example}
 
 
-\begin{definition}[正规逻辑程序（$Normal~Logic~Program,~NLP$） \upcite{apt1994logic}]
+\begin{definition}[正规逻辑程序（$Normal~Logic~Program,~NLP$） \upcite{bonatti2010answer}]
 	由有限条正规规则组成的逻辑程序，其中可以包含有限个事实及限制。
 \end{definition}
 
-\begin{definition}[析取逻辑程序（$Disjunctive~Logic~Program,~DLP$） \upcite{apt1994logic}]
+\begin{definition}[析取逻辑程序（$Disjunctive~Logic~Program,~DLP$） \upcite{ben1994propositional}]
 	由有限条形如形式(\ref{asp_rule})的规则组成的逻辑程序，其中可以包含有限个事实及限制。
 \end{definition}
 
@@ -97,8 +97,8 @@ ASP程序的求解过程是：
 
 其中$r$代表形式(\ref{asp_rule})中的整个规则，$head(r)$称为规则$r$的头部，$body(r)$称为规则$r$的体部。具体有$head(r)$为$a_1 \lor a_2 \lor~...~\lor~a_k$，$body(r)$为$a_{k+1},~...~,~a_m,~not~a_{m+1},~...~,~not~a_n$。其中ASP逻辑程序的头部中的原子连接关系只为析取，体部中的原子连接关系只为合取。更进一步的划分有$body(r)~=~body^+ (r)~\land~body^-(r)$，其中$body^+(r)$为$a_{k+1},~...~,~a_m$，即原规则中不带$not$的文字集合，$body^-(r)$为$not~a_{m+1},~...~,~not~a_n$，即原规则中带有$not$的文字集合。在某些情景下上述定义的命题公式可以被作为原子集（$a~set~of~atoms$）进行讨论。
 
-从集合意义出发，引入以下常用的集合概念：
-\begin{definition}
+从集合意义出发，引入以下常用的原子集概念：
+\begin{definition}\upcite{lifschitz2002answer}
 	定义以下跟一个规则相关的集合，以形式(\ref{asp_rule})中的规则作为例子：	
 	\begin{itemize}
 		\item $head(r) = \{a_1, a_2, ..., a_k\}$；
@@ -132,12 +132,11 @@ ASP程序的求解过程是：
 \end{example}
 
 在了解了逻辑程序中涉及的常用概念后，我们将通过满足（$satisfy$）性来定义逻辑程序的模型。
-\begin{definition}
+\begin{definition}\upcite{lin2004assat}
 	一个原子集$S$满足一个正合取范式$R$，当且仅当$Atoms(R)~\subseteq~S$；一个原子集$S$满足一个正析取范式$R$，当且仅当$Atoms(R)~\cap~S~\neq~\emptyset$。满足符号为$\models$。
 \end{definition}
 
-我们把满足的概念放在逻辑程序及其规则中，由于逻辑程序中的头部中的文字为析取关系，且仅有正文字，体部中的文字为合取关系。则相应地定义一个原子集$S$满足一个规则$r$的$body(r)$当且仅当$body^+(r)~\subseteq~S$且$body^-(r)~\cap~S~=~\emptyset$，记为$S~\models~body(r)$。一个原子集$S$满足一个规则$r$的$head(r)$当且仅当$head(r)~\cap~S~\neq~\emptyset$，记为$S~\models~head(r)$。
-
+我们把满足的概念放在逻辑程序及其规则中。由于逻辑程序中的头部中的文字为析取关系，且仅有正文字，体部中的文字为合取关系。则相应地定义一个原子集$S$满足一个规则$r$的$body(r)$当且仅当$body^+(r)~\subseteq~S$且$body^-(r)~\cap~S~=~\emptyset$，记为$S~\models~body(r)$。一个原子集$S$满足一个规则$r$的$head(r)$当且仅当$head(r)~\cap~S~\neq~\emptyset$，记为$S~\models~head(r)$\upcite{biere2009handbook}。
 \begin{example}
 	给定一个原子集$S=\{a,b,c\}$，规则$r1$为$a~\lor~b~\leftarrow~c,~not~d.$，规则$r2$为$d~\lor~e~\leftarrow~c,~not~b.$，则有：$S~\models~head(r1)$，$S~\models~body(r1)$，$S~\nvDash~head(r2)$，$S \nvDash body(r2)$。
 \end{example}
@@ -155,7 +154,6 @@ ASP程序的求解过程是：
 	一个不包含$not$（失败即否定）的逻辑程序，称为正逻辑程序。正逻辑程序有且仅有一个极小模型。
 \end{proposition}
 
-此处极小模型中的极小是集合意义下的最小。
 
 Gelder和Ross等在1991年提出了逻辑程序的良序模型（$Well-founded~Model$）语义\upcite{van1991well}，良序模型需要通过逻辑程序的最大无理集（$Greatest~Unfounded~Set$）来定义。
 %% greatest unfounded set
@@ -180,24 +178,35 @@ Gelder和Ross等证明了两个无理集的并集仍然是一个无理集，因此逻辑程序$P$基于文字集$
 \end{definition}
 
 
-在了解了上述的逻辑程序基础后，我们接下来将引入回答集编程的语法和语义的相关基础知识。
+接下来，本文引入回答集编程的语法和语义的相关基础知识。
 
 
 \section{回答集编程}
 
 \subsection{回答集编程基础}
 
-回答集编程时一种声明式编程，它主要应用于极为困难的搜索问题当中。Lifschitz认为在非单调推理的知识表示领域中，回答集编程在知识密集型的应用场景中尤其重要和高效\upcite{lifschitz2008answer}。ASP语法结构与Prolog类似，但其计算机制不同，主要借助于高效的命题逻辑可满足求解器进行计算\upcite{zhai2014asp}。本节将讲述ASP逻辑程序的语义和主要性质，如环和环公式等。
+回答集编程是一种声明式编程，它主要应用于计算复杂性高的搜索问题当中。
+在非单调推理的知识表示领域中，回答集编程在知识密集型的应用场景中尤其重要和高效\upcite{zhai2014asp}。
+本节将讲述ASP逻辑程序的语义和主要性质，如环和环公式等。
 
-经典逻辑程序一般情况下只能推出正文字的结论，而实际情况下，我们也是需要负文字结论的。Reiter提出的封闭世界假定\upcite{reiter1978closed}和Clark的失败即否定以类似的思想为逻辑程序可以推出负文字形式的结论带来了支持。
+经典逻辑程序只能推出正文字的真值，而实际情况下，我们也需要确定负文字的真值。
+Reiter提出的封闭世界假定（$Close~World~Assumption,~CWA$）\upcite{reiter1978closed}和Clark的失败即否定为逻辑程序可以推出负文字形式的结论带来了支持。
 
-失败即否定的基本思想就是：无法证明一个命题为真，则判定其为假。这也是最为自然的一种逻辑假定。在ASP逻辑程序中一些规则的体部会出现“$not~A$”这样的文字，而对于这个文字，我们可以直观地把它看作是命题:“不能确定$A$为真”，所以如果ASP逻辑程序中不能推出$A$为真，则可以推出$not~A$为真。失败即否定中这种推理过程其实是一种倾向否定的假定逻辑。即使当前推出$not~A$为真，那是基于暂时无法推出$A$为真。一旦加入新的规则，可以推出$A$为真，那么原来的$not~A$则被认为是假。这一点恰恰是非单调逻辑的本质所在：加入新的结论时可能会推翻之前结论的有效性。
+失败即否定的基本思想就是：无法证明一个命题为真，则判定其为假。这也是最为自然的一种逻辑假定。
+在ASP逻辑程序中一些规则的体部会出现“$not~A$”这样的文字，而对于这个文字，我们可以直观地把它看作是命题:“不能确定$A$为真”，所以如果ASP逻辑程序中不能推出$A$为真，则可以推出$not~A$为真。
+实际上，失败即否定描述的是一个文字在逻辑程序中的一致性\upcite{clark1978negation}。
+封闭世界假定也是对当前无法确定的事件假定为假。
+失败即否定中这种推理过程其实是一种倾向否定的假定逻辑。
+即使当前推出$not~A$为真，那是基于暂时无法推出$A$为真。一旦加入可以推出$A$为真的新规则，那么原来的$not~A$则被认为是假\upcite{van1989negation}。
+这恰恰是非单调逻辑的本质所在：加入新的结论时可能会推翻之前结论的有效性。
 
-在失败即否定之外，ASP逻辑程序中还引入了对经典否定。不过这里说的引入是操作层面上的非语法上的\upcite{ji2010phd}。ASP逻辑程序中只通过失败即否定的$not$来表示负文字。对于经典否定，即经典逻辑下的非，ASP逻辑程序通过加入新原子和约束来引入经典否定。
+在失败即否定之外，ASP逻辑程序中还引入了经典否定。不过这里说的引入是操作层面上的非语义层面上的\upcite{gelfond1991classical}。ASP逻辑程序中只通过失败即否定的$not$来表示负文字。
+对于经典否定，即经典逻辑下的非，ASP逻辑程序通过加入新原子和约束来实现经典否定。
 
 如：为了表示原子$p$的经典否定，可以定义新原子$p\_$，并向原逻辑程序中加入约束“$\leftarrow~p,p\_.$”，保证了$p$和$p\_$不能同时为真。这样就将含有经典否定的逻辑程序转化为不含经典否定的逻辑程序。
 
-非单调逻辑最初是为了解决框架问题（$frame~problem$）和缺省规则（$default~rule$）的推理\upcite{ji2010phd}。在非单调逻辑的发展过程中，自上世纪七十年代起，主要出现了缺省逻辑（$Default~Logic$）、自认知逻辑（$Auto-epistemic~Logic$）和限定理论（$Circumscription$）\upcite{bonatti2010answer}。然而，这些理论由于缺乏高效的开发工具和不具备模块化程序设计并没有得到广泛应用\upcite{zhai2014asp}。而一直到了1988年，Gelfond和Lifschitz提出了稳定模型语义（$Stable~Model~Semantic$）。稳定模型语义帮助解决了非单调推理无法解释失败即否定的问题。基于稳定模型语义进行的研究和扩展，发展出回答集编程这个领域。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+在非单调逻辑的发展过程中，自上世纪七十年代起，主要出现了缺省逻辑（$Default~Logic$）、自认知逻辑（$Auto-epistemic~Logic$）和限定理论（$Circumscription$）\upcite{bonatti2010answer}。然而，这些理论由于缺乏高效的开发工具和不具备模块化程序设计并没有得到广泛应用\upcite{zhai2014asp}。而一直到了1988年，Gelfond和Lifschitz提出了稳定模型语义（$Stable~Model~Semantic$）。稳定模型语义帮助解决了非单调推理无法解释失败即否定的问题。基于稳定模型语义进行的研究和扩展，发展出回答集编程这个领域。
 
 回答集编程所涉及的语法即2.2节中介绍的逻辑程序的内容。现在，我们来介绍回答集编程的语义和主要属性，从ASP逻辑程序的回答集开始。
 

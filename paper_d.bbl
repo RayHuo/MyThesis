@@ -74,6 +74,17 @@ Gelfond M, Lifschitz V.
 \newblock 回答集程序设计: 理论, 方法, 应用与研究 [J].
 \newblock 2014.
 
+\bibitem{davis1962machine}
+Davis M, Logemann G, Loveland D.
+\newblock A machine program for theorem-proving [J].
+\newblock Communications of the ACM, 1962, 5(7):394--397.
+
+\bibitem{jeroslow1990solving}
+Jeroslow R~G, Wang J.
+\newblock Solving propositional satisfiability problems [J].
+\newblock Annals of mathematics and Artificial Intelligence, 1990,
+  1(1-4):167--187.
+
 \bibitem{leone2006dlv}
 Leone N, Pfeifer G, Faber W, et~al.
 \newblock The DLV system for knowledge representation and reasoning [J].
@@ -160,26 +171,11 @@ Nuchelmans G.
 \newblock Theories of the Proposition [J].
 \newblock 1973.
 
-\bibitem{apt1994logic}
-Apt K~R, Bol R~N.
-\newblock Logic programming and negation: A survey [J].
-\newblock The Journal of Logic Programming, 1994, 19:9--71.
-
-\bibitem{van1991well}
-Van~Gelder A, Ross K~A, Schlipf J~S.
-\newblock The well-founded semantics for general logic programs [J].
-\newblock Journal of the ACM (JACM), 1991, 38(3):619--649.
-
 \bibitem{lifschitz2008answer}
 Lifschitz V.
 \newblock What Is Answer Set Programming?. [C].// AAAI.
 \newblock vol~8.
 \newblock 2008:  1594--1597.
-
-\bibitem{reiter1978closed}
-Reiter R.
-\newblock On closed world data bases [M].
-\newblock Springer, 1978.
 
 \bibitem{bonatti2010answer}
 Bonatti P, Calimeri F, Leone N, et~al.
@@ -187,6 +183,38 @@ Bonatti P, Calimeri F, Leone N, et~al.
   programming.
 \newblock Springer-Verlag.
 \newblock 2010:  159--182.
+
+\bibitem{ben1994propositional}
+Ben-Eliyahu R, Dechter R.
+\newblock Propositional semantics for disjunctive logic programs [J].
+\newblock Annals of Mathematics and Artificial intelligence, 1994,
+  12(1-2):53--87.
+
+\bibitem{lifschitz2002answer}
+Lifschitz V.
+\newblock Answer set programming and plan generation [J].
+\newblock Artificial Intelligence, 2002, 138(1):39--54.
+
+\bibitem{biere2009handbook}
+Biere A, Heule M, van Maaren H.
+\newblock Handbook of satisfiability [M].
+\newblock ios press, 2009.
+
+\bibitem{van1991well}
+Van~Gelder A, Ross K~A, Schlipf J~S.
+\newblock The well-founded semantics for general logic programs [J].
+\newblock Journal of the ACM (JACM), 1991, 38(3):619--649.
+
+\bibitem{reiter1978closed}
+Reiter R.
+\newblock On closed world data bases [M].
+\newblock Springer, 1978.
+
+\bibitem{van1989negation}
+Van~Gelder A.
+\newblock Negation as failure using tight derivations for general logic
+  programs [J].
+\newblock The Journal of Logic Programming, 1989, 6(1):109--133.
 
 \bibitem{gelfond1991classical}
 Gelfond M, Lifschitz V.
