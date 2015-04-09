@@ -23,7 +23,7 @@
 \contentsline {definition}{{\hei 定义}{2.{16}}{子句（$Clause$）}}{16}{definition.16}
 \contentsline {definition}{{\hei 定义}{2.{17}}{单位传播（$Unit~Propagation$）}}{16}{definition.17}
 \contentsline {definition}{{\hei 定义}{2.{18}}{}}{17}{definition.18}
-\contentsline {definition}{{\hei 定义}{2.{19}}{正依赖图（$Positive~Dependency~Graph$）\upcite {lin2004assat}}}{17}{definition.19}
+\contentsline {definition}{{\hei 定义}{2.{19}}{正依赖图（$Positive~Dependency~Graph$）\upcite {lin2004assat}}}{18}{definition.19}
 \contentsline {definition}{{\hei 定义}{2.{20}}{强连通分量（$Strongly~Conntected~Component, SCC$）\upcite {aspvall1979linear}}}{18}{definition.20}
 \contentsline {example}{{\hei 例}{2.{5}}{}}{18}{example.5}
 \contentsline {definition}{{\hei 定义}{2.{21}}{环（$Loop$）\upcite {lin2004assat}}}{18}{definition.21}
@@ -37,7 +37,7 @@
 \contentsline {definition}{{\hei 定义}{2.{26}}{}}{22}{definition.26}
 \contentsline {definition}{{\hei 定义}{2.{27}}{}}{22}{definition.27}
 \contentsline {example}{{\hei 例}{2.{7}}{}}{22}{example.7}
-\contentsline {theorem}{{\hei 定理}{2.{4}}{分割集理论（$Splitting~Theorem$）\upcite {lifschitz1994splitting}}}{22}{theorem.2.4.4}
+\contentsline {theorem}{{\hei 定理}{2.{4}}{分割集理论（$Splitting~Theorem$）\upcite {lifschitz1994splitting}}}{23}{theorem.2.4.4}
 \contentsline {proof}{{\hei 证明}{1}{}}{25}{proof.1}
 \contentsline {definition}{{\hei 定义}{3.{1}}{}}{31}{definition.1}
 \contentsline {example}{{\hei 例}{3.{1}}{}}{31}{example.1}

@@ -10,7 +10,7 @@
 
 \section{新分割集}
 
-本节将对Lifschitz和Turner提出的分割集理论进行分析，然后基于他们对分割集的定义提出一个计算分割集的算法，并分析其在一般ASP逻辑程序中的局限性。随后给出本文定义的新分割集。
+本节将对Lifschitz和Turner提出的分割集理论进行分析，然后基于他们对分割集的定义提出一个计算分割集的算法，并分析其分割集在一般ASP逻辑程序中的局限性。随后给出本文定义的新分割集。
 
 
 \subsection{原有分割集和程序分割的分析证明}
@@ -29,13 +29,13 @@ Lifschitz和Turner在1994年的原文中只给出了程序分割方法的定义，即根据定义(\ref{asp
 	t_U(P) = P~\backslash~b_U(P)
 \end{eqnarray}
 
-根据分割集$U$的特性，可以知道：$Atoms(b_U(P)) \subseteq U$，并定义：
+由分割集$U$的特性可以知道：$Atoms(b_U(P)) \subseteq U$，并定义：
 \begin{eqnarray}
 	head(t_U(P))~=~\bigcup_{r \in t_U(P)} head(r)	\\
 	body(t_U(P))~=~\bigcup_{r \in t_U(P)} body(r)
 \end{eqnarray}
 
-另，记一个逻辑程序$P$的回答集为$\Gamma (P)$，而回答集必是一个逻辑程序的头部原子的子集，即$\Gamma (P) \subseteq head(P)$。根据$t_U(P)$的定义可以知道：	
+另，一个逻辑程序$P$的回答集记为$\Gamma (P)$，而回答集必是一个逻辑程序的头部原子集合的子集，即$\Gamma (P) \subseteq head(P)$。根据$t_U(P)$的定义可以知道：	
 \begin{eqnarray}
 	head(t_U(P)) \subseteq Atoms(P) \backslash U \\
 	\Gamma (b_U(P)) \subseteq U
