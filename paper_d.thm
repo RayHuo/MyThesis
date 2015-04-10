@@ -1,89 +1,85 @@
-\contentsline {definition}{{\hei 定义}{2.{1}}{}}{7}{definition.1}
-\contentsline {definition}{{\hei 定义}{2.{2}}{文字（$Literal$）\upcite {gelfond1990logic}}}{7}{definition.2}
-\contentsline {definition}{{\hei 定义}{2.{3}}{补（$Complement$）\upcite {gabbay1999negation}}}{7}{definition.3}
-\contentsline {definition}{{\hei 定义}{2.{4}}{范式（$Normal~Form$）}}{8}{definition.4}
-\contentsline {example}{{\hei 例}{2.{1}}{}}{9}{example.1}
-\contentsline {definition}{{\hei 定义}{2.{5}}{正规逻辑程序（$Normal~Logic~Program,~NLP$） \upcite {bonatti2010answer}}}{10}{definition.5}
-\contentsline {definition}{{\hei 定义}{2.{6}}{析取逻辑程序（$Disjunctive~Logic~Program,~DLP$） \upcite {ben1994propositional}}}{10}{definition.6}
+\contentsline {definition}{{\hei 定义}{2.{1}}{}}{6}{definition.1}
+\contentsline {definition}{{\hei 定义}{2.{2}}{文字(Literal) \upcite {gelfond1990logic}}}{6}{definition.2}
+\contentsline {definition}{{\hei 定义}{2.{3}}{补(Complement) \upcite {gabbay1999negation}}}{6}{definition.3}
+\contentsline {definition}{{\hei 定义}{2.{4}}{}}{7}{definition.4}
+\contentsline {example}{{\hei 例}{2.{1}}{}}{8}{example.1}
+\contentsline {definition}{{\hei 定义}{2.{5}}{}}{9}{definition.5}
+\contentsline {definition}{{\hei 定义}{2.{6}}{}}{9}{definition.6}
+\contentsline {example}{{\hei 例}{2.{2}}{}}{9}{example.2}
 \contentsline {definition}{{\hei 定义}{2.{7}}{}}{10}{definition.7}
-\contentsline {definition}{{\hei 定义}{2.{8}}{}}{11}{definition.8}
-\contentsline {example}{{\hei 例}{2.{2}}{}}{11}{example.2}
-\contentsline {definition}{{\hei 定义}{2.{9}}{}}{11}{definition.9}
-\contentsline {example}{{\hei 例}{2.{3}}{}}{11}{example.3}
-\contentsline {definition}{{\hei 定义}{2.{10}}{}}{12}{definition.10}
-\contentsline {definition}{{\hei 定义}{2.{11}}{}}{12}{definition.11}
-\contentsline {proposition}{{\hei 命题}{2.{1}}{}}{12}{proposition.1}
-\contentsline {definition}{{\hei 定义}{2.{12}}{无理集（$Unfounded~Set$）\upcite {van1991well} }}{12}{definition.12}
-\contentsline {definition}{{\hei 定义}{2.{13}}{良序模型（$Well-Founded~Model$）\upcite {van1991well}}}{12}{definition.13}
-\contentsline {definition}{{\hei 定义}{2.{14}}{G-L规约\upcite {gelfond1988stable}}}{14}{definition.14}
-\contentsline {example}{{\hei 例}{2.{4}}{}}{14}{example.4}
-\contentsline {theorem}{{\hei 定理}{2.{1}}{}}{15}{theorem.2.3.1}
-\contentsline {theorem}{{\hei 定理}{2.{2}}{}}{15}{theorem.2.3.2}
-\contentsline {definition}{{\hei 定义}{2.{15}}{程序结论（$Consequence$）\upcite {chen2013computing}}}{15}{definition.15}
-\contentsline {definition}{{\hei 定义}{2.{16}}{子句（$Clause$）}}{16}{definition.16}
-\contentsline {definition}{{\hei 定义}{2.{17}}{单位传播（$Unit~Propagation$）}}{16}{definition.17}
-\contentsline {definition}{{\hei 定义}{2.{18}}{}}{17}{definition.18}
-\contentsline {definition}{{\hei 定义}{2.{19}}{正依赖图（$Positive~Dependency~Graph$）\upcite {lin2004assat}}}{18}{definition.19}
-\contentsline {definition}{{\hei 定义}{2.{20}}{强连通分量（$Strongly~Conntected~Component, SCC$）\upcite {aspvall1979linear}}}{18}{definition.20}
-\contentsline {example}{{\hei 例}{2.{5}}{}}{18}{example.5}
-\contentsline {definition}{{\hei 定义}{2.{21}}{环（$Loop$）\upcite {lin2004assat}}}{18}{definition.21}
-\contentsline {definition}{{\hei 定义}{2.{22}}{环公式（$Loop~Formula$）\upcite {lin2004assat}}}{19}{definition.22}
-\contentsline {proposition}{{\hei 命题}{2.{2}}{}}{19}{proposition.2}
-\contentsline {definition}{{\hei 定义}{2.{23}}{完备（$Completion$）\upcite {lin2004assat}}}{20}{definition.23}
-\contentsline {example}{{\hei 例}{2.{6}}{}}{20}{example.6}
-\contentsline {theorem}{{\hei 定理}{2.{3}}{}}{20}{theorem.2.3.3}
-\contentsline {definition}{{\hei 定义}{2.{24}}{分割集（$Splitting~Set$）\upcite {lifschitz1994splitting}}}{21}{definition.24}
-\contentsline {definition}{{\hei 定义}{2.{25}}{底部和顶部（$bottom~and~top$）\upcite {lifschitz1994splitting}}}{21}{definition.25}
-\contentsline {definition}{{\hei 定义}{2.{26}}{}}{22}{definition.26}
-\contentsline {definition}{{\hei 定义}{2.{27}}{}}{22}{definition.27}
-\contentsline {example}{{\hei 例}{2.{7}}{}}{22}{example.7}
-\contentsline {theorem}{{\hei 定理}{2.{4}}{分割集理论（$Splitting~Theorem$）\upcite {lifschitz1994splitting}}}{23}{theorem.2.4.4}
-\contentsline {proof}{{\hei 证明}{1}{}}{25}{proof.1}
-\contentsline {definition}{{\hei 定义}{3.{1}}{}}{31}{definition.1}
-\contentsline {example}{{\hei 例}{3.{1}}{}}{31}{example.1}
-\contentsline {definition}{{\hei 定义}{3.{2}}{}}{32}{definition.2}
-\contentsline {proposition}{{\hei 命题}{3.{1}}{}}{32}{proposition.1}
-\contentsline {example}{{\hei 例}{3.{2}}{}}{33}{example.2}
-\contentsline {definition}{{\hei 定义}{3.{3}}{}}{33}{definition.3}
-\contentsline {definition}{{\hei 定义}{3.{4}}{半环}}{34}{definition.4}
-\contentsline {definition}{{\hei 定义}{3.{5}}{}}{34}{definition.5}
-\contentsline {lemma}{{\hei 引理}{3.{1}}{}}{34}{lemma.1}
-\contentsline {proof}{{\hei 证明}{2}{}}{34}{proof.2}
-\contentsline {definition}{{\hei 定义}{3.{6}}{}}{36}{definition.6}
-\contentsline {proof}{{\hei 证明}{3}{}}{36}{proof.3}
-\contentsline {definition}{{\hei 定义}{3.{7}}{}}{38}{definition.7}
-\contentsline {example}{{\hei 例}{3.{3}}{}}{38}{example.3}
-\contentsline {lemma}{{\hei 引理}{3.{2}}{}}{39}{lemma.2}
-\contentsline {proof}{{\hei 证明}{4}{}}{39}{proof.4}
-\contentsline {theorem}{{\hei 定理}{3.{1}}{新分割理论}}{40}{theorem.3.2.1}
-\contentsline {proof}{{\hei 证明}{5}{}}{40}{proof.5}
-\contentsline {definition}{{\hei 定义}{3.{8}}{关键半环（$Dominated~Semi-loop$）}}{42}{definition.8}
-\contentsline {definition}{{\hei 定义}{3.{9}}{关键半环集}}{42}{definition.9}
-\contentsline {theorem}{{\hei 定理}{3.{2}}{}}{44}{theorem.3.2.2}
-\contentsline {definition}{{\hei 定义}{3.{10}}{析取逻辑程序的$top$}}{44}{definition.10}
-\contentsline {proof}{{\hei 证明}{6}{}}{45}{proof.6}
-\contentsline {theorem}{{\hei 定理}{3.{3}}{}}{45}{theorem.3.2.3}
-\contentsline {proposition}{{\hei 命题}{3.{2}}{}}{46}{proposition.2}
-\contentsline {proof}{{\hei 证明}{7}{}}{46}{proof.7}
-\contentsline {definition}{{\hei 定义}{3.{11}}{}}{46}{definition.11}
-\contentsline {definition}{{\hei 定义}{3.{12}}{强顶部（$Strong~Top$）}}{47}{definition.12}
-\contentsline {definition}{{\hei 定义}{3.{13}}{强方案（$Strong~Solution$）}}{47}{definition.13}
-\contentsline {theorem}{{\hei 定理}{3.{4}}{}}{47}{theorem.3.2.4}
-\contentsline {theorem}{{\hei 定理}{3.{5}}{}}{48}{theorem.3.2.5}
-\contentsline {proof}{{\hei 证明}{8}{}}{48}{proof.8}
-\contentsline {proof}{{\hei 证明}{9}{}}{49}{proof.9}
-\contentsline {example}{{\hei 例}{4.{1}}{}}{53}{example.1}
-\contentsline {definition}{{\hei 定义}{4.{1}}{负文字简化}}{55}{definition.1}
-\contentsline {definition}{{\hei 定义}{4.{2}}{正文字}}{55}{definition.2}
-\contentsline {proof}{{\hei 证明}{10}{}}{55}{proof.10}
-\contentsline {proposition}{{\hei 命题}{4.{1}}{}}{57}{proposition.1}
-\contentsline {example}{{\hei 例}{4.{2}}{}}{57}{example.2}
-\contentsline {proof}{{\hei 证明}{11}{}}{58}{proof.11}
-\contentsline {definition}{{\hei 定义}{4.{3}}{}}{60}{definition.3}
-\contentsline {definition}{{\hei 定义}{4.{4}}{}}{60}{definition.4}
-\contentsline {definition}{{\hei 定义}{4.{5}}{结论顶部（$Consequence~Top$）}}{60}{definition.5}
-\contentsline {proposition}{{\hei 命题}{4.{2}}{}}{60}{proposition.2}
-\contentsline {proof}{{\hei 证明}{12}{}}{60}{proof.12}
-\contentsline {example}{{\hei 例}{4.{3}}{}}{61}{example.3}
-\contentsline {example}{{\hei 例}{5.{1}}{}}{66}{example.1}
-\contentsline {definition}{{\hei 定义}{5.{1}}{哈密顿回路问题\upcite {cormen2001introduction}}}{68}{definition.1}
+\contentsline {example}{{\hei 例}{2.{3}}{}}{10}{example.3}
+\contentsline {definition}{{\hei 定义}{2.{8}}{}}{10}{definition.8}
+\contentsline {definition}{{\hei 定义}{2.{9}}{}}{10}{definition.9}
+\contentsline {definition}{{\hei 定义}{2.{10}}{G-L规约\upcite {gelfond1988stable}}}{11}{definition.10}
+\contentsline {example}{{\hei 例}{2.{4}}{}}{11}{example.4}
+\contentsline {theorem}{{\hei 定理}{2.{1}}{}}{11}{theorem.2.2.1}
+\contentsline {theorem}{{\hei 定理}{2.{2}}{}}{12}{theorem.2.2.2}
+\contentsline {definition}{{\hei 定义}{2.{11}}{程序结论(Consequence) \upcite {chen2013computing}}}{12}{definition.11}
+\contentsline {definition}{{\hei 定义}{2.{12}}{子句(Clause)}}{12}{definition.12}
+\contentsline {definition}{{\hei 定义}{2.{13}}{单位传播(Unit~Propagation)}}{12}{definition.13}
+\contentsline {definition}{{\hei 定义}{2.{14}}{无理集(Unfounded~Set)\upcite {van1991well} }}{12}{definition.14}
+\contentsline {definition}{{\hei 定义}{2.{15}}{}}{13}{definition.15}
+\contentsline {definition}{{\hei 定义}{2.{16}}{正依赖图(Positive Dependency Graph)\upcite {lin2004assat}}}{14}{definition.16}
+\contentsline {definition}{{\hei 定义}{2.{17}}{强连通分量(SCC: Strongly Conntected Component)\upcite {aspvall1979linear}}}{14}{definition.17}
+\contentsline {example}{{\hei 例}{2.{5}}{}}{14}{example.5}
+\contentsline {definition}{{\hei 定义}{2.{18}}{环(Loop) \upcite {lin2004assat}}}{15}{definition.18}
+\contentsline {definition}{{\hei 定义}{2.{19}}{环公式(Loop Formula) \upcite {lin2004assat}}}{15}{definition.19}
+\contentsline {proposition}{{\hei 命题}{2.{20}}{}}{16}{definition.20}
+\contentsline {definition}{{\hei 定义}{2.{21}}{完备(Completion) \upcite {lin2004assat}}}{16}{definition.21}
+\contentsline {example}{{\hei 例}{2.{6}}{}}{17}{example.6}
+\contentsline {theorem}{{\hei 定理}{2.{3}}{}}{17}{theorem.2.2.3}
+\contentsline {definition}{{\hei 定义}{2.{22}}{分割集(Splitting Set)\upcite {lifschitz1994splitting}}}{18}{definition.22}
+\contentsline {definition}{{\hei 定义}{2.{23}}{底部和顶部(bottom and top) \upcite {lifschitz1994splitting}}}{18}{definition.23}
+\contentsline {definition}{{\hei 定义}{2.{24}}{}}{18}{definition.24}
+\contentsline {definition}{{\hei 定义}{2.{25}}{}}{18}{definition.25}
+\contentsline {example}{{\hei 例}{2.{7}}{}}{19}{example.7}
+\contentsline {theorem}{{\hei 定理}{2.{4}}{分割集理论(Splitting Theorem)\upcite {lifschitz1994splitting}}}{19}{theorem.2.3.4}
+\contentsline {proof}{{\hei 证明}{1}{}}{20}{proof.1}
+\contentsline {definition}{{\hei 定义}{3.{1}}{}}{26}{definition.1}
+\contentsline {example}{{\hei 例}{3.{1}}{}}{26}{example.1}
+\contentsline {definition}{{\hei 定义}{3.{2}}{}}{27}{definition.2}
+\contentsline {proposition}{{\hei 命题}{3.{3}}{}}{27}{definition.3}
+\contentsline {example}{{\hei 例}{3.{2}}{}}{28}{example.2}
+\contentsline {definition}{{\hei 定义}{3.{4}}{}}{29}{definition.4}
+\contentsline {definition}{{\hei 定义}{3.{5}}{半环（$semi-loop$）}}{29}{definition.5}
+\contentsline {definition}{{\hei 定义}{3.{6}}{}}{29}{definition.6}
+\contentsline {lemma}{{\hei 引理}{3.{7}}{}}{29}{definition.7}
+\contentsline {proof}{{\hei 证明}{2}{}}{29}{proof.2}
+\contentsline {definition}{{\hei 定义}{3.{8}}{}}{31}{definition.8}
+\contentsline {proof}{{\hei 证明}{3}{}}{31}{proof.3}
+\contentsline {definition}{{\hei 定义}{3.{9}}{}}{33}{definition.9}
+\contentsline {example}{{\hei 例}{3.{3}}{}}{33}{example.3}
+\contentsline {lemma}{{\hei 引理}{3.{10}}{}}{34}{definition.10}
+\contentsline {proof}{{\hei 证明}{4}{}}{34}{proof.4}
+\contentsline {theorem}{{\hei 定理}{3.{1}}{新分割理论}}{35}{theorem.3.2.1}
+\contentsline {proof}{{\hei 证明}{5}{}}{35}{proof.5}
+\contentsline {definition}{{\hei 定义}{3.{11}}{关键半环（$Dominated~Semi-loop$）}}{37}{definition.11}
+\contentsline {definition}{{\hei 定义}{3.{12}}{关键半环集}}{37}{definition.12}
+\contentsline {theorem}{{\hei 定理}{3.{2}}{}}{39}{theorem.3.2.2}
+\contentsline {definition}{{\hei 定义}{3.{13}}{析取逻辑程序的$top$}}{40}{definition.13}
+\contentsline {proof}{{\hei 证明}{6}{}}{40}{proof.6}
+\contentsline {theorem}{{\hei 定理}{3.{3}}{}}{40}{theorem.3.2.3}
+\contentsline {proposition}{{\hei 命题}{3.{14}}{}}{41}{definition.14}
+\contentsline {proof}{{\hei 证明}{7}{}}{41}{proof.7}
+\contentsline {definition}{{\hei 定义}{3.{15}}{}}{42}{definition.15}
+\contentsline {definition}{{\hei 定义}{3.{16}}{强顶部（$Strong~Top$）}}{42}{definition.16}
+\contentsline {definition}{{\hei 定义}{3.{17}}{强方案（$Strong~Solution$）}}{42}{definition.17}
+\contentsline {theorem}{{\hei 定理}{3.{4}}{}}{43}{theorem.3.2.4}
+\contentsline {theorem}{{\hei 定理}{3.{5}}{}}{43}{theorem.3.2.5}
+\contentsline {proof}{{\hei 证明}{8}{}}{43}{proof.8}
+\contentsline {proof}{{\hei 证明}{9}{}}{44}{proof.9}
+\contentsline {example}{{\hei 例}{4.{1}}{}}{47}{example.1}
+\contentsline {definition}{{\hei 定义}{4.{1}}{负文字简化}}{49}{definition.1}
+\contentsline {definition}{{\hei 定义}{4.{2}}{正文字}}{49}{definition.2}
+\contentsline {proof}{{\hei 证明}{10}{}}{49}{proof.10}
+\contentsline {proposition}{{\hei 命题}{4.{3}}{}}{51}{definition.3}
+\contentsline {example}{{\hei 例}{4.{2}}{}}{51}{example.2}
+\contentsline {proof}{{\hei 证明}{11}{}}{52}{proof.11}
+\contentsline {definition}{{\hei 定义}{4.{4}}{}}{54}{definition.4}
+\contentsline {definition}{{\hei 定义}{4.{5}}{}}{54}{definition.5}
+\contentsline {definition}{{\hei 定义}{4.{6}}{结论顶部（$Consequence~Top$）}}{54}{definition.6}
+\contentsline {proposition}{{\hei 命题}{4.{7}}{}}{54}{definition.7}
+\contentsline {proof}{{\hei 证明}{12}{}}{54}{proof.12}
+\contentsline {example}{{\hei 例}{4.{3}}{}}{56}{example.3}
+\contentsline {example}{{\hei 例}{5.{1}}{}}{58}{example.1}
+\contentsline {definition}{{\hei 定义}{5.{1}}{哈密顿回路问题\upcite {cormen2001introduction}}}{60}{definition.1}
