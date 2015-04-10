@@ -107,13 +107,13 @@ Lifschitz和Turner给出的分割集的定义实际上是一个验证型定义。他们定义一个原子集$U$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Continue From Here
 \subsection{正规逻辑程序分割方法}
 
-Lifschitz和Turner的程序分割方法是基于分割集进行的，而根据\ref{section_3_1_2}的结果表明，对于大部分逻辑程序，分割集往往就是$Atoms(P)$。这样的分割集无法划分逻辑程序，所以本文提出了新的程序分割方法，以支持分割集可以为任意原子集。
-首先，本文继续使用定义\ref{bottom_top}中的$b_U(P)$和定义\ref{e_U_P_X}中的操作$e_U(P,X)$，依旧记分割集为U。而此时分割集$U$并不存在结构上的独立性，即：
-\begin{equation}
+Lifschitz和Turner的程序分割方法是基于分割集进行的，而根据\ref{section_3_1_2}的结果表明，对于大部分逻辑程序，分割集往往就是$Atoms(P)$。这样的分割集无法划分逻辑程序，所以本文提出了新程序分割方法，以支持分割集可以为任意原子集。
+首先，本文继续使用定义\ref{bottom_top}中的$b_U(P)$和定义\ref{e_U_P_X}中的操作$e_U(P,X)$，依旧记分割集为$U$。而此时分割集$U$是任意的原子集，并不存在结构上的独立性，即：
+\begin{equation}\label{independence}
 	Atoms(b_U(P)) \subseteq U
 \end{equation}
 
-不一定成立。可以更为直接地说，大部分情况下都不再成立。为了保证新程序分割方法的普遍适用性，我们考虑：
+式(\ref{independence})不一定成立。可以更为直接地说，大部分情况下都不再成立。为了保证新程序分割方法的普遍适用性，我们考虑以下关系是成立的：
 \begin{equation}
 Atoms(b_U(P)) \nsubseteq U
 \end{equation}
@@ -130,9 +130,9 @@ Atoms(b_U(P)) \nsubseteq U
 	Atoms(b_U(P)) \backslash U \neq \emptyset
 \end{equation}
 
-所以需要考虑$Atoms(b_U(P)) \backslash U$这部分原子的真值可能性问题。而事实上，这部分原子的真值仅靠$b_U(P)$是无法确定的，因为它们可能是$P \backslash b_U(P)$中某个规则的头部，即可能会在$P \backslash b_U(P)$部分被推出。所以最直接也是最有效的方法就是在$\Gamma (b_U(P))$中加入这些不确定原子真值的全排列。然而，这些原子的真值也并非可以任意猜测，需要配合$b_U(P)$中的逻辑关系，所以本文定义了规则集合，来确保这些原子的真值在合理推导下被遍历。
+所以需要考虑$Atoms(b_U(P)) \backslash U$这部分原子的真值可能性问题。而事实上，这部分原子的真值仅靠$b_U(P)$是无法确定的，因为它们可能是$P \backslash b_U(P)$中某个规则的头部，即可能会在$P \backslash b_U(P)$部分被推出为真。所以最直接也最有效的方法就是在$\Gamma (b_U(P))$中加入这些不确定原子的真值可能性的全排列组合。然而，这些原子的真值也并非可以任意猜测，需要配合$b_U(P)$中的逻辑关系，所以本文定义了规则集合，来确保这些原子的真值在合理推导下被遍历。
 \begin{definition}
-	规则集合$EC_U(P)$为$Atoms(b_U(P)) \backslash U$中的原子的真值可能性提供补充规则，有：
+	规则集合$EC_U(P)$为$Atoms(b_U(P)) \backslash U$中的原子的真值可能性提供补充规则，定义如下：
 	\begin{equation}
 		EC_U(P)~=~\{ p~\leftarrow~not~p'.~p'~\leftarrow~not~p.~|~p \in Atoms(b_U(P)) \backslash U \}
 	\end{equation}
@@ -143,7 +143,9 @@ $EC_U(P)$为$Atoms(b_U(P)) \backslash U$中的原子引入一组规则：
 	p~\leftarrow~not~p'.~p'~\leftarrow~not~p.
 \end{equation}
 
-其中的$p'$其实代表的就是$\neg p$，上面一组规则在ASP逻辑程序中的含义是$p \lor not~p.$，换句话说即，如果一个ASP逻辑程序只有这两个规则，那么它的回答集就是$\{ \{p\},\{p'\} \}$，实际就是$\neg p$或$p$。接着，通过一个简单的例子来展现$EC_U(P)$的效果。
+其中的$p'$其实代表的就是$\neg p$，上面一组规则在ASP逻辑程序中的含义是$p \lor not~p.$，
+换句话说即，如果一个ASP逻辑程序只有这两个规则，那么它的回答集就是$\{ \{p\},\{p'\} \}$，
+实际就是$\neg p$或$p$。接着，通过一个简单的例子来展现$EC_U(P)$的效果。
 \begin{example}
 	给定逻辑程序$P_1$：
 	\begin{eqnarray}
@@ -171,7 +173,7 @@ $EC_U(P)$为$Atoms(b_U(P)) \backslash U$中的原子引入一组规则：
 
 此外，由于现在$Atoms(b_U(P)) \backslash U \neq \emptyset $且在引入$EC_U(P)$后，新的$bottom$（底部）为$b_U(P) \cup EC_U(P)$，记$bottom$的回答集$X=\Gamma (b_U(P) \cup EC_U(P))$，那么这时就有$X \backslash U \neq \emptyset$。
 
-在$Atoms(b_U(P)) \backslash U \neq \emptyset $ 且$X \backslash U \neq \emptyset$的情况下，定义\ref{e_U_P_X}中的操作$e_U(P,X)$只会去掉有形如$a$或$not a$，其中$a \in U$的文字，即只对$U$中的原子进行操作。而实际上，需要保证$U$以外但在$X$中的原子的真值。所以本文为$top$（顶部）定义一个新的规则集合$ECC_U(P,X)$，以保证$X \backslash U$的原子的真值确定性。
+在$Atoms(b_U(P)) \backslash U \neq \emptyset $且$X \backslash U \neq \emptyset$的情况下，定义\ref{e_U_P_X}中的操作$e_U(P,X)$只会去掉有形如$a$或$not a$，其中$a \in U$的文字，即只对$U$中的原子进行操作。而实际上，需要保证$U$以外但在$X$中的原子的真值。所以本文为$top$（顶部）定义一个新的规则集合$ECC_U(P,X)$，以保证$X \backslash U$的原子的真值确定性。
 \begin{definition}
 	规则集合$ECC_U(P,X)$为$P \backslash b_U(P)$提供$X \backslash U$中原子的真值确定性，具体有：
 	% 公式换行，手动地使用 \begin{array}
