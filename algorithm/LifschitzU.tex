@@ -3,21 +3,34 @@
 	\SetKwFunction{CalculateHammingDistance}{CalculateHammingDistance}
 	\SetKw{downto}{downto}\SetKw{return}{return}\SetKw{Break}{break}
 	\SetKwInOut{Input}{输入}\SetKwInOut{Output}{输出}
-	\caption{计算分割集的算法$U(P)$}
-	\Input{一个逻辑程序$P$}
-	\Output{分割集$U$}
+	\caption{计算所有分割集的算法$Us(P)$}
+	\Input{一个ASP逻辑程序$P$}
+	\Output{所有分割集$Us$}
 	
-	$U~:=~\emptyset$；      \\
-	$r~:=~U$中的第一个规则；	\\
-	$U~:=~U \cup Atoms(r)$；	\\
-	$a~:=~U$中的第一个原子；\\
-	\While {$U~is~changed$} {
-		$rules~:=~\{r \in P | head(r) \cap a \neq \emptyset \}$ \\
-		\For {$rule \in rules$} {
-			$U~:=~U \cup Atoms(rule)$
-		}
-		$a~:=~U$中的下一个原子；\\
+	$Us~:=~\emptyset$	\\
+	\For { $rule \in P$ } {
+		$U~:=~Atoms(rule)$	\\
+		$P'~:=~P \backslash \{ rule \}$	\\
+		\For {$r \in P'$} {
+			\If {$head(r) \cap U \neq \emptyset$} {
+				$U~:=~U \cup Atoms(r)$	\\
+			}	
+		}	
+		$Us~:=~Us \cup \{ U \}$	\\
 	}
 	
-	\return $U$
+	\return $Us$
+	
+%	$U~:=~\emptyset$；      \\
+%	$U~:=~U \cup Atoms(r)$；	\\
+%	$a~:=~U$中的第一个原子；\\
+%	\While {$U~is~changed$} {
+%		$rules~:=~\{r \in P | head(r) \cap a \neq \emptyset \}$ \\
+%		\For {$rule \in rules$} {
+%			$U~:=~U \cup Atoms(rule)$
+%		}
+%		$a~:=~U$中的下一个原子；\\
+%	}
+%	
+%	\return $U$
 \end{algorithm}

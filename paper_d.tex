@@ -7,9 +7,10 @@
 %\def\proof{\noindent{\bf Proof}: } %定义证明，注意选择中英文
 %\def\endproof{\hspace*{\fill}~\QED\par\endtrivlist\unskip}%在proof环境自动添加结束符。
 
-
-\documentclass[12pt,a4paper]{book}
-%\documentclass[12pt,a4paper,openany,oneside]{book}  %去掉参数openany与oneside，用以实现论文的每一个章节从奇数页开始打印
+% 去掉参数openany与oneside，用以实现论文的每一个章节从奇数页开始打印
+%\documentclass[12pt,a4paper]{book}
+% 
+\documentclass[12pt,a4paper,openany,oneside]{book}  
 
 
 \usepackage{indentfirst}    % 首行缩进宏包
@@ -366,7 +367,7 @@
 	\theoremheaderfont{\CJKfamily{hei}\rmfamily}
 	\theorembodyfont{\CJKfamily{kai}\rmfamily}
 	\theoremseparator{：}
-	%\theoremsymbol{$\blacksquare$}
+	\theoremsymbol{$\blacksquare$}
 	\newtheorem{proof}{\hei 证明}
 	
 	%\theoremsymbol{$\square$}
@@ -521,6 +522,7 @@ CJKbookmarks=true, colorlinks=true,citecolor=blue]{hyperref}
 
 \newcommand{\operator}[2]{\mbox{\boldmath $#1$\hspace*{-#2ex}}}
 \newcommand{\mb}{\operator{B}{.2}}
+
 
 
 \begin{document}

@@ -428,8 +428,13 @@ Lifschitz和Turner在给出分割集的概念后，也基于分割集提出了相应的程序分割(Program 
 	给定一个ASP逻辑程序$P$，其分割集是一个原子集，记为$U$，$U$需要满足：对于任意的规则$r \in P$有$head(r) \cap U \neq \emptyset$蕴涵$Atoms(r)\subseteq U$。
 \end{definition}
 
+从ASP逻辑程序$P$的正依赖图拓扑结构出发，分割集的原子存在一个直观的性质。
+\begin{proposition} \upcite{ji2010phd} \label{p_splitting_set_1}
+	分割集的原子构成ASP逻辑程序$P$的正依赖图中出度为零的一个子图。
+\end{proposition}
 
-直观地，分割集中的原子对应为ASP逻辑程序$P$的正依赖图中出度为零的顶点\upcite{ji2010phd}。基于分割集划分而成的$bottom$和$top$两部分的具体定义如下：
+
+基于分割集划分而成的$bottom$和$top$两部分的具体定义如下：
 \begin{definition}[底部和顶部(bottom and top) \upcite{lifschitz1994splitting}] \label{bottom_top}
 	给定一个ASP逻辑程序$P$，及其分割集$U$，标记$P$的底部为$b_U(P)$，顶部为$t_U(P)$，并定义为：
 	\begin{eqnarray}

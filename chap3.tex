@@ -1,103 +1,87 @@
 \chapter{改进的程序分割方法}
 
-本章将对Lifschitz和Turner提出的分割集和程序分割理论进行分析。
-首先给出了其程序分割方法的正确性证明，及提出了计算其定义的分割集的算法，然后分析了其分割集的局限性。
-接着，本章提出了新分割集和新程序分割方法。
-实际上是提出了一个可以对任意原子集作为分割集都有效的新程序分割方法。
+本章首先对Lifschitz和Turner提出的分割集和程序分割理论进行分析，给出计算其定义的分割集的算法，然后分析了其分割集的局限性。
+接着，本章提出了对分割集的扩展和新程序分割方法。
 本章将分别给出正规逻辑程序和析取逻辑程序的新程序分割方法，然后提出一个强程序分割方法。
 最后以正规逻辑程序的程序分割方法为例，对新程序分割方法的计算复杂性进行分析，并指出主要性能瓶颈所在及改进思路。
 
 
-\section{新分割集}
+\section{分割集的分析与扩展}
 
 本节将对Lifschitz和Turner提出的分割集理论进行分析，然后基于他们对分割集的定义提出一个计算分割集的算法，并分析其分割集在一般ASP逻辑程序中的局限性。随后给出本文定义的新分割集。
 
 
-\subsection{原有分割集和程序分割的分析证明}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{分割集的分析}\label{section_3_1_2}
 
-Lifschitz和Turner给出的分割集定义是：一个原子集$U$称为一个逻辑程序$P$的分割集，当且仅当对$P$中的所有规则$r$都有$head(r) \cap U \neq \emptyset$蕴涵$Atoms(r) \subseteq U$。
-这个分割集定义的直观含义就是一个分割集若包含规则头部的原子，则也可以包含该规则的所有原子。
-这样的性质保证了分割集$U$可以把原程序从结构上划分成两部分，进而保证了原程序的回答集可以从分割后的两部分的回答集求解得到。
-Lifschitz和Turner(1994)的原文中只给出了程序分割方法的定义，即根据定义(\ref{asp_solution})分别求出底部$b_U(P)$和化简后的顶部$e_U(t_U(P),X)$的回答集$X$和$Y$，根据方案$\langle X,Y \rangle$得到原程序的回答集。
-本文在这里补充给出这种分割方法的正确性证明。关于Lifschitz和Turner的程序分割方法正确性的证明如下。
-\begin{proof}
-首先证明分割集可以把逻辑程序划分为回答集互斥的两部分，并且底部的回答集是原逻辑程序回答集子集。
-
-根据定义\ref{splitting_set}，分割集$U$对于逻辑程序$P$中任意的规则$r$都有：$head(r) \cap U \neq \emptyset$蕴涵$Atoms(r) \subseteq U$。而根据定义\ref{bottom_top}有：	
-\begin{eqnarray}
-	b_U(P) = \{ r \in P~|~head(r) \cap U \neq \emptyset \}	\\
-	t_U(P) = P~\backslash~b_U(P)
-\end{eqnarray}
-
-由分割集$U$的特性可以知道：$Atoms(b_U(P)) \subseteq U$，并定义：
-\begin{eqnarray}
-	head(t_U(P))~=~\bigcup_{r \in t_U(P)} head(r)	\\
-	body(t_U(P))~=~\bigcup_{r \in t_U(P)} body(r)
-\end{eqnarray}
-
-另，一个逻辑程序$P$的回答集记为$\Gamma (P)$，而回答集必是一个逻辑程序的头部原子集合的子集，即$\Gamma (P) \subseteq head(P)$。根据$t_U(P)$的定义可以知道：	
-\begin{eqnarray}
-	head(t_U(P)) \subseteq Atoms(P) \backslash U \\
-	\Gamma (b_U(P)) \subseteq U
-\end{eqnarray}
-
-由于$head(t_U(P)) \cap U = \emptyset$，所以$\Gamma (t_U(P)) \cap U = \emptyset$，故有$\Gamma (b_U(P)) \cap \Gamma (t_U(P)) = \emptyset$，这样保证了$b_U(P)$和$t_U(P)$的回答集是互斥的。此外，我们已知：	
-\begin{eqnarray}
-	Atoms(b_U(P)) \subseteq U \\
-	head(t_U(P)) \subseteq Atoms(P) \backslash U \\
-	head(b_U(P)) \cap head(t_U(P)) = \emptyset
-\end{eqnarray}
-
-这些关系表明$b_U(P)$于原逻辑程序而言，是一个独立的模块，其回答集只能从$b_U(P)$这部分推出，因为$head(b_U(P))$中的原子不会出现在$head(t_U(P))$中，
-即$\Gamma (b_U(P))$中的元素不需要依赖$t_U(P)$中的规则，一旦$head(b_U(P))$中的某个原子被推出为真，那么放在整个逻辑程序它都将是真的，即它必为原程序回答集的元素，
-即$\Gamma (b_U(P))$中的元素必将出现在原程序的某个回答集中。
-
-然而，并不是直接计算$b_U(P)$和$t_U(P)$的回答集就可以得到最终的回答集。
-因为$body(t_U(P))$中可能会包含有$U$中的原子，而如果这些原子是在$\Gamma (b_U(P))$中的话，我们是可以知道其真值的，因为$\Gamma (b_U(P))$必是原程序回答集的一部分。
-那么需要定义一个操作来删除这些可以肯定真值的原子。这个操作就是定义\ref{e_U_P_X}中的$e_U(P,X)$。
-
-接着证明$e_U(P,X)$的有效性。
-
-令$X = \Gamma (b_U(P))$。对于$X$中的原子，其在$t_U(P)$中的形式只有体部的正文字和负文字，
-即$x$或$not~x$，$x \in X$且$x \in body(r)$，$r \in t_U(P)$。
-
-在$e_U(P,X)$的定义中，它只保留满足以下条件的规则$r$：$body^+(r) \cap U \subseteq X$，及$(body^-(r) \cap U) \cap X = \emptyset$。
-并在保留下来的规则中删去所有形如$a$或$not~a$，其中$a \in U$的文字。	
-\begin{enumerate}
-	\item 对于满足$body^+(r) \cap U \subseteq X$的规则$r$，后续的化简操作是$body^+(r) \backslash U$，而$X \subseteq U$，且$body^+(r) \cap U \subseteq X$，所以实质的意义就是$body^+(r) \backslash X$。对于$x \in body^+(r) \cap X$，因为$x \in X$，$X = \Gamma (b_U(P))$，并且$X$必为原程序回答集的一部分，所以$x$也为原逻辑程序中某个回答集的元素，所以可以确定$x$为真，且体部为合取关系，根据$head(t_U(P)) \subseteq Atoms(P) \backslash U$，即$x$在$t_U(P)$中不会在出现在规则的头部，即在$t_U(P)$中不可能推出$x$为真，但从$X$可以确定其为真，故需要删去$x$。所以保留满足$body^+(r) \cap U \subseteq U$的规则$r$，并执行$body^+(r) \backslash U$操作。
-	\item 对于满足$(body^-(r) \cap U) \cap X= \emptyset$的规则$r$，后续的化简操作是$body^-(r) \backslash U$。反向考虑，如果$(body^-(r) \cap U) \cap X \neq \emptyset$，即规则$r$的体部中包含$not~a$，$a \in X$。而从上面的说明可以知道$a \in X$，则可以判定$a$为真，即$not~a$为假（因为“推不出$a$为真”为假）。而体部为合取关系，一旦确定体部中有为假的元素，则体部为假，该规则无法推出头部为真，所以可以删去该规则，故只考虑满足$(body^-(r) \cap U) \cap X = \emptyset$的规则。此外，对于满足这个条件的规则，其$body^-(r) \cap X = \emptyset$，而对于$body^-(r)$可能存在$U \backslash X$中的元素，$U \backslash X$中的元素直接含义就是原程序回答集中推不出为真的原子，所以若$b \in U \backslash X$，则$not~b$为真。跟1中一样，体部为真的元素应该直接删去。所以保留满足$(body^-(r) \cap U) \cap X = \emptyset$的规则$r$，并执行$body^-(r) \backslash U$的操作。
-\end{enumerate}	
-
-根据上面的证明可以知道，$X$作为原程序回答集的一部分，$e_U(t_U(P),X)$利用$X$中元素的真值化简出一个计算原程序剩下回答集部分的逻辑程序。记$Y = \Gamma (e_U(t_U(P),X))$。
-	
-$b_U(P)$中只包含$U$中的原子，它自身是一个结构独立的模块，所以求解得到的回答集$X$必是原程序回答集的部分。而$e_U(t_U(P),X)$得到一个跟$U$无关的程序，同时确保了$X$中的元素为真，所以这部分求解得到的回答集$Y$就是原程序回答集剩下的部分。且有	
-\begin{eqnarray}
-	X \subseteq Atoms(P) \cap U	\\
-	Y \subseteq Atoms(P) \backslash U
-\end{eqnarray}	
-	
-所以$X \cap Y = \emptyset$，故$X \cup Y$是确保一致的，并且为原程序的回答集。\quad
-\end{proof}
-
-
-上述证明过程说明了Lifschitz和Turner提出的程序分割方法的有效性。由于$U$能保证$b_U(P)$的结构独立于原程序的其他部分，故它能有效地把一个逻辑程序在结构上一分为二。
-
-
-\subsection{提出新的分割集}\label{section_3_1_2}
-
-Lifschitz和Turner给出的分割集的定义实际上是一个验证型定义。他们定义一个原子集$U$是逻辑程序$P$的分割集，当且仅当$P$中的每个规则$r$满足$head(r) \cap U \neq \emptyset$蕴涵$Atoms(r) \subseteq U$。这个定义从直观上来说就是如果一个原子集合是一个逻辑程序的分割集，那么它满足逻辑程序中凡是头部与其有交集的规则，都会有该规则的所有原子都在该原子集合内。本文根据Lifschitz和Turner对分割集的定义给出了一个计算逻辑程序的分割集的算法，为$Alogrithm$\ref{LifschitzU}。
+Lifschitz和Turner给出的分割集定义的直观含义是一个分割集若包含规则头部的原子，则包含该规则中的所有原子。
+这样的性质保证了分割集$U$可以把原程序从结构上划分成独立的两部分。
+而Lifschitz和Turner给出的分割集的定义实际上是一个验证型定义。
+本文根据Lifschitz和Turner对分割集的定义和Ji(2010)指出的分割集性质\ref{p_splitting_set_1}给出了一个计算ASP逻辑程序的分割集的算法，为$Alogrithm~$\ref{LifschitzU}。
 % 插入算法
 \RestyleAlgo{ruled}\LinesNumbered\input{algorithm/LifschitzU.tex}
 
+根据$Alogrithm~$\ref{LifschitzU}，给出以下命题：
+\begin{proposition} \label{p_for_splitting_set}
+	给定ASP逻辑程序$P$，记函数$Us(P)$的返回结果为$Us$，则有以下结论：
+	\begin{itemize}
+		\item $Us$中的元素都是$P$的分割集；	% soundness 返回的都是正确的
+		\item $P$中的任意分割集$U$，满足$U \in Us$。	% completness 所有正确答案都会被返回。
+	\end{itemize}
+\end{proposition}
+
+
+% 证明两点：
+% 	1） Us(P)中的元素都是P的分割集；
+%	2） P中不存在一个分割集U，有U \notin  Us
+\begin{proof} \label{algorithm_splitting_set_proof}
+	对于命题\ref{p_for_splitting_set}中的结论一，
+	给定任意$U \in Us$，
+	根据$Alogrithm~$\ref{LifschitzU}，用于初始化$U$的规则$r_1$，
+	有$Atoms(r_1) \subseteq U$，故符合$head(r_1) \cap U \neq \emptyset$蕴涵$Atoms(r_1) \subseteq U$。
+	对于规则$r_2 \in P'$，其中$P'=P \backslash \{ r_1 \}$，也符合若$head(r_2) \cap U \neq \emptyset$，则$Atoms(r_2) \subseteq U$。
+	则对于规则$r \in P$均有$head(r) \cap U \neq \emptyset$蕴涵$Atoms(r) \subseteq U$。
+	故任意$U \in Us$都是$P$的分割集。
+	
+	对于命题\ref{p_for_splitting_set}中的结论二，
+	基于结论一可知$Us$中的元素都是$P$的分割集，而函数$Us(P)$会遍历$P$中的所有规则$r$，并以$Atoms(r)$作为开始进行扩充。另，根据分割集的定义可知，分割集$U$必包含某些规则的全部原子，故必有$U \in Us$中。\quad
+\end{proof}
+
+下面给出一个调用函数$Us(P)$的例子：
+\begin{example}
+	给定ASP逻辑程序$P$：
+	\begin{eqnarray}
+		&& a \lor b~\leftarrow~c,~d.	\\
+		&& a~\leftarrow~e,~b.	\\
+		&& e~\leftarrow~f.	\\
+		&& g~\leftarrow~h,~i.	\\
+		&& g \lor h~\leftarrow~j,~k.	\\
+		&& k~\leftarrow~i.	
+	\end{eqnarray}
+	
+	通过$Alogrithm~$\ref{LifschitzU}可以得到：
+	\begin{equation}
+		Us(P)~=~\{ \{a,b,c,d,e,f\},~\{g,h,i,j,k\} \}
+	\end{equation}
+	
+	根据定义\ref{splitting_set}可以判断得到$Us(P)$中的元素均为$P$的分割集，且$Us(P)$是$P$中所有分割集构成的集合。
+\end{example}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{分割集的扩展}
+
 明显地，$\emptyset$和$Atoms(P)$都是任何逻辑程序的分割集。
-而本文把上述算法应用在ASP竞赛的逻辑程序中，得到的结果为大部分逻辑程序的分割集都是$Atoms(P)$。
-这样的事实说明，Lifschitz和Turner所定义的分割集从理论上是美好的，它是一个从原程序中抽取出来结构独立的一部分，直观来看，这样的一个结构独立的部分就是逻辑程序正依赖图中没有出边的子图，这样的子图不受其他命题作为外部支持，所以在求解回答集上也是独立的。
+而本文把上述算法应用在ASP竞赛的逻辑程序中，得到的结果为大部分ASP逻辑程序的分割集都是$Atoms(P)$。
+这样的事实说明，Lifschitz和Turner所定义的分割集于实际的ASP逻辑程序是存在局限性的。
+分割集是从原程序中抽取出来结构独立的一个子图，根据命题\ref{p_splitting_set_1}，这样的子图对应的规则集合没有外部支持，所以在求解回答集上也是独立的。
 然而从ASP竞赛的逻辑程序的计算结果可以知道，实际中的程序并非都具有如此性能优良的子图。
-为了能让分割集的思想能应用到一般的情景下，本文对其Lifschitz和Turner的分割集理论进行了扩展。
-事实上，本文并没有定义一个新的分割集，而是定义了一个新的程序分割方法，并确保这个新的程序分割方法能对任意原子集构成的分割集都有效。
-即新的分割集被扩展为任意原子集，摆脱了原有分割集对逻辑程序的拓扑结构的依赖。
+为了能让分割集的思想能应用到一般的情景下，本文对其Lifschitz和Turner的分割集进行了扩展。
+事实上，本文并没有定义一个新的分割集，而是定义了一个新程序分割方法，并确保这个新的程序分割方法能对任意原子集构成的分割集都有效。
+即新的分割集被扩展为任意原子集，摆脱了原有分割集对ASP逻辑程序的结构的依赖。
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FROM here
 \section{新程序分割方法}
 
 本节中将分别给出正规逻辑程序和析取逻辑程序的新程序分割方法，这两者间的主要不同在于对顶部（$top$）的定义，这也由正规逻辑程序和析取逻辑程序的回答集语义所决定。
