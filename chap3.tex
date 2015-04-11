@@ -44,7 +44,10 @@ LifschitzºÍTurner¸ø³öµÄ·Ö¸î¼¯¶¨ÒåµÄÖ±¹Ûº¬ÒåÊÇÒ»¸ö·Ö¸î¼¯Èô°üº¬¹æÔòÍ·²¿µÄÔ­×Ó£¬Ôò°
 	¹ÊÈÎÒâ$U \in Us$¶¼ÊÇ$P$µÄ·Ö¸î¼¯¡£
 	
 	¶ÔÓÚÃüÌâ\ref{p_for_splitting_set}ÖĞµÄ½áÂÛ¶ş£¬
-	»ùÓÚ½áÂÛÒ»¿ÉÖª$Us$ÖĞµÄÔªËØ¶¼ÊÇ$P$µÄ·Ö¸î¼¯£¬¶øº¯Êı$Us(P)$»á±éÀú$P$ÖĞµÄËùÓĞ¹æÔò$r$£¬²¢ÒÔ$Atoms(r)$×÷Îª¿ªÊ¼½øĞĞÀ©³ä¡£Áí£¬¸ù¾İ·Ö¸î¼¯µÄ¶¨Òå¿ÉÖª£¬·Ö¸î¼¯$U$±Ø°üº¬Ä³Ğ©¹æÔòµÄÈ«²¿Ô­×Ó£¬¹Ê±ØÓĞ$U \in Us$ÖĞ¡£\quad
+	Áî$U$Îª$P$µÄÒ»¸ö·Ö¸î¼¯£¬¹Ê±Ø´æÔÚ¹æÔò$r_U \in P$£¬ÓĞ$Atoms(r_U) \subseteq U$¡£¶øº¯Êı$Us(P)$»á±éÀú$P$ÖĞµÄËùÓĞ¹æÔò£¬ËùÒÔ±Ø´æÔÚÒ»¸öÔ­×Ó¼¯$U' \in Us$Âú×ã$Atoms(r_U) \subseteq U'$¡£
+	¶øÇÒ£¬¶ÔÓÚÈÎÒâ¹æÔò$r' \in P \backslash \{r_U\}$Âú×ã£ºÈô$head(r') \ cap U \neq \emptyset$£¬Ôò$Atoms(r') \subseteq U'$¡£¹ÊÓĞ$U = U'$£¬ËùÒÔ±ØÓĞ$U \in Us$¡£ \quad
+		
+%	»ùÓÚ½áÂÛÒ»¿ÉÖª$Us$ÖĞµÄÔªËØ¶¼ÊÇ$P$µÄ·Ö¸î¼¯£¬¶øº¯Êı$Us(P)$»á±éÀú$P$ÖĞµÄËùÓĞ¹æÔò$r$£¬²¢ÒÔ$Atoms(r)$×÷Îª¿ªÊ¼½øĞĞÀ©³ä¡£Áí£¬¸ù¾İ·Ö¸î¼¯µÄ¶¨Òå¿ÉÖª£¬·Ö¸î¼¯$U$±Ø°üº¬Ä³Ğ©¹æÔòµÄÈ«²¿Ô­×Ó£¬¹Ê±ØÓĞ$U \in Us$ÖĞ¡£\quad
 \end{proof}
 
 ÏÂÃæ¸ø³öÒ»¸öµ÷ÓÃº¯Êı$Us(P)$µÄÀı×Ó£º
@@ -72,51 +75,56 @@ LifschitzºÍTurner¸ø³öµÄ·Ö¸î¼¯¶¨ÒåµÄÖ±¹Ûº¬ÒåÊÇÒ»¸ö·Ö¸î¼¯Èô°üº¬¹æÔòÍ·²¿µÄÔ­×Ó£¬Ôò°
 \subsection{·Ö¸î¼¯µÄÀ©Õ¹}
 
 Ã÷ÏÔµØ£¬$\emptyset$ºÍ$Atoms(P)$¶¼ÊÇÈÎºÎÂß¼­³ÌĞòµÄ·Ö¸î¼¯¡£
-¶ø±¾ÎÄ°ÑÉÏÊöËã·¨Ó¦ÓÃÔÚASP¾ºÈüµÄÂß¼­³ÌĞòÖĞ£¬µÃµ½µÄ½á¹ûÎª´ó²¿·ÖASPÂß¼­³ÌĞòµÄ·Ö¸î¼¯¶¼ÊÇ$Atoms(P)$¡£
-ÕâÑùµÄÊÂÊµËµÃ÷£¬LifschitzºÍTurnerËù¶¨ÒåµÄ·Ö¸î¼¯ÓÚÊµ¼ÊµÄASPÂß¼­³ÌĞòÊÇ´æÔÚ¾ÖÏŞĞÔµÄ¡£
+¶ø¶ÔÓÚASP¾ºÈüÖĞµÄ´ó²¿·ÖÂß¼­³ÌĞò£¬Æä·Ö¸î¼¯¶¼ÊÇ$Atoms(P)$¡£
+ÕâÑùµÄÊÂÊµ±íÃ÷£¬LifschitzºÍTurnerËù¶¨ÒåµÄ·Ö¸î¼¯ÓÚÊµ¼ÊµÄASPÂß¼­³ÌĞòÊÇ´æÔÚ¾ÖÏŞĞÔµÄ¡£
 ·Ö¸î¼¯ÊÇ´ÓÔ­³ÌĞòÖĞ³éÈ¡³öÀ´½á¹¹¶ÀÁ¢µÄÒ»¸ö×ÓÍ¼£¬¸ù¾İÃüÌâ\ref{p_splitting_set_1}£¬ÕâÑùµÄ×ÓÍ¼¶ÔÓ¦µÄ¹æÔò¼¯ºÏÃ»ÓĞÍâ²¿Ö§³Ö£¬ËùÒÔÔÚÇó½â»Ø´ğ¼¯ÉÏÒ²ÊÇ¶ÀÁ¢µÄ¡£
-È»¶ø´ÓASP¾ºÈüµÄÂß¼­³ÌĞòµÄ¼ÆËã½á¹û¿ÉÒÔÖªµÀ£¬Êµ¼ÊÖĞµÄ³ÌĞò²¢·Ç¶¼¾ßÓĞÈç´ËĞÔÄÜÓÅÁ¼µÄ×ÓÍ¼¡£
+
+È»¶ø´ÓASP¾ºÈüµÄÂß¼­³ÌĞòµÄ·Ö¸î¼¯Çé¿ö¿ÉÒÔÖªµÀ£¬Êµ¼ÊÖĞµÄ³ÌĞò²¢·Ç¶¼¾ßÓĞÈç´ËĞÔÄÜÓÅÁ¼µÄ×ÓÍ¼¡£
 ÎªÁËÄÜÈÃ·Ö¸î¼¯µÄË¼ÏëÄÜÓ¦ÓÃµ½Ò»°ãµÄÇé¾°ÏÂ£¬±¾ÎÄ¶ÔÆäLifschitzºÍTurnerµÄ·Ö¸î¼¯½øĞĞÁËÀ©Õ¹¡£
 ÊÂÊµÉÏ£¬±¾ÎÄ²¢Ã»ÓĞ¶¨ÒåÒ»¸öĞÂµÄ·Ö¸î¼¯£¬¶øÊÇ¶¨ÒåÁËÒ»¸öĞÂ³ÌĞò·Ö¸î·½·¨£¬²¢È·±£Õâ¸öĞÂµÄ³ÌĞò·Ö¸î·½·¨ÄÜ¶ÔÈÎÒâÔ­×Ó¼¯¹¹³ÉµÄ·Ö¸î¼¯¶¼ÓĞĞ§¡£
-¼´ĞÂµÄ·Ö¸î¼¯±»À©Õ¹ÎªÈÎÒâÔ­×Ó¼¯£¬°ÚÍÑÁËÔ­ÓĞ·Ö¸î¼¯¶ÔASPÂß¼­³ÌĞòµÄ½á¹¹µÄÒÀÀµ¡£
+¼´ĞÂµÄ·Ö¸î¼¯ÊÇÈÎÒâÔ­×Ó¼¯£¬°ÚÍÑÁËÔ­ÓĞ·Ö¸î¼¯¶ÔASPÂß¼­³ÌĞòµÄ½á¹¹µÄÒÀÀµ¡£
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FROM here
 \section{ĞÂ³ÌĞò·Ö¸î·½·¨}
 
-±¾½ÚÖĞ½«·Ö±ğ¸ø³öÕı¹æÂß¼­³ÌĞòºÍÎöÈ¡Âß¼­³ÌĞòµÄĞÂ³ÌĞò·Ö¸î·½·¨£¬ÕâÁ½Õß¼äµÄÖ÷Òª²»Í¬ÔÚÓÚ¶Ô¶¥²¿£¨$top$£©µÄ¶¨Òå£¬ÕâÒ²ÓÉÕı¹æÂß¼­³ÌĞòºÍÎöÈ¡Âß¼­³ÌĞòµÄ»Ø´ğ¼¯ÓïÒåËù¾ö¶¨¡£
-ÔÚ½éÉÜÕı¹æÂß¼­³ÌĞòµÄĞÂ³ÌĞò·Ö¸î·½·¨¹ı³ÌÖĞ£¬±¾½Ú»áÔÚ¶¨Òå²Ù×÷·ûµÄÍ¬Ê±¸ø³öÆäÖ±¹ÛÉÏµÄº¬Òå£¬²¢Ö¤Ã÷ĞÂ³ÌĞò·Ö¸î·½·¨¶ÔÈÎÒâÔ­×Ó¼¯¹¹³ÉµÄ·Ö¸î¼¯¶¼ÊÇÓĞĞ§µÄ¡£
+±¾½ÚÖĞ½«·Ö±ğ¸ø³öÕı¹æÂß¼­³ÌĞòºÍÎöÈ¡Âß¼­³ÌĞòµÄĞÂ³ÌĞò·Ö¸î·½·¨£¬
+ÕâÁ½Õß¼äµÄÖ÷Òª²»Í¬ÔÚÓÚ¶Ô¶¥²¿£¨$top$£©µÄ¶¨Òå£¬
+ÕâÊÇÓÉÕı¹æÂß¼­³ÌĞòºÍÎöÈ¡Âß¼­³ÌĞòµÄ»Ø´ğ¼¯ÓïÒåËù¾ö¶¨¡£
+ÔÚ½éÉÜÕı¹æÂß¼­³ÌĞòµÄĞÂ³ÌĞò·Ö¸î·½·¨¹ı³ÌÖĞ£¬±¾½Ú»áÔÚ¶¨Òå²Ù×÷·ûµÄÍ¬Ê±¸ø³öÆäÖ±¹ÛÉÏµÄº¬Òå£¬
+²¢Í¨¹ıÏà¹ØµÄÃüÌâÖ¤Ã÷ĞÂ³ÌĞò·Ö¸î·½·¨ÄÜÊ¹ÓÃÈÎÒâÔ­×Ó¼¯¹¹³ÉµÄ·Ö¸î¼¯¶ÔASPÂß¼­³ÌĞò½øĞĞ·Ö¸î£¬
+²¢¿É¸ù¾İ·Ö¸îºóÁ½²¿·ÖµÄ»Ø´ğ¼¯Çó½âµÃµ½Ô­³ÌĞòµÄ»Ø´ğ¼¯¡£
 ×îºó£¬±¾½Ú»áÌá³öÒ»¸öÇ¿³ÌĞò·Ö¸î·½·¨£¬¸Ã·½·¨ÊÇÎªÁËÀ©Õ¹°Ñ³ÌĞò·Ö¸î·½·¨ÔÚ½áºÏÂÉÏÂµÄÓĞĞ§ĞÔ¡£
 
 
-\subsection{Õı¹æÂß¼­³ÌĞò·Ö¸î·½·¨}
+\subsection{Õı¹æÂß¼­µÄĞÂ³ÌĞò·Ö¸î·½·¨}
 
-LifschitzºÍTurnerµÄ³ÌĞò·Ö¸î·½·¨ÊÇ»ùÓÚ·Ö¸î¼¯½øĞĞµÄ£¬¶ø¸ù¾İ\ref{section_3_1_2}µÄ½á¹û±íÃ÷£¬¶ÔÓÚ´ó²¿·ÖÂß¼­³ÌĞò£¬·Ö¸î¼¯ÍùÍù¾ÍÊÇ$Atoms(P)$¡£ÕâÑùµÄ·Ö¸î¼¯ÎŞ·¨»®·ÖÂß¼­³ÌĞò£¬ËùÒÔ±¾ÎÄÌá³öÁËĞÂ³ÌĞò·Ö¸î·½·¨£¬ÒÔÖ§³Ö·Ö¸î¼¯¿ÉÒÔÎªÈÎÒâÔ­×Ó¼¯¡£
-Ê×ÏÈ£¬±¾ÎÄ¼ÌĞøÊ¹ÓÃ¶¨Òå\ref{bottom_top}ÖĞµÄ$b_U(P)$ºÍ¶¨Òå\ref{e_U_P_X}ÖĞµÄ²Ù×÷$e_U(P,X)$£¬ÒÀ¾É¼Ç·Ö¸î¼¯Îª$U$¡£¶ø´ËÊ±·Ö¸î¼¯$U$ÊÇÈÎÒâµÄÔ­×Ó¼¯£¬²¢²»´æÔÚ½á¹¹ÉÏµÄ¶ÀÁ¢ĞÔ£¬¼´£º
+Ê×ÏÈ£¬±¾½Ú½«¼ÌĞøÊ¹ÓÃ¶¨Òå\ref{bottom_top}ÖĞµÄ$b_U(P)$ºÍ¶¨Òå\ref{e_U_P_X}ÖĞµÄ²Ù×÷$e_U(P,X)$£¬¼ÇASPÂß¼­³ÌĞòµÄ·Ö¸î¼¯Îª$U$¡£¶ø´ËÊ±·Ö¸î¼¯$U$ÊÇÈÎÒâµÄÔ­×Ó¼¯£¬²¢²»´æÔÚ½á¹¹ÉÏµÄ¶ÀÁ¢ĞÔ£¬¼´£º
 \begin{equation}\label{independence}
 	Atoms(b_U(P)) \subseteq U
 \end{equation}
 
 Ê½(\ref{independence})²»Ò»¶¨³ÉÁ¢¡£¿ÉÒÔ¸üÎªÖ±½ÓµØËµ£¬´ó²¿·ÖÇé¿öÏÂ¶¼²»ÔÙ³ÉÁ¢¡£ÎªÁË±£Ö¤ĞÂ³ÌĞò·Ö¸î·½·¨µÄÆÕ±éÊÊÓÃĞÔ£¬ÎÒÃÇ¿¼ÂÇÒÔÏÂ¹ØÏµÊÇ³ÉÁ¢µÄ£º
-\begin{equation}
-Atoms(b_U(P)) \nsubseteq U
+\begin{equation} \label{chap3_dependence}
+	Atoms(b_U(P)) \nsubseteq U
 \end{equation}
 
-ÊÂÊµÉÏ´ËÊ±ÓĞĞ§µÄ·½·¨¶Ô$Atoms(b_U(P)) \subseteq U$Çé¿öÏÂÒ»ÑùÓĞĞ§£¬ÒòÎª¸½¼Ó²Ù×÷¶¼ÊÇÎªÁË±£Ö¤×î»µÇé¿öµÄ¡£
+ÊÂÊµÉÏ£¬¶ÔÓÚ$Atoms(b_U(P)) \nsubseteq U$Çé¿öÏÂÓĞĞ§µÄ³ÌĞò·Ö¸î·½·¨ÔÚ$Atoms(b_U(P)) \subseteq U$Çé¿öÏÂÒ»ÑùÓĞĞ§£¬ÒòÎª¸½¼Ó²Ù×÷¶¼ÊÇÎªÁË±£Ö¤×î»µÇé¿öµÄ¡£
 
-ÔÚÔ­À´µÄ·Ö¸î¼¯ÏÂ£¬$b_U(P)$ÄÚ±£Ö¤ÁËÆäÔÚ½á¹¹ÉÏµÄ¶ÀÁ¢ĞÔ£¬¼´ÓĞ£º
+¶ÔÓÚLifschitzºÍTurner¶¨ÒåµÄ·Ö¸î¼¯£¬$G_P$¹ØÓÚ$Atoms(b_U(P))$µÄ×ÓÍ¼±£Ö¤ÁË×ÔÉíÔÚ½á¹¹ÉÏµÄ¶ÀÁ¢ĞÔ£¬¼´ÓĞ£º
 \begin{equation}
-	Atoms(b_U(P)) \cap head(P \backslash b_U(P)) = \emptyset
+	Atoms(b_U(P))~\cap~head(P~\backslash~b_U(P)) = \emptyset
 \end{equation}
 
-¼´Èç¹û$Atoms(b_U(P))$ÖĞµÄÔ­×ÓÊôÓÚ»Ø´ğ¼¯£¬ÄÇÃ´ËüÖ»»áÔÚ$b_U(P)$ÖĞ±»ÍÆ³ö¡£¶ø¶ÔÓÚ$U$ÎªÈÎÒâÔ­×Ó¼¯µÄÇé¿öÏÂ£¬ÓĞ£º
+¼´ÈôÒ»¸öÔ­×Ó$a \in Atoms(b_U(P))$ÇÒ$a \in \Gamma (P)$£¬ÄÇÃ´$a$Ö»»áÔÚ$b_U(P)$ÖĞ±»ÍÆ³ö¡£¶ø¶ÔÓÚ$U$ÎªÈÎÒâÔ­×Ó¼¯µÄÇé¿öÏÂ£¬ÓĞ£º
 \begin{equation}
-	Atoms(b_U(P)) \backslash U \neq \emptyset
+	Atoms(b_U(P))~\backslash~U~\neq~\emptyset
 \end{equation}
 
-ËùÒÔĞèÒª¿¼ÂÇ$Atoms(b_U(P)) \backslash U$Õâ²¿·ÖÔ­×ÓµÄÕæÖµ¿ÉÄÜĞÔÎÊÌâ¡£¶øÊÂÊµÉÏ£¬Õâ²¿·ÖÔ­×ÓµÄÕæÖµ½ö¿¿$b_U(P)$ÊÇÎŞ·¨È·¶¨µÄ£¬ÒòÎªËüÃÇ¿ÉÄÜÊÇ$P \backslash b_U(P)$ÖĞÄ³¸ö¹æÔòµÄÍ·²¿£¬¼´¿ÉÄÜ»áÔÚ$P \backslash b_U(P)$²¿·Ö±»ÍÆ³öÎªÕæ¡£ËùÒÔ×îÖ±½ÓÒ²×îÓĞĞ§µÄ·½·¨¾ÍÊÇÔÚ$\Gamma (b_U(P))$ÖĞ¼ÓÈëÕâĞ©²»È·¶¨Ô­×ÓµÄÕæÖµ¿ÉÄÜĞÔµÄÈ«ÅÅÁĞ×éºÏ¡£È»¶ø£¬ÕâĞ©Ô­×ÓµÄÕæÖµÒ²²¢·Ç¿ÉÒÔÈÎÒâ²Â²â£¬ĞèÒªÅäºÏ$b_U(P)$ÖĞµÄÂß¼­¹ØÏµ£¬ËùÒÔ±¾ÎÄ¶¨ÒåÁË¹æÔò¼¯ºÏ£¬À´È·±£ÕâĞ©Ô­×ÓµÄÕæÖµÔÚºÏÀíÍÆµ¼ÏÂ±»±éÀú¡£
-\begin{definition}
-	¹æÔò¼¯ºÏ$EC_U(P)$Îª$Atoms(b_U(P)) \backslash U$ÖĞµÄÔ­×ÓµÄÕæÖµ¿ÉÄÜĞÔÌá¹©²¹³ä¹æÔò£¬¶¨ÒåÈçÏÂ£º
+ËùÒÔĞèÒª¿¼ÂÇ$Atoms(b_U(P))~\backslash~U$Õâ²¿·ÖÔ­×ÓµÄÕæÖµ¿ÉÄÜĞÔÎÊÌâ¡£ÏÔÈ»£¬Õâ²¿·ÖÔ­×ÓµÄÕæÖµ½ö¿¿$b_U(P)$ÊÇÎŞ·¨È·¶¨µÄ£¬ÒòÎªËüÃÇ¿ÉÄÜÊÇ$P~\backslash~b_U(P)$ÖĞÄ³¸ö¹æÔòµÄÍ·²¿£¬¼´¿ÉÄÜ»áÔÚ$P~\backslash~b_U(P)$²¿·Ö±»ÍÆ³öÎªÕæ¡£ËùÒÔ×îÖ±½ÓµÄ·½·¨¾ÍÊÇÔÚ$\Gamma (b_U(P))$ÖĞ¼ÓÈëÕâ²¿·ÖÔ­×ÓµÄÕæÖµ¿ÉÄÜĞÔµÄÈ«ÅÅÁĞ×éºÏ¡£È»¶ø£¬Õâ²¿·ÖÔ­×ÓµÄÕæÖµÒ²²¢·Ç¿ÉÒÔÈÎÒâ²Â²â£¬ĞèÒªÅäºÏ$b_U(P)$ÖĞµÄ¹æÔò£¬ËùÒÔ±¾½Ú¶¨ÒåÁËÒÔÏÂ¹æÔò¼¯ºÏ£¬À´È·±£ÕâĞ©Ô­×ÓµÄÕæÖµÔÚºÏÀíÍÆµ¼ÏÂ±»±éÀú¡£
+\begin{definition} 
+	¹æÔò¼¯ºÏ$EC_U(P)$Îª$Atoms(b_U(P))~\backslash~U$ÖĞµÄÔ­×ÓµÄÕæÖµ¿ÉÄÜĞÔÌá¹©²¹³ä¹æÔò£¬¶¨ÒåÈçÏÂ£º
 	\begin{equation}
 		EC_U(P)~=~\{ p~\leftarrow~not~p'.~p'~\leftarrow~not~p.~|~p \in Atoms(b_U(P)) \backslash U \}
 	\end{equation}
@@ -131,35 +139,43 @@ $EC_U(P)$Îª$Atoms(b_U(P)) \backslash U$ÖĞµÄÔ­×ÓÒıÈëÒ»×é¹æÔò£º
 »»¾ä»°Ëµ¼´£¬Èç¹ûÒ»¸öASPÂß¼­³ÌĞòÖ»ÓĞÕâÁ½¸ö¹æÔò£¬ÄÇÃ´ËüµÄ»Ø´ğ¼¯¾ÍÊÇ$\{ \{p\},\{p'\} \}$£¬
 Êµ¼Ê¾ÍÊÇ$\neg p$»ò$p$¡£½Ó×Å£¬Í¨¹ıÒ»¸ö¼òµ¥µÄÀı×ÓÀ´Õ¹ÏÖ$EC_U(P)$µÄĞ§¹û¡£
 \begin{example}
-	¸ø¶¨Âß¼­³ÌĞò$P_1$£º
+	¸ø¶¨ASPÂß¼­³ÌĞò$P_1$£º
 	\begin{eqnarray}
-		a~\leftarrow~not~d.	\\
-		d~\leftarrow~not~c.	\\
-		c~\leftarrow~a.	\\
-		a~\leftarrow~c,~d.
+		&& a~\leftarrow~not~d.	\\
+		&& d~\leftarrow~not~c.	\\
+		&& c~\leftarrow~a.	\\
+		&& a~\leftarrow~c,~d.
 	\end{eqnarray}
-	Áî·Ö¸î¼¯$U=\{a\}$£¬ÔòÓĞ£º
+	
+	Áî$P_1$µÄ·Ö¸î¼¯$U=\{a\}$£¬ÔòÓĞ£º
 	\begin{equation}
 		b_U(P_1)~=~\{ a~\leftarrow~not~d.~a~\leftarrow~c,~d. \}
 	\end{equation}
-	Ê¹ÓÃ$gringo$ºÍ$clasp$Çó½âµÃµ½$\Gamma (b_U(P_1)) = \{ \{a\}  \}$¡£¶ø$Atoms(b_U(P_1 )) \backslash U = \{c,d\}$£¬ËùÒÔ¸ù¾İ¶¨ÒåÓĞ£º
+	
+	²¢Çó½âµÃµ½$\Gamma (b_U(P_1)) = \{ \{a\}  \}$¡£¶ø$Atoms(b_U(P_1 )) \backslash U = \{c,d\}$£¬ËùÒÔ¸ù¾İ¶¨ÒåÓĞ£º
 	\begin{equation}
 		EC_U(P_1)~=~\{ d~\leftarrow~not~d'.~d'~\leftarrow~not~d.~c~\leftarrow~not~c'.~c'~\leftarrow~not~c. \}
 	\end{equation}
-	Ê¹ÓÃ$gringo$ºÍ$clasp$Çó½â$b_U(P_1) \cup EC_U(P_1)$£¬µÃµ½£º
+	
+	Çó½â$b_U(P_1) \cup EC_U(P_1)$£¬µÃµ½£º
 	\begin{equation}
 		\Gamma (b_U(P_1) \cup EC_U(P_1)) = \{ \{ a,c,d \}, \{ a,c,d' \}, \{ a,c',d' \}, \{ c',d \} \}
 	\end{equation}
-	ÆäÖĞµÄ$c'$ºÍ$d'$ÊµÖÊ´ú±í$\neg c$ºÍ$\neg d$¡£
 \end{example}
 
-ÒòÎª$head(b_U(P)) \subseteq U$£¬¶øÇÒ$\Gamma (b_U(P)) \subseteq head(b_U(P))$£¬ËùÒÔÓĞ$\Gamma (b_U(P)) \subseteq U$¡£$Atoms(b_U(P)) \backslash U$²¿·ÖµÄÔ­×ÓÕæÖµÔòÎŞ·¨ÓÉ$b_U(P)$È·¶¨£¬ÒòÎªËüÃÇÓĞ¿ÉÄÜ±»$P \backslash b_U(P)$ÖĞµÄ¹æÔòÍÆ³ö¡£¼ÓÈë$EC_U(P)$Ê¹µÃÕâĞ©Ô­×ÓµÄÕæÖµµÄÓĞĞ§¿ÉÄÜĞÔ±»¼ÓÈëµ½$b_U(P)$µÄ»Ø´ğ¼¯ÖĞ¡£µ±È»£¬ÕâÀïÒ²²»ÊÇËæÒâµÄ±éÀú²åÈë¡£Èç$\Gamma (b_U(P) \cup EC_U(P))$ÖĞÖ»ÓĞ$\{ c',d \}$¶øÃ»ÓĞ$\{a,c',d\}$£¬ÕâÊÇÒòÎªÔÚ$\{c',d \}$ÎªÕæµÄÇé¿öÏÂ£¬Ô­³ÌĞòÎŞ·¨ÍÆ³ö$a$ÎªÕæ¡£Õâ¾ÍÊÇ±¾ÎÄ¶¨Òå$EC_U(P)$¶øÃ»ÓĞÖ±½ÓÍù$b_U(P)$µÄ»Ø´ğ¼¯ÖĞ±éÀú²åÈëÊ£ÏÂÔ­×ÓµÄ¿ÉÄÜÕæÖµ×éºÏµÄÔ­Òò¡£
+%ÒòÎª$head(b_U(P)) \subseteq U$£¬¶øÇÒ$\Gamma (b_U(P)) \subseteq head(b_U(P))$£¬ËùÒÔÓĞ$\Gamma (b_U(P)) \subseteq U$¡£
+%$Atoms(b_U(P)) \backslash U$²¿·ÖµÄÔ­×ÓÕæÖµÔòÎŞ·¨ÓÉ$b_U(P)$È·¶¨£¬ÒòÎªËüÃÇÓĞ¿ÉÄÜ±»$P \backslash b_U(P)$ÖĞµÄ¹æÔòÍÆ³ö¡£
+ÈÃ$b_U(P)$²¢ÉÏ$EC_U(P)$ÄÜÊ¹µÃ$Atoms(b_U(P))~\backslash~U$ÖĞÔ­×ÓµÄÕæÖµµÄÓĞĞ§¿ÉÄÜĞÔ±»¼ÓÈëµ½$b_U(P)$µÄ»Ø´ğ¼¯ÖĞ¡£
+Èç$\Gamma (b_U(P) \cup EC_U(P))$ÖĞÖ»ÓĞ$\{ c',d \}$¶øÃ»ÓĞ$\{a,c',d\}$£¬ÕâÊÇÒòÎªÔÚ$\{c',d \}$ÎªÕæµÄÇé¿öÏÂ£¬Ô­³ÌĞòÎŞ·¨ÍÆ³ö$a$ÎªÕæ¡£Õâ¾ÍÊÇ±¾½Ú¶¨Òå$EC_U(P)$¶øÃ»ÓĞÖ±½ÓÍù$b_U(P)$µÄ»Ø´ğ¼¯ÖĞ±éÀú²åÈëÊ£ÏÂÔ­×ÓµÄ¿ÉÄÜÕæÖµ×éºÏµÄÔ­Òò¡£
 
-´ËÍâ£¬ÓÉÓÚÏÖÔÚ$Atoms(b_U(P)) \backslash U \neq \emptyset $ÇÒÔÚÒıÈë$EC_U(P)$ºó£¬ĞÂµÄ$bottom$£¨µ×²¿£©Îª$b_U(P) \cup EC_U(P)$£¬¼Ç$bottom$µÄ»Ø´ğ¼¯$X=\Gamma (b_U(P) \cup EC_U(P))$£¬ÄÇÃ´ÕâÊ±¾ÍÓĞ$X \backslash U \neq \emptyset$¡£
+¶¨ÒåĞÂµÄ$bottom$Îª$b_U(P) \cup EC_U(P)$£¬¼Ç$bottom$µÄÒ»¸ö»Ø´ğ¼¯Îª$X$£¬$X \in \Gamma (b_U(P) \\ \cup EC_U(P))$£¬ÄÇÃ´ÕâÊ±¾ÍÓĞ$X~\backslash~U \neq \emptyset$¡£
 
-ÔÚ$Atoms(b_U(P)) \backslash U \neq \emptyset $ÇÒ$X \backslash U \neq \emptyset$µÄÇé¿öÏÂ£¬¶¨Òå\ref{e_U_P_X}ÖĞµÄ²Ù×÷$e_U(P,X)$Ö»»áÈ¥µôÓĞĞÎÈç$a$»ò$not a$£¬ÆäÖĞ$a \in U$µÄÎÄ×Ö£¬¼´Ö»¶Ô$U$ÖĞµÄÔ­×Ó½øĞĞ²Ù×÷¡£¶øÊµ¼ÊÉÏ£¬ĞèÒª±£Ö¤$U$ÒÔÍâµ«ÔÚ$X$ÖĞµÄÔ­×ÓµÄÕæÖµ¡£ËùÒÔ±¾ÎÄÎª$top$£¨¶¥²¿£©¶¨ÒåÒ»¸öĞÂµÄ¹æÔò¼¯ºÏ$ECC_U(P,X)$£¬ÒÔ±£Ö¤$X \backslash U$µÄÔ­×ÓµÄÕæÖµÈ·¶¨ĞÔ¡£
-\begin{definition}
-	¹æÔò¼¯ºÏ$ECC_U(P,X)$Îª$P \backslash b_U(P)$Ìá¹©$X \backslash U$ÖĞÔ­×ÓµÄÕæÖµÈ·¶¨ĞÔ£¬¾ßÌåÓĞ£º
+¶¨Òå\ref{e_U_P_X}ÖĞµÄ²Ù×÷$e_U(P,X)$Ö»»áÈ¥µôÓĞĞÎÈç$a$»ò$not~a$µÄÎÄ×Ö£¬ÆäÖĞ$a \in U$¡£
+¶øÊµ¼ÊÉÏ£¬ÔÚ$Atoms(b_U(P))~\backslash~U \neq \emptyset $ÇÒ$X \backslash U \neq \emptyset$µÄÇé¿öÏÂ£¬
+ĞèÒªÔÚ$P~\backslash~b_U(P)$ÖĞ±£Ö¤$Atoms(b_U(P))~\backslash~U$ÖĞµÄÔ­×ÓµÄÕæÖµÈ·¶¨ĞÔ£¬
+ËùÒÔ±¾½Ú¶¨ÒåÁËÒ»¸öĞÂµÄ¹æÔò¼¯ºÏ$ECC_U(P,X)$ÒÔ´ïµ½Õâ¸öÄ¿µÄ¡£
+\begin{definition} \label{d_ecc_U_P}
+	¹æÔò¼¯ºÏ$ECC_U(P,X)$Îª$P~\backslash~b_U(P)$²¿·ÖÌá¹©$Atoms(b_U(P))~\backslash~U$ÖĞÔ­×ÓµÄÕæÖµÈ·¶¨ĞÔ£¬¾ßÌåÓĞ£º
 	% ¹«Ê½»»ĞĞ£¬ÊÖ¶¯µØÊ¹ÓÃ \begin{array}
 	\begin{equation}
 		\begin{array}{rcl}
@@ -169,34 +185,76 @@ $EC_U(P)$Îª$Atoms(b_U(P)) \backslash U$ÖĞµÄÔ­×ÓÒıÈëÒ»×é¹æÔò£º
 	\end{equation}
 \end{definition}
 
-¶ÔÓÚ$ECC_U(P,X)$Ö±¹ÛÉÏµÄ¹¦ÄÜ¾ÍÊÇ±£Ö¤ÔÚ$P \backslash b_U(P)$ÖĞµÄÃ¿¸öÔ­×Ó$p$£¬
-Èô$p \in X$£¬ÔòÒªÈ·±£$p$ÎªÕæ£¬¼´ÍùÂß¼­³ÌĞòÖĞ¼ÓÈë$\leftarrow~not~p.$£»
-Èô$p \notin X$£¬ÔòÒªÈ·±£$p$Îª¼Ù£¬¼´ÍùÂß¼­³ÌĞòÖĞ¼ÓÈë$\leftarrow~p.$¡£
-»ùÓÚÕâÑùµÄ·ÖÎö£¬±¾ÎÄ¿ÉÒÔµÃµ½ÒÔÏÂÃüÌâ¡£
-\begin{proposition}\label{satisfy_proposition}
-	ÒÑÖª$P$ÊÇÒ»¸öÕı¹æÂß¼­³ÌĞò£¬$U$ÊÇÒ»¸öÔ­×Ó¼¯¡£ÄÇÃ´Ò»¸öÔ­×Ó¼¯$S \subseteq Atoms(P)$ÄÜÂú×ã$P$£¬µ±ÇÒ½öµ±$S = (X \cup Y) \cap Atoms(P)$£¬ÆäÖĞµÄ$X$ºÍ$Y$·Ö±ğÎª£º
+¶ÔÓÚ$ECC_U(P,X)$Ö±¹ÛÉÏµÄ¹¦ÄÜ¾ÍÊÇ±£Ö¤ÔÚ$P~\backslash~b_U(P)$ÖĞµÄÃ¿¸öÔ­×Ó$p$£¬
+Èô$p \in X$£¬ÔòÒªÈ·±£$p$ÎªÕæ£¬¹ÊÍùASPÂß¼­³ÌĞòÖĞ¼ÓÈë¡°$\leftarrow~not~p.$¡±£»
+Èô$p \notin X$£¬ÔòÒªÈ·±£$p$Îª¼Ù£¬¹ÊÍùASPÂß¼­³ÌĞòÖĞ¼ÓÈë¡°$\leftarrow~p.$¡±¡£
+»ùÓÚÕâÑùµÄ·ÖÎö£¬¿ÉÒÔµÃµ½ÒÔÏÂÃüÌâ¡£
+\begin{proposition} \label{satisfy_proposition}
+	ÒÑÖª$P$ÊÇÒ»¸öÕı¹æÂß¼­³ÌĞò£¬$U$ÊÇÒ»¸öÔ­×Ó¼¯¡£ÄÇÃ´Ò»¸öÔ­×Ó¼¯$S \subseteq Atoms(P)$ÄÜÂú×ã$P$£¬µ±ÇÒ½öµ±$S = (X \cup Y) \cap Atoms(P)$£¬ÆäÖĞµÄÔ­×Ó¼¯$X$ºÍ$Y$·Ö±ğÓĞ£º
 	\begin{itemize}
 		\item $X \models b_U(P) \cup EC_U(P)$
 		\item $Y \models e_U(P \backslash b_U(P),X) \cup ECC_U(P,X)$
 	\end{itemize}
 \end{proposition}
 
-ÏÔÈ»£¬ÒÀ¾İ¶¨Òå$EC_U(P)$ºÍ$ECC_U(P,X)$¹ı³ÌÖĞµÄ·ÖÎö±ã¿ÉÒÔÇå³şµØÖªµÀÃüÌâ\ref{satisfy_proposition}ÊÇ³ÉÁ¢µÄ¡£½ÓÏÂÀ´£¬¿´Ò»¸öÑéÖ¤ÃüÌâ\ref{satisfy_proposition}µÄÀı×Ó¡£
-\begin{example}\label{example_3_2}
-	¼ÌĞøÊ¹ÓÃÂß¼­³ÌĞò$P_1$£¬²¢Áî·Ö¸î¼¯$U=\{a\}$£¬ÄÇÃ´¿ÉÒÔ¼ÆËãµÃµ½£º
+\begin{proof} \label{proof_satisfy_proposition}
+	% ³ä·ÖĞÔÖ¤Ã÷	
+	$(\Rightarrow)~$ 
+	ÈôÓĞ$X \models b_U(P) \cup EC_U(P)$¼°$Y \models e_U(P \backslash b_U(P),X) \cup ECC_U(P,X)$£¬ÔòÓĞ£º
+	\begin{equation} \label{x_m_bup}
+		X \models b_U(P)
+	\end{equation}
+	
+	¶ø$ECC_U(P,X)$±£Ö¤ÁËÒÔÏÂÁ½µã£º
+	\begin{itemize}
+		\item ÈôÔ­×Ó$p \in (Atoms(b_U(P))~\backslash~U) \cap X$£¬Ôò$p$ÎªÕæ£»
+		\item ÈôÔ­×Ó$p \in (Atoms(b_U(P))~\backslash~U)~\backslash~X$£¬Ôò$p$Îª¼Ù¡£
+	\end{itemize}
+	
+	$ECC_U(P,X)$È·±£ÁË$Y$ºÍ$X$µÄÒ»ÖÂĞÔ¡£ÇÒ$e_U(P~\backslash~b_U(P), X)$½ö¶Ô$P~\backslash~b_U(P)$ÖĞ²»»áÒò$X$ÖĞµÄÔ­×ÓÕæÖµÈ·¶¨ĞÔ¶øÊ§È¥ÒâÒåµÄ¹æÔò²Ù×÷£¬²¢½ö»áÉ¾È¥ÓÉ$U$ÖĞÔ­×Óµ¼ÖÂÎªÕæµÄÎÄ×Ö¡£ËùÒÔÓĞ£º
+	\begin{equation} \label{xy_m_p_bup}
+		(X \cup Y) \cap Atoms(P) \models P~\backslash~b_U(P)
+	\end{equation}
+	
+	ÁªºÏÊ½(\ref{x_m_bup})ºÍÊ½(\ref{xy_m_p_bup})¿ÉÒÔµÃµ½$(X \cup Y) \cap Atoms(P) \models P$¡£¹Ê³ä·ÖĞÔµÃÖ¤¡£
+	
+	% ±ØÒªĞÔÖ¤Ã÷
+	$(\Leftarrow)~$
+	Èô$S \models P$£¬Áî$X = (S \cap U) \cup \{ a~|~a \in S \cap (Atoms(b_U(P))~\backslash~U) \} \cup \{ a'~|~a' \in Atoms(b_U(P)~\backslash~(U \cup S) \} $£¬$Y = S~\backslash~U$¡£ÏÔÈ»ÓĞ$(X \cup Y) \cap Atoms(P) = S$¡£
+	
+	ÓÉÓÚ$S \models P$£¬ËùÒÔ$\{ a~|~a \in S \cap (Atoms(b_U(P))~\backslash~U) \}$Îª$Atoms(b_U(P))~\backslash~U$ÖĞÂú×ã$P$µÄÔ­×Ó²¿·Ö£»$Atoms(b_U(P)~\backslash~(U \cup S)$ÔòÎª$Atoms(b_U(P))~\backslash~U$ÖĞ²»Âú×ã$P$µÄÔ­×Ó²¿·Ö¡£¹ÊÓĞ£º
+	\begin{equation} \label{x_m_bupecu}
+		X \models b_U(P) \cup EC_U(P)
+	\end{equation}
+	
+	Áí£¬$S \models P$£¬¹Ê$S \models P \backslash b_U(P)$¡£ÓÉÇ°ÃæµÄ·ÖÎö¿ÉÖª$e_U(P \backslash b_U(P),X)$½öÉ¾È¥ÊÜ$U$ÖĞÔ­×ÓÕæÖµÓ°ÏìµÄÎÄ×Ö£¬ËùÒÔ$Y \models e_U(P \backslash b_U(P),X)$¡£ÓÖ$ECC_U(P,X)$±£Ö¤µÄÊÇÈôÒ»¸öÔ­×Ó$p \in X~\backslash~U$£¬Ôò$p$ÎªÕæ¡£$S$Îª$P$µÄÄ£ĞÍ£¬¹Ê$S~\backslash~U$ÄÜÂú×ã$ECC_U(P,X)$¡£¹ÊÓĞ£º
+	\begin{equation} \label{y_m_euecc}
+		Y \models  e_U(P \backslash b_U(P),X) \cup ECC_U(P,X)
+	\end{equation}
+
+	ÓÉÊ½(\ref{x_m_bupecu})ºÍÊ½(\ref{y_m_euecc})¿ÉÖª±ØÒªĞÔ³ÉÁ¢¡£\quad
+\end{proof}
+
+
+%ÏÔÈ»£¬ÒÀ¾İ¶¨Òå$EC_U(P)$ºÍ$ECC_U(P,X)$¹ı³ÌÖĞµÄ·ÖÎö±ã¿ÉÒÔÇå³şµØÖªµÀÃüÌâ\ref{satisfy_proposition}ÊÇ³ÉÁ¢µÄ¡£
+½ÓÏÂÀ´£¬±¾½Ú¸ø³öÒ»¸öÑéÖ¤ÃüÌâ\ref{satisfy_proposition}µÄÀı×Ó¡£
+\begin{example} \label{example_3_3}
+	Áî$P_1$µÄ·Ö¸î¼¯Îª$U=\{a\}$£¬ÄÇÃ´¿ÉÒÔ¼ÆËãµÃµ½£º
 	\begin{equation}
 		b_U(P_1)~=~\{ a~\leftarrow~not~d.~a~\leftarrow~c,~d. \}
 	\end{equation}
+	
 	¼°£º
 	\begin{equation}
 		EC_U(P_1)~=~\{ d~\leftarrow~not~d'.~d'~\leftarrow~not~d.~c~\leftarrow~not~c'.~c'~\leftarrow~not~c. \}
 	\end{equation}
+	
 	ÇÒÇó½âµÃµ½£º
 	\begin{equation}
 		\Gamma (b_U(P_1) \cup EC_U(P_1)) = \{ \{ a,c,d \}, \{ a,c,d' \}, \{ a,c',d' \}, \{ c',d \} \}
 	\end{equation}
 	
-	Áî$X=\{a,c,d'\}$£¬ÏÔÈ»£¬$X \models b_U(P_1 ) \cup EC_U(P_1)$¡£Áí£¬¸ù¾İ¶¨Òå£¬¿ÉÒÔ¼ÆËãµÃ£º
+	Áî$X=\{a,c,d'\}$£¬ÏÔÈ»£¬$X \models b_U(P_1 ) \cup EC_U(P_1)$¡£Áí£¬¿ÉÒÔ¼ÆËãµÃµ½£º
 	\begin{equation}
 		\begin{array}{rcl}
 			e_U(P_1 \backslash b_U(P_1), X) = \{ d~\leftarrow~not~c.~c~\leftarrow. \}	\\
@@ -210,44 +268,50 @@ $EC_U(P)$Îª$Atoms(b_U(P)) \backslash U$ÖĞµÄÔ­×ÓÒıÈëÒ»×é¹æÔò£º
 	\end{equation}
 	
 	Áî$Y=\{c\}$£¬ÏÔÈ»£¬$Y \models e_U(P_1 \backslash b_U(P_1 ),X) \cup  ECC_U(P_1,X)$¡£
-	$X \cup Y = \{a,c,d'\}$£¬Ã÷ÏÔÒ²ÓĞ$X \cup Y \models P_1$¡£
+	$X \cup Y = \{a,c,d'\}$£¬Ã÷ÏÔÒ²ÓĞ$(X \cup Y) \cap Atoms(P) \models P_1$¡£
 \end{example}
 
-ÔÚÒıÈëÁË$EC_U(P)$ºÍ$ECC_U(P,X)$ºó£¬ÒÀ¾İÃüÌâ\ref{satisfy_proposition}£¬¿ÉÒÔÖªµÀÔ­³ÌĞòµÄÄ£ĞÍ¿ÉÒÔÍ¨¹ı$bottom$ºÍ$top$Á½²¿·ÖµÄÄ£ĞÍ¼ÆËãµÃµ½¡£È»¶ø£¬Ö±½ÓÊ¹ÓÃ$P \backslash b_U(P)$×÷Îª$top$²¢²»ÄÜÇó½â³öÔ­³ÌĞòÊ£ÏÂµÄ»Ø´ğ¼¯²¿·Ö¡£ÕâÊÇÒòÎª·Ö¸î¼¯$U$°ÑÂß¼­³ÌĞò$P$»®·ÖÎª$bottom$ºÍ$top$Á½²¿·ÖµÄÍ¬Ê±Ò²»á¿ÉÄÜÆÆ»µÁË$P$ÖĞµÄÄ³Ğ©»·$L$¡£½ÓÏÂÀ´£¬±¾ÎÄ½«Ê¹ÓÃASPÂß¼­³ÌĞòÖĞµÄ»·Óë»·¹«Ê½µÄÀíÂÛ£¬À´¶¨Òå¿ÉÒÔÓÃÓÚÇó½âÔ­³ÌĞòÊ£Óà»Ø´ğ¼¯²¿·ÖµÄ$top$¡£Ê×ÏÈ£¬ÕâÀï¶¨ÒåÁ½¸ö½á¹¹ĞÔµÄ¹æÔò¼¯ºÏ¡£
-\begin{definition}\label{in_out}
-	¶ÔÒ»¸öÂß¼­³ÌĞò$P$»ùÓÚÒ»¸öÔ­×Ó¼¯$U$£¬¶¨ÒåÒÔÏÂÁ½¸ö¹æÔò¼¯ºÏ£º
+ÔÚÒıÈëÁË$EC_U(P)$ºÍ$ECC_U(P,X)$ºó£¬ÒÀ¾İÃüÌâ\ref{satisfy_proposition}£¬¿ÉÒÔÖªµÀÔ­³ÌĞòµÄÄ£ĞÍ¿ÉÒÔÍ¨¹ı$bottom$ºÍ$top$Á½²¿·ÖµÄÄ£ĞÍ¼ÆËãµÃµ½¡£
+È»¶ø£¬Ö±½ÓÊ¹ÓÃ$P~\backslash~b_U(P)$×÷Îª$top$²¢²»ÄÜÇó½â³öÔ­³ÌĞòÊ£ÏÂµÄ»Ø´ğ¼¯²¿·Ö¡£
+ÕâÊÇÒòÎª·Ö¸î¼¯$U$°ÑÂß¼­³ÌĞò$P$»®·ÖÎª$bottom$ºÍ$top$Á½²¿·ÖµÄÍ¬Ê±Ò²¿ÉÄÜ»áÆÆ»µÁË$P$ÖĞµÄÄ³Ğ©»·$L$¡£
+
+½ÓÏÂÀ´£¬±¾½Ú½«»ùÓÚLinºÍZhao(2002)µÄ»·Óë»·¹«Ê½µÄË¼Ïë£¬À´¶¨Òå¿ÉÒÔÓÃÓÚÇó½âÔ­³ÌĞòÊ£Óà»Ø´ğ¼¯²¿·ÖµÄ$top$¡£
+Ê×ÏÈ£¬ÕâÀï¶¨ÒåÁ½¸ö¹æÔò¼¯ºÏ¡£
+\begin{definition} \label{in_out}
+	¶ÔÒ»¸öASPÂß¼­³ÌĞò$P$»ùÓÚÒ»¸öÔ­×Ó¼¯$U$£¬¶¨ÒåÒÔÏÂÁ½¸ö¹æÔò¼¯ºÏ£º
 	\begin{eqnarray}
-		in_U(P) = \{ r \in P~|~head(r) \cap U \neg \emptyset~and~(body^+(r) \cup head(r)) \subseteq U \}	\\
-		out_U(P) = \{ head(r) \subseteq U~and~(body^+(r) \cup head(r)) \cap U \neq \emptyset \}
+		&& in_U(P) = \{ r \in P~|~head(r) \cap U \neg \emptyset,~(body^+(r) \cup head(r)) \subseteq U \}	\\
+		&& out_U(P) = \{ head(r) \subseteq U,~(body^+(r) \cup head(r)) \cap U \neq \emptyset \}
 	\end{eqnarray}
 \end{definition}
 
 $in_U(P)$ºÍ$out_U(P)$ÊÇÓëASPÂß¼­³ÌĞòÕıÒÀÀµÍ¼½á¹¹ĞÔÏà¹ØµÄ¹æÔò¼¯ºÏ¡£ÔÚÕı¹æÂß¼­³ÌĞòÖĞÖ±¹ÛµÄº¬ÒåÊÇ£º
-$in_U(P)$´ú±íÁËÍ·²¿ÊôÓÚ·Ö¸î¼¯$U$£¬¶øÌå²¿ÕıÔ­×Ó´æÔÚÓë$U$ÖĞÔ­×Ó²»Í¬Ô­×ÓµÄ¹æÔò¼¯ºÏ£»
-$out_U(P)$´ú±íÁËÍ·²¿²»ÊôÓÚ·Ö¸î¼¯$U$£¬¶øÌå²¿ÕıÔ­×Ó´æÔÚÓë$U$ÖĞÔ­×ÓÏàÍ¬Ô­×ÓµÄ¹æÔò¼¯ºÏ¡£
+$in_U(P)$´ú±íÁËÍ·²¿ÊôÓÚ·Ö¸î¼¯$U$£¬¶øÌå²¿ÕıÔ­×Ó´æÔÚÓë$U$ÖĞÔ­×Ó²»Í¬µÄÔ­×ÓµÄ¹æÔò¼¯ºÏ£»
+$out_U(P)$´ú±íÁËÍ·²¿²»ÊôÓÚ·Ö¸î¼¯$U$£¬¶øÌå²¿ÕıÔ­×Ó´æÔÚÓë$U$ÖĞÔ­×ÓÏàÍ¬µÄÔ­×ÓµÄ¹æÔò¼¯ºÏ¡£
 ¸ù¾İÁ½ÕßµÄ¶¨Òå£¬ÏÔÈ»¿ÉÒÔµÃµ½ÒÔÏÂ¼¯ºÏ¹ØÏµ£º
 \begin{eqnarray}
 	in_U(P) \subseteq b_U(P)	\\
 	out_U(P) \subseteq P~\backslash~b_U(P)
 \end{eqnarray}
 
-ÔÚÓĞÁË$in_U(P)$ºÍ$out_U(P)$µÄ¸ÅÄîºó£¬±¾ÎÄ»ùÓÚ»·ÀíÂÛ¸ø³öÒÔÏÂ¶¨Òå¡£
-\begin{definition}[°ë»·£¨$semi-loop$£©]  \label{semi_loop}
-	Ò»¸ö·Ç¿ÕÔ­×Ó¼¯$E$³ÆÎªÂß¼­³ÌĞò$P$»ùÓÚÔ­×Ó¼¯$U$µÄ°ë»·£¨$smei-loop$£©£¬µ±ÇÒ½öµ±ÔÚ$P$ÖĞ´æÔÚÒ»¸ö»·$L$Ê¹µÃ$E = L \cap U$ÇÒ$E \subset L$¡£
+ÔÚÓĞÁË$in_U(P)$ºÍ$out_U(P)$µÄ¸ÅÄîºó£¬±¾½Ú¸ø³öÒÔÏÂ¶¨Òå¡£
+\begin{definition}[°ë»·(semi-loop)]  \label{semi_loop}
+	³ÆÒ»¸ö·Ç¿ÕÔ­×Ó¼¯$E$ÎªASPÂß¼­³ÌĞò$P$»ùÓÚÔ­×Ó¼¯$U$µÄ°ë»·£¬µ±ÇÒ½öµ±ÔÚ$P$ÖĞ´æÔÚÒ»¸ö»·$L$Ê¹µÃ$E = L \cap U$ÇÒ$E \subset L$¡£
 \end{definition}
 
 \begin{definition} \label{SLUP}
-	ÒÑÖªÕı¹æÂß¼­³ÌĞò$P$ºÍÔ­×Ó¼¯$X$¡¢$U$£¬ÇÒ$E$Îª$P$»ùÓÚ$U$µÄ°ë»·£¬¶¨ÒåÒ»¸ö°ë»·¼¯ºÏÈçÏÂ£º
+	¸ø¶¨Õı¹æÂß¼­³ÌĞò$P$ºÍÔ­×Ó¼¯$X$¡¢$U$ºÍ$E$£¬ÇÒ$E$Îª$P$»ùÓÚ$U$µÄ°ë»·£¬¶¨ÒåÒ»¸ö°ë»·¼¯ºÏÈçÏÂ£º
 	\begin{equation}
-		SL_U(P,X) = \{ E~|~E \subseteq X~and~R^-(E,P,X) \subseteq in_U(P) \}
+		SL_U(P,X) = \{ E~|~E \subseteq X,~R^-(E,P,X) \subseteq in_U(P) \}
 	\end{equation}
 \end{definition}
 
-¸ù¾İ$semi-loop$ºÍ$SL_U(P,X)$µÄ¶¨Òå£¬¿ÉÒÔµÃµ½ÒÔÏÂÒıÀí¡£
+¸ù¾İ°ë»·ºÍ$SL_U(P,X)$µÄ¶¨Òå£¬¿ÉÒÔµÃµ½ÒÔÏÂÒıÀí¡£
 \begin{lemma}\label{lem_slupx}
-	Ò»¸ö°ë»·$E$ÊôÓÚ$SL_U(P,X)$£¬Ôò$P$ÖĞ´æÔÚÒ»¸ö»·$L$Âú×ã$E \subset L$ÇÒ$X \nvDash LF(L,P)$¡£	
+	¸ø¶¨Õı¹æÂß¼­³ÌĞò$P$ºÍÆä·Ö¸î¼¯$U$£¬Ô­×Ó¼¯$X = \Gamma (b_U(P) \cup EC_U(P))$£¬Ò»¸ö°ë»·$E$ÊôÓÚ$SL_U(P,X)$£¬Ôò$P$ÖĞ´æÔÚÒ»¸ö»·$L$Âú×ã$E \subset L$ÇÒ$X \nvDash LF(L,P)$¡£	
 \end{lemma}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Continue From Here
 \begin{proof}
 	Ê¹ÓÃ·´Ö¤·¨¡£
 	
