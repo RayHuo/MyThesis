@@ -306,22 +306,22 @@ $out_U(P)$代表了头部不属于分割集$U$，而体部正原子存在与$U$中原子相同的原子的规则
 	\end{equation}
 \end{definition}
 
-根据半环和$SL_U(P,X)$的定义，可以得到以下引理。
+根据semi-loop和$SL_U(P,X)$的定义，可以得到以下引理。
 \begin{lemma}\label{lem_slupx}
-	给定正规逻辑程序$P$和其分割集$U$，原子集$X = \Gamma (b_U(P) \cup EC_U(P))$，一个半环$E$属于$SL_U(P,X)$，则$P$中存在一个环$L$满足$E \subset L$且$X \nvDash LF(L,P)$。	
+	给定正规逻辑程序$P$和其分割集$U$，原子集$X \in \Gamma (b_U(P) \cup EC_U(P))$，一个半环$E$属于$SL_U(P,X)$，则$P$中存在一个环$L$满足$E \subset L$且$X \nvDash LF(L,P)$。	
 \end{lemma}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Continue From Here
 \begin{proof}
 	使用反证法。
 	
-	分割集$U$在把逻辑程序$P$划分为两部分的同时可能会破坏$P$中的某些环$L$。这些被破坏的环可以分为两类：
+	分割集$U$在把ASP逻辑程序$P$划分为两部分的同时可能会破坏$P$中的某些环$L$。这些被破坏的环可以分为两类：
 	\begin{itemize}
-		\item 该环已经被$bottom$部分的回答集$X$所满足；
-		\item 该环不能被$bottom$部分的回答集$X$所满足，需要$top$部分的回答集与$X$的并集去满足。
+		\item 该环的环公式已经被$bottom$部分的回答集$X$所满足；
+		\item 该环的环公式不能被$bottom$部分的回答集$X$所满足。
 	\end{itemize}
 	
-	对于逻辑程序$P$中一个环$L$，其与分割集$U$的关系可以分为以下的情况：
+	对于ASP逻辑程序$P$中一个环$L$，其与分割集$U$的关系可以分为以下的情况：
 	
 	1） $L \subseteq U$。则对于规则$r \in R^-(L,P)$有$head(r) \cap L \neq \emptyset$，故$head(r) \cap U \neq \emptyset$，所以$r \in b_U(P)$，因此可以得到：
 	\begin{equation}
@@ -343,7 +343,7 @@ $out_U(P)$代表了头部不属于分割集$U$，而体部正原子存在与$U$中原子相同的原子的规则
 	X \models LF(L,P)
 	\end{equation}
 	
-	2） $L \nsubseteq U$且$L \cap U = \emptyset$，即$L \subseteq Atoms(P) \backslash U$。这样的环$L$即与$b_U(P)$无关，完全在$P \backslash b_U(P)$中。因为$L \cap U = \emptyset$，则$L \nsubseteq X$。根据环公式被一个原子集满足的定义可以知道$L \nsubseteq X$使得前键为假，故定义中的蕴涵式为真，即有$X \models LF(L,P)$。
+	2） $L \nsubseteq U$且$L \cap U = \emptyset$，即$L \subseteq Atoms(P)~\backslash~U$。这样的环$L$与$b_U(P)$无关，完全在$P~\backslash~b_U(P)$中。因为$L \cap U = \emptyset$，则$L \nsubseteq X$。根据环公式被一个原子集满足的定义可以知道$L \nsubseteq X$使得前键为假，故定义中的蕴涵式为真，即有$X \models LF(L,P)$。
 	
 	当环$L$完全在$b_U(P)$中时，或者环$L$完全在$P \backslash b_U(P)$中时，$X$能满足其环公式。实际上这样的环不属于被$U$破坏的环。以下情况的环为被$U$破坏的环。
 	
@@ -357,32 +357,49 @@ $out_U(P)$代表了头部不属于分割集$U$，而体部正原子存在与$U$中原子相同的原子的规则
 	
 	对于$r \notin in_U(P)$，所以有$body^+(r) \subseteq U$。
 	
-	对于$r \in R^-(L \cap U, P, X)$，所以有$body^+(r) \cap (L \cap U) \neq \emptyset$，
+	对于$r \in R^-(L \cap U, P, X)$，所以有$X \models body(r)$和$body^+(r) \cap (L \cap U) = \emptyset$，
+	% 这里的推论，画个维恩图就很清晰了
 	且已有$L \cap U \neq \emptyset$和$body^+(r) \subseteq U$，故$body^+(r) \cap L = \emptyset$。
 	同时，$head(r) \cap (L \cap U) \neq \emptyset$，所以$head(r) \cap L \neq \emptyset$。
 	故可以得到存在一个规则$r \in R^-(L,P)$且$X \models body(r)$，所以有$X \models LF(L,P)$。
 	
-	故令$E = L \cap U$，$E \subseteq X$，且有$R^-(E,P,X) \in in_U(P)$时，就存在一个环$L$有$X \nvDash LF(L,P)$。\quad
+	故令$E = L \cap U$，$E \subseteq X$，且有$R^-(E,P,X) \subseteq in_U(P)$时，就存在一个环$L$有$X \nvDash LF(L,P)$。\quad
 \end{proof}
 
-被分割集$U$破坏的环的环公式可能不能为$bottom$的回答集$X$所满足，所以需要剩下部分的回答集联合$X$一起去满足。定义$SL_U(P,X)$是为了找出$P$中环公式不能被$X$所满足的环。根据这些被破坏的环，引用Lin和Zhao在2004年提出的环理论，本文将定义新的$top$以保证最后得到的回答集能满足这部分环的环公式。
-\begin{definition}\label{new_top}
-	给定$P$为一个正规逻辑程序，$X$和$U$为原子集，$P$基于$U$通过$X$得到的$top$记为$t_U(P,X)$，
-	其由以下三部分组成：
+被分割集$U$破坏的环的环公式可能不能为$bottom$的回答集$X$所满足，所以需要剩下部分的回答集联合$X$一起去满足。定义$SL_U(P,X)$就是为了找出ASP逻辑程序$P$中被$U$破坏且环公式不能被$X$所满足的环。根据这些被破坏的环的特点，引用Lin和Zhao(2002)提出的环理论，本节定义新的$top$的关键部分以保证最后得到的回答集联合$X$能满足这部分环的环公式，进而保证ASP逻辑程序$P$中所有环的环公式都能被满足。
+\begin{definition} \label{new_top}
+	给定$P$为一个正规逻辑程序，$X$和$U$为原子集，$P$基于$U$通过$X$得到的$top$记为$t_U(P,X)$，其由以下三部分组成：
 	\begin{itemize}
 		\item $P \backslash (b_U(P) \cup out_U(P))$，
-		\item $\{ x_E~\leftarrow~body(r)~|~r \in in_U(P)~and~r \in R^-(E,P,X) \},~for~each~E \in SL_U(P,X)$，
-		\item $\{ head(r)~\leftarrow~x_{E_1},x_{E_2},...,x_{E_t},body(r)~|~r \in out_U(P),~for~all~possible~E_i \in SL_U(P,X)(1 \leq i \leq t)~s.t.~body^+(r) \cap E_i \neq \emptyset \}$。
+		\item 对每个$E \in SL_U(P,X)$构造$\{ x_E~\leftarrow~body(r)~|~r \in in_U(P),~r \in R^-(E,P,X) \}$，
+		\item $\{ head(r)~\leftarrow~x_{E_1},x_{E_2},...,x_{E_t},body(r)~|~r \in out_U(P),~E_i \in SL_U(P,X)(1 \leq i \leq t)~s.t.~body^+(r) \cap E_i \neq \emptyset \}$。
 	\end{itemize}
 \end{definition}
 
-其中$x_{E_i}$为基于$SL_U(P,X)$中的$smei-loop$引入的新原子，对于这些新原子，最后通过逻辑交$Atoms(P)$即可消去。
-新的$top$由三部分组成，其中第一部分从$P$中去除了$b_U(P)$和$out_U(P)$，
-事实上$b_U(P)$和$out_U(P)$不是单纯地被去掉，
-而是分别在第二和第三部分被重构以构成环。
-下面给出新的$top$求解得到的回答集$Y$能满足$body(r)$，其中$r \in R^-(L,P)$的证明。
+其中$x_{E_i}$为基于$SL_U(P,X)$中的semi-loop引入的新原子，对于这些新原子，最后通过逻辑交$Atoms(P)$即可消去。
+$t_U(P,X)$由三部分组成，其中第一部分从$P$中删去了$b_U(P)$和$out_U(P)$，
+事实上，$b_U(P)$和$out_U(P)$不是被单纯地删去，
+而是分别在$t_U(P,X)$的第二和第三部分根据$SL_U(P,X)$中的元素被进行重构，以此来补全那些被分割集$U$破坏了而$bottom$的回答集$X$不能满足其环公式的环。
+
+
+在明确了$t_U(P,X)$的直观作用后，本节将对定义\ref{asp_solution}进行重定义，给出新的ASP逻辑程序$P$基于分割集$U$的方案。
+\begin{definition}[方案(Solution)] \label{new_solution}
+	给定正规逻辑程序$P$和其分割集$U$，$P$基于$U$的方案，是一组原子集$\langle X,Y \rangle$，其中：	
+	\begin{itemize}
+		\item $X$是$b_U(P) \cup EC_U(P)$的一个回答集；
+		\item $Y$是$e_U(t_U(P,X),X) \cup ECC_U(P,X)$的一个回答集。
+	\end{itemize}
+\end{definition}
+
+称$e_U(t_U(P,X),X) \cup ECC_U(P,X)$为新的$top$，根据新的$top$的作用，可以得到以下命题。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{proposition} \label{po_XY_satisfy_allLoop}
+	给定ASP逻辑程序$P$及其分割集$U$，一组原子集$\langle X,Y \rangle$是$P$基于$U$的一组方案，则$(X \cup Y) \cap Atoms(P)$能满足$P$中的所有环的环公式。
+\end{proposition}
+
 \begin{proof}\label{proof_top}
-	新的$top$的第一部分首先去除了$bottom$部分的规则，同时去除$out_U(P)$中的规则，待第三部分重构。新的$top$是为了达到保证$(X \cup Y) \cap Atoms(P)$为$P$的回答集，首先证明$(X \cup Y) \cap Atoms(P)$能满足$P$中的所有环。根据引理\ref{lem_slupx}的证明可以知道$X$满足了大部分情况的环公式，对于$X$所不能满足的环公式的情况是环$L \subseteq X$，但不存在$r \in R^-(L,P)$有$X \models body(r)$。若对这样的环都存在$r \in R^-(L,P)$有$Y \models body(r)$，则可以得到明$(X \cup Y) \cap Atoms(P)$能满足$P$中的所有环公式。
+	%新的$top$的第一部分首先去除了$bottom$部分的规则，同时去除$out_U(P)$中的规则，待第二和第三部分重构。新的$top$是为了达到保证$(X \cup Y) \cap Atoms(P)$为$P$的回答集，首先证明$(X \cup Y) \cap Atoms(P)$能满足$P$中的所有环。
+	根据引理\ref{lem_slupx}的证明可以知道$X$满足了大部分情况下的环公式，对于$X$所不能满足的环公式的情况是：环$L \subseteq X$，但不存在规则$r \in R^-(L,P)$有$X \models body(r)$。若对这样的环都存在规则$r \in R^-(L,P)$有$Y \models body(r)$，则可以得到$(X \cup Y) \cap Atoms(P)$能满足$P$中的所有环的环公式。
 	
 	而$Y$是$top$部分的回答集，所以$Y$只可能满足$r \in R^-(L,P) \backslash b_U(P)$中的某些$body(r)$。而无法直接判定$Y$能满足哪些$body(r)$。若能构建关于$L \backslash U$的环，则有$R^-(L,P) \backslash b_U(P) \subseteq R^-(L \backslash U, t_U(P,X))$，而$Y$为$top$的回答集，构造关于$L \backslash U$的环在$top$内，必然存在$r \in R^-(L,P) \backslash b_U(P)$有$Y \models body(r)$。
 	
@@ -390,22 +407,22 @@ $out_U(P)$代表了头部不属于分割集$U$，而体部正原子存在与$U$中原子相同的原子的规则
 	
 	对于第二部分中构造的规则$x_E~\leftarrow~body(r_2)$，其中$r_2 \in in_U(P)$且$r_2 \in R^-(E,P,X)$。由于$r_2 \in in_U(P)$，故$r_2 \in b_U(P)$，而且$r_2 \in R^-(E,P,X)$，故有：
 	\begin{equation}\label{head_r_2}
-		head(r_2) \cap (L \cap U) \neq \emptyset
+	head(r_2) \cap (L \cap U) \neq \emptyset
 	\end{equation}
 	\begin{equation}\label{body_r_2}
-		body^+(r_2) \cap (L \cap U) = \emptyset
+	body^+(r_2) \cap (L \cap U) = \emptyset
 	\end{equation}
 	
 	因为$L$是$P$中的一个环，其被$U$分割为两部分，满足$head(r) \cap (L \backslash U)$的规则$r$不会出现在$b_U(P)$中，而必须存在满足$body(r_2) \cap (L \backslash U) \neq \emptyset$的规则$r_2$，否则无法构成$L$这个环。同时，对于每个满足$body(r_2) \cap (L \backslash U) \neq \emptyset$的规则$r_2$都会使用$E \in SL_U(P,X)$来构成一个新的规则，这是第二部分构造的规则。此外，这些规则都是从$b_U(P)$中提取出来的，$X \in \Gamma (b_U(P) \cup ECC_U(P)$，故对于$r_2 \in b_U(P)$也必然符合$X \models body(r_2)$，不会与$r_2 \in R^-(E,P,X)$产生矛盾。
 	
 	对于第三部分中构造的规则$head(r_1)~\leftarrow~x_{E_1},~x_{E_2},...,~x_{E_t},~body(r_1)$，其中$r_1 \in out_U(P)$且有：
 	\begin{equation}\label{body_r_1}
-		body^+(r_1) \cap (L \cap U) \neq \emptyset
+	body^+(r_1) \cap (L \cap U) \neq \emptyset
 	\end{equation}
 	
 	而为了保证能构成$L$这个环，在$P \backslash b_U(P)$的规则中，对于$body^+(r_1)$中包含$L \cap U$中元素的规则，必存在一个规则满足：
 	\begin{equation}\label{head_r_1}
-		head(r_1) \cap (L \backslash U) \neq \emptyset
+	head(r_1) \cap (L \backslash U) \neq \emptyset
 	\end{equation}
 	
 	根据式子\ref{head_r_2}和\ref{body_r_1}，以及式子\ref{head_r_1}和\ref{body_r_2}，可以知道$(L \backslash U) \cup \{x_E\}$是一个环。即能在$t_U(P)$中必能为被$U$破坏的环$L$构造出一个环，该环就是$(L \backslash U) \cup \{x_E\}$。此外，$e_U(P,X)$只会删去$U$相关的原子，$ECC_U(P,X)$只有限制，不构成环的部分，故这两个操作都不会对环$(L \backslash U) \cup \{x_E\}$产生影响。
@@ -415,18 +432,9 @@ $out_U(P)$代表了头部不属于分割集$U$，而体部正原子存在与$U$中原子相同的原子的规则
 %%%%%%%%%%%%%%%%%%%%%%%%%% proof top
 
 
-在明确了新的$top$的有效性和直观作用后，本文将对定义\ref{asp_solution}的重定义，给出新的逻辑程序$P$基于原子集$U$的方案（$Solution$）。
-\begin{definition}\label{new_solution}
-	给定正规逻辑程序$P$和原子集$U$，$P$基于$U$的方案（$Solution$）是一组原子集$\langle X,Y \rangle$，其中：	
-	\begin{itemize}
-		\item $X$是$b_U(P) \cup EC_U(P)$的一个回答集；
-		\item $Y$是$e_U(t_U(P,X),X) \cup ECC_U(P,X)$的一个回答集。
-	\end{itemize}
-\end{definition}
-
-下面给出一个计算逻辑程序$P$基于原子集$U$的方案的例子。
+下面给出一个计算ASP逻辑程序$P$基于其分割集$U$的方案的例子。
 \begin{example}
-	继续使用逻辑程序$P_1$，并令分割集$U=\{a\}$，根据定义\ref{in_out}可以计算得到：
+	继续使用ASP逻辑程序$P_1$，并令分割集$U=\{a\}$，根据定义\ref{in_out}可以计算得到：
 	\begin{eqnarray}
 		in_U(P_1) = \{ a~\leftarrow~c,~d. \}	\\
 		out_U(P_1) = \{ c~\leftarrow~a. \}

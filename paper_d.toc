@@ -24,7 +24,7 @@
 \contentsline {section}{\numberline {3.2}新程序分割方法}{23}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}正规逻辑的新程序分割方法}{24}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}析取逻辑程序分割方法}{39}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}强程序分割方法}{40}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}强程序分割方法}{41}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}计算复杂性分析}{43}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}底部计算复杂性}{44}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}顶部计算复杂性}{45}{subsection.3.3.2}

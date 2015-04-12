@@ -171,6 +171,17 @@ Nuchelmans G.
 \newblock Theories of the Proposition [J].
 \newblock 1973.
 
+\bibitem{reiter1978closed}
+Reiter R.
+\newblock On closed world data bases [M].
+\newblock Springer, 1978.
+
+\bibitem{van1989negation}
+Van~Gelder A.
+\newblock Negation as failure using tight derivations for general logic
+  programs [J].
+\newblock The Journal of Logic Programming, 1989, 6(1):109--133.
+
 \bibitem{lifschitz2008answer}
 Lifschitz V.
 \newblock What Is Answer Set Programming?. [C].// AAAI.
@@ -184,12 +195,6 @@ Bonatti P, Calimeri F, Leone N, et~al.
 \newblock Springer-Verlag.
 \newblock 2010:  159--182.
 
-\bibitem{ben1994propositional}
-Ben-Eliyahu R, Dechter R.
-\newblock Propositional semantics for disjunctive logic programs [J].
-\newblock Annals of Mathematics and Artificial intelligence, 1994,
-  12(1-2):53--87.
-
 \bibitem{lifschitz2002answer}
 Lifschitz V.
 \newblock Answer set programming and plan generation [J].
@@ -199,22 +204,6 @@ Lifschitz V.
 Biere A, Heule M, van Maaren H.
 \newblock Handbook of satisfiability [M].
 \newblock ios press, 2009.
-
-\bibitem{van1991well}
-Van~Gelder A, Ross K~A, Schlipf J~S.
-\newblock The well-founded semantics for general logic programs [J].
-\newblock Journal of the ACM (JACM), 1991, 38(3):619--649.
-
-\bibitem{reiter1978closed}
-Reiter R.
-\newblock On closed world data bases [M].
-\newblock Springer, 1978.
-
-\bibitem{van1989negation}
-Van~Gelder A.
-\newblock Negation as failure using tight derivations for general logic
-  programs [J].
-\newblock The Journal of Logic Programming, 1989, 6(1):109--133.
 
 \bibitem{gelfond1991classical}
 Gelfond M, Lifschitz V.
@@ -238,6 +227,11 @@ Zhang H, Stickel M~E.
   (AI-MATH¡¯96), Fort Lauderdale (Florida USA.
 \newblock Citeseer.
 \newblock 1996.
+
+\bibitem{van1991well}
+Van~Gelder A, Ross K~A, Schlipf J~S.
+\newblock The well-founded semantics for general logic programs [J].
+\newblock Journal of the ACM (JACM), 1991, 38(3):619--649.
 
 \bibitem{lee2003loop}
 Lee J, Lifschitz V.
