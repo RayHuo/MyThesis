@@ -11,7 +11,7 @@
 	\For {非空子集$S_1 \subseteq head(in_U(P))$和$S_2 \subseteq body^+(out_U(P))$} {
 		$G^S_P~:=~G_P$关于$S_1 \cup S_2 \cup (Atoms(P) \backslash (head(in_U(P)) \cup body^+(out_U(P))))$的子图；\\
 		$L~:=~G^S_P$的一个强连通分量，并满足$S_1 \cup S_2 \subseteq L$；\\
-		\If {$L$不存在} {
+		\If {不存在这样的$L$} {
 			break;
 		}
 		\If {$L \cap U \subseteq X$且$R^-(L \cap U, P, X) \subseteq in_U(P)$} {

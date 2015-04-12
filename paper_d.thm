@@ -61,30 +61,39 @@
 \contentsline {proof}{{\hei 证明}{6}{}}{35}{proof.6}
 \contentsline {definition}{{\hei 定义}{3.{8}}{关键半环(Dominated Semi-loop)}}{37}{definition.8}
 \contentsline {definition}{{\hei 定义}{3.{9}}{关键半环集}}{38}{definition.9}
-\contentsline {theorem}{{\hei 定理}{3.{2}}{}}{39}{theorem.3.2.2}
-\contentsline {definition}{{\hei 定义}{3.{10}}{析取逻辑程序的$top$}}{40}{definition.10}
-\contentsline {proof}{{\hei 证明}{7}{}}{41}{proof.7}
-\contentsline {theorem}{{\hei 定理}{3.{3}}{}}{41}{theorem.3.2.3}
-\contentsline {proposition}{{\hei 命题}{3.{4}}{}}{41}{proposition.4}
-\contentsline {proof}{{\hei 证明}{8}{}}{42}{proof.8}
-\contentsline {definition}{{\hei 定义}{3.{11}}{}}{42}{definition.11}
-\contentsline {definition}{{\hei 定义}{3.{12}}{强顶部（$Strong~Top$）}}{43}{definition.12}
-\contentsline {definition}{{\hei 定义}{3.{13}}{强方案（$Strong~Solution$）}}{43}{definition.13}
-\contentsline {theorem}{{\hei 定理}{3.{4}}{}}{43}{theorem.3.2.4}
-\contentsline {theorem}{{\hei 定理}{3.{5}}{}}{43}{theorem.3.2.5}
-\contentsline {proof}{{\hei 证明}{9}{}}{44}{proof.9}
-\contentsline {proof}{{\hei 证明}{10}{}}{45}{proof.10}
-\contentsline {definition}{{\hei 定义}{4.{1}}{负文字简化}}{49}{definition.1}
-\contentsline {definition}{{\hei 定义}{4.{2}}{正文字}}{49}{definition.2}
-\contentsline {proof}{{\hei 证明}{11}{}}{49}{proof.11}
-\contentsline {proposition}{{\hei 命题}{4.{1}}{}}{51}{proposition.1}
-\contentsline {example}{{\hei 例}{4.{1}}{}}{51}{example.1}
-\contentsline {proof}{{\hei 证明}{12}{}}{52}{proof.12}
-\contentsline {definition}{{\hei 定义}{4.{3}}{}}{53}{definition.3}
-\contentsline {definition}{{\hei 定义}{4.{4}}{}}{53}{definition.4}
-\contentsline {definition}{{\hei 定义}{4.{5}}{结论顶部（$Consequence~Top$）}}{54}{definition.5}
-\contentsline {proposition}{{\hei 命题}{4.{2}}{}}{54}{proposition.2}
-\contentsline {proof}{{\hei 证明}{13}{}}{54}{proof.13}
-\contentsline {example}{{\hei 例}{4.{2}}{}}{55}{example.2}
-\contentsline {example}{{\hei 例}{5.{1}}{}}{58}{example.1}
-\contentsline {definition}{{\hei 定义}{5.{1}}{哈密顿回路问题\upcite {cormen2001introduction}}}{60}{definition.1}
+\contentsline {proposition}{{\hei 命题}{3.{4}}{}}{38}{proposition.4}
+\contentsline {proof}{{\hei 证明}{7}{}}{38}{proof.7}
+\contentsline {definition}{{\hei 定义}{3.{10}}{关键顶部(Dominated Top)}}{40}{definition.10}
+\contentsline {definition}{{\hei 定义}{3.{11}}{关键方案(Dominated Solution)}}{40}{definition.11}
+\contentsline {theorem}{{\hei 定理}{3.{2}}{}}{40}{theorem.3.2.2}
+\contentsline {proof}{{\hei 证明}{8}{}}{40}{proof.8}
+\contentsline {definition}{{\hei 定义}{3.{12}}{析取逻辑程序的顶部(DLP top)}}{41}{definition.12}
+\contentsline {proposition}{{\hei 命题}{3.{5}}{}}{41}{proposition.5}
+\contentsline {proof}{{\hei 证明}{9}{}}{42}{proof.9}
+\contentsline {example}{{\hei 例}{3.{5}}{}}{42}{example.5}
+\contentsline {definition}{{\hei 定义}{3.{13}}{析取逻辑程序的方案(DLP Solution)}}{43}{definition.13}
+\contentsline {theorem}{{\hei 定理}{3.{3}}{}}{43}{theorem.3.2.3}
+\contentsline {proof}{{\hei 证明}{10}{}}{43}{proof.10}
+\contentsline {proposition}{{\hei 命题}{3.{6}}{}}{44}{proposition.6}
+\contentsline {proof}{{\hei 证明}{11}{}}{44}{proof.11}
+\contentsline {definition}{{\hei 定义}{3.{14}}{}}{44}{definition.14}
+\contentsline {definition}{{\hei 定义}{3.{15}}{强顶部(Strong Top)}}{45}{definition.15}
+\contentsline {definition}{{\hei 定义}{3.{16}}{强方案(Strong Solution)}}{45}{definition.16}
+\contentsline {theorem}{{\hei 定理}{3.{4}}{}}{45}{theorem.3.2.4}
+\contentsline {theorem}{{\hei 定理}{3.{5}}{}}{45}{theorem.3.2.5}
+\contentsline {proof}{{\hei 证明}{12}{}}{46}{proof.12}
+\contentsline {proof}{{\hei 证明}{13}{}}{47}{proof.13}
+\contentsline {definition}{{\hei 定义}{4.{1}}{负文字简化}}{51}{definition.1}
+\contentsline {definition}{{\hei 定义}{4.{2}}{正文字}}{51}{definition.2}
+\contentsline {proof}{{\hei 证明}{14}{}}{51}{proof.14}
+\contentsline {proposition}{{\hei 命题}{4.{1}}{}}{53}{proposition.1}
+\contentsline {example}{{\hei 例}{4.{1}}{}}{53}{example.1}
+\contentsline {proof}{{\hei 证明}{15}{}}{54}{proof.15}
+\contentsline {definition}{{\hei 定义}{4.{3}}{}}{55}{definition.3}
+\contentsline {definition}{{\hei 定义}{4.{4}}{}}{55}{definition.4}
+\contentsline {definition}{{\hei 定义}{4.{5}}{结论顶部（$Consequence~Top$）}}{56}{definition.5}
+\contentsline {proposition}{{\hei 命题}{4.{2}}{}}{56}{proposition.2}
+\contentsline {proof}{{\hei 证明}{16}{}}{56}{proof.16}
+\contentsline {example}{{\hei 例}{4.{2}}{}}{57}{example.2}
+\contentsline {example}{{\hei 例}{5.{1}}{}}{60}{example.1}
+\contentsline {definition}{{\hei 定义}{5.{1}}{哈密顿回路问题\upcite {cormen2001introduction}}}{62}{definition.1}
