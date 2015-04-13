@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  13 APR 2015 12:06
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  13 APR 2015 12:44
 entering extended mode
 **paper_d.tex
 (E:\CtexPaper\hzwPaper\paper_d.tex
@@ -1424,35 +1424,45 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 \begin{definition}
-                       [∏∫Œƒ◊÷ªØºÚ]\label{d_tr_n} [50
-
-
-
-]pdfTeX warning (ext4): destination with the same identifier (name{definition.2
-}) has been already used, duplicate ignored
+l.34 \begin{definition}
+                       [∏∫Œƒ◊÷ªØºÚ]\label{d_tr_n}pdfTeX warning (ext4): destina
+tion with the same identifier (name{definition.2}) has been already used, dupli
+cate ignored
 <to be read again> 
                    \relax 
-l.39 \begin{definition}
-                       [’˝Œƒ◊÷ªØºÚ]\label{d_tr_p} [51] [52]pdfTeX warning (ext4
-): destination with the same identifier (name{proposition.1}) has been already 
-used, duplicate ignored
+l.45 \begin{definition}
+                       [’˝Œƒ◊÷ªØºÚ]\label{d_tr_p} [50
+
+
+
+]pdfTeX warning (ext4): destination with the same identifier (name{proposition.
+1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.74 \begin{proposition}
+l.57 \begin{proposition}
+                         \label{prop_simp_ops}
+
+LaTeX Warning: Reference `prop_simp_ops' on page 51 undefined on input line 61.
+
+
+[51] [52]pdfTeX warning (ext4): destination with the same identifier (name{prop
+osition.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.85 \begin{proposition}
                         \label{p_4_1}pdfTeX warning (ext4): destination with th
 e same identifier (name{example.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.82 \begin{example}
+l.93 \begin{example}
                     \label{e_4_1} [53] [54]pdfTeX warning (ext4): destination w
 ith the same identifier (name{definition.3}) has been already used, duplicate i
 gnored
 <to be read again> 
                    \relax 
-l.132 \begin{definition}
+l.143 \begin{definition}
                         \label{new_in_U_P}
-Overfull \hbox (9.2252pt too wide) in paragraph at lines 133--134
+Overfull \hbox (9.2252pt too wide) in paragraph at lines 144--145
 []\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/1
 2/45 6 \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/
 n/12/45 9 \C19/kai/m/n/12/52 Ÿ \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S \C19/k
@@ -1468,9 +1478,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.4}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.139 \begin{definition}
+l.150 \begin{definition}
                         \label{C_S_U_P}
-Overfull \hbox (65.1927pt too wide) in paragraph at lines 140--141
+Overfull \hbox (65.1927pt too wide) in paragraph at lines 151--152
 []\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/49 ‹ \C19/kai/m/n/1
 2/45 6 \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S$\OML/cmm/m/it/12 P$\C19/kai/m/
 n/12/45 9 \C19/kai/m/n/12/52 Ÿ \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S \C19/k
@@ -1485,10 +1495,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.5}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.146 \begin{definition}
+l.157 \begin{definition}
                         [Ω·¬€∂•≤ø£®$Consequence~Top$£©]\label{consequence_top}
-[55]
-Overfull \hbox (16.8623pt too wide) in paragraph at lines 150--151
+Overfull \hbox (16.8623pt too wide) in paragraph at lines 161--162
 []$\OMS/cmsy/m/n/12 ff\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 g [ \OML/cmm/m/it/12
  head\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 n\OML
 /cmm/m/it/12 E  \OMS/cmsy/m/n/12    \OML/cmm/m/it/12 body\OT1/cmr/m/n/12 (\OML/
@@ -1499,13 +1508,16 @@ m/n/12 2 \OML/cmm/m/it/12 in[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/1
  ;  for each E \OMS/cmsy/m/n/12 2$
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{proposition.2
-}) has been already used, duplicate ignored
+
+LaTeX Warning: File ot161.cmap not found on input line 169.
+
+[55]pdfTeX warning (ext4): destination with the same identifier (name{propositi
+on.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.159 \begin{proposition}
+l.170 \begin{proposition}
                          \label{p_4_2}
-Overfull \hbox (4.37242pt too wide) in paragraph at lines 166--167
+Overfull \hbox (4.37242pt too wide) in paragraph at lines 177--178
 []$\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 )\OT1/cmr/m/n/12 )$ \C19/kai/m/n/12/45 = \
 C19/kai/m/n/12/64 y \C19/kai/m/n/12/50 ≤ \C19/kai/m/n/12/54 e$\OML/cmm/m/it/12 
 S[]$\C19/kai/m/n/12/58 è$\OML/cmm/m/it/12 tr[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
@@ -1518,7 +1530,7 @@ OMS/cmsy/m/n/12 \ \OML/cmm/m/it/12 Atoms\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1
  []
 
 [56]
-Overfull \hbox (23.25546pt too wide) in paragraph at lines 184--185
+Overfull \hbox (23.25546pt too wide) in paragraph at lines 195--196
 []$\OML/cmm/m/it/12 ct[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )$\C
 19/kai/m/n/12/40  Ω \C19/kai/m/n/12/61 ¬ \C19/kai/m/n/12/47 å \C19/kai/m/n/12/
 64  \C19/kai/m/n/12/26 ß$\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/
@@ -1535,7 +1547,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{example.2}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.196 \begin{example}
+l.207 \begin{example}
                      \label{e_4_2} [57]) [58] (E:\CtexPaper\hzwPaper\chap5.tex
 µ⁄ŒÂ’¬
 
@@ -1660,17 +1672,20 @@ Package rerunfilecheck Info: File `paper_d.out' has not changed.
 (rerunfilecheck)             Checksum: DE8CAF3E15AA53F2DB7B9BC34F607D59;1801.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16528 strings out of 495354
- 243548 string characters out of 3183074
- 354350 words of memory out of 3000000
- 18398 multiletter control sequences out of 15000+200000
+ 16531 strings out of 495354
+ 243579 string characters out of 3183074
+ 354386 words of memory out of 3000000
+ 18400 multiletter control sequences out of 15000+200000
  99430 words of font info for 326 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,19n,58p,1590b,1471s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,19n,58p,1590b,1472s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/
 simfang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windo
 ws/Fonts/simfang.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.
@@ -1753,7 +1768,7 @@ m/cmsy10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6
 rogram Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/Pro
 gram Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/Program Files/CT
 EX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on paper_d.pdf (90 pages, 1244289 bytes).
+Output written on paper_d.pdf (90 pages, 1244466 bytes).
 PDF statistics:
  1789 PDF objects out of 2073 (max. 8388607)
  440 named destinations out of 1000 (max. 500000)
