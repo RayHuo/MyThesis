@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  13 APR 2015 22:46
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  13 APR 2015 23:31
 entering extended mode
 **paper_d.tex
 (E:\CtexPaper\hzwPaper\paper_d.tex
@@ -1713,7 +1713,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  16533 strings out of 495354
  243614 string characters out of 3183074
- 354394 words of memory out of 3000000
+ 354412 words of memory out of 3000000
  18400 multiletter control sequences out of 15000+200000
  99430 words of font info for 326 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1800,7 +1800,7 @@ m/cmsy10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6
 rogram Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/Pro
 gram Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/Program Files/CT
 EX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on paper_d.pdf (91 pages, 1246739 bytes).
+Output written on paper_d.pdf (91 pages, 1246216 bytes).
 PDF statistics:
  1796 PDF objects out of 2073 (max. 8388607)
  442 named destinations out of 1000 (max. 500000)
