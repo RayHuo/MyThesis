@@ -32,7 +32,7 @@
 
 基于程序结论中的文字的真值确定性，本节定义两个基于程序结论去简化逻辑程序的化简操作符。它们为原逻辑程序删去受程序结论影响的文字和规则。下面将给出这两个化简操作符的具体的定义。
 \begin{definition}[负文字化简]\label{d_tr_n}
-	给定逻辑程序$P$和它的一个程序结论$L$，$P$基于$L$中负文字的化简记为$tr_n(P,L)$。$tr_n(P,L)$通过对原逻辑程序$P$执行以下两步操作得到：
+	给定ASP逻辑程序$P$和它的一个程序结论$L$，$P$基于$L$中负文字的化简记为$tr_n(P,L)$。$tr_n(P,L)$对$P$执行以下两步操作：
 	\begin{itemize}
 		\item 若$P$中的一个规则$r$中存在原子$p \in body^+(r)$，且有$\neg p \in L$，则从$P$中删去$r$；
 		\item 若$P$中的一个规则$r$中存在原子$p \in head(r)$或$p \in body^-(r)$，且有$\neg p \in L$，则把该规则$r$替换为以下形式：
@@ -43,7 +43,7 @@
 \end{definition}
 
 \begin{definition}[正文字化简]\label{d_tr_p}
-	给定逻辑程序$P$和它的一个程序结论$L$，$P$基于$L$中正文字的化简记为$tr_p(P,L)$。$tr_p(P,L)$通过对原逻辑程序$P$执行以下两步操作得到：
+	给定ASP逻辑程序$P$和它的一个程序结论$L$，$P$基于$L$中正文字的化简记为$tr_p(P,L)$。$tr_p(P,L)$对$P$执行以下两步操作：
 	\begin{itemize}
 		\item 若$P$中的一个规则$r$中存在原子$p \in head(r)$或$p \in body^-(r)$，且有$p \in L$，则从$P$中删去$r$；
 		\item 若$P$中的一个规则$r$中存在原子$p \in body^+(r)$，且有$p \in L$，则把该规则$r$替换为以下形式：
@@ -53,33 +53,96 @@
 	\end{itemize}
 \end{definition}
 
+% 这里先证明删去或修改的那些规则不会影响原程序的模型，下一个命题证明这些模型同时是原程序的回答集。
 根据正、负文字化简算子的定义，可以得到以下命题：
 \begin{proposition} \label{prop_simp_ops}
-	给定一个ASP逻辑程序$P$及其一个程序结论$L$，
+	给定一个ASP逻辑程序$P$及其一个程序结论$L$，则有以下两个结论成立：
+	\begin{itemize}
+		\item 若原子集$S$是$tr_n(P,L)$的模型，则$S$也是$P$的模型；
+		\item 若原子集$S$是$tr_p(P,L)$的模型，则$S \cup L$是$P$的模型。
+	\end{itemize}
 \end{proposition}
 
-接下来，本节给出命题\ref{prop_simp_ops}的证明。
 \begin{proof}
-	对于负文字化简$tr_n(P,L)$，其只考虑程序结论$L$中的负文字，即满足$\neg p \in L$的原子$p$。在$\neg p \in L$时，基于程序结论的定义性质，可以得到推不出$p$为真，所以得到$p$为假，$not~p$为真。对于$tr_n(P,L)$的两个步骤有：
-	\begin{enumerate}
-		\item 若$p \in body^+(r)$，且规则体部文字为合取关系。对于一个合取式$A \land B \land C$，若可以确定$C \equiv false$，那么有$A \land B \land C \equiv false$。所以在可以确定$p$为假的情况下，则可以确定$body(r)$为假，故这样的体部无法推出头部，进而可以把这个规则删掉。
-		\item 若$p \in head(r)$，且规则头部文字为析取关系。对于一个析取式$A \lor B \lor C$，若可以确定$C \equiv false$，那么有$A \lor B \lor C \equiv A \lor B$。所以在可以确定$p$为假的情况下，可以从$head(r)$中删掉$p$。若$p \in body^-(r)$，且规则体部文字为合取关系。对于一个合取式$A \land B \land C$，若可以确定$C \equiv true$，那么有$A \land B \land C \equiv A \land B$。所以在可以确定$not~p$为真的情况下，则可以确定$body^-(r)$删去$p$。所以$tr_n(P,L)$的第二步把符合要求的规则替换为$head(r) \backslash \overline{L}~\leftarrow~body^+(r),~body^-(r) \backslash \overline{L}$。
-	\end{enumerate}
+	对于结论一，$S$为$tr_n(P,L)$的模型，则必有$S$满足$P \cap tr_n(P,L)$中的所有规则。
+	而负文字化简$tr_n(P,L)$只考虑程序结论$L$中的负文字。
+	在$\neg p \in L$时，基于程序结论的定义性质，可以得到推不出$p$为真，所以得到$p$为假，$not~p$为真。
+	根据$tr_n(P,L)$的定义，对于$P~\backslash~tr_n(P,L)$部分的规则，可分为以下两种情况：
+	\begin{itemize}
+		\item 第一种情况下的规则$r$满足$p \in body^+(r)$。在确定$p$为假及体部原子仅为合取关系的情况下，可以得到$body(r)$为假，对于这种规则，前键为假，整体为真，所以$S$必会满足这种规则。
+		\item 第二种情况下的规则$r$形如“$head(r') \cup \overline{L}~\leftarrow~body^+(r'),body^-(r) \cup \overline{L}$”，其中规则$r' \in tr_n(P,L)$。
+		 $S$作为$tr_n(P,L)$的模型，$S$满足$r'$，而对于原子$p' \in \overline{L}$有$p'$为假，$not~p'$为真。根据头部仅有析取关系，体部仅有合取关系，故也有$S$满足$r$。
+	\end{itemize}
 	
-	对于正文字化简$tr_p(P,L)$，其只考虑程序结论$L$中的正文字，即满足$p \in L$的原子$p$。在$p \in L$时，基于程序结论的定义性质，可以推出$p$为真，$not~p$为假。对于$tr_p(P,L)$的两个步骤有：
-	\begin{enumerate}
-		\item 若$p \in head(r)$，且规则头部文字为析取关系。对于一个析取式$A \lor B \lor C$，若可以确定$C \equiv true$，那么有$A \lor B \lor C \equiv true$。所以在可以确定$p$为真的情况下，则可以确定$head(r)$为真，故此规则无须考虑，可以删去。若$p \in body^-(r)$，且规则体部文字为合取关系。对于一个合取式$A \land B \land C$，若可以确定$C \equiv false$，那么有$A \land B \land C \equiv false$。所以在可以确定$not~p$为假的情况下，则$body(r)$为假，无法推出结论，故可以删去此规则。
-		\item 若$p \in body^+(r)$，且规则体部文字为合取关系。对于一个合取式$A \land B \land C$，若可以确定$C \equiv true$，那么有$A \land B \land C \equiv A \land B$。所以在可以确定$not~p$为真的情况下，则可以确定$body^+(r)$删去$p$。所以$tr_p(P,L)$的第二步把符合要求的规则替换为$head(r)~\leftarrow~body^+(r) \backslash L,~body^-(r)$。
-	\end{enumerate}
+	故有$S$也满足$P~\backslash~tr_n(P,L)$中的所有规则，所以$S$为$P$的模型。
 	
-	综上所述，定义\ref{d_tr_n}和\ref{d_tr_p}中的基于程序结论中文字的真值特性所定义的正负文字化简操作符是合理而且有效的。\quad
+	对于结论二，$S$为$tr_p(P,L)$的模型，则必有$S$满足$P \cap tr_p(P,L)$中的所有规则。
+	而正文字化简$tr_p(P,L)$只考虑程序结论$L$中的正文字。
+	在$p \in L$时，基于程序结论的定义性质，可以推出$p$为真，$not~p$为假。
+	根据$tr_p(P,L)$的定义，对于$P~\backslash~tr_p(P,L)$部分的规则，可分为以下两种情况：
+	\begin{itemize}
+		\item 第一种情况下的规则$r$满足$p \in head(r)$或$p \in body^-(r)$。在确定$p$为真及头部原子仅为析取关系的情况下，可以确定$head(r)$为真，后键为真，故$r$必为真，所以有$S$满足$r$。同样地，在明确$not~p$为假及体部原子仅为合取关系的情况下，可以确定$body(r)$为假，前键为假，故$r$必为真，所以有$S$满足$r$。故$S$满足这种情况下的规则。
+		\item 第二种情况下的规则$r$形如$head(r')~\leftarrow~body^+(r') \cup L,~body^-(r')$，其中$r' \in tr_p(P,L)$。已有$S$满足$r'$，所以$S \cup L$满足$body^+(r') \cup L$，故也有$S$满足$r$。
+	\end{itemize}
+	
+	故有$S \cup L$满足$P~\backslash~tr_p(P,L)$中的所有规则，所以$S \cup L$为$P$的模型。
+	\quad
 \end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	若$p \in head(r)$，且规则头部文字为析取关系。
+%对于一个析取式$A \lor B \lor C$，若可以确定$C \equiv false$，那么有$A \lor B \lor C \equiv A \lor B$。
+%所以在可以确定$p$为假的情况下，可以从$head(r)$中删掉$p$。
+%若$p \in body^-(r)$，且规则体部文字为合取关系。
+%对于一个合取式$A \land B \land C$，若可以确定$C \equiv true$，那么有$A \land B \land C \equiv A \land B$。
+%所以在可以确定$not~p$为真的情况下，则可以确定$body^-(r)$删去$p$。
+%
+%对于结论二，
+%正文字化简$tr_p(P,L)$只考虑程序结论$L$中的正文字，即满足$p \in L$的原子$p$。
+%在$p \in L$时，基于程序结论的定义性质，可以推出$p$为真，$not~p$为假。对于$tr_p(P,L)$的两个步骤有：
+%\begin{enumerate}
+%	\item 若$p \in head(r)$，且规则头部文字为析取关系。对于一个析取式$A \lor B \lor C$，若可以确定$C \equiv true$，那么有$A \lor B \lor C \equiv true$。所以在可以确定$p$为真的情况下，则可以确定$head(r)$为真，故此规则无须考虑，可以删去。若$p \in body^-(r)$，且规则体部文字为合取关系。对于一个合取式$A \land B \land C$，若可以确定$C \equiv false$，那么有$A \land B \land C \equiv false$。所以在可以确定$not~p$为假的情况下，则$body(r)$为假，无法推出结论，故可以删去此规则。
+%	\item 若$p \in body^+(r)$，且规则体部文字为合取关系。对于一个合取式$A \land B \land C$，若可以确定$C \equiv true$，那么有$A \land B \land C \equiv A \land B$。所以在可以确定$not~p$为真的情况下，则可以确定$body^+(r)$删去$p$。所以$tr_p(P,L)$的第二步把符合要求的规则替换为$head(r)~\leftarrow~body^+(r) \backslash L,~body^-(r)$。
+%\end{enumerate}
+%
+%综上所述，定义\ref{d_tr_n}和\ref{d_tr_p}中的基于程序结论中文字的真值特性所定义的正负文字化简操作符是合理而且有效的。\quad
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-根据正文字化简和负文字化简操作符的定义可以知道给定一个逻辑程序$P$和它的一个程序结论$L$，$tr_n(P,L)$得到的逻辑程序中将不含任何满足$\neg p \in L$的原子$p$。同理，$tr_p(P,L)$得到的逻辑程序中将不含任何满足$p \in L$的原子$p$。那么$tr_p(tr_n(P,L),L)$得到的逻辑程序中将不含任何满足$p \in Atoms(L)$的原子$p$。
+以下给出一个计算$tr_n(P,L)$和$tr_p(P,L)$的例子：
+\begin{example}
+	给定ASP逻辑程序$P_3$如下，及其程序结论$L = \{ a,~c,~\neg b \}$：
+	\begin{eqnarray}
+		&& a~\leftarrow~not~b.	\\
+		&& b~\leftarrow~not~a.	\\
+		&& \leftarrow~not~a.	\\
+		&& c~\leftarrow~a.	\\
+		&& d~\leftarrow~c.	\\	
+		&& a~\leftarrow~d.	\\
+		&& f~\leftarrow~b.	\\
+		&& b~\leftarrow~f.
+	\end{eqnarray}
+	
+	则有：
+	\begin{equation}
+		\begin{array}{rcl}
+			tr_n(P_3,L) = \{ a~\leftarrow.~b~\leftarrow~not~a.~\leftarrow~not~a. \\  c~\leftarrow~a.~d~\leftarrow~c.~a~\leftarrow~d.~\leftarrow~f. \}
+		\end{array}	
+	\end{equation}
+	
+	及：
+	\begin{equation}
+		\begin{array}{rcl}
+			tr_p(P_3,L) = \{ d~\leftarrow.~f~\leftarrow~b.~b~\leftarrow~f. \}
+		\end{array}
+	\end{equation}
+\end{example}
 
-对于一个逻辑程序$P$，$tr_p(tr_n(P,L),L)$使得$P$基于它的程序结论$L$把已经可以确定真值的文字及这些文字对$P$的影响移除。这个操作的实质效果便是：在已知一部分回答集（即程序结论）的情况下，去掉这部分对逻辑程序P的影响，在剩下的部分里求解出余下的回答集部分。这个过程跟程序分割通过底部求解出$X$，代入顶部求解出剩下的回答集部分$Y$是一致的。
 
-Van和Gelder等人在1991年提出的正规逻辑程序的良序模型（$Well-founded~Model$）\cite{van1991well}也是正规逻辑程序的一个程序结论。当前的主要ASP求解器都内置地使用了良序模型去化简程序。但存在其他比良序模型的基要大的程序结论，而使用这些程序结论将比良序模型更有效地化简程序。明显地，程序结论的基越大，能消去的确定性的的文字越多，程序规模越小，求解越快。Chen，Ji和Lin在2013年时提出了通过使用最多只有一个外部支持的环的环公式去计算程序结论，将有效地得到比良序模型的基要大的程序结论\cite{chen2013computing}。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+根据正文字化简和负文字化简算子的定义可以知道给定一个ASP逻辑程序$P$和它的一个程序结论$L$，$tr_n(P,L)$得到的ASP逻辑程序中将不含任何满足$\neg p \in L$的原子$p$。同理，$tr_p(P,L)$得到的ASP逻辑程序中将不含任何满足$p \in L$的原子$p$。那么$tr_p(tr_n(P,L),L)$得到的逻辑程序中将不含任何满足$p \in L$的原子$p$。
+
+对于一个ASP逻辑程序$P$，$tr_p(tr_n(P,L),L)$使得$P$基于它的程序结论$L$把已经可以确定真值的文字及这些文字对$P$的影响移除。这个操作的实质效果便是：在已知一部分回答集（即程序结论）的情况下，去掉这部分对$P$的影响，在剩下的部分里求解出余下的回答集部分。这个过程跟程序分割通过bottom求解出$X$，代入top求解出剩下的回答集部分$Y$的思路是一致的。
+
+Van和Gelder等(1991)提出的正规逻辑程序的良序模型(Well-founded Model)\upcite{van1991well}也是正规逻辑程序的一个程序结论。当前的主要ASP求解器都内置地使用了良序模型去化简程序。但存在其他比良序模型的基要大的程序结论，而使用这些程序结论将比良序模型更有效地化简程序。明显地，程序结论的基越大，能消去的确定性的的文字越多，程序规模越小，求解越快。Chen，Ji和Lin在2013年时提出了通过使用最多只有一个外部支持的环的环公式去计算程序结论，将有效地得到比良序模型的基要大的程序结论\upcite{chen2013computing}。
 
 事实上，$tr_n(P,L)$和$tr_p(P,L)$两者虽然只是根据程序结论中的不同类型的文字（负/正）去化简逻辑程序，但两者的适用性并不完全一致。具体情况将由下面的命题带出。
 \begin{proposition}\label{p_4_1}
@@ -90,37 +153,7 @@ Van和Gelder等人在1991年提出的正规逻辑程序的良序模型（$Well-founded~Model$）\cite
 	\end{itemize}
 \end{proposition}
 
-\begin{example}\label{e_4_1}
-	给定逻辑程序$P$如下：
-	\begin{eqnarray}
-		a~\leftarrow~b.	\\
-		c~\leftarrow~a.	\\
-		b~\leftarrow~c.	\\
-		c~\leftarrow~d.	\\
-		a~\leftarrow~f.	\\
-		d~\leftarrow~not~e.	\\
-		e~\leftarrow~not~d.	\\
-		\leftarrow~not~a.	\\
-		f~\leftarrow~a.
-	\end{eqnarray}
-	
-	使用本节提供的算法可以算的程序结论$L=\{a,f\}$，并可以计算得到：
-	\begin{equation}
-		tr_p(P,L) = \{ c.~b~\leftarrow~c.~c~\leftarrow~d.~d~\leftarrow~not~e.~e~\leftarrow~not~d.\}
-	\end{equation}
-	
-	且有程序$P$的回答集为：
-	\begin{equation}
-		\Gamma (P) = \{ a,b,c,d,f \}
-	\end{equation}
-	
-	及$tr_p(P,L)$的回答集为：
-	\begin{equation}
-		\Gamma (tr_p(P,L)) = \{ \{ b,c,d \},~\{ b,c,e \} \}
-	\end{equation}
-	
-	其中${a,b,c,d,f} \backslash L = \{b,c,d\} \neq \{b,c,e\} $。
-\end{example}
+
 
 $tr_n(P,L)$和$tr_p(P,L)$从定义上看只是差异在两者对程序结论中文字类型的应用上。但本质上来说，在逻辑程序中删去正负文字的影响是不一样的。具体的原因涉及Lin和Zhao提出的环理论。下面将给出其正确性的具体的证明。
 \begin{proof}
@@ -131,6 +164,41 @@ $tr_n(P,L)$和$tr_p(P,L)$从定义上看只是差异在两者对程序结论中文字类型的应用上。但
 	对于命题\ref{p_4_1}中的第二个结论，$E$是$P$中的一个环，但$E$也不一定能保持也是$tr_p(P,L)$中的一个环，因为$tr_p(P,L)$中同样可能会删去某些正体部的原子导致环$E$被破坏。但由于$tr_p(P,L)$是基于程序结论的正文字进行化简的，会删去这些正文及其影响。而这些正文字可能作为环$E$的外部支持，故当这些正文字被删除后，求解出来的回答集将不满足环$E$的环公式。同时，这些正文字是会出现在原程序的回答集中的，故$S \backslash L$作为$tr_p(P,L)$的回答集时并不一定能保证$S$是原程序的一个回答集，它可能不能满足原程序的所有环公式。\quad
 \end{proof}
 
+接着，本节给出一个验证命题\ref{p_4_1}的例子：
+\begin{example}\label{e_4_1}
+	给定ASP逻辑程序$P_4$如下：
+	\begin{eqnarray}
+	&& a~\leftarrow~b.	\\
+	&& c~\leftarrow~a.	\\
+	&& b~\leftarrow~c.	\\
+	&& c~\leftarrow~d.	\\
+	&& a~\leftarrow~f.	\\
+	&& d~\leftarrow~not~e.	\\
+	&& e~\leftarrow~not~d.	\\
+	&& \leftarrow~not~a.	\\
+	&& f~\leftarrow~a.
+	\end{eqnarray}
+	
+	使用本节提供的算法可以算的程序结论$L=\{a,f\}$，并可以计算得到：
+	\begin{equation}
+	tr_p(P_4,L) = \{ c.~b~\leftarrow~c.~c~\leftarrow~d.~d~\leftarrow~not~e.~e~\leftarrow~not~d.\}
+	\end{equation}
+	
+	且有程序$P_4$的回答集为：
+	\begin{equation}
+	\Gamma (P_4) = \{ a,b,c,d,f \}
+	\end{equation}
+	
+	及$tr_p(P_4,L)$的回答集为：
+	\begin{equation}
+	\Gamma (tr_p(P_4,L)) = \{ \{ b,c,d \},~\{ b,c,e \} \}
+	\end{equation}
+	
+	其中$\{a,b,c,d,f\}~\backslash~L = \{b,c,d\} \neq \{b,c,e\} $。
+\end{example}
+
+
+
 基于命题\ref{p_4_1}的两个结论，可以知道$tr_n(P,L)$比$tr_p(P,L)$的泛用性更好。然而$tr_p(P,L)$使用的程序结论中的正文字才更有意义，因为这部分将是原程序回答集中的内容。所以本文后续将顺着需要满足所有环公式的思路去设计能让$tr_p(P,L)$泛化的操作符。
 
 
@@ -140,21 +208,21 @@ $tr_n(P,L)$和$tr_p(P,L)$从定义上看只是差异在两者对程序结论中文字类型的应用上。但
 本节将提出使用程序结论去分割逻辑程序，并对分割出来的结论顶部（$Consequence~Top$）进行$tr_p(P,L)$化简，并给出一个$tr_p(P,L)$具有泛用性的命题结论。
 
 对于一个逻辑程序$P$及其一个程序结论$U$，本节将使用$U$去分割$P$以得到一个不含$U$中任何原子的新逻辑程序，再使用$tr_p(P,L)$对新的逻辑程序进行化简，求解回答集，以得到原程序的实际回答集。	根据前面的分析可知，$tr_p(P,U)$会因为删去满足$head(r) \in U$及$body^-(r) \cap U \neq \emptyset$的规则$r$。同时，在剩下的规则中删去出现在正体部中的$U$中原子。由于正体部被破坏，这可能会导致原程序中的某些环被破坏。故可以引用分割集中构造$t_U(P,X)$的思想构造新的环以保证化简后的程序的回答集可以满足原程序的所有环公式。首先，本节给出后续需要用到的相关定义。
-\begin{definition}\label{new_in_U_P}
+\begin{definition} \label{new_in_U_P}
 	给定逻辑程序$P$及其程序结论$U$，标记与$U$无关的规则集合为$in'_U(P)$，且有：
 	\begin{equation}
 		in'_U(P) = \{ r \in P~|~head(r) \cap U \neq \emptyset,~Atoms(r) \nsubseteq U \}
 	\end{equation}
 \end{definition}
 
-\begin{definition}\label{C_S_U_P}
-	给定逻辑程序$P$及其程序结论$U$，标记$P$基于$U$的结论半环（$Consequence~Semi-Loop$）为$CS_U(P)$，且有：
+\begin{definition}[结论半环集]\label{C_S_U_P}
+	给ASP定逻辑程序$P$及其程序结论$U$，标记$P$基于$U$的结论半环(Consequence Semi-Loop)集为$CS_U(P)$，且有：
 	\begin{equation}
 		CS_U(P) = \{ E~|~E \subseteq U,~E \neq \emptyset,~R^-(E,P) \subseteq in'_U(P) \}
 	\end{equation}
 \end{definition}
 
-\begin{definition}[结论顶部（$Consequence~Top$）]\label{consequence_top}
+\begin{definition}[结论顶部(Consequence Top)] \label{consequence_top}
 	给定逻辑程序$P$及其程序结论$U$，标记$P$基于$U$的结论顶部为$ct_U(P)$，并由以下四部分的并集组成：
 	\begin{itemize}
 		\item $P \backslash (b_U(P) \cup out_U(P)$，
@@ -167,8 +235,8 @@ $tr_n(P,L)$和$tr_p(P,L)$从定义上看只是差异在两者对程序结论中文字类型的应用上。但
 结论顶部的设计跟析取逻辑程序的顶部类似，其中加入了最后一部分以保证原程序的所有环公式都能被满足。
 
 依此，本文给出使$tr_p(P,L)$具有泛用性的命题结论，并给出相关的证明和例子。注意，这里只考虑只包含正文字的程序结论，所以下面也将程序结论看做一个原子集。
-\begin{proposition}\label{p_4_2}
-	给定正规逻辑程序$P$和其程序结论$U$，一个原子集$S$是$P$的一个回答集，当且仅当存在$tr_p(ct_U(P),U)$的一个回答集$S*$满足$S \backslash U = S* \cap Atoms(P)$。
+\begin{proposition} \label{p_4_2}
+	给定正规逻辑程序$P$和其程序结论$U$，一个原子集$S$是$P$的一个回答集，当且仅当存在$tr_p(ct_U(P),U)$的一个回答集$S^*$满足$S \backslash U = S^* \cap Atoms(P)$。
 \end{proposition}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -204,7 +272,7 @@ $tr_n(P,L)$和$tr_p(P,L)$从定义上看只是差异在两者对程序结论中文字类型的应用上。但
 在计算复杂性方面，$tr_p(ct_U(P),U)$同样会因为$CS_U(P)$而引入新原子，这里也存在指数爆炸的最坏情况。但类似分割理论中的分析，只要通过限制$|in'_U(P)|$的大小来限制$|CS_U(P)|$的大小，则可以有效地把$tr_p(ct_U(P),U)$的计算变得可以接受。
 
 以下通过一个例子直观地展示命题\ref{p_4_2}的效果。
-\begin{example}\label{e_4_2}
+\begin{example} \label{e_4_2}
 	继续使用例\ref{e_4_1}中的逻辑程序，令$U=\{a,f\}$，则根据定义可以计算得到$CS_U(P)=\{\{a,f\}\}$，并有：
 	\begin{equation}
 		\begin{array}{rcl}
@@ -235,7 +303,7 @@ $tr_n(P,L)$和$tr_p(P,L)$从定义上看只是差异在两者对程序结论中文字类型的应用上。但
 \end{example}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{本章小结}
 
