@@ -1,75 +1,89 @@
 \chapter{实验与分析}
 
-本章涉及两个实验：程序分割实验和程序化简实验。程序分割实验中首先直接求解逻辑程序的回答集，然后使用新程序分割方法求解逻辑程序回答集，并比较两种方法的效率。程序化简实验中则对比原逻辑程序和进行程序化简后的逻辑程序的求解效率。本文使用词法分析器$flex$和语法分析器$bison$对ASP逻辑程序进行解析，通过C/C++编写新程序分割和程序化简部分的功能并输出操作后的ASP逻辑程序，最后使用$gringo$对操作后的ASP逻辑程序进行例化，使用$clasp$求解ASP逻辑程序。
+本章涉及两个实验：程序分割实验和程序化简实验。程序分割实验中首先直接求解逻辑程序的回答集，然后使用新程序分割方法求解逻辑程序回答集，并比较两种方法的效率。程序化简实验中则对比原逻辑程序和进行程序化简后的逻辑程序的求解效率。
 
-\section{实验工具}
+%本文使用词法分析器$flex$和语法分析器$bison$对ASP逻辑程序进行解析，通过C/C++编写新程序分割和程序化简部分的功能并输出操作后的ASP逻辑程序，最后使用$gringo$对操作后的ASP逻辑程序进行例化，使用$clasp$求解ASP逻辑程序。
 
-本文的两个实验所使用的辅助工具一致。在词法分析和语法分析上都分别使用$flex$和$bison$，在例化和求解方面都使用$gringo$和$clasp$。以下来具体介绍这几个工具。
+\section{实验环境}
+
+本节给出程序分割实验和程序化简实验所用到的实验工具和测例内容。
 
 % lex and yacc
-\subsection{词法分析器和语法分析器}
+\subsection{实验工具}
 
-词法分析和语法分析是实现编译器中所使用到的重要技术。早在上世纪七十年代，贝尔实验室就开发出经典的词法分析器和语法分析器：$lex$和$yacc$。$flex$和$bison$则是$lex$和$yacc$的现代版本，由著名的GNU项目发布\upcite{levine2009flex}。当前的linux操作系统都自带了$flex$和$bison$。
+本章的两个实验的实验工具是一致的。在词法分析和语法分析上都分别使用$flex$和$bison$，在例化和求解方面都使用$gringo$和$clasp$。以下来具体介绍这几个工具。
 
-使用$flex$进行词法分析的具体过程如下\upcite{levine2009flex}：
-\begin{itemize}\label{flex_usage}
-	\item 根据自身需求编写$lex.l$文件，在$lex.l$文件中定义好程序中将需要识别的词，这部分一般使用正则表达式编写；
-	\item 执行命令：$flex~lex.l$，得到$lex.yy.c$文件，此C文件中实现了$yylex()$函数；
-	\item 执行命令：$g++~lex.yy.c~-o~mylex~-lfl$ 即可得到可执行文件$mylex$，$mylex$便是一个词法分析器，其中$-lfl$是与$flex$库文件进行链接。
-\end{itemize}
 
-实际上$flex$程序每次都调用$yylex()$函数来得到一个匹配其定义的模式（$pattern$）的一个词（$token$），然后执行该$token$对应的动作（$action$），一般是返回该$token$的记号。
+%词法分析和语法分析是实现编译器中所使用到的重要技术。早在上世纪七十年代，贝尔实验室就开发出经典的词法分析器和语法分析器：$lex$和$yacc$。$flex$和$bison$则是$lex$和$yacc$的现代版本，由著名的GNU项目发布\upcite{levine2009flex}。当前的linux操作系统都自带了$flex$和$bison$。
+%
+%使用$flex$进行词法分析的具体过程如下\upcite{levine2009flex}：
+%\begin{itemize}\label{flex_usage}
+%	\item 根据自身需求编写$lex.l$文件，在$lex.l$文件中定义好程序中将需要识别的词，这部分一般使用正则表达式编写；
+%	\item 执行命令：$flex~lex.l$，得到$lex.yy.c$文件，此C文件中实现了$yylex()$函数；
+%	\item 执行命令：$g++~lex.yy.c~-o~mylex~-lfl$ 即可得到可执行文件$mylex$，$mylex$便是一个词法分析器，其中$-lfl$是与$flex$库文件进行链接。
+%\end{itemize}
+%
+%实际上$flex$程序每次都调用$yylex()$函数来得到一个匹配其定义的模式（$pattern$）的一个词（$token$），然后执行该$token$对应的动作（$action$），一般是返回该$token$的记号。
+%
+%使用$bison$进行语法分析的具体过程如下\upcite{levine2009flex}：
+%\begin{itemize}\label{bison_usage}
+%	\item 根据需要分析的词汇，指定需要用到的$token$及其类型，根据需要分析的语法，根据$token$编写语法树，得到自定义的语法分析文件$parser.y$；
+%	\item 执行命令$bison~-d~parser.y$，得到$parser.tab.c$和$parser.tab.h$两个文件；
+%	\item 在C程序中调用$parser.tab.c$中的$yyparse()$函数即可进行语法分析。
+%\end{itemize}
+%
+%一般地，需要进行较为复杂的程序分析时，应该联合使用$flex$和$bison$。$flex$与$bison$的协作过程如下：
+%
+%对于输入文本默认赋值给内置变量$FILE*~yyin$，然后调用$yyparse()$开始分析，分析过程中不断调用$yylex()$函数来读取一个个符合$pattern$的$token$，然后执行相应的$action$并把这个$token$传给语法分析方面，$parser.y$文件中也定义了这些$token$，对于这些对应的$token$匹配到对应的模式中匹配，如：$exp~:~factor~\{ \$\$ = \$1; \}~|~exp~ADD~factor~\{ \$\$ = \$1 + \$3; \}$，然后完成整个语法分析\upcite{levine2009flex}。
 
-使用$bison$进行语法分析的具体过程如下\upcite{levine2009flex}：
-\begin{itemize}\label{bison_usage}
-	\item 根据需要分析的词汇，指定需要用到的$token$及其类型，根据需要分析的语法，根据$token$编写语法树，得到自定义的语法分析文件$parser.y$；
-	\item 执行命令$bison~-d~parser.y$，得到$parser.tab.c$和$parser.tab.h$两个文件；
-	\item 在C程序中调用$parser.tab.c$中的$yyparse()$函数即可进行语法分析。
-\end{itemize}
 
-一般地，需要进行较为复杂的程序分析时，应该联合使用$flex$和$bison$。$flex$与$bison$的协作过程如下：
-
-对于输入文本默认赋值给内置变量$FILE*~yyin$，然后调用$yyparse()$开始分析，分析过程中不断调用$yylex()$函数来读取一个个符合$pattern$的$token$，然后执行相应的$action$并把这个$token$传给语法分析方面，$parser.y$文件中也定义了这些$token$，对于这些对应的$token$匹配到对应的模式中匹配，如：$exp~:~factor~\{ \$\$ = \$1; \}~|~exp~ADD~factor~\{ \$\$ = \$1 + \$3; \}$，然后完成整个语法分析\upcite{levine2009flex}。
 
 
 % gringo and clasp, claspD
-\subsection{例化工具和求解器}
+\subsection{实验测例}
+
+本节将介绍两个实验所用到的测例。
+
 %%% gringo
-本文所用的逻辑程序例化工具为$gringo$，例化工具的作用便是通过事实文件来把一个ASP逻辑程序中所包含的变量进行具体赋值。常用的例化工具还有$lparse$和$dlv$中的例化元件。$gringo$是Gebser和Schaub等在2007年提出并实现的例化工具，基于$lparse$和$dlv$中的例化元件进行改进而来\upcite{gebser2007gringo}。以下为$gringo$的使用例子：
-% 可以考虑加入gringo的结构图和其中parser,checker等的功能分析。
-\begin{example}\upcite{gebser2007gringo}
-	给定ASP逻辑程序文件$program.lp$：
-	\begin{eqnarray}
-		&& b(X)~:-~a(X,Y),~not~c(X),~X!=Y.	\\
-		&& c(X)~:-~b(X).
-	\end{eqnarray}
-	
-	及事实文件$programFact.fact$：
-	\begin{eqnarray}
-		a(1, 1..3).
-	\end{eqnarray}
-	
-	在linux操作系统环境下执行以下命令：
-	\begin{equation}
-		gringo~-t~program.lp~programFact.fact~>~grounding.out
-	\end{equation}
-	
-	则可以得到例化后的ASP逻辑程序：
-	\begin{eqnarray}
-		&& a(1,1).				\\
-		&& a(1,2).				\\
-		&& a(1,3).				\\
-		&& b(1)~:-~not~c(3).	\\
-		&& b(1)~:-~not~c(2).	\\
-		&& c(1)~:-~b(1).
-	\end{eqnarray}
-\end{example}
+%本文所用的逻辑程序例化工具为$gringo$，例化工具的作用便是通过事实文件来把一个ASP逻辑程序中所包含的变量进行具体赋值。常用的例化工具还有$lparse$和$dlv$中的例化元件。$gringo$是Gebser和Schaub等在2007年提出并实现的例化工具，基于$lparse$和$dlv$中的例化元件进行改进而来\upcite{gebser2007gringo}。以下为$gringo$的使用例子：
+%% 可以考虑加入gringo的结构图和其中parser,checker等的功能分析。
+%\begin{example}\upcite{gebser2007gringo}
+%	给定ASP逻辑程序文件$program.lp$：
+%	\begin{eqnarray}
+%		&& b(X)~:-~a(X,Y),~not~c(X),~X!=Y.	\\
+%		&& c(X)~:-~b(X).
+%	\end{eqnarray}
+%	
+%	及事实文件$programFact.fact$：
+%	\begin{eqnarray}
+%		a(1, 1..3).
+%	\end{eqnarray}
+%	
+%	在linux操作系统环境下执行以下命令：
+%	\begin{equation}
+%		gringo~-t~program.lp~programFact.fact~>~grounding.out
+%	\end{equation}
+%	
+%	则可以得到例化后的ASP逻辑程序：
+%	\begin{eqnarray}
+%		&& a(1,1).				\\
+%		&& a(1,2).				\\
+%		&& a(1,3).				\\
+%		&& b(1)~:-~not~c(3).	\\
+%		&& b(1)~:-~not~c(2).	\\
+%		&& c(1)~:-~b(1).
+%	\end{eqnarray}
+%\end{example}
+%
+%其中的“:-”即为$\leftarrow$。
+%
+%%%% clasp and claspD
+%本文使用的ASP逻辑程序求解工具为$clasp$。$clasp$是Gebser和Kaufmann等在2007年实现的ASP求解器。后面，Gebser和Kaufmann等实现了$claspD$，是$clasp$的扩展版，增加了求解析取逻辑程序的功能。Gebser和Kaufmann等基于限制处理（$Constraint~Processing, CSP$）和满足性检验（$Satisfiability~Checking, SAT$）提出了一个冲突驱动的算法以解决ASP逻辑程序求解问题，并基于该算法实现了$clasp$。$clasp$直接求解例化后的ASP逻辑程序\upcite{gebser2007conflict}。
 
-其中的“:-”即为$\leftarrow$。
 
-%%% clasp and claspD
-本文使用的ASP逻辑程序求解工具为$clasp$。$clasp$是Gebser和Kaufmann等在2007年实现的ASP求解器。后面，Gebser和Kaufmann等实现了$claspD$，是$clasp$的扩展版，增加了求解析取逻辑程序的功能。Gebser和Kaufmann等基于限制处理（$Constraint~Processing, CSP$）和满足性检验（$Satisfiability~Checking, SAT$）提出了一个冲突驱动的算法以解决ASP逻辑程序求解问题，并基于该算法实现了$clasp$。$clasp$直接求解例化后的ASP逻辑程序\upcite{gebser2007conflict}。
+\subsection{代码结构}
 
+本节将给出实验的代码结构。
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
