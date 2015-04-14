@@ -134,7 +134,7 @@ $body^-(r)$为$not~a_{m+1},~ \\ ...~,~not~a_n$，即原规则中带有$not$的文字集合。
 	$S$满足$D$，当且仅当$Atoms(R)~\cap~S~\neq~\emptyset$。记满足符号为$\models$。
 \end{definition}
 
-相应地，一个原子集$S$满足一个规则$r$的$body(r)$当且仅当$body^+(r)~\subseteq~S$且$body^-(r) \\ \cap~S~=~\emptyset$，记为$S~\models~body(r)$。
+相应地，一个原子集$S$满足一个规则$r$的$body(r)$当且仅当$body^+(r)~\subseteq~S$且 \\ $body^-(r) \cap~S~=~\emptyset$，记为$S~\models~body(r)$。
 一个原子集$S$满足一个规则$r$的$head(r)$当且仅当$head(r)~\cap~S~\neq~\emptyset$，记为$S~\models~head(r)$\upcite{biere2009handbook}。
 \begin{example}
 	给定一个原子集$S=\{a,b,c\}$，规则$r1$为$a~\lor~b~\leftarrow~c,~not~d.$，规则$r2$为$d~\lor~e~\leftarrow~c,~not~b.$，则有：$S~\models~head(r1)$，$S~\models~body(r1)$，$S~\nvDash~head(r2)$，$S \nvDash body(r2)$。
