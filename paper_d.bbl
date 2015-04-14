@@ -30,6 +30,11 @@ Robert Kowalski.
 \newblock 关于逻辑程序不动点语义的讨论.
 \newblock {\em 广东工业大学学报}, 22(2):120--124, 2005.
 
+\bibitem{ChittaBaral1994Logic}
+Michael~Gelfond Chitta~Baral.
+\newblock Logic programming and knowledge representation.
+\newblock {\em Journal of Logic Programming}, 19(94):73--148, 1994.
+
 \bibitem{lifschitz1996foundations}
 Vladimir Lifschitz.
 \newblock Foundations of logic programming.

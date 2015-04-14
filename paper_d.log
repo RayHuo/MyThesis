@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  14 APR 2015 16:59
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  14 APR 2015 17:34
 entering extended mode
 **paper_d.tex
 (E:\CtexPaper\hzwPaper\paper_d.tex
@@ -903,21 +903,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.10 
+l.23 
       [1
 
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 20.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 40.
  ("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\omsppl.fd"
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
-LaTeX Font Info:    Try loading font information for C19+fs on input line 21.
-
-("D:\Program Files\CTEX\CTeX\tex\latex\CJK\GB\c19fs.fd"
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
+<<c1988.cmap>>
+LaTeX Font Info:    Try loading font information for C19+fs on input line 51.
+ ("D:\Program Files\CTEX\CTeX\tex\latex\CJK\GB\c19fs.fd"
 File: c19fs.fd 2009/09/23 4.8.2
 )
 
@@ -930,20 +930,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21 	\item S
-             ATÇó½â·½·¨£ºASSAT\upcite{lin2004assat}ºÍCmodels¡£ [2]<<c1988.cmap>
->pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
- been already used, duplicate ignored
+l.51 
+      [2]pdfTeX warning (ext4): destination with the same identifier (name{page
+.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 	\item ´
-             ËÍâ£¬±¾ÎÄÌá³öÁËÒ»ÖÖ¿ÉÒÔ»ùÓÚ·Ö¸î¼¯ÎªÈÎÒâÔ­×Ó¼¯µÄÐÂ³ÌÐò·Ö¸î·½·¨¡£...
-[3]pdfTeX warning (ext4): destination with the same identifier (name{page.4}) h
-as been already used, duplicate ignored
+l.66 	\item Í
+             ¬Ê±£¬±¾ÎÄ¶ÔÐÂ³ÌÐò·Ö¸î·½·¨½øÐÐÁË¼ÆËã¸´ÔÓÐÔµÄ·ÖÎö£¬Ö¸³öÕû¸ö·Ö¸îºÍ...
+[3]
+
+LaTeX Warning: File ot140.cmap not found on input line 86.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45 
-      [4]) [5] (E:\CtexPaper\hzwPaper\chap2.tex
+l.86 µÚ
+       Ò»ÕÂ¸ø³öÁË±¾ÎÄµÄÑÐ¾¿±³¾°ºÍÏÖ×´£¬¼òÒªµØ²ûÊöÁË´ÓÈË¹¤ÖÇÄÜµ½»Ø´ð¼¯±à³ÌÕâ¸...
+[4]) [5] (E:\CtexPaper\hzwPaper\chap2.tex
 µÚ¶þÕÂ
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -991,7 +995,7 @@ song/bx/n/12/62 k \C19/song/bx/n/12/44 £ \C19/song/bx/n/12/39 ‰ \C19/song/bx/n/
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 10.
 ) [12] [13] [14]
-<img/dpg.png, id=639, 247.67531pt x 42.1575pt>
+<img/dpg.png, id=641, 247.67531pt x 42.1575pt>
 File: img/dpg.png Graphic file (type png)
  <use img/dpg.png>
 Package pdftex.def Info: img/dpg.png used on input line 333.
@@ -1308,9 +1312,6 @@ ong/bx/n/12/37 Ö \C19/song/bx/n/12/38 ¿$\OML/cmm/m/it/12 Atoms\OT1/cmr/m/n/12 (
 msy/m/n/12 n\OML/cmm/m/it/12 U$\C19/song/bx/n/12/64 ¥
  []
 
-
-LaTeX Warning: File ot140.cmap not found on input line 755.
-
 [40]pdfTeX warning (ext4): destination with the same identifier (name{definitio
 n.12}) has been already used, duplicate ignored
 <to be read again> 
@@ -1577,14 +1578,14 @@ LaTeX Warning: File ot138.cmap not found on input line 359.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\CJKnumber' on input line 1.
 
-<img/splitting_procedure.jpg, id=1115, 201.75375pt x 219.06844pt>
+<img/splitting_procedure.jpg, id=1117, 201.75375pt x 219.06844pt>
 File: img/splitting_procedure.jpg Graphic file (type jpg)
 
 <use img/splitting_procedure.jpg>
 Package pdftex.def Info: img/splitting_procedure.jpg used on input line 49.
 (pdftex.def)             Requested size: 201.75325pt x 219.06789pt.
 
-<img/simplify_procedure.jpg, id=1116, 310.15875pt x 217.5628pt>
+<img/simplify_procedure.jpg, id=1118, 310.15875pt x 217.5628pt>
 File: img/simplify_procedure.jpg Graphic file (type jpg)
 
 <use img/simplify_procedure.jpg>
@@ -1595,7 +1596,7 @@ Package pdftex.def Info: img/simplify_procedure.jpg used on input line 55.
 
 
 ] [61 <E:/CtexPaper/hzwPaper/img/splitting_procedure.jpg> <E:/CtexPaper/hzwPape
-r/img/simplify_procedure.jpg>]<<c1984.cmap>> <img/pealGraph.png, id=1139, 407.2
+r/img/simplify_procedure.jpg>]<<c1984.cmap>> <img/pealGraph.png, id=1141, 407.2
 7156pt x 168.63pt>
 File: img/pealGraph.png Graphic file (type png)
  <use img/pealGraph.png>
@@ -1662,13 +1663,13 @@ Package rerunfilecheck Info: File `paper_d.out' has not changed.
 (rerunfilecheck)             Checksum: F16F88686A516E2052988DB4CFF7AC2B;1805.
  ) 
 Here is how much of TeX's memory you used:
- 16618 strings out of 495354
- 244933 string characters out of 3183074
- 358150 words of memory out of 3000000
- 18426 multiletter control sequences out of 15000+200000
+ 16622 strings out of 495354
+ 245043 string characters out of 3183074
+ 359224 words of memory out of 3000000
+ 18429 multiletter control sequences out of 15000+200000
  113677 words of font info for 371 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,19n,58p,1590b,1494s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,19n,58p,1076b,1494s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Windows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chine
 se/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:
 /Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><D:/Program Files/CTEX
@@ -1761,9 +1762,9 @@ amsfonts/symbols/msam10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatin
 o/uplb8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
 <D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on paper_d.pdf (88 pages, 1326827 bytes).
+Output written on paper_d.pdf (88 pages, 1325899 bytes).
 PDF statistics:
- 1834 PDF objects out of 2073 (max. 8388607)
- 438 named destinations out of 1000 (max. 500000)
+ 1837 PDF objects out of 2073 (max. 8388607)
+ 439 named destinations out of 1000 (max. 500000)
  429 words of extra memory for PDF output out of 10000 (max. 10000000)
 
