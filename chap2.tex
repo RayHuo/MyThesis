@@ -104,7 +104,7 @@ $body(r)$为$a_{k+1},~...~,~a_m,~not~a_{m+1},~...~, \\ not~a_n$。
 更进一步的划分有$body(r)~=~body^+ (r)~\land~body^-(r)$，其中
 $body^+(r)$为$a_{k+1},~...~,~a_m$，即原规则中不带$not$的文字集合，
 $body^-(r)$为$not~a_{m+1},~ \\ ...~,~not~a_n$，即原规则中带有$not$的文字集合。
-不失一般性地，上述定义的命题公式可以被用作原子集（$a~set~of~atoms$）进行讨论，
+不失一般性地，上述定义的命题公式可以被用作原子集(a set of atoms)进行讨论，
 并引入以下两个常用原子集：
 \begin{definition}\upcite{lifschitz2002answer}
 	给定$r$为符合形式(\ref{asp_rule})的一个规则，$P$为一个ASP逻辑程序：	
@@ -117,11 +117,11 @@ $body^-(r)$为$not~a_{m+1},~ \\ ...~,~not~a_n$，即原规则中带有$not$的文字集合。
 \begin{example}
 	把例子\ref{first_example_2}中的规则集合看作是一个逻辑程序$P$，对于(\ref{rule_5})则有：
 	\begin{eqnarray}
-	head(r)=\{s,q\}	\\
-	body(r)=\{r,t,p\}	\\
-	body^+ (r)=\{r,t\}	\\
-	body^-(r)=\{p\}		\\
-	Atoms(r)=\{s,q,r,t,p\}
+	&& head(r)=\{s,q\}	\\
+	&& body(r)=\{r,t,p\}	\\
+	&& body^+ (r)=\{r,t\}	\\
+	&& body^-(r)=\{p\}		\\
+	&& Atoms(r)=\{s,q,r,t,p\}
 	\end{eqnarray}
 	
 	同时，$Atoms(P)=\{s,q,r,t,p\}$。
@@ -156,7 +156,7 @@ $body^-(r)$为$not~a_{m+1},~ \\ ...~,~not~a_n$，即原规则中带有$not$的文字集合。
 
 \subsection{回答集编程的语义}
 
-Gelfond和Lifschitz(1988)提出了稳定模型语义(Stable Model Semantic)，
+Gelfond和Lifschitz(1988)提出了稳定模型语义，
 稳定模型语义解决了非单调推理无法解释失败即否定的问题，此外他们还给出了一个规约方法(G-L规约)，以化简一个ASP逻辑程序中的失败即否定。
 \begin{definition}[G-L规约\upcite{gelfond1988stable}]
 	给定原子集$S$和不含约束的ASP逻辑程序$P$，$P$基于$S$的G-L规约结果记为$P^S$。$P$通过以下两个化简规则得到$P^S$：
@@ -183,7 +183,7 @@ Gelfond和Lifschitz(1988)提出了稳定模型语义(Stable Model Semantic)，
 	\end{eqnarray}
 \end{example}
 
-显然，通过G-L规约进行化简后得到的$P^S$是一个不包含任何失败即否定的ASP逻辑程序。这样的ASP逻辑程序只有一个唯一的极小模型，这个模型被称为稳定模型(Stable Model)，并记为$Cons(P^S)$\upcite{gelfond1988stable}。
+显然，通过G-L规约进行化简后得到的$P^S$是一个不包含任何失败即否定的ASP逻辑程序。这样的ASP逻辑程序只有一个唯一的极小模型，这个模型被称为稳定模型，并记为$Cons(P^S)$\upcite{gelfond1988stable}。
 
 对于包含有约束的ASP逻辑程序，我们可以通过G-L规约来定义其回答集，通过对程序中的约束和一般规则分离判断即可。
 \begin{theorem}\upcite{lin2004assat}
@@ -309,7 +309,7 @@ Gelder和Ross等(1991)证明了两个无理集的并集仍然是一个无理集\upcite{van1991well}，
 Lin和Zhao(2002)提出了正规逻辑程序中的环的概念，同时定义了其环公式\upcite{lin2004assat}。
 紧接着，Lee和Lifschitz(2003)给出了析取逻辑程序中的环和环公式的定义\upcite{lee2003loop}。
 
-在引入具体的环及环公式定义前，需要先给出一个ASP逻辑程序的正依赖图(Positive Dependence Graph)及强连通分量(Strongly Conntected Component)的定义。
+在引入具体的环及环公式定义前，需要先给出一个ASP逻辑程序的正依赖图及强连通分量的定义。
 \begin{definition}[正依赖图(Positive Dependency Graph)\upcite{lin2004assat}]
 	给定ASP逻辑程序$P$，以$P$中的原子作为顶点，规则作为构成边的依据，可以构造出一个有向连通图，称其为$P$的正依赖图，记为$G_P$。其中，当存在$P$中的一个规则形如$p \in head(r)$且$q \in body^+(r)$，则正依赖图中存在一条从原子$p$指向原子$q$的有向边。
 \end{definition}
@@ -321,10 +321,10 @@ Lin和Zhao(2002)提出了正规逻辑程序中的环的概念，同时定义了其环公式\upcite{lin2004
 \begin{example}
 	给定逻辑程序$P$如下：
 	\begin{eqnarray}
-		a~\leftarrow~not~d.	\\
-		d~\leftarrow~not~c.	\\
-		a~\leftarrow~c,~d.	\\
-		c~\leftarrow~a.
+		&& a~\leftarrow~not~d.	\\
+		&& d~\leftarrow~not~c.	\\
+		&& a~\leftarrow~c,~d.	\\
+		&& c~\leftarrow~a.
 	\end{eqnarray}
 	
 	根据定义，关于逻辑程序P的正依赖图如下：
@@ -422,8 +422,8 @@ Lifschitz和Turner(1994)提出了分割集(Splitting Set)的概念\upcite{lifschitz1994spl
 然而，要达到分割程序后得到的回答集是原程序的回答集，需要满足一定的条件\upcite{ji2010phd}。
 
 Lifschitz和Turner在给出分割集的概念后，也基于分割集提出了相应的程序分割(Program Splitting)方法。
-程序分割方法具体就是根据定义找出分割集，通过分割集把原程序分割为$bottom$和$top$两部分，
-并且证明原程序的回答集可以通过$bottom$和$top$这两部分的回答集所求得。
+程序分割方法具体就是根据定义找出分割集，通过分割集把原程序分割为bottom和top两部分，
+并且证明原程序的回答集可以通过bottom和top这两部分的回答集所求得。
 \begin{definition}[分割集(Splitting Set)\upcite{lifschitz1994splitting}]\label{splitting_set}
 	给定一个ASP逻辑程序$P$，其分割集是一个原子集，记为$U$，$U$需要满足：对于任意的规则$r \in P$有$head(r) \cap U \neq \emptyset$蕴涵$Atoms(r)\subseteq U$。
 \end{definition}
@@ -434,7 +434,7 @@ Lifschitz和Turner在给出分割集的概念后，也基于分割集提出了相应的程序分割(Program 
 \end{proposition}
 
 
-基于分割集划分而成的$bottom$和$top$两部分的具体定义如下：
+基于分割集划分而成的bottom和top两部分的具体定义如下：
 \begin{definition}[底部和顶部(bottom and top) \upcite{lifschitz1994splitting}] \label{bottom_top}
 	给定一个ASP逻辑程序$P$，及其分割集$U$，标记$P$的底部为$b_U(P)$，顶部为$t_U(P)$，并定义为：
 	\begin{eqnarray}
@@ -443,10 +443,10 @@ Lifschitz和Turner在给出分割集的概念后，也基于分割集提出了相应的程序分割(Program 
 	\end{eqnarray}
 \end{definition}
 
-显然，ASP逻辑程序的$bottom$是把分割集$U$中的原子作为头部的规则都抽取出来，而$top$则是头部与分割集$U$无关的规则集合，且$\emptyset$和$Atoms(P)$是任意一个逻辑程序P的分割集。
+显然，ASP逻辑程序的bottom是把分割集$U$中的原子作为头部的规则都抽取出来，而top则是头部与分割集$U$无关的规则集合，且$\emptyset$和$Atoms(P)$是任意一个逻辑程序P的分割集。
 
-为了通过$bottom$和$top$求解原程序的回答集，需要引入化简操作。
-Lifschitz和\\Turner定义了操作$e_U(P,X)$来联合$bottom$的回答集和$top$求出另一部分的回答集。
+为了通过bottom和top求解原程序的回答集，需要引入化简操作。
+Lifschitz和\\Turner定义了操作$e_U(P,X)$来联合bottom的回答集和top求出另一部分的回答集。
 \begin{definition}\label{e_U_P_X}
 	给定ASP逻辑程序$P$，和原子集$X$、$U$，定义$e_U(P,X)$如下：
 	\begin{itemize}
@@ -467,10 +467,10 @@ Lifschitz和\\Turner定义了操作$e_U(P,X)$来联合$bottom$的回答集和$top$求出另一部分
 \begin{example}
 	给定ASP逻辑程序$P$：
 	\begin{eqnarray}
-		a~\leftarrow~not~d.	\\
-		d~\leftarrow~not~c.	\\
-		a~\leftarrow~c,~d.	\\
-		c~\leftarrow.
+		&& a~\leftarrow~not~d.	\\
+		&& d~\leftarrow~not~c.	\\
+		&& a~\leftarrow~c,~d.	\\
+		&& c~\leftarrow.
 	\end{eqnarray}
 	
 	根据定义可知$U=\{c,d\}$是$P$的一个分割集，
