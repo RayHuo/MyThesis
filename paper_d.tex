@@ -644,13 +644,19 @@ CJKbookmarks=true, colorlinks=true, linkcolor=black, citecolor=blue]{hyperref}
 		%\bibliographystyle{chinesebst}
 		%\bibliographystyle{plain}
 		%\bibliographystyle{unsrtnat}
-		\bibliographystyle{paper2}
+		%\bibliographystyle{paper2}
+		% wikibook latex bib 有详细的格式设置说明
+		\normalsize {
+		\setlength{\bibsep}{0.5ex}
+		\bibliographystyle{unsrt}
+		%\nocite{*} % 列出所有的参考文献
+		\bibliography{reference}
+		}
 		\phantomsection
 		%\addcontentsline{toc}{chapter}{参考文献}
 		\addcontentsline{toc}{chapter}{参考文献} % 解决目录中没有相应的参考文献的条目问题
 		
-		%\nocite{*} % 列出所有的参考文献
-		\bibliography{reference}
+		
 		%\end{thebibliography}
 		%\include{ack}
 		

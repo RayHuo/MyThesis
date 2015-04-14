@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  14 APR 2015 15:27
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  14 APR 2015 16:59
 entering extended mode
 **paper_d.tex
 (E:\CtexPaper\hzwPaper\paper_d.tex
@@ -874,18 +874,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 12.0pt
 (hyperref)                replaced by space on input line 14.
 
-
-Overfull \hbox (12.01056pt too wide) in paragraph at lines 30--31
-[]\C19/song/m/n/12/63 3 \C19/song/m/n/12/53 ¦ \C19/song/m/n/12/46 ) \C19/song/m
-/n/12/52 ì \C19/song/m/n/12/57 J \C19/song/m/n/12/56 „ \C19/song/m/n/12/40  \C
-19/song/m/n/12/41 u \C19/song/m/n/12/63 Ð \C19/song/m/n/12/43 L \C19/song/m/n/1
-2/38 § \C19/song/m/n/12/64 ¥ \C19/song/m/n/12/26 §\OT1/ppl/m/n/12 Lifschitz\C19
-/song/m/n/12/43 Ú\OT1/ppl/m/n/12 Turner(1994)\C19/song/m/n/12/51 c \C19/song/m/
-n/12/57 J \C19/song/m/n/12/38 Ñ \C19/song/m/n/12/49 
- \C19/song/m/n/12/41 © \C19/song/m/n/12/42  \C19/song/m/n/12/45 8\OT1/ppl/m/n/
-12 (Splitting
- []
-
 [1
 
 
@@ -1642,8 +1630,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 
-] [72] [73] [74]) [75]
-(E:\CtexPaper\hzwPaper\public.tex) [76
+] [72] [73]) [74]
+(E:\CtexPaper\hzwPaper\public.tex) [75
 
 
 ] (E:\CtexPaper\hzwPaper\ack.tex
@@ -1652,120 +1640,130 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 12.0pt
 (hyperref)                replaced by space on input line 26.
 
-) [77
+) [76
 
 
 
-] [78
+] [77
 
 ]
 \tf@thm=\write5
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 677.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 677.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 683.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 683.
  (E:\CtexPaper\hzwPaper\paper_d.aux
 (E:\CtexPaper\hzwPaper\abstract1.aux) (E:\CtexPaper\hzwPaper\abstract2.aux)
 (E:\CtexPaper\hzwPaper\chap1.aux) (E:\CtexPaper\hzwPaper\chap2.aux)
 (E:\CtexPaper\hzwPaper\chap3.aux) (E:\CtexPaper\hzwPaper\chap4.aux)
 (E:\CtexPaper\hzwPaper\chap5.aux) (E:\CtexPaper\hzwPaper\chap6.aux)
 (E:\CtexPaper\hzwPaper\public.aux) (E:\CtexPaper\hzwPaper\ack.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 677.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 677.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 683.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 683.
 Package rerunfilecheck Info: File `paper_d.out' has not changed.
-(rerunfilecheck)             Checksum: D20A07AEA415CB5FBD9EB5009BE5C565;1805.
+(rerunfilecheck)             Checksum: F16F88686A516E2052988DB4CFF7AC2B;1805.
  ) 
 Here is how much of TeX's memory you used:
- 16579 strings out of 495354
- 244335 string characters out of 3183074
- 356250 words of memory out of 3000000
- 18407 multiletter control sequences out of 15000+200000
- 109247 words of font info for 358 fonts, out of 3000000 for 9000
+ 16618 strings out of 495354
+ 244933 string characters out of 3183074
+ 358150 words of memory out of 3000000
+ 18426 multiletter control sequences out of 15000+200000
+ 113677 words of font info for 371 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,19n,58p,1590b,1480s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/
-simfang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windo
-ws/Fonts/simfang.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.
-ttf><C:/Windows/Fonts/simfang.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/ch
+ 44i,19n,58p,1590b,1494s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Windows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chine
+se/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:
+/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><D:/Program Files/CTEX
+/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truet
+ype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsu
+n.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program
+ Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/
+fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/ch
 inese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf>
 <D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files
-/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/
-truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/
-simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Pr
-ogram Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Windows/Fonts/simhe
-i.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fon
-ts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Win
-dows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun
-.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program 
-Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/f
-onts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chi
-nese/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/W
-indows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.t
-tf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/
-simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Win
-dows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf
-><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/si
-mkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/
-Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/
-Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.
-ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Windows/F
-onts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C
-:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/sim
-fang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Window
-s/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf
-><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/
-simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><D:/Progra
-m Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Windows/Fonts/simhei.tt
-f><C:/Windows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chine
-se/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:
-/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CT
-EX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/tru
-etype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/sim
-sun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Progr
-am Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTe
-X/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/
-chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.tt
-f><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Fil
-es/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/font
-s/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chines
-e/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Wind
-ows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf>
-<C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/sim
-kai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/F
-onts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/W
-indows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.t
-tf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/
-simkai.ttf><C:/Windows/Fonts/simkai.ttf>{D:/Program Files/CTEX/MiKTeX/fonts/enc
-/dvips/fontname/8r.enc}<C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.tt
-f><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/s
-imkai.ttf><C:/Windows/Fonts/simkai.ttf><D:/Program Files/CTEX/CTeX/fonts/truety
-pe/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun
-.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program 
-Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/f
+/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf>{D:/Program Files/CTEX/MiKTeX/font
+s/enc/dvips/fontname/8r.enc}<C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simh
+ei.ttf><C:/Windows/Fonts/simfang.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype
+/chinese/simsun.ttf><C:/Windows/Fonts/simfang.ttf><D:/Program Files/CTEX/CTeX/f
 onts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chi
 nese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><
 D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/
 CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/t
 ruetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/s
-imsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Pro
+imsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Win
+dows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf
+><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/si
+mhei.ttf><C:/Windows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetyp
+e/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.
+ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program F
+iles/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fo
+nts/truetype/chinese/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/
+simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Window
+s/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simhei.ttf><C
+:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/sim
+fang.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/
+Fonts/simkai.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/
+Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.
+ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts
+/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windo
+ws/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.t
+tf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Font
+s/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/W
+indows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfan
+g.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/F
+onts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C
+:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhe
+i.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Windows
+/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/font
+s/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chines
+e/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/
+Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTE
+X/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/true
+type/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/sims
+un.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Progra
+m Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX
+/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/c
+hinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf
+><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program File
+s/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts
+/truetype/chinese/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/sim
+hei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/F
+onts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/W
+indows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.t
+tf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/
+simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Window
+s/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C
+:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simka
+i.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fon
+ts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><D:/Pro
 gram Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/C
 TeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetyp
 e/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.
-ttf><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:
-/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Progra
-m Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files
-/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/CTEX/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/CTEX/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr6.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr8.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6
-.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:
-/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/P
-rogram Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/Pro
-gram Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/Program Files/CT
-EX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on paper_d.pdf (89 pages, 1275763 bytes).
+ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program F
+iles/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fo
+nts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chin
+ese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D
+:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/C
+TEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/tr
+uetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/si
+msun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Prog
+ram Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CT
+eX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmbx12.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmex10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi12.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+mi6.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+<D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Prog
+ram Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Program Files
+/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program Files/CTEX/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/
+amsfonts/symbols/msam10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatin
+o/uplb8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
+<D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on paper_d.pdf (88 pages, 1326827 bytes).
 PDF statistics:
- 1791 PDF objects out of 2073 (max. 8388607)
- 443 named destinations out of 1000 (max. 500000)
+ 1834 PDF objects out of 2073 (max. 8388607)
+ 438 named destinations out of 1000 (max. 500000)
  429 words of extra memory for PDF output out of 10000 (max. 10000000)
 

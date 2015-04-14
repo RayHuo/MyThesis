@@ -7,11 +7,9 @@ A level-1 auxiliary file: chap3.aux
 A level-1 auxiliary file: chap4.aux
 A level-1 auxiliary file: chap5.aux
 A level-1 auxiliary file: chap6.aux
-The style file: paper2.bst
+The style file: unsrt.bst
 A level-1 auxiliary file: public.aux
 A level-1 auxiliary file: ack.aux
-bibinfo is an unknown function---line 207 of file paper2.bst
-bibinfo.check is an unknown function---line 207 of file paper2.bst
 Database file #1: reference.bib
 Repeated entry---line 216 of file reference.bib
  : @inproceedings{gelfond1988stable
@@ -21,16 +19,9 @@ Repeated entry---line 485 of file reference.bib
  : @article{bonatti2010answer
  :                           ,
 I'm skipping whatever remains of this entry
-You can't pop an empty literal stack for entry ji2010phd
-while executing---line 866 of file paper2.bst
 Warning--empty booktitle in colmeraner1973systeme
-`journal' is a missing field, not a string, for entry zhai2014asp
-while executing---line 866 of file paper2.bst
+Warning--there's a number but no series in clark1982logic
 Warning--empty journal in zhai2014asp
-`journal' is a missing field, not a string, for entry nuchelmans1973theories
-while executing---line 866 of file paper2.bst
 Warning--empty journal in nuchelmans1973theories
-`journal' is a missing field, not a string, for entry ji2015elementary
-while executing---line 866 of file paper2.bst
 Warning--empty journal in ji2015elementary
-(There were 8 error messages)
+(There were 2 error messages)

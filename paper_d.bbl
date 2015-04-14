@@ -1,301 +1,274 @@
 \begin{thebibliography}{10}
 
 \bibitem{van2008handbook}
-Van~Harmelen F, Lifschitz V, Porter B.
-\newblock Handbook of knowledge representation [M].
+Frank Van~Harmelen, Vladimir Lifschitz, and Bruce Porter.
+\newblock {\em Handbook of knowledge representation}, volume~1.
 \newblock Elsevier, 2008.
 
 \bibitem{ji2010phd}
 吉建民.
-\newblock
-\newblock 提高 ASP 效率的若干途径及服务机器人上应用 [D].
-\newblock 合肥: 中国科学技术大学, 2010.
+\newblock {\em 提高 ASP 效率的若干途径及服务机器人上应用}.
+\newblock PhD thesis, 合肥: 中国科学技术大学, 2010.
 
 \bibitem{steele1990common}
-Steele G~L.
-\newblock Common LISP: the language [M].
+Guy~L Steele.
+\newblock {\em Common LISP: the language}.
 \newblock Digital press, 1990.
 
 \bibitem{horn1951sentences}
-Horn A.
-\newblock On sentences which are true of direct unions of algebras [J].
-\newblock The Journal of Symbolic Logic, 1951, 16(01):14--21.
+Alfred Horn.
+\newblock On sentences which are true of direct unions of algebras.
+\newblock {\em The Journal of Symbolic Logic}, 16(01):14--21, 1951.
 
 \bibitem{kowalski1979algorithm}
-Kowalski R.
-\newblock Algorithm= logic+ control [J].
-\newblock Communications of the ACM, 1979, 22(7):424--436.
+Robert Kowalski.
+\newblock Algorithm= logic+ control.
+\newblock {\em Communications of the ACM}, 22(7):424--436, 1979.
 
 \bibitem{liu2005ASPfixpoint}
 刘富春.
-\newblock 关于逻辑程序不动点语义的讨论 [J].
-\newblock 广东工业大学学报, 2005, 22(2):120--124.
+\newblock 关于逻辑程序不动点语义的讨论.
+\newblock {\em 广东工业大学学报}, 22(2):120--124, 2005.
 
 \bibitem{lifschitz1996foundations}
-Lifschitz V.
-\newblock Foundations of logic programming [J].
-\newblock Principles of knowledge representation, 1996, 3:69--127.
+Vladimir Lifschitz.
+\newblock Foundations of logic programming.
+\newblock {\em Principles of knowledge representation}, 3:69--127, 1996.
 
 \bibitem{colmeraner1973systeme}
-Colmeraner A, Kanoui H, Pasero R, et~al.
-\newblock Un systeme de communication homme-machine en francais [C].//.
-\newblock Luminy.
-\newblock 1973.
+A~Colmeraner, Henri Kanoui, Robert Pasero, and Philippe Roussel.
+\newblock Un systeme de communication homme-machine en francais.
+\newblock Luminy, 1973.
 
 \bibitem{clark1982logic}
-Clark K~L, T{\"a}rnlund S~A.
-\newblock Logic programming [M].
-\newblock Academic Press New York, 1982.
+Keith~L Clark and Sten-Ake T{\"a}rnlund.
+\newblock {\em Logic programming}.
+\newblock Number~16. Academic Press New York, 1982.
 
 \bibitem{israel1980s}
-Israel D~J.
-\newblock What's wrong with non-monotonic logic? [C].// AAAI.
-\newblock vol~80.
-\newblock 1980:  99--101.
+David~J Israel.
+\newblock What's wrong with non-monotonic logic?
+\newblock In {\em AAAI}, volume~80, pages 99--101, 1980.
 
 \bibitem{mccarthy1987circumscription}
-McCarthy J.
-\newblock Circumscription—a form of nonmonotonic reasoning [J].
-\newblock \& \&, 1987.
+John McCarthy.
+\newblock Circumscription—a form of nonmonotonic reasoning.
+\newblock {\em \& \&}, 1987.
 
 \bibitem{clark1978negation}
-Clark K~L.
-\newblock Negation as failure [C].// Logic and data bases.
-\newblock Springer, 1978:  293--322.
+Keith~L Clark.
+\newblock Negation as failure.
+\newblock In {\em Logic and data bases}, pages 293--322. Springer, 1978.
 
 \bibitem{gelfond1988stable}
-Gelfond M, Lifschitz V.
-\newblock The stable model semantics for logic programming. [C].// ICLP/SLP.
-\newblock vol~88.
-\newblock 1988:  1070--1080.
+Michael Gelfond and Vladimir Lifschitz.
+\newblock The stable model semantics for logic programming.
+\newblock In {\em ICLP/SLP}, volume~88, pages 1070--1080, 1988.
 
 \bibitem{zhai2014asp}
-翟仲毅, 程渤.
-\newblock 回答集程序设计: 理论, 方法, 应用与研究 [J].
+翟仲毅 and 程渤.
+\newblock 回答集程序设计: 理论, 方法, 应用与研究.
 \newblock 2014.
 
 \bibitem{davis1962machine}
-Davis M, Logemann G, Loveland D.
-\newblock A machine program for theorem-proving [J].
-\newblock Communications of the ACM, 1962, 5(7):394--397.
+Martin Davis, George Logemann, and Donald Loveland.
+\newblock A machine program for theorem-proving.
+\newblock {\em Communications of the ACM}, 5(7):394--397, 1962.
 
 \bibitem{jeroslow1990solving}
-Jeroslow R~G, Wang J.
-\newblock Solving propositional satisfiability problems [J].
-\newblock Annals of mathematics and Artificial Intelligence, 1990,
-  1(1-4):167--187.
+Robert~G Jeroslow and Jinchang Wang.
+\newblock Solving propositional satisfiability problems.
+\newblock {\em Annals of mathematics and Artificial Intelligence},
+  1(1-4):167--187, 1990.
 
 \bibitem{leone2006dlv}
-Leone N, Pfeifer G, Faber W, et~al.
-\newblock The DLV system for knowledge representation and reasoning [J].
-\newblock ACM Transactions on Computational Logic (TOCL), 2006, 7(3):499--562.
+Nicola Leone, Gerald Pfeifer, Wolfgang Faber, Thomas Eiter, Georg Gottlob,
+  Simona Perri, and Francesco Scarcello.
+\newblock The dlv system for knowledge representation and reasoning.
+\newblock {\em ACM Transactions on Computational Logic (TOCL)}, 7(3):499--562,
+  2006.
 
 \bibitem{niemela2000smodels}
-Niemela I, Simons P, Syrjanen T.
-\newblock Smodels: a system for answer set programming [J].
-\newblock arXiv preprint cs/0003033, 2000.
+Ilkka Niemela, Patrik Simons, and Tommi Syrjanen.
+\newblock Smodels: a system for answer set programming.
+\newblock {\em arXiv preprint cs/0003033}, 2000.
 
 \bibitem{lin2004assat}
-Lin F, Zhao Y.
-\newblock ASSAT: Computing answer sets of a logic program by SAT solvers [J].
-\newblock Artificial Intelligence, 2004, 157(1):115--137.
+Fangzhen Lin and Yuting Zhao.
+\newblock Assat: Computing answer sets of a logic program by sat solvers.
+\newblock {\em Artificial Intelligence}, 157(1):115--137, 2004.
 
 \bibitem{nogueira2001prolog}
-Nogueira M, Balduccini M, Gelfond M, et~al.
-\newblock An A-Prolog decision support system for the Space Shuttle [C].//
-  Practical Aspects of Declarative Languages.
-\newblock Springer, 2001:  169--183.
+Monica Nogueira, Marcello Balduccini, Michael Gelfond, Richard Watson, and
+  Matthew Barry.
+\newblock An a-prolog decision support system for the space shuttle.
+\newblock In {\em Practical Aspects of Declarative Languages}, pages 169--183.
+  Springer, 2001.
 
 \bibitem{eiter2003answer}
-Eiter T, Faber W, Leone N, et~al.
-\newblock Answer set planning under action costs [J].
-\newblock Journal of Artificial Intelligence Research, 2003,  25--71.
+Thomas Eiter, Wolfgang Faber, Nicola Leone, Gerald Pfeifer, and Axel Polleres.
+\newblock Answer set planning under action costs.
+\newblock {\em Journal of Artificial Intelligence Research}, pages 25--71,
+  2003.
 
 \bibitem{xin2010answer}
-Xin L, Fan L, Xingbin B, et~al.
-\newblock Answer Set Programming Representation for ER Model [J].
-\newblock Journal of Computer Research and Development, 2010, 1:025.
+Li~Xin, Li~Fan, Bian Xingbin, and Liu Qihe21.
+\newblock Answer set programming representation for er model.
+\newblock {\em Journal of Computer Research and Development}, 1:025, 2010.
 
 \bibitem{lifschitz1994splitting}
-Lifschitz V, Turner H.
-\newblock Splitting a Logic Program. [C].// ICLP.
-\newblock vol~94.
-\newblock 1994:  23--37.
+Vladimir Lifschitz and Hudson Turner.
+\newblock Splitting a logic program.
+\newblock In {\em ICLP}, volume~94, pages 23--37, 1994.
 
 \bibitem{dao2009modular}
-Dao-Tran M, Eiter T, Fink M, et~al.
-\newblock Modular nonmonotonic logic programming revisited [C].// Logic
-  Programming.
-\newblock Springer, 2009:  145--159.
+Minh Dao-Tran, Thomas Eiter, Michael Fink, and Thomas Krennwallner.
+\newblock Modular nonmonotonic logic programming revisited.
+\newblock In {\em Logic Programming}, pages 145--159. Springer, 2009.
 
 \bibitem{gebser2008engineering}
-Gebser M, Kaminski R, Kaufmann B, et~al.
-\newblock Engineering an incremental ASP solver [C].// Logic Programming.
-\newblock Springer, 2008:  190--205.
+Martin Gebser, Roland Kaminski, Benjamin Kaufmann, Max Ostrowski, Torsten
+  Schaub, and Sven Thiele.
+\newblock Engineering an incremental asp solver.
+\newblock In {\em Logic Programming}, pages 190--205. Springer, 2008.
 
 \bibitem{oikarinen2008achieving}
-Oikarinen E, Janhunen T.
+Emilia Oikarinen and Tomi Janhunen.
 \newblock Achieving compositionality of the stable model semantics for smodels
-  programs [J].
-\newblock Theory and Practice of Logic Programming, 2008, 8(5-6):717--761.
+  programs.
+\newblock {\em Theory and Practice of Logic Programming}, 8(5-6):717--761,
+  2008.
 
 \bibitem{ferraris2009symmetric}
-Ferraris P, Lee J, Lifschitz V, et~al.
-\newblock Symmetric Splitting in the General Theory of Stable Models. [C].//
-  IJCAI.
-\newblock vol~9.
-\newblock 2009:  797--803.
+Paolo Ferraris, Joohyung Lee, Vladimir Lifschitz, and Ravi Palla.
+\newblock Symmetric splitting in the general theory of stable models.
+\newblock In {\em IJCAI}, volume~9, pages 797--803, 2009.
 
 \bibitem{limo1999lpSAT}
-李未, 黄雄.
-\newblock 命题逻辑可满足性问题的算法分析 [J].
-\newblock 计算机科学, 1999, 26(3):1--9.
+李未 and 黄雄.
+\newblock 命题逻辑可满足性问题的算法分析.
+\newblock {\em 计算机科学}, 26(3):1--9, 1999.
 
 \bibitem{luger2003AI}
-Luger G~F.
-\newblock 人工智能: 复杂问题求解的结构和策略: 英文版{\textperiodcentered} [M].
-\newblock 机械工业出版社, 2003.
+George~F Luger.
+\newblock {\em Artificial Intelligence:Structures and Strategies for Complex
+  Problem Solving}.
+\newblock Pearson Education, 2003.
 
 \bibitem{gelfond1990logic}
-Gelfond M.
-\newblock Logic programming [J].
-\newblock Wiley Encyclopedia of Electrical and Electronics Engineering, 1990.
+Michael Gelfond.
+\newblock Logic programming.
+\newblock {\em Wiley Encyclopedia of Electrical and Electronics Engineering},
+  1990.
 
 \bibitem{gabbay1999negation}
-Gabbay D~M, Wansing H.
-\newblock What is negation? [M].
+Dov~M Gabbay and Heinrich Wansing.
+\newblock {\em What is negation?}
 \newblock Springer, 1999.
 
 \bibitem{nuchelmans1973theories}
-Nuchelmans G.
-\newblock Theories of the Proposition [J].
+Gabriel Nuchelmans.
+\newblock Theories of the proposition.
 \newblock 1973.
 
 \bibitem{reiter1978closed}
-Reiter R.
-\newblock On closed world data bases [M].
+Raymond Reiter.
+\newblock {\em On closed world data bases}.
 \newblock Springer, 1978.
 
 \bibitem{van1989negation}
-Van~Gelder A.
+Allen Van~Gelder.
 \newblock Negation as failure using tight derivations for general logic
-  programs [J].
-\newblock The Journal of Logic Programming, 1989, 6(1):109--133.
+  programs.
+\newblock {\em The Journal of Logic Programming}, 6(1):109--133, 1989.
 
 \bibitem{lifschitz2008answer}
-Lifschitz V.
-\newblock What Is Answer Set Programming?. [C].// AAAI.
-\newblock vol~8.
-\newblock 2008:  1594--1597.
+Vladimir Lifschitz.
+\newblock What is answer set programming?.
+\newblock In {\em AAAI}, volume~8, pages 1594--1597, 2008.
 
 \bibitem{bonatti2010answer}
-Bonatti P, Calimeri F, Leone N, et~al.
-\newblock Answer set programming [C].// A 25-year perspective on logic
-  programming.
-\newblock Springer-Verlag.
-\newblock 2010:  159--182.
+Piero Bonatti, Francesco Calimeri, Nicola Leone, and Francesco Ricca.
+\newblock Answer set programming.
+\newblock In {\em A 25-year perspective on logic programming}, pages 159--182.
+  Springer-Verlag, 2010.
 
 \bibitem{lifschitz2002answer}
-Lifschitz V.
-\newblock Answer set programming and plan generation [J].
-\newblock Artificial Intelligence, 2002, 138(1):39--54.
+Vladimir Lifschitz.
+\newblock Answer set programming and plan generation.
+\newblock {\em Artificial Intelligence}, 138(1):39--54, 2002.
 
 \bibitem{biere2009handbook}
-Biere A, Heule M, van Maaren H.
-\newblock Handbook of satisfiability [M].
+Armin Biere, Marijn Heule, and Hans van Maaren.
+\newblock {\em Handbook of satisfiability}, volume 185.
 \newblock ios press, 2009.
 
 \bibitem{gelfond1991classical}
-Gelfond M, Lifschitz V.
-\newblock Classical negation in logic programs and disjunctive databases [J].
-\newblock New generation computing, 1991, 9(3-4):365--385.
+Michael Gelfond and Vladimir Lifschitz.
+\newblock Classical negation in logic programs and disjunctive databases.
+\newblock {\em New generation computing}, 9(3-4):365--385, 1991.
 
 \bibitem{chen2013computing}
-Chen X, Ji J, Lin F.
-\newblock Computing loops with at most one external support rule [J].
-\newblock ACM Transactions on Computational Logic (TOCL), 2013, 14(1):3.
+Xiaoping Chen, Jianmin Ji, and Fangzhen Lin.
+\newblock Computing loops with at most one external support rule.
+\newblock {\em ACM Transactions on Computational Logic (TOCL)}, 14(1):3, 2013.
 
 \bibitem{Chin1973symbolic}
-Chang C, Lee R~C~T.
-\newblock Symbolic logic and mechanical theorem proving [M].
-\newblock Academic Press, 1973.
+Chin{-}Liang Chang and Richard C.~T. Lee.
+\newblock {\em Symbolic logic and mechanical theorem proving}.
+\newblock Computer science classics. Academic Press, 1973.
 
 \bibitem{zhang1996efficient}
-Zhang H, Stickel M~E.
-\newblock An efficient algorithm for unit propagation [C].// In Proceedings of
-  the Fourth International Symposium on Artificial Intelligence and Mathematics
-  (AI-MATH’96), Fort Lauderdale (Florida USA.
-\newblock Citeseer.
-\newblock 1996.
+Hantao Zhang and Mark~E Stickel.
+\newblock An efficient algorithm for unit propagation.
+\newblock In {\em In Proceedings of the Fourth International Symposium on
+  Artificial Intelligence and Mathematics (AI-MATH’96), Fort Lauderdale
+  (Florida USA}. Citeseer, 1996.
 
 \bibitem{van1991well}
-Van~Gelder A, Ross K~A, Schlipf J~S.
-\newblock The well-founded semantics for general logic programs [J].
-\newblock Journal of the ACM (JACM), 1991, 38(3):619--649.
+Allen Van~Gelder, Kenneth~A Ross, and John~S Schlipf.
+\newblock The well-founded semantics for general logic programs.
+\newblock {\em Journal of the ACM (JACM)}, 38(3):619--649, 1991.
 
 \bibitem{lee2003loop}
-Lee J, Lifschitz V.
-\newblock Loop formulas for disjunctive logic programs [C].// Logic
-  Programming.
-\newblock Springer, 2003:  451--465.
+Joohyung Lee and Vladimir Lifschitz.
+\newblock Loop formulas for disjunctive logic programs.
+\newblock In {\em Logic Programming}, pages 451--465. Springer, 2003.
 
 \bibitem{aspvall1979linear}
-Aspvall B, Plass M~F, Tarjan R~E.
+Bengt Aspvall, Michael~F Plass, and Robert~Endre Tarjan.
 \newblock A linear-time algorithm for testing the truth of certain quantified
-  boolean formulas [J].
-\newblock Information Processing Letters, 1979, 8(3):121--123.
+  boolean formulas.
+\newblock {\em Information Processing Letters}, 8(3):121--123, 1979.
 
 \bibitem{gebser2011elementary}
-Gebser M, Lee J, Lierler Y.
-\newblock On elementary loops of logic programs [J].
-\newblock Theory and Practice of Logic Programming, 2011, 11(06):953--988.
+Martin Gebser, Joohyung Lee, and Yuliya Lierler.
+\newblock On elementary loops of logic programs.
+\newblock {\em Theory and Practice of Logic Programming}, 11(06):953--988,
+  2011.
 
 \bibitem{ji2014elementary}
-Ji J, Wan H, Xiao P, et~al.
-\newblock Elementary Loops Revisited [C].// Twenty-Eighth AAAI Conference on
-  Artificial Intelligence.
-\newblock 2014.
+Jianmin Ji, Hai Wan, Peng Xiao, Ziwei Huo, and Zhanhao Xiao.
+\newblock Elementary loops revisited.
+\newblock In {\em Twenty-Eighth AAAI Conference on Artificial Intelligence},
+  2014.
 
 \bibitem{ji2015elementary}
-Ji J, Wan H, Xiao P.
-\newblock On Elementary Loops and Proper Loops for Disjunctive Logic Programs
-  [J].
+Jianmin Ji, Hai Wan, and Peng Xiao.
+\newblock On elementary loops and proper loops for disjunctive logic programs.
 \newblock 2015.
 
-\bibitem{levine2009flex}
-Levine J.
-\newblock Flex \& Bison: Text Processing Tools [M].
-\newblock " O'Reilly Media, Inc.", 2009.
-
-\bibitem{gebser2007gringo}
-Gebser M, Schaub T, Thiele S.
-\newblock Gringo: A new grounder for answer set programming [C].// Logic
-  Programming and Nonmonotonic Reasoning.
-\newblock Springer, 2007:  266--271.
-
-\bibitem{gebser2007conflict}
-Gebser M, Kaufmann B, Neumann A, et~al.
-\newblock Conflict-Driven Answer Set Solving. [C].// IJCAI.
-\newblock vol~7.
-\newblock 2007:  386--392.
-
 \bibitem{niemela1999logic}
-Niemel{\"a} I.
+Ilkka Niemel{\"a}.
 \newblock Logic programs with stable model semantics as a constraint
-  programming paradigm [J].
-\newblock Annals of Mathematics and Artificial Intelligence, 1999,
-  25(3-4):241--273.
-
-\bibitem{cormen2001introduction}
-Cormen T~H, Leiserson C~E, Rivest R~L, et~al.
-\newblock Introduction to algorithms [M].
-\newblock MIT press Cambridge, 2001.
+  programming paradigm.
+\newblock {\em Annals of Mathematics and Artificial Intelligence},
+  25(3-4):241--273, 1999.
 
 \bibitem{wang2013forgetting}
-Wang Y, Wang K, Zhang M.
-\newblock Forgetting for answer set programs revisited [C].// Proceedings of
-  the Twenty-Third international joint conference on Artificial Intelligence.
-\newblock AAAI Press.
-\newblock 2013:  1162--1168.
+Yisong Wang, Kewen Wang, and Mingyi Zhang.
+\newblock Forgetting for answer set programs revisited.
+\newblock In {\em Proceedings of the Twenty-Third international joint
+  conference on Artificial Intelligence}, pages 1162--1168. AAAI Press, 2013.
 
 \end{thebibliography}
