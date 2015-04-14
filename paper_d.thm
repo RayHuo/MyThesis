@@ -3,7 +3,7 @@
 \contentsline {definition}{{\hei 定义}{2.{3}}{补(Complement) \upcite {gabbay1999negation}}}{6}{definition.3}
 \contentsline {definition}{{\hei 定义}{2.{4}}{}}{7}{definition.4}
 \contentsline {example}{{\hei 例}{2.{1}}{}}{8}{example.1}
-\contentsline {definition}{{\hei 定义}{2.{5}}{}}{9}{definition.5}
+\contentsline {definition}{{\hei 定义}{2.{5}}{}}{8}{definition.5}
 \contentsline {definition}{{\hei 定义}{2.{6}}{}}{9}{definition.6}
 \contentsline {example}{{\hei 例}{2.{2}}{}}{9}{example.2}
 \contentsline {definition}{{\hei 定义}{2.{7}}{}}{10}{definition.7}
@@ -24,7 +24,7 @@
 \contentsline {definition}{{\hei 定义}{2.{17}}{强连通分量(SCC: Strongly Conntected Component)\upcite {aspvall1979linear}}}{15}{definition.17}
 \contentsline {example}{{\hei 例}{2.{6}}{}}{15}{example.6}
 \contentsline {definition}{{\hei 定义}{2.{18}}{环(Loop) \upcite {lin2004assat}}}{16}{definition.18}
-\contentsline {definition}{{\hei 定义}{2.{19}}{环公式(Loop Formula) \upcite {lin2004assat}}}{16}{definition.19}
+\contentsline {definition}{{\hei 定义}{2.{19}}{环公式(Loop Formula) \upcite {lin2002assat}}}{16}{definition.19}
 \contentsline {proposition}{{\hei 命题}{2.{1}}{}}{17}{proposition.1}
 \contentsline {definition}{{\hei 定义}{2.{20}}{完备(Completion) \upcite {lin2004assat}}}{17}{definition.20}
 \contentsline {example}{{\hei 例}{2.{7}}{}}{17}{example.7}

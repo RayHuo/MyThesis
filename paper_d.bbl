@@ -1,19 +1,19 @@
 \begin{thebibliography}{10}
 
-\bibitem{van2008handbook}
-Frank Van~Harmelen, Vladimir Lifschitz, and Bruce Porter.
-\newblock {\em Handbook of knowledge representation}, volume~1.
-\newblock Elsevier, 2008.
+\bibitem{ChittaBaral1994Logic}
+Michael~Gelfond Chitta~Baral.
+\newblock Logic programming and knowledge representation.
+\newblock {\em Journal of Logic Programming}, 19(94):73--148, 1994.
 
 \bibitem{ji2010phd}
 吉建民.
 \newblock {\em 提高 ASP 效率的若干途径及服务机器人上应用}.
 \newblock PhD thesis, 合肥: 中国科学技术大学, 2010.
 
-\bibitem{steele1990common}
-Guy~L Steele.
-\newblock {\em Common LISP: the language}.
-\newblock Digital press, 1990.
+\bibitem{van2008handbook}
+Frank Van~Harmelen, Vladimir Lifschitz, and Bruce Porter.
+\newblock {\em Handbook of knowledge representation}, volume~1.
+\newblock Elsevier, 2008.
 
 \bibitem{horn1951sentences}
 Alfred Horn.
@@ -25,16 +25,6 @@ Robert Kowalski.
 \newblock Algorithm= logic+ control.
 \newblock {\em Communications of the ACM}, 22(7):424--436, 1979.
 
-\bibitem{liu2005ASPfixpoint}
-刘富春.
-\newblock 关于逻辑程序不动点语义的讨论.
-\newblock {\em 广东工业大学学报}, 22(2):120--124, 2005.
-
-\bibitem{ChittaBaral1994Logic}
-Michael~Gelfond Chitta~Baral.
-\newblock Logic programming and knowledge representation.
-\newblock {\em Journal of Logic Programming}, 19(94):73--148, 1994.
-
 \bibitem{lifschitz1996foundations}
 Vladimir Lifschitz.
 \newblock Foundations of logic programming.
@@ -45,10 +35,21 @@ A~Colmeraner, Henri Kanoui, Robert Pasero, and Philippe Roussel.
 \newblock Un systeme de communication homme-machine en francais.
 \newblock Luminy, 1973.
 
+\bibitem{EhudShapiro1986Concurrent}
+Ehud Shapiro.
+\newblock Concurrent prolog: A progress report.
+\newblock {\em Fundamentals of Artificial Intelligence}, 19(8):44 -- 58, 1986.
+
 \bibitem{clark1982logic}
 Keith~L Clark and Sten-Ake T{\"a}rnlund.
 \newblock {\em Logic programming}.
 \newblock Number~16. Academic Press New York, 1982.
+
+\bibitem{Carlos2001Monotonic}
+Luís Moniz~Pereira Carlos Viegas~Damásio.
+\newblock Monotonic and residuated logic programs.
+\newblock {\em Symbolic and Quantitative Approaches to Reasoning with
+  Uncertainty}, pages 748--759, 2001.
 
 \bibitem{israel1980s}
 David~J Israel.
@@ -69,11 +70,6 @@ Keith~L Clark.
 Michael Gelfond and Vladimir Lifschitz.
 \newblock The stable model semantics for logic programming.
 \newblock In {\em ICLP/SLP}, volume~88, pages 1070--1080, 1988.
-
-\bibitem{zhai2014asp}
-翟仲毅 and 程渤.
-\newblock 回答集程序设计: 理论, 方法, 应用与研究.
-\newblock 2014.
 
 \bibitem{davis1962machine}
 Martin Davis, George Logemann, and Donald Loveland.
@@ -103,6 +99,11 @@ Fangzhen Lin and Yuting Zhao.
 \newblock Assat: Computing answer sets of a logic program by sat solvers.
 \newblock {\em Artificial Intelligence}, 157(1):115--137, 2004.
 
+\bibitem{Lierler2005cmodels}
+Yuliya~Lierler Yuliya~Lierler.
+\newblock cmodels - sat-based disjunctive answer set solver.
+\newblock {\em of Lecture Notes in Computer Science}, pages 447--451, 2005.
+
 \bibitem{nogueira2001prolog}
 Monica Nogueira, Marcello Balduccini, Michael Gelfond, Richard Watson, and
   Matthew Barry.
@@ -110,16 +111,18 @@ Monica Nogueira, Marcello Balduccini, Michael Gelfond, Richard Watson, and
 \newblock In {\em Practical Aspects of Declarative Languages}, pages 169--183.
   Springer, 2001.
 
-\bibitem{eiter2003answer}
-Thomas Eiter, Wolfgang Faber, Nicola Leone, Gerald Pfeifer, and Axel Polleres.
-\newblock Answer set planning under action costs.
-\newblock {\em Journal of Artificial Intelligence Research}, pages 25--71,
-  2003.
+\bibitem{Phan2006Reasoning}
+Chitta~Baral Phan Huy~Tu, Tran Cao~Son.
+\newblock Reasoning and planning with sensing actions, incomplete information,
+  and static causal laws using answer set programming.
+\newblock {\em Theory and Practice of Logic Programming}, 7(7):377--450, 2006.
 
-\bibitem{xin2010answer}
-Li~Xin, Li~Fan, Bian Xingbin, and Liu Qihe21.
-\newblock Answer set programming representation for er model.
-\newblock {\em Journal of Computer Research and Development}, 1:025, 2010.
+\bibitem{Roberto2014Using}
+Henri~Prade Roberto~Confalonieri.
+\newblock Using possibilistic logic for modeling qualitative decision: Answer
+  set programming algorithms.
+\newblock {\em International Journal of Approximate Reasoning}, 55(2):711–738,
+  2014.
 
 \bibitem{lifschitz1994splitting}
 Vladimir Lifschitz and Hudson Turner.
@@ -149,10 +152,10 @@ Paolo Ferraris, Joohyung Lee, Vladimir Lifschitz, and Ravi Palla.
 \newblock Symmetric splitting in the general theory of stable models.
 \newblock In {\em IJCAI}, volume~9, pages 797--803, 2009.
 
-\bibitem{limo1999lpSAT}
-李未 and 黄雄.
-\newblock 命题逻辑可满足性问题的算法分析.
-\newblock {\em 计算机科学}, 26(3):1--9, 1999.
+\bibitem{zlw1989sllj}
+陆钟万.
+\newblock {\em 面向计算机科学的数理逻辑}.
+\newblock 北京大学出版社, 1989.
 
 \bibitem{luger2003AI}
 George~F Luger.
@@ -246,6 +249,11 @@ Bengt Aspvall, Michael~F Plass, and Robert~Endre Tarjan.
   boolean formulas.
 \newblock {\em Information Processing Letters}, 8(3):121--123, 1979.
 
+\bibitem{lin2002assat}
+Fangzhen Lin and Yuting Zhao.
+\newblock Assat: Computing answer sets of a logic program by sat solvers.
+\newblock In {\em Sixteenth AAAI Conference on Artificial Intelligence}, 2002.
+
 \bibitem{gebser2011elementary}
 Martin Gebser, Joohyung Lee, and Yuliya Lierler.
 \newblock On elementary loops of logic programs.
@@ -261,7 +269,8 @@ Jianmin Ji, Hai Wan, Peng Xiao, Ziwei Huo, and Zhanhao Xiao.
 \bibitem{ji2015elementary}
 Jianmin Ji, Hai Wan, and Peng Xiao.
 \newblock On elementary loops and proper loops for disjunctive logic programs.
-\newblock 2015.
+\newblock In {\em Twenty-Ninth AAAI Conference on Artificial Intelligence},
+  2015.
 
 \bibitem{niemela1999logic}
 Ilkka Niemel{\"a}.
