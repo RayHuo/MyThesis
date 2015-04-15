@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {2.2}回答集编程}{7}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}回答集编程基础}{7}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}回答集编程的语义}{10}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}回答集编程的主要性质：环与环公式}{15}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}回答集逻辑程序中的环与环公式}{15}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}分割集与程序分割}{18}{section.2.3}
 \contentsline {section}{\numberline {2.4}本章小结}{20}{section.2.4}
 \contentsline {chapter}{\numberline {}第三章\hspace {0.8em}改进的程序分割方法}{21}{chapter.3}

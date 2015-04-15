@@ -6,14 +6,14 @@
 \contentsline {definition}{{\hei 定义}{2.{5}}{}}{8}{definition.5}
 \contentsline {definition}{{\hei 定义}{2.{6}}{}}{9}{definition.6}
 \contentsline {example}{{\hei 例}{2.{2}}{}}{9}{example.2}
-\contentsline {definition}{{\hei 定义}{2.{7}}{}}{10}{definition.7}
+\contentsline {definition}{{\hei 定义}{2.{7}}{}}{9}{definition.7}
 \contentsline {example}{{\hei 例}{2.{3}}{}}{10}{example.3}
 \contentsline {definition}{{\hei 定义}{2.{8}}{}}{10}{definition.8}
 \contentsline {definition}{{\hei 定义}{2.{9}}{}}{10}{definition.9}
-\contentsline {definition}{{\hei 定义}{2.{10}}{G-L规约\upcite {gelfond1988stable}}}{11}{definition.10}
+\contentsline {definition}{{\hei 定义}{2.{10}}{G-L规约\upcite {gelfond1988stable}}}{10}{definition.10}
 \contentsline {example}{{\hei 例}{2.{4}}{}}{11}{example.4}
 \contentsline {theorem}{{\hei 定理}{2.{1}}{}}{11}{theorem.2.2.1}
-\contentsline {theorem}{{\hei 定理}{2.{2}}{}}{12}{theorem.2.2.2}
+\contentsline {theorem}{{\hei 定理}{2.{2}}{}}{11}{theorem.2.2.2}
 \contentsline {definition}{{\hei 定义}{2.{11}}{程序结论(Consequence) \upcite {chen2013computing}}}{12}{definition.11}
 \contentsline {definition}{{\hei 定义}{2.{12}}{子句(Clause)}}{12}{definition.12}
 \contentsline {definition}{{\hei 定义}{2.{13}}{单位传播(Unit~Propagation)}}{12}{definition.13}
@@ -25,7 +25,7 @@
 \contentsline {example}{{\hei 例}{2.{6}}{}}{15}{example.6}
 \contentsline {definition}{{\hei 定义}{2.{18}}{环(Loop) \upcite {lin2004assat}}}{16}{definition.18}
 \contentsline {definition}{{\hei 定义}{2.{19}}{环公式(Loop Formula) \upcite {lin2002assat}}}{16}{definition.19}
-\contentsline {proposition}{{\hei 命题}{2.{1}}{}}{17}{proposition.1}
+\contentsline {proposition}{{\hei 命题}{2.{1}}{}}{16}{proposition.1}
 \contentsline {definition}{{\hei 定义}{2.{20}}{完备(Completion) \upcite {lin2004assat}}}{17}{definition.20}
 \contentsline {example}{{\hei 例}{2.{7}}{}}{17}{example.7}
 \contentsline {theorem}{{\hei 定理}{2.{3}}{}}{18}{theorem.2.2.3}
