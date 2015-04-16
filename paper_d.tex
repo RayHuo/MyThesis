@@ -524,6 +524,28 @@ CJKbookmarks=true, colorlinks=true, linkcolor=black, citecolor=blue]{hyperref}
 \newcommand{\mb}{\operator{B}{.2}}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\makeatletter
+%\newif \if@frontmatter   \@frontmatterfalse
+%\let \LaTeXfrontmatter = \frontmatter
+%\let \LaTeXmainmatter  = \mainmatter
+%\renewcommand {\frontmatter} {\@frontmattertrue  \LaTeXfrontmatter}
+%\renewcommand {\mainmatter}  {\@frontmatterfalse \LaTeXmainmatter}
+%
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[RE]{\if@frontmatter\else\small \CAST@value@titlemark\fi}
+%\fancyhead[LO]{\if@frontmatter\else\small \leftmark\fi}
+%\fancyhead[LE,RO]{\if@frontmatter\else\small ~\thepage~\fi}
+%\fancyfoot[C]{\if@frontmatter\small ~\thepage~\fi}
+%\renewcommand{\headrulewidth}{\if@frontmatter 0pt\else .7pt\fi}%
+%\fancypagestyle{plain}{%
+%	\pagestyle{fancy}
+%}
+%\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 	\begin{CJK*}{GBK}{song}
