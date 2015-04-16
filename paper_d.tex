@@ -341,20 +341,27 @@
 	{\item[　　\hskip\labelsep \theorem@headerfont ##1\ ##2\ (##3)]}
 	\makeatother
 	\theoremstyle{myplain}
-	\theoremheaderfont{\CJKfamily{hei}\rmfamily}
-	\theorembodyfont{\CJKfamily{kai}\rmfamily}
+	\theoremheaderfont{\CJKfamily{hei}\rmfamily}  %%%%%%%%%%% old
+	\theorembodyfont{\CJKfamily{kai}\rmfamily}	 %%%%%%%%%%% old
+%	\theoremheaderfont{\CJKfamily{song}\rmfamily} %%%%%%%%%%%% new add
+%	\theorembodyfont{\CJKfamily{song}\rmfamily}	 %%%%%%%%%%%% new add
 	\theoremseparator{：}
-	\newtheorem{definition}{\hei 定义}[chapter]
-	\newtheorem{proposition}{\hei 命题}[chapter]
+	\newtheorem{definition}{\hei 定义}[chapter]   %%%%%%%%%%% old
+	\newtheorem{proposition}{\hei 命题}[chapter]  %%%%%%%%%%% old
+%	\newtheorem{definition}{\song 定义}[chapter]   %%%%%%%%%%% new add
+%	\newtheorem{proposition}{\song 命题}[chapter]  %%%%%%%%%%% new add
 	%\newtheorem{lemma}[definition]{\hei 引理}
-	\newtheorem{lemma}{\hei 引理}[chapter]    %若引理单独从 X.1 开始的话，就使用这一句，否则使用上面一句！！
-	\newtheorem{theorem}{\hei 定理}[chapter]
+	\newtheorem{lemma}{\hei 引理}[chapter]    %若引理单独从 X.1 开始的话，就使用这一句，否则使用上面一句！！                   %%%%%%%%%%%% old
+%	\newtheorem{lemma}{\song 引理}[chapter]  %%%%%%%%%%%% new add
+	\newtheorem{theorem}{\hei 定理}[chapter]	%%%%%%%%%%%% old
+%	\newtheorem{theorem}{\song 定理}[chapter]  %%%%%%%%%%%% new add
 	\newtheorem{axiom}{\hei 公理}
-	\newtheorem{corollary}{\hei 推论}[chapter]
+	\newtheorem{corollary}{\hei 推论}[chapter] %%%%%%%%%%%% old
+%	\newtheorem{corollary}{\song 推论}[chapter]  %%%%%%%%%%%% new add
 	%\theorembodyfont{\CJKfamily{song}\rmfamily} % body部分为书宋体
 	\newtheorem{exercise}[definition]{\hei 练习}
-	\newtheorem{example}{\hei 例}[chapter]
-	
+	\newtheorem{example}{\hei 例}[chapter]		%%%%%%%%%%%% old
+%	\newtheorem{example}{\song 例}[chapter]		%%%%%%%%%%%% new add
 	
 	% 定义自己的定理风格。首行缩进2个汉字，其余部分与环境外的格式相同。但定理的证明无须标号
 	\makeatletter
@@ -364,11 +371,14 @@
 	{\item[\hspace*{2em}\theorem@headerfont\hskip\labelsep ##1\ (##3)\theorem@separator]}
 	\makeatother
 	\theoremstyle{mynonumberplain}
-	\theoremheaderfont{\CJKfamily{hei}\rmfamily}
-	\theorembodyfont{\CJKfamily{kai}\rmfamily}
+	\theoremheaderfont{\CJKfamily{hei}\rmfamily}  %%%%%%%%%%%% old
+	\theorembodyfont{\CJKfamily{kai}\rmfamily}    %%%%%%%%%%%% old
+%	\theoremheaderfont{\CJKfamily{song}\rmfamily}  %%%%%%%%%%%% new add
+%	\theorembodyfont{\CJKfamily{song}\rmfamily}    %%%%%%%%%%%% new add
 	\theoremseparator{：}
 	\theoremsymbol{$\blacksquare$}
-	\newtheorem{proof}{\hei 证明}
+	\newtheorem{proof}{\hei 证明}		%%%%%%%%%%%% old
+%	\newtheorem{proof}{\song 证明}		%%%%%%%%%%%% new add
 	
 	%\theoremsymbol{$\square$}
 	%\newtheorem{example}{\hei 例}[chapter]

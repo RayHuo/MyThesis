@@ -289,7 +289,7 @@ $EC_U(P)$为$Atoms(b_U(P)) \backslash U$中的原子引入一组规则：
 	对一个ASP逻辑程序$P$基于一个原子集$U$，定义以下两个规则集合：
 	\begin{eqnarray}
 		&& in_U(P) = \{ r \in P~|~head(r) \cap U \neq \emptyset,~(body^+(r) \cup head(r)) \nsubseteq U \}	\\
-		&& out_U(P) = \{ head(r) \nsubseteq U,~(body^+(r) \cup head(r)) \cap U \neq \emptyset \}
+		&& out_U(P) = \{ r \in P~|~ head(r) \nsubseteq U,~(body^+(r) \cup head(r)) \cap U \neq \emptyset \}
 	\end{eqnarray}
 \end{definition}
 
@@ -378,7 +378,7 @@ $out_U(P)$代表了头部不属于分割集$U$，而体部正原子存在与$U$中原子相同的原子的规则
 
 根据上述的分析，引用Lin和Zhao(2002)提出的环理论，本节定义新的$top$的关键部分$t_U(P,X)$以保证$top$部分的回答集联合$X$能满足这部分环的环公式，进而保证ASP逻辑程序$P$中所有环的环公式都能被满足。
 \begin{definition} \label{new_top}
-	给定$P$为一个正规逻辑程序，$X$和$U$为原子集，$P$基于$U$通过$X$得到的$top$记为$t_U(P,X)$，其由以下三部分组成：
+	给定$P$为一个正规逻辑程序，$X$和$U$为原子集，$P$基于$U$通过$X$得到的一个规则集合记为$t_U(P,X)$，其由以下三部分组成：
 	\begin{itemize}
 		\item $P \backslash (b_U(P) \cup out_U(P))$，
 		\item 对每个$E \in SL_U(P,X)$构造$\{ x_E~\leftarrow~body(r)~|~r \in in_U(P),~r \in R^-(E,P,X) \}$，
@@ -452,7 +452,7 @@ $t_U(P,X)$由三部分组成，其中第一部分从$P$中删去了$b_U(P)$和$out_U(P)$，
 %%%%%%%%%%%%%%%%%%%%%
 根据引理\ref{lem_slupx}的证明可以知道$X$满足了大部分情况下的环公式，对于$X$所不能满足的环公式的情况是：环$L \subseteq X$，但不存在规则$r \in R^-(L,P)$且$X \models body(r)$。若有另一个原子集$Y$对这样的环都符合存在规则$r \in R^-(L,P)$且$Y \models body(r)$，则可以得到$(X \cup Y) \cap Atoms(P)$能满足$P$中的所有环的环公式。
 
-令$Y$是$top$部分的回答集，所以$Y$只可能满足$r \in R^-(L,P)~\backslash~b_U(P)$中的某些$body(r)$。但无法直接判定$Y$能满足哪些$body(r)$。若能在$P~\backslash~b_U(P)$部分中构造关于$L~\backslash~U$的环，则有$R^-(L,P) \backslash b_U(P) \subseteq R^-(L \backslash U, t_U(P,X))$，而$Y$为$top$的回答集，构造关于$L \backslash U$的环在$top$内，必然存在规则$r \in R^-(L,P)~\backslash~b_U(P)$且$Y \models body(r)$。而事实上，$t_U(P,X)$达到了构造这样关于$L~\backslash~U$的环的目的。
+令$Y$是$top$部分的回答集，所以$Y$只可能满足$r \in R^-(L,P)~\backslash~b_U(P)$中的某些$body(r)$。但无法直接判定$Y$能满足哪些$body(r)$。若能在$P~\backslash~b_U(P)$部分中构造关于$L~\backslash~U$的环，则有$R^-(L,P)~\backslash~b_U(P) \subseteq R^-(L \backslash U, t_U(P,X))$，而$Y$为$top$的回答集，构造关于$L \backslash U$的环在$top$内，必然存在规则$r \in R^-(L,P)~\backslash~b_U(P)$且$Y \models body(r)$。而事实上，$t_U(P,X)$达到了构造这样关于$L~\backslash~U$的环的目的。
 %%%%%%%%%%%%%%%%%%%%%
 
 根据上述的分析，本节可以得到以下命题。
@@ -473,7 +473,7 @@ $t_U(P,X)$由三部分组成，其中第一部分从$P$中删去了$b_U(P)$和$out_U(P)$，
 	
 	%而$Y$是$top$部分的回答集，所以$Y$只可能满足$r \in R^-(L,P) \backslash b_U(P)$中的某些$body(r)$。而无法直接判定$Y$能满足哪些$body(r)$。若能构建关于$L \backslash U$的环，则有$R^-(L,P) \backslash b_U(P) \subseteq R^-(L \backslash U, t_U(P,X))$，而$Y$为$top$的回答集，构造关于$L \backslash U$的环在$top$内，必然存在$r \in R^-(L,P) \backslash b_U(P)$有$Y \models body(r)$。
 	
-	这里考虑$P$中一个环$L$，其被$U$划分为两部分，构成环$L$的规则分别存在于$b_U(P)$和$P~\backslash~b_U(P)$两部分中，$L \subseteq X$但$X \nvDash LF(L,P)$。
+	对于$X$能满足的环，必然能被$(X \cup Y) \cap Atoms(P)$所满足。故这里考虑$P$中一个环$L$，其被$U$划分为两部分，构成环$L$的规则分别存在于$b_U(P)$和$P~\backslash~b_U(P)$两部分中，$L \subseteq X$但$X \nvDash LF(L,P)$。
 	
 	首先证明$t_U(P,X)$中的第二和第三部分能够在$P~\backslash~b_U(P)$中构造出关于$L~\backslash~U$的环。特别地，记$r_1 \in out_U(P)$和$r_2 \in in_U(P)$。
 	
@@ -491,7 +491,7 @@ $t_U(P,X)$由三部分组成，其中第一部分从$P$中删去了$b_U(P)$和$out_U(P)$，
 		body^+(r_2) \cap (L~\backslash~U) \neq \emptyset
 	\end{equation}
 	
-	否则$P$中不会存在$L$这个环。对于每个满足$body^+(r_2) \cap (L~\backslash~U) \neq \emptyset$的规则$r_2$都会使用$E \in SL_U(P,X)$来构成一个形如$x_E~\backslash~body(r_2)$的新规则。
+	否则$P$中不会存在$L$这个环。对于每个满足$body^+(r_2) \cap (L~\backslash~U) \neq \emptyset$的规则$r_2$都会使用$E \in SL_U(P,X)$来构成一个形如$x_E~\leftarrow~body(r_2)$的新规则。
 	此外，这些规则都是从$b_U(P)$中提取出来的，且保留了体部。而$X \in \Gamma (b_U(P) \cup ECC_U(P))$，故对于$r_2 \in b_U(P)$也必然符合$X \models body(r_2)$，不会与$r_2 \in R^-(E,P,X)$产生矛盾。
 	
 	对于第三部分中构造的规则“$head(r_1)~\leftarrow~x_{E_1},~x_{E_2},...,~x_{E_t},~body(r_1)$”，其中$r_1 \in out_U(P)$，所以有：
@@ -553,8 +553,8 @@ $t_U(P,X)$由三部分组成，其中第一部分从$P$中删去了$b_U(P)$和$out_U(P)$，
 	
 	2）已知$Y$是$e_U(t_U(P,X),X) \cup ECC_U(P,X)$的回答集。
 	并且在$e_U(t_U(P,X),X) \cup ECC_U(P,X)$中引入的新原子$x_E$满足$\{ x_E~|~E \in SL_U(P,X) \} = Y~\backslash~Atoms(P)$，
-	则有$Y$满足$e_U(P \backslash b_U(P),X)$中的所有规则。
-	而$e_U(P,X)$只对$U$中的原子进行删减操作，且$ECC_U(P,X)$确保了在$X$中的原子均为真。
+	且$ECC_U(P,X)$确保了在$X$中的原子均为真。则有$Y$满足$e_U(P \backslash b_U(P),X)$中的所有规则。
+	而$e_U(P,X)$只对$U$中的原子进行删减操作，
 	所以有$(X \cup Y) \cap Atoms(P)$满足$P \backslash b_U(P)$。
 	
 	综合上面两个情况，可以有$(X \cup Y) \cap Atoms(P)$满足$P$。
@@ -566,8 +566,8 @@ $t_U(P,X)$由三部分组成，其中第一部分从$P$中删去了$b_U(P)$和$out_U(P)$，
 	$(\Leftarrow) \space$ 即证明当原子集$S$是$P$的回答集时，存在$X$和$Y$是$P$基于$U$的一组方案，同时有$S = (X \cup Y) \cap Atoms(P)$。令：
 	\begin{equation}
 		\begin{array}{rcl}
-			X = (S \cap U) \cup \{ a~|~a \in S \cap Atoms(b_U(P)~\backslash~U) \} \\
-			\cup \{ a'~|~a' \in Atoms(b_U(P))~\backslash~(U~\backslash~S) \}
+			X = (S \cap U) \cup \{ a~|~a \in (S \cap Atoms(b_U(P))~\backslash~U) \} \\
+			\cup \{ a'~|~a' \in Atoms(b_U(P))~\backslash~(U \cup S) \}
 		\end{array}
 	\end{equation}
 	\begin{equation}
@@ -578,7 +578,7 @@ $t_U(P,X)$由三部分组成，其中第一部分从$P$中删去了$b_U(P)$和$out_U(P)$，
 	显然有$(X \cup Y) \cap Atoms(P) = S$，接着证明$\langle X, Y \rangle$是$P$基于$U$的一组方案。
 	
 	首先证明$X$是$b_U(P) \cup EC_U(P)$的回答集。
-	因为$S$是$P$的回答集，所以$X$中的$(S \cap U) \cup \{ a~|~a \in S \cap Atoms(b_U(P) \backslash U) \}$部分就是$Atoms(b_U(P))$中属于$P$某个回答集的原子部分，
+	因为$S$是$P$的回答集，所以$X$中的$(S \cap U) \cup \{ a~|~a \in (S \cap Atoms(b_U(P)) \backslash U) \}$部分就是$Atoms(b_U(P))$中属于$P$某个回答集的原子部分，
 	$\{ a'~|~a' \in Atoms(b_U(P)) \backslash (U \cup S) \}$部分就是$Atoms(b_U(P))$中不属于$P$任意回答集的原子部分，
 	故可以有$X$满足$b_U(P) \cup EC_U(P)$。
 	而对于任意$b_U(P) \cup EC_U(P)$中的环$L$，由于任意规则$r \in EC_U(P)$都有$body^+(r) = \emptyset$，所以这部分不会产生环，
@@ -606,8 +606,8 @@ $t_U(P,X)$由三部分组成，其中第一部分从$P$中删去了$b_U(P)$和$out_U(P)$，
 %%%%%%%%%%%%%%%%%%%%%%%%  证明新的分割理论的正确性  %%%%%%%%%%%%%%%%%%%%%%%%
 
 
-在定理\ref{new_splitting_theorem}中给出的新分割理论在内容上跟Lifschitz和Turner当初提出的分割理论是一样的。
-本质上的不同在于定义来计算$P$基于$U$的方案$\langle X,Y \rangle$的运算符的不同，及此时的分割集$U$是一个任意的原子集。
+在定理\ref{new_splitting_theorem}中给出的新分割理论在内容上跟Lifschitz和Turner当初提出的分割理论是类似的。
+本质上的不同在于定义来计算$P$基于$U$的方案$\langle X,Y \rangle$的运算符被重新定义了，及此时的分割集$U$是一个任意的原子集。
 
 
 半环集$SL_U(P,X)$根据Lin和Zhao(2002)的环理论，定义了让$bottom$的回答集$X$所不能满足的环公式的环与分割集的交集所构成的半环集。
