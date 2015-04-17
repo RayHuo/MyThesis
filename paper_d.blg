@@ -12,15 +12,40 @@ A level-1 auxiliary file: public.aux
 A level-1 auxiliary file: projects.aux
 A level-1 auxiliary file: ack.aux
 Database file #1: reference.bib
-Repeated entry---line 216 of file reference.bib
- : @inproceedings{gelfond1988stable
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 486 of file reference.bib
+Repeated entry---line 539 of file reference.bib
  : @article{bonatti2010answer
  :                           ,
 I'm skipping whatever remains of this entry
+A bad cross reference---entry "gelfond1988stable"
+refers to entry "DBLP:conf/iclp/1988", which doesn't exist
+A bad cross reference---entry "nogueira2001prolog"
+refers to entry "DBLP:conf/padl/2001", which doesn't exist
+A bad cross reference---entry "lifschitz1994splitting"
+refers to entry "DBLP:conf/iclp/1994", which doesn't exist
+A bad cross reference---entry "dao2009modular"
+refers to entry "DBLP:conf/iclp/2009", which doesn't exist
+A bad cross reference---entry "gebser2008engineering"
+refers to entry "DBLP:conf/iclp/2008", which doesn't exist
+A bad cross reference---entry "ferraris2009symmetric"
+refers to entry "DBLP:conf/ijcai/2009", which doesn't exist
+A bad cross reference---entry "lifschitz2008answer"
+refers to entry "DBLP:conf/aaai/2008", which doesn't exist
+A bad cross reference---entry "bonatti2010answer"
+refers to entry "DBLP:conf/agp/2010", which doesn't exist
+A bad cross reference---entry "lee2003loop"
+refers to entry "DBLP:conf/iclp/2003", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/padl/2001"
+Warning--I didn't find a database entry for "DBLP:conf/iclp/1994"
+Warning--I didn't find a database entry for "DBLP:conf/iclp/2009"
+Warning--I didn't find a database entry for "DBLP:conf/iclp/2008"
+Warning--I didn't find a database entry for "DBLP:conf/ijcai/2009"
+Warning--I didn't find a database entry for "DBLP:conf/aaai/2008"
+Warning--I didn't find a database entry for "DBLP:conf/agp/2010"
+Warning--I didn't find a database entry for "DBLP:conf/iclp/1988"
+Warning--I didn't find a database entry for "DBLP:conf/iclp/2003"
+Warning--empty journal in ji2010phd
 Warning--empty booktitle in colmeraner1973systeme
 Warning--there's a number but no series in clark1982logic
+Warning--empty journal in mccarthy1987circumscription
 Warning--empty journal in nuchelmans1973theories
-(There were 2 error messages)
+(There were 10 error messages)

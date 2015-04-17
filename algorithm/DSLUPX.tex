@@ -2,24 +2,24 @@
 	\SetKwData{Dis}{dis}
 	\SetKwFunction{CalculateHammingDistance}{CalculateHammingDistance}
 	\SetKw{downto}{downto}\SetKw{return}{return}\SetKw{Break}{break}
-	\SetKwInOut{Input}{输入}\SetKwInOut{Output}{输出}
+	\SetKwInOut{Input}{Input}\SetKwInOut{Output}{Output}
 	\caption{计算关键半环集的算法$dsl_U(P,X)$}
-	\Input{一个逻辑程序$P$和一个原子集$X$}
-	\Output{关键半环集$dsl$}
+	\Input{An ASP logic program $P$ and a set of atoms $X$}
+	\Output{A set of dominated semi-loops $dsl$}
 	
-	$dsl~:=~\emptyset$；      \\
-	\For {非空子集$S_1 \subseteq head(in_U(P))$和$S_2 \subseteq body^+(out_U(P))$} {
-		$G^S_P~:=~G_P$关于$S_1 \cup S_2 \cup (Atoms(P) \backslash (head(in_U(P)) \cup body^+(out_U(P))))$的子图；\\
-		$L~:=~G^S_P$的一个强连通分量，并满足$S_1 \cup S_2 \subseteq L$；\\
-		\If {不存在这样的$L$} {
+	$dsl~:=~\emptyset$;      \\
+	\For {each pair of nonempty sets $S_1 \subseteq head(in_U(P))$ and $S_2 \subseteq body^+(out_U(P))$} {
+		$G^S_P~:=$ the $S_1 \cup S_2 \cup (Atoms(P) \backslash (head(in_U(P)) \cup body^+(out_U(P))))$ induced subgraph of $G_P$; \\
+		$L~:=~$ the Strongly Connected Component (SCC) of $G^S_P$ s.t. $S_1 \cup S_2 \subseteq L$; \\
+		\If {L does not exist} {
 			break;
 		}
-		\If {$L \cap U \subseteq X$且$R^-(L \cap U, P, X) \subseteq in_U(P)$} {
-			把$L \cap U$加入到$dsl$中；	\\
+		\If {$L \cap U \subseteq X$ and $R^-(L \cap U, P, X) \subseteq in_U(P)$} {
+			append $L \cap U$ to $dsl$;	\\
 		}
 		\Else {
-			$S~:=~head(R^-(L \cap U, P, X) \backslash in_U(P)) \cup ((L \cap U) \backslash X)$；	\\
-			$G^S_P~:=~G_P$关于$L \backslash S$的子图；	\\
+			$S~:=~head(R^-(L \cap U, P, X) \backslash in_U(P)) \cup ((L \cap U) \backslash X)$;	\\
+			$G^S_P~:=~$ the $L \backslash S$ induced subgraph of $G_P$;	\\
 			$goto~4$；
 		}
 	}

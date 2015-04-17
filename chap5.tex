@@ -13,7 +13,7 @@
 % lex and yacc
 \subsection{实验工具}
 
-两个实验在词法分析和语法分析上都分别使用flex和bison\footnote[2]{更多请参考 John Levine 所著《Flex与Bison》，O’Reilly出版}，在例化和求解方面都使用gringo和clasp\footnote[3]{更多请参考Gebser等撰写的《A User’s Guide to gringo, clasp, clingo, and iclingo》}。
+两个实验在词法分析和语法分析上都分别使用flex和bison\footnote[2]{更多请参考 John Levine 所著《Flex与Bison》，O'Reilly出版}，在例化和求解方面都使用gringo和clasp\footnote[3]{更多请参考Gebser等撰写的《A User's Guide to gringo, clasp, clingo, and iclingo》}。
 而本文所提出的新程序分割方法和程序化简的操作过程均由C/C++代码实现。
 具体的实验工具内容和环境如表\ref{experiment_environment}：
 \begin{table}[htb]
@@ -46,10 +46,11 @@
 其中程序分割实验和程序化简实验的代码执行流程图分别如图\ref{splitting_procedure}和图\ref{simplify_procedure}所示，这里不加入原程序直接使用ASP求解器进行求解的步骤。
 \begin{figure}[htb]
 	\center
-	\includegraphics{img/splitting_procedure.jpg}\\
+	\includegraphics[width=200pt]{img/splitting_procedure.jpg}\\
 	\caption{程序分割实验流程图}\label{splitting_procedure}
 \end{figure}
 \\
+
 \begin{figure}[htb]
 	\center
 	\includegraphics{img/simplify_procedure.jpg}\\
@@ -116,7 +117,7 @@ Niemel{\"a}给出的求解哈密顿回路问题ASP逻辑程序如下\upcite{niemela1999logic}：
 图\ref{pealGraph}是2颗基为5的珍珠构成的珍珠图：
 \begin{figure}[htb]
 	\center
-	\includegraphics{img/pealGraph.png}\\
+	\includegraphics[width=250pt]{img/pealGraph.png}\\
 	\caption{2颗基为5的珍珠构成的珍珠图}\label{pealGraph}
 \end{figure}
 
@@ -220,14 +221,14 @@ Niemel{\"a}给出的求解哈密顿回路问题ASP逻辑程序如下\upcite{niemela1999logic}：
 本实验的对每个测例的具体执行过程如下：
 \begin{enumerate}\label{splitting_experiment_process}
 	\item 通过程序自动生成当前珍珠图对应的事实文件；
-	\item 使用$gringo$通过事实文件例化ASP逻辑程序；
-	\item 使用$clasp$求解出例化后的ASP逻辑程序的回答集，并统计平均求解时间为$t_1$；
+	\item 使用gringo通过事实文件例化规则集得到ASP逻辑程序；
+	\item 使用clasp求解出ASP逻辑程序的回答集，并统计平均求解时间为$t_1$；
 	\item 计算出分割集$U$；
-	\item 基于分割集$U$对例化后的ASP逻辑程序使用新程序分割方法进行划分，得到$b_U(P) \cup EC_U(P)$和$e_U(dt_U(P,X),X) \cup ECC_U(P,X)$两部分逻辑程序；
-	\item 使用$clasp$分别对$b_U(P) \cup EC_U(P)$和$e_U(dt_U(P,X),X) \cup ECC_U(P,X)$求解回答集，并分别统计两者的平均求解时间，记为$t_b$和$t_t$。
+	\item 基于分割集$U$对ASP逻辑程序使用新程序分割方法进行划分，得到$b_U(P) \cup EC_U(P)$和$e_U(dt_U(P,X),X) \cup ECC_U(P,X)$两部分逻辑程序；
+	\item 使用clasp分别对$b_U(P) \cup EC_U(P)$和$e_U(dt_U(P,X),X) \cup ECC_U(P,X)$求解回答集，并分别统计两者的平均求解时间，记为$t_b$和$t_t$。
 \end{enumerate}
 
-对于每个实验测例，本实验首先验证两种方法求解出来的回答集是否相同，以检验新程序分割方法求解ASP逻辑程序的正确性，然后比较$t_1$和$t_b + t_t$的大小，以判断哪种ASP逻辑程序求解方式更为高效。其中$t_1$等代表的统计平均时间是通过求解指定数目的回答集（这个可以通过$clasp$命令参数设置）除以求解这些回答集的总耗时所得到的。
+对于每个实验测例，本实验首先验证两种方法求解出来的回答集是否相同，以检验新程序分割方法求解ASP逻辑程序的正确性，然后比较$t_1$和$t_b + t_t$的大小，以判断哪种ASP逻辑程序求解方式更为高效。其中$t_1$等代表的统计平均时间是通过求解指定数目的回答集（这个可以通过clasp命令参数设置）除以求解这些回答集的总耗时所得到的。
 
 
 
@@ -267,7 +268,7 @@ Niemel{\"a}给出的求解哈密顿回路问题ASP逻辑程序如下\upcite{niemela1999logic}：
 
 表\ref{s_time_compare}中的“Benchmark”一列记录的是各个测例的记号，“bottom”一列记录的是求解$b_U(P) \cup EC_U(P)$部分的耗时，“top”一列记录的是求解$e_U(dt_U(P,X),X) \cup ECC_U(P,X)$部分的耗时，“bottom+top”一列记录的是“bottom”和“top”两部分的耗时总和，“whole”一列记录的是直接求解原ASP逻辑程序的耗时，“match”一列记录的是两种方法求解得到的回答集的内容是否一致。
 
-根据表\ref{s_time_compare}中的数据及两种方法的回答集求解结果对比可以得到以下观察结果：
+根据表\ref{s_time_compare}中数据及两种方法的回答集求解结果对比可得到以下观察结果：
 \begin{itemize}
 	\item 使用新程序分割方法对ASP逻辑程序进行划分后求解得到的回答集与直接求解原程序得到的回答集的内容一致；
 	\item 使用新程序分割方法对ASP逻辑程序进行划分后求解的耗时比直接求解原程序要少；
@@ -286,7 +287,7 @@ Niemel{\"a}给出的求解哈密顿回路问题ASP逻辑程序如下\upcite{niemela1999logic}：
 这里，本实验根据实验目的，提出两个假设：
 \begin{enumerate}
 	\item 对ASP逻辑程序使用程序结论进行程序化简后得到的新程序的回答集联合程序结论可以得到原程序的回答集；
-	\item 求解使用程序结论进行程序化简后的新逻辑程序比直接求解原程序要更为高效。
+	\item 求解使用程序结论进行程序化简后的新逻辑程序比直接求解要更高效。
 \end{enumerate}
 
 本实验基于上述两个假设开展验证实验。最终的实验结果验证了这两个假设的正确性。
@@ -341,10 +342,11 @@ Niemel{\"a}给出的求解哈密顿回路问题ASP逻辑程序如下\upcite{niemela1999logic}：
 对于表\ref{sim_time_compare}提供的数据，本节可以归纳得出以下的观察结果：
 \begin{itemize}
 	\item 求解程序化简后的ASP逻辑程序得到的回答集联合程序结论$U$得到的回答集与直接求解原程序的回答集内容一致；
-	\item 基于程序结论使用程序化简方法求解ASP逻辑程序的耗时比直接求解ASP逻辑程序要少，但未算得上本质上的提速。
+	\item 基于程序结论使用程序化简方法求解ASP逻辑程序的耗时比直接求解ASP逻辑程序要少，但未算得上本质上的提速。但当程序结论的基足够大时，分割出来的部分会更大，提速效果将更好。
 \end{itemize}
 
 通过上述的观察结果可以知道，本实验开始时给出的两个假设成立。观察结果中的第一点验证了使用程序结论对ASP逻辑程序进行程序化简的正确性。观察结果中的第二点从实验层面给予了基于程序结论的程序化简方法的有效性一个正面的支持。更进一步地，可以知道程序化简方法能更高效地求解这类程序结构上高内聚低耦合的问题。
+%虽然实验结果为显著提速，但可以尝试查找基更大的程序结论进行化简，这部分工作实际上也在进行着。
 
 
 \section{本章小结}

@@ -1,0 +1,490 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  17 APR 2015 22:19
+entering extended mode
+**LifschitzU.tex
+(E:\CtexPaper\hzwPaper\algorithm\LifschitzU.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+
+! LaTeX Error: Environment algorithm undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{algorithm}
+                     \label{LifschitzU}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.2 	\SetKwData
+               {Dis}{dis}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 	\SetKwData{D
+                 is}{dis}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+l.3 	\SetKwFunction
+                   {CalculateHammingDistance}{CalculateHammingDistance}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.4 	\SetKw
+           {downto}{downto}\SetKw{return}{return}\SetKw{Break}{break}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+! Undefined control sequence.
+l.4 	\SetKw{downto}{downto}\SetKw
+                                 {return}{return}\SetKw{Break}{break}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+! Undefined control sequence.
+l.4 ...downto}{downto}\SetKw{return}{return}\SetKw
+                                                  {Break}{break}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no B in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+! Undefined control sequence.
+l.5 	\SetKwInOut
+                {Input}{Input}\SetKwInOut{Output}{Output}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+l.5 	\SetKwInOut{Input}{Input}\SetKwInOut
+                                         {Output}{Output}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no O in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 	\caption
+             {¼ÆËãËùÓÐ·Ö¸î¼¯µÄËã·¨$Us(P)$}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ¼ in font nullfont!
+Missing character: There is no Æ in font nullfont!
+Missing character: There is no Ë in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no Ë in font nullfont!
+Missing character: There is no ù in font nullfont!
+Missing character: There is no Ó in font nullfont!
+Missing character: There is no Ð in font nullfont!
+Missing character: There is no · in font nullfont!
+Missing character: There is no Ö in font nullfont!
+Missing character: There is no ¸ in font nullfont!
+Missing character: There is no î in font nullfont!
+Missing character: There is no ¼ in font nullfont!
+Missing character: There is no ¯ in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no Ä in font nullfont!
+Missing character: There is no Ë in font nullfont!
+Missing character: There is no ã in font nullfont!
+Missing character: There is no · in font nullfont!
+Missing character: There is no ¨ in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+! Undefined control sequence.
+l.7 	\Input
+           {An ASP logic program $P$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.8 	\Output
+            {A set of all splitting sets $Us$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--9
+[]
+ []
+
+
+Overfull \hbox (28.19237pt too wide) in paragraph at lines 2--9
+$\OML/cmm/m/it/10 Us\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 2--9
+$\OML/cmm/m/it/10 P$
+ []
+
+
+Overfull \hbox (12.60553pt too wide) in paragraph at lines 2--9
+$\OML/cmm/m/it/10 Us$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 	$
+       Us~:=~\emptyset$	\\
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<recently read> \For 
+                     
+l.11 	\For
+           { $rule \in P$ } {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \For 
+                     
+l.14 		\For
+            {$r \in P'$} {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.15 			\If
+            {$head(r) \cap U \neq \emptyset$} {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (53.71655pt too wide) in paragraph at lines 10--21
+[]$\OML/cmm/m/it/10 Us [] \OT1/cmr/m/n/10 :=  []\OMS/cmsy/m/n/10 ;$ 
+ []
+
+
+Overfull \hbox (27.79518pt too wide) in paragraph at lines 10--21
+$\OML/cmm/m/it/10 rule \OMS/cmsy/m/n/10 2$
+ []
+
+
+Overfull \hbox (7.80904pt too wide) in paragraph at lines 10--21
+$\OML/cmm/m/it/10 P$
+ []
+
+
+Overfull \hbox (79.58362pt too wide) in paragraph at lines 10--21
+$\OML/cmm/m/it/10 U [] \OT1/cmr/m/n/10 :=  []\OML/cmm/m/it/10 Atoms\OT1/cmr/m/n
+/10 (\OML/cmm/m/it/10 rule\OT1/cmr/m/n/10 )$ 
+ []
+
+
+Overfull \hbox (67.88547pt too wide) in paragraph at lines 10--21
+$\OML/cmm/m/it/10 P[] [] \OT1/cmr/m/n/10 :=  []\OML/cmm/m/it/10 P\OMS/cmsy/m/n/
+10 nf\OML/cmm/m/it/10 rule\OMS/cmsy/m/n/10 g$ 
+ []
+
+
+Overfull \hbox (14.23376pt too wide) in paragraph at lines 10--21
+$\OML/cmm/m/it/10 r \OMS/cmsy/m/n/10 2$
+ []
+
+
+Overfull \hbox (10.6146pt too wide) in paragraph at lines 10--21
+$\OML/cmm/m/it/10 P[]$
+ []
+
+
+Overfull \hbox (40.14246pt too wide) in paragraph at lines 10--21
+$\OML/cmm/m/it/10 head\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r\OT1/cmr/m/n/10 ) \OMS
+/cmsy/m/n/10 \$
+ []
+
+
+Overfull \hbox (18.47354pt too wide) in paragraph at lines 10--21
+$\OML/cmm/m/it/10 U \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 =$
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 10--21
+$\OMS/cmsy/m/n/10 ;$
+ []
+
+
+Overfull \hbox (38.61375pt too wide) in paragraph at lines 10--21
+$\OML/cmm/m/it/10 U [] \OT1/cmr/m/n/10 :=  []\OML/cmm/m/it/10 U \OMS/cmsy/m/n/1
+0 [$
+ []
+
+
+Overfull \hbox (41.99316pt too wide) in paragraph at lines 10--21
+$\OML/cmm/m/it/10 Atoms\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r\OT1/cmr/m/n/10 )$ 
+ []
+
+
+Overfull \hbox (47.98875pt too wide) in paragraph at lines 10--21
+$\OML/cmm/m/it/10 Us [] \OT1/cmr/m/n/10 :=  []\OML/cmm/m/it/10 Us \OMS/cmsy/m/n
+/10 [$
+ []
+
+
+Overfull \hbox (17.91806pt too wide) in paragraph at lines 10--21
+$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 U\OMS/cmsy/m/n/10 g$ 
+ []
+
+! Undefined control sequence.
+l.22 	\return
+              $Us$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 	\return $
+               Us$
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (32.60553pt too wide) in paragraph at lines 22--23
+[]$\OML/cmm/m/it/10 Us$ 
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{algorithm}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 \end{algorithm}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> LifschitzU.tex
+                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 12 strings out of 495354
+ 250 string characters out of 3183074
+ 45842 words of memory out of 3000000
+ 3281 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 18i,2n,12p,85b,60s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

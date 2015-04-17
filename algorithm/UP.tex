@@ -2,24 +2,24 @@
 	\SetKwData{Dis}{dis}
 	\SetKwFunction{CalculateHammingDistance}{CalculateHammingDistance}
 	\SetKw{downto}{downto}\SetKw{return}{return}\SetKw{Break}{break}
-	\SetKwInOut{Input}{输入}\SetKwInOut{Output}{输出}
+	\SetKwInOut{Input}{Input}\SetKwInOut{Output}{Output}
 	\caption{计算单位传播的算法$UP(P)$}
-	\Input{一个逻辑程序$P$}
-	\Output{文字集$lit$}
+	\Input{An ASP logic program $P$}
+	\Output{A set of literals $lit$}
 	
-	$\Gamma~:=~P$对应的子句；	\\
+	$\Gamma~:=$ clauses of $P$;	\\
 	\If {$\emptyset \in \Gamma$} {
-		\return $Lit(P)$；
+		\return $Lit(P)$;
 	}
-	$A~:=~unit\_clause(\Gamma)$；	\\
-	\If {$A$是不一致的} {
-		\return $Lit(P)$；	\\
+	$A~:=~unit\_clause(\Gamma)$;	\\
+	\If {$A$ is inconsistent} {
+		\return $Lit(P)$;	\\
 	}
 	\If {$A \neq \emptyset$} {
-		\return $A \cup UP(assign(A, \Gamma))$；	\\
+		\return $A \cup UP(assign(A, \Gamma))$;	\\
 	}
 	\Else {
-		\return $\emptyset$；	
+		\return $\emptyset$;	
 	}
 
 	
