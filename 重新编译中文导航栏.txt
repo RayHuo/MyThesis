@@ -1,0 +1,4 @@
+在cmd下跳到当前目录，执行以下命令：
+PdfLatex paper_d.tex
+python gbkbookmark.py paper_d.out
+PdfLatex paper_d.tex
