@@ -1,0 +1,182 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  17 APR 2015 17:53
+entering extended mode
+**additional.tex
+(E:\CtexPaper\hzwPaper\additional.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+! Undefined control sequence.
+l.1 \chapter
+            *{÷–”¢ ı”Ô∂‘’’}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter*
+             {÷–”¢ ı”Ô∂‘’’}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ” in font nullfont!
+Missing character: There is no ¢ in font nullfont!
+Missing character: There is no   in font nullfont!
+Missing character: There is no ı in font nullfont!
+Missing character: There is no ” in font nullfont!
+Missing character: There is no Ô in font nullfont!
+Missing character: There is no ∂ in font nullfont!
+Missing character: There is no ‘ in font nullfont!
+Missing character: There is no ’ in font nullfont!
+Missing character: There is no ’ in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
+[] 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 “
+     ‘œ¬ ı”Ô£¨‘⁄±æ È÷–“‘÷–”¢Œƒ≥ˆœ÷£¨¥ÀŒ™æﬂÃÂ∂‘’’
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no “ in font nullfont!
+Missing character: There is no ‘ in font nullfont!
+Missing character: There is no œ in font nullfont!
+Missing character: There is no ¬ in font nullfont!
+Missing character: There is no   in font nullfont!
+Missing character: There is no ı in font nullfont!
+Missing character: There is no ” in font nullfont!
+Missing character: There is no Ô in font nullfont!
+Missing character: There is no £ in font nullfont!
+Missing character: There is no ¨ in font nullfont!
+Missing character: There is no ‘ in font nullfont!
+Missing character: There is no ⁄ in font nullfont!
+Missing character: There is no ± in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no   in font nullfont!
+Missing character: There is no È in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no “ in font nullfont!
+Missing character: There is no ‘ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no – in font nullfont!
+Missing character: There is no ” in font nullfont!
+Missing character: There is no ¢ in font nullfont!
+Missing character: There is no Œ in font nullfont!
+Missing character: There is no ƒ in font nullfont!
+Missing character: There is no ≥ in font nullfont!
+Missing character: There is no ˆ in font nullfont!
+Missing character: There is no œ in font nullfont!
+Missing character: There is no ÷ in font nullfont!
+Missing character: There is no £ in font nullfont!
+Missing character: There is no ¨ in font nullfont!
+Missing character: There is no ¥ in font nullfont!
+Missing character: There is no À in font nullfont!
+Missing character: There is no Œ in font nullfont!
+Missing character: There is no ™ in font nullfont!
+Missing character: There is no æ in font nullfont!
+Missing character: There is no ﬂ in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no Â in font nullfont!
+Missing character: There is no ∂ in font nullfont!
+Missing character: There is no ‘ in font nullfont!
+Missing character: There is no ’ in font nullfont!
+Missing character: There is no ’ in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
+[] 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 L
+     oop \pushtabs ª∑
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+! Too many }'s.
+\@stopfield ->\color@endgroup \egroup 
+                                      
+l.5 Loop \pushtabs
+                   ª∑
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+Missing character: There is no ª in font nullfont!
+Missing character: There is no ∑ in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no ∑ in font nullfont!
+Missing character: There is no π in font nullfont!
+Missing character: There is no ´ in font nullfont!
+Missing character: There is no   in font nullfont!
+Missing character: There is no Ω in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no µ in font nullfont!
+Missing character: There is no ◊ in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no ø in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ∂ in font nullfont!
+Missing character: There is no • in font nullfont!
+Missing character: There is no ≤ in font nullfont!
+Missing character: There is no ø in font nullfont!
+)
+! Emergency stop.
+<*> additional.tex
+                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 7 strings out of 495354
+ 168 string characters out of 3183074
+ 44842 words of memory out of 3000000
+ 3276 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 5i,1n,4p,62b,17s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -12,7 +12,7 @@ Michael~Gelfond Chitta~Baral.
 
 \bibitem{van2008handbook}
 Frank Van~Harmelen, Vladimir Lifschitz, and Bruce Porter.
-\newblock {\em Handbook of knowledge representation}, volume~1.
+\newblock {\em Handbook of knowledge representation \textsc{[M]}}, volume~1.
 \newblock Elsevier, 2008.
 
 \bibitem{horn1951sentences}
@@ -283,6 +283,7 @@ Ilkka Niemel{\"a}.
 Yisong Wang, Kewen Wang, and Mingyi Zhang.
 \newblock Forgetting for answer set programs revisited.
 \newblock In {\em Proceedings of the Twenty-Third international joint
-  conference on Artificial Intelligence}, pages 1162--1168. AAAI Press, 2013.
+  conference on Artificial Intelligence \textsc{[A]}}, pages 1162--1168. AAAI
+  Press, 2013.
 
 \end{thebibliography}
