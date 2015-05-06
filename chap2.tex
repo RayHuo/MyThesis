@@ -259,48 +259,49 @@ Gelder和Ross等(1991)证明了两个无理集的并集仍然是一个无理集\upcite{van1991well}，
 	conq(P)~=~lfp(UP(L,P) \cup \neg GUS(P,L)) 
 \end{equation}
 
-其中$UP(L,P)=L \cup UP(assign(L,P))$。接下来给出计算程序结论的例子。
-\begin{example} \label{conq_example}
-	给定逻辑程序$P$：
-	\begin{eqnarray}
-	&& a~\leftarrow~c. \\
-	&& c~\leftarrow~e.	\\
-	&& e~\leftarrow~not~f.	\\
-	&& f~\leftarrow~not~e.	\\
-	&& \leftarrow~not~c.
-	\end{eqnarray}
-	
-	其对应的子句集$\Gamma$为：
-	\begin{eqnarray}
-	&& \neg c \lor a.	\\
-	&& \neg e \lor c.	\\
-	&& e \lor f.		\\
-	&& c.
-	\end{eqnarray}
-	
-	计算$W_P(L)$的极小不动点，故令$L = \emptyset$开始，有：
-	\begin{eqnarray}
-	&& UP(\{\}, P)~=~\{\} \cup UP(assign(\{\},P))~=~\{ a,c \}	\\
-	&& GUS(P, \{\})~=~Atoms(P) \backslash lfp(\varPhi_{\{\}}(\{\}))~=~\emptyset \\
-	&& W_P(\{\})~=~UP(\{\}, P) \cup \neg GUS(P, \{\})~=~\{a,c\} \cup \{\}~=~\{a,c\}
-	\end{eqnarray}
-	
-	继续计算，令$L~=~\{a,c\}$，有：
-	\begin{equation}
-	UP(\{a,c\}, P)~=~\{a,c\} \cup UP(assign(\{a,c\},P))~=~\{ a,c \}
-	\end{equation}
-	\begin{equation}
-	GUS(P, \{a,c\})~=~Atoms(P) \backslash lfp(\varPhi_{\{a,c\}}(\{\}))~=~\emptyset
-	\end{equation}
-	\begin{equation}
-	\begin{array}{rcl}
-	W_P(\{a,c\})~=~UP(\{a,c\}, P) \cup \neg GUS(P, \{a,c\}) \\
-	=~\{a,c\} \cup \{\}~=~\{a,c\}
-	\end{array}
-	\end{equation}
-	
-	故计算得到极小不动点为$\{a,c\}$，所以原程序$P$的一个程序结论为$\{a,c\}$。
-\end{example}
+其中$UP(L,P)=L \cup UP(assign(L,P))$。
+%接下来给出计算程序结论的例子。
+%\begin{example} \label{conq_example}
+%	给定逻辑程序$P$：
+%	\begin{eqnarray}
+%	&& a~\leftarrow~c. \\
+%	&& c~\leftarrow~e.	\\
+%	&& e~\leftarrow~not~f.	\\
+%	&& f~\leftarrow~not~e.	\\
+%	&& \leftarrow~not~c.
+%	\end{eqnarray}
+%	
+%	其对应的子句集$\Gamma$为：
+%	\begin{eqnarray}
+%	&& \neg c \lor a.	\\
+%	&& \neg e \lor c.	\\
+%	&& e \lor f.		\\
+%	&& c.
+%	\end{eqnarray}
+%	
+%	计算$W_P(L)$的极小不动点，故令$L = \emptyset$开始，有：
+%	\begin{eqnarray}
+%	&& UP(\{\}, P)~=~\{\} \cup UP(assign(\{\},P))~=~\{ a,c \}	\\
+%	&& GUS(P, \{\})~=~Atoms(P) \backslash lfp(\varPhi_{\{\}}(\{\}))~=~\emptyset \\
+%	&& W_P(\{\})~=~UP(\{\}, P) \cup \neg GUS(P, \{\})~=~\{a,c\} \cup \{\}~=~\{a,c\}
+%	\end{eqnarray}
+%	
+%	继续计算，令$L~=~\{a,c\}$，有：
+%	\begin{equation}
+%	UP(\{a,c\}, P)~=~\{a,c\} \cup UP(assign(\{a,c\},P))~=~\{ a,c \}
+%	\end{equation}
+%	\begin{equation}
+%	GUS(P, \{a,c\})~=~Atoms(P) \backslash lfp(\varPhi_{\{a,c\}}(\{\}))~=~\emptyset
+%	\end{equation}
+%	\begin{equation}
+%	\begin{array}{rcl}
+%	W_P(\{a,c\})~=~UP(\{a,c\}, P) \cup \neg GUS(P, \{a,c\}) \\
+%	=~\{a,c\} \cup \{\}~=~\{a,c\}
+%	\end{array}
+%	\end{equation}
+%	
+%	故计算得到极小不动点为$\{a,c\}$，所以原程序$P$的一个程序结论为$\{a,c\}$。
+%\end{example}
 
 
 接下来，本节将说明ASP逻辑程序中的一个重要性质，即ASP逻辑程序中的环以及对应的环公式。

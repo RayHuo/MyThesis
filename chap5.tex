@@ -15,7 +15,7 @@
 
 两个实验在词法分析和语法分析上都分别使用flex和bison\footnote[2]{更多请参考 John Levine 所著《Flex与Bison》，O'Reilly出版}，在例化和求解方面都使用gringo和clasp\footnote[3]{更多请参考Gebser等撰写的《A User's Guide to gringo, clasp, clingo, and iclingo》}。
 而本文所提出的新程序分割方法和程序化简的操作过程均由C/C++代码实现。
-具体的实验工具内容和环境如表\ref{experiment_environment}：
+具体的实验工具内容和环境如表\ref{experiment_environment}所示：
 \begin{table}[htb]
 	\caption{实验环境} \label{experiment_environment}
 	\begin{center}
@@ -107,12 +107,17 @@ Niemel{\"a}给出的求解哈密顿回路问题ASP逻辑程序如下\upcite{niemela1999logic}：
 && arc(0, 1).
 \end{eqnarray}
 
-其中$vertex(0)$代表点，$arc(0,1)$代表$vertex(0)$到$vertex(1)$的边。本章的实验选用哈密顿回路问题及Niemel{\"a}的编码作为实验例子的原因在于其事实文件中的图结构与例化后的ASP逻辑程序的正依赖图是同构的。
+其中$vertex(0)$代表点，$arc(0,1)$代表$vertex(0)$到$vertex(1)$的边。
+
+本章的实验选用哈密顿回路问题及Niemel{\"a}的编码作为实验例子的原因在于其事实文件中的图结构与例化后的ASP逻辑程序的正依赖图是同构的。
 这样的性质有利于分析ASP逻辑程序的求解结果和新程序分割方法及程序化简的效果。
+而事实上，从ASP逻辑程序编码的角度来看，绝大部分的图论问题都可以实现其事实文件中的图结构与其例化后的ASP逻辑程序的正依赖图同构，当然，也存在非图论问题的同构情况。
+故本实验使用哈密顿回路问题作为测例，从结果上可以反映新程序分割方法在这一类正依赖图同构问题上的效果。
+所以本实验的结果是有代表性的。
 
 具体地，本实验中使用到的事实文件对应的图结构是两个全连通子图$A$和$B$通过一条从$A$中某个节点指向$B$中某个节点的边，以及一条从$B$中某个节点指向$A$中某个节点的边连接而成的，这两条连接边涉及的4个节点都互不相同。
 本实验称该图为“珍珠图”(Peal Graph)，每个全连通子图称为一颗“珍珠”。
-同时，珍珠图例化后的ASP逻辑程序符合高内聚低耦合的程序结构特性，这对于大部分的ASP逻辑程序来说，是具有代表性的。
+同时，珍珠图例化后的ASP逻辑程序符合高内聚低耦合的程序结构特性，这对于大部分的ASP逻辑程序来说，同样是具有代表性的。
 此外，每颗“珍珠”都是全连通的，故能体现最坏情况，若实验结果理想，则本文提出的理论对最坏情况也有效。
 图\ref{pealGraph}是2颗基为5的珍珠构成的珍珠图：
 \begin{figure}[htb]
@@ -307,7 +312,7 @@ Niemel{\"a}给出的求解哈密顿回路问题ASP逻辑程序如下\upcite{niemela1999logic}：
 
 \subsection{程序化简实验数据分析}
 
-本实验使用的珍珠图与程序分割实验中的一致，一共统计了9个测例的实验数据。对每个测例执行\ref{simplifying_experiment_process}中的实验步骤，并统计进行程序化简前后的其平均求解时间，同时对比使用程序化简方法得到的回答集与原程序的回答集的内容是否一致。具体的数据整理如表\ref{sim_time_compare}。
+本实验使用的珍珠图与程序分割实验中的一致，一共统计了9个测例的实验数据。对每个测例执行\ref{simplifying_experiment_process}中的实验步骤，并统计进行程序化简前后的其平均求解时间，同时对比使用程序化简方法得到的回答集与原程序的回答集的内容是否一致。具体的数据整理如表\ref{sim_time_compare}所示。
 \begin{table}[htb]
 	\caption{程序化简前后的求解耗时对比（单位为：秒）}\label{sim_time_compare}
 	\begin{center}
