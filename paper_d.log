@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  7 MAY 2015 00:49
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  7 MAY 2015 23:16
 entering extended mode
 **paper_d.tex
 (E:\CtexPaper\hzwPaper\paper_d.tex
@@ -1727,10 +1727,10 @@ Package rerunfilecheck Info: File `paper_d.out' has not changed.
 (rerunfilecheck)             Checksum: 1F972DAE5611F5E2F44EFD2B3817C2E6;1915.
  ) 
 Here is how much of TeX's memory you used:
- 16615 strings out of 495354
- 245156 string characters out of 3183074
- 360268 words of memory out of 3000000
- 18438 multiletter control sequences out of 15000+200000
+ 16531 strings out of 495354
+ 243434 string characters out of 3183074
+ 359268 words of memory out of 3000000
+ 18354 multiletter control sequences out of 15000+200000
  110298 words of font info for 360 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  39i,19n,58p,1077b,1482s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1816,7 +1816,7 @@ b><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 <D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/Program F
 iles/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><D:/Program Files/CTEX/MiK
 TeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on paper_d.pdf (87 pages, 1290393 bytes).
+Output written on paper_d.pdf (87 pages, 1274173 bytes).
 PDF statistics:
  1790 PDF objects out of 2073 (max. 8388607)
  436 named destinations out of 1000 (max. 500000)
