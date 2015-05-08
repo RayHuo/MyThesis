@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  7 MAY 2015 23:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  8 MAY 2015 17:19
 entering extended mode
 **paper_d.tex
 (E:\CtexPaper\hzwPaper\paper_d.tex
@@ -88,6 +88,9 @@ Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
 )
+("D:\Program Files\CTEX\MiKTeX\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen113
+)
 ("D:\Program Files\CTEX\UserData\tex\latex\type1cm\type1cm.sty"
 Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
 atched RF)
@@ -100,14 +103,14 @@ Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR)
 \lst@gtempboxa=\box27
 \lst@token=\toks17
 \lst@length=\count94
-\lst@currlwidth=\dimen113
+\lst@currlwidth=\dimen114
 \lst@column=\count95
 \lst@pos=\count96
-\lst@lostspace=\dimen114
-\lst@width=\dimen115
+\lst@lostspace=\dimen115
+\lst@width=\dimen116
 \lst@newlines=\count97
 \lst@lineno=\count98
-\lst@maxwidth=\dimen116
+\lst@maxwidth=\dimen117
 
 ("D:\Program Files\CTEX\UserData\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
@@ -131,11 +134,11 @@ Package: amstext 2000/06/29 v2.01
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
-\ex@=\dimen117
+\ex@=\dimen118
 ))
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen118
+\pmbraise@=\dimen119
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -152,7 +155,7 @@ LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box29
 \strutbox@=\box30
-\big@size=\dimen119
+\big@size=\dimen120
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \macc@depth=\count106
@@ -165,12 +168,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \column@=\count111
 \maxfields@=\count112
 \andhelp@=\toks20
-\eqnshift@=\dimen120
-\alignsep@=\dimen121
-\tagshift@=\dimen122
-\tagwidth@=\dimen123
-\totwidth@=\dimen124
-\lineht@=\dimen125
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
 \@envbody=\toks21
 \multlinegap=\skip44
 \multlinetaggap=\skip45
@@ -220,10 +223,10 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \theorem@framepostskip=\toks30
 \theorem@inframepreskip=\toks31
 \theorem@inframepostskip=\toks32
-\theoremindent=\dimen126
-\theorem@indent=\dimen127
-\theoremrightindent=\dimen128
-\theorem@rightindent=\dimen129
+\theoremindent=\dimen127
+\theorem@indent=\dimen128
+\theoremrightindent=\dimen129
+\theorem@rightindent=\dimen130
 \theoremheaderfont=\toks33
 \theoremseparator=\toks34
 \theoremprework=\toks35
@@ -240,8 +243,8 @@ Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
 \mysavskip=\skip54
 Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
  line 1175.
-\thm@amstmpdepth=\dimen130
-\tagwidth=\dimen131
+\thm@amstmpdepth=\dimen131
+\tagwidth=\dimen132
 )
 ("D:\Program Files\CTEX\UserData\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
@@ -254,9 +257,9 @@ LaTeX Info: Redefining \cite on input line 694.
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip57
 \subfigcapskip=\skip58
-\subfigcaptopadj=\dimen132
+\subfigcaptopadj=\dimen133
 \subfigbottomskip=\skip59
-\subfigcapmargin=\dimen133
+\subfigcapmargin=\dimen134
 \subfiglabelskip=\skip60
 \c@subfigure=\count116
 \c@lofdepth=\count117
@@ -285,14 +288,14 @@ Package: floatflt 1997/07/16 v. 1.31
 \hangcount=\count124
 \nosuccesstryfig=\count125
 \nosuccesstrytab=\count126
-\figgutter=\dimen134
-\tabgutter=\dimen135
-\htdone=\dimen136
-\pageht=\dimen137
-\startpageht=\dimen138
-\tabbredd=\dimen139
-\floatfltwidth=\dimen140
-\fltitemwidth=\dimen141
+\figgutter=\dimen135
+\tabgutter=\dimen136
+\htdone=\dimen137
+\pageht=\dimen138
+\startpageht=\dimen139
+\tabbredd=\dimen140
+\floatfltwidth=\dimen141
+\fltitemwidth=\dimen142
 \outputpretest=\toks41
 )
 ("D:\Program Files\CTEX\UserData\tex\latex\listings\lstlang1.sty"
@@ -309,12 +312,12 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box34
 \beforetitleunit=\skip63
 \aftertitleunit=\skip64
-\ttl@plus=\dimen142
-\ttl@minus=\dimen143
+\ttl@plus=\dimen143
+\ttl@minus=\dimen144
 \ttl@toksa=\toks42
-\titlewidth=\dimen144
-\titlewidthlast=\dimen145
-\titlewidthfirst=\dimen146
+\titlewidth=\dimen145
+\titlewidthlast=\dimen146
+\titlewidthfirst=\dimen147
 )
 ("D:\Program Files\CTEX\UserData\tex\latex\caption\caption2.sty"
 Package: caption2 2013/02/03 v2.2-62 Customising captions (AR)
@@ -332,22 +335,22 @@ Package caption2 Warning: ****************************************************
 ("D:\Program Files\CTEX\UserData\tex\latex\caption\caption3.sty"
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen147
-\captionmargin@=\dimen148
-\captionwidth=\dimen149
-\caption@tempdima=\dimen150
-\caption@indent=\dimen151
-\caption@parindent=\dimen152
-\caption@hangindent=\dimen153
+\captionmargin=\dimen148
+\captionmargin@=\dimen149
+\captionwidth=\dimen150
+\caption@tempdima=\dimen151
+\caption@indent=\dimen152
+\caption@parindent=\dimen153
+\caption@hangindent=\dimen154
 )
 Package caption2 Info: Running in caption2 v2.0 compatibility mode on input lin
 e 215.
-\captionlinewidth=\dimen154
-\realcaptionwidth=\dimen155
+\captionlinewidth=\dimen155
+\realcaptionwidth=\dimen156
 Package caption2 Info: subfigure package v2.1 (or newer) detected on input line
  443.
-\subfigcapwidth=\dimen156
-\subcapindent=\dimen157
+\subfigcapwidth=\dimen157
+\subcapindent=\dimen158
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\bm.sty"
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
@@ -431,8 +434,8 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count153
 ))
-\Gin@req@height=\dimen158
-\Gin@req@width=\dimen159
+\Gin@req@height=\dimen159
+\Gin@req@width=\dimen160
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\generic\thumbpdf\thumbpdf.sty"
 Package: thumbpdf 2011/08/10 v3.13 Inclusion of thumbnails (HO)
@@ -485,7 +488,7 @@ Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
 )
-\@linkdim=\dimen160
+\@linkdim=\dimen161
 \Hy@linkcounter=\count154
 \Hy@pagecounter=\count155
 
@@ -514,8 +517,8 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4637.
 \Fld@menulength=\count158
-\Field@Width=\dimen161
-\Fld@charsize=\dimen162
+\Field@Width=\dimen162
+\Fld@charsize=\dimen163
 Package hyperref Info: Hyper figures OFF on input line 5757.
 Package hyperref Info: Link nesting OFF on input line 5762.
 Package hyperref Info: Hyper index ON on input line 5765.
@@ -555,18 +558,18 @@ Package: mdwtab 1998/04/28 1.9 Table typesetting with style
 \tab@columns=\count165
 \tab@preamble=\toks44
 \tab@shortline=\toks45
-\extrarowheight=\dimen163
-\tabextrasep=\dimen164
-\arrayextrasep=\dimen165
-\smarraycolsep=\dimen166
-\smarrayextrasep=\dimen167
-\tab@width=\dimen168
-\col@sep=\dimen169
-\tab@endheight=\dimen170
+\extrarowheight=\dimen164
+\tabextrasep=\dimen165
+\arrayextrasep=\dimen166
+\smarraycolsep=\dimen167
+\smarrayextrasep=\dimen168
+\tab@width=\dimen169
+\col@sep=\dimen170
+\tab@endheight=\dimen171
 \tab@leftskip=\skip76
 \tab@rightskip=\skip77
 \fn@notes=\box35
-\fn@width=\dimen171
+\fn@width=\dimen172
 )
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\base\makeidx.sty"
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
@@ -609,12 +612,12 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \skiplength=\skip83
 \algomargin=\skip84
 \skipalgocfslide=\skip85
-\algowidth=\dimen172
-\inoutsize=\dimen173
-\inoutindent=\dimen174
-\interspacetitleruled=\dimen175
-\interspacealgoruled=\dimen176
-\interspacetitleboxruled=\dimen177
+\algowidth=\dimen173
+\inoutsize=\dimen174
+\inoutindent=\dimen175
+\interspacetitleruled=\dimen176
+\interspacealgoruled=\dimen177
+\interspacetitleboxruled=\dimen178
 \algocf@inoutbox=\box36
 \algocf@inputbox=\box37
 \AlCapSkip=\skip86
@@ -640,85 +643,85 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 (E:\CtexPaper\hzwPaper\chap4.aux) (E:\CtexPaper\hzwPaper\chap5.aux)
 (E:\CtexPaper\hzwPaper\chap6.aux) (E:\CtexPaper\hzwPaper\public.aux)
 (E:\CtexPaper\hzwPaper\projects.aux) (E:\CtexPaper\hzwPaper\ack.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 560.
-LaTeX Font Info:    ... okay on input line 560.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 560.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 526.
+LaTeX Font Info:    ... okay on input line 526.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 526.
 
 
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\ot1ppl.fd"
@@ -731,7 +734,7 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: includehead includefoot 
+* modes: includehead includefoot twoside 
 * h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
 * v-part:(T,H,B)=(56.9055pt, 734.08128pt, 54.06006pt)
 * \paperwidth=597.50787pt
@@ -745,7 +748,7 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 * \headsep=19.8738pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=38.0pt
+* \marginparwidth=88.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -753,8 +756,8 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -764,13 +767,13 @@ Package caption Info: End \AtBeginDocument code.
 ("D:\Program Files\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count174
-\scratchdimen=\dimen178
+\scratchdimen=\dimen179
 \scratchbox=\box44
 \nofMPsegments=\count175
 \nofMParguments=\count176
 \everyMPshowfont=\toks48
 \MPscratchCnt=\count177
-\MPscratchDim=\dimen179
+\MPscratchDim=\dimen180
 \MPnumerator=\count178
 \makeMPintoPDFobject=\count179
 \everyMPtoPDFconversion=\toks49
@@ -784,7 +787,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-Package hyperref Info: Link coloring ON on input line 560.
+Package hyperref Info: Link coloring ON on input line 526.
 
 ("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty"
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -794,9 +797,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count180
 )
-LaTeX Info: Redefining \ref on input line 560.
-LaTeX Info: Redefining \pageref on input line 560.
-LaTeX Info: Redefining \nameref on input line 560.
+LaTeX Info: Redefining \ref on input line 526.
+LaTeX Info: Redefining \pageref on input line 526.
+LaTeX Info: Redefining \nameref on input line 526.
 
 (E:\CtexPaper\hzwPaper\paper_d.out) (E:\CtexPaper\hzwPaper\paper_d.out)
 \@outlinefile=\write3
@@ -804,7 +807,7 @@ LaTeX Info: Redefining \nameref on input line 560.
 (E:\CtexPaper\hzwPaper\GB_452.cpx
 File: GB.cap 2003/05/18 4.5.2for Standard LaTeX document class
 )
-LaTeX Font Info:    Try loading font information for C19+song on input line 564
+LaTeX Font Info:    Try loading font information for C19+song on input line 530
 .
 
 ("D:\Program Files\CTEX\CTeX\tex\latex\CJK\GB\c19song.fd"
@@ -880,16 +883,35 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ]) [2] (E:\CtexPaper\hzwPaper\abstract2.tex
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <18> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 19.
+
+Underfull \vbox (badness 5231) has occurred while \output is active []
+
  [3
 
 
-]) [4]
-(E:\CtexPaper\hzwPaper\paper_d.toc [5
+])
+[4] (E:\CtexPaper\hzwPaper\paper_d.toc [5
 
 
 ])
 \tf@toc=\write4
- [6] (E:\CtexPaper\hzwPaper\chap1.tex
+ [6]
+(E:\CtexPaper\hzwPaper\paper_d.lof)
+\tf@lof=\write5
+ [7
+
+] [8
+
+] (E:\CtexPaper\hzwPaper\paper_d.lot)
+\tf@lot=\write6
+[9] [10
+
+] (E:\CtexPaper\hzwPaper\paper_d.loa)
+\tf@loa=\write7
+ [11] [12
+
+]
+(E:\CtexPaper\hzwPaper\chap1.tex
 µ⁄“ª’¬
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -905,7 +927,6 @@ been already used, duplicate ignored
                    \relax 
 l.28 
       [1
-
 
 
 ]
@@ -947,7 +968,11 @@ been already used, duplicate ignored
                    \relax 
 l.107 µ⁄
         ŒÂ’¬∏˘æ›µ⁄»˝’¬∫Õµ⁄Àƒ’¬µƒƒ⁄»›…Ëº∆œ‡πÿ∂‘±» µ—È£¨≤¢∂‘µ√µΩµƒ µ—È ˝æ›Ω¯––...
-[4]) [5] (E:\CtexPaper\hzwPaper\chap2.tex
+[4]) [5] (E:\CtexPaper\hzwPaper\chap2.tex [6
+
+
+
+]
 µ⁄∂˛’¬
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -955,11 +980,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
 nput line 10.
-[6
-
-
-
-]
+[7]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 40.
 
@@ -972,10 +993,10 @@ Overfull \hbox (2.5702pt too wide) in paragraph at lines 44--48
 /m/n/12 Clark\C19/song/bx/n/12/40 
  []
 
-[7]
+[8]
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
 t line 80.
- [8] [9] [10]
+ [9] [10] [11]
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
 t line 192.
 
@@ -991,19 +1012,19 @@ C19/song/bx/n/12/40   \C19/song/m/n/12/25 "\OT1/ppl/m/n/12 Chen\C19/song/bx/n
 /12/43 ⁄\OT1/ppl/m/n/12 Ji\C19/song/bx/n/12/40  
  []
 
-[11] (E:\CtexPaper\hzwPaper\algorithm/UP.tex
+[12] (E:\CtexPaper\hzwPaper\algorithm/UP.tex
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 10.
-) [12] [13]
-<img/dpg.png, id=634, 247.67531pt x 42.1575pt>
+) [13] [14]
+<img/dpg.png, id=688, 247.67531pt x 42.1575pt>
 File: img/dpg.png Graphic file (type png)
  <use img/dpg.png>
 Package pdftex.def Info: img/dpg.png used on input line 337.
 (pdftex.def)             Requested size: 247.6747pt x 42.15738pt.
- [14]
+ [15]
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
 input line 367.
- [15 <E:/CtexPaper/hzwPaper/img/dpg.png>]
+ [16 <E:/CtexPaper/hzwPaper/img/dpg.png>]
 Overfull \hbox (8.46762pt too wide) in paragraph at lines 385--386
 []\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω\OT1/ppl/m/n/12 ASP\C19/kai/m/n/12/4
 9 ‹ \C19/kai/m/n/12/45 6 \C19/kai/m/n/12/38 ß \C19/kai/m/n/12/60 S$\OML/cmm/m/i
@@ -1013,7 +1034,7 @@ m/n/12/37 \OT1/ppl/m/n/12 (Completion)\C19/kai/m/n/12/45 P \C19/kai/m/n/12/58
 9/kai/m/n/12/25 " 
  []
 
-[16] [17]
+[17] [18]
 Overfull \hbox (2.43172pt too wide) in paragraph at lines 441--442
 []\C19/kai/m/n/12/42 â \C19/kai/m/n/12/40 Ω \C19/kai/m/n/12/61 ò \C19/kai/m/n/1
 2/42 á\OT1/ppl/m/n/12 ASP\C19/kai/m/n/12/49 ‹ \C19/kai/m/n/12/45 6 \C19/kai/m/n
@@ -1034,7 +1055,7 @@ kai/m/n/12/40  \C19/kai/m/n/12/61 ò \C19/kai/m/n/12/42 á \C19/kai/m/n/12/41 ê
 \C19/kai/m/n/12/36 Y\OT1/ppl/m/n/12 (Solution)\C19/kai/m/n/12/26 ß
  []
 
-[18]) [19] (E:\CtexPaper\hzwPaper\chap3.tex
+[19]) [20] (E:\CtexPaper\hzwPaper\chap3.tex
 µ⁄»˝’¬
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1049,7 +1070,7 @@ l.25 \begin{proposition}
                          \label{p_for_splitting_set}
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
 line 37.
- [20
+ [21
 
 
 
@@ -1058,7 +1079,7 @@ has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.55 \begin{example}
-                     [21]
+                     [22]
 
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
 (Font)              Font shape `U/wasy/m/n' tried instead on input line 79.
@@ -1076,7 +1097,7 @@ Overfull \hbox (2.55559pt too wide) in paragraph at lines 89--92
 ⁄\OT1/ppl/m/n/12 Turner\C19/song/bx/n/12/40 
  []
 
-[22]
+[23]
 Overfull \hbox (11.29582pt too wide) in paragraph at lines 119--120
 []\C19/song/bx/n/12/55 Ø ¢ \C19/song/bx/n/12/54 ˛ \C19/song/bx/n/12/26 ß \C19/s
 ong/bx/n/12/40 È \C19/song/bx/n/12/62 u$\OML/cmm/m/it/12 Atoms\OT1/cmr/m/n/12 (
@@ -1094,12 +1115,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.1}
 <to be read again> 
                    \relax 
 l.133 \begin{definition}
-                         [23]pdfTeX warning (ext4): destination with the same i
+                         [24]pdfTeX warning (ext4): destination with the same i
 dentifier (name{example.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.149 \begin{example}
-                      [24]
+                      [25]
 Overfull \hbox (7.42918pt too wide) in paragraph at lines 179--180
 []\C19/song/bx/n/12/40 Ω \C19/song/bx/n/12/61 ¬ \C19/song/bx/n/12/60 # \C19/son
 g/bx/n/12/40 $\OML/cmm/m/it/12 bottom$\C19/song/bx/n/12/58 è$\OML/cmm/m/it/12 
@@ -1137,12 +1158,12 @@ m/m/it/12 ; X\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 [ \OML/cmm/m/it/12 ECC[]\OT1/cm
 r/m/n/12 (\OML/cmm/m/it/12 P; X\OT1/cmr/m/n/12 )$\C19/kai/m/n/12/26 ß
  []
 
-[25]pdfTeX warning (ext4): destination with the same identifier (name{example.3
+[26]pdfTeX warning (ext4): destination with the same identifier (name{example.3
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.249 \begin{example}
-                      \label{example_3_3} [26]
+                      \label{example_3_3} [27]
 Overfull \hbox (5.78905pt too wide) in paragraph at lines 278--280
 []\C19/kai/m/n/12/49 -$\OML/cmm/m/it/12 Y \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\
 OML/cmm/m/it/12 c\OMS/cmsy/m/n/12 g$\C19/kai/m/n/12/26 ß \C19/kai/m/n/12/59 w \
@@ -1161,7 +1182,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.3}
 <to be read again> 
                    \relax 
 l.288 \begin{definition}
-                         \label{in_out} [27]pdfTeX warning (ext4): destination 
+                         \label{in_out} [28]pdfTeX warning (ext4): destination 
 with the same identifier (name{definition.4}) has been already used, duplicate 
 ignored
 <to be read again> 
@@ -1189,7 +1210,7 @@ OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 [ \OML/cmm
 /12/26 ß
  []
 
-[28] [29]pdfTeX warning (ext4): destination with the same identifier (name{defi
+[29] [30]pdfTeX warning (ext4): destination with the same identifier (name{defi
 nition.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1228,7 +1249,7 @@ as been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.405 \begin{example}
-                      [30] [31] [32] [33]
+                      [31] [32] [33] [34]
 Overfull \hbox (0.38905pt too wide) in paragraph at lines 546--549
 []$\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 )\OT1/cmr/m/n/12 )$ \C19/kai/m/n/12/45 = \
 C19/kai/m/n/12/64 y \C19/kai/m/n/12/50 ≤ \C19/kai/m/n/12/40 $\OML/cmm/m/it/12 
@@ -1254,7 +1275,7 @@ kai/m/n/12/44 £ \C19/kai/m/n/12/39 â \C19/kai/m/n/12/45 8 \C19/kai/m/n/12/25 "
 \OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; X\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 [$
  []
 
-[34]
+[35]
 Overfull \hbox (0.6249pt too wide) in paragraph at lines 580--588
 \C19/kai/m/n/12/65 v$\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT
 1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 [ \OML/cmm/m/it/12 EC[]\OT1/cmr/m/n/12 (\OML/cm
@@ -1268,12 +1289,12 @@ m/it/12 EC[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ))$\C19/kai/m/n/
  [ \OML/cmm/m/it/12 EC[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 )$ 
  []
 
-[35]pdfTeX warning (ext4): destination with the same identifier (name{definitio
+[36]pdfTeX warning (ext4): destination with the same identifier (name{definitio
 n.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.617 \begin{definition}
-                        [πÿº¸∞Îª∑] \label{dominated_semi_loop} [36]pdfTeX warni
+                        [πÿº¸∞Îª∑] \label{dominated_semi_loop} [37]pdfTeX warni
 ng (ext4): destination with the same identifier (name{definition.9}) has been a
 lready used, duplicate ignored
 <to be read again> 
@@ -1292,7 +1313,7 @@ Overfull \hbox (5.4313pt too wide) in paragraph at lines 638--639
 /m/n/12 )$ 
  []
 
-(E:\CtexPaper\hzwPaper\algorithm/DSLUPX.tex) [37] [38]pdfTeX warning (ext4): de
+(E:\CtexPaper\hzwPaper\algorithm/DSLUPX.tex) [38] [39]pdfTeX warning (ext4): de
 stination with the same identifier (name{definition.10}) has been already used,
  duplicate ignored
 <to be read again> 
@@ -1316,7 +1337,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{definition.11
 <to be read again> 
                    \relax 
 l.742 \begin{definition}
-                        [πÿº¸∑Ω∞∏] [39]
+                        [πÿº¸∑Ω∞∏]
 Overfull \hbox (4.84683pt too wide) in paragraph at lines 760--761
 []\C19/song/bx/n/12/60 # \C19/song/bx/n/12/38 ß \C19/song/bx/n/12/60 S \C19/son
 g/bx/n/12/41 © \C19/song/bx/n/12/42  \C19/song/bx/n/12/41 ê { \C19/song/bx/n/1
@@ -1329,8 +1350,8 @@ ong/bx/n/12/37 ÷ \C19/song/bx/n/12/38 ø$\OML/cmm/m/it/12 Atoms\OT1/cmr/m/n/12 (
 msy/m/n/12 n\OML/cmm/m/it/12 U$\C19/song/bx/n/12/64 •
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{definition.12
-}) has been already used, duplicate ignored
+[40]pdfTeX warning (ext4): destination with the same identifier (name{definitio
+n.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.777 \begin{definition}
@@ -1344,12 +1365,15 @@ OML/cmm/m/it/12 X$\C19/kai/m/n/12/25 !$\OML/cmm/m/it/12 U$\C19/kai/m/n/12/26 ß$
 \OML/cmm/m/it/12 P$\C19/kai/m/n/12/44 ƒ
  []
 
-[40]pdfTeX warning (ext4): destination with the same identifier (name{example.5
+
+LaTeX Warning: File ot142.cmap not found on input line 788.
+
+[41]pdfTeX warning (ext4): destination with the same identifier (name{example.5
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.799 \begin{example}
-                      [41]pdfTeX warning (ext4): destination with the same iden
+                      [42]pdfTeX warning (ext4): destination with the same iden
 tifier (name{definition.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1367,7 +1391,7 @@ ng/bx/n/12/26 ß \C19/song/bx/n/12/41 © \C19/song/bx/n/12/42  \C19/song/bx/n/12
 C19/song/bx/n/12/43 ⁄ 
  []
 
-[42]pdfTeX warning (ext4): destination with the same identifier (name{definitio
+[43]pdfTeX warning (ext4): destination with the same identifier (name{definitio
 n.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1378,7 +1402,7 @@ red
 <to be read again> 
                    \relax 
 l.892 \begin{definition}
-                        [«ø∂•≤ø] \label{strong_top} [43]pdfTeX warning (ext4): 
+                        [«ø∂•≤ø] \label{strong_top} [44]pdfTeX warning (ext4): 
 destination with the same identifier (name{definition.16}) has been already use
 d, duplicate ignored
 <to be read again> 
@@ -1395,7 +1419,7 @@ L/cmm/m/it/12 P$\C19/kai/m/n/12/43 ' \C19/kai/m/n/12/62 u$\OML/cmm/m/it/12 U$\C
  Y\OT1/ppl/m/n/12 (Strong
  []
 
-[44] [45] [46]
+[45] [46] [47]
 Overfull \hbox (5.22949pt too wide) in paragraph at lines 998--1003
 \C19/song/bx/n/12/47 å \C19/song/bx/n/12/61 ± \C19/song/bx/n/12/59 Å \C19/song/
 bx/n/12/64 õ$\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 DSL[]\OT1/cmr/m/n/12 (\OML/cmm/
@@ -1451,7 +1475,11 @@ bx/n/12/60 5 \C19/song/bx/n/12/40 $\OML/cmm/m/it/12 ECC[]\OT1/cmr/m/n/12 (\OML
 /cmm/m/it/12 P; X\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/26 ß
  []
 
-) [47] [48] (E:\CtexPaper\hzwPaper\chap4.tex
+) [48] [49] (E:\CtexPaper\hzwPaper\chap4.tex [50
+
+
+
+]
 µ⁄Àƒ’¬
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1489,22 +1517,18 @@ OML/cmm/m/it/12 P$\C19/kai/m/n/12/44 ƒ \C19/kai/m/n/12/62 u$\OML/cmm/m/it/12 L$
 \C19/kai/m/n/12/40 
  []
 
-[49
-
-
-
-]pdfTeX warning (ext4): destination with the same identifier (name{proposition.
-1}) has been already used, duplicate ignored
+[51]pdfTeX warning (ext4): destination with the same identifier (name{propositi
+on.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.60 \begin{proposition}
-                         \label{prop_simp_ops} [50]pdfTeX warning (ext4): desti
+                         \label{prop_simp_ops} [52]pdfTeX warning (ext4): desti
 nation with the same identifier (name{example.1}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
 l.113 \begin{example}
-                      [51]
+                      [53]
 Overfull \hbox (9.33885pt too wide) in paragraph at lines 150--155
 []\OT1/ppl/m/n/12 Van\C19/song/bx/n/12/43 ⁄\OT1/ppl/m/n/12 Gelder\C19/song/bx/n
 /12/40 \OT1/ppl/m/n/12 (1991)\C19/song/m/n/12/57 J \C19/song/bx/n/12/38 — \C19
@@ -1519,19 +1543,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{proposition.2
 <to be read again> 
                    \relax 
 l.161 \begin{proposition}
-                         \label{p_4_1} [52]pdfTeX warning (ext4): destination w
+                         \label{p_4_1} [54]pdfTeX warning (ext4): destination w
 ith the same identifier (name{example.2}) has been already used, duplicate igno
 red
 <to be read again> 
                    \relax 
 l.200 \begin{example}
-                     \label{e_4_1} [53]pdfTeX warning (ext4): destination with 
+                     \label{e_4_1} [55]pdfTeX warning (ext4): destination with 
 the same identifier (name{definition.3}) has been already used, duplicate ignor
 ed
 <to be read again> 
                    \relax 
 l.249 \begin{definition}
-                         \label{new_in_U_P} [54]pdfTeX warning (ext4): destinat
+                         \label{new_in_U_P} [56]pdfTeX warning (ext4): destinat
 ion with the same identifier (name{definition.4}) has been already used, duplic
 ate ignored
 <to be read again> 
@@ -1556,7 +1580,7 @@ sy/m/n/12 2 \OML/cmm/m/it/12 in[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/
 n/12 ) [] \OML/cmm/m/it/12 r[] $
  []
 
-[55]pdfTeX warning (ext4): destination with the same identifier (name{propositi
+[57]pdfTeX warning (ext4): destination with the same identifier (name{propositi
 on.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1602,7 +1626,7 @@ m/n/12 \ \OML/cmm/m/it/12 Atoms\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/
 P[]$\C19/kai/m/n/12/40 
  []
 
-[56]pdfTeX warning (ext4): destination with the same identifier (name{example.3
+[58]pdfTeX warning (ext4): destination with the same identifier (name{example.3
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1611,13 +1635,13 @@ l.321 \begin{example}
 
 LaTeX Warning: File ot138.cmap not found on input line 359.
 
-[57]) [58] (E:\CtexPaper\hzwPaper\chap5.tex
+[59]) [60] (E:\CtexPaper\hzwPaper\chap5.tex
 µ⁄ŒÂ’¬
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\CJKnumber' on input line 1.
 
-<img/splitting_procedure.jpg, id=1104, 201.75375pt x 219.06844pt>
+<img/splitting_procedure.jpg, id=1157, 201.75375pt x 219.06844pt>
 File: img/splitting_procedure.jpg Graphic file (type jpg)
 
 <use img/splitting_procedure.jpg>
@@ -1628,25 +1652,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--53
 
  []
 
-<img/simplify_procedure.jpg, id=1105, 310.15875pt x 217.5628pt>
+<img/simplify_procedure.jpg, id=1158, 310.15875pt x 217.5628pt>
 File: img/simplify_procedure.jpg Graphic file (type jpg)
 
 <use img/simplify_procedure.jpg>
 Package pdftex.def Info: img/simplify_procedure.jpg used on input line 56.
 (pdftex.def)             Requested size: 310.15799pt x 217.56227pt.
- [59
+ [61
 
 
 
-] [60 <E:/CtexPaper/hzwPaper/img/splitting_procedure.jpg> <E:/CtexPaper/hzwPape
-r/img/simplify_procedure.jpg>]<<c1984.cmap>> <img/pealGraph.png, id=1128, 407.2
+] [62 <E:/CtexPaper/hzwPaper/img/splitting_procedure.jpg> <E:/CtexPaper/hzwPape
+r/img/simplify_procedure.jpg>]<<c1984.cmap>> <img/pealGraph.png, id=1178, 407.2
 7156pt x 168.63pt>
 File: img/pealGraph.png Graphic file (type png)
  <use img/pealGraph.png>
 Package pdftex.def Info: img/pealGraph.png used on input line 125.
 (pdftex.def)             Requested size: 250.0pt x 103.51256pt.
 
-[61]
+[63]
 Overfull \hbox (8.53421pt too wide) in paragraph at lines 176--177
 []\C19/song/m/n/12/57 œ \C19/song/bx/n/12/43 L \C19/song/bx/n/12/41 © \C19/song
 /bx/n/12/42  \C19/song/bx/n/12/45 8$\OML/cmm/m/it/12 U$\C19/song/m/n/12/48 5 \
@@ -1660,23 +1684,33 @@ C19/song/m/n/12/36 r$\OML/cmm/m/it/12 P$\C19/song/bx/n/12/44 y \C19/song/bx/n/1
 \OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; X\OT1/cmr/m/n/12 )[] $
  []
 
-[62 <E:/CtexPaper/hzwPaper/img/pealGraph.png>] [63] [64] [65] [66]) [67]
-(E:\CtexPaper\hzwPaper\chap6.tex
+[64 <E:/CtexPaper/hzwPaper/img/pealGraph.png>] [65] [66] [67] [68]) [69]
+(E:\CtexPaper\hzwPaper\chap6.tex [70
+
+
+
+]
 µ⁄¡˘’¬
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\CJKnumber' on input line 1.
 
-[68
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-]) [69] (E:\CtexPaper\hzwPaper\paper_d.bbl<<c1930.cmap>> [70
+ [71])
+[72] (E:\CtexPaper\hzwPaper\paper_d.bbl<<c1930.cmap>> [73
 
 
 
 ]<<c1929.cmap>>
-[71] [72]) [73] (E:\CtexPaper\hzwPaper\public.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [74]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [75])
+[76] (E:\CtexPaper\hzwPaper\public.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
@@ -1686,34 +1720,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
  []
 
-) [74
+) [77
 
 
-] (E:\CtexPaper\hzwPaper\projects.tex
+] (E:\CtexPaper\hzwPaper\projects.tex [78
+
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
-) [75
+) [79] (E:\CtexPaper\hzwPaper\ack.tex [80
 
 
 
-] (E:\CtexPaper\hzwPaper\ack.tex
+]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 12.0pt
 (hyperref)                replaced by space on input line 26.
 
-) [76
-
-
-
-] [77
+) [81] [82
 
 ]
-\tf@thm=\write5
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 723.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 723.
+\tf@thm=\write8
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 679.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 679.
  (E:\CtexPaper\hzwPaper\paper_d.aux
 (E:\CtexPaper\hzwPaper\abstract1.aux) (E:\CtexPaper\hzwPaper\abstract2.aux)
 (E:\CtexPaper\hzwPaper\chap1.aux) (E:\CtexPaper\hzwPaper\chap2.aux)
@@ -1721,19 +1755,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 723.
 (E:\CtexPaper\hzwPaper\chap5.aux) (E:\CtexPaper\hzwPaper\chap6.aux)
 (E:\CtexPaper\hzwPaper\public.aux) (E:\CtexPaper\hzwPaper\projects.aux)
 (E:\CtexPaper\hzwPaper\ack.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 723.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 723.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 679.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 679.
 Package rerunfilecheck Info: File `paper_d.out' has not changed.
-(rerunfilecheck)             Checksum: 1F972DAE5611F5E2F44EFD2B3817C2E6;1915.
+(rerunfilecheck)             Checksum: 335AA7F3C2F2352A01AB0F388E2EA37A;1918.
  ) 
 Here is how much of TeX's memory you used:
- 16531 strings out of 495354
- 243434 string characters out of 3183074
- 359268 words of memory out of 3000000
- 18354 multiletter control sequences out of 15000+200000
- 110298 words of font info for 360 fonts, out of 3000000 for 9000
+ 16575 strings out of 495354
+ 244165 string characters out of 3183074
+ 360459 words of memory out of 3000000
+ 18365 multiletter control sequences out of 15000+200000
+ 111192 words of font info for 363 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 39i,19n,58p,1077b,1482s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,19n,58p,1077b,1492s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Windows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chine
 se/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:
 /Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CT
@@ -1749,47 +1783,28 @@ es/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Windows/Fonts/simfang.ttf><C
 simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Window
 s/Fonts/simfang.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.t
 tf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts
-/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windo
-ws/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf>{
-D:/Program Files/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Windows/Fonts/
-simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Window
+/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Win
+dows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf>{D:/Program Files/CTEX/MiKTe
+X/fonts/enc/dvips/fontname/8r.enc}<C:/Windows/Fonts/simhei.ttf><C:/Windows/Font
+s/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Wind
+ows/Fonts/simkai.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simfang.ttf
+><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/
+simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Window
 s/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C
-:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simf
-ang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/
-Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simhei.ttf><C:/
-Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.
-ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts
-/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windo
-ws/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simfang.ttf>
-<C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/s
-imfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Wind
-ows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.t
-tf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Font
-s/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Wi
-ndows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX
-/fonts/truetype/chinese/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fon
-ts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:
-/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CT
-EX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/tru
-etype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/sim
-sun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Progr
-am Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTe
-X/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/
-chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.tt
-f><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Fil
-es/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/font
-s/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chines
-e/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/
-Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.
-ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts
-/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windo
-ws/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><
-C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simk
-ai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fo
-nts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Wi
-ndows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.tt
-f><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/s
-imkai.ttf><C:/Windows/Fonts/simkai.ttf><D:/Program Files/CTEX/CTeX/fonts/truety
+:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simka
+i.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fon
+ts/simkai.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simfang.ttf><C:/Wi
+ndows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang
+.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fo
+nts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:
+/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simfang.ttf><C:/Windows/Fonts/simf
+ang.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/F
+onts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/W
+indows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.t
+tf><C:/Windows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chin
+ese/simsun.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><D:/Pr
+ogram Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/
+CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truety
 pe/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun
 .ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program 
 Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/f
@@ -1799,26 +1814,45 @@ D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/
 CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/t
 ruetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/s
 imsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Pro
-gram Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/C
-TeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetyp
-e/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.
-ttf><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:
-/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Progra
-m Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/
-CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/CTEX/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files/CTEX/MiKTeX/font
-s/type1/public/amsfonts/cm/cmr6.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsy6.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pf
-b><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-<D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/Program F
-iles/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><D:/Program Files/CTEX/MiK
-TeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on paper_d.pdf (87 pages, 1274173 bytes).
+gram Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/Windows/Fonts/simhei
+.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Font
+s/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Windows/Fonts/simhei.ttf><C:/Wind
+ows/Fonts/simhei.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf>
+<C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/sim
+kai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/F
+onts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/W
+indows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.t
+tf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/
+simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Windows/Fonts/simkai.ttf><C:/Window
+s/Fonts/simkai.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.tt
+f><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Fil
+es/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/font
+s/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chines
+e/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/
+Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTE
+X/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/true
+type/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/sims
+un.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Progra
+m Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX
+/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/c
+hinese/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf
+><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program File
+s/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files/CTEX/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files/CTEX/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/CTEX/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr6.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r8.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<D:/Program Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Prog
+ram Files/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program File
+s/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/Program Files/
+CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/Program Files/CTEX/MiKTeX/f
+onts/type1/urw/palatino/uplr8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/ur
+w/palatino/uplri8a.pfb>
+Output written on paper_d.pdf (98 pages, 1280808 bytes).
 PDF statistics:
- 1790 PDF objects out of 2073 (max. 8388607)
- 436 named destinations out of 1000 (max. 500000)
+ 1855 PDF objects out of 2073 (max. 8388607)
+ 450 named destinations out of 1000 (max. 500000)
  449 words of extra memory for PDF output out of 10000 (max. 10000000)
 

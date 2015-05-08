@@ -7,10 +7,9 @@
 %\def\proof{\noindent{\bf Proof}: } %定义证明，注意选择中英文
 %\def\endproof{\hspace*{\fill}~\QED\par\endtrivlist\unskip}%在proof环境自动添加结束符。
 
-% 去掉参数openany与oneside，用以实现论文的每一个章节从奇数页开始打印
-%\documentclass[12pt,a4paper]{book}
-% 
-\documentclass[12pt,a4paper,openany,oneside]{book}  
+
+\documentclass[12pt,a4paper]{book}
+%\documentclass[12pt,a4paper,openany,oneside]{book}  %去掉参数openany与oneside，用以实现论文的每一个章节从奇数页开始打印
 
 
 \usepackage{indentfirst}    % 首行缩进宏包
@@ -31,7 +30,7 @@
 \usepackage[perpage,symbol]{footmisc}   % 脚注控制
 
 \renewcommand{\thefootnote}{\arabic{footnote}}  % 将脚注变成从阿拉伯数字 1 开始，若没有这句话则脚注为罗马符号！！！
-
+\usepackage{multirow}
 \usepackage{type1cm}
 \usepackage{palatino}
 \usepackage{listings}  % 源代码列表
@@ -341,27 +340,20 @@
 	{\item[　　\hskip\labelsep \theorem@headerfont ##1\ ##2\ (##3)]}
 	\makeatother
 	\theoremstyle{myplain}
-	\theoremheaderfont{\CJKfamily{hei}\rmfamily}  %%%%%%%%%%% old
-	\theorembodyfont{\CJKfamily{kai}\rmfamily}	 %%%%%%%%%%% old
-%	\theoremheaderfont{\CJKfamily{song}\rmfamily} %%%%%%%%%%%% new add
-%	\theorembodyfont{\CJKfamily{song}\rmfamily}	 %%%%%%%%%%%% new add
+	\theoremheaderfont{\CJKfamily{hei}\rmfamily}
+	\theorembodyfont{\CJKfamily{kai}\rmfamily}
 	\theoremseparator{：}
-	\newtheorem{definition}{\hei 定义}[chapter]   %%%%%%%%%%% old
-	\newtheorem{proposition}{\hei 命题}[chapter]  %%%%%%%%%%% old
-%	\newtheorem{definition}{\song 定义}[chapter]   %%%%%%%%%%% new add
-%	\newtheorem{proposition}{\song 命题}[chapter]  %%%%%%%%%%% new add
+	\newtheorem{definition}{\hei 定义}[chapter]
+	\newtheorem{proposition}{\hei 命题}[chapter]
 	%\newtheorem{lemma}[definition]{\hei 引理}
-	\newtheorem{lemma}{\hei 引理}[chapter]    %若引理单独从 X.1 开始的话，就使用这一句，否则使用上面一句！！                   %%%%%%%%%%%% old
-%	\newtheorem{lemma}{\song 引理}[chapter]  %%%%%%%%%%%% new add
-	\newtheorem{theorem}{\hei 定理}[chapter]	%%%%%%%%%%%% old
-%	\newtheorem{theorem}{\song 定理}[chapter]  %%%%%%%%%%%% new add
+	\newtheorem{lemma}{\hei 引理}[chapter]    %若引理单独从 X.1 开始的话，就使用这一句，否则使用上面一句！！
+	\newtheorem{theorem}{\hei 定理}[chapter]
 	\newtheorem{axiom}{\hei 公理}
-	\newtheorem{corollary}{\hei 推论}[chapter] %%%%%%%%%%%% old
-%	\newtheorem{corollary}{\song 推论}[chapter]  %%%%%%%%%%%% new add
+	\newtheorem{corollary}{\hei 推论}[chapter]
 	%\theorembodyfont{\CJKfamily{song}\rmfamily} % body部分为书宋体
 	\newtheorem{exercise}[definition]{\hei 练习}
-	\newtheorem{example}{\hei 例}[chapter]		%%%%%%%%%%%% old
-%	\newtheorem{example}{\song 例}[chapter]		%%%%%%%%%%%% new add
+	\newtheorem{example}{\hei 例}[chapter]
+	
 	
 	% 定义自己的定理风格。首行缩进2个汉字，其余部分与环境外的格式相同。但定理的证明无须标号
 	\makeatletter
@@ -371,14 +363,11 @@
 	{\item[\hspace*{2em}\theorem@headerfont\hskip\labelsep ##1\ (##3)\theorem@separator]}
 	\makeatother
 	\theoremstyle{mynonumberplain}
-	\theoremheaderfont{\CJKfamily{hei}\rmfamily}  %%%%%%%%%%%% old
-	\theorembodyfont{\CJKfamily{kai}\rmfamily}    %%%%%%%%%%%% old
-%	\theoremheaderfont{\CJKfamily{song}\rmfamily}  %%%%%%%%%%%% new add
-%	\theorembodyfont{\CJKfamily{song}\rmfamily}    %%%%%%%%%%%% new add
+	\theoremheaderfont{\CJKfamily{hei}\rmfamily}
+	\theorembodyfont{\CJKfamily{kai}\rmfamily}
 	\theoremseparator{：}
-	\theoremsymbol{$\blacksquare$}
-	\newtheorem{proof}{\hei 证明}		%%%%%%%%%%%% old
-%	\newtheorem{proof}{\song 证明}		%%%%%%%%%%%% new add
+	%\theoremsymbol{$\blacksquare$}
+	\newtheorem{proof}{\hei 证明}
 	
 	%\theoremsymbol{$\square$}
 	%\newtheorem{example}{\hei 例}[chapter]
@@ -446,7 +435,7 @@
 \usepackage[dvips]{thumbpdf}
 \usepackage[ps2pdf,
 % pdfstartview=FitH,
-CJKbookmarks=true, colorlinks=true, linkcolor=black, citecolor=blue]{hyperref}
+CJKbookmarks=true, colorlinks=true]{hyperref}
 \AtBeginDvi{\special{pdf:tounicode GBK-EUC-UCS2}} % GBK -> Unicode
 \else
 \usepackage[pdftex]{graphicx}
@@ -454,7 +443,7 @@ CJKbookmarks=true, colorlinks=true, linkcolor=black, citecolor=blue]{hyperref}
 \usepackage[pdftex]{thumbpdf}
 \usepackage[pdftex,
 % pdfstartview=FitH,
-CJKbookmarks=true, colorlinks=true, linkcolor=black, citecolor=blue]{hyperref}
+CJKbookmarks=true, colorlinks=true,linkcolor=black,citecolor=blue]{hyperref}
 %\AtBeginDvi{\special{pdf:tounicode GBK-EUC-UCS2}} % GBK -> Unicode
 \pdfadjustspacing=1
 \fi
@@ -475,7 +464,7 @@ CJKbookmarks=true, colorlinks=true, linkcolor=black, citecolor=blue]{hyperref}
 \usepackage{makeidx}
 \usepackage{moreverb}
 \usepackage[lined,boxed,commentsnumbered]{algorithm2e}
-\newcommand{\papername}{一种改进的回答集逻辑程序分割方法及程序化简研究}
+\newcommand{\papername}{回答集逻辑程序特征环的研究}
 \newcommand{\schoolname}{中山大学硕士学位论文}
 %\newcommand{\sll}{$\mathcal{SL}$}
 \newcommand{\prolog}{\texttt{Prolog}}
@@ -533,29 +522,6 @@ CJKbookmarks=true, colorlinks=true, linkcolor=black, citecolor=blue]{hyperref}
 \newcommand{\operator}[2]{\mbox{\boldmath $#1$\hspace*{-#2ex}}}
 \newcommand{\mb}{\operator{B}{.2}}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\makeatletter
-%\newif \if@frontmatter   \@frontmatterfalse
-%\let \LaTeXfrontmatter = \frontmatter
-%\let \LaTeXmainmatter  = \mainmatter
-%\renewcommand {\frontmatter} {\@frontmattertrue  \LaTeXfrontmatter}
-%\renewcommand {\mainmatter}  {\@frontmatterfalse \LaTeXmainmatter}
-%
-%\pagestyle{fancy}
-%\fancyhf{}
-%\fancyhead[RE]{\if@frontmatter\else\small \CAST@value@titlemark\fi}
-%\fancyhead[LO]{\if@frontmatter\else\small \leftmark\fi}
-%\fancyhead[LE,RO]{\if@frontmatter\else\small ~\thepage~\fi}
-%\fancyfoot[C]{\if@frontmatter\small ~\thepage~\fi}
-%\renewcommand{\headrulewidth}{\if@frontmatter 0pt\else .7pt\fi}%
-%\fancypagestyle{plain}{%
-%	\pagestyle{fancy}
-%}
-%\makeatother
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 	\begin{CJK*}{GBK}{song}
@@ -647,15 +613,17 @@ CJKbookmarks=true, colorlinks=true, linkcolor=black, citecolor=blue]{hyperref}
 		\phantomsection
 		%\addcontentsline{toc}{chapter}{\contentsname}
 		\tableofcontents
-		%\listoffigures
-		%\listoftables
+		\listoffigures
+		% \addcontentsline{toc}{chapter}{插图目录}
+		\listoftables
+		% \addcontentsline{toc}{chapter}{表格目录}
+		\renewcommand{\listalgorithmcfname}{算法}
+		\listofalgorithms
+		% \addcontentsline{toc}{chapter}{算法目录}
+		
 		\mainmatter
 		\pagestyle{fancy}
 		\biaozhunzihao
-		%\include{Prefix}
-		
-		%\include{draft01}
-		%\include{chap0}
 		
 		\include{chap1}
 		\include{chap2}
@@ -663,7 +631,6 @@ CJKbookmarks=true, colorlinks=true, linkcolor=black, citecolor=blue]{hyperref}
 		\include{chap4}
 		\include{chap5}
 		\include{chap6}
-		%\include{chap7}
 		
 		\backmatter %结束章节自动编号
 		%\addcontentsline{toc}{chapter}{\numberline{}\bibname} % 解决目录中没有相应的参考文献的条目问题
@@ -676,19 +643,15 @@ CJKbookmarks=true, colorlinks=true, linkcolor=black, citecolor=blue]{hyperref}
 		%\bibliographystyle{chinesebst}
 		%\bibliographystyle{plain}
 		%\bibliographystyle{unsrtnat}
-		%\bibliographystyle{paper2}
-		% wikibook latex bib 有详细的格式设置说明
-		\normalsize {
-		\setlength{\bibsep}{0.5ex}
-		\bibliographystyle{unsrt}
-		%\nocite{*} % 列出所有的参考文献
-		\bibliography{reference}
-		}
 		\phantomsection
 		%\addcontentsline{toc}{chapter}{参考文献}
 		\addcontentsline{toc}{chapter}{参考文献} % 解决目录中没有相应的参考文献的条目问题
 		
-		
+		%\nocite{*} % 列出所有的参考文献
+		\normalsize {\setlength{\bibsep}{0.5ex}
+		\bibliographystyle{unsrt}
+		\bibliography{reference}
+		}
 		%\end{thebibliography}
 		%\include{ack}
 		
@@ -702,20 +665,13 @@ CJKbookmarks=true, colorlinks=true, linkcolor=black, citecolor=blue]{hyperref}
 		
 		\include{public}
 		\thispagestyle{empty}
-		
 		\include{projects}
 		\thispagestyle{empty}
-		
-%		\include{additional}			%% new add
-%		\thispagestyle{empty}		%% new add
-		
-		\include{ack}   %论文感谢部分		
+		\include{ack}   %论文感谢部分
 		\newpage
 		\mbox{}
 		\thispagestyle{empty}
 		\newpage
-		
-		
 		
 		%\include{copy-right}
 		\clearpage
