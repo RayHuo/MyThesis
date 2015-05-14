@@ -351,14 +351,14 @@ ASPÂß¼­³ÌĞòµÄ»·ÊµÖÊÉÏ¾ÍÊÇÆä¶ÔÓ¦µÄÕıÒÀÀµÍ¼ÖĞµÄÇ¿Á¬Í¨·ÖÁ¿¡£»·»¹ÓĞÒ»¸öÖØÒªĞÔÖÊÓÃÓÚ¶
 
 »¹¿ÉÒÔ¸ü½øÒ»²½µØ¶¨Òå»·$L$ÔÚ$P$ÖĞ»ùÓÚÔ­×Ó¼¯$X$µÄÍâ²¿Ö§³Ö¹æÔò£¬¼ÇÎª$R^-(L,P,X)$£¬¶¨ÒåÈçÏÂ£º
 \begin{equation}
-	R^-(L,P,X)~=~\{r \in R^-(L,P)~|~X \models body(r) \land \bigwedge_{q \in head(r) \\ L} \neg q \}
+	R^-(L,P,X)~=~\{r \in R^-(L,P)~|~X \models body(r) \land \bigwedge_{q \in head(r) \backslash L} \neg q \}
 \end{equation}
 
 È»ºó£¬±¾½ÚÒıÈë»·¹«Ê½µÄ¶¨Òå¡£
 \begin{definition}[»·¹«Ê½ \upcite{lin2002assat}]\label{loop_formula}
 	¸ø¶¨ASPÂß¼­³ÌĞò$P$£¬¶ÔÓÚÆäÖĞµÄÒ»¸ö»·$L$Ëù¶ÔÓ¦µÄ»·¹«Ê½(Loop Formula)¼ÇÎª$LF(L,P)$£¬¶¨ÒåÈçÏÂ£º
 	\begin{equation}
-		\bigwedge_{p \in L} p \supset \bigvee_{r \in R^-(L,P)} (body(r) \land \bigwedge_{q \in head(r) \\ L} \neg q)
+		\bigwedge_{p \in L} p \supset \bigvee_{r \in R^-(L,P)} (body(r) \land \bigwedge_{q \in head(r) \backslash L} \neg q)
 	\end{equation}
 \end{definition}
 
