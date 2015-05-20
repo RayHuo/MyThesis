@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  14 MAY 2015 10:36
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  20 MAY 2015 21:35
 entering extended mode
 **paper_d.tex
 (E:\CtexPaper\hzwPaper\paper_d.tex
@@ -1728,6 +1728,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
 
 ]
+Overfull \hbox (5.68861pt too wide) in paragraph at lines 10--12
+[]\OT1/ppl/m/n/12 1. 2011\C19/song/bx/n/12/51 c \C19/song/bx/n/12/40 Ý \C19/son
+g/bx/n/12/37 Æ \C19/song/bx/n/12/55 ¬ \C19/song/bx/n/12/40 : \C19/song/bx/n/12/
+44 Ä \C19/song/bx/n/12/46 7 \C19/song/bx/n/12/65 g \C19/song/bx/n/12/54 , \C19/
+song/bx/n/12/47 ‰ \C19/song/bx/n/12/60 Æ \C19/song/m/n/12/48 a \C19/song/bx/n/1
+2/47 ‘ \C19/song/m/n/12/57 K \C19/song/bx/n/12/26 £ \C19/song/bx/n/12/60 # \C19
+/song/bx/n/12/46  \C19/song/bx/n/12/55 “ \C19/song/m/n/12/48 a \C19/song/bx/n/
+12/47 ‘ \C19/song/m/n/12/57 K \C19/song/bx/n/12/26 ¤ §\OT1/ppl/m/n/12 201101711
+20041\C19/song/bx/n/12/26 §
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
@@ -1761,10 +1773,10 @@ Package rerunfilecheck Info: File `paper_d.out' has not changed.
 (rerunfilecheck)             Checksum: 335AA7F3C2F2352A01AB0F388E2EA37A;1918.
  ) 
 Here is how much of TeX's memory you used:
- 16572 strings out of 495354
- 244125 string characters out of 3183074
+ 16658 strings out of 495354
+ 245887 string characters out of 3183074
  360480 words of memory out of 3000000
- 18364 multiletter control sequences out of 15000+200000
+ 18450 multiletter control sequences out of 15000+200000
  110894 words of font info for 362 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  39i,19n,58p,1077b,1492s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1849,7 +1861,7 @@ pe1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/pa
 latino/uplb8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a
 .pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on paper_d.pdf (98 pages, 1281062 bytes).
+Output written on paper_d.pdf (98 pages, 1297940 bytes).
 PDF statistics:
  1851 PDF objects out of 2073 (max. 8388607)
  450 named destinations out of 1000 (max. 500000)
