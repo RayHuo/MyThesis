@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  20 MAY 2015 21:35
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  21 MAY 2015 14:18
 entering extended mode
 **paper_d.tex
 (E:\CtexPaper\hzwPaper\paper_d.tex
@@ -883,35 +883,31 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ]) [2] (E:\CtexPaper\hzwPaper\abstract2.tex
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <18> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 19.
-
-Underfull \vbox (badness 5231) has occurred while \output is active []
-
  [3
 
 
-])
-[4] (E:\CtexPaper\hzwPaper\paper_d.toc [5
+]) [4]
+(E:\CtexPaper\hzwPaper\paper_d.toc [5
 
 
 ])
 \tf@toc=\write4
- [6]
-(E:\CtexPaper\hzwPaper\paper_d.lof)
+ [6] (E:\CtexPaper\hzwPaper\paper_d.lof)
 \tf@lof=\write5
- [7
+[7
 
 ] [8
 
 ] (E:\CtexPaper\hzwPaper\paper_d.lot)
 \tf@lot=\write6
-[9] [10
+ [9] [10
 
-] (E:\CtexPaper\hzwPaper\paper_d.loa)
+]
+(E:\CtexPaper\hzwPaper\paper_d.loa)
 \tf@loa=\write7
  [11] [12
 
-]
-(E:\CtexPaper\hzwPaper\chap1.tex
+] (E:\CtexPaper\hzwPaper\chap1.tex
 µ⁄“ª’¬
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1420,7 +1416,7 @@ L/cmm/m/it/12 P$\C19/kai/m/n/12/43 ' \C19/kai/m/n/12/62 u$\OML/cmm/m/it/12 U$\C
  []
 
 [45] [46] [47]
-Overfull \hbox (5.22949pt too wide) in paragraph at lines 998--1003
+Overfull \hbox (5.22949pt too wide) in paragraph at lines 1021--1026
 \C19/song/bx/n/12/47 å \C19/song/bx/n/12/61 ± \C19/song/bx/n/12/59 Å \C19/song/
 bx/n/12/64 õ$\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 DSL[]\OT1/cmr/m/n/12 (\OML/cmm/
 m/it/12 P; X\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j$\C19/song/bx/n/12/40  \C19/son
@@ -1434,7 +1430,7 @@ cmm/m/it/12 head\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 in[]\OT1/cmr/m/n/12 (\OML/cmm
  []
 
 
-Overfull \hbox (7.06242pt too wide) in paragraph at lines 998--1003
+Overfull \hbox (7.06242pt too wide) in paragraph at lines 1021--1026
 $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 body[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 out
 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ))\OMS/cmsy/m/n/12 j$\C19/
 song/bx/n/12/40  \C19/song/bx/n/12/39 å \C19/song/bx/n/12/60  \C19/song/bx/n/
@@ -1447,8 +1443,8 @@ n/12/42  \C19/song/bx/n/12/45 8$\OML/cmm/m/it/12 U$\C19/song/bx/n/12/40  \C19
 ML/cmm/m/it/12 P; X\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j$\C19/song/bx/n/12/40 
  []
 
-
-Overfull \hbox (5.45029pt too wide) in paragraph at lines 1012--1017
+[48]
+Overfull \hbox (5.45029pt too wide) in paragraph at lines 1035--1040
 \C19/song/bx/n/12/58 è \C19/song/bx/n/12/64  \C19/song/bx/n/12/43 5 \C19/song/
 bx/n/12/49 ‹ \C19/song/bx/n/12/45 6 \C19/song/bx/n/12/38 ß \C19/song/bx/n/12/60
  S \C19/song/bx/n/12/43 ⁄ \C19/song/bx/n/12/58 € \C19/song/bx/n/12/54  \C19/so
@@ -1462,7 +1458,7 @@ n/12 (\OML/cmm/m/it/12 P; X\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/26 ß
  []
 
 
-Overfull \hbox (6.33447pt too wide) in paragraph at lines 1012--1017
+Overfull \hbox (6.33447pt too wide) in paragraph at lines 1035--1040
 \C19/song/bx/n/12/61 ± \C19/song/bx/n/12/45 9 \C19/song/bx/n/12/37 ÷ \C19/song/
 bx/n/12/38 ø \C19/song/bx/n/12/63  \C19/song/bx/n/12/65 f \C19/song/bx/n/12/63
  ˝ \C19/song/bx/n/12/64 ä \C19/song/bx/n/12/47 å \C19/song/bx/n/12/51 U \C19/so
@@ -1475,7 +1471,7 @@ bx/n/12/60 5 \C19/song/bx/n/12/40 $\OML/cmm/m/it/12 ECC[]\OT1/cmr/m/n/12 (\OML
 /cmm/m/it/12 P; X\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/26 ß
  []
 
-) [48] [49] (E:\CtexPaper\hzwPaper\chap4.tex [50
+) [49] (E:\CtexPaper\hzwPaper\chap4.tex [50
 
 
 
@@ -1641,7 +1637,7 @@ LaTeX Warning: File ot138.cmap not found on input line 359.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\CJKnumber' on input line 1.
 
-<img/splitting_procedure.jpg, id=1156, 201.75375pt x 219.06844pt>
+<img/splitting_procedure.jpg, id=1157, 201.75375pt x 219.06844pt>
 File: img/splitting_procedure.jpg Graphic file (type jpg)
 
 <use img/splitting_procedure.jpg>
@@ -1652,7 +1648,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--53
 
  []
 
-<img/simplify_procedure.jpg, id=1157, 310.15875pt x 217.5628pt>
+<img/simplify_procedure.jpg, id=1158, 310.15875pt x 217.5628pt>
 File: img/simplify_procedure.jpg Graphic file (type jpg)
 
 <use img/simplify_procedure.jpg>
@@ -1663,7 +1659,7 @@ Package pdftex.def Info: img/simplify_procedure.jpg used on input line 56.
 
 
 ] [62 <E:/CtexPaper/hzwPaper/img/splitting_procedure.jpg> <E:/CtexPaper/hzwPape
-r/img/simplify_procedure.jpg>]<<c1984.cmap>> <img/pealGraph.png, id=1177, 407.2
+r/img/simplify_procedure.jpg>]<<c1984.cmap>> <img/pealGraph.png, id=1178, 407.2
 7156pt x 168.63pt>
 File: img/pealGraph.png Graphic file (type png)
  <use img/pealGraph.png>
@@ -1773,13 +1769,13 @@ Package rerunfilecheck Info: File `paper_d.out' has not changed.
 (rerunfilecheck)             Checksum: 335AA7F3C2F2352A01AB0F388E2EA37A;1918.
  ) 
 Here is how much of TeX's memory you used:
- 16658 strings out of 495354
- 245887 string characters out of 3183074
- 360480 words of memory out of 3000000
- 18450 multiletter control sequences out of 15000+200000
+ 16665 strings out of 495354
+ 246021 string characters out of 3183074
+ 360541 words of memory out of 3000000
+ 18456 multiletter control sequences out of 15000+200000
  110894 words of font info for 362 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 39i,19n,58p,1077b,1492s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,19n,58p,1077b,1496s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Windows/Fonts/simhei.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chine
 se/simsun.ttf><D:/Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:
 /Program Files/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/Program Files/CT
@@ -1861,9 +1857,9 @@ pe1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/pa
 latino/uplb8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a
 .pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on paper_d.pdf (98 pages, 1297940 bytes).
+Output written on paper_d.pdf (98 pages, 1301869 bytes).
 PDF statistics:
- 1851 PDF objects out of 2073 (max. 8388607)
- 450 named destinations out of 1000 (max. 500000)
+ 1853 PDF objects out of 2073 (max. 8388607)
+ 451 named destinations out of 1000 (max. 500000)
  449 words of extra memory for PDF output out of 10000 (max. 10000000)
 
