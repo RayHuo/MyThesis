@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  21 MAY 2015 14:18
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.21)  21 MAY 2015 15:57
 entering extended mode
 **paper_d.tex
 (E:\CtexPaper\hzwPaper\paper_d.tex
@@ -1415,8 +1415,8 @@ L/cmm/m/it/12 P$\C19/kai/m/n/12/43 ' \C19/kai/m/n/12/62 u$\OML/cmm/m/it/12 U$\C
  Y\OT1/ppl/m/n/12 (Strong
  []
 
-[45] [46] [47]
-Overfull \hbox (5.22949pt too wide) in paragraph at lines 1021--1026
+[45] [46] [47] [48]
+Overfull \hbox (5.22949pt too wide) in paragraph at lines 1022--1027
 \C19/song/bx/n/12/47 Œ \C19/song/bx/n/12/61 ± \C19/song/bx/n/12/59  \C19/song/
 bx/n/12/64 ›$\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 DSL[]\OT1/cmr/m/n/12 (\OML/cmm/
 m/it/12 P; X\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j$\C19/song/bx/n/12/40  \C19/son
@@ -1430,7 +1430,7 @@ cmm/m/it/12 head\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 in[]\OT1/cmr/m/n/12 (\OML/cmm
  []
 
 
-Overfull \hbox (7.06242pt too wide) in paragraph at lines 1021--1026
+Overfull \hbox (7.06242pt too wide) in paragraph at lines 1022--1027
 $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 body[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 out
 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ))\OMS/cmsy/m/n/12 j$\C19/
 song/bx/n/12/40  \C19/song/bx/n/12/39 Œ \C19/song/bx/n/12/60  \C19/song/bx/n/
@@ -1443,8 +1443,8 @@ n/12/42  \C19/song/bx/n/12/45 8$\OML/cmm/m/it/12 U$\C19/song/bx/n/12/40  \C19
 ML/cmm/m/it/12 P; X\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j$\C19/song/bx/n/12/40 
  []
 
-[48]
-Overfull \hbox (5.45029pt too wide) in paragraph at lines 1035--1040
+
+Overfull \hbox (5.45029pt too wide) in paragraph at lines 1036--1041
 \C19/song/bx/n/12/58  \C19/song/bx/n/12/64  \C19/song/bx/n/12/43 5 \C19/song/
 bx/n/12/49 Ü \C19/song/bx/n/12/45 6 \C19/song/bx/n/12/38 § \C19/song/bx/n/12/60
  S \C19/song/bx/n/12/43 Ú \C19/song/bx/n/12/58 Û \C19/song/bx/n/12/54  \C19/so
@@ -1458,7 +1458,7 @@ n/12 (\OML/cmm/m/it/12 P; X\OT1/cmr/m/n/12 )$\C19/song/bx/n/12/26 §
  []
 
 
-Overfull \hbox (6.33447pt too wide) in paragraph at lines 1035--1040
+Overfull \hbox (6.33447pt too wide) in paragraph at lines 1036--1041
 \C19/song/bx/n/12/61 ± \C19/song/bx/n/12/45 9 \C19/song/bx/n/12/37 Ö \C19/song/
 bx/n/12/38 ¿ \C19/song/bx/n/12/63  \C19/song/bx/n/12/65 f \C19/song/bx/n/12/63
  ý \C19/song/bx/n/12/64 Š \C19/song/bx/n/12/47 Œ \C19/song/bx/n/12/51 U \C19/so
@@ -1769,10 +1769,10 @@ Package rerunfilecheck Info: File `paper_d.out' has not changed.
 (rerunfilecheck)             Checksum: 335AA7F3C2F2352A01AB0F388E2EA37A;1918.
  ) 
 Here is how much of TeX's memory you used:
- 16665 strings out of 495354
- 246021 string characters out of 3183074
+ 16667 strings out of 495354
+ 246063 string characters out of 3183074
  360541 words of memory out of 3000000
- 18456 multiletter control sequences out of 15000+200000
+ 18458 multiletter control sequences out of 15000+200000
  110894 words of font info for 362 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  39i,19n,58p,1077b,1496s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1857,7 +1857,7 @@ pe1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/pa
 latino/uplb8a.pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a
 .pfb><D:/Program Files/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on paper_d.pdf (98 pages, 1301869 bytes).
+Output written on paper_d.pdf (98 pages, 1303134 bytes).
 PDF statistics:
  1853 PDF objects out of 2073 (max. 8388607)
  451 named destinations out of 1000 (max. 500000)
